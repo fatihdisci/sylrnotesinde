@@ -36,7 +36,7 @@ export const SecondsFilm = ({episode,hideCaptions=false,debug=false}: {episode:E
     <EventSoundTrack events={events}/>
     <div data-safe="heading" style={{...labelStyle,top:288,fontSize:study?80:88,lineHeight:1.08,fontWeight:500,whiteSpace:'pre-line'}}>{heading}</div>
     <svg width="1080" height="1920" viewBox="0 0 1080 1920" style={{position:'absolute',inset:0}}>
-      <defs><clipPath id="geometry-window"><rect x="50" y="550" width="920" height="850" /></clipPath></defs>
+      <defs><clipPath id="geometry-window"><rect x="50" y="550" width="920" height={field?760:850} /></clipPath></defs>
       <g clipPath="url(#geometry-window)">
         {!field && <g>
           {/* Minute hand and second hand agree: one fast revolution = one schematic minute. */}
