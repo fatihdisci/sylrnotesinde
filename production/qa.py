@@ -67,6 +67,18 @@ def main():
     result={'id':a.id,'technicalChecksPassed':True,'publicationReady':publication_ready,'publicationBlockers':publication_blockers,'reviewStatus':data['review']['status'],'frames':manifest['durationInFrames'],'fps':30,'seconds':manifest['durationInFrames']/30,'audioDurationSeconds':len(source)/48000,'resultHoldFrames':manifest['timeline']['resultHoldFrames'],'outroFromFrame':outro,'encodedSyncSamples':samples,'driftMs':drift,'encodedPeak':float(np.max(np.abs(encoded))),'integratedLufs':float(loud['input_i']),'truePeakDbtp':float(loud['input_tp']),'outroCorrelation':corr,'outroLagMs':lag,'captionCoverageWords':len(coverage),'srtMatchesBurnIn':True,'blackIntervals':black_intervals,'emptyContentFrames':empty_frames,'largeFrameChangeCandidates':flicker_candidates,'suspiciousWords':[w['id'] for w in data['words'] if w['issues']],'humanListeningPerformed':False,'humanReviewListeningRecorded':bool(data['review'].get('listened')),'manualChecksRequired':['Listen to Turkish pronunciation, numbers, units and last syllables.','Inspect word onsets/offsets in the local editor; CTC20ms resolution does not guarantee33ms accuracy.','Watch the actual MP4 for semantic scene timing, flicker and subjective readability.'],'audioSha256':sha((dest/'narration.wav').read_bytes()),'wordTimingsSha256':sha((dest/'word-timings.json').read_bytes())}
     result['emptyGeometryFramesForReview']=empty_geometry_frames
     result['rhythm']=inspect_rhythm(frames_rgb[:outro],encoded[:outro*1600],annotations=data['script'].get('intentionalPauses',[]))
+    if manifest.get('direction'):
+        score=read(dest/'sound-design.json');stem=pcm(dest/'sfx-stem.wav')*score['renderGain']
+        mix=np.zeros(outro*1600);mix[offset:offset+len(source)]+=source*.9;mix[:len(stem)]+=stem
+        mix_samples=[]
+        for event in manifest['direction']['events']:
+            start=event['from']*1600;stop=min(len(mix),start+24000)
+            if stop-start<4800:continue
+            event_lag,event_corr=correlate(mix[start:stop],encoded,start)
+            assert abs(event_lag)<=1000/30 and event_corr>.98,('effect/voice mix',event['id'],event_lag,event_corr)
+            mix_samples.append({'event':event['id'],'frame':event['from'],'lagMs':event_lag,'correlation':event_corr})
+        result['soundDesign']={'events':len(score['events']),'ducking':score['ducking'],'renderedMixChecks':mix_samples,'separateStemSha256':score['stemSha256'],'humanAudibilityReviewPerformed':False}
+        result['storyboard']={'hash':manifest['direction']['storyboardHash'],'events':len(manifest['direction']['events']),'timingSource':'measured words with explicit authored anchors','speechOnsetMs':manifest['direction']['speech']['onsetMs'],'speechOffsetMs':manifest['direction']['speech']['offsetMs']}
     write(video.parent/'qa.json',result)
     print(json.dumps(result,ensure_ascii=False,indent=2))
 if __name__=='__main__':main()

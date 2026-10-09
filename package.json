@@ -37,7 +37,10 @@
     "episode:qa": "tsx scripts/episode.ts qa",
     "episode:test": "python3 -m unittest discover -s production/tests -v",
     "alignment:test": "alignment/environments/ctc/bin/python -m unittest discover -s alignment/tests -v",
-    "alignment:offline": "python3 alignment/verify_offline.py"
+    "alignment:offline": "python3 alignment/verify_offline.py",
+    "episode:import-voice": "python3 production/prepare.py",
+    "episode:sound": "alignment/environments/ctc/bin/python production/sound.py",
+    "episode:storyboard": "python3 production/storyboard.py"
   },
   "keywords": [],
   "license": "UNLICENSED",

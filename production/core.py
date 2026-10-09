@@ -1,5 +1,5 @@
 """Shared timing, provenance and export rules. No inference, network or guessed word timing."""
-import hashlib,json,math,re,subprocess
+import hashlib,json,math,re,subprocess,unicodedata
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
 def sha(data):return hashlib.sha256(data).hexdigest()
@@ -13,6 +13,13 @@ def paths(id):
 def spoken(spec):return ' '.join(p['spoken'].strip() for p in spec['phrases'])
 def bindings(specpath,audio):
     spec=read(specpath)
+    external=Path(audio).with_name('external-audio.json')
+    if spec.get('audioSource') and external.exists() and read(external).get('schemaVersion')==2:
+        meta=read(external);script=Path(audio).with_name('script.txt')
+        if sha((ROOT/meta['archivePath']).read_bytes())!=meta['sourceSha256']:raise ValueError('Archived original audio changed')
+        if sha(script.read_bytes())!=meta['scriptSha256']:raise ValueError('Imported transcript changed; create a new revision')
+        if ' '.join(unicodedata.normalize('NFC',script.read_text()).split())!=' '.join(unicodedata.normalize('NFC',spoken(spec)).split()):raise ValueError('Transcript and production script differ')
+        return {'specHash':sha(Path(specpath).read_bytes()),'textHash':sha(spoken(spec).encode()),'settingsHash':sha(meta['processing'].encode()),'voiceSourceHash':sha(external.read_bytes()),'scriptHash':sha(script.read_bytes()),'audioHash':sha(Path(audio).read_bytes())}
     result={'specHash':sha(Path(specpath).read_bytes()),'textHash':sha(spoken(spec).encode()),'settingsHash':sha((ROOT/'tts/config/narrator.json').read_bytes()),'ttsModelHash':sha((ROOT/'tts/config/models.json').read_bytes()),'audioHash':sha(Path(audio).read_bytes())}
     if spec.get('audioSource'):
         result['externalAudioHash']=sha(Path(audio).with_name('external-audio.json').read_bytes())
@@ -22,19 +29,19 @@ def timeline(seconds,start=0,hold=60,minimum=1200,speech_end_seconds=None,maximu
     for n in [start,hold,minimum]:
         if type(n)!=int or n<0:raise ValueError('Timeline frames must be nonnegative integers')
     audio_frames=math.ceil(seconds*30)
-    speech_frames=audio_frames if speech_end_seconds is None else math.ceil(speech_end_seconds*30)
+    speech_frames=audio_frames if speech_end_seconds is None else math.ceil(round(speech_end_seconds*30,9))
     if not 0<speech_frames<=audio_frames:raise ValueError('Invalid measured speech end')
     content=max(minimum-45,start+audio_frames,start+speech_frames+hold)
-    if content+45>maximum:raise ValueError(f'{seconds:.3f}s narration plus result/outro exceeds{maximum/30:g}s. Simplify text first; narrator speed is unchanged.')
+    if maximum is not None and content+45>maximum:raise ValueError(f'{seconds:.3f}s narration plus result/outro exceeds{maximum/30:g}s. Simplify text first; narrator speed is unchanged.')
     return {'audioFrames':audio_frames,'narrationStartFrame':start,'resultFromFrame':start+speech_frames,'resultHoldFrames':content-start-speech_frames,'outroFromFrame':content,'durationInFrames':content+45}
 def spec_timeline(data, spec):
     study = spec.get('format') == 'motion-study'
-    minimum=spec.get('minimumDurationFrames',360) if study else 1200
+    minimum=0 if spec.get('format')=='audio-first' else (spec.get('minimumDurationFrames',360) if study else 1200)
     if study and (type(minimum)!=int or not 360<=minimum<=450):raise ValueError('MotionStudy minimum must be360–450 frames')
     t = timeline(data['audioDurationMs']/1000, spec.get('narrationStartFrame',0),
                  spec.get('resultHoldFrames',60), minimum=minimum,
                  speech_end_seconds=data['words'][-1]['endMs']/1000,
-                 maximum=1800 if spec.get('format')=='voice-test' else 1350)
+                 maximum=None if spec.get('format')=='audio-first' else (1800 if spec.get('format')=='voice-test' else 1350))
     if study and t['durationInFrames'] > 450:
         raise ValueError('MotionStudy exceeds15s; simplify speech, never change narrator speed')
     return t
@@ -82,6 +89,13 @@ def verify_current(id,release=False):
         onset=(cue['from']-schedule['narrationStartFrame'])*1000/30
         offset=(cue['to']-schedule['narrationStartFrame'])*1000/30
         if abs(onset-words[0]['startMs'])>1000/30+.01 or not 0<=offset-words[-1]['endMs']<=1000/30+.01:raise ValueError('Caption does not match measured words')
+    if (specpath.parent/'storyboard.json').exists():
+        from storyboard import resolve_storyboard
+        direction=resolve_storyboard(specpath.parent/'storyboard.json',data,schedule)
+        if manifest.get('direction')!=direction:raise ValueError('STALE storyboard; export current audio anchors')
+        if not manifest['audio'].get('sfxPath'):raise ValueError('Build the sound stem with episode:sound before rendering')
+        score=read(dest/'sound-design.json')
+        if manifest['audio'].get('soundDesignHash')!=sha((dest/'sound-design.json').read_bytes()) or score['stemSha256']!=sha((dest/'sfx-stem.wav').read_bytes()):raise ValueError('STALE sound stem')
     errors=word_errors(data)
     if errors:raise ValueError('; '.join(errors))
     if release and any(not gap.get('reviewed') for gap in data.get('unexplainedSpeechGaps',[])):raise ValueError('PUBLICATION BLOCKED: unexplained speech gaps')
@@ -114,10 +128,19 @@ def export(id):
     (dest/'captions.srt').write_text('\n\n'.join(f"{i+1}\n{stamp(c['from'])} --> {stamp(c['to'])}\n"+'\n'.join(c['lines']) for i,c in enumerate(cues))+'\n')
     provenance={**data['bindings'],'alignmentHash':sha((dest/'word-timings.json').read_bytes()),'captionsHash':sha((dest/'captions.json').read_bytes()),'reviewStatus':data['review']['status'],'reviewer':data['review'].get('reviewer'),'wordTimingPath':f'episodes/{id}/word-timings.json'}
     episode={'id':id,'title':spec['title'],'hook':spec['hook'],'brandVersion':'0.1-candidate','kind':'motion-study' if spec.get('format')=='motion-study' else 'episode','durationInFrames':t['durationInFrames'],'narration':[{'id':'narration','text':spoken(spec),'from':t['narrationStartFrame'],'durationInFrames':t['audioFrames'],'path':f'episodes/{id}/narration.wav'}],'sources':spec['sources'],'claims':spec['claims'],'scenes':spec.get('scenes') or [{'id':'continuous','from':0,'to':t['outroFromFrame'],'purpose':'Original continuous TSX visualization'}],'audio':{'voiceProvider':'local:supertonic-3','voiceStatus':'final' if data['review']['status']=='approved' else 'temporary'},'subtitlePath':f'episodes/{id}/captions.json','captions':cues,'provenance':provenance,'timeline':t,'fps':30,'captionReviewRequired':data['review']['status']!='approved','recommendedTotalFrames':t['durationInFrames']}
-    if spec.get('format')=='voice-test':episode['kind']='voice-test'
+    if spec.get('format') in ['voice-test','audio-first']:episode['kind']=spec['format']
     if spec.get('audioSource'):
         episode['audio']['voiceProvider']=spec['audioSource']['provider']
         episode['audio']['source']=read(dest/'external-audio.json')
+    if (specpath.parent/'storyboard.json').exists():
+        from storyboard import resolve_storyboard, write_storyboard
+        episode['direction']=resolve_storyboard(specpath.parent/'storyboard.json',data,t)
+        write_storyboard(dest,episode['direction'])
+        sound=dest/'sound-design.json'
+        if sound.exists():
+            score=read(sound)
+            if score['directionHash']==sha(json.dumps(episode['direction'],sort_keys=True).encode()) and score['audioHash']==data['bindings']['audioHash']:
+                episode['audio'].update(sfxPath=f'episodes/{id}/sfx-stem.wav',soundDesignHash=sha(sound.read_bytes()))
     write(dest/'narration-manifest.json',episode)
     print(f'Exported {len(data["words"])} words / {len(cues)} cues; {t["durationInFrames"]}/30s; review={data["review"]["status"]}',flush=True)
     return episode

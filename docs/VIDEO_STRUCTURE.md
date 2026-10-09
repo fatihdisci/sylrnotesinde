@@ -1,6 +1,6 @@
 # Video yapısı
 
-Nihai bölüm:1080×1920,9:16,30 FPS, outro dahil40–45 s =1200–1350 kare. `validateEpisode` bu sözleşmeyi uygular. StyleProof yayın bölümü değildir;15 s/450 kare istisnasıdır.
+Yeni audio-first bölüm:1080×1920,9:16,30 FPS. Güncel kullanıcı kararıyla toplam süreyi gerçek hazır ses belirler;40–45 s zorunlu değildir. Sesin tamamı ve gerekli sonuç tutuşu ardından45 kare outro gelir. Tarihsel episode türü1200–1350 kare sözleşmesini korur. StyleProof yayın bölümü değildir;15 s/450 kare istisnasıdır.
 
 İlk kare konuya aittir. İlk2–3 s kısa, doğru bir cümle ve özgün somut olay içerir. Ayrı sabit intro veya açılışta tam ekran logo yok. Şaşırtıcı ölçek/karşılaştırma/dönüşüm içeriğin kendisinden gelir; boş merak cümlesi veya doğrulanmamış rekor kullanılmaz.
 

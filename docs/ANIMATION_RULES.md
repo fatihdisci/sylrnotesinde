@@ -21,3 +21,11 @@ Glow, motion blur ve perspektif mutlak yasak değildir. Kullanıcı talebi doğr
 Rastgele neon, dekoratif glow, gereksiz glitch/flaş, sürekli parçacık, zıplayan kelimeler, her sahnede aynı zoom ve anlamsız3D şekiller kullanılmaz. Kısa ışık vurgusu bile somut bir olayla aynı kareye bağlanmalıdır. Bu çalışmada SVG yeterli olduğundan Three.js, blur ve glow eklenmedi.
 
 Kamera, maske ve nesne dönüşümleri için önce [motion üretim rehberindeki](MOTION_PRODUCTION.md) araçları değerlendir. Her beceriyi her bölümde kullanmak gerekmez.
+
+## Ses temelli özgün sahneler
+
+Yeni üretimde `docs/AUDIO_FIRST.md` uygulanır. Süreyi hazır ses belirler; animasyonlar `direction.events` içindeki gerçek kelime çapalarına bağlanır. Uzun kamera hareketinde tek bir hızlı ease-out bütün uzaklaşmayı ilk saniyeye yığabilir: hareketin görevine göre yumuşak hızlanma/yavaşlama ve yakın plan ara hedefleri kullan. Kamera hedefi anlatılan nesne/yol üzerinde kalmalı; yalnız boş dünya koordinatları arasında pan yapmak yeterli değildir.
+
+`SpatialMotion` katmanlı perspektif projeksiyonu ve eş sayıda noktalı SVG morph sağlar. Sahne geometrisi için ayrı maske, başlık ve altyazıya dokunmadan hızlı yakın planları sınırlar. Yakın planda nesnenin bir kısmının görünmesi bilinçli olabilir; tam adet/ölçek karşılaştırması ise bütün nesneleri görünür, aynı kamera ölçeğinde ve perspektifsiz gösterir. Birime ait kadrajı büyütürsen onun farklı ölçekli ayrıntı görünüşü olduğunu anlaşılır kıl. Zamanın kâğıda/yola/bobine dönüşmesi şematiktir; fiziksel mekanizma iddiası değildir.
+
+Efektler aynı olay karelerinden ayrı bir ses katmanına hazırlanır. Gerçek konuşma RMS’ine göre ducking uygulanır; teknik seviye ölçümü öznel duyulabilirlik veya dinleme onayı değildir. Ani toplu parlaklık değişimini geçiş sayma; master kare farkı raporundaki adayları incele.

@@ -33,3 +33,6 @@ renders/episodes/seconds-film/
 public/episodes/*/sfx.wav
 renders/episodes/motion-study-15/
 renders/episodes/seconds-film-minimax/
+voice-sources/
+renders/episodes/seconds-audio-first/
+public/episodes/*/sfx-stem.wav

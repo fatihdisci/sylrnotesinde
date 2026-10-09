@@ -35,7 +35,7 @@ if (mode === 'render') {
   const metadata = JSON.parse(readFileSync(`${videoPath}.json`, 'utf8'));
   if (metadata.sceneSourceSha256 !== sceneSourceSha256 || metadata.manifestSha256 !== createHash('sha256').update(readFileSync(`public/episodes/${id}/narration-manifest.json`)).digest('hex') || metadata.videoSha256 !== createHash('sha256').update(readFileSync(videoPath)).digest('hex')) throw new Error('STALE render: manifest/timings or MP4 changed');
   // Probe every caption midpoint and its boundaries, plus scene transitions.
-  const frames = [...new Set([0, episode.durationInFrames - 1, ...episode.captions.flatMap(c => [c.from, Math.floor((c.from + c.to) / 2), c.to - 1]), ...episode.scenes.map(s => s.from)])].sort((a,b) => a-b);
+  const frames = [...new Set([0, episode.durationInFrames - 1, ...episode.captions.flatMap(c => [c.from, Math.floor((c.from + c.to) / 2), c.to - 1]), ...episode.scenes.map(s => s.from), ...(episode.direction?.events.flatMap(e=>[e.from,Math.floor((e.from+e.to)/2),e.to-1])??[])])].sort((a,b) => a-b);
   const review = `${dir}/review`; mkdirSync(review, {recursive: true});
   const layouts: {frame: number; violations: unknown[]; collisions: unknown[]; fonts: {loaded: boolean}[]; rects: {name: string; height: number}[]}[] = [];
   for (const frame of frames) {
@@ -49,7 +49,7 @@ if (mode === 'render') {
   writeFileSync(`${dir}/layout-qa.json`, JSON.stringify(layouts, null, 2));
   if (layouts.some(l => l.violations.length || l.collisions.length || l.fonts.some(f => !f.loaded) || l.rects.some(r => r.name === 'caption' && r.height > typography.caption * 1.32 * 2 + 1))) throw new Error(`Layout audit failed: ${dir}/layout-qa.json`);
   // Captioned images are extracted from the actual MP4. Uncaptioned controls use the same frame and scene.
-  const sampleFrames = [...new Set([episode.captions[0].from + 10, ...[3,6,9,12].map(i => Math.floor((episode.captions[Math.min(i,episode.captions.length-1)].from + episode.captions[Math.min(i,episode.captions.length-1)].to)/2)), episode.captions.at(-1)!.to-1, episode.durationInFrames-20])];
+  const sampleFrames = [...new Set([episode.captions[0].from + 10, ...[3,6,9,12].map(i => Math.floor((episode.captions[Math.min(i,episode.captions.length-1)].from + episode.captions[Math.min(i,episode.captions.length-1)].to)/2)), episode.captions.at(-1)!.to-1, episode.durationInFrames-20,...(episode.direction?.events.filter((_,i)=>i%3===0).map(e=>Math.floor((e.from+e.to)/2))??[])])];
   for (const frame of sampleFrames) {
     execFileSync('ffmpeg', ['-y','-v','error','-i',videoPath,'-vf',`select=eq(n\\,${frame})`,'-frames:v','1',`${review}/mp4-${frame}.png`]);
     await renderStill({serveUrl,composition: {...composition, props: {episode, hideCaptions: true, debug: false}},frame,inputProps:{episode,hideCaptions:true},output:`${review}/no-caption-${frame}.png`,logLevel:'error'});

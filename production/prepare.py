@@ -1,23 +1,29 @@
-"""Synthesize once, then align real audio offline. Never runs during a render."""
+"""Import supplied audio, then align locally. M1 is an explicit legacy option."""
 import argparse,json,subprocess,sys
 from pathlib import Path
 from core import ROOT,paths,read,write,spoken,bindings,export
 sys.path.insert(0,str(ROOT/'tts'))
-from cli import run_jobs
-from benchmark import normalize
 
 def main():
-    p=argparse.ArgumentParser();p.add_argument('--id',required=True);group=p.add_mutually_exclusive_group();group.add_argument('--realign',action='store_true');group.add_argument('--audio',type=Path);a=p.parse_args()
-    specpath,dest=paths(a.id);spec=read(specpath);config=read(ROOT/'tts/config/narrator.json')
-    if config['activeModel']!='supertonic-3' or config['settings']['supertonic-3']!={'voice':'M1','speed':1.0}:raise ValueError('Expected user-selected M1 natural speed')
+    p=argparse.ArgumentParser();p.add_argument('--id',required=True);p.add_argument('--script',type=Path);group=p.add_mutually_exclusive_group(required=True);group.add_argument('--realign',action='store_true');group.add_argument('--audio',type=Path);group.add_argument('--synthesize-m1',action='store_true');a=p.parse_args()
+    specpath,dest=paths(a.id);spec=read(specpath)
+    if a.audio and spec.get('format')=='audio-first' and not a.script:raise ValueError('Supply the exact finalized --script text file')
+    if a.script:
+        import unicodedata
+        clean=lambda s:' '.join(unicodedata.normalize('NFC',s).split())
+        if clean(a.script.read_text(encoding='utf-8'))!=clean(spoken(spec)):raise ValueError('Script differs from production phrases. Update the exact transcript first; timings must not be reused.')
     if (dest/'narration.wav').exists() and not a.realign:raise ValueError('Assets exist. Use a new revision ID or --realign for unchanged audio.')
     dest.mkdir(parents=True,exist_ok=True)
     if a.audio:
-        if spec.get('format')!='voice-test' or not spec.get('audioSource',{}).get('provider'):raise ValueError('Imported audio requires an explicit draft-only voice-test and audioSource provider')
+        if not spec.get('audioSource',{}).get('provider'):raise ValueError('Imported audio requires an explicit audioSource provider')
         from import_audio import import_audio
-        import_audio(a.audio,dest,spec['audioSource'])
+        import_audio(a.audio,dest,spec['audioSource'],a.script)
         write(dest/'audio-bindings.json',bindings(specpath,dest/'narration.wav'))
     elif not a.realign:
+        from cli import run_jobs
+        from benchmark import normalize
+        config=read(ROOT/'tts/config/narrator.json')
+        if config['activeModel']!='supertonic-3' or config['settings']['supertonic-3']!={'voice':'M1','speed':1.0}:raise ValueError('Expected user-selected M1 natural speed')
         if spec.get('audioSource'):raise ValueError('External audio test requires --audio; M1 synthesis is not a substitute')
         native=ROOT/f'tts/outputs/episodes/{a.id}/narration.wav'
         (ROOT/'tts/outputs').mkdir(exist_ok=True)
