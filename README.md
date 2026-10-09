@@ -52,3 +52,26 @@ Ortak bileşenler `src/components/`, marka `src/brand/`, üretim araçları `scr
 Yerel anlatım **geçici**. Sözcük zamanları doğrulanmadı; altyazılar sahne/cümle öbekleriyle ilerliyor. Sağlayıcı/kimlik/ayarlar `src/episodes/narrator.config.ts` içinde; anahtar yalnızca ortam değişkeninden alınmalı.
 
 Font kaynağı/lisansı: `public/fonts/SOURCE.md` ve yanındaki OFL dosyaları. Teknik kaynaklar/sürüm doğrulaması: `docs/TECHNICAL_SOURCES.md`.
+
+## Yerel Türkçe TTS karşılaştırması
+
+Üç gerçek aday kurulu: **Antalia-2 Mini 1.0.0**, **EMA Lightning 1.0.4**, **Supertonic 3**. Aktif anlatıcı henüz seçilmedi. Görsel kimlik, animasyonlar, outro ve StyleProof değişmedi.
+
+```sh
+npm run tts:compare           # http://127.0.0.1:3030
+npm run tts:generate -- --model antalia-mini --text 'Ölçek değişir.' --output tts/outputs/manual/ornek.wav --os-offline
+npm run tts:test
+npm run tts:qa
+npm run tts:offline
+```
+
+72 ana örnek + eşitlenmiş dinleme kopyaları `tts/outputs/` altında. Kör A/B/C, on Supertonic profili, doğal hız / sayı normalizasyonu / yaklaşık 42 sn varyantları, dört ölçütte puan ve yorum, yerel JSON kayıt ve test sonu isim açma desteklenir. Hiçbir model kazanan ilan edilmez; model silme yok.
+
+- [Kurulum, lisanslar ve MacBook’a geçiş](tts/docs/INSTALLATION.md)
+- [Dinleme ve ölçüm protokolü](tts/docs/PROTOCOL.md)
+- [Ölçülen sonuçlar / sınırlamalar](tts/docs/QA.md)
+- [Remotion bölüm sesi hazırlama](tts/docs/REMOTION.md)
+
+MacBook Apple Silicon için `git clone https://github.com/fatihdisci/sylrnotesinde.git`, `npm ci`, `npm run tts:setup`, `npm run tts:benchmark`, `npm run tts:compare`. İlk kurulumda internet gerekir; sentez tamamen yerel. Node 22.22.3, Python 3.8+ bootstrap ve ffmpeg hazır olmalı. Ağırlıklar/venv/WAV/kişisel puanlar Git dışıdır; cihazlar arasında ortam kopyalamak yerine kurulum komutunu çalıştır. Kullanıcı puanları otomatik Git senkronu yapmaz; arayüzden JSON yedekle.
+
+Supertonic kodu MIT, ağırlıkları **OpenRAIL-M**: ticari kullanıma genel yasak yok, kullanım kısıtları ve yapay zekâ üretimi açıklama şartı var. Diğer iki aday Apache 2.0. Tam lisans kopyaları ve kaynak revision’ları `tts/docs/licenses/` ve `tts/config/models.json` içinde.

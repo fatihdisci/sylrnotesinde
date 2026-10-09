@@ -1,0 +1,48 @@
+{
+  "checked": "2026-10-09",
+  "supertonicHelper": {
+    "source": "https://github.com/supertone-oss-archive/supertonic/blob/1e9799e964ea4c0dad7cde993b65c3c813a7b373/py/helper.py",
+    "sha256": "b14b1da8a018aa4db6ca8cbb927c32590bfc889b49116ea344c56e8351d94279"
+  },
+  "gitSources": {
+    "ema-lightning": "12797c5f4dbcced8e4b3392b12bba2fe8b9f5ec6",
+    "antalia-1-inspected-only": "20f9bfeaaefefb3ef723c292fe2bb0306e08823d",
+    "supertonic": "1e9799e964ea4c0dad7cde993b65c3c813a7b373"
+  },
+  "pypi": {
+    "antalia-mini": {
+      "version": "1.0.0",
+      "requiresPython": ">=3.10",
+      "artifacts": [
+        {
+          "filename": "antalia_mini-1.0.0-py3-none-any.whl",
+          "sha256": "bd591ba87e2e53de62abc3b261476bbce8af5bbc7b60a451f46cc3b7e73aa8f2"
+        }
+      ]
+    },
+    "ema-lightning": {
+      "version": "1.0.4",
+      "requiresPython": ">=3.11",
+      "artifacts": [
+        {
+          "filename": "ema_lightning-1.0.4-py3-none-any.whl",
+          "sha256": "2a949c49d986ac616f5a63e1369d429b67e755e411005521f209a88266029b56"
+        }
+      ]
+    },
+    "uv": {
+      "version": "0.12.24",
+      "requiresPython": ">=3.8",
+      "artifacts": [
+        {
+          "filename": "uv-0.12.24-py3-none-macosx_11_0_arm64.whl",
+          "sha256": "7b3403f72dfda049295daf5c4c2da716138feecb0e9d5f22ad4b9734518c77dd"
+        },
+        {
+          "filename": "uv-0.12.24-py3-none-win_arm64.whl",
+          "sha256": "8b22387c8a23e9440103d925cb4762dc503932daa47020df6b1fa782192fcb76"
+        }
+      ]
+    }
+  }
+}

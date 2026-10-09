@@ -15,3 +15,4 @@ tts/comparison/private-session.json
 tts/.cache/**
 __pycache__/
 *.pyc
+public/episodes/tts-integration-check/

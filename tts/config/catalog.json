@@ -1,0 +1,4472 @@
+{
+  "created": "2026-10-09T16:01:13Z",
+  "records": [
+    {
+      "model": "antalia-mini",
+      "voice": "default",
+      "text": "Her gün gördüğümüz sayılar bazen düşündüğümüzden çok daha büyük anlamlar taşıyor. Küçük bir fark gibi görünen şey, ölçek değiştiğinde bambaşka bir dünyaya dönüşebilir.",
+      "test": "A",
+      "variant": "original",
+      "speed": 1.0,
+      "seed": 42,
+      "device": "cpu",
+      "nativeSampleRate": 48000,
+      "durationSeconds": 9.698666666666666,
+      "generationSeconds": 0.5548906670883298,
+      "modelLoadSeconds": 4.240945624886081,
+      "cpuSeconds": 0.5457091199999997,
+      "meanCpuPercent": 98.34534122974021,
+      "peakRssMiB": 379.828125,
+      "realtimeFactor": 0.057213087753127216,
+      "rawPeak": 0.8230681419372559,
+      "words": [],
+      "wordTimingsVerified": false,
+      "modelNormalizedText": "her gün gördüğümüz sayılar bazen düşündüğümüzden çok daha büyük anlamlar taşıyor. küçük bir fark gibi görünen şey, ölçek değiştiğinde bambaşka bir dünyaya dönüşebilir.",
+      "offline": true,
+      "networkAttempts": [],
+      "threads": 2,
+      "listeningPath": "outputs/antalia-mini/default/A-original-listen.wav",
+      "rawPath": "outputs/antalia-mini/default/A-original.wav",
+      "loudness": {
+        "input_i": "-20.92",
+        "input_tp": "-1.69",
+        "input_lra": "2.90",
+        "input_thresh": "-31.03",
+        "output_i": "-20.05",
+        "output_tp": "-2.00",
+        "output_lra": "2.00",
+        "output_thresh": "-30.19",
+        "normalization_type": "dynamic",
+        "target_offset": "0.05"
+      },
+      "sha256": "687dbcec50bea15f1fc1cdbf070dd718c3d8fbafbbc5306878f37ba4c2e6b78f"
+    },
+    {
+      "model": "antalia-mini",
+      "voice": "default",
+      "test": "B",
+      "variant": "normalized",
+      "text": "Bir milyon saniye yaklaşık on bir virgül altı gündür. Bir milyar saniye ise yaklaşık otuz bir virgül yedi yıl eder. Aralarında tam bin kat fark bulunur. Aynı karşılaştırmayı kırk iki kilometre, üç yüz seksen dört bin dört yüz kilometre ve bir virgül beş milyon metre için düşünelim.",
+      "speed": 1.0,
+      "seed": 42,
+      "device": "cpu",
+      "nativeSampleRate": 48000,
+      "durationSeconds": 17.645333333333333,
+      "generationSeconds": 0.6429732500109822,
+      "modelLoadSeconds": 0.6450306659098715,
+      "cpuSeconds": 0.8008777760000001,
+      "meanCpuPercent": 124.55849072824117,
+      "peakRssMiB": 403.1875,
+      "realtimeFactor": 0.03643871373040929,
+      "rawPeak": 0.7335626482963562,
+      "words": [],
+      "wordTimingsVerified": false,
+      "modelNormalizedText": "bir milyon saniye yaklaşık on bir virgül altı gündür. bir milyar saniye ise yaklaşık otuz bir virgül yedi yıl eder. aralarında tam bin kat fark bulunur. aynı karşılaştırmayı kırk iki kilometre, üç yüz seksen dört bin dört yüz kilometre ve bir virgül beş milyon metre için düşünelim.",
+      "offline": true,
+      "networkAttempts": [],
+      "threads": 2,
+      "listeningPath": "outputs/antalia-mini/default/B-normalized-listen.wav",
+      "rawPath": "outputs/antalia-mini/default/B-normalized.wav",
+      "loudness": {
+        "input_i": "-21.47",
+        "input_tp": "-2.69",
+        "input_lra": "1.70",
+        "input_thresh": "-31.85",
+        "output_i": "-20.01",
+        "output_tp": "-2.00",
+        "output_lra": "1.60",
+        "output_thresh": "-30.42",
+        "normalization_type": "dynamic",
+        "target_offset": "0.01"
+      },
+      "sha256": "75aef1028f8f13d758a450aa76c81e654d15394a84a492ea30688c0f18155fe8"
+    },
+    {
+      "model": "antalia-mini",
+      "voice": "default",
+      "text": "Bir milyon saniye yaklaşık 11,6 gündür. Bir milyar saniye ise yaklaşık 31,7 yıl eder. Aralarında tam bin kat fark bulunur. Aynı karşılaştırmayı 42 kilometre, 384.400 kilometre ve 1,5 milyon metre için düşünelim.",
+      "test": "B",
+      "variant": "original",
+      "speed": 1.0,
+      "seed": 42,
+      "device": "cpu",
+      "nativeSampleRate": 48000,
+      "durationSeconds": 17.293333333333333,
+      "generationSeconds": 0.3488922920078039,
+      "modelLoadSeconds": 4.240945624886081,
+      "cpuSeconds": 0.5109668799999998,
+      "meanCpuPercent": 146.45404662266677,
+      "peakRssMiB": 445.09375,
+      "realtimeFactor": 0.020174959059819038,
+      "rawPeak": 0.7195784449577332,
+      "words": [],
+      "wordTimingsVerified": false,
+      "modelNormalizedText": "bir milyon saniye yaklaşık on bir virgül altı gündür. bir milyar saniye ise yaklaşık otuz bir virgül yedi yıl eder. aralarında tam bin kat fark bulunur. aynı karşılaştırmayı kırk iki kilometre, üç yüz seksen dört bin dört yüz kilometre ve bir buçuk milyon metre için düşünelim.",
+      "offline": true,
+      "networkAttempts": [],
+      "threads": 2,
+      "listeningPath": "outputs/antalia-mini/default/B-original-listen.wav",
+      "rawPath": "outputs/antalia-mini/default/B-original.wav",
+      "loudness": {
+        "input_i": "-21.61",
+        "input_tp": "-2.85",
+        "input_lra": "2.60",
+        "input_thresh": "-31.99",
+        "output_i": "-20.01",
+        "output_tp": "-2.00",
+        "output_lra": "1.80",
+        "output_thresh": "-30.41",
+        "normalization_type": "dynamic",
+        "target_offset": "0.01"
+      },
+      "sha256": "b9d3b2ab70237055cf9598f05b0367075b15908396db57161f6dd100e3c7004b"
+    },
+    {
+      "model": "antalia-mini",
+      "voice": "default",
+      "text": "Bir kâğıdı 42 kez katlayabilseydiniz, ortaya çıkan kalınlığın Ay'a ulaşabileceğini biliyor muydunuz?",
+      "test": "C",
+      "variant": "original",
+      "speed": 1.0,
+      "seed": 42,
+      "device": "cpu",
+      "nativeSampleRate": 48000,
+      "durationSeconds": 6.304,
+      "generationSeconds": 0.13771883305162191,
+      "modelLoadSeconds": 4.240945624886081,
+      "cpuSeconds": 0.18139875199999977,
+      "meanCpuPercent": 131.71673617943384,
+      "peakRssMiB": 466.921875,
+      "realtimeFactor": 0.021846261588137992,
+      "rawPeak": 0.7311311364173889,
+      "words": [],
+      "wordTimingsVerified": false,
+      "modelNormalizedText": "bir kâğıdı kırk iki kez katlayabilseydiniz, ortaya çıkan kalınlığın ay'a ulaşabileceğini biliyor muydunuz?",
+      "offline": true,
+      "networkAttempts": [],
+      "threads": 2,
+      "listeningPath": "outputs/antalia-mini/default/C-original-listen.wav",
+      "rawPath": "outputs/antalia-mini/default/C-original.wav",
+      "loudness": {
+        "input_i": "-20.79",
+        "input_tp": "-2.71",
+        "input_lra": "1.40",
+        "input_thresh": "-30.99",
+        "output_i": "-19.97",
+        "output_tp": "-2.00",
+        "output_lra": "1.10",
+        "output_thresh": "-30.27",
+        "normalization_type": "dynamic",
+        "target_offset": "-0.03"
+      },
+      "sha256": "2977b6f010faa5ab257239df09246ecef9e667ee3ddbf96159ae967ceeac291b"
+    },
+    {
+      "model": "antalia-mini",
+      "voice": "default",
+      "test": "D",
+      "variant": "duration-42",
+      "text": "Gece gökyüzüne baktığımızda, aslında geçmişten gelen ışığı görürüz. Işık çok hızlı ilerler, ama yolculuğu anlık değildir. Ay'dan yansıyan ışığın Dünya'ya ulaşması yaklaşık bir saniyeden biraz fazla sürer. Güneş'ten gelen ışık ise yaklaşık sekiz dakikada bize ulaşır. Bu yüzden Güneş'i her zaman birkaç dakika önceki hâliyle görürüz. Daha uzak yıldızlarda bu gecikme yıllara dönüşür. Bir yıldızın uzaklığını ışık yılıyla söylemek, ışığının bize kaç yılda ulaştığını anlatır. Işık yılı bir zaman birimi değil, mesafe birimidir. Evrenin ölçeği büyüdükçe, baktığımız görüntü de geçmişe doğru uzanır. Gökyüzü, farklı zamanlardan gelen ışıkların aynı anda buluştuğu bir manzara gibidir.",
+      "speed": 1.0313015873015874,
+      "seed": 42,
+      "device": "cpu",
+      "nativeSampleRate": 48000,
+      "durationSeconds": 42.04533333333333,
+      "generationSeconds": 1.0355295410845429,
+      "modelLoadSeconds": 0.4079247920308262,
+      "cpuSeconds": 1.438530836,
+      "meanCpuPercent": 138.91741171317827,
+      "peakRssMiB": 443.09375,
+      "realtimeFactor": 0.02462888170905712,
+      "rawPeak": 0.8355621695518494,
+      "words": [],
+      "wordTimingsVerified": false,
+      "modelNormalizedText": "gece gökyüzüne baktığımızda, aslında geçmişten gelen ışığı görürüz. ışık çok hızlı ilerler, ama yolculuğu anlık değildir. ay'dan yansıyan ışığın dünya'ya ulaşması yaklaşık bir saniyeden biraz fazla sürer. güneş'ten gelen ışık ise yaklaşık sekiz dakikada bize ulaşır. bu yüzden güneş'i her zaman birkaç dakika önceki hâliyle görürüz. daha uzak yıldızlarda bu gecikme yıllara dönüşür. bir yıldızın uzaklığını ışık yılıyla söylemek, ışığının bize kaç yılda ulaştığını anlatır. ışık yılı bir zaman birimi değil, mesafe birimidir. evrenin ölçeği büyüdükçe, baktığımız görüntü de geçmişe doğru uzanır. gökyüzü, farklı zamanlardan gelen ışıkların aynı anda buluştuğu bir manzara gibidir.",
+      "offline": true,
+      "networkAttempts": [],
+      "threads": 2,
+      "listeningPath": "outputs/antalia-mini/default/D-duration-42-listen.wav",
+      "rawPath": "outputs/antalia-mini/default/D-duration-42.wav",
+      "loudness": {
+        "input_i": "-21.07",
+        "input_tp": "-1.55",
+        "input_lra": "1.90",
+        "input_thresh": "-31.56",
+        "output_i": "-20.00",
+        "output_tp": "-2.00",
+        "output_lra": "1.70",
+        "output_thresh": "-30.53",
+        "normalization_type": "dynamic",
+        "target_offset": "0.00"
+      },
+      "sha256": "cf56a79ae2d4ef62c9c52b39c9966a078d15cddb06d92a90a3ad06306f34189a"
+    },
+    {
+      "model": "antalia-mini",
+      "voice": "default",
+      "text": "Gece gökyüzüne baktığımızda, aslında geçmişten gelen ışığı görürüz. Işık çok hızlı ilerler, ama yolculuğu anlık değildir. Ay'dan yansıyan ışığın Dünya'ya ulaşması yaklaşık bir saniyeden biraz fazla sürer. Güneş'ten gelen ışık ise yaklaşık sekiz dakikada bize ulaşır. Bu yüzden Güneş'i her zaman birkaç dakika önceki hâliyle görürüz. Daha uzak yıldızlarda bu gecikme yıllara dönüşür. Bir yıldızın uzaklığını ışık yılıyla söylemek, ışığının bize kaç yılda ulaştığını anlatır. Işık yılı bir zaman birimi değil, mesafe birimidir. Evrenin ölçeği büyüdükçe, baktığımız görüntü de geçmişe doğru uzanır. Gökyüzü, farklı zamanlardan gelen ışıkların aynı anda buluştuğu bir manzara gibidir.",
+      "test": "D",
+      "variant": "original",
+      "speed": 1.0,
+      "seed": 42,
+      "device": "cpu",
+      "nativeSampleRate": 48000,
+      "durationSeconds": 43.31466666666667,
+      "generationSeconds": 0.7901357500813901,
+      "modelLoadSeconds": 4.240945624886081,
+      "cpuSeconds": 1.2023822079999995,
+      "meanCpuPercent": 152.1741305688478,
+      "peakRssMiB": 526.96875,
+      "realtimeFactor": 0.01824175991384112,
+      "rawPeak": 0.9165489673614502,
+      "words": [],
+      "wordTimingsVerified": false,
+      "modelNormalizedText": "gece gökyüzüne baktığımızda, aslında geçmişten gelen ışığı görürüz. ışık çok hızlı ilerler, ama yolculuğu anlık değildir. ay'dan yansıyan ışığın dünya'ya ulaşması yaklaşık bir saniyeden biraz fazla sürer. güneş'ten gelen ışık ise yaklaşık sekiz dakikada bize ulaşır. bu yüzden güneş'i her zaman birkaç dakika önceki hâliyle görürüz. daha uzak yıldızlarda bu gecikme yıllara dönüşür. bir yıldızın uzaklığını ışık yılıyla söylemek, ışığının bize kaç yılda ulaştığını anlatır. ışık yılı bir zaman birimi değil, mesafe birimidir. evrenin ölçeği büyüdükçe, baktığımız görüntü de geçmişe doğru uzanır. gökyüzü, farklı zamanlardan gelen ışıkların aynı anda buluştuğu bir manzara gibidir.",
+      "offline": true,
+      "networkAttempts": [],
+      "threads": 2,
+      "listeningPath": "outputs/antalia-mini/default/D-original-listen.wav",
+      "rawPath": "outputs/antalia-mini/default/D-original.wav",
+      "loudness": {
+        "input_i": "-21.07",
+        "input_tp": "-0.76",
+        "input_lra": "2.10",
+        "input_thresh": "-31.55",
+        "output_i": "-20.01",
+        "output_tp": "-2.00",
+        "output_lra": "2.00",
+        "output_thresh": "-30.51",
+        "normalization_type": "dynamic",
+        "target_offset": "0.01"
+      },
+      "sha256": "ac3b3d7b7541c2d70b62b851801a3055bdc0f5859cd1cd1aef817378b4543b08"
+    },
+    {
+      "model": "ema-lightning",
+      "voice": "default",
+      "text": "Her gün gördüğümüz sayılar bazen düşündüğümüzden çok daha büyük anlamlar taşıyor. Küçük bir fark gibi görünen şey, ölçek değiştiğinde bambaşka bir dünyaya dönüşebilir.",
+      "test": "A",
+      "variant": "original",
+      "speed": 1.0,
+      "seed": 42,
+      "device": "cpu",
+      "nativeSampleRate": 48000,
+      "durationSeconds": 8.96,
+      "generationSeconds": 0.3586447909474373,
+      "modelLoadSeconds": 4.801003667060286,
+      "cpuSeconds": 0.5087532480000001,
+      "meanCpuPercent": 141.85435306505332,
+      "peakRssMiB": 410.3125,
+      "realtimeFactor": 0.04002732041824077,
+      "rawPeak": 0.6877396106719971,
+      "words": [
+        {
+          "text": "her",
+          "start": 0.0,
+          "end": 0.2
+        },
+        {
+          "text": "gün",
+          "start": 0.2,
+          "end": 0.4
+        },
+        {
+          "text": "gördüğümüz",
+          "start": 0.4,
+          "end": 0.92
+        },
+        {
+          "text": "sayılar",
+          "start": 0.92,
+          "end": 1.36
+        },
+        {
+          "text": "bazen",
+          "start": 1.36,
+          "end": 1.72
+        },
+        {
+          "text": "düşündüğümüzden",
+          "start": 1.72,
+          "end": 2.48
+        },
+        {
+          "text": "çok",
+          "start": 2.48,
+          "end": 2.72
+        },
+        {
+          "text": "daha",
+          "start": 2.72,
+          "end": 2.96
+        },
+        {
+          "text": "büyük",
+          "start": 2.96,
+          "end": 3.24
+        },
+        {
+          "text": "anlamlar",
+          "start": 3.24,
+          "end": 3.72
+        },
+        {
+          "text": "taşıyor.",
+          "start": 3.72,
+          "end": 4.44
+        },
+        {
+          "text": "küçük",
+          "start": 4.44,
+          "end": 4.72
+        },
+        {
+          "text": "bir",
+          "start": 4.72,
+          "end": 4.84
+        },
+        {
+          "text": "fark",
+          "start": 4.84,
+          "end": 5.12
+        },
+        {
+          "text": "gibi",
+          "start": 5.12,
+          "end": 5.32
+        },
+        {
+          "text": "görünen",
+          "start": 5.32,
+          "end": 5.76
+        },
+        {
+          "text": "şey,",
+          "start": 5.76,
+          "end": 6.2
+        },
+        {
+          "text": "ölçek",
+          "start": 6.2,
+          "end": 6.56
+        },
+        {
+          "text": "değiştiğinde",
+          "start": 6.56,
+          "end": 7.2
+        },
+        {
+          "text": "bambaşka",
+          "start": 7.2,
+          "end": 7.72
+        },
+        {
+          "text": "bir",
+          "start": 7.72,
+          "end": 7.84
+        },
+        {
+          "text": "dünyaya",
+          "start": 7.84,
+          "end": 8.24
+        },
+        {
+          "text": "dönüşebilir.",
+          "start": 8.24,
+          "end": 8.96
+        }
+      ],
+      "wordTimingsVerified": false,
+      "modelNormalizedText": null,
+      "offline": true,
+      "networkAttempts": [],
+      "threads": 2,
+      "listeningPath": "outputs/ema-lightning/default/A-original-listen.wav",
+      "rawPath": "outputs/ema-lightning/default/A-original.wav",
+      "loudness": {
+        "input_i": "-23.18",
+        "input_tp": "-3.25",
+        "input_lra": "1.60",
+        "input_thresh": "-33.25",
+        "output_i": "-20.02",
+        "output_tp": "-2.00",
+        "output_lra": "1.10",
+        "output_thresh": "-30.12",
+        "normalization_type": "dynamic",
+        "target_offset": "0.02"
+      },
+      "sha256": "42a8d9cdbfbd1fbcafae171980e7a802e55c44bed6c4021508a1a4551279eb4c"
+    },
+    {
+      "model": "ema-lightning",
+      "voice": "default",
+      "test": "B",
+      "variant": "normalized",
+      "text": "Bir milyon saniye yaklaşık on bir virgül altı gündür. Bir milyar saniye ise yaklaşık otuz bir virgül yedi yıl eder. Aralarında tam bin kat fark bulunur. Aynı karşılaştırmayı kırk iki kilometre, üç yüz seksen dört bin dört yüz kilometre ve bir virgül beş milyon metre için düşünelim.",
+      "speed": 1.0,
+      "seed": 42,
+      "device": "cpu",
+      "nativeSampleRate": 48000,
+      "durationSeconds": 16.25,
+      "generationSeconds": 0.6295742080546916,
+      "modelLoadSeconds": 0.6644426668062806,
+      "cpuSeconds": 0.8725077519999999,
+      "meanCpuPercent": 138.5869593825871,
+      "peakRssMiB": 386.9375,
+      "realtimeFactor": 0.03874302818798102,
+      "rawPeak": 0.586063027381897,
+      "words": [
+        {
+          "text": "bir",
+          "start": 0.0,
+          "end": 0.2
+        },
+        {
+          "text": "milyon",
+          "start": 0.2,
+          "end": 0.56
+        },
+        {
+          "text": "saniye",
+          "start": 0.56,
+          "end": 0.96
+        },
+        {
+          "text": "yaklaşık",
+          "start": 0.96,
+          "end": 1.52
+        },
+        {
+          "text": "on",
+          "start": 1.52,
+          "end": 1.64
+        },
+        {
+          "text": "bir",
+          "start": 1.64,
+          "end": 1.8
+        },
+        {
+          "text": "virgül",
+          "start": 1.8,
+          "end": 2.2
+        },
+        {
+          "text": "altı",
+          "start": 2.2,
+          "end": 2.48
+        },
+        {
+          "text": "gündür.",
+          "start": 2.48,
+          "end": 3.12
+        },
+        {
+          "text": "bir",
+          "start": 3.12,
+          "end": 3.28
+        },
+        {
+          "text": "milyar",
+          "start": 3.28,
+          "end": 3.68
+        },
+        {
+          "text": "saniye",
+          "start": 3.68,
+          "end": 4.08
+        },
+        {
+          "text": "ise",
+          "start": 4.08,
+          "end": 4.32
+        },
+        {
+          "text": "yaklaşık",
+          "start": 4.32,
+          "end": 4.84
+        },
+        {
+          "text": "otuz",
+          "start": 4.84,
+          "end": 5.12
+        },
+        {
+          "text": "bir",
+          "start": 5.12,
+          "end": 5.28
+        },
+        {
+          "text": "virgül",
+          "start": 5.28,
+          "end": 5.68
+        },
+        {
+          "text": "yedi",
+          "start": 5.68,
+          "end": 5.92
+        },
+        {
+          "text": "yıl",
+          "start": 5.92,
+          "end": 6.08
+        },
+        {
+          "text": "eder.",
+          "start": 6.08,
+          "end": 6.68
+        },
+        {
+          "text": "aralarında",
+          "start": 6.68,
+          "end": 7.28
+        },
+        {
+          "text": "tam",
+          "start": 7.28,
+          "end": 7.52
+        },
+        {
+          "text": "bin",
+          "start": 7.52,
+          "end": 7.72
+        },
+        {
+          "text": "kat",
+          "start": 7.72,
+          "end": 7.96
+        },
+        {
+          "text": "fark",
+          "start": 7.96,
+          "end": 8.24
+        },
+        {
+          "text": "bulunur.",
+          "start": 8.24,
+          "end": 8.72
+        },
+        {
+          "text": "aynı",
+          "start": 8.97,
+          "end": 9.25
+        },
+        {
+          "text": "karşılaştırmayı",
+          "start": 9.25,
+          "end": 10.17
+        },
+        {
+          "text": "kırk",
+          "start": 10.17,
+          "end": 10.45
+        },
+        {
+          "text": "iki",
+          "start": 10.45,
+          "end": 10.65
+        },
+        {
+          "text": "kilometre,",
+          "start": 10.65,
+          "end": 11.53
+        },
+        {
+          "text": "üç",
+          "start": 11.53,
+          "end": 11.69
+        },
+        {
+          "text": "yüz",
+          "start": 11.69,
+          "end": 11.85
+        },
+        {
+          "text": "seksen",
+          "start": 11.85,
+          "end": 12.29
+        },
+        {
+          "text": "dört",
+          "start": 12.29,
+          "end": 12.57
+        },
+        {
+          "text": "bin",
+          "start": 12.57,
+          "end": 12.77
+        },
+        {
+          "text": "dört",
+          "start": 12.77,
+          "end": 13.05
+        },
+        {
+          "text": "yüz",
+          "start": 13.05,
+          "end": 13.21
+        },
+        {
+          "text": "kilometre",
+          "start": 13.21,
+          "end": 13.81
+        },
+        {
+          "text": "ve",
+          "start": 13.81,
+          "end": 13.93
+        },
+        {
+          "text": "bir",
+          "start": 13.93,
+          "end": 14.13
+        },
+        {
+          "text": "virgül",
+          "start": 14.13,
+          "end": 14.53
+        },
+        {
+          "text": "beş",
+          "start": 14.53,
+          "end": 14.81
+        },
+        {
+          "text": "milyon",
+          "start": 14.81,
+          "end": 15.13
+        },
+        {
+          "text": "metre",
+          "start": 15.13,
+          "end": 15.45
+        },
+        {
+          "text": "için",
+          "start": 15.45,
+          "end": 15.69
+        },
+        {
+          "text": "düşünelim.",
+          "start": 15.69,
+          "end": 16.25
+        }
+      ],
+      "wordTimingsVerified": false,
+      "modelNormalizedText": null,
+      "offline": true,
+      "networkAttempts": [],
+      "threads": 2,
+      "listeningPath": "outputs/ema-lightning/default/B-normalized-listen.wav",
+      "rawPath": "outputs/ema-lightning/default/B-normalized.wav",
+      "loudness": {
+        "input_i": "-25.37",
+        "input_tp": "-4.64",
+        "input_lra": "1.60",
+        "input_thresh": "-35.44",
+        "output_i": "-20.01",
+        "output_tp": "-2.00",
+        "output_lra": "1.50",
+        "output_thresh": "-30.12",
+        "normalization_type": "dynamic",
+        "target_offset": "0.01"
+      },
+      "sha256": "308e0cccb5a269f7a2238bd7d5e49aa2f06eb8ea1deee6924f48a71906972ab3"
+    },
+    {
+      "model": "ema-lightning",
+      "voice": "default",
+      "text": "Bir milyon saniye yaklaşık 11,6 gündür. Bir milyar saniye ise yaklaşık 31,7 yıl eder. Aralarında tam bin kat fark bulunur. Aynı karşılaştırmayı 42 kilometre, 384.400 kilometre ve 1,5 milyon metre için düşünelim.",
+      "test": "B",
+      "variant": "original",
+      "speed": 1.0,
+      "seed": 42,
+      "device": "cpu",
+      "nativeSampleRate": 48000,
+      "durationSeconds": 16.25,
+      "generationSeconds": 0.6163489161990583,
+      "modelLoadSeconds": 4.801003667060286,
+      "cpuSeconds": 0.8772651200000001,
+      "meanCpuPercent": 142.33254848730445,
+      "peakRssMiB": 414.625,
+      "realtimeFactor": 0.037929164073788206,
+      "rawPeak": 0.586063027381897,
+      "words": [
+        {
+          "text": "bir",
+          "start": 0.0,
+          "end": 0.2
+        },
+        {
+          "text": "milyon",
+          "start": 0.2,
+          "end": 0.56
+        },
+        {
+          "text": "saniye",
+          "start": 0.56,
+          "end": 0.96
+        },
+        {
+          "text": "yaklaşık",
+          "start": 0.96,
+          "end": 1.52
+        },
+        {
+          "text": "on",
+          "start": 1.52,
+          "end": 1.64
+        },
+        {
+          "text": "bir",
+          "start": 1.64,
+          "end": 1.8
+        },
+        {
+          "text": "virgül",
+          "start": 1.8,
+          "end": 2.2
+        },
+        {
+          "text": "altı",
+          "start": 2.2,
+          "end": 2.48
+        },
+        {
+          "text": "gündür.",
+          "start": 2.48,
+          "end": 3.12
+        },
+        {
+          "text": "bir",
+          "start": 3.12,
+          "end": 3.28
+        },
+        {
+          "text": "milyar",
+          "start": 3.28,
+          "end": 3.68
+        },
+        {
+          "text": "saniye",
+          "start": 3.68,
+          "end": 4.08
+        },
+        {
+          "text": "ise",
+          "start": 4.08,
+          "end": 4.32
+        },
+        {
+          "text": "yaklaşık",
+          "start": 4.32,
+          "end": 4.84
+        },
+        {
+          "text": "otuz",
+          "start": 4.84,
+          "end": 5.12
+        },
+        {
+          "text": "bir",
+          "start": 5.12,
+          "end": 5.28
+        },
+        {
+          "text": "virgül",
+          "start": 5.28,
+          "end": 5.68
+        },
+        {
+          "text": "yedi",
+          "start": 5.68,
+          "end": 5.92
+        },
+        {
+          "text": "yıl",
+          "start": 5.92,
+          "end": 6.08
+        },
+        {
+          "text": "eder.",
+          "start": 6.08,
+          "end": 6.68
+        },
+        {
+          "text": "aralarında",
+          "start": 6.68,
+          "end": 7.28
+        },
+        {
+          "text": "tam",
+          "start": 7.28,
+          "end": 7.52
+        },
+        {
+          "text": "bin",
+          "start": 7.52,
+          "end": 7.72
+        },
+        {
+          "text": "kat",
+          "start": 7.72,
+          "end": 7.96
+        },
+        {
+          "text": "fark",
+          "start": 7.96,
+          "end": 8.24
+        },
+        {
+          "text": "bulunur.",
+          "start": 8.24,
+          "end": 8.72
+        },
+        {
+          "text": "aynı",
+          "start": 8.97,
+          "end": 9.25
+        },
+        {
+          "text": "karşılaştırmayı",
+          "start": 9.25,
+          "end": 10.17
+        },
+        {
+          "text": "kırk",
+          "start": 10.17,
+          "end": 10.45
+        },
+        {
+          "text": "iki",
+          "start": 10.45,
+          "end": 10.65
+        },
+        {
+          "text": "kilometre,",
+          "start": 10.65,
+          "end": 11.53
+        },
+        {
+          "text": "üç",
+          "start": 11.53,
+          "end": 11.69
+        },
+        {
+          "text": "yüz",
+          "start": 11.69,
+          "end": 11.85
+        },
+        {
+          "text": "seksen",
+          "start": 11.85,
+          "end": 12.29
+        },
+        {
+          "text": "dört",
+          "start": 12.29,
+          "end": 12.57
+        },
+        {
+          "text": "bin",
+          "start": 12.57,
+          "end": 12.77
+        },
+        {
+          "text": "dört",
+          "start": 12.77,
+          "end": 13.05
+        },
+        {
+          "text": "yüz",
+          "start": 13.05,
+          "end": 13.21
+        },
+        {
+          "text": "kilometre",
+          "start": 13.21,
+          "end": 13.81
+        },
+        {
+          "text": "ve",
+          "start": 13.81,
+          "end": 13.93
+        },
+        {
+          "text": "bir",
+          "start": 13.93,
+          "end": 14.13
+        },
+        {
+          "text": "virgül",
+          "start": 14.13,
+          "end": 14.53
+        },
+        {
+          "text": "beş",
+          "start": 14.53,
+          "end": 14.81
+        },
+        {
+          "text": "milyon",
+          "start": 14.81,
+          "end": 15.13
+        },
+        {
+          "text": "metre",
+          "start": 15.13,
+          "end": 15.45
+        },
+        {
+          "text": "için",
+          "start": 15.45,
+          "end": 15.69
+        },
+        {
+          "text": "düşünelim.",
+          "start": 15.69,
+          "end": 16.25
+        }
+      ],
+      "wordTimingsVerified": false,
+      "modelNormalizedText": null,
+      "offline": true,
+      "networkAttempts": [],
+      "threads": 2,
+      "listeningPath": "outputs/ema-lightning/default/B-original-listen.wav",
+      "rawPath": "outputs/ema-lightning/default/B-original.wav",
+      "loudness": {
+        "input_i": "-25.37",
+        "input_tp": "-4.64",
+        "input_lra": "1.60",
+        "input_thresh": "-35.44",
+        "output_i": "-20.01",
+        "output_tp": "-2.00",
+        "output_lra": "1.50",
+        "output_thresh": "-30.12",
+        "normalization_type": "dynamic",
+        "target_offset": "0.01"
+      },
+      "sha256": "824124e8fdba6517ea3a0698daf57b0804134b4bce773b83179f314d38d195c8"
+    },
+    {
+      "model": "ema-lightning",
+      "voice": "default",
+      "text": "Bir kâğıdı 42 kez katlayabilseydiniz, ortaya çıkan kalınlığın Ay'a ulaşabileceğini biliyor muydunuz?",
+      "test": "C",
+      "variant": "original",
+      "speed": 1.0,
+      "seed": 42,
+      "device": "cpu",
+      "nativeSampleRate": 48000,
+      "durationSeconds": 5.6,
+      "generationSeconds": 0.2833829999435693,
+      "modelLoadSeconds": 4.801003667060286,
+      "cpuSeconds": 0.3580336960000001,
+      "meanCpuPercent": 126.34268677771644,
+      "peakRssMiB": 414.765625,
+      "realtimeFactor": 0.050604107132780234,
+      "rawPeak": 0.5897263288497925,
+      "words": [
+        {
+          "text": "bir",
+          "start": 0.0,
+          "end": 0.16
+        },
+        {
+          "text": "kağıdı",
+          "start": 0.16,
+          "end": 0.56
+        },
+        {
+          "text": "kırk",
+          "start": 0.56,
+          "end": 0.84
+        },
+        {
+          "text": "iki",
+          "start": 0.84,
+          "end": 1.04
+        },
+        {
+          "text": "kez",
+          "start": 1.04,
+          "end": 1.28
+        },
+        {
+          "text": "katlayabilseydiniz,",
+          "start": 1.28,
+          "end": 2.52
+        },
+        {
+          "text": "ortaya",
+          "start": 2.52,
+          "end": 2.84
+        },
+        {
+          "text": "çıkan",
+          "start": 2.84,
+          "end": 3.16
+        },
+        {
+          "text": "kalınlığın",
+          "start": 3.16,
+          "end": 3.72
+        },
+        {
+          "text": "ay'a",
+          "start": 3.72,
+          "end": 3.92
+        },
+        {
+          "text": "ulaşabileceğini",
+          "start": 3.92,
+          "end": 4.68
+        },
+        {
+          "text": "biliyor",
+          "start": 4.68,
+          "end": 5.0
+        },
+        {
+          "text": "muydunuz?",
+          "start": 5.0,
+          "end": 5.6
+        }
+      ],
+      "wordTimingsVerified": false,
+      "modelNormalizedText": null,
+      "offline": true,
+      "networkAttempts": [],
+      "threads": 2,
+      "listeningPath": "outputs/ema-lightning/default/C-original-listen.wav",
+      "rawPath": "outputs/ema-lightning/default/C-original.wav",
+      "loudness": {
+        "input_i": "-26.46",
+        "input_tp": "-4.55",
+        "input_lra": "0.60",
+        "input_thresh": "-36.46",
+        "output_i": "-20.06",
+        "output_tp": "-2.00",
+        "output_lra": "0.40",
+        "output_thresh": "-30.06",
+        "normalization_type": "dynamic",
+        "target_offset": "0.06"
+      },
+      "sha256": "fad12ec8a674d0e578dbb1e5089533bfdfa5fb70f30c699e7da72dc0141df87e"
+    },
+    {
+      "model": "ema-lightning",
+      "voice": "default",
+      "test": "D",
+      "variant": "duration-42",
+      "text": "Gece gökyüzüne baktığımızda, aslında geçmişten gelen ışığı görürüz. Işık çok hızlı ilerler, ama yolculuğu anlık değildir. Ay'dan yansıyan ışığın Dünya'ya ulaşması yaklaşık bir saniyeden biraz fazla sürer. Güneş'ten gelen ışık ise yaklaşık sekiz dakikada bize ulaşır. Bu yüzden Güneş'i her zaman birkaç dakika önceki hâliyle görürüz. Daha uzak yıldızlarda bu gecikme yıllara dönüşür. Bir yıldızın uzaklığını ışık yılıyla söylemek, ışığının bize kaç yılda ulaştığını anlatır. Işık yılı bir zaman birimi değil, mesafe birimidir. Evrenin ölçeği büyüdükçe, baktığımız görüntü de geçmişe doğru uzanır. Gökyüzü, farklı zamanlardan gelen ışıkların aynı anda buluştuğu bir manzara gibidir.",
+      "speed": 0.899047619047619,
+      "seed": 42,
+      "device": "cpu",
+      "nativeSampleRate": 48000,
+      "durationSeconds": 41.88,
+      "generationSeconds": 1.5676682081539184,
+      "modelLoadSeconds": 0.4775824169628322,
+      "cpuSeconds": 2.241378888,
+      "meanCpuPercent": 142.97533600170672,
+      "peakRssMiB": 394.28125,
+      "realtimeFactor": 0.03743238319374208,
+      "rawPeak": 0.7380110025405884,
+      "words": [
+        {
+          "text": "gece",
+          "start": 0.0,
+          "end": 0.28
+        },
+        {
+          "text": "gökyüzüne",
+          "start": 0.28,
+          "end": 0.8
+        },
+        {
+          "text": "baktığımızda,",
+          "start": 0.8,
+          "end": 1.72
+        },
+        {
+          "text": "aslında",
+          "start": 1.72,
+          "end": 2.16
+        },
+        {
+          "text": "geçmişten",
+          "start": 2.16,
+          "end": 2.76
+        },
+        {
+          "text": "gelen",
+          "start": 2.76,
+          "end": 3.08
+        },
+        {
+          "text": "ışığı",
+          "start": 3.08,
+          "end": 3.44
+        },
+        {
+          "text": "görürüz.",
+          "start": 3.44,
+          "end": 4.24
+        },
+        {
+          "text": "ışık",
+          "start": 4.24,
+          "end": 4.52
+        },
+        {
+          "text": "çok",
+          "start": 4.52,
+          "end": 4.72
+        },
+        {
+          "text": "hızlı",
+          "start": 4.72,
+          "end": 5.04
+        },
+        {
+          "text": "ilerler,",
+          "start": 5.04,
+          "end": 5.72
+        },
+        {
+          "text": "ama",
+          "start": 5.72,
+          "end": 5.92
+        },
+        {
+          "text": "yolculuğu",
+          "start": 5.92,
+          "end": 6.48
+        },
+        {
+          "text": "anlık",
+          "start": 6.48,
+          "end": 6.8
+        },
+        {
+          "text": "değildir.",
+          "start": 6.8,
+          "end": 7.4
+        },
+        {
+          "text": "ay'dan",
+          "start": 7.65,
+          "end": 8.05
+        },
+        {
+          "text": "yansıyan",
+          "start": 8.05,
+          "end": 8.61
+        },
+        {
+          "text": "ışığın",
+          "start": 8.61,
+          "end": 9.01
+        },
+        {
+          "text": "dünya'ya",
+          "start": 9.01,
+          "end": 9.49
+        },
+        {
+          "text": "ulaşması",
+          "start": 9.49,
+          "end": 10.05
+        },
+        {
+          "text": "yaklaşık",
+          "start": 10.05,
+          "end": 10.57
+        },
+        {
+          "text": "bir",
+          "start": 10.57,
+          "end": 10.73
+        },
+        {
+          "text": "saniyeden",
+          "start": 10.73,
+          "end": 11.33
+        },
+        {
+          "text": "biraz",
+          "start": 11.33,
+          "end": 11.65
+        },
+        {
+          "text": "fazla",
+          "start": 11.65,
+          "end": 12.05
+        },
+        {
+          "text": "sürer.",
+          "start": 12.05,
+          "end": 12.73
+        },
+        {
+          "text": "güneş'ten",
+          "start": 12.73,
+          "end": 13.29
+        },
+        {
+          "text": "gelen",
+          "start": 13.29,
+          "end": 13.61
+        },
+        {
+          "text": "ışık",
+          "start": 13.61,
+          "end": 13.89
+        },
+        {
+          "text": "ise",
+          "start": 13.89,
+          "end": 14.13
+        },
+        {
+          "text": "yaklaşık",
+          "start": 14.13,
+          "end": 14.65
+        },
+        {
+          "text": "sekiz",
+          "start": 14.65,
+          "end": 14.97
+        },
+        {
+          "text": "dakikada",
+          "start": 14.97,
+          "end": 15.53
+        },
+        {
+          "text": "bize",
+          "start": 15.53,
+          "end": 15.81
+        },
+        {
+          "text": "ulaşır.",
+          "start": 15.81,
+          "end": 16.37
+        },
+        {
+          "text": "bu",
+          "start": 16.62,
+          "end": 16.74
+        },
+        {
+          "text": "yüzden",
+          "start": 16.74,
+          "end": 17.18
+        },
+        {
+          "text": "güneş'i",
+          "start": 17.18,
+          "end": 17.58
+        },
+        {
+          "text": "her",
+          "start": 17.58,
+          "end": 17.82
+        },
+        {
+          "text": "zaman",
+          "start": 17.82,
+          "end": 18.14
+        },
+        {
+          "text": "birkaç",
+          "start": 18.14,
+          "end": 18.54
+        },
+        {
+          "text": "dakika",
+          "start": 18.54,
+          "end": 19.02
+        },
+        {
+          "text": "önceki",
+          "start": 19.02,
+          "end": 19.42
+        },
+        {
+          "text": "haliyle",
+          "start": 19.42,
+          "end": 19.9
+        },
+        {
+          "text": "görürüz.",
+          "start": 19.9,
+          "end": 20.7
+        },
+        {
+          "text": "daha",
+          "start": 20.7,
+          "end": 20.98
+        },
+        {
+          "text": "uzak",
+          "start": 20.98,
+          "end": 21.3
+        },
+        {
+          "text": "yıldızlarda",
+          "start": 21.3,
+          "end": 22.02
+        },
+        {
+          "text": "bu",
+          "start": 22.02,
+          "end": 22.14
+        },
+        {
+          "text": "gecikme",
+          "start": 22.14,
+          "end": 22.62
+        },
+        {
+          "text": "yıllara",
+          "start": 22.62,
+          "end": 23.02
+        },
+        {
+          "text": "dönüşür.",
+          "start": 23.02,
+          "end": 23.62
+        },
+        {
+          "text": "bir",
+          "start": 23.87,
+          "end": 24.03
+        },
+        {
+          "text": "yıldızın",
+          "start": 24.03,
+          "end": 24.51
+        },
+        {
+          "text": "uzaklığını",
+          "start": 24.51,
+          "end": 25.15
+        },
+        {
+          "text": "ışık",
+          "start": 25.15,
+          "end": 25.47
+        },
+        {
+          "text": "yılıyla",
+          "start": 25.47,
+          "end": 25.87
+        },
+        {
+          "text": "söylemek,",
+          "start": 25.87,
+          "end": 26.63
+        },
+        {
+          "text": "ışığının",
+          "start": 26.63,
+          "end": 27.11
+        },
+        {
+          "text": "bize",
+          "start": 27.11,
+          "end": 27.39
+        },
+        {
+          "text": "kaç",
+          "start": 27.39,
+          "end": 27.67
+        },
+        {
+          "text": "yılda",
+          "start": 27.67,
+          "end": 27.95
+        },
+        {
+          "text": "ulaştığını",
+          "start": 27.95,
+          "end": 28.55
+        },
+        {
+          "text": "anlatır.",
+          "start": 28.55,
+          "end": 29.39
+        },
+        {
+          "text": "ışık",
+          "start": 29.39,
+          "end": 29.71
+        },
+        {
+          "text": "yılı",
+          "start": 29.71,
+          "end": 29.91
+        },
+        {
+          "text": "bir",
+          "start": 29.91,
+          "end": 30.07
+        },
+        {
+          "text": "zaman",
+          "start": 30.07,
+          "end": 30.43
+        },
+        {
+          "text": "birimi",
+          "start": 30.43,
+          "end": 30.79
+        },
+        {
+          "text": "değil,",
+          "start": 30.79,
+          "end": 31.27
+        },
+        {
+          "text": "mesafe",
+          "start": 31.27,
+          "end": 31.79
+        },
+        {
+          "text": "birimidir.",
+          "start": 31.79,
+          "end": 32.43
+        },
+        {
+          "text": "evrenin",
+          "start": 32.68,
+          "end": 33.16
+        },
+        {
+          "text": "ölçeği",
+          "start": 33.16,
+          "end": 33.6
+        },
+        {
+          "text": "büyüdükçe,",
+          "start": 33.6,
+          "end": 34.4
+        },
+        {
+          "text": "baktığımız",
+          "start": 34.4,
+          "end": 35.0
+        },
+        {
+          "text": "görüntü",
+          "start": 35.0,
+          "end": 35.4
+        },
+        {
+          "text": "de",
+          "start": 35.4,
+          "end": 35.52
+        },
+        {
+          "text": "geçmişe",
+          "start": 35.52,
+          "end": 36.0
+        },
+        {
+          "text": "doğru",
+          "start": 36.0,
+          "end": 36.32
+        },
+        {
+          "text": "uzanır.",
+          "start": 36.32,
+          "end": 37.04
+        },
+        {
+          "text": "gökyüzü,",
+          "start": 37.04,
+          "end": 37.72
+        },
+        {
+          "text": "farklı",
+          "start": 37.72,
+          "end": 38.12
+        },
+        {
+          "text": "zamanlardan",
+          "start": 38.12,
+          "end": 38.84
+        },
+        {
+          "text": "gelen",
+          "start": 38.84,
+          "end": 39.16
+        },
+        {
+          "text": "ışıkların",
+          "start": 39.16,
+          "end": 39.76
+        },
+        {
+          "text": "aynı",
+          "start": 39.76,
+          "end": 40.0
+        },
+        {
+          "text": "anda",
+          "start": 40.0,
+          "end": 40.24
+        },
+        {
+          "text": "buluştuğu",
+          "start": 40.24,
+          "end": 40.72
+        },
+        {
+          "text": "bir",
+          "start": 40.72,
+          "end": 40.88
+        },
+        {
+          "text": "manzara",
+          "start": 40.88,
+          "end": 41.36
+        },
+        {
+          "text": "gibidir.",
+          "start": 41.36,
+          "end": 41.88
+        }
+      ],
+      "wordTimingsVerified": false,
+      "modelNormalizedText": null,
+      "offline": true,
+      "networkAttempts": [],
+      "threads": 2,
+      "listeningPath": "outputs/ema-lightning/default/D-duration-42-listen.wav",
+      "rawPath": "outputs/ema-lightning/default/D-duration-42.wav",
+      "loudness": {
+        "input_i": "-24.28",
+        "input_tp": "-2.57",
+        "input_lra": "2.60",
+        "input_thresh": "-34.41",
+        "output_i": "-20.04",
+        "output_tp": "-2.00",
+        "output_lra": "1.90",
+        "output_thresh": "-30.17",
+        "normalization_type": "dynamic",
+        "target_offset": "0.04"
+      },
+      "sha256": "213818a0120352362e87cc5f6b37c8db7e84be1f1b0e70dd323a22d23714d73d"
+    },
+    {
+      "model": "ema-lightning",
+      "voice": "default",
+      "text": "Gece gökyüzüne baktığımızda, aslında geçmişten gelen ışığı görürüz. Işık çok hızlı ilerler, ama yolculuğu anlık değildir. Ay'dan yansıyan ışığın Dünya'ya ulaşması yaklaşık bir saniyeden biraz fazla sürer. Güneş'ten gelen ışık ise yaklaşık sekiz dakikada bize ulaşır. Bu yüzden Güneş'i her zaman birkaç dakika önceki hâliyle görürüz. Daha uzak yıldızlarda bu gecikme yıllara dönüşür. Bir yıldızın uzaklığını ışık yılıyla söylemek, ışığının bize kaç yılda ulaştığını anlatır. Işık yılı bir zaman birimi değil, mesafe birimidir. Evrenin ölçeği büyüdükçe, baktığımız görüntü de geçmişe doğru uzanır. Gökyüzü, farklı zamanlardan gelen ışıkların aynı anda buluştuğu bir manzara gibidir.",
+      "test": "D",
+      "variant": "original",
+      "speed": 1.0,
+      "seed": 42,
+      "device": "cpu",
+      "nativeSampleRate": 48000,
+      "durationSeconds": 37.76,
+      "generationSeconds": 1.3877625421155244,
+      "modelLoadSeconds": 4.801003667060286,
+      "cpuSeconds": 1.9743246079999999,
+      "meanCpuPercent": 142.26674579285822,
+      "peakRssMiB": 416.359375,
+      "realtimeFactor": 0.036752185967042494,
+      "rawPeak": 0.8374218344688416,
+      "words": [
+        {
+          "text": "gece",
+          "start": 0.0,
+          "end": 0.24
+        },
+        {
+          "text": "gökyüzüne",
+          "start": 0.24,
+          "end": 0.72
+        },
+        {
+          "text": "baktığımızda,",
+          "start": 0.72,
+          "end": 1.56
+        },
+        {
+          "text": "aslında",
+          "start": 1.56,
+          "end": 1.92
+        },
+        {
+          "text": "geçmişten",
+          "start": 1.92,
+          "end": 2.48
+        },
+        {
+          "text": "gelen",
+          "start": 2.48,
+          "end": 2.76
+        },
+        {
+          "text": "ışığı",
+          "start": 2.76,
+          "end": 3.08
+        },
+        {
+          "text": "görürüz.",
+          "start": 3.08,
+          "end": 3.8
+        },
+        {
+          "text": "ışık",
+          "start": 3.8,
+          "end": 4.08
+        },
+        {
+          "text": "çok",
+          "start": 4.08,
+          "end": 4.28
+        },
+        {
+          "text": "hızlı",
+          "start": 4.28,
+          "end": 4.56
+        },
+        {
+          "text": "ilerler,",
+          "start": 4.56,
+          "end": 5.2
+        },
+        {
+          "text": "ama",
+          "start": 5.2,
+          "end": 5.4
+        },
+        {
+          "text": "yolculuğu",
+          "start": 5.4,
+          "end": 5.88
+        },
+        {
+          "text": "anlık",
+          "start": 5.88,
+          "end": 6.16
+        },
+        {
+          "text": "değildir.",
+          "start": 6.16,
+          "end": 6.68
+        },
+        {
+          "text": "ay'dan",
+          "start": 6.93,
+          "end": 7.29
+        },
+        {
+          "text": "yansıyan",
+          "start": 7.29,
+          "end": 7.77
+        },
+        {
+          "text": "ışığın",
+          "start": 7.77,
+          "end": 8.13
+        },
+        {
+          "text": "dünya'ya",
+          "start": 8.13,
+          "end": 8.57
+        },
+        {
+          "text": "ulaşması",
+          "start": 8.57,
+          "end": 9.09
+        },
+        {
+          "text": "yaklaşık",
+          "start": 9.09,
+          "end": 9.53
+        },
+        {
+          "text": "bir",
+          "start": 9.53,
+          "end": 9.69
+        },
+        {
+          "text": "saniyeden",
+          "start": 9.69,
+          "end": 10.21
+        },
+        {
+          "text": "biraz",
+          "start": 10.21,
+          "end": 10.49
+        },
+        {
+          "text": "fazla",
+          "start": 10.49,
+          "end": 10.85
+        },
+        {
+          "text": "sürer.",
+          "start": 10.85,
+          "end": 11.45
+        },
+        {
+          "text": "güneş'ten",
+          "start": 11.45,
+          "end": 11.93
+        },
+        {
+          "text": "gelen",
+          "start": 11.93,
+          "end": 12.25
+        },
+        {
+          "text": "ışık",
+          "start": 12.25,
+          "end": 12.49
+        },
+        {
+          "text": "ise",
+          "start": 12.49,
+          "end": 12.73
+        },
+        {
+          "text": "yaklaşık",
+          "start": 12.73,
+          "end": 13.21
+        },
+        {
+          "text": "sekiz",
+          "start": 13.21,
+          "end": 13.49
+        },
+        {
+          "text": "dakikada",
+          "start": 13.49,
+          "end": 13.97
+        },
+        {
+          "text": "bize",
+          "start": 13.97,
+          "end": 14.21
+        },
+        {
+          "text": "ulaşır.",
+          "start": 14.21,
+          "end": 14.73
+        },
+        {
+          "text": "bu",
+          "start": 14.98,
+          "end": 15.1
+        },
+        {
+          "text": "yüzden",
+          "start": 15.1,
+          "end": 15.46
+        },
+        {
+          "text": "güneş'i",
+          "start": 15.46,
+          "end": 15.82
+        },
+        {
+          "text": "her",
+          "start": 15.82,
+          "end": 16.02
+        },
+        {
+          "text": "zaman",
+          "start": 16.02,
+          "end": 16.3
+        },
+        {
+          "text": "birkaç",
+          "start": 16.3,
+          "end": 16.66
+        },
+        {
+          "text": "dakika",
+          "start": 16.66,
+          "end": 17.06
+        },
+        {
+          "text": "önceki",
+          "start": 17.06,
+          "end": 17.42
+        },
+        {
+          "text": "haliyle",
+          "start": 17.42,
+          "end": 17.86
+        },
+        {
+          "text": "görürüz.",
+          "start": 17.86,
+          "end": 18.58
+        },
+        {
+          "text": "daha",
+          "start": 18.58,
+          "end": 18.82
+        },
+        {
+          "text": "uzak",
+          "start": 18.82,
+          "end": 19.1
+        },
+        {
+          "text": "yıldızlarda",
+          "start": 19.1,
+          "end": 19.74
+        },
+        {
+          "text": "bu",
+          "start": 19.74,
+          "end": 19.86
+        },
+        {
+          "text": "gecikme",
+          "start": 19.86,
+          "end": 20.26
+        },
+        {
+          "text": "yıllara",
+          "start": 20.26,
+          "end": 20.62
+        },
+        {
+          "text": "dönüşür.",
+          "start": 20.62,
+          "end": 21.18
+        },
+        {
+          "text": "bir",
+          "start": 21.43,
+          "end": 21.59
+        },
+        {
+          "text": "yıldızın",
+          "start": 21.59,
+          "end": 22.03
+        },
+        {
+          "text": "uzaklığını",
+          "start": 22.03,
+          "end": 22.59
+        },
+        {
+          "text": "ışık",
+          "start": 22.59,
+          "end": 22.87
+        },
+        {
+          "text": "yılıyla",
+          "start": 22.87,
+          "end": 23.23
+        },
+        {
+          "text": "söylemek,",
+          "start": 23.23,
+          "end": 23.91
+        },
+        {
+          "text": "ışığının",
+          "start": 23.91,
+          "end": 24.35
+        },
+        {
+          "text": "bize",
+          "start": 24.35,
+          "end": 24.59
+        },
+        {
+          "text": "kaç",
+          "start": 24.59,
+          "end": 24.83
+        },
+        {
+          "text": "yılda",
+          "start": 24.83,
+          "end": 25.07
+        },
+        {
+          "text": "ulaştığını",
+          "start": 25.07,
+          "end": 25.63
+        },
+        {
+          "text": "anlatır.",
+          "start": 25.63,
+          "end": 26.39
+        },
+        {
+          "text": "ışık",
+          "start": 26.39,
+          "end": 26.67
+        },
+        {
+          "text": "yılı",
+          "start": 26.67,
+          "end": 26.87
+        },
+        {
+          "text": "bir",
+          "start": 26.87,
+          "end": 26.99
+        },
+        {
+          "text": "zaman",
+          "start": 26.99,
+          "end": 27.31
+        },
+        {
+          "text": "birimi",
+          "start": 27.31,
+          "end": 27.63
+        },
+        {
+          "text": "değil,",
+          "start": 27.63,
+          "end": 28.07
+        },
+        {
+          "text": "mesafe",
+          "start": 28.07,
+          "end": 28.55
+        },
+        {
+          "text": "birimidir.",
+          "start": 28.55,
+          "end": 29.15
+        },
+        {
+          "text": "evrenin",
+          "start": 29.4,
+          "end": 29.84
+        },
+        {
+          "text": "ölçeği",
+          "start": 29.84,
+          "end": 30.24
+        },
+        {
+          "text": "büyüdükçe,",
+          "start": 30.24,
+          "end": 30.96
+        },
+        {
+          "text": "baktığımız",
+          "start": 30.96,
+          "end": 31.48
+        },
+        {
+          "text": "görüntü",
+          "start": 31.48,
+          "end": 31.84
+        },
+        {
+          "text": "de",
+          "start": 31.84,
+          "end": 31.96
+        },
+        {
+          "text": "geçmişe",
+          "start": 31.96,
+          "end": 32.4
+        },
+        {
+          "text": "doğru",
+          "start": 32.4,
+          "end": 32.68
+        },
+        {
+          "text": "uzanır.",
+          "start": 32.68,
+          "end": 33.32
+        },
+        {
+          "text": "gökyüzü,",
+          "start": 33.32,
+          "end": 33.96
+        },
+        {
+          "text": "farklı",
+          "start": 33.96,
+          "end": 34.32
+        },
+        {
+          "text": "zamanlardan",
+          "start": 34.32,
+          "end": 34.96
+        },
+        {
+          "text": "gelen",
+          "start": 34.96,
+          "end": 35.24
+        },
+        {
+          "text": "ışıkların",
+          "start": 35.24,
+          "end": 35.8
+        },
+        {
+          "text": "aynı",
+          "start": 35.8,
+          "end": 36.04
+        },
+        {
+          "text": "anda",
+          "start": 36.04,
+          "end": 36.28
+        },
+        {
+          "text": "buluştuğu",
+          "start": 36.28,
+          "end": 36.72
+        },
+        {
+          "text": "bir",
+          "start": 36.72,
+          "end": 36.88
+        },
+        {
+          "text": "manzara",
+          "start": 36.88,
+          "end": 37.28
+        },
+        {
+          "text": "gibidir.",
+          "start": 37.28,
+          "end": 37.76
+        }
+      ],
+      "wordTimingsVerified": false,
+      "modelNormalizedText": null,
+      "offline": true,
+      "networkAttempts": [],
+      "threads": 2,
+      "listeningPath": "outputs/ema-lightning/default/D-original-listen.wav",
+      "rawPath": "outputs/ema-lightning/default/D-original.wav",
+      "loudness": {
+        "input_i": "-24.19",
+        "input_tp": "-1.54",
+        "input_lra": "2.40",
+        "input_thresh": "-34.26",
+        "output_i": "-20.05",
+        "output_tp": "-2.00",
+        "output_lra": "2.20",
+        "output_thresh": "-30.11",
+        "normalization_type": "dynamic",
+        "target_offset": "0.05"
+      },
+      "sha256": "77a38475db35c15aed1ffd5c5f0ec10710c95d738da9390db8cf87e2c5b89cdc"
+    },
+    {
+      "model": "supertonic-3",
+      "voice": "F1",
+      "test": "A",
+      "variant": "original",
+      "text": "Her gün gördüğümüz sayılar bazen düşündüğümüzden çok daha büyük anlamlar taşıyor. Küçük bir fark gibi görünen şey, ölçek değiştiğinde bambaşka bir dünyaya dönüşebilir.",
+      "speed": 1.0,
+      "seed": 42,
+      "device": "cpu",
+      "nativeSampleRate": 44100,
+      "durationSeconds": 12.141451247165532,
+      "generationSeconds": 2.1414132500067353,
+      "modelLoadSeconds": 0.2739172501023859,
+      "cpuSeconds": 4.2840592000000015,
+      "meanCpuPercent": 200.05756478748447,
+      "peakRssMiB": 743.40625,
+      "realtimeFactor": 0.17637209971144563,
+      "rawPeak": 0.47622352838516235,
+      "words": [],
+      "wordTimingsVerified": false,
+      "modelNormalizedText": null,
+      "offline": true,
+      "networkAttempts": [],
+      "threads": 2,
+      "listeningPath": "outputs/supertonic-3/F1/A-original-listen.wav",
+      "rawPath": "outputs/supertonic-3/F1/A-original.wav",
+      "loudness": {
+        "input_i": "-25.47",
+        "input_tp": "-6.44",
+        "input_lra": "2.40",
+        "input_thresh": "-35.72",
+        "output_i": "-20.02",
+        "output_tp": "-2.00",
+        "output_lra": "1.60",
+        "output_thresh": "-30.29",
+        "normalization_type": "dynamic",
+        "target_offset": "0.02"
+      },
+      "sha256": "ef10f5fa45117f3c9b011c1a9a4f03d262d3351e51731cde54c8f788361cafb5"
+    },
+    {
+      "model": "supertonic-3",
+      "voice": "F1",
+      "test": "B",
+      "variant": "normalized",
+      "text": "Bir milyon saniye yaklaşık on bir virgül altı gündür. Bir milyar saniye ise yaklaşık otuz bir virgül yedi yıl eder. Aralarında tam bin kat fark bulunur. Aynı karşılaştırmayı kırk iki kilometre, üç yüz seksen dört bin dört yüz kilometre ve bir virgül beş milyon metre için düşünelim.",
+      "speed": 1.0,
+      "seed": 42,
+      "device": "cpu",
+      "nativeSampleRate": 44100,
+      "durationSeconds": 19.605238095238096,
+      "generationSeconds": 3.47372845816426,
+      "modelLoadSeconds": 0.2739172501023859,
+      "cpuSeconds": 6.947069440000007,
+      "meanCpuPercent": 199.98884552050689,
+      "peakRssMiB": 743.8125,
+      "realtimeFactor": 0.17718369148538887,
+      "rawPeak": 0.45366179943084717,
+      "words": [],
+      "wordTimingsVerified": false,
+      "modelNormalizedText": null,
+      "offline": true,
+      "networkAttempts": [],
+      "threads": 2,
+      "listeningPath": "outputs/supertonic-3/F1/B-normalized-listen.wav",
+      "rawPath": "outputs/supertonic-3/F1/B-normalized.wav",
+      "loudness": {
+        "input_i": "-25.07",
+        "input_tp": "-6.80",
+        "input_lra": "1.80",
+        "input_thresh": "-35.32",
+        "output_i": "-20.00",
+        "output_tp": "-2.14",
+        "output_lra": "1.50",
+        "output_thresh": "-30.25",
+        "normalization_type": "dynamic",
+        "target_offset": "-0.00"
+      },
+      "sha256": "235576dc6230bdc0d8060bfe28769652ff7e40901e9cfa57189b19b98bfd2d51"
+    },
+    {
+      "model": "supertonic-3",
+      "voice": "F1",
+      "test": "B",
+      "variant": "original",
+      "text": "Bir milyon saniye yaklaşık 11,6 gündür. Bir milyar saniye ise yaklaşık 31,7 yıl eder. Aralarında tam bin kat fark bulunur. Aynı karşılaştırmayı 42 kilometre, 384.400 kilometre ve 1,5 milyon metre için düşünelim.",
+      "speed": 1.0,
+      "seed": 42,
+      "device": "cpu",
+      "nativeSampleRate": 44100,
+      "durationSeconds": 19.845215419501134,
+      "generationSeconds": 3.4665900841355324,
+      "modelLoadSeconds": 0.2739172501023859,
+      "cpuSeconds": 6.929028735999992,
+      "meanCpuPercent": 199.88024450049429,
+      "peakRssMiB": 743.796875,
+      "realtimeFactor": 0.17468140359560153,
+      "rawPeak": 0.39397525787353516,
+      "words": [],
+      "wordTimingsVerified": false,
+      "modelNormalizedText": null,
+      "offline": true,
+      "networkAttempts": [],
+      "threads": 2,
+      "listeningPath": "outputs/supertonic-3/F1/B-original-listen.wav",
+      "rawPath": "outputs/supertonic-3/F1/B-original.wav",
+      "loudness": {
+        "input_i": "-25.71",
+        "input_tp": "-8.09",
+        "input_lra": "1.80",
+        "input_thresh": "-35.97",
+        "output_i": "-19.78",
+        "output_tp": "-2.16",
+        "output_lra": "1.80",
+        "output_thresh": "-30.04",
+        "normalization_type": "linear",
+        "target_offset": "-0.22"
+      },
+      "sha256": "bb1ee285ec98ed6a6f7d395c3d95c50651c728b009f966c25e6f2f53d9843ed2"
+    },
+    {
+      "model": "supertonic-3",
+      "voice": "F1",
+      "test": "C",
+      "variant": "original",
+      "text": "Bir kâğıdı 42 kez katlayabilseydiniz, ortaya çıkan kalınlığın Ay'a ulaşabileceğini biliyor muydunuz?",
+      "speed": 1.0,
+      "seed": 42,
+      "device": "cpu",
+      "nativeSampleRate": 44100,
+      "durationSeconds": 8.090884353741497,
+      "generationSeconds": 1.488659624941647,
+      "modelLoadSeconds": 0.2739172501023859,
+      "cpuSeconds": 2.980832320000019,
+      "meanCpuPercent": 200.2359888088496,
+      "peakRssMiB": 743.8125,
+      "realtimeFactor": 0.18399220157599222,
+      "rawPeak": 0.3613482415676117,
+      "words": [],
+      "wordTimingsVerified": false,
+      "modelNormalizedText": null,
+      "offline": true,
+      "networkAttempts": [],
+      "threads": 2,
+      "listeningPath": "outputs/supertonic-3/F1/C-original-listen.wav",
+      "rawPath": "outputs/supertonic-3/F1/C-original.wav",
+      "loudness": {
+        "input_i": "-26.38",
+        "input_tp": "-8.84",
+        "input_lra": "1.70",
+        "input_thresh": "-36.50",
+        "output_i": "-19.89",
+        "output_tp": "-2.36",
+        "output_lra": "1.70",
+        "output_thresh": "-30.01",
+        "normalization_type": "linear",
+        "target_offset": "-0.11"
+      },
+      "sha256": "61f0aa5f53964f4e1e5b0c634a0e11af732b810a504a8e3db2c1282af7c7337e"
+    },
+    {
+      "model": "supertonic-3",
+      "voice": "F1",
+      "test": "D",
+      "variant": "duration-42",
+      "text": "Gece gökyüzüne baktığımızda, aslında geçmişten gelen ışığı görürüz. Işık çok hızlı ilerler, ama yolculuğu anlık değildir. Ay'dan yansıyan ışığın Dünya'ya ulaşması yaklaşık bir saniyeden biraz fazla sürer. Güneş'ten gelen ışık ise yaklaşık sekiz dakikada bize ulaşır. Bu yüzden Güneş'i her zaman birkaç dakika önceki hâliyle görürüz. Daha uzak yıldızlarda bu gecikme yıllara dönüşür. Bir yıldızın uzaklığını ışık yılıyla söylemek, ışığının bize kaç yılda ulaştığını anlatır. Işık yılı bir zaman birimi değil, mesafe birimidir. Evrenin ölçeği büyüdükçe, baktığımız görüntü de geçmişe doğru uzanır. Gökyüzü, farklı zamanlardan gelen ışıkların aynı anda buluştuğu bir manzara gibidir.",
+      "speed": 1.1444185293164886,
+      "seed": 42,
+      "device": "cpu",
+      "nativeSampleRate": 44100,
+      "durationSeconds": 42.075714285714284,
+      "generationSeconds": 7.346822457853705,
+      "modelLoadSeconds": 0.2665417499374598,
+      "cpuSeconds": 14.713559231999994,
+      "meanCpuPercent": 200.27106026322028,
+      "peakRssMiB": 657.78125,
+      "realtimeFactor": 0.17460957187714643,
+      "rawPeak": 0.45443376898765564,
+      "words": [],
+      "wordTimingsVerified": false,
+      "modelNormalizedText": null,
+      "offline": true,
+      "networkAttempts": [],
+      "threads": 2,
+      "listeningPath": "outputs/supertonic-3/F1/D-duration-42-listen.wav",
+      "rawPath": "outputs/supertonic-3/F1/D-duration-42.wav",
+      "loudness": {
+        "input_i": "-25.08",
+        "input_tp": "-6.85",
+        "input_lra": "3.40",
+        "input_thresh": "-35.33",
+        "output_i": "-20.00",
+        "output_tp": "-2.00",
+        "output_lra": "2.70",
+        "output_thresh": "-30.22",
+        "normalization_type": "dynamic",
+        "target_offset": "0.00"
+      },
+      "sha256": "0c4fb67f2a3c619ede39d6643f0add93f718e028f2d67f69be2f91b1902a2a66"
+    },
+    {
+      "model": "supertonic-3",
+      "voice": "F1",
+      "test": "D",
+      "variant": "original",
+      "text": "Gece gökyüzüne baktığımızda, aslında geçmişten gelen ışığı görürüz. Işık çok hızlı ilerler, ama yolculuğu anlık değildir. Ay'dan yansıyan ışığın Dünya'ya ulaşması yaklaşık bir saniyeden biraz fazla sürer. Güneş'ten gelen ışık ise yaklaşık sekiz dakikada bize ulaşır. Bu yüzden Güneş'i her zaman birkaç dakika önceki hâliyle görürüz. Daha uzak yıldızlarda bu gecikme yıllara dönüşür. Bir yıldızın uzaklığını ışık yılıyla söylemek, ışığının bize kaç yılda ulaştığını anlatır. Işık yılı bir zaman birimi değil, mesafe birimidir. Evrenin ölçeği büyüdükçe, baktığımız görüntü de geçmişe doğru uzanır. Gökyüzü, farklı zamanlardan gelen ışıkların aynı anda buluştuğu bir manzara gibidir.",
+      "speed": 1.0,
+      "seed": 42,
+      "device": "cpu",
+      "nativeSampleRate": 44100,
+      "durationSeconds": 48.06557823129252,
+      "generationSeconds": 8.505220500053838,
+      "modelLoadSeconds": 0.2739172501023859,
+      "cpuSeconds": 17.030908160000024,
+      "meanCpuPercent": 200.24064231952858,
+      "peakRssMiB": 743.8125,
+      "realtimeFactor": 0.1769503418668251,
+      "rawPeak": 0.46927499771118164,
+      "words": [],
+      "wordTimingsVerified": false,
+      "modelNormalizedText": null,
+      "offline": true,
+      "networkAttempts": [],
+      "threads": 2,
+      "listeningPath": "outputs/supertonic-3/F1/D-original-listen.wav",
+      "rawPath": "outputs/supertonic-3/F1/D-original.wav",
+      "loudness": {
+        "input_i": "-25.16",
+        "input_tp": "-6.55",
+        "input_lra": "4.00",
+        "input_thresh": "-35.43",
+        "output_i": "-20.00",
+        "output_tp": "-2.00",
+        "output_lra": "3.50",
+        "output_thresh": "-30.26",
+        "normalization_type": "dynamic",
+        "target_offset": "-0.00"
+      },
+      "sha256": "e7ad99020633e21bc34881a261790c29757f52f8ea6b9314c1f810c04c6461c8"
+    },
+    {
+      "model": "supertonic-3",
+      "voice": "F2",
+      "test": "A",
+      "variant": "original",
+      "text": "Her gün gördüğümüz sayılar bazen düşündüğümüzden çok daha büyük anlamlar taşıyor. Küçük bir fark gibi görünen şey, ölçek değiştiğinde bambaşka bir dünyaya dönüşebilir.",
+      "speed": 1.0,
+      "seed": 42,
+      "device": "cpu",
+      "nativeSampleRate": 44100,
+      "durationSeconds": 11.436780045351474,
+      "generationSeconds": 2.0908730409573764,
+      "modelLoadSeconds": 0.2739172501023859,
+      "cpuSeconds": 4.183662911999988,
+      "meanCpuPercent": 200.09167606295014,
+      "peakRssMiB": 743.8125,
+      "realtimeFactor": 0.18282007983595175,
+      "rawPeak": 0.34985679388046265,
+      "words": [],
+      "wordTimingsVerified": false,
+      "modelNormalizedText": null,
+      "offline": true,
+      "networkAttempts": [],
+      "threads": 2,
+      "listeningPath": "outputs/supertonic-3/F2/A-original-listen.wav",
+      "rawPath": "outputs/supertonic-3/F2/A-original.wav",
+      "loudness": {
+        "input_i": "-25.52",
+        "input_tp": "-9.12",
+        "input_lra": "1.80",
+        "input_thresh": "-35.89",
+        "output_i": "-19.71",
+        "output_tp": "-3.31",
+        "output_lra": "1.80",
+        "output_thresh": "-30.12",
+        "normalization_type": "linear",
+        "target_offset": "-0.29"
+      },
+      "sha256": "764be86b306af0f8f88b04f21ebcade97c99965fc07ce1e9660e7fbe0bc3ac3d"
+    },
+    {
+      "model": "supertonic-3",
+      "voice": "F2",
+      "test": "B",
+      "variant": "normalized",
+      "text": "Bir milyon saniye yaklaşık on bir virgül altı gündür. Bir milyar saniye ise yaklaşık otuz bir virgül yedi yıl eder. Aralarında tam bin kat fark bulunur. Aynı karşılaştırmayı kırk iki kilometre, üç yüz seksen dört bin dört yüz kilometre ve bir virgül beş milyon metre için düşünelim.",
+      "speed": 1.0,
+      "seed": 42,
+      "device": "cpu",
+      "nativeSampleRate": 44100,
+      "durationSeconds": 18.642902494331064,
+      "generationSeconds": 3.2901102921459824,
+      "modelLoadSeconds": 0.2739172501023859,
+      "cpuSeconds": 6.576925824,
+      "meanCpuPercent": 199.89985866735745,
+      "peakRssMiB": 744.4375,
+      "realtimeFactor": 0.1764805825244454,
+      "rawPeak": 0.3601526916027069,
+      "words": [],
+      "wordTimingsVerified": false,
+      "modelNormalizedText": null,
+      "offline": true,
+      "networkAttempts": [],
+      "threads": 2,
+      "listeningPath": "outputs/supertonic-3/F2/B-normalized-listen.wav",
+      "rawPath": "outputs/supertonic-3/F2/B-normalized.wav",
+      "loudness": {
+        "input_i": "-25.54",
+        "input_tp": "-8.87",
+        "input_lra": "1.40",
+        "input_thresh": "-35.79",
+        "output_i": "-19.84",
+        "output_tp": "-3.16",
+        "output_lra": "1.40",
+        "output_thresh": "-30.09",
+        "normalization_type": "linear",
+        "target_offset": "-0.16"
+      },
+      "sha256": "795485cc693dc2a6998b93e36ab73d831a422865d771d911ef385e05f6feb0f3"
+    },
+    {
+      "model": "supertonic-3",
+      "voice": "F2",
+      "test": "B",
+      "variant": "original",
+      "text": "Bir milyon saniye yaklaşık 11,6 gündür. Bir milyar saniye ise yaklaşık 31,7 yıl eder. Aralarında tam bin kat fark bulunur. Aynı karşılaştırmayı 42 kilometre, 384.400 kilometre ve 1,5 milyon metre için düşünelim.",
+      "speed": 1.0,
+      "seed": 42,
+      "device": "cpu",
+      "nativeSampleRate": 44100,
+      "durationSeconds": 18.871065759637187,
+      "generationSeconds": 3.2606380828656256,
+      "modelLoadSeconds": 0.2739172501023859,
+      "cpuSeconds": 6.519969279999998,
+      "meanCpuPercent": 199.9599193256645,
+      "peakRssMiB": 744.4375,
+      "realtimeFactor": 0.17278505222740076,
+      "rawPeak": 0.4218708872795105,
+      "words": [],
+      "wordTimingsVerified": false,
+      "modelNormalizedText": null,
+      "offline": true,
+      "networkAttempts": [],
+      "threads": 2,
+      "listeningPath": "outputs/supertonic-3/F2/B-original-listen.wav",
+      "rawPath": "outputs/supertonic-3/F2/B-original.wav",
+      "loudness": {
+        "input_i": "-25.26",
+        "input_tp": "-7.50",
+        "input_lra": "1.70",
+        "input_thresh": "-35.61",
+        "output_i": "-19.81",
+        "output_tp": "-2.05",
+        "output_lra": "1.80",
+        "output_thresh": "-30.23",
+        "normalization_type": "linear",
+        "target_offset": "-0.19"
+      },
+      "sha256": "ac1ed6442aae66e7b67235f3cf5a62fcb25dd2aa92702c7e0d23bc2a4fb231b1"
+    },
+    {
+      "model": "supertonic-3",
+      "voice": "F2",
+      "test": "C",
+      "variant": "original",
+      "text": "Bir kâğıdı 42 kez katlayabilseydiniz, ortaya çıkan kalınlığın Ay'a ulaşabileceğini biliyor muydunuz?",
+      "speed": 1.0,
+      "seed": 42,
+      "device": "cpu",
+      "nativeSampleRate": 44100,
+      "durationSeconds": 7.614784580498866,
+      "generationSeconds": 1.3450199998915195,
+      "modelLoadSeconds": 0.2739172501023859,
+      "cpuSeconds": 2.6891287040000122,
+      "meanCpuPercent": 199.9322466741684,
+      "peakRssMiB": 744.4375,
+      "realtimeFactor": 0.17663270518985627,
+      "rawPeak": 0.325875848531723,
+      "words": [],
+      "wordTimingsVerified": false,
+      "modelNormalizedText": null,
+      "offline": true,
+      "networkAttempts": [],
+      "threads": 2,
+      "listeningPath": "outputs/supertonic-3/F2/C-original-listen.wav",
+      "rawPath": "outputs/supertonic-3/F2/C-original.wav",
+      "loudness": {
+        "input_i": "-26.61",
+        "input_tp": "-9.74",
+        "input_lra": "1.20",
+        "input_thresh": "-36.87",
+        "output_i": "-20.09",
+        "output_tp": "-3.30",
+        "output_lra": "1.20",
+        "output_thresh": "-30.42",
+        "normalization_type": "linear",
+        "target_offset": "0.09"
+      },
+      "sha256": "9829f41495b41b74e404b7bbeabaebf233e880ac59e698bdb08c951fe66dcb89"
+    },
+    {
+      "model": "supertonic-3",
+      "voice": "F2",
+      "test": "D",
+      "variant": "duration-42",
+      "text": "Gece gökyüzüne baktığımızda, aslında geçmişten gelen ışığı görürüz. Işık çok hızlı ilerler, ama yolculuğu anlık değildir. Ay'dan yansıyan ışığın Dünya'ya ulaşması yaklaşık bir saniyeden biraz fazla sürer. Güneş'ten gelen ışık ise yaklaşık sekiz dakikada bize ulaşır. Bu yüzden Güneş'i her zaman birkaç dakika önceki hâliyle görürüz. Daha uzak yıldızlarda bu gecikme yıllara dönüşür. Bir yıldızın uzaklığını ışık yılıyla söylemek, ışığının bize kaç yılda ulaştığını anlatır. Işık yılı bir zaman birimi değil, mesafe birimidir. Evrenin ölçeği büyüdükçe, baktığımız görüntü de geçmişe doğru uzanır. Gökyüzü, farklı zamanlardan gelen ışıkların aynı anda buluştuğu bir manzara gibidir.",
+      "speed": 1.0859561602418746,
+      "seed": 42,
+      "device": "cpu",
+      "nativeSampleRate": 44100,
+      "durationSeconds": 42.04746031746032,
+      "generationSeconds": 7.598510457901284,
+      "modelLoadSeconds": 0.2665417499374598,
+      "cpuSeconds": 15.198360031999997,
+      "meanCpuPercent": 200.01762340401908,
+      "peakRssMiB": 657.78125,
+      "realtimeFactor": 0.18071270893728586,
+      "rawPeak": 0.3788546919822693,
+      "words": [],
+      "wordTimingsVerified": false,
+      "modelNormalizedText": null,
+      "offline": true,
+      "networkAttempts": [],
+      "threads": 2,
+      "listeningPath": "outputs/supertonic-3/F2/D-duration-42-listen.wav",
+      "rawPath": "outputs/supertonic-3/F2/D-duration-42.wav",
+      "loudness": {
+        "input_i": "-25.73",
+        "input_tp": "-8.43",
+        "input_lra": "3.10",
+        "input_thresh": "-36.08",
+        "output_i": "-19.91",
+        "output_tp": "-2.62",
+        "output_lra": "3.10",
+        "output_thresh": "-30.31",
+        "normalization_type": "linear",
+        "target_offset": "-0.09"
+      },
+      "sha256": "63e0017439fc376ffddb63a13acb5b4ef62c35af10a1045dbff4590eed4bb21c"
+    },
+    {
+      "model": "supertonic-3",
+      "voice": "F2",
+      "test": "D",
+      "variant": "original",
+      "text": "Gece gökyüzüne baktığımızda, aslında geçmişten gelen ışığı görürüz. Işık çok hızlı ilerler, ama yolculuğu anlık değildir. Ay'dan yansıyan ışığın Dünya'ya ulaşması yaklaşık bir saniyeden biraz fazla sürer. Güneş'ten gelen ışık ise yaklaşık sekiz dakikada bize ulaşır. Bu yüzden Güneş'i her zaman birkaç dakika önceki hâliyle görürüz. Daha uzak yıldızlarda bu gecikme yıllara dönüşür. Bir yıldızın uzaklığını ışık yılıyla söylemek, ışığının bize kaç yılda ulaştığını anlatır. Işık yılı bir zaman birimi değil, mesafe birimidir. Evrenin ölçeği büyüdükçe, baktığımız görüntü de geçmişe doğru uzanır. Gökyüzü, farklı zamanlardan gelen ışıkların aynı anda buluştuğu bir manzara gibidir.",
+      "speed": 1.0,
+      "seed": 42,
+      "device": "cpu",
+      "nativeSampleRate": 44100,
+      "durationSeconds": 45.61015873015873,
+      "generationSeconds": 7.988426625030115,
+      "modelLoadSeconds": 0.2739172501023859,
+      "cpuSeconds": 15.998551232000011,
+      "meanCpuPercent": 200.27161771595667,
+      "peakRssMiB": 753.359375,
+      "realtimeFactor": 0.17514577557801703,
+      "rawPeak": 0.4163506031036377,
+      "words": [],
+      "wordTimingsVerified": false,
+      "modelNormalizedText": null,
+      "offline": true,
+      "networkAttempts": [],
+      "threads": 2,
+      "listeningPath": "outputs/supertonic-3/F2/D-original-listen.wav",
+      "rawPath": "outputs/supertonic-3/F2/D-original.wav",
+      "loudness": {
+        "input_i": "-25.67",
+        "input_tp": "-7.57",
+        "input_lra": "2.70",
+        "input_thresh": "-36.01",
+        "output_i": "-20.00",
+        "output_tp": "-2.00",
+        "output_lra": "3.00",
+        "output_thresh": "-30.36",
+        "normalization_type": "dynamic",
+        "target_offset": "0.00"
+      },
+      "sha256": "927d2dc19ba3528516a7a6deb0711c2a842aa161c1f1f8dddde6a3170da90ceb"
+    },
+    {
+      "model": "supertonic-3",
+      "voice": "F3",
+      "test": "A",
+      "variant": "original",
+      "text": "Her gün gördüğümüz sayılar bazen düşündüğümüzden çok daha büyük anlamlar taşıyor. Küçük bir fark gibi görünen şey, ölçek değiştiğinde bambaşka bir dünyaya dönüşebilir.",
+      "speed": 1.0,
+      "seed": 42,
+      "device": "cpu",
+      "nativeSampleRate": 44100,
+      "durationSeconds": 12.475192743764172,
+      "generationSeconds": 2.3830999578349292,
+      "modelLoadSeconds": 0.2739172501023859,
+      "cpuSeconds": 4.585792063999975,
+      "meanCpuPercent": 192.42969850774594,
+      "peakRssMiB": 753.359375,
+      "realtimeFactor": 0.19102710529471711,
+      "rawPeak": 0.3723551332950592,
+      "words": [],
+      "wordTimingsVerified": false,
+      "modelNormalizedText": null,
+      "offline": true,
+      "networkAttempts": [],
+      "threads": 2,
+      "listeningPath": "outputs/supertonic-3/F3/A-original-listen.wav",
+      "rawPath": "outputs/supertonic-3/F3/A-original.wav",
+      "loudness": {
+        "input_i": "-26.68",
+        "input_tp": "-8.16",
+        "input_lra": "2.40",
+        "input_thresh": "-36.97",
+        "output_i": "-20.00",
+        "output_tp": "-2.18",
+        "output_lra": "1.20",
+        "output_thresh": "-30.21",
+        "normalization_type": "dynamic",
+        "target_offset": "-0.00"
+      },
+      "sha256": "66b571f1842b2aabfeae83bf11f742b7294a88fde89107aba2268ff2142fd560"
+    },
+    {
+      "model": "supertonic-3",
+      "voice": "F3",
+      "test": "B",
+      "variant": "normalized",
+      "text": "Bir milyon saniye yaklaşık on bir virgül altı gündür. Bir milyar saniye ise yaklaşık otuz bir virgül yedi yıl eder. Aralarında tam bin kat fark bulunur. Aynı karşılaştırmayı kırk iki kilometre, üç yüz seksen dört bin dört yüz kilometre ve bir virgül beş milyon metre için düşünelim.",
+      "speed": 1.0,
+      "seed": 42,
+      "device": "cpu",
+      "nativeSampleRate": 44100,
+      "durationSeconds": 20.078208616780046,
+      "generationSeconds": 3.646750792162493,
+      "modelLoadSeconds": 0.2739172501023859,
+      "cpuSeconds": 7.285257728000005,
+      "meanCpuPercent": 199.77393968508355,
+      "peakRssMiB": 760.265625,
+      "realtimeFactor": 0.18162729861840257,
+      "rawPeak": 0.4599558115005493,
+      "words": [],
+      "wordTimingsVerified": false,
+      "modelNormalizedText": null,
+      "offline": true,
+      "networkAttempts": [],
+      "threads": 2,
+      "listeningPath": "outputs/supertonic-3/F3/B-normalized-listen.wav",
+      "rawPath": "outputs/supertonic-3/F3/B-normalized.wav",
+      "loudness": {
+        "input_i": "-25.58",
+        "input_tp": "-6.27",
+        "input_lra": "3.10",
+        "input_thresh": "-35.76",
+        "output_i": "-20.02",
+        "output_tp": "-2.00",
+        "output_lra": "2.80",
+        "output_thresh": "-30.19",
+        "normalization_type": "dynamic",
+        "target_offset": "0.02"
+      },
+      "sha256": "4bbd0e481f93c91680b1b7ea93a924237a0f228b1cb75abe0ef40933e3c81e7b"
+    },
+    {
+      "model": "supertonic-3",
+      "voice": "F3",
+      "test": "B",
+      "variant": "original",
+      "text": "Bir milyon saniye yaklaşık 11,6 gündür. Bir milyar saniye ise yaklaşık 31,7 yıl eder. Aralarında tam bin kat fark bulunur. Aynı karşılaştırmayı 42 kilometre, 384.400 kilometre ve 1,5 milyon metre için düşünelim.",
+      "speed": 1.0,
+      "seed": 42,
+      "device": "cpu",
+      "nativeSampleRate": 44100,
+      "durationSeconds": 20.32104308390023,
+      "generationSeconds": 3.5545814170036465,
+      "modelLoadSeconds": 0.2739172501023859,
+      "cpuSeconds": 7.112771776000017,
+      "meanCpuPercent": 200.10152931018712,
+      "peakRssMiB": 753.390625,
+      "realtimeFactor": 0.17492120863716085,
+      "rawPeak": 0.480131059885025,
+      "words": [],
+      "wordTimingsVerified": false,
+      "modelNormalizedText": null,
+      "offline": true,
+      "networkAttempts": [],
+      "threads": 2,
+      "listeningPath": "outputs/supertonic-3/F3/B-original-listen.wav",
+      "rawPath": "outputs/supertonic-3/F3/B-original.wav",
+      "loudness": {
+        "input_i": "-25.67",
+        "input_tp": "-6.18",
+        "input_lra": "3.20",
+        "input_thresh": "-35.96",
+        "output_i": "-20.03",
+        "output_tp": "-2.00",
+        "output_lra": "2.50",
+        "output_thresh": "-30.34",
+        "normalization_type": "dynamic",
+        "target_offset": "0.03"
+      },
+      "sha256": "73a8b3792bb451b9f478bd92176fdba35b23e68e2ad47e423e7e9ff0b907e282"
+    },
+    {
+      "model": "supertonic-3",
+      "voice": "F3",
+      "test": "C",
+      "variant": "original",
+      "text": "Bir kâğıdı 42 kez katlayabilseydiniz, ortaya çıkan kalınlığın Ay'a ulaşabileceğini biliyor muydunuz?",
+      "speed": 1.0,
+      "seed": 42,
+      "device": "cpu",
+      "nativeSampleRate": 44100,
+      "durationSeconds": 8.324308390022676,
+      "generationSeconds": 1.4935630830004811,
+      "modelLoadSeconds": 0.2739172501023859,
+      "cpuSeconds": 2.9865984639999965,
+      "meanCpuPercent": 199.96466824823324,
+      "peakRssMiB": 760.28125,
+      "realtimeFactor": 0.1794218826383981,
+      "rawPeak": 0.5320024490356445,
+      "words": [],
+      "wordTimingsVerified": false,
+      "modelNormalizedText": null,
+      "offline": true,
+      "networkAttempts": [],
+      "threads": 2,
+      "listeningPath": "outputs/supertonic-3/F3/C-original-listen.wav",
+      "rawPath": "outputs/supertonic-3/F3/C-original.wav",
+      "loudness": {
+        "input_i": "-26.35",
+        "input_tp": "-5.18",
+        "input_lra": "3.70",
+        "input_thresh": "-36.51",
+        "output_i": "-20.16",
+        "output_tp": "-2.00",
+        "output_lra": "1.30",
+        "output_thresh": "-30.27",
+        "normalization_type": "dynamic",
+        "target_offset": "0.16"
+      },
+      "sha256": "573adcf4610cdd7ee73983e1a62b5d38132dcadd0420a67e05fb415afa818fe2"
+    },
+    {
+      "model": "supertonic-3",
+      "voice": "F3",
+      "test": "D",
+      "variant": "duration-42",
+      "text": "Gece gökyüzüne baktığımızda, aslında geçmişten gelen ışığı görürüz. Işık çok hızlı ilerler, ama yolculuğu anlık değildir. Ay'dan yansıyan ışığın Dünya'ya ulaşması yaklaşık bir saniyeden biraz fazla sürer. Güneş'ten gelen ışık ise yaklaşık sekiz dakikada bize ulaşır. Bu yüzden Güneş'i her zaman birkaç dakika önceki hâliyle görürüz. Daha uzak yıldızlarda bu gecikme yıllara dönüşür. Bir yıldızın uzaklığını ışık yılıyla söylemek, ışığının bize kaç yılda ulaştığını anlatır. Işık yılı bir zaman birimi değil, mesafe birimidir. Evrenin ölçeği büyüdükçe, baktığımız görüntü de geçmişe doğru uzanır. Gökyüzü, farklı zamanlardan gelen ışıkların aynı anda buluştuğu bir manzara gibidir.",
+      "speed": 1.1743936939855306,
+      "seed": 42,
+      "device": "cpu",
+      "nativeSampleRate": 44100,
+      "durationSeconds": 42.08909297052154,
+      "generationSeconds": 7.909706583013758,
+      "modelLoadSeconds": 0.2665417499374598,
+      "cpuSeconds": 15.68008144000001,
+      "meanCpuPercent": 198.23847162261714,
+      "peakRssMiB": 657.796875,
+      "realtimeFactor": 0.18792770346829704,
+      "rawPeak": 0.47036758065223694,
+      "words": [],
+      "wordTimingsVerified": false,
+      "modelNormalizedText": null,
+      "offline": true,
+      "networkAttempts": [],
+      "threads": 2,
+      "listeningPath": "outputs/supertonic-3/F3/D-duration-42-listen.wav",
+      "rawPath": "outputs/supertonic-3/F3/D-duration-42.wav",
+      "loudness": {
+        "input_i": "-25.87",
+        "input_tp": "-6.18",
+        "input_lra": "3.70",
+        "input_thresh": "-36.13",
+        "output_i": "-20.01",
+        "output_tp": "-2.00",
+        "output_lra": "3.10",
+        "output_thresh": "-30.23",
+        "normalization_type": "dynamic",
+        "target_offset": "0.01"
+      },
+      "sha256": "a18f232ab848679a74abcc7f87d24e8a1b2df89bea4aa0f83a2c73a6fa1ceb50"
+    },
+    {
+      "model": "supertonic-3",
+      "voice": "F3",
+      "test": "D",
+      "variant": "original",
+      "text": "Gece gökyüzüne baktığımızda, aslında geçmişten gelen ışığı görürüz. Işık çok hızlı ilerler, ama yolculuğu anlık değildir. Ay'dan yansıyan ışığın Dünya'ya ulaşması yaklaşık bir saniyeden biraz fazla sürer. Güneş'ten gelen ışık ise yaklaşık sekiz dakikada bize ulaşır. Bu yüzden Güneş'i her zaman birkaç dakika önceki hâliyle görürüz. Daha uzak yıldızlarda bu gecikme yıllara dönüşür. Bir yıldızın uzaklığını ışık yılıyla söylemek, ışığının bize kaç yılda ulaştığını anlatır. Işık yılı bir zaman birimi değil, mesafe birimidir. Evrenin ölçeği büyüdükçe, baktığımız görüntü de geçmişe doğru uzanır. Gökyüzü, farklı zamanlardan gelen ışıkların aynı anda buluştuğu bir manzara gibidir.",
+      "speed": 1.0,
+      "seed": 42,
+      "device": "cpu",
+      "nativeSampleRate": 44100,
+      "durationSeconds": 49.32453514739229,
+      "generationSeconds": 8.60606791707687,
+      "modelLoadSeconds": 0.2739172501023859,
+      "cpuSeconds": 17.23607750399998,
+      "meanCpuPercent": 200.27819522314866,
+      "peakRssMiB": 766.140625,
+      "realtimeFactor": 0.17447843940870592,
+      "rawPeak": 0.5183919668197632,
+      "words": [],
+      "wordTimingsVerified": false,
+      "modelNormalizedText": null,
+      "offline": true,
+      "networkAttempts": [],
+      "threads": 2,
+      "listeningPath": "outputs/supertonic-3/F3/D-original-listen.wav",
+      "rawPath": "outputs/supertonic-3/F3/D-original.wav",
+      "loudness": {
+        "input_i": "-25.47",
+        "input_tp": "-5.06",
+        "input_lra": "2.90",
+        "input_thresh": "-35.74",
+        "output_i": "-20.00",
+        "output_tp": "-2.00",
+        "output_lra": "2.60",
+        "output_thresh": "-30.25",
+        "normalization_type": "dynamic",
+        "target_offset": "-0.00"
+      },
+      "sha256": "e2ed51ccd8489f81053d5ac21efee2db918dd87280dc9a6df81048ecc87703d3"
+    },
+    {
+      "model": "supertonic-3",
+      "voice": "F4",
+      "test": "A",
+      "variant": "original",
+      "text": "Her gün gördüğümüz sayılar bazen düşündüğümüzden çok daha büyük anlamlar taşıyor. Küçük bir fark gibi görünen şey, ölçek değiştiğinde bambaşka bir dünyaya dönüşebilir.",
+      "speed": 1.0,
+      "seed": 42,
+      "device": "cpu",
+      "nativeSampleRate": 44100,
+      "durationSeconds": 10.463628117913832,
+      "generationSeconds": 1.9092851660680026,
+      "modelLoadSeconds": 0.2739172501023859,
+      "cpuSeconds": 3.8216978560000143,
+      "meanCpuPercent": 200.1638060107307,
+      "peakRssMiB": 777.3125,
+      "realtimeFactor": 0.1824687521911533,
+      "rawPeak": 0.34435269236564636,
+      "words": [],
+      "wordTimingsVerified": false,
+      "modelNormalizedText": null,
+      "offline": true,
+      "networkAttempts": [],
+      "threads": 2,
+      "listeningPath": "outputs/supertonic-3/F4/A-original-listen.wav",
+      "rawPath": "outputs/supertonic-3/F4/A-original.wav",
+      "loudness": {
+        "input_i": "-25.02",
+        "input_tp": "-9.26",
+        "input_lra": "2.20",
+        "input_thresh": "-35.28",
+        "output_i": "-19.83",
+        "output_tp": "-4.07",
+        "output_lra": "2.20",
+        "output_thresh": "-30.09",
+        "normalization_type": "linear",
+        "target_offset": "-0.17"
+      },
+      "sha256": "c59960542731dc053f44035a703ce1d1d13fcf6e56eb36df6704b45c0d4ea171"
+    },
+    {
+      "model": "supertonic-3",
+      "voice": "F4",
+      "test": "B",
+      "variant": "normalized",
+      "text": "Bir milyon saniye yaklaşık on bir virgül altı gündür. Bir milyar saniye ise yaklaşık otuz bir virgül yedi yıl eder. Aralarında tam bin kat fark bulunur. Aynı karşılaştırmayı kırk iki kilometre, üç yüz seksen dört bin dört yüz kilometre ve bir virgül beş milyon metre için düşünelim.",
+      "speed": 1.0,
+      "seed": 42,
+      "device": "cpu",
+      "nativeSampleRate": 44100,
+      "durationSeconds": 17.0581179138322,
+      "generationSeconds": 3.0482369589153677,
+      "modelLoadSeconds": 0.2739172501023859,
+      "cpuSeconds": 6.099485824000055,
+      "meanCpuPercent": 200.09880813761905,
+      "peakRssMiB": 777.328125,
+      "realtimeFactor": 0.178697144334053,
+      "rawPeak": 0.5011979341506958,
+      "words": [],
+      "wordTimingsVerified": false,
+      "modelNormalizedText": null,
+      "offline": true,
+      "networkAttempts": [],
+      "threads": 2,
+      "listeningPath": "outputs/supertonic-3/F4/B-normalized-listen.wav",
+      "rawPath": "outputs/supertonic-3/F4/B-normalized.wav",
+      "loudness": {
+        "input_i": "-25.14",
+        "input_tp": "-5.95",
+        "input_lra": "1.50",
+        "input_thresh": "-35.30",
+        "output_i": "-20.00",
+        "output_tp": "-2.00",
+        "output_lra": "2.10",
+        "output_thresh": "-30.16",
+        "normalization_type": "dynamic",
+        "target_offset": "0.00"
+      },
+      "sha256": "b8b16b6facbeac0fe9f54370e85e29fe8f6f73c2ee52fc8aad2f79b538420fa6"
+    },
+    {
+      "model": "supertonic-3",
+      "voice": "F4",
+      "test": "B",
+      "variant": "original",
+      "text": "Bir milyon saniye yaklaşık 11,6 gündür. Bir milyar saniye ise yaklaşık 31,7 yıl eder. Aralarında tam bin kat fark bulunur. Aynı karşılaştırmayı 42 kilometre, 384.400 kilometre ve 1,5 milyon metre için düşünelim.",
+      "speed": 1.0,
+      "seed": 42,
+      "device": "cpu",
+      "nativeSampleRate": 44100,
+      "durationSeconds": 17.267006802721088,
+      "generationSeconds": 2.990847249981016,
+      "modelLoadSeconds": 0.2739172501023859,
+      "cpuSeconds": 5.9843159039999705,
+      "meanCpuPercent": 200.0876475399389,
+      "peakRssMiB": 777.328125,
+      "realtimeFactor": 0.17321167960098863,
+      "rawPeak": 0.38692283630371094,
+      "words": [],
+      "wordTimingsVerified": false,
+      "modelNormalizedText": null,
+      "offline": true,
+      "networkAttempts": [],
+      "threads": 2,
+      "listeningPath": "outputs/supertonic-3/F4/B-original-listen.wav",
+      "rawPath": "outputs/supertonic-3/F4/B-original.wav",
+      "loudness": {
+        "input_i": "-25.32",
+        "input_tp": "-8.25",
+        "input_lra": "2.60",
+        "input_thresh": "-35.42",
+        "output_i": "-19.92",
+        "output_tp": "-2.85",
+        "output_lra": "2.60",
+        "output_thresh": "-30.02",
+        "normalization_type": "linear",
+        "target_offset": "-0.08"
+      },
+      "sha256": "f971c7689cb1eb90e24df3db58d7d7422cac6090ff87ef019a55d9381bbe348a"
+    },
+    {
+      "model": "supertonic-3",
+      "voice": "F4",
+      "test": "C",
+      "variant": "original",
+      "text": "Bir kâğıdı 42 kez katlayabilseydiniz, ortaya çıkan kalınlığın Ay'a ulaşabileceğini biliyor muydunuz?",
+      "speed": 1.0,
+      "seed": 42,
+      "device": "cpu",
+      "nativeSampleRate": 44100,
+      "durationSeconds": 6.966349206349206,
+      "generationSeconds": 1.3145394171588123,
+      "modelLoadSeconds": 0.2739172501023859,
+      "cpuSeconds": 2.6282506240000316,
+      "meanCpuPercent": 199.93699615950786,
+      "peakRssMiB": 777.34375,
+      "realtimeFactor": 0.18869846719149921,
+      "rawPeak": 0.3207428753376007,
+      "words": [],
+      "wordTimingsVerified": false,
+      "modelNormalizedText": null,
+      "offline": true,
+      "networkAttempts": [],
+      "threads": 2,
+      "listeningPath": "outputs/supertonic-3/F4/C-original-listen.wav",
+      "rawPath": "outputs/supertonic-3/F4/C-original.wav",
+      "loudness": {
+        "input_i": "-25.27",
+        "input_tp": "-9.88",
+        "input_lra": "1.20",
+        "input_thresh": "-35.54",
+        "output_i": "-19.95",
+        "output_tp": "-4.56",
+        "output_lra": "1.20",
+        "output_thresh": "-30.23",
+        "normalization_type": "linear",
+        "target_offset": "-0.05"
+      },
+      "sha256": "2b1fe17b7766a5606bff386e46079d0284006bd744577a82daf39390dbfcef53"
+    },
+    {
+      "model": "supertonic-3",
+      "voice": "F4",
+      "test": "D",
+      "variant": "duration-42",
+      "text": "Gece gökyüzüne baktığımızda, aslında geçmişten gelen ışığı görürüz. Işık çok hızlı ilerler, ama yolculuğu anlık değildir. Ay'dan yansıyan ışığın Dünya'ya ulaşması yaklaşık bir saniyeden biraz fazla sürer. Güneş'ten gelen ışık ise yaklaşık sekiz dakikada bize ulaşır. Bu yüzden Güneş'i her zaman birkaç dakika önceki hâliyle görürüz. Daha uzak yıldızlarda bu gecikme yıllara dönüşür. Bir yıldızın uzaklığını ışık yılıyla söylemek, ışığının bize kaç yılda ulaştığını anlatır. Işık yılı bir zaman birimi değil, mesafe birimidir. Evrenin ölçeği büyüdükçe, baktığımız görüntü de geçmişe doğru uzanır. Gökyüzü, farklı zamanlardan gelen ışıkların aynı anda buluştuğu bir manzara gibidir.",
+      "speed": 0.9948218334953028,
+      "seed": 42,
+      "device": "cpu",
+      "nativeSampleRate": 44100,
+      "durationSeconds": 41.99684807256236,
+      "generationSeconds": 7.632539666956291,
+      "modelLoadSeconds": 0.2665417499374598,
+      "cpuSeconds": 15.263970528000002,
+      "meanCpuPercent": 199.98547264788706,
+      "peakRssMiB": 657.796875,
+      "realtimeFactor": 0.1817407738259012,
+      "rawPeak": 0.4472005069255829,
+      "words": [],
+      "wordTimingsVerified": false,
+      "modelNormalizedText": null,
+      "offline": true,
+      "networkAttempts": [],
+      "threads": 2,
+      "listeningPath": "outputs/supertonic-3/F4/D-duration-42-listen.wav",
+      "rawPath": "outputs/supertonic-3/F4/D-duration-42.wav",
+      "loudness": {
+        "input_i": "-24.80",
+        "input_tp": "-6.99",
+        "input_lra": "2.90",
+        "input_thresh": "-35.01",
+        "output_i": "-19.91",
+        "output_tp": "-2.10",
+        "output_lra": "2.90",
+        "output_thresh": "-30.13",
+        "normalization_type": "linear",
+        "target_offset": "-0.09"
+      },
+      "sha256": "ed280a3df914bae9e51c9907105605507ad7b7285e32b3677bdc30f75055ed0a"
+    },
+    {
+      "model": "supertonic-3",
+      "voice": "F4",
+      "test": "D",
+      "variant": "original",
+      "text": "Gece gökyüzüne baktığımızda, aslında geçmişten gelen ışığı görürüz. Işık çok hızlı ilerler, ama yolculuğu anlık değildir. Ay'dan yansıyan ışığın Dünya'ya ulaşması yaklaşık bir saniyeden biraz fazla sürer. Güneş'ten gelen ışık ise yaklaşık sekiz dakikada bize ulaşır. Bu yüzden Güneş'i her zaman birkaç dakika önceki hâliyle görürüz. Daha uzak yıldızlarda bu gecikme yıllara dönüşür. Bir yıldızın uzaklığını ışık yılıyla söylemek, ışığının bize kaç yılda ulaştığını anlatır. Işık yılı bir zaman birimi değil, mesafe birimidir. Evrenin ölçeği büyüdükçe, baktığımız görüntü de geçmişe doğru uzanır. Gökyüzü, farklı zamanlardan gelen ışıkların aynı anda buluştuğu bir manzara gibidir.",
+      "speed": 1.0,
+      "seed": 42,
+      "device": "cpu",
+      "nativeSampleRate": 44100,
+      "durationSeconds": 41.78251700680272,
+      "generationSeconds": 7.356729249935597,
+      "modelLoadSeconds": 0.2739172501023859,
+      "cpuSeconds": 14.728504191999946,
+      "meanCpuPercent": 200.20451605078281,
+      "peakRssMiB": 777.375,
+      "realtimeFactor": 0.17607195011104354,
+      "rawPeak": 0.3913687467575073,
+      "words": [],
+      "wordTimingsVerified": false,
+      "modelNormalizedText": null,
+      "offline": true,
+      "networkAttempts": [],
+      "threads": 2,
+      "listeningPath": "outputs/supertonic-3/F4/D-original-listen.wav",
+      "rawPath": "outputs/supertonic-3/F4/D-original.wav",
+      "loudness": {
+        "input_i": "-24.83",
+        "input_tp": "-8.15",
+        "input_lra": "3.20",
+        "input_thresh": "-34.98",
+        "output_i": "-19.92",
+        "output_tp": "-3.24",
+        "output_lra": "3.20",
+        "output_thresh": "-30.10",
+        "normalization_type": "linear",
+        "target_offset": "-0.08"
+      },
+      "sha256": "8321733c57d5973f571116b0abb1346dad9ed67305123d4d5b6d4b478ccc79cf"
+    },
+    {
+      "model": "supertonic-3",
+      "voice": "F5",
+      "test": "A",
+      "variant": "original",
+      "text": "Her gün gördüğümüz sayılar bazen düşündüğümüzden çok daha büyük anlamlar taşıyor. Küçük bir fark gibi görünen şey, ölçek değiştiğinde bambaşka bir dünyaya dönüşebilir.",
+      "speed": 1.0,
+      "seed": 42,
+      "device": "cpu",
+      "nativeSampleRate": 44100,
+      "durationSeconds": 11.77047619047619,
+      "generationSeconds": 2.1160107920877635,
+      "modelLoadSeconds": 0.2739172501023859,
+      "cpuSeconds": 4.22527776000004,
+      "meanCpuPercent": 199.68129537898844,
+      "peakRssMiB": 777.5,
+      "realtimeFactor": 0.17977274307728391,
+      "rawPeak": 0.3034675121307373,
+      "words": [],
+      "wordTimingsVerified": false,
+      "modelNormalizedText": null,
+      "offline": true,
+      "networkAttempts": [],
+      "threads": 2,
+      "listeningPath": "outputs/supertonic-3/F5/A-original-listen.wav",
+      "rawPath": "outputs/supertonic-3/F5/A-original.wav",
+      "loudness": {
+        "input_i": "-24.92",
+        "input_tp": "-10.36",
+        "input_lra": "1.80",
+        "input_thresh": "-35.11",
+        "output_i": "-19.89",
+        "output_tp": "-5.33",
+        "output_lra": "1.80",
+        "output_thresh": "-30.12",
+        "normalization_type": "linear",
+        "target_offset": "-0.11"
+      },
+      "sha256": "b550abdf20ad24009bf163f905bc58be57f0353d6a2e5afd1daba7edbdc476a5"
+    },
+    {
+      "model": "supertonic-3",
+      "voice": "F5",
+      "test": "B",
+      "variant": "normalized",
+      "text": "Bir milyon saniye yaklaşık on bir virgül altı gündür. Bir milyar saniye ise yaklaşık otuz bir virgül yedi yıl eder. Aralarında tam bin kat fark bulunur. Aynı karşılaştırmayı kırk iki kilometre, üç yüz seksen dört bin dört yüz kilometre ve bir virgül beş milyon metre için düşünelim.",
+      "speed": 1.0,
+      "seed": 42,
+      "device": "cpu",
+      "nativeSampleRate": 44100,
+      "durationSeconds": 19.139160997732425,
+      "generationSeconds": 3.4535518328193575,
+      "modelLoadSeconds": 0.2739172501023859,
+      "cpuSeconds": 6.907509887999993,
+      "meanCpuPercent": 200.01176245155546,
+      "peakRssMiB": 777.5625,
+      "realtimeFactor": 0.18044426467955038,
+      "rawPeak": 0.33135777711868286,
+      "words": [],
+      "wordTimingsVerified": false,
+      "modelNormalizedText": null,
+      "offline": true,
+      "networkAttempts": [],
+      "threads": 2,
+      "listeningPath": "outputs/supertonic-3/F5/B-normalized-listen.wav",
+      "rawPath": "outputs/supertonic-3/F5/B-normalized.wav",
+      "loudness": {
+        "input_i": "-24.63",
+        "input_tp": "-9.59",
+        "input_lra": "1.90",
+        "input_thresh": "-34.82",
+        "output_i": "-19.97",
+        "output_tp": "-4.91",
+        "output_lra": "2.00",
+        "output_thresh": "-30.16",
+        "normalization_type": "linear",
+        "target_offset": "-0.03"
+      },
+      "sha256": "3b5ed550c4f6cb97e1182561e14998e68f6dae73f71973cf7ea0e5e79274225d"
+    },
+    {
+      "model": "supertonic-3",
+      "voice": "F5",
+      "test": "B",
+      "variant": "original",
+      "text": "Bir milyon saniye yaklaşık 11,6 gündür. Bir milyar saniye ise yaklaşık 31,7 yıl eder. Aralarında tam bin kat fark bulunur. Aynı karşılaştırmayı 42 kilometre, 384.400 kilometre ve 1,5 milyon metre için düşünelim.",
+      "speed": 1.0,
+      "seed": 42,
+      "device": "cpu",
+      "nativeSampleRate": 44100,
+      "durationSeconds": 19.373492063492062,
+      "generationSeconds": 3.4145084160845727,
+      "modelLoadSeconds": 0.2739172501023859,
+      "cpuSeconds": 6.829861248000043,
+      "meanCpuPercent": 200.02473023135394,
+      "peakRssMiB": 777.5625,
+      "realtimeFactor": 0.17624640952154236,
+      "rawPeak": 0.3290920853614807,
+      "words": [],
+      "wordTimingsVerified": false,
+      "modelNormalizedText": null,
+      "offline": true,
+      "networkAttempts": [],
+      "threads": 2,
+      "listeningPath": "outputs/supertonic-3/F5/B-original-listen.wav",
+      "rawPath": "outputs/supertonic-3/F5/B-original.wav",
+      "loudness": {
+        "input_i": "-25.03",
+        "input_tp": "-9.65",
+        "input_lra": "1.30",
+        "input_thresh": "-35.14",
+        "output_i": "-20.08",
+        "output_tp": "-4.70",
+        "output_lra": "1.40",
+        "output_thresh": "-30.19",
+        "normalization_type": "linear",
+        "target_offset": "0.08"
+      },
+      "sha256": "648a1c26272c922a5e141a6ab7eeb61c9b503ce4519ca322520f5cc768b9df92"
+    },
+    {
+      "model": "supertonic-3",
+      "voice": "F5",
+      "test": "C",
+      "variant": "original",
+      "text": "Bir kâğıdı 42 kez katlayabilseydiniz, ortaya çıkan kalınlığın Ay'a ulaşabileceğini biliyor muydunuz?",
+      "speed": 1.0,
+      "seed": 42,
+      "device": "cpu",
+      "nativeSampleRate": 44100,
+      "durationSeconds": 7.843718820861678,
+      "generationSeconds": 1.4769893328193575,
+      "modelLoadSeconds": 0.2739172501023859,
+      "cpuSeconds": 2.958360895999988,
+      "meanCpuPercent": 200.29670020384697,
+      "peakRssMiB": 777.6875,
+      "realtimeFactor": 0.18830217739206281,
+      "rawPeak": 0.2701742351055145,
+      "words": [],
+      "wordTimingsVerified": false,
+      "modelNormalizedText": null,
+      "offline": true,
+      "networkAttempts": [],
+      "threads": 2,
+      "listeningPath": "outputs/supertonic-3/F5/C-original-listen.wav",
+      "rawPath": "outputs/supertonic-3/F5/C-original.wav",
+      "loudness": {
+        "input_i": "-24.89",
+        "input_tp": "-11.37",
+        "input_lra": "2.90",
+        "input_thresh": "-35.08",
+        "output_i": "-20.09",
+        "output_tp": "-6.57",
+        "output_lra": "2.90",
+        "output_thresh": "-30.34",
+        "normalization_type": "linear",
+        "target_offset": "0.09"
+      },
+      "sha256": "3bd143c986cffd51d61130f69d9e44408c3ea5216fd6beeaece170d87cb7d4d5"
+    },
+    {
+      "model": "supertonic-3",
+      "voice": "F5",
+      "test": "D",
+      "variant": "duration-42",
+      "text": "Gece gökyüzüne baktığımızda, aslında geçmişten gelen ışığı görürüz. Işık çok hızlı ilerler, ama yolculuğu anlık değildir. Ay'dan yansıyan ışığın Dünya'ya ulaşması yaklaşık bir saniyeden biraz fazla sürer. Güneş'ten gelen ışık ise yaklaşık sekiz dakikada bize ulaşır. Bu yüzden Güneş'i her zaman birkaç dakika önceki hâliyle görürüz. Daha uzak yıldızlarda bu gecikme yıllara dönüşür. Bir yıldızın uzaklığını ışık yılıyla söylemek, ışığının bize kaç yılda ulaştığını anlatır. Işık yılı bir zaman birimi değil, mesafe birimidir. Evrenin ölçeği büyüdükçe, baktığımız görüntü de geçmişe doğru uzanır. Gökyüzü, farklı zamanlardan gelen ışıkların aynı anda buluştuğu bir manzara gibidir.",
+      "speed": 1.1157304826692582,
+      "seed": 42,
+      "device": "cpu",
+      "nativeSampleRate": 44100,
+      "durationSeconds": 42.06224489795918,
+      "generationSeconds": 7.528531166026369,
+      "modelLoadSeconds": 0.2665417499374598,
+      "cpuSeconds": 15.069570175999985,
+      "meanCpuPercent": 200.1661392331573,
+      "peakRssMiB": 579.359375,
+      "realtimeFactor": 0.17898548173760562,
+      "rawPeak": 0.29223373532295227,
+      "words": [],
+      "wordTimingsVerified": false,
+      "modelNormalizedText": null,
+      "offline": true,
+      "networkAttempts": [],
+      "threads": 2,
+      "listeningPath": "outputs/supertonic-3/F5/D-duration-42-listen.wav",
+      "rawPath": "outputs/supertonic-3/F5/D-duration-42.wav",
+      "loudness": {
+        "input_i": "-24.81",
+        "input_tp": "-10.69",
+        "input_lra": "2.30",
+        "input_thresh": "-34.94",
+        "output_i": "-19.95",
+        "output_tp": "-5.82",
+        "output_lra": "2.30",
+        "output_thresh": "-30.09",
+        "normalization_type": "linear",
+        "target_offset": "-0.05"
+      },
+      "sha256": "de28f73ee4ca8cec34c60cb5869bad3d9b064319d206c8061c4ca76610bf974b"
+    },
+    {
+      "model": "supertonic-3",
+      "voice": "F5",
+      "test": "D",
+      "variant": "original",
+      "text": "Gece gökyüzüne baktığımızda, aslında geçmişten gelen ışığı görürüz. Işık çok hızlı ilerler, ama yolculuğu anlık değildir. Ay'dan yansıyan ışığın Dünya'ya ulaşması yaklaşık bir saniyeden biraz fazla sürer. Güneş'ten gelen ışık ise yaklaşık sekiz dakikada bize ulaşır. Bu yüzden Güneş'i her zaman birkaç dakika önceki hâliyle görürüz. Daha uzak yıldızlarda bu gecikme yıllara dönüşür. Bir yıldızın uzaklığını ışık yılıyla söylemek, ışığının bize kaç yılda ulaştığını anlatır. Işık yılı bir zaman birimi değil, mesafe birimidir. Evrenin ölçeği büyüdükçe, baktığımız görüntü de geçmişe doğru uzanır. Gökyüzü, farklı zamanlardan gelen ışıkların aynı anda buluştuğu bir manzara gibidir.",
+      "speed": 1.0,
+      "seed": 42,
+      "device": "cpu",
+      "nativeSampleRate": 44100,
+      "durationSeconds": 46.860680272108844,
+      "generationSeconds": 8.235271290875971,
+      "modelLoadSeconds": 0.2739172501023859,
+      "cpuSeconds": 16.486731264000014,
+      "meanCpuPercent": 200.19657740074703,
+      "peakRssMiB": 777.703125,
+      "realtimeFactor": 0.17573947375615775,
+      "rawPeak": 0.313010573387146,
+      "words": [],
+      "wordTimingsVerified": false,
+      "modelNormalizedText": null,
+      "offline": true,
+      "networkAttempts": [],
+      "threads": 2,
+      "listeningPath": "outputs/supertonic-3/F5/D-original-listen.wav",
+      "rawPath": "outputs/supertonic-3/F5/D-original.wav",
+      "loudness": {
+        "input_i": "-24.80",
+        "input_tp": "-10.09",
+        "input_lra": "2.90",
+        "input_thresh": "-35.00",
+        "output_i": "-19.93",
+        "output_tp": "-5.22",
+        "output_lra": "2.90",
+        "output_thresh": "-30.14",
+        "normalization_type": "linear",
+        "target_offset": "-0.07"
+      },
+      "sha256": "5ba0a3fdb0f549adef1d4459e8bace8da8c13926f16a306b6ada8ff7d3a4dd14"
+    },
+    {
+      "model": "supertonic-3",
+      "voice": "M1",
+      "text": "Her gün gördüğümüz sayılar bazen düşündüğümüzden çok daha büyük anlamlar taşıyor. Küçük bir fark gibi görünen şey, ölçek değiştiğinde bambaşka bir dünyaya dönüşebilir.",
+      "test": "A",
+      "variant": "original",
+      "speed": 1.0,
+      "seed": 42,
+      "device": "cpu",
+      "nativeSampleRate": 44100,
+      "durationSeconds": 12.153854875283447,
+      "generationSeconds": 3.2378278749529272,
+      "modelLoadSeconds": 0.7911795831751078,
+      "cpuSeconds": 4.4048727759999995,
+      "meanCpuPercent": 136.0440686200479,
+      "peakRssMiB": 570.9375,
+      "realtimeFactor": 0.2664033681640794,
+      "rawPeak": 0.480573832988739,
+      "words": [],
+      "wordTimingsVerified": false,
+      "modelNormalizedText": null,
+      "offline": true,
+      "networkAttempts": [],
+      "threads": 2,
+      "listeningPath": "outputs/supertonic-3/M1/A-original-listen.wav",
+      "rawPath": "outputs/supertonic-3/M1/A-original.wav",
+      "loudness": {
+        "input_i": "-25.14",
+        "input_tp": "-6.37",
+        "input_lra": "2.80",
+        "input_thresh": "-35.49",
+        "output_i": "-20.02",
+        "output_tp": "-2.00",
+        "output_lra": "1.40",
+        "output_thresh": "-30.40",
+        "normalization_type": "dynamic",
+        "target_offset": "0.02"
+      },
+      "sha256": "ffb912f1c778d936ef9664a40c1337fc0d003a54abe8e14f6792262802c79673"
+    },
+    {
+      "model": "supertonic-3",
+      "voice": "M1",
+      "test": "B",
+      "variant": "normalized",
+      "text": "Bir milyon saniye yaklaşık on bir virgül altı gündür. Bir milyar saniye ise yaklaşık otuz bir virgül yedi yıl eder. Aralarında tam bin kat fark bulunur. Aynı karşılaştırmayı kırk iki kilometre, üç yüz seksen dört bin dört yüz kilometre ve bir virgül beş milyon metre için düşünelim.",
+      "speed": 1.0,
+      "seed": 42,
+      "device": "cpu",
+      "nativeSampleRate": 44100,
+      "durationSeconds": 19.61453514739229,
+      "generationSeconds": 3.5037468750961125,
+      "modelLoadSeconds": 0.2739172501023859,
+      "cpuSeconds": 6.9831932,
+      "meanCpuPercent": 199.30644104558613,
+      "peakRssMiB": 615.671875,
+      "realtimeFactor": 0.178630125504755,
+      "rawPeak": 0.5021787881851196,
+      "words": [],
+      "wordTimingsVerified": false,
+      "modelNormalizedText": null,
+      "offline": true,
+      "networkAttempts": [],
+      "threads": 2,
+      "listeningPath": "outputs/supertonic-3/M1/B-normalized-listen.wav",
+      "rawPath": "outputs/supertonic-3/M1/B-normalized.wav",
+      "loudness": {
+        "input_i": "-24.53",
+        "input_tp": "-5.98",
+        "input_lra": "1.60",
+        "input_thresh": "-34.90",
+        "output_i": "-20.00",
+        "output_tp": "-2.00",
+        "output_lra": "1.40",
+        "output_thresh": "-30.40",
+        "normalization_type": "dynamic",
+        "target_offset": "-0.00"
+      },
+      "sha256": "651c8923227a7af8da5a59bc8991c4ba01e256aba4bd2ec634c94cd8eb76cf13"
+    },
+    {
+      "model": "supertonic-3",
+      "voice": "M1",
+      "text": "Bir milyon saniye yaklaşık 11,6 gündür. Bir milyar saniye ise yaklaşık 31,7 yıl eder. Aralarında tam bin kat fark bulunur. Aynı karşılaştırmayı 42 kilometre, 384.400 kilometre ve 1,5 milyon metre için düşünelim.",
+      "test": "B",
+      "variant": "original",
+      "speed": 1.0,
+      "seed": 42,
+      "device": "cpu",
+      "nativeSampleRate": 44100,
+      "durationSeconds": 19.854625850340135,
+      "generationSeconds": 3.4607678330503404,
+      "modelLoadSeconds": 0.7911795831751078,
+      "cpuSeconds": 6.919547167999999,
+      "meanCpuPercent": 199.9425417076034,
+      "peakRssMiB": 606.109375,
+      "realtimeFactor": 0.17430536637340124,
+      "rawPeak": 0.46783512830734253,
+      "words": [],
+      "wordTimingsVerified": false,
+      "modelNormalizedText": null,
+      "offline": true,
+      "networkAttempts": [],
+      "threads": 2,
+      "listeningPath": "outputs/supertonic-3/M1/B-original-listen.wav",
+      "rawPath": "outputs/supertonic-3/M1/B-original.wav",
+      "loudness": {
+        "input_i": "-25.07",
+        "input_tp": "-6.60",
+        "input_lra": "1.10",
+        "input_thresh": "-35.47",
+        "output_i": "-20.00",
+        "output_tp": "-2.00",
+        "output_lra": "1.20",
+        "output_thresh": "-30.46",
+        "normalization_type": "dynamic",
+        "target_offset": "0.00"
+      },
+      "sha256": "f5141fbf966fdc3d0eed33eeede712c6ea5875fbc889754c8b389b8cb4ac6376"
+    },
+    {
+      "model": "supertonic-3",
+      "voice": "M1",
+      "text": "Bir kâğıdı 42 kez katlayabilseydiniz, ortaya çıkan kalınlığın Ay'a ulaşabileceğini biliyor muydunuz?",
+      "test": "C",
+      "variant": "original",
+      "speed": 1.0,
+      "seed": 42,
+      "device": "cpu",
+      "nativeSampleRate": 44100,
+      "durationSeconds": 8.099183673469387,
+      "generationSeconds": 1.4854160000104457,
+      "modelLoadSeconds": 0.7911795831751078,
+      "cpuSeconds": 2.9651545919999993,
+      "meanCpuPercent": 199.61779003182596,
+      "peakRssMiB": 609.484375,
+      "realtimeFactor": 0.18340317492443645,
+      "rawPeak": 0.4193612337112427,
+      "words": [],
+      "wordTimingsVerified": false,
+      "modelNormalizedText": null,
+      "offline": true,
+      "networkAttempts": [],
+      "threads": 2,
+      "listeningPath": "outputs/supertonic-3/M1/C-original-listen.wav",
+      "rawPath": "outputs/supertonic-3/M1/C-original.wav",
+      "loudness": {
+        "input_i": "-25.61",
+        "input_tp": "-7.55",
+        "input_lra": "2.10",
+        "input_thresh": "-35.91",
+        "output_i": "-20.20",
+        "output_tp": "-2.14",
+        "output_lra": "2.10",
+        "output_thresh": "-30.50",
+        "normalization_type": "linear",
+        "target_offset": "0.20"
+      },
+      "sha256": "91ba415303424a7960d25f263735386131124620ea94e39b84b3404baf8fcacf"
+    },
+    {
+      "model": "supertonic-3",
+      "voice": "M1",
+      "test": "D",
+      "variant": "duration-42",
+      "text": "Gece gökyüzüne baktığımızda, aslında geçmişten gelen ışığı görürüz. Işık çok hızlı ilerler, ama yolculuğu anlık değildir. Ay'dan yansıyan ışığın Dünya'ya ulaşması yaklaşık bir saniyeden biraz fazla sürer. Güneş'ten gelen ışık ise yaklaşık sekiz dakikada bize ulaşır. Bu yüzden Güneş'i her zaman birkaç dakika önceki hâliyle görürüz. Daha uzak yıldızlarda bu gecikme yıllara dönüşür. Bir yıldızın uzaklığını ışık yılıyla söylemek, ışığının bize kaç yılda ulaştığını anlatır. Işık yılı bir zaman birimi değil, mesafe birimidir. Evrenin ölçeği büyüdükçe, baktığımız görüntü de geçmişe doğru uzanır. Gökyüzü, farklı zamanlardan gelen ışıkların aynı anda buluştuğu bir manzara gibidir.",
+      "speed": 1.1452316164561063,
+      "seed": 42,
+      "device": "cpu",
+      "nativeSampleRate": 44100,
+      "durationSeconds": 42.07607709750567,
+      "generationSeconds": 7.371014834148809,
+      "modelLoadSeconds": 0.2665417499374598,
+      "cpuSeconds": 14.744877868,
+      "meanCpuPercent": 200.03864053683876,
+      "peakRssMiB": 613.5,
+      "realtimeFactor": 0.1751830337478342,
+      "rawPeak": 0.5080060958862305,
+      "words": [],
+      "wordTimingsVerified": false,
+      "modelNormalizedText": null,
+      "offline": true,
+      "networkAttempts": [],
+      "threads": 2,
+      "listeningPath": "outputs/supertonic-3/M1/D-duration-42-listen.wav",
+      "rawPath": "outputs/supertonic-3/M1/D-duration-42.wav",
+      "loudness": {
+        "input_i": "-24.76",
+        "input_tp": "-5.88",
+        "input_lra": "3.20",
+        "input_thresh": "-35.19",
+        "output_i": "-20.00",
+        "output_tp": "-2.00",
+        "output_lra": "2.90",
+        "output_thresh": "-30.43",
+        "normalization_type": "dynamic",
+        "target_offset": "0.00"
+      },
+      "sha256": "7b2512c2f942f60918383067acb729d33aa4af4b4501066d239cfed19e930538"
+    },
+    {
+      "model": "supertonic-3",
+      "voice": "M1",
+      "text": "Gece gökyüzüne baktığımızda, aslında geçmişten gelen ışığı görürüz. Işık çok hızlı ilerler, ama yolculuğu anlık değildir. Ay'dan yansıyan ışığın Dünya'ya ulaşması yaklaşık bir saniyeden biraz fazla sürer. Güneş'ten gelen ışık ise yaklaşık sekiz dakikada bize ulaşır. Bu yüzden Güneş'i her zaman birkaç dakika önceki hâliyle görürüz. Daha uzak yıldızlarda bu gecikme yıllara dönüşür. Bir yıldızın uzaklığını ışık yılıyla söylemek, ışığının bize kaç yılda ulaştığını anlatır. Işık yılı bir zaman birimi değil, mesafe birimidir. Evrenin ölçeği büyüdükçe, baktığımız görüntü de geçmişe doğru uzanır. Gökyüzü, farklı zamanlardan gelen ışıkların aynı anda buluştuğu bir manzara gibidir.",
+      "test": "D",
+      "variant": "original",
+      "speed": 1.0,
+      "seed": 42,
+      "device": "cpu",
+      "nativeSampleRate": 44100,
+      "durationSeconds": 48.09972789115646,
+      "generationSeconds": 8.501101417001337,
+      "modelLoadSeconds": 0.7911795831751078,
+      "cpuSeconds": 17.017803872,
+      "meanCpuPercent": 200.18351784353646,
+      "peakRssMiB": 626.109375,
+      "realtimeFactor": 0.17673907503672875,
+      "rawPeak": 0.5304522514343262,
+      "words": [],
+      "wordTimingsVerified": false,
+      "modelNormalizedText": null,
+      "offline": true,
+      "networkAttempts": [],
+      "threads": 2,
+      "listeningPath": "outputs/supertonic-3/M1/D-original-listen.wav",
+      "rawPath": "outputs/supertonic-3/M1/D-original.wav",
+      "loudness": {
+        "input_i": "-24.91",
+        "input_tp": "-5.51",
+        "input_lra": "2.50",
+        "input_thresh": "-35.32",
+        "output_i": "-19.99",
+        "output_tp": "-2.00",
+        "output_lra": "2.20",
+        "output_thresh": "-30.38",
+        "normalization_type": "dynamic",
+        "target_offset": "-0.01"
+      },
+      "sha256": "16de498b6380c01544b3a61a04b03d885cedd4399c92cc4f1d7aeea40cbb6bd9"
+    },
+    {
+      "model": "supertonic-3",
+      "voice": "M2",
+      "test": "A",
+      "variant": "original",
+      "text": "Her gün gördüğümüz sayılar bazen düşündüğümüzden çok daha büyük anlamlar taşıyor. Küçük bir fark gibi görünen şey, ölçek değiştiğinde bambaşka bir dünyaya dönüşebilir.",
+      "speed": 1.0,
+      "seed": 42,
+      "device": "cpu",
+      "nativeSampleRate": 44100,
+      "durationSeconds": 11.902426303854876,
+      "generationSeconds": 2.131782499840483,
+      "modelLoadSeconds": 0.2739172501023859,
+      "cpuSeconds": 4.257534295999999,
+      "meanCpuPercent": 199.71710511361184,
+      "peakRssMiB": 628.375,
+      "realtimeFactor": 0.17910486865607023,
+      "rawPeak": 0.6161723732948303,
+      "words": [],
+      "wordTimingsVerified": false,
+      "modelNormalizedText": null,
+      "offline": true,
+      "networkAttempts": [],
+      "threads": 2,
+      "listeningPath": "outputs/supertonic-3/M2/A-original-listen.wav",
+      "rawPath": "outputs/supertonic-3/M2/A-original.wav",
+      "loudness": {
+        "input_i": "-24.27",
+        "input_tp": "-4.19",
+        "input_lra": "2.80",
+        "input_thresh": "-34.80",
+        "output_i": "-20.07",
+        "output_tp": "-2.00",
+        "output_lra": "1.30",
+        "output_thresh": "-30.43",
+        "normalization_type": "dynamic",
+        "target_offset": "0.07"
+      },
+      "sha256": "cccba5ab2ed5c59860570a95f9bf8c0408d859dab84627cc43600c5d920006da"
+    },
+    {
+      "model": "supertonic-3",
+      "voice": "M2",
+      "test": "B",
+      "variant": "normalized",
+      "text": "Bir milyon saniye yaklaşık on bir virgül altı gündür. Bir milyar saniye ise yaklaşık otuz bir virgül yedi yıl eder. Aralarında tam bin kat fark bulunur. Aynı karşılaştırmayı kırk iki kilometre, üç yüz seksen dört bin dört yüz kilometre ve bir virgül beş milyon metre için düşünelim.",
+      "speed": 1.0,
+      "seed": 42,
+      "device": "cpu",
+      "nativeSampleRate": 44100,
+      "durationSeconds": 19.316643990929705,
+      "generationSeconds": 3.444507332984358,
+      "modelLoadSeconds": 0.2739172501023859,
+      "cpuSeconds": 6.8911331840000045,
+      "meanCpuPercent": 200.06150423925658,
+      "peakRssMiB": 641.421875,
+      "realtimeFactor": 0.1783181040454934,
+      "rawPeak": 0.6757261157035828,
+      "words": [],
+      "wordTimingsVerified": false,
+      "modelNormalizedText": null,
+      "offline": true,
+      "networkAttempts": [],
+      "threads": 2,
+      "listeningPath": "outputs/supertonic-3/M2/B-normalized-listen.wav",
+      "rawPath": "outputs/supertonic-3/M2/B-normalized.wav",
+      "loudness": {
+        "input_i": "-23.20",
+        "input_tp": "-3.40",
+        "input_lra": "3.70",
+        "input_thresh": "-33.66",
+        "output_i": "-20.00",
+        "output_tp": "-2.00",
+        "output_lra": "2.50",
+        "output_thresh": "-30.45",
+        "normalization_type": "dynamic",
+        "target_offset": "0.00"
+      },
+      "sha256": "89afc4aad142a60de24038b77ef02412076b5a9341e07f3db61aad34361b1d1d"
+    },
+    {
+      "model": "supertonic-3",
+      "voice": "M2",
+      "test": "B",
+      "variant": "original",
+      "text": "Bir milyon saniye yaklaşık 11,6 gündür. Bir milyar saniye ise yaklaşık 31,7 yıl eder. Aralarında tam bin kat fark bulunur. Aynı karşılaştırmayı 42 kilometre, 384.400 kilometre ve 1,5 milyon metre için düşünelim.",
+      "speed": 1.0,
+      "seed": 42,
+      "device": "cpu",
+      "nativeSampleRate": 44100,
+      "durationSeconds": 19.553129251700682,
+      "generationSeconds": 3.4364675409160554,
+      "modelLoadSeconds": 0.2739172501023859,
+      "cpuSeconds": 6.872018096000003,
+      "meanCpuPercent": 199.97331603394503,
+      "peakRssMiB": 628.4375,
+      "realtimeFactor": 0.175750259545651,
+      "rawPeak": 0.6289822459220886,
+      "words": [],
+      "wordTimingsVerified": false,
+      "modelNormalizedText": null,
+      "offline": true,
+      "networkAttempts": [],
+      "threads": 2,
+      "listeningPath": "outputs/supertonic-3/M2/B-original-listen.wav",
+      "rawPath": "outputs/supertonic-3/M2/B-original.wav",
+      "loudness": {
+        "input_i": "-23.67",
+        "input_tp": "-4.01",
+        "input_lra": "3.80",
+        "input_thresh": "-34.08",
+        "output_i": "-20.00",
+        "output_tp": "-2.00",
+        "output_lra": "1.90",
+        "output_thresh": "-30.38",
+        "normalization_type": "dynamic",
+        "target_offset": "0.00"
+      },
+      "sha256": "0261c6f2d6640ef8385eadfdbff4699499ed02a4da8be69279b941f66bc354e6"
+    },
+    {
+      "model": "supertonic-3",
+      "voice": "M2",
+      "test": "C",
+      "variant": "original",
+      "text": "Bir kâğıdı 42 kez katlayabilseydiniz, ortaya çıkan kalınlığın Ay'a ulaşabileceğini biliyor muydunuz?",
+      "speed": 1.0,
+      "seed": 42,
+      "device": "cpu",
+      "nativeSampleRate": 44100,
+      "durationSeconds": 7.931678004535147,
+      "generationSeconds": 1.552008291007951,
+      "modelLoadSeconds": 0.2739172501023859,
+      "cpuSeconds": 3.051513007999997,
+      "meanCpuPercent": 196.61705582888308,
+      "peakRssMiB": 641.421875,
+      "realtimeFactor": 0.19567212513172483,
+      "rawPeak": 0.6168240308761597,
+      "words": [],
+      "wordTimingsVerified": false,
+      "modelNormalizedText": null,
+      "offline": true,
+      "networkAttempts": [],
+      "threads": 2,
+      "listeningPath": "outputs/supertonic-3/M2/C-original-listen.wav",
+      "rawPath": "outputs/supertonic-3/M2/C-original.wav",
+      "loudness": {
+        "input_i": "-23.25",
+        "input_tp": "-4.19",
+        "input_lra": "1.80",
+        "input_thresh": "-33.94",
+        "output_i": "-20.01",
+        "output_tp": "-2.00",
+        "output_lra": "1.50",
+        "output_thresh": "-30.65",
+        "normalization_type": "dynamic",
+        "target_offset": "0.01"
+      },
+      "sha256": "8bb12d29b055dc6287ab23800e005a3da9ae69e315afcb2eaab6852ae6de5ca7"
+    },
+    {
+      "model": "supertonic-3",
+      "voice": "M2",
+      "test": "D",
+      "variant": "duration-42",
+      "text": "Gece gökyüzüne baktığımızda, aslında geçmişten gelen ışığı görürüz. Işık çok hızlı ilerler, ama yolculuğu anlık değildir. Ay'dan yansıyan ışığın Dünya'ya ulaşması yaklaşık bir saniyeden biraz fazla sürer. Güneş'ten gelen ışık ise yaklaşık sekiz dakikada bize ulaşır. Bu yüzden Güneş'i her zaman birkaç dakika önceki hâliyle görürüz. Daha uzak yıldızlarda bu gecikme yıllara dönüşür. Bir yıldızın uzaklığını ışık yılıyla söylemek, ışığının bize kaç yılda ulaştığını anlatır. Işık yılı bir zaman birimi değil, mesafe birimidir. Evrenin ölçeği büyüdükçe, baktığımız görüntü de geçmişe doğru uzanır. Gökyüzü, farklı zamanlardan gelen ışıkların aynı anda buluştuğu bir manzara gibidir.",
+      "speed": 1.1264507072670338,
+      "seed": 42,
+      "device": "cpu",
+      "nativeSampleRate": 44100,
+      "durationSeconds": 42.06734693877551,
+      "generationSeconds": 7.481675625080243,
+      "modelLoadSeconds": 0.2665417499374598,
+      "cpuSeconds": 14.983815488000001,
+      "meanCpuPercent": 200.27352479397683,
+      "peakRssMiB": 657.671875,
+      "realtimeFactor": 0.17784995179203994,
+      "rawPeak": 0.7061911225318909,
+      "words": [],
+      "wordTimingsVerified": false,
+      "modelNormalizedText": null,
+      "offline": true,
+      "networkAttempts": [],
+      "threads": 2,
+      "listeningPath": "outputs/supertonic-3/M2/D-duration-42-listen.wav",
+      "rawPath": "outputs/supertonic-3/M2/D-duration-42.wav",
+      "loudness": {
+        "input_i": "-23.30",
+        "input_tp": "-3.00",
+        "input_lra": "3.80",
+        "input_thresh": "-33.76",
+        "output_i": "-20.00",
+        "output_tp": "-2.00",
+        "output_lra": "3.30",
+        "output_thresh": "-30.42",
+        "normalization_type": "dynamic",
+        "target_offset": "-0.00"
+      },
+      "sha256": "355e94d26e129d9506426b64103aa072ec4bcfae689ac99736ba1b052d7850b0"
+    },
+    {
+      "model": "supertonic-3",
+      "voice": "M2",
+      "test": "D",
+      "variant": "original",
+      "text": "Gece gökyüzüne baktığımızda, aslında geçmişten gelen ışığı görürüz. Işık çok hızlı ilerler, ama yolculuğu anlık değildir. Ay'dan yansıyan ışığın Dünya'ya ulaşması yaklaşık bir saniyeden biraz fazla sürer. Güneş'ten gelen ışık ise yaklaşık sekiz dakikada bize ulaşır. Bu yüzden Güneş'i her zaman birkaç dakika önceki hâliyle görürüz. Daha uzak yıldızlarda bu gecikme yıllara dönüşür. Bir yıldızın uzaklığını ışık yılıyla söylemek, ışığının bize kaç yılda ulaştığını anlatır. Işık yılı bir zaman birimi değil, mesafe birimidir. Evrenin ölçeği büyüdükçe, baktığımız görüntü de geçmişe doğru uzanır. Gökyüzü, farklı zamanlardan gelen ışıkların aynı anda buluştuğu bir manzara gibidir.",
+      "speed": 1.0,
+      "seed": 42,
+      "device": "cpu",
+      "nativeSampleRate": 44100,
+      "durationSeconds": 47.31092970521542,
+      "generationSeconds": 8.241151167079806,
+      "modelLoadSeconds": 0.2739172501023859,
+      "cpuSeconds": 16.50942584,
+      "meanCpuPercent": 200.32912278018554,
+      "peakRssMiB": 649.453125,
+      "realtimeFactor": 0.1741912750061922,
+      "rawPeak": 0.707951009273529,
+      "words": [],
+      "wordTimingsVerified": false,
+      "modelNormalizedText": null,
+      "offline": true,
+      "networkAttempts": [],
+      "threads": 2,
+      "listeningPath": "outputs/supertonic-3/M2/D-original-listen.wav",
+      "rawPath": "outputs/supertonic-3/M2/D-original.wav",
+      "loudness": {
+        "input_i": "-23.44",
+        "input_tp": "-2.99",
+        "input_lra": "4.30",
+        "input_thresh": "-33.88",
+        "output_i": "-20.02",
+        "output_tp": "-2.00",
+        "output_lra": "4.40",
+        "output_thresh": "-30.44",
+        "normalization_type": "dynamic",
+        "target_offset": "0.02"
+      },
+      "sha256": "1d6dcf2d00e1ec826cbca3db873edb3fc9f384091155ac78a56e522ac2effcd4"
+    },
+    {
+      "model": "supertonic-3",
+      "voice": "M3",
+      "test": "A",
+      "variant": "original",
+      "text": "Her gün gördüğümüz sayılar bazen düşündüğümüzden çok daha büyük anlamlar taşıyor. Küçük bir fark gibi görünen şey, ölçek değiştiğinde bambaşka bir dünyaya dönüşebilir.",
+      "speed": 1.0,
+      "seed": 42,
+      "device": "cpu",
+      "nativeSampleRate": 44100,
+      "durationSeconds": 10.022063492063491,
+      "generationSeconds": 1.755468999966979,
+      "modelLoadSeconds": 0.2739172501023859,
+      "cpuSeconds": 3.506698319999998,
+      "meanCpuPercent": 199.75848733677213,
+      "peakRssMiB": 669.15625,
+      "realtimeFactor": 0.17516043491015013,
+      "rawPeak": 0.3655606508255005,
+      "words": [],
+      "wordTimingsVerified": false,
+      "modelNormalizedText": null,
+      "offline": true,
+      "networkAttempts": [],
+      "threads": 2,
+      "listeningPath": "outputs/supertonic-3/M3/A-original-listen.wav",
+      "rawPath": "outputs/supertonic-3/M3/A-original.wav",
+      "loudness": {
+        "input_i": "-24.74",
+        "input_tp": "-8.74",
+        "input_lra": "2.40",
+        "input_thresh": "-34.92",
+        "output_i": "-19.80",
+        "output_tp": "-3.80",
+        "output_lra": "2.30",
+        "output_thresh": "-30.03",
+        "normalization_type": "linear",
+        "target_offset": "-0.20"
+      },
+      "sha256": "079582b4e08512198408d09677de435152b078ccfbefb611d07da03ca53affb4"
+    },
+    {
+      "model": "supertonic-3",
+      "voice": "M3",
+      "test": "B",
+      "variant": "normalized",
+      "text": "Bir milyon saniye yaklaşık on bir virgül altı gündür. Bir milyar saniye ise yaklaşık otuz bir virgül yedi yıl eder. Aralarında tam bin kat fark bulunur. Aynı karşılaştırmayı kırk iki kilometre, üç yüz seksen dört bin dört yüz kilometre ve bir virgül beş milyon metre için düşünelim.",
+      "speed": 1.0,
+      "seed": 42,
+      "device": "cpu",
+      "nativeSampleRate": 44100,
+      "durationSeconds": 16.425124716553288,
+      "generationSeconds": 2.9010741671081632,
+      "modelLoadSeconds": 0.2739172501023859,
+      "cpuSeconds": 5.805948768,
+      "meanCpuPercent": 200.13100091775533,
+      "peakRssMiB": 670.5625,
+      "realtimeFactor": 0.1766241789436431,
+      "rawPeak": 0.46680769324302673,
+      "words": [],
+      "wordTimingsVerified": false,
+      "modelNormalizedText": null,
+      "offline": true,
+      "networkAttempts": [],
+      "threads": 2,
+      "listeningPath": "outputs/supertonic-3/M3/B-normalized-listen.wav",
+      "rawPath": "outputs/supertonic-3/M3/B-normalized.wav",
+      "loudness": {
+        "input_i": "-24.28",
+        "input_tp": "-6.62",
+        "input_lra": "1.60",
+        "input_thresh": "-34.44",
+        "output_i": "-19.84",
+        "output_tp": "-2.18",
+        "output_lra": "1.70",
+        "output_thresh": "-30.08",
+        "normalization_type": "linear",
+        "target_offset": "-0.16"
+      },
+      "sha256": "1e819fc7d33b672380282e121a11faf4081b6763f08dee9fc2908ec74e02ceaa"
+    },
+    {
+      "model": "supertonic-3",
+      "voice": "M3",
+      "test": "B",
+      "variant": "original",
+      "text": "Bir milyon saniye yaklaşık 11,6 gündür. Bir milyar saniye ise yaklaşık 31,7 yıl eder. Aralarında tam bin kat fark bulunur. Aynı karşılaştırmayı 42 kilometre, 384.400 kilometre ve 1,5 milyon metre için düşünelim.",
+      "speed": 1.0,
+      "seed": 42,
+      "device": "cpu",
+      "nativeSampleRate": 44100,
+      "durationSeconds": 16.571519274376417,
+      "generationSeconds": 2.862037083134055,
+      "modelLoadSeconds": 0.2739172501023859,
+      "cpuSeconds": 5.725532848,
+      "meanCpuPercent": 200.05096655597114,
+      "peakRssMiB": 670.546875,
+      "realtimeFactor": 0.17270818901677035,
+      "rawPeak": 0.43667933344841003,
+      "words": [],
+      "wordTimingsVerified": false,
+      "modelNormalizedText": null,
+      "offline": true,
+      "networkAttempts": [],
+      "threads": 2,
+      "listeningPath": "outputs/supertonic-3/M3/B-original-listen.wav",
+      "rawPath": "outputs/supertonic-3/M3/B-original.wav",
+      "loudness": {
+        "input_i": "-24.76",
+        "input_tp": "-7.20",
+        "input_lra": "2.40",
+        "input_thresh": "-34.95",
+        "output_i": "-20.07",
+        "output_tp": "-2.51",
+        "output_lra": "2.40",
+        "output_thresh": "-30.26",
+        "normalization_type": "linear",
+        "target_offset": "0.07"
+      },
+      "sha256": "c32aa3d79cd00982402c189483250b163a6c107c7893847126b96401c11299b3"
+    },
+    {
+      "model": "supertonic-3",
+      "voice": "M3",
+      "test": "C",
+      "variant": "original",
+      "text": "Bir kâğıdı 42 kez katlayabilseydiniz, ortaya çıkan kalınlığın Ay'a ulaşabileceğini biliyor muydunuz?",
+      "speed": 1.0,
+      "seed": 42,
+      "device": "cpu",
+      "nativeSampleRate": 44100,
+      "durationSeconds": 6.67501133786848,
+      "generationSeconds": 1.1702064159326255,
+      "modelLoadSeconds": 0.2739172501023859,
+      "cpuSeconds": 2.345196031999997,
+      "meanCpuPercent": 200.40874841135903,
+      "peakRssMiB": 670.59375,
+      "realtimeFactor": 0.17531152483499834,
+      "rawPeak": 0.3967989981174469,
+      "words": [],
+      "wordTimingsVerified": false,
+      "modelNormalizedText": null,
+      "offline": true,
+      "networkAttempts": [],
+      "threads": 2,
+      "listeningPath": "outputs/supertonic-3/M3/C-original-listen.wav",
+      "rawPath": "outputs/supertonic-3/M3/C-original.wav",
+      "loudness": {
+        "input_i": "-24.18",
+        "input_tp": "-8.03",
+        "input_lra": "2.70",
+        "input_thresh": "-34.32",
+        "output_i": "-20.07",
+        "output_tp": "-3.92",
+        "output_lra": "2.70",
+        "output_thresh": "-30.22",
+        "normalization_type": "linear",
+        "target_offset": "0.07"
+      },
+      "sha256": "fe23ca980fe83e83cbef28788e2f8e331bc3a83003f32d5f0185c238eecd845f"
+    },
+    {
+      "model": "supertonic-3",
+      "voice": "M3",
+      "test": "D",
+      "variant": "duration-42",
+      "text": "Gece gökyüzüne baktığımızda, aslında geçmişten gelen ışığı görürüz. Işık çok hızlı ilerler, ama yolculuğu anlık değildir. Ay'dan yansıyan ışığın Dünya'ya ulaşması yaklaşık bir saniyeden biraz fazla sürer. Güneş'ten gelen ışık ise yaklaşık sekiz dakikada bize ulaşır. Bu yüzden Güneş'i her zaman birkaç dakika önceki hâliyle görürüz. Daha uzak yıldızlarda bu gecikme yıllara dönüşür. Bir yıldızın uzaklığını ışık yılıyla söylemek, ışığının bize kaç yılda ulaştığını anlatır. Işık yılı bir zaman birimi değil, mesafe birimidir. Evrenin ölçeği büyüdükçe, baktığımız görüntü de geçmişe doğru uzanır. Gökyüzü, farklı zamanlardan gelen ışıkların aynı anda buluştuğu bir manzara gibidir.",
+      "speed": 0.9551711478242091,
+      "seed": 42,
+      "device": "cpu",
+      "nativeSampleRate": 44100,
+      "durationSeconds": 41.97183673469388,
+      "generationSeconds": 7.340578958159313,
+      "modelLoadSeconds": 0.2665417499374598,
+      "cpuSeconds": 14.700442144,
+      "meanCpuPercent": 200.26270717597745,
+      "peakRssMiB": 657.765625,
+      "realtimeFactor": 0.17489296464578108,
+      "rawPeak": 0.40477901697158813,
+      "words": [],
+      "wordTimingsVerified": false,
+      "modelNormalizedText": null,
+      "offline": true,
+      "networkAttempts": [],
+      "threads": 2,
+      "listeningPath": "outputs/supertonic-3/M3/D-duration-42-listen.wav",
+      "rawPath": "outputs/supertonic-3/M3/D-duration-42.wav",
+      "loudness": {
+        "input_i": "-24.59",
+        "input_tp": "-7.86",
+        "input_lra": "2.60",
+        "input_thresh": "-34.75",
+        "output_i": "-19.92",
+        "output_tp": "-3.19",
+        "output_lra": "2.50",
+        "output_thresh": "-30.09",
+        "normalization_type": "linear",
+        "target_offset": "-0.08"
+      },
+      "sha256": "5e5509ba011ddaf25769ee7207c87f056596390d0e88301f5aa0c87cd497838c"
+    },
+    {
+      "model": "supertonic-3",
+      "voice": "M3",
+      "test": "D",
+      "variant": "original",
+      "text": "Gece gökyüzüne baktığımızda, aslında geçmişten gelen ışığı görürüz. Işık çok hızlı ilerler, ama yolculuğu anlık değildir. Ay'dan yansıyan ışığın Dünya'ya ulaşması yaklaşık bir saniyeden biraz fazla sürer. Güneş'ten gelen ışık ise yaklaşık sekiz dakikada bize ulaşır. Bu yüzden Güneş'i her zaman birkaç dakika önceki hâliyle görürüz. Daha uzak yıldızlarda bu gecikme yıllara dönüşür. Bir yıldızın uzaklığını ışık yılıyla söylemek, ışığının bize kaç yılda ulaştığını anlatır. Işık yılı bir zaman birimi değil, mesafe birimidir. Evrenin ölçeği büyüdükçe, baktığımız görüntü de geçmişe doğru uzanır. Gökyüzü, farklı zamanlardan gelen ışıkların aynı anda buluştuğu bir manzara gibidir.",
+      "speed": 1.0,
+      "seed": 42,
+      "device": "cpu",
+      "nativeSampleRate": 44100,
+      "durationSeconds": 40.11718820861678,
+      "generationSeconds": 7.1066784998402,
+      "modelLoadSeconds": 0.2739172501023859,
+      "cpuSeconds": 14.231282943999986,
+      "meanCpuPercent": 200.25224082276958,
+      "peakRssMiB": 671.09375,
+      "realtimeFactor": 0.17714797116099365,
+      "rawPeak": 0.4506448805332184,
+      "words": [],
+      "wordTimingsVerified": false,
+      "modelNormalizedText": null,
+      "offline": true,
+      "networkAttempts": [],
+      "threads": 2,
+      "listeningPath": "outputs/supertonic-3/M3/D-original-listen.wav",
+      "rawPath": "outputs/supertonic-3/M3/D-original.wav",
+      "loudness": {
+        "input_i": "-24.43",
+        "input_tp": "-6.92",
+        "input_lra": "3.50",
+        "input_thresh": "-34.57",
+        "output_i": "-19.94",
+        "output_tp": "-2.43",
+        "output_lra": "3.50",
+        "output_thresh": "-30.10",
+        "normalization_type": "linear",
+        "target_offset": "-0.06"
+      },
+      "sha256": "539d6f18782b539bd8266f396e520520a203b7ec043f1d55f2cf8a891011f7f9"
+    },
+    {
+      "model": "supertonic-3",
+      "voice": "M4",
+      "test": "A",
+      "variant": "original",
+      "text": "Her gün gördüğümüz sayılar bazen düşündüğümüzden çok daha büyük anlamlar taşıyor. Küçük bir fark gibi görünen şey, ölçek değiştiğinde bambaşka bir dünyaya dönüşebilir.",
+      "speed": 1.0,
+      "seed": 42,
+      "device": "cpu",
+      "nativeSampleRate": 44100,
+      "durationSeconds": 11.412721088435374,
+      "generationSeconds": 2.065099458908662,
+      "modelLoadSeconds": 0.2739172501023859,
+      "cpuSeconds": 4.128259647999997,
+      "meanCpuPercent": 199.90609315164158,
+      "peakRssMiB": 671.5625,
+      "realtimeFactor": 0.18094715913116008,
+      "rawPeak": 0.3305448889732361,
+      "words": [],
+      "wordTimingsVerified": false,
+      "modelNormalizedText": null,
+      "offline": true,
+      "networkAttempts": [],
+      "threads": 2,
+      "listeningPath": "outputs/supertonic-3/M4/A-original-listen.wav",
+      "rawPath": "outputs/supertonic-3/M4/A-original.wav",
+      "loudness": {
+        "input_i": "-25.38",
+        "input_tp": "-9.62",
+        "input_lra": "1.40",
+        "input_thresh": "-35.54",
+        "output_i": "-19.90",
+        "output_tp": "-4.15",
+        "output_lra": "1.40",
+        "output_thresh": "-30.10",
+        "normalization_type": "linear",
+        "target_offset": "-0.10"
+      },
+      "sha256": "e60e9cf2ff3bddb28655997700a810cbb7cb058685473fc57ac4ac129ef7f9a5"
+    },
+    {
+      "model": "supertonic-3",
+      "voice": "M4",
+      "test": "B",
+      "variant": "normalized",
+      "text": "Bir milyon saniye yaklaşık on bir virgül altı gündür. Bir milyar saniye ise yaklaşık otuz bir virgül yedi yıl eder. Aralarında tam bin kat fark bulunur. Aynı karşılaştırmayı kırk iki kilometre, üç yüz seksen dört bin dört yüz kilometre ve bir virgül beş milyon metre için düşünelim.",
+      "speed": 1.0,
+      "seed": 42,
+      "device": "cpu",
+      "nativeSampleRate": 44100,
+      "durationSeconds": 18.605374149659863,
+      "generationSeconds": 3.2895710829179734,
+      "modelLoadSeconds": 0.2739172501023859,
+      "cpuSeconds": 6.581769280000017,
+      "meanCpuPercent": 200.07986190594002,
+      "peakRssMiB": 672.046875,
+      "realtimeFactor": 0.1768075748682599,
+      "rawPeak": 0.3610993027687073,
+      "words": [],
+      "wordTimingsVerified": false,
+      "modelNormalizedText": null,
+      "offline": true,
+      "networkAttempts": [],
+      "threads": 2,
+      "listeningPath": "outputs/supertonic-3/M4/B-normalized-listen.wav",
+      "rawPath": "outputs/supertonic-3/M4/B-normalized.wav",
+      "loudness": {
+        "input_i": "-24.80",
+        "input_tp": "-8.85",
+        "input_lra": "1.10",
+        "input_thresh": "-35.02",
+        "output_i": "-19.86",
+        "output_tp": "-3.90",
+        "output_lra": "1.00",
+        "output_thresh": "-30.07",
+        "normalization_type": "linear",
+        "target_offset": "-0.14"
+      },
+      "sha256": "68dc1fd1e4bf599be9df82d8e5436d0916350c779348b0dadac20d01e734205c"
+    },
+    {
+      "model": "supertonic-3",
+      "voice": "M4",
+      "test": "B",
+      "variant": "original",
+      "text": "Bir milyon saniye yaklaşık 11,6 gündür. Bir milyar saniye ise yaklaşık 31,7 yıl eder. Aralarında tam bin kat fark bulunur. Aynı karşılaştırmayı 42 kilometre, 384.400 kilometre ve 1,5 milyon metre için düşünelim.",
+      "speed": 1.0,
+      "seed": 42,
+      "device": "cpu",
+      "nativeSampleRate": 44100,
+      "durationSeconds": 18.83315192743764,
+      "generationSeconds": 3.261153250001371,
+      "modelLoadSeconds": 0.2739172501023859,
+      "cpuSeconds": 6.525411391999995,
+      "meanCpuPercent": 200.09520840510186,
+      "peakRssMiB": 672.03125,
+      "realtimeFactor": 0.17316024755528373,
+      "rawPeak": 0.29570281505584717,
+      "words": [],
+      "wordTimingsVerified": false,
+      "modelNormalizedText": null,
+      "offline": true,
+      "networkAttempts": [],
+      "threads": 2,
+      "listeningPath": "outputs/supertonic-3/M4/B-original-listen.wav",
+      "rawPath": "outputs/supertonic-3/M4/B-original.wav",
+      "loudness": {
+        "input_i": "-25.29",
+        "input_tp": "-10.58",
+        "input_lra": "1.40",
+        "input_thresh": "-35.55",
+        "output_i": "-19.92",
+        "output_tp": "-5.21",
+        "output_lra": "1.40",
+        "output_thresh": "-30.18",
+        "normalization_type": "linear",
+        "target_offset": "-0.08"
+      },
+      "sha256": "f8ca791de68285e2be3afa73d5bd6dbc240987a8531fa7362d43af97205d5634"
+    },
+    {
+      "model": "supertonic-3",
+      "voice": "M4",
+      "test": "C",
+      "variant": "original",
+      "text": "Bir kâğıdı 42 kez katlayabilseydiniz, ortaya çıkan kalınlığın Ay'a ulaşabileceğini biliyor muydunuz?",
+      "speed": 1.0,
+      "seed": 42,
+      "device": "cpu",
+      "nativeSampleRate": 44100,
+      "durationSeconds": 7.598503401360544,
+      "generationSeconds": 1.3437821250408888,
+      "modelLoadSeconds": 0.2739172501023859,
+      "cpuSeconds": 2.6906023040000093,
+      "meanCpuPercent": 200.22608232849797,
+      "peakRssMiB": 672.578125,
+      "realtimeFactor": 0.17684826261975206,
+      "rawPeak": 0.28390392661094666,
+      "words": [],
+      "wordTimingsVerified": false,
+      "modelNormalizedText": null,
+      "offline": true,
+      "networkAttempts": [],
+      "threads": 2,
+      "listeningPath": "outputs/supertonic-3/M4/C-original-listen.wav",
+      "rawPath": "outputs/supertonic-3/M4/C-original.wav",
+      "loudness": {
+        "input_i": "-25.08",
+        "input_tp": "-10.94",
+        "input_lra": "0.90",
+        "input_thresh": "-35.46",
+        "output_i": "-19.91",
+        "output_tp": "-5.77",
+        "output_lra": "1.00",
+        "output_thresh": "-30.30",
+        "normalization_type": "linear",
+        "target_offset": "-0.09"
+      },
+      "sha256": "0da619291d84e1a1b4a943fba9e387883b2573827f49d5b3307dedc2552c5d24"
+    },
+    {
+      "model": "supertonic-3",
+      "voice": "M4",
+      "test": "D",
+      "variant": "duration-42",
+      "text": "Gece gökyüzüne baktığımızda, aslında geçmişten gelen ışığı görürüz. Işık çok hızlı ilerler, ama yolculuğu anlık değildir. Ay'dan yansıyan ışığın Dünya'ya ulaşması yaklaşık bir saniyeden biraz fazla sürer. Güneş'ten gelen ışık ise yaklaşık sekiz dakikada bize ulaşır. Bu yüzden Güneş'i her zaman birkaç dakika önceki hâliyle görürüz. Daha uzak yıldızlarda bu gecikme yıllara dönüşür. Bir yıldızın uzaklığını ışık yılıyla söylemek, ışığının bize kaç yılda ulaştığını anlatır. Işık yılı bir zaman birimi değil, mesafe birimidir. Evrenin ölçeği büyüdükçe, baktığımız görüntü de geçmişe doğru uzanır. Gökyüzü, farklı zamanlardan gelen ışıkların aynı anda buluştuğu bir manzara gibidir.",
+      "speed": 1.0837587733506102,
+      "seed": 42,
+      "device": "cpu",
+      "nativeSampleRate": 44100,
+      "durationSeconds": 42.04637188208617,
+      "generationSeconds": 7.457478209165856,
+      "modelLoadSeconds": 0.2665417499374598,
+      "cpuSeconds": 14.934528703999995,
+      "meanCpuPercent": 200.26245179830664,
+      "peakRssMiB": 657.765625,
+      "realtimeFactor": 0.17736317963603204,
+      "rawPeak": 0.40878504514694214,
+      "words": [],
+      "wordTimingsVerified": false,
+      "modelNormalizedText": null,
+      "offline": true,
+      "networkAttempts": [],
+      "threads": 2,
+      "listeningPath": "outputs/supertonic-3/M4/D-duration-42-listen.wav",
+      "rawPath": "outputs/supertonic-3/M4/D-duration-42.wav",
+      "loudness": {
+        "input_i": "-24.98",
+        "input_tp": "-7.77",
+        "input_lra": "1.90",
+        "input_thresh": "-35.24",
+        "output_i": "-19.93",
+        "output_tp": "-2.73",
+        "output_lra": "2.00",
+        "output_thresh": "-30.19",
+        "normalization_type": "linear",
+        "target_offset": "-0.07"
+      },
+      "sha256": "fc1a0e99d6abb10a6757628a64c72911c22bb4c39fc5b256d28a3a0ec29ae6e0"
+    },
+    {
+      "model": "supertonic-3",
+      "voice": "M4",
+      "test": "D",
+      "variant": "original",
+      "text": "Gece gökyüzüne baktığımızda, aslında geçmişten gelen ışığı görürüz. Işık çok hızlı ilerler, ama yolculuğu anlık değildir. Ay'dan yansıyan ışığın Dünya'ya ulaşması yaklaşık bir saniyeden biraz fazla sürer. Güneş'ten gelen ışık ise yaklaşık sekiz dakikada bize ulaşır. Bu yüzden Güneş'i her zaman birkaç dakika önceki hâliyle görürüz. Daha uzak yıldızlarda bu gecikme yıllara dönüşür. Bir yıldızın uzaklığını ışık yılıyla söylemek, ışığının bize kaç yılda ulaştığını anlatır. Işık yılı bir zaman birimi değil, mesafe birimidir. Evrenin ölçeği büyüdükçe, baktığımız görüntü de geçmişe doğru uzanır. Gökyüzü, farklı zamanlardan gelen ışıkların aynı anda buluştuğu bir manzara gibidir.",
+      "speed": 1.0,
+      "seed": 42,
+      "device": "cpu",
+      "nativeSampleRate": 44100,
+      "durationSeconds": 45.517868480725625,
+      "generationSeconds": 7.996262083062902,
+      "modelLoadSeconds": 0.2739172501023859,
+      "cpuSeconds": 16.01395696,
+      "meanCpuPercent": 200.26803516007303,
+      "peakRssMiB": 672.625,
+      "realtimeFactor": 0.17567303456770805,
+      "rawPeak": 0.3273990750312805,
+      "words": [],
+      "wordTimingsVerified": false,
+      "modelNormalizedText": null,
+      "offline": true,
+      "networkAttempts": [],
+      "threads": 2,
+      "listeningPath": "outputs/supertonic-3/M4/D-original-listen.wav",
+      "rawPath": "outputs/supertonic-3/M4/D-original.wav",
+      "loudness": {
+        "input_i": "-25.03",
+        "input_tp": "-9.70",
+        "input_lra": "2.40",
+        "input_thresh": "-35.33",
+        "output_i": "-19.97",
+        "output_tp": "-4.64",
+        "output_lra": "2.30",
+        "output_thresh": "-30.28",
+        "normalization_type": "linear",
+        "target_offset": "-0.03"
+      },
+      "sha256": "3318cb591a8ac7418b91b8482bc92be9e0b66e72c1f42ad9b5a55de067189521"
+    },
+    {
+      "model": "supertonic-3",
+      "voice": "M5",
+      "test": "A",
+      "variant": "original",
+      "text": "Her gün gördüğümüz sayılar bazen düşündüğümüzden çok daha büyük anlamlar taşıyor. Küçük bir fark gibi görünen şey, ölçek değiştiğinde bambaşka bir dünyaya dönüşebilir.",
+      "speed": 1.0,
+      "seed": 42,
+      "device": "cpu",
+      "nativeSampleRate": 44100,
+      "durationSeconds": 12.13079365079365,
+      "generationSeconds": 2.1388825001195073,
+      "modelLoadSeconds": 0.2739172501023859,
+      "cpuSeconds": 4.273171039999994,
+      "meanCpuPercent": 199.78521680182226,
+      "peakRssMiB": 672.640625,
+      "realtimeFactor": 0.17631843073841852,
+      "rawPeak": 0.3382006883621216,
+      "words": [],
+      "wordTimingsVerified": false,
+      "modelNormalizedText": null,
+      "offline": true,
+      "networkAttempts": [],
+      "threads": 2,
+      "listeningPath": "outputs/supertonic-3/M5/A-original-listen.wav",
+      "rawPath": "outputs/supertonic-3/M5/A-original.wav",
+      "loudness": {
+        "input_i": "-25.21",
+        "input_tp": "-9.42",
+        "input_lra": "1.80",
+        "input_thresh": "-35.36",
+        "output_i": "-19.81",
+        "output_tp": "-4.02",
+        "output_lra": "1.80",
+        "output_thresh": "-29.96",
+        "normalization_type": "linear",
+        "target_offset": "-0.19"
+      },
+      "sha256": "f6935b5092d98ca3c5a1709eea8036e5e9cf023d9a822306a9077e7eaf8ea69d"
+    },
+    {
+      "model": "supertonic-3",
+      "voice": "M5",
+      "test": "B",
+      "variant": "normalized",
+      "text": "Bir milyon saniye yaklaşık on bir virgül altı gündür. Bir milyar saniye ise yaklaşık otuz bir virgül yedi yıl eder. Aralarında tam bin kat fark bulunur. Aynı karşılaştırmayı kırk iki kilometre, üç yüz seksen dört bin dört yüz kilometre ve bir virgül beş milyon metre için düşünelim.",
+      "speed": 1.0,
+      "seed": 42,
+      "device": "cpu",
+      "nativeSampleRate": 44100,
+      "durationSeconds": 19.602834467120182,
+      "generationSeconds": 3.467717207968235,
+      "modelLoadSeconds": 0.2739172501023859,
+      "cpuSeconds": 6.934967072000006,
+      "meanCpuPercent": 199.9865230089873,
+      "peakRssMiB": 716.046875,
+      "realtimeFactor": 0.1768987650120004,
+      "rawPeak": 0.4179779887199402,
+      "words": [],
+      "wordTimingsVerified": false,
+      "modelNormalizedText": null,
+      "offline": true,
+      "networkAttempts": [],
+      "threads": 2,
+      "listeningPath": "outputs/supertonic-3/M5/B-normalized-listen.wav",
+      "rawPath": "outputs/supertonic-3/M5/B-normalized.wav",
+      "loudness": {
+        "input_i": "-24.47",
+        "input_tp": "-7.58",
+        "input_lra": "2.30",
+        "input_thresh": "-34.63",
+        "output_i": "-19.97",
+        "output_tp": "-3.08",
+        "output_lra": "2.30",
+        "output_thresh": "-30.13",
+        "normalization_type": "linear",
+        "target_offset": "-0.03"
+      },
+      "sha256": "3a167424261d469bd7f55d5775aaf5a3cd6d55317fc8481b518f0a0e690abd3b"
+    },
+    {
+      "model": "supertonic-3",
+      "voice": "M5",
+      "test": "B",
+      "variant": "original",
+      "text": "Bir milyon saniye yaklaşık 11,6 gündür. Bir milyar saniye ise yaklaşık 31,7 yıl eder. Aralarında tam bin kat fark bulunur. Aynı karşılaştırmayı 42 kilometre, 384.400 kilometre ve 1,5 milyon metre için düşünelim.",
+      "speed": 1.0,
+      "seed": 42,
+      "device": "cpu",
+      "nativeSampleRate": 44100,
+      "durationSeconds": 19.84283446712018,
+      "generationSeconds": 3.4473931659013033,
+      "modelLoadSeconds": 0.2739172501023859,
+      "cpuSeconds": 6.8947155839999965,
+      "meanCpuPercent": 199.9979477883953,
+      "peakRssMiB": 672.796875,
+      "realtimeFactor": 0.17373491532238886,
+      "rawPeak": 0.3391737639904022,
+      "words": [],
+      "wordTimingsVerified": false,
+      "modelNormalizedText": null,
+      "offline": true,
+      "networkAttempts": [],
+      "threads": 2,
+      "listeningPath": "outputs/supertonic-3/M5/B-original-listen.wav",
+      "rawPath": "outputs/supertonic-3/M5/B-original.wav",
+      "loudness": {
+        "input_i": "-25.38",
+        "input_tp": "-9.39",
+        "input_lra": "1.60",
+        "input_thresh": "-35.65",
+        "output_i": "-19.97",
+        "output_tp": "-3.93",
+        "output_lra": "1.60",
+        "output_thresh": "-30.21",
+        "normalization_type": "linear",
+        "target_offset": "-0.03"
+      },
+      "sha256": "a487a25c77185c4097168936971c2c28f0f58bc3b547788a317f1a52fc796073"
+    },
+    {
+      "model": "supertonic-3",
+      "voice": "M5",
+      "test": "C",
+      "variant": "original",
+      "text": "Bir kâğıdı 42 kez katlayabilseydiniz, ortaya çıkan kalınlığın Ay'a ulaşabileceğini biliyor muydunuz?",
+      "speed": 1.0,
+      "seed": 42,
+      "device": "cpu",
+      "nativeSampleRate": 44100,
+      "durationSeconds": 8.083877551020407,
+      "generationSeconds": 1.5009367922320962,
+      "modelLoadSeconds": 0.2739172501023859,
+      "cpuSeconds": 2.9946955839999987,
+      "meanCpuPercent": 199.52176530675092,
+      "peakRssMiB": 716.0625,
+      "realtimeFactor": 0.18567040170501306,
+      "rawPeak": 0.4087088704109192,
+      "words": [],
+      "wordTimingsVerified": false,
+      "modelNormalizedText": null,
+      "offline": true,
+      "networkAttempts": [],
+      "threads": 2,
+      "listeningPath": "outputs/supertonic-3/M5/C-original-listen.wav",
+      "rawPath": "outputs/supertonic-3/M5/C-original.wav",
+      "loudness": {
+        "input_i": "-25.18",
+        "input_tp": "-7.77",
+        "input_lra": "0.70",
+        "input_thresh": "-35.29",
+        "output_i": "-19.82",
+        "output_tp": "-2.41",
+        "output_lra": "0.70",
+        "output_thresh": "-29.93",
+        "normalization_type": "linear",
+        "target_offset": "-0.18"
+      },
+      "sha256": "87bd0e81553dc76c91f93c2221fe22827dae15ddc79e69e4e6a41d83b83f98a1"
+    },
+    {
+      "model": "supertonic-3",
+      "voice": "M5",
+      "test": "D",
+      "variant": "duration-42",
+      "text": "Gece gökyüzüne baktığımızda, aslında geçmişten gelen ışığı görürüz. Işık çok hızlı ilerler, ama yolculuğu anlık değildir. Ay'dan yansıyan ışığın Dünya'ya ulaşması yaklaşık bir saniyeden biraz fazla sürer. Güneş'ten gelen ışık ise yaklaşık sekiz dakikada bize ulaşır. Bu yüzden Güneş'i her zaman birkaç dakika önceki hâliyle görürüz. Daha uzak yıldızlarda bu gecikme yıllara dönüşür. Bir yıldızın uzaklığını ışık yılıyla söylemek, ışığının bize kaç yılda ulaştığını anlatır. Işık yılı bir zaman birimi değil, mesafe birimidir. Evrenin ölçeği büyüdükçe, baktığımız görüntü de geçmişe doğru uzanır. Gökyüzü, farklı zamanlardan gelen ışıkların aynı anda buluştuğu bir manzara gibidir.",
+      "speed": 1.144074613972573,
+      "seed": 42,
+      "device": "cpu",
+      "nativeSampleRate": 44100,
+      "durationSeconds": 42.07555555555555,
+      "generationSeconds": 7.3412260841578245,
+      "modelLoadSeconds": 0.2665417499374598,
+      "cpuSeconds": 14.704447824000006,
+      "meanCpuPercent": 200.29961828490505,
+      "peakRssMiB": 657.765625,
+      "realtimeFactor": 0.17447722287266407,
+      "rawPeak": 0.36464759707450867,
+      "words": [],
+      "wordTimingsVerified": false,
+      "modelNormalizedText": null,
+      "offline": true,
+      "networkAttempts": [],
+      "threads": 2,
+      "listeningPath": "outputs/supertonic-3/M5/D-duration-42-listen.wav",
+      "rawPath": "outputs/supertonic-3/M5/D-duration-42.wav",
+      "loudness": {
+        "input_i": "-25.03",
+        "input_tp": "-8.76",
+        "input_lra": "2.80",
+        "input_thresh": "-35.19",
+        "output_i": "-19.87",
+        "output_tp": "-3.60",
+        "output_lra": "2.80",
+        "output_thresh": "-30.04",
+        "normalization_type": "linear",
+        "target_offset": "-0.13"
+      },
+      "sha256": "2f03acda29cf70e82847bc42ee6997611e713afaeacff084b9bb34e1621a59b7"
+    },
+    {
+      "model": "supertonic-3",
+      "voice": "M5",
+      "test": "D",
+      "variant": "original",
+      "text": "Gece gökyüzüne baktığımızda, aslında geçmişten gelen ışığı görürüz. Işık çok hızlı ilerler, ama yolculuğu anlık değildir. Ay'dan yansıyan ışığın Dünya'ya ulaşması yaklaşık bir saniyeden biraz fazla sürer. Güneş'ten gelen ışık ise yaklaşık sekiz dakikada bize ulaşır. Bu yüzden Güneş'i her zaman birkaç dakika önceki hâliyle görürüz. Daha uzak yıldızlarda bu gecikme yıllara dönüşür. Bir yıldızın uzaklığını ışık yılıyla söylemek, ışığının bize kaç yılda ulaştığını anlatır. Işık yılı bir zaman birimi değil, mesafe birimidir. Evrenin ölçeği büyüdükçe, baktığımız görüntü de geçmişe doğru uzanır. Gökyüzü, farklı zamanlardan gelen ışıkların aynı anda buluştuğu bir manzara gibidir.",
+      "speed": 1.0,
+      "seed": 42,
+      "device": "cpu",
+      "nativeSampleRate": 44100,
+      "durationSeconds": 48.05113378684807,
+      "generationSeconds": 8.542778291041031,
+      "modelLoadSeconds": 0.2739172501023859,
+      "cpuSeconds": 17.094161536,
+      "meanCpuPercent": 200.10072781505946,
+      "peakRssMiB": 717.84375,
+      "realtimeFactor": 0.17778515547492138,
+      "rawPeak": 0.4116465151309967,
+      "words": [],
+      "wordTimingsVerified": false,
+      "modelNormalizedText": null,
+      "offline": true,
+      "networkAttempts": [],
+      "threads": 2,
+      "listeningPath": "outputs/supertonic-3/M5/D-original-listen.wav",
+      "rawPath": "outputs/supertonic-3/M5/D-original.wav",
+      "loudness": {
+        "input_i": "-25.13",
+        "input_tp": "-7.71",
+        "input_lra": "2.80",
+        "input_thresh": "-35.31",
+        "output_i": "-19.92",
+        "output_tp": "-2.50",
+        "output_lra": "2.70",
+        "output_thresh": "-30.10",
+        "normalization_type": "linear",
+        "target_offset": "-0.08"
+      },
+      "sha256": "467d75937b35f6de86f50ee268bedecf6c4fb5d2488452b9c4ddd5c638d6be29"
+    }
+  ],
+  "errors": []
+}

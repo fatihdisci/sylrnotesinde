@@ -20,7 +20,15 @@
     "references:check": "tsx scripts/check-references.ts",
     "qa:media": ".venv/bin/python scripts/qa-media.py",
     "qa:layout": "tsx scripts/audit-layout.ts",
-    "qa:fonts": ".venv/bin/python scripts/verify-fonts.py"
+    "qa:fonts": ".venv/bin/python scripts/verify-fonts.py",
+    "tts:setup": "python3 tts/setup.py",
+    "tts:generate": "python3 tts/cli.py",
+    "tts:benchmark": "python3 tts/benchmark.py",
+    "tts:compare": "python3 tts/comparison/server.py",
+    "tts:test": "python3 -m unittest discover -s tts/tests -v",
+    "tts:qa": "python3 tts/qa.py",
+    "tts:episode": "python3 tts/prepare_episode.py",
+    "tts:offline": "python3 tts/verify_offline.py"
   },
   "keywords": [],
   "license": "UNLICENSED",

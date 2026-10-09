@@ -1,0 +1,198 @@
+{
+  "antalia-mini": {
+    "name": "Antalia-2 Mini",
+    "repo": "cloud0day3/antalia-mini",
+    "revision": "1e8166a7436f3e11f7f03b339258ec30f366db60",
+    "python": "3.12.12",
+    "package": "antalia-mini==1.0.0",
+    "license": "Apache-2.0",
+    "nativeSpeed": 0.95,
+    "voices": [
+      "default"
+    ],
+    "files": [
+      {
+        "path": "acoustic.safetensors",
+        "size": 14757148,
+        "sha256": "72c36a6855ce95dc1d35960a7b61515136813313406e5b9ae1c2ebe6cd2ad428"
+      },
+      {
+        "path": "vocoder.safetensors",
+        "size": 15742616,
+        "sha256": "89ca374cc55864b38a36f9ea87c41e1b17376e5d6d68e3a0458332861509bbf6"
+      },
+      {
+        "path": "config.json",
+        "size": 2026,
+        "sha256": null
+      },
+      {
+        "path": "LICENSE",
+        "size": 11358,
+        "sha256": null
+      },
+      {
+        "path": "NOTICE",
+        "size": 1263,
+        "sha256": null
+      },
+      {
+        "path": "README.md",
+        "size": 18139,
+        "sha256": null
+      }
+    ]
+  },
+  "ema-lightning": {
+    "name": "EMA Lightning",
+    "repo": "canberkkkkkk/ema-lightning",
+    "revision": "7a6ba1ad216bb2f1da9863f80ac8770a6a807632",
+    "python": "3.12.12",
+    "package": "ema-lightning==1.0.4",
+    "license": "Apache-2.0",
+    "nativeSpeed": 1.0,
+    "voices": [
+      "default"
+    ],
+    "files": [
+      {
+        "path": "ema.pt",
+        "size": 22285878,
+        "sha256": "95aec03dafbe0e1d69bca774ab597c779464729a14bc99bfcb52480090c7dfe6"
+      },
+      {
+        "path": "decoder.pt",
+        "size": 12103269,
+        "sha256": "9595819b173f411340f63d11332695121a97f8bf1f6d8b6fef0b21cf99c7ad67"
+      },
+      {
+        "path": "config.json",
+        "size": 342,
+        "sha256": null
+      },
+      {
+        "path": "README.md",
+        "size": 17785,
+        "sha256": null
+      }
+    ]
+  },
+  "supertonic-3": {
+    "name": "Supertonic 3",
+    "repo": "supertone-oss-archive/supertonic-3",
+    "revision": "aafc6e32416a594460b32413efc49d7fe4ce6d46",
+    "python": "3.11.15",
+    "package": "onnxruntime==1.23.1",
+    "license": "OpenRAIL-M (weights); MIT (code)",
+    "nativeSpeed": 1.05,
+    "voices": [
+      "M1",
+      "M2",
+      "M3",
+      "M4",
+      "M5",
+      "F1",
+      "F2",
+      "F3",
+      "F4",
+      "F5"
+    ],
+    "files": [
+      {
+        "path": "onnx/duration_predictor.onnx",
+        "size": 3700147,
+        "sha256": "c3eb91414d5ff8a7a239b7fe9e34e7e2bf8a8140d8375ffb14718b1c639325db"
+      },
+      {
+        "path": "onnx/text_encoder.onnx",
+        "size": 36416150,
+        "sha256": "c7befd5ea8c3119769e8a6c1486c4edc6a3bc8365c67621c881bbb774b9902ff"
+      },
+      {
+        "path": "onnx/vector_estimator.onnx",
+        "size": 256534781,
+        "sha256": "883ac868ea0275ef0e991524dc64f16b3c0376efd7c320af6b53f5b780d7c61c"
+      },
+      {
+        "path": "onnx/vocoder.onnx",
+        "size": 101424195,
+        "sha256": "085de76dd8e8d5836d6ca66826601f615939218f90e519f70ee8a36ed2a4c4ba"
+      },
+      {
+        "path": "onnx/tts.json",
+        "size": 8253,
+        "sha256": null
+      },
+      {
+        "path": "onnx/unicode_indexer.json",
+        "size": 277676,
+        "sha256": null
+      },
+      {
+        "path": "LICENSE",
+        "size": 15007,
+        "sha256": null
+      },
+      {
+        "path": "README.md",
+        "size": 9189,
+        "sha256": null
+      },
+      {
+        "path": "config.json",
+        "size": 174,
+        "sha256": null
+      },
+      {
+        "path": "voice_styles/M1.json",
+        "size": 291748,
+        "sha256": null
+      },
+      {
+        "path": "voice_styles/M2.json",
+        "size": 292055,
+        "sha256": null
+      },
+      {
+        "path": "voice_styles/M3.json",
+        "size": 290198,
+        "sha256": null
+      },
+      {
+        "path": "voice_styles/M4.json",
+        "size": 291522,
+        "sha256": null
+      },
+      {
+        "path": "voice_styles/M5.json",
+        "size": 291469,
+        "sha256": null
+      },
+      {
+        "path": "voice_styles/F1.json",
+        "size": 292046,
+        "sha256": null
+      },
+      {
+        "path": "voice_styles/F2.json",
+        "size": 292423,
+        "sha256": null
+      },
+      {
+        "path": "voice_styles/F3.json",
+        "size": 290794,
+        "sha256": null
+      },
+      {
+        "path": "voice_styles/F4.json",
+        "size": 291808,
+        "sha256": null
+      },
+      {
+        "path": "voice_styles/F5.json",
+        "size": 291479,
+        "sha256": null
+      }
+    ]
+  }
+}

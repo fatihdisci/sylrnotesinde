@@ -1,0 +1,200 @@
+{
+  "osNetworkProbe": "OS network denied",
+  "method": "sandbox-exec deny network* + Python network audit hook; Mac network interfaces left enabled",
+  "records": [
+    {
+      "model": "antalia-mini",
+      "voice": "default",
+      "text": "Her gün gördüğümüz sayılar bazen düşündüğümüzden çok daha büyük anlamlar taşıyor. Küçük bir fark gibi görünen şey, ölçek değiştiğinde bambaşka bir dünyaya dönüşebilir.",
+      "speed": 1.0,
+      "seed": 42,
+      "output": "outputs/diagnostics/offline/antalia-mini/A.wav",
+      "device": "cpu",
+      "nativeSampleRate": 48000,
+      "durationSeconds": 9.698666666666666,
+      "generationSeconds": 0.46087083290331066,
+      "modelLoadSeconds": 0.41618133313022554,
+      "cpuSeconds": 0.5261801840000001,
+      "meanCpuPercent": 114.1708579571559,
+      "peakRssMiB": 356.6875,
+      "realtimeFactor": 0.047518988820110394,
+      "rawPeak": 0.8230681419372559,
+      "words": [],
+      "wordTimingsVerified": false,
+      "modelNormalizedText": "her gün gördüğümüz sayılar bazen düşündüğümüzden çok daha büyük anlamlar taşıyor. küçük bir fark gibi görünen şey, ölçek değiştiğinde bambaşka bir dünyaya dönüşebilir.",
+      "offline": true,
+      "networkAttempts": [],
+      "threads": 2,
+      "identicalDecodedSamples": true,
+      "decodedPcmSha256": "fdb8885fb6318939d280e4dfad3a91440b7f0c6ba0c03c97fc8cfdcc1b9b5505"
+    },
+    {
+      "model": "ema-lightning",
+      "voice": "default",
+      "text": "Her gün gördüğümüz sayılar bazen düşündüğümüzden çok daha büyük anlamlar taşıyor. Küçük bir fark gibi görünen şey, ölçek değiştiğinde bambaşka bir dünyaya dönüşebilir.",
+      "speed": 1.0,
+      "seed": 42,
+      "output": "outputs/diagnostics/offline/ema-lightning/A.wav",
+      "device": "cpu",
+      "nativeSampleRate": 48000,
+      "durationSeconds": 8.96,
+      "generationSeconds": 0.3714848330710083,
+      "modelLoadSeconds": 0.670847374945879,
+      "cpuSeconds": 0.49927915999999994,
+      "meanCpuPercent": 134.40095410424578,
+      "peakRssMiB": 388.90625,
+      "realtimeFactor": 0.04146036083381789,
+      "rawPeak": 0.6877396106719971,
+      "words": [
+        {
+          "text": "her",
+          "start": 0.0,
+          "end": 0.2
+        },
+        {
+          "text": "gün",
+          "start": 0.2,
+          "end": 0.4
+        },
+        {
+          "text": "gördüğümüz",
+          "start": 0.4,
+          "end": 0.92
+        },
+        {
+          "text": "sayılar",
+          "start": 0.92,
+          "end": 1.36
+        },
+        {
+          "text": "bazen",
+          "start": 1.36,
+          "end": 1.72
+        },
+        {
+          "text": "düşündüğümüzden",
+          "start": 1.72,
+          "end": 2.48
+        },
+        {
+          "text": "çok",
+          "start": 2.48,
+          "end": 2.72
+        },
+        {
+          "text": "daha",
+          "start": 2.72,
+          "end": 2.96
+        },
+        {
+          "text": "büyük",
+          "start": 2.96,
+          "end": 3.24
+        },
+        {
+          "text": "anlamlar",
+          "start": 3.24,
+          "end": 3.72
+        },
+        {
+          "text": "taşıyor.",
+          "start": 3.72,
+          "end": 4.44
+        },
+        {
+          "text": "küçük",
+          "start": 4.44,
+          "end": 4.72
+        },
+        {
+          "text": "bir",
+          "start": 4.72,
+          "end": 4.84
+        },
+        {
+          "text": "fark",
+          "start": 4.84,
+          "end": 5.12
+        },
+        {
+          "text": "gibi",
+          "start": 5.12,
+          "end": 5.32
+        },
+        {
+          "text": "görünen",
+          "start": 5.32,
+          "end": 5.76
+        },
+        {
+          "text": "şey,",
+          "start": 5.76,
+          "end": 6.2
+        },
+        {
+          "text": "ölçek",
+          "start": 6.2,
+          "end": 6.56
+        },
+        {
+          "text": "değiştiğinde",
+          "start": 6.56,
+          "end": 7.2
+        },
+        {
+          "text": "bambaşka",
+          "start": 7.2,
+          "end": 7.72
+        },
+        {
+          "text": "bir",
+          "start": 7.72,
+          "end": 7.84
+        },
+        {
+          "text": "dünyaya",
+          "start": 7.84,
+          "end": 8.24
+        },
+        {
+          "text": "dönüşebilir.",
+          "start": 8.24,
+          "end": 8.96
+        }
+      ],
+      "wordTimingsVerified": false,
+      "modelNormalizedText": null,
+      "offline": true,
+      "networkAttempts": [],
+      "threads": 2,
+      "identicalDecodedSamples": true,
+      "decodedPcmSha256": "89f0ecc32d4ac9532f5108bd8769684b1b2efb917d643e76c9df479118f9113a"
+    },
+    {
+      "model": "supertonic-3",
+      "voice": "M1",
+      "text": "Her gün gördüğümüz sayılar bazen düşündüğümüzden çok daha büyük anlamlar taşıyor. Küçük bir fark gibi görünen şey, ölçek değiştiğinde bambaşka bir dünyaya dönüşebilir.",
+      "speed": 1.0,
+      "seed": 42,
+      "output": "outputs/diagnostics/offline/supertonic-3/A.wav",
+      "device": "cpu",
+      "nativeSampleRate": 44100,
+      "durationSeconds": 12.153854875283447,
+      "generationSeconds": 2.160346500109881,
+      "modelLoadSeconds": 0.27741983300074935,
+      "cpuSeconds": 4.28767212,
+      "meanCpuPercent": 198.47150074221506,
+      "peakRssMiB": 564.109375,
+      "realtimeFactor": 0.1777499009391042,
+      "rawPeak": 0.480573832988739,
+      "words": [],
+      "wordTimingsVerified": false,
+      "modelNormalizedText": null,
+      "offline": true,
+      "networkAttempts": [],
+      "threads": 2,
+      "identicalDecodedSamples": true,
+      "decodedPcmSha256": "11abcef12933544c211bac5b2343bea2d131f3ab124f03f89645f6a0980345dc"
+    }
+  ]
+}
