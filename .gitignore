@@ -16,3 +16,5 @@ tts/.cache/**
 __pycache__/
 *.pyc
 public/episodes/tts-integration-check/
+public/tts-voice-reel/
+renders/voice-comparison-review/

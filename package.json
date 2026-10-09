@@ -28,7 +28,8 @@
     "tts:test": "python3 -m unittest discover -s tts/tests -v",
     "tts:qa": "python3 tts/qa.py",
     "tts:episode": "python3 tts/prepare_episode.py",
-    "tts:offline": "python3 tts/verify_offline.py"
+    "tts:offline": "python3 tts/verify_offline.py",
+    "tts:reel": "python3 tts/prepare_reel.py && tsx scripts/render-voice-reel.ts"
   },
   "keywords": [],
   "license": "UNLICENSED",

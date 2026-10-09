@@ -75,3 +75,5 @@ npm run tts:offline
 MacBook Apple Silicon için `git clone https://github.com/fatihdisci/sylrnotesinde.git`, `npm ci`, `npm run tts:setup`, `npm run tts:benchmark`, `npm run tts:compare`. İlk kurulumda internet gerekir; sentez tamamen yerel. Node 22.22.3, Python 3.8+ bootstrap ve ffmpeg hazır olmalı. Ağırlıklar/venv/WAV/kişisel puanlar Git dışıdır; cihazlar arasında ortam kopyalamak yerine kurulum komutunu çalıştır. Kullanıcı puanları otomatik Git senkronu yapmaz; arayüzden JSON yedekle.
 
 Supertonic kodu MIT, ağırlıkları **OpenRAIL-M**: ticari kullanıma genel yasak yok, kullanım kısıtları ve yapay zekâ üretimi açıklama şartı var. Diğer iki aday Apache 2.0. Tam lisans kopyaları ve kaynak revision’ları `tts/docs/licenses/` ve `tts/config/models.json` içinde.
+
+12 profilin aynı tek cümleyi söylediği mobil MP4: [tts-12-profiles.mp4](renders/tts-12-profiles.mp4). Yaklaşık70 saniye /2,7 MB. Yeniden üretim: `npm run tts:reel`; gerçek MP4 QA: `python3 tts/qa_reel.py`. [Üretim ve inceleme kaydı](tts/docs/MOBILE_REEL.md).

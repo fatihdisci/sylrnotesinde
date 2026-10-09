@@ -1,0 +1,116 @@
+{
+  "profiles": [
+    {
+      "model": "Antalia-2 Mini",
+      "voice": "default",
+      "seconds": 4.074666666666666,
+      "aacCorrelation": 0.9999769177396627,
+      "encodedOffsetSamples": 0,
+      "startsAtSeconds": 0.2
+    },
+    {
+      "model": "EMA Lightning",
+      "voice": "default",
+      "seconds": 3.68,
+      "aacCorrelation": 0.9998734689319295,
+      "encodedOffsetSamples": 0,
+      "startsAtSeconds": 5.3
+    },
+    {
+      "model": "Supertonic 3",
+      "voice": "M1",
+      "seconds": 5.045895833333334,
+      "aacCorrelation": 0.9998784496347154,
+      "encodedOffsetSamples": 0,
+      "startsAtSeconds": 10.0
+    },
+    {
+      "model": "Supertonic 3",
+      "voice": "M2",
+      "seconds": 4.936625,
+      "aacCorrelation": 0.9999026533552128,
+      "encodedOffsetSamples": 16,
+      "startsAtSeconds": 16.066666666666666
+    },
+    {
+      "model": "Supertonic 3",
+      "voice": "M3",
+      "seconds": 4.1886875,
+      "aacCorrelation": 0.999883432864373,
+      "encodedOffsetSamples": -16,
+      "startsAtSeconds": 22.033333333333335
+    },
+    {
+      "model": "Supertonic 3",
+      "voice": "M4",
+      "seconds": 4.714520833333333,
+      "aacCorrelation": 0.9999405517560489,
+      "encodedOffsetSamples": -16,
+      "startsAtSeconds": 27.233333333333334
+    },
+    {
+      "model": "Supertonic 3",
+      "voice": "M5",
+      "seconds": 5.032041666666666,
+      "aacCorrelation": 0.9999297668129051,
+      "encodedOffsetSamples": 16,
+      "startsAtSeconds": 32.96666666666667
+    },
+    {
+      "model": "Supertonic 3",
+      "voice": "F1",
+      "seconds": 5.042791666666667,
+      "aacCorrelation": 0.9999536235159527,
+      "encodedOffsetSamples": 0,
+      "startsAtSeconds": 39.0
+    },
+    {
+      "model": "Supertonic 3",
+      "voice": "F2",
+      "seconds": 4.7294583333333335,
+      "aacCorrelation": 0.9999131735990242,
+      "encodedOffsetSamples": 15,
+      "startsAtSeconds": 45.06666666666667
+    },
+    {
+      "model": "Supertonic 3",
+      "voice": "F3",
+      "seconds": 5.199270833333333,
+      "aacCorrelation": 0.999924555800563,
+      "encodedOffsetSamples": 0,
+      "startsAtSeconds": 50.8
+    },
+    {
+      "model": "Supertonic 3",
+      "voice": "F4",
+      "seconds": 4.3224375,
+      "aacCorrelation": 0.9999300368271328,
+      "encodedOffsetSamples": 0,
+      "startsAtSeconds": 57.0
+    },
+    {
+      "model": "Supertonic 3",
+      "voice": "F5",
+      "seconds": 4.881854166666667,
+      "aacCorrelation": 0.9999487133856858,
+      "encodedOffsetSamples": -16,
+      "startsAtSeconds": 62.333333333333336
+    }
+  ],
+  "width": 1080,
+  "height": 1920,
+  "fps": 30,
+  "frames": 2086,
+  "seconds": 69.53333333333333,
+  "encodedPeak": 0.8080143928527832,
+  "fileBytes": 2827988,
+  "reviewFrames": [
+    30,
+    183,
+    324,
+    1013,
+    1194,
+    1894
+  ],
+  "subjectiveListeningPerformed": false
+}
