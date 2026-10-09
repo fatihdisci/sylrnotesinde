@@ -1,0 +1,17 @@
+{
+  "prototype": {
+    "frames": 420,
+    "seconds": 14,
+    "sourceFromFrame": 746,
+    "sourceToFrameExclusive": 1166,
+    "aacMixLagMs": 0.0,
+    "aacMixCorrelation": 0.9998586575205964,
+    "peak": 0.521247923374176
+  },
+  "originalSourceIdentical": true,
+  "originalSha256": "b9f51e542bb50178d312201343fa3f30904ecd964f38f2eca23eb40f57cef341",
+  "fullVideoSha256": "8c76e1e6214bfabc9eed98f24369fbe3bace2c42a8b6d48fae76bc7a7d4f0703",
+  "prototypeSha256": "cc33625c87cfb400e567e86b5d2ad065620acec2047a584932fcb3bffbd3868a",
+  "noNewTtsGenerated": true,
+  "humanListeningPerformed": false
+}

@@ -1,0 +1,250 @@
+{
+  "schemaVersion": 1,
+  "method": "time-sculpture-original-layered-foley-v1",
+  "seed": 20261009,
+  "sampleRate": 48000,
+  "directionHash": "a378540b07459c9d768063b53011c0de14de9100d84363c9c37e4d668052ced8",
+  "audioHash": "9d9841bd2df4edace97199e24d919183431df55e9312201944e047c8f2c5895b",
+  "stemSha256": "96fa5093f3d9caa012b8ed34cb6193c7c7ec363aa03cce3906052dd28e31c6bf",
+  "events": [
+    {
+      "sound": "latch",
+      "durationFrames": 12,
+      "gain": 0.6875,
+      "frame": 0,
+      "event": "hook",
+      "id": "hook-0"
+    },
+    {
+      "sound": "scale",
+      "durationFrames": 42,
+      "gain": 0.8125,
+      "frame": 57,
+      "event": "shock",
+      "id": "shock-0"
+    },
+    {
+      "sound": "swish",
+      "durationFrames": 22,
+      "gain": 0.6,
+      "frame": 117,
+      "event": "zeros",
+      "id": "zeros-0"
+    },
+    {
+      "sound": "swish",
+      "durationFrames": 28,
+      "gain": 0.625,
+      "frame": 195,
+      "event": "dive",
+      "id": "dive-0"
+    },
+    {
+      "sound": "tick",
+      "durationFrames": 5,
+      "gain": 0.4375,
+      "offsetFrames": 0,
+      "frame": 271,
+      "event": "clock",
+      "id": "clock-0"
+    },
+    {
+      "sound": "tick",
+      "durationFrames": 5,
+      "gain": 0.4375,
+      "offsetFrames": 15,
+      "frame": 286,
+      "event": "clock",
+      "id": "clock-1"
+    },
+    {
+      "sound": "tick",
+      "durationFrames": 5,
+      "gain": 0.4375,
+      "offsetFrames": 30,
+      "frame": 301,
+      "event": "clock",
+      "id": "clock-2"
+    },
+    {
+      "sound": "tick",
+      "durationFrames": 5,
+      "gain": 0.4375,
+      "offsetFrames": 45,
+      "frame": 316,
+      "event": "clock",
+      "id": "clock-3"
+    },
+    {
+      "sound": "tick",
+      "durationFrames": 5,
+      "gain": 0.4375,
+      "offsetFrames": 60,
+      "frame": 331,
+      "event": "clock",
+      "id": "clock-4"
+    },
+    {
+      "sound": "tick",
+      "durationFrames": 5,
+      "gain": 0.4375,
+      "offsetFrames": 75,
+      "frame": 346,
+      "event": "clock",
+      "id": "clock-5"
+    },
+    {
+      "sound": "tick",
+      "durationFrames": 5,
+      "gain": 0.4375,
+      "offsetFrames": 90,
+      "frame": 361,
+      "event": "clock",
+      "id": "clock-6"
+    },
+    {
+      "sound": "paper",
+      "durationFrames": 36,
+      "gain": 0.8250000000000001,
+      "frame": 377,
+      "event": "unwind",
+      "id": "unwind-0"
+    },
+    {
+      "sound": "paper",
+      "durationFrames": 30,
+      "gain": 0.75,
+      "frame": 453,
+      "event": "calendar",
+      "id": "calendar-0"
+    },
+    {
+      "sound": "ratchet",
+      "durationFrames": 32,
+      "gain": 0.625,
+      "frame": 508,
+      "event": "million",
+      "id": "million-0"
+    },
+    {
+      "sound": "resolve",
+      "durationFrames": 24,
+      "gain": 0.625,
+      "frame": 555,
+      "event": "fraction",
+      "id": "fraction-0"
+    },
+    {
+      "sound": "fold",
+      "durationFrames": 36,
+      "gain": 0.875,
+      "frame": 649,
+      "event": "collect",
+      "id": "collect-0"
+    },
+    {
+      "sound": "latch",
+      "durationFrames": 18,
+      "gain": 0.875,
+      "frame": 697,
+      "event": "block",
+      "id": "block-0"
+    },
+    {
+      "sound": "scale",
+      "durationFrames": 66,
+      "gain": 1,
+      "frame": 768,
+      "event": "launch",
+      "id": "launch-0"
+    },
+    {
+      "sound": "riser",
+      "durationFrames": 62,
+      "gain": 0.925,
+      "frame": 838,
+      "event": "travel",
+      "id": "travel-0"
+    },
+    {
+      "sound": "resolve",
+      "durationFrames": 24,
+      "gain": 0.6,
+      "frame": 966,
+      "event": "sample",
+      "id": "sample-0"
+    },
+    {
+      "sound": "coil",
+      "durationFrames": 48,
+      "gain": 0.95,
+      "frame": 1063,
+      "event": "thousand",
+      "id": "thousand-0"
+    },
+    {
+      "sound": "resolve",
+      "durationFrames": 28,
+      "gain": 0.7875,
+      "frame": 1123,
+      "event": "billion",
+      "id": "billion-0"
+    },
+    {
+      "sound": "ratchet",
+      "durationFrames": 38,
+      "gain": 0.725,
+      "frame": 1169,
+      "event": "years",
+      "id": "years-0"
+    },
+    {
+      "sound": "swish",
+      "durationFrames": 22,
+      "gain": 0.625,
+      "frame": 1249,
+      "event": "compare",
+      "id": "compare-0"
+    },
+    {
+      "sound": "riser",
+      "durationFrames": 36,
+      "gain": 0.8250000000000001,
+      "frame": 1299,
+      "event": "extend",
+      "id": "extend-0"
+    },
+    {
+      "sound": "resolve",
+      "durationFrames": 22,
+      "gain": 0.8125,
+      "frame": 1363,
+      "event": "result",
+      "id": "result-0"
+    },
+    {
+      "sound": "impact",
+      "durationFrames": 32,
+      "gain": 1,
+      "frame": 1387,
+      "event": "impact",
+      "id": "impact-0"
+    }
+  ],
+  "ducking": {
+    "source": "actual narration WAV, 10ms RMS",
+    "speechRatioLimit": 0.48,
+    "masterGain": 0.42,
+    "lookaheadMs": 30,
+    "releaseMs": 140,
+    "minimumGain": 0.0417785146081051,
+    "speechWindowsWithSfx": 1819,
+    "medianEffectToVoiceDb": -13.779631025046212,
+    "p95EffectToVoiceDb": -6.375175252488257
+  },
+  "stemPeak": 0.312375,
+  "predictedMixPeak": 0.5223167794882121,
+  "externalSamples": false,
+  "humanListeningPerformed": false,
+  "renderGain": 0.6
+}

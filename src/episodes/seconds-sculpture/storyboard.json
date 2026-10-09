@@ -1,0 +1,499 @@
+{
+  "schemaVersion": 1,
+  "idea": "ZAMAN HEYKELİ: Tek bir mercan blok, içindeki zamanı mekanik bir iris ve katlanan gün yaprakları olarak açar. Yapraklar aynı bloğa kapanır. Kamera yüzlerce eş parçanın arasından geri kaçar;1000 parça10×10×10 hacim heykeline kilitlenir. Son kamera bir parçayı bu heykelden çıkarır: bir ve bin, aynı dünya ölçeğinde. Nesne koreografisi fizik simülasyonu değil, açıkça şematik zaman heykelidir.",
+  "events": [
+    {
+      "id": "hook",
+      "at": "start",
+      "until": {
+        "word": 4,
+        "text": "bir"
+      },
+      "information": "Bir milyon saniye",
+      "visual": "Makro planda ışığı yakalayan heykelsi tek parça. Kamera yüzeyin kenarını aşar.",
+      "camera": "Yakın çapraz orbit; hemen başlayan hareket",
+      "animation": "Gerçek3D mesh, kare tabanlı nesne/kamera koreografisi; Makro planda ışığı yakalayan heykelsi tek parça. Kamera yüzeyin kenarını aşar.",
+      "effects": [
+        {
+          "sound": "latch",
+          "durationFrames": 12,
+          "gain": 0.6875
+        }
+      ]
+    },
+    {
+      "id": "shock",
+      "at": {
+        "word": 4,
+        "text": "bir"
+      },
+      "until": {
+        "word": 8,
+        "text": "Arada"
+      },
+      "information": "Bir milyar saniye?",
+      "visual": "Tek parçanın arkasında1000 parçalık dev kütle belirir; ilk fiziksel ölçek şoku.",
+      "camera": "Keskin geri çekilme ve derinlik açılışı",
+      "animation": "Gerçek3D mesh, kare tabanlı nesne/kamera koreografisi; Tek parçanın arkasında1000 parçalık dev kütle belirir; ilk fiziksel ölçek şoku.",
+      "effects": [
+        {
+          "sound": "scale",
+          "durationFrames": 42,
+          "gain": 0.8125
+        }
+      ]
+    },
+    {
+      "id": "zeros",
+      "at": {
+        "word": 8,
+        "text": "Arada"
+      },
+      "until": {
+        "word": 13,
+        "text": "Ama"
+      },
+      "information": "Yalnızca üç sıfır",
+      "visual": "Üç sıfır tipografik bir mekanizma gibi ayrılır; kütle tek parçaya geri kapanır.",
+      "camera": "Yönü koruyan çapraz kamera",
+      "animation": "Gerçek3D mesh, kare tabanlı nesne/kamera koreografisi; Üç sıfır tipografik bir mekanizma gibi ayrılır; kütle tek parçaya geri kapanır.",
+      "effects": [
+        {
+          "sound": "swish",
+          "durationFrames": 22,
+          "gain": 0.6
+        }
+      ]
+    },
+    {
+      "id": "dive",
+      "at": {
+        "word": 13,
+        "text": "Ama"
+      },
+      "until": {
+        "word": 17,
+        "text": "Saatin"
+      },
+      "information": "Geçen zamana bakın",
+      "visual": "Bloğun kapakları açılır, içinden mekanik saat irisi doğar.",
+      "camera": "İrisin içine dalış",
+      "animation": "Gerçek3D mesh, kare tabanlı nesne/kamera koreografisi; Bloğun kapakları açılır, içinden mekanik saat irisi doğar.",
+      "effects": [
+        {
+          "sound": "swish",
+          "durationFrames": 28,
+          "gain": 0.625
+        }
+      ]
+    },
+    {
+      "id": "clock",
+      "at": {
+        "word": 17,
+        "text": "Saatin"
+      },
+      "until": {
+        "word": 23,
+        "text": "Dakikalar"
+      },
+      "information": "Her tam tur bir dakika",
+      "visual": "Metal çember,60 işaret, saniye ve dakika ibresi. Gerçek açısal oran1:60.",
+      "camera": "Kadran üstünde alçak orbit",
+      "animation": "Gerçek3D mesh, kare tabanlı nesne/kamera koreografisi; Metal çember,60 işaret, saniye ve dakika ibresi. Gerçek açısal oran1:60.",
+      "effects": [
+        {
+          "sound": "tick",
+          "durationFrames": 5,
+          "gain": 0.4375,
+          "offsetFrames": 0
+        },
+        {
+          "sound": "tick",
+          "durationFrames": 5,
+          "gain": 0.4375,
+          "offsetFrames": 15
+        },
+        {
+          "sound": "tick",
+          "durationFrames": 5,
+          "gain": 0.4375,
+          "offsetFrames": 30
+        },
+        {
+          "sound": "tick",
+          "durationFrames": 5,
+          "gain": 0.4375,
+          "offsetFrames": 45
+        },
+        {
+          "sound": "tick",
+          "durationFrames": 5,
+          "gain": 0.4375,
+          "offsetFrames": 60
+        },
+        {
+          "sound": "tick",
+          "durationFrames": 5,
+          "gain": 0.4375,
+          "offsetFrames": 75
+        },
+        {
+          "sound": "tick",
+          "durationFrames": 5,
+          "gain": 0.4375,
+          "offsetFrames": 90
+        }
+      ]
+    },
+    {
+      "id": "unwind",
+      "at": {
+        "word": 23,
+        "text": "Dakikalar"
+      },
+      "until": {
+        "word": 26,
+        "text": "günlere"
+      },
+      "information": "Dakikalar saatlere",
+      "visual": "İrisin12 yaprağı menteşeleriyle kalkar; saatten kâğıt günlere dönüşür.",
+      "camera": "Yaprak aralarından yükselme",
+      "animation": "Gerçek3D mesh, kare tabanlı nesne/kamera koreografisi; İrisin12 yaprağı menteşeleriyle kalkar; saatten kâğıt günlere dönüşür.",
+      "effects": [
+        {
+          "sound": "paper",
+          "durationFrames": 36,
+          "gain": 0.8250000000000001
+        }
+      ]
+    },
+    {
+      "id": "calendar",
+      "at": {
+        "word": 26,
+        "text": "günlere"
+      },
+      "until": {
+        "word": 28,
+        "text": "Bir"
+      },
+      "information": "Saatler günlere",
+      "visual": "12 gün yaprağı heykelsi bir yelpazeye açılır.",
+      "camera": "Yelpazenin etrafında çapraz takip",
+      "animation": "Gerçek3D mesh, kare tabanlı nesne/kamera koreografisi; 12 gün yaprağı heykelsi bir yelpazeye açılır.",
+      "effects": [
+        {
+          "sound": "paper",
+          "durationFrames": 30,
+          "gain": 0.75
+        }
+      ]
+    },
+    {
+      "id": "million",
+      "at": {
+        "word": 28,
+        "text": "Bir"
+      },
+      "until": {
+        "word": 31,
+        "text": "yaklaşık"
+      },
+      "information": "Bir milyon saniye",
+      "visual": "11 tam gün ve12.günün gerçek%57,4074 kesri ayrı hacim dolumu.",
+      "camera": "Yaprakların bütününü açan kamera",
+      "animation": "Gerçek3D mesh, kare tabanlı nesne/kamera koreografisi; 11 tam gün ve12.günün gerçek%57,4074 kesri ayrı hacim dolumu.",
+      "effects": [
+        {
+          "sound": "ratchet",
+          "durationFrames": 32,
+          "gain": 0.625
+        }
+      ]
+    },
+    {
+      "id": "fraction",
+      "at": {
+        "word": 31,
+        "text": "yaklaşık"
+      },
+      "until": {
+        "word": 37,
+        "text": "Bu"
+      },
+      "information": "Yaklaşık11,6 gün",
+      "visual": "11,6 gün büyük tipografiyle;12.günün dolu/boş alanı ayırt edilir.",
+      "camera": "Kesirli yaprağa yaklaşma",
+      "animation": "Gerçek3D mesh, kare tabanlı nesne/kamera koreografisi; 11,6 gün büyük tipografiyle;12.günün dolu/boş alanı ayırt edilir.",
+      "effects": [
+        {
+          "sound": "resolve",
+          "durationFrames": 24,
+          "gain": 0.625
+        }
+      ]
+    },
+    {
+      "id": "collect",
+      "at": {
+        "word": 37,
+        "text": "Bu"
+      },
+      "until": {
+        "word": 40,
+        "text": "tek"
+      },
+      "information": "Sürenin tamamını birleştirme",
+      "visual": "Yapraklar tek tek katlanır, merkezde aynı bloğa toplanır.",
+      "camera": "Katlanmayı takip eden orbit",
+      "animation": "Gerçek3D mesh, kare tabanlı nesne/kamera koreografisi; Yapraklar tek tek katlanır, merkezde aynı bloğa toplanır.",
+      "effects": [
+        {
+          "sound": "fold",
+          "durationFrames": 36,
+          "gain": 0.875
+        }
+      ]
+    },
+    {
+      "id": "block",
+      "at": {
+        "word": 40,
+        "text": "tek"
+      },
+      "until": {
+        "word": 46,
+        "text": "milyar"
+      },
+      "information": "Tek bir blok",
+      "visual": "Parçanın yüzleri kilitlenir; içindeki günleri taşıyan tek zaman nesnesi.",
+      "camera": "Kenar boyunca makro dönüş",
+      "animation": "Gerçek3D mesh, kare tabanlı nesne/kamera koreografisi; Parçanın yüzleri kilitlenir; içindeki günleri taşıyan tek zaman nesnesi.",
+      "effects": [
+        {
+          "sound": "latch",
+          "durationFrames": 18,
+          "gain": 0.875
+        }
+      ]
+    },
+    {
+      "id": "launch",
+      "at": {
+        "word": 46,
+        "text": "milyar"
+      },
+      "until": {
+        "word": 49,
+        "text": "Kamera"
+      },
+      "information": "Bir milyar saniyeye geçiyoruz",
+      "visual": "Tek blok sabit dünya boyunda kalır; kamera eş parçaların arasından geri çekilir.",
+      "camera": "Kesintisiz büyük dolly out",
+      "animation": "Gerçek3D mesh, kare tabanlı nesne/kamera koreografisi; Tek blok sabit dünya boyunda kalır; kamera eş parçaların arasından geri çekilir.",
+      "effects": [
+        {
+          "sound": "scale",
+          "durationFrames": 66,
+          "gain": 1
+        }
+      ]
+    },
+    {
+      "id": "travel",
+      "at": {
+        "word": 49,
+        "text": "Kamera"
+      },
+      "until": {
+        "word": 55,
+        "text": "Her"
+      },
+      "information": "Kamera uzaklaştıkça yüzlerce blok",
+      "visual": "Katman katman1000 eş blok açığa çıkar; geniş derinlik koridoru.",
+      "camera": "Nesnelerin arasından yönlü geri kaçış",
+      "animation": "Gerçek3D mesh, kare tabanlı nesne/kamera koreografisi; Katman katman1000 eş blok açığa çıkar; geniş derinlik koridoru.",
+      "effects": [
+        {
+          "sound": "riser",
+          "durationFrames": 62,
+          "gain": 0.925
+        }
+      ]
+    },
+    {
+      "id": "sample",
+      "at": {
+        "word": 55,
+        "text": "Her"
+      },
+      "until": {
+        "word": 62,
+        "text": "bin"
+      },
+      "information": "Her blok bir milyon saniye",
+      "visual": "Mercan kaynak parça seçilir; çevresindeki her parça aynı geometri.",
+      "camera": "Kaynak parçayı gözeten yan geçiş",
+      "animation": "Gerçek3D mesh, kare tabanlı nesne/kamera koreografisi; Mercan kaynak parça seçilir; çevresindeki her parça aynı geometri.",
+      "effects": [
+        {
+          "sound": "resolve",
+          "durationFrames": 24,
+          "gain": 0.6
+        }
+      ]
+    },
+    {
+      "id": "thousand",
+      "at": {
+        "word": 62,
+        "text": "bin"
+      },
+      "until": {
+        "word": 65,
+        "text": "Bir"
+      },
+      "information": "Bin eşit blok",
+      "visual": "1000 parça on katmana kilitlenir; dev10×10×10 zaman heykeli oluşur.",
+      "camera": "Hacmi gösteren yükselen orbit",
+      "animation": "Gerçek3D mesh, kare tabanlı nesne/kamera koreografisi; 1000 parça on katmana kilitlenir; dev10×10×10 zaman heykeli oluşur.",
+      "effects": [
+        {
+          "sound": "coil",
+          "durationFrames": 48,
+          "gain": 0.95
+        }
+      ]
+    },
+    {
+      "id": "billion",
+      "at": {
+        "word": 65,
+        "text": "Bir"
+      },
+      "until": {
+        "word": 68,
+        "text": "yaklaşık"
+      },
+      "information": "Bir milyar saniye",
+      "visual": "Kütle üç yüzüyle belirir; çok büyük nesne algısı.",
+      "camera": "Kütlenin çevresinde kontrollü orbit",
+      "animation": "Gerçek3D mesh, kare tabanlı nesne/kamera koreografisi; Kütle üç yüzüyle belirir; çok büyük nesne algısı.",
+      "effects": [
+        {
+          "sound": "resolve",
+          "durationFrames": 28,
+          "gain": 0.7875
+        }
+      ]
+    },
+    {
+      "id": "years",
+      "at": {
+        "word": 68,
+        "text": "yaklaşık"
+      },
+      "until": {
+        "word": 74,
+        "text": "On"
+      },
+      "information": "Yaklaşık31,7 yıl",
+      "visual": "31,7 yıl tipografisi, kütlenin derinliği ve yüzey ritmiyle açılır.",
+      "camera": "Kütleye alçaktan bakış",
+      "animation": "Gerçek3D mesh, kare tabanlı nesne/kamera koreografisi; 31,7 yıl tipografisi, kütlenin derinliği ve yüzey ritmiyle açılır.",
+      "effects": [
+        {
+          "sound": "ratchet",
+          "durationFrames": 38,
+          "gain": 0.725
+        }
+      ]
+    },
+    {
+      "id": "compare",
+      "at": {
+        "word": 74,
+        "text": "On"
+      },
+      "until": {
+        "word": 79,
+        "text": "neredeyse"
+      },
+      "information": "11,6 günden",
+      "visual": "İlk tek parça kütlenin köşesinden ayrılır; geri kalan999 parça korunur.",
+      "camera": "Tek parçayı öne alan kamera",
+      "animation": "Gerçek3D mesh, kare tabanlı nesne/kamera koreografisi; İlk tek parça kütlenin köşesinden ayrılır; geri kalan999 parça korunur.",
+      "effects": [
+        {
+          "sound": "swish",
+          "durationFrames": 22,
+          "gain": 0.625
+        }
+      ]
+    },
+    {
+      "id": "extend",
+      "at": {
+        "word": 79,
+        "text": "neredeyse"
+      },
+      "until": {
+        "word": 83,
+        "text": "Fark"
+      },
+      "information": "Neredeyse32 yıla",
+      "visual": "999 parça ve ayrılmış1 parça, aynı dünya ölçeğinde1000 toplam.",
+      "camera": "Küçük parçadan dev yapıya odak yönlendirmesi",
+      "animation": "Gerçek3D mesh, kare tabanlı nesne/kamera koreografisi; 999 parça ve ayrılmış1 parça, aynı dünya ölçeğinde1000 toplam.",
+      "effects": [
+        {
+          "sound": "riser",
+          "durationFrames": 36,
+          "gain": 0.8250000000000001
+        }
+      ]
+    },
+    {
+      "id": "result",
+      "at": {
+        "word": 83,
+        "text": "Fark"
+      },
+      "until": {
+        "word": 85,
+        "text": "bin"
+      },
+      "information": "Fark tam bin kat",
+      "visual": "Tek parça ile toplam1000 parça aynı kadrajda; hacim ve adet ayrımı açık.",
+      "camera": "Sonuç orbitinin yavaşlaması",
+      "animation": "Gerçek3D mesh, kare tabanlı nesne/kamera koreografisi; Tek parça ile toplam1000 parça aynı kadrajda; hacim ve adet ayrımı açık.",
+      "effects": [
+        {
+          "sound": "resolve",
+          "durationFrames": 22,
+          "gain": 0.8125
+        }
+      ]
+    },
+    {
+      "id": "impact",
+      "at": {
+        "word": 85,
+        "text": "bin"
+      },
+      "until": "outro",
+      "information": "Bin kat",
+      "visual": "1000 kat sonucu; tek mercan parça ve999 diğer parça. Ardından korunmuş outro.",
+      "camera": "Kısa kontrollü sonuç yaklaşması",
+      "animation": "Gerçek3D mesh, kare tabanlı nesne/kamera koreografisi; 1000 kat sonucu; tek mercan parça ve999 diğer parça. Ardından korunmuş outro.",
+      "effects": [
+        {
+          "sound": "impact",
+          "durationFrames": 32,
+          "gain": 1
+        }
+      ]
+    }
+  ]
+}

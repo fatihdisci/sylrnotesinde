@@ -1,0 +1,13 @@
+{
+  "provider": "user:minimax",
+  "voice": "Documentary_Narrator",
+  "sourceFilename": "MiniMax_2026-10-09_23_00_01_Documentary_Narrator.mp3",
+  "sourceSha256": "b9f51e542bb50178d312201343fa3f30904ecd964f38f2eca23eb40f57cef341",
+  "sourceDurationSeconds": 47.115442,
+  "processing": "two-pass loudnorm -20 LUFS / -2 dBTP; 48 kHz mono PCM24; original timing retained",
+  "synthesisPerformed": false,
+  "humanListeningPerformed": false,
+  "schemaVersion": 2,
+  "archivePath": "voice-sources/seconds-sculpture/original.mp3",
+  "scriptSha256": "253d43cec10d1e7a2f890c37d5741349fb7b0da07ab2b1ea605fbea74a2a6b31"
+}
