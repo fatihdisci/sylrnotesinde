@@ -1,0 +1,20 @@
+{
+  "model": "supertonic-3",
+  "voice": "M1",
+  "speed": 1.0,
+  "seed": 42,
+  "device": "cpu",
+  "nativeSampleRate": 44100,
+  "durationSeconds": 5.045895691609977,
+  "generationSeconds": 1.0163174169138074,
+  "peakRssMiB": 523.671875,
+  "meanCpuPercent": 197.24091771321153,
+  "networkAttempts": [],
+  "defaultCliSelectionVerified": true,
+  "identicalToChosenReelPcm": true,
+  "listeningSampleRate": 48000,
+  "integratedLufs": -20.17,
+  "truePeakDbtp": -2.01,
+  "listeningPeak": 0.7903523445129395,
+  "wordTimingsVerified": false
+}

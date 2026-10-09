@@ -1,6 +1,6 @@
 # Yerel TTS kurulumu · 2026-10-09
 
-Bu altyapı Apple Silicon macOS üzerinde doğrulandı. Sistem Python’u ve başka projelerin ortamları değiştirilmez. Üç aday da korundu; seçilmiş anlatıcı yok (`config/narrator.json: activeModel=null`). Ücretli API, bulut sentezi veya uzaktan sunucu yok.
+Bu altyapı Apple Silicon macOS üzerinde doğrulandı. Sistem Python’u ve başka projelerin ortamları değiştirilmez. Kullanıcı **Supertonic 3 / M1** seçti (`config/narrator.json`). Antalia/EMA ortamları, ağırlıkları ve kaynak klonları bu projeden kaldırıldı. Aşağıdaki üç aday tablosu ilk karşılaştırmanın teknik kaydıdır; güncel kullanım ve temizlik kaydı: [SELECTION.md](SELECTION.md). Ücretli API, bulut sentezi veya uzaktan sunucu yok.
 
 ## Doğrulanan adaylar
 
@@ -16,7 +16,17 @@ Supertonic kaynak README’sinin yönlendirdiği resmî arşiv ağırlıkları `
 
 Tam model revision’ları, dosya boyutları ve LFS SHA256 değerleri `../config/models.json`; tüm yerel varlıkların SHA256 değerleri `../config/asset-checksums.json` içinde. Bağımlılıklar `../locks/*.txt` ile kilitli. Supertonic helper kaynak commit’i `1e9799e964ea4c0dad7cde993b65c3c813a7b373`; `adapters/supertonic_helper.py` bu commit’in `py/helper.py` dosyasının değiştirilmemiş kopyasıdır. MIT lisansı `licenses/supertonic-3/CODE-LICENSE` içinde.
 
-## Bu Mac’te
+## Kalıcı kullanım
+
+```sh
+npm run tts:setup  # yalnız Supertonic 3
+npm run tts:generate -- --text 'Ölçek değişir.' --output tts/outputs/manual/ornek.wav --os-offline
+npm run tts:episode -- --id yeni-bolum --text-file anlatim.txt
+```
+
+`--model` ve `--voice` verilmezse seçili Supertonic 3 / M1 kullanılır. Göreli hız1, CPU ve seed42 korunur. Eski Antalia/EMA örnek komutları ancak açık yeniden kurulumdan sonra kullanılabilir.
+
+## Karşılaştırma arşivi — bu Mac’te
 
 Proje kökünde:
 
@@ -33,7 +43,7 @@ npm run tts:generate -- --model ema-lightning --text-file tts/test-texts/long-na
 npm run tts:generate -- --model supertonic-3 --voice F3 --text 'Ölçek değiştiğinde ilişki görünür olur.' --output tts/outputs/manual/f3.wav --os-offline
 ```
 
-`--speed 1` modelin doğal varsayılanıdır; adapter gerçek parametreye çevirir. Ses sonradan hızlandırılmaz. Metin, model, ses, hız, çıkış yolu ortak arayüzdür. `--model` verilmezse merkezi aktif anlatıcı okunur; henüz seçilmediğinden açık model olmadan işlem hata verir. `--device mps` yalnız iki PyTorch adayında denenebilir; varsayılan CPU.
+`--speed 1` modelin doğal varsayılanıdır; adapter gerçek parametreye çevirir. Ses sonradan hızlandırılmaz. Metin, model, ses, hız, çıkış yolu ortak arayüzdür. `--model` verilmezse merkezi aktif anlatıcı okunur; artık Supertonic 3 / M1 kullanır. `--device mps` yalnız iki PyTorch adayında denenebilir; varsayılan CPU.
 
 ## MacBook’a geçiş
 
@@ -44,17 +54,21 @@ git clone https://github.com/fatihdisci/sylrnotesinde.git
 cd sylrnotesinde
 npm ci
 npm run tts:setup
-npm run tts:benchmark
+npm run tts:generate -- --text 'Ölçek değişir.' --output tts/outputs/manual/ornek.wav --os-offline
 npm run tts:offline
-npm run tts:qa
-npm run tts:test
-npm run tts:compare
+# Yeni bölüm için: npm run tts:episode -- --id yeni-bolum --text-file anlatim.txt
+# Karşılaştırma arşivi gerekiyorsa açıkça:
+# npm run tts:setup -- --all
+# npm run tts:benchmark
+# npm run tts:qa
+# npm run tts:test
+# npm run tts:compare
 # Görsel proje için:
 npm run browser:prepare
 npm run preview
 ```
 
-`tts:setup` proje içi bootstrap venv’de `uv==0.12.24` kullanır. CPython 3.12.12 ve 3.11.15’i `tts/environments/python/` altına indirir, Python kısayollarını da yalnız `tts/environments/bin/` altına koyar. Model başına ayrı venv + kilit kullanır; sistem ortamına pip kurulumu yapmaz. Ağırlıklar sabit revision’dan indirilir, mevcut dosyalar doğrulanır. Yaklaşık 3 GB boş alan ayırmak yeterlidir; Python/venv/üretim miktarına göre ek pay bırak.
+`tts:setup` proje içi bootstrap venv’de `uv==0.12.24` kullanır. Varsayılan olarak yalnız seçili modelin CPython 3.11.15 sürümünü; açık `--all` ile ayrıca 3.12.12’yi `tts/environments/python/` altına indirir, Python kısayollarını da yalnız `tts/environments/bin/` altına koyar. Model başına ayrı venv + kilit kullanır; sistem ortamına pip kurulumu yapmaz. Ağırlıklar sabit revision’dan indirilir, mevcut dosyalar doğrulanır. Yaklaşık 3 GB boş alan ayırmak yeterlidir; Python/venv/üretim miktarına göre ek pay bırak.
 
 Kod, lisanslar, kilitler, metinler ve Mac mini ölçüm kayıtları Git’te. Ağırlıklar, ortamlar, büyük WAV’lar ve kullanıcı puanları Git’te değildir. MacBook’ta yeniden kurulum ve benchmark bu dosyaları yerelde oluşturur. Venv klasörünü iki cihaz arasında kopyalama. İlk indirme internet ister; sonraki sentez istemez. Aynı seed/sürüm bu Mac’te aynı PCM örneklerini verdi; farklı donanımda bit düzeyinde eşitlik garantisi verilmez.
 

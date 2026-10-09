@@ -1,0 +1,32 @@
+{
+  "osNetworkProbe": "OS network denied",
+  "method": "sandbox-exec deny network* + Python network audit hook; Mac network interfaces left enabled",
+  "records": [
+    {
+      "model": "supertonic-3",
+      "voice": "M1",
+      "text": "Her gün gördüğümüz sayılar bazen düşündüğümüzden çok daha büyük anlamlar taşıyor. Küçük bir fark gibi görünen şey, ölçek değiştiğinde bambaşka bir dünyaya dönüşebilir.",
+      "speed": 1.0,
+      "seed": 42,
+      "output": "outputs/diagnostics/offline/supertonic-3/A.wav",
+      "device": "cpu",
+      "nativeSampleRate": 44100,
+      "durationSeconds": 12.153854875283447,
+      "generationSeconds": 2.529424333013594,
+      "modelLoadSeconds": 0.4231341250706464,
+      "cpuSeconds": 4.783042008000001,
+      "meanCpuPercent": 189.09607002560193,
+      "peakRssMiB": 564.96875,
+      "realtimeFactor": 0.20811704261481107,
+      "rawPeak": 0.480573832988739,
+      "words": [],
+      "wordTimingsVerified": false,
+      "modelNormalizedText": null,
+      "offline": true,
+      "networkAttempts": [],
+      "threads": 2,
+      "identicalDecodedSamples": true,
+      "decodedPcmSha256": "11abcef12933544c211bac5b2343bea2d131f3ab124f03f89645f6a0980345dc"
+    }
+  ]
+}

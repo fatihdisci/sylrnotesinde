@@ -1,5 +1,7 @@
 # Yerel TTS QA · 2026-10-09
 
+**Karşılaştırma aşamasının tarihsel ölçümleri.** Güncel kullanıcı seçimi Supertonic 3 / M1; Antalia/EMA ortamları ve ağırlıkları kaldırıldı. Seçim sonrası gerçek doğrulamalar: [SELECTION.md](SELECTION.md). Aşağıdaki “çalışıyor” durumları ilk test anına aittir.
+
 Makine: Apple M4 Mac mini, 16 GiB RAM, 10 CPU çekirdeği, macOS 27.0 arm64. Bunlar bu makinede gerçek üretimden ölçülen değerlerdir; model kalite sıralaması değildir. İki CPU thread, seed42; süreler import/model yüklemesinden ayrı sentez süresidir. CPU %100 bir çekirdek, RSS süreç belleğidir.
 
 ## Çalışma durumu

@@ -1,0 +1,40 @@
+{
+  "selectedBy": "user",
+  "model": "supertonic-3",
+  "voice": "M1",
+  "relativeSpeed": 1.0,
+  "device": "cpu",
+  "removed": [
+    {
+      "path": "tts/environments/antalia-mini",
+      "bytes": 444689502
+    },
+    {
+      "path": "tts/environments/ema-lightning",
+      "bytes": 442575810
+    },
+    {
+      "path": "tts/models/antalia-mini",
+      "bytes": 30532550
+    },
+    {
+      "path": "tts/models/ema-lightning",
+      "bytes": 34407274
+    },
+    {
+      "path": "tts/vendor/antalia",
+      "bytes": 42277719
+    },
+    {
+      "path": "tts/vendor/ema-lightning",
+      "bytes": 267476
+    }
+  ],
+  "removedBytes": 994750331,
+  "preserved": [
+    "Supertonic environment, weights and all voice profiles",
+    "comparison WAVs, MP4, measurements and licenses",
+    "system/shared Python and all other projects",
+    "project bootstrap, Python runtimes and shared setup cache"
+  ]
+}

@@ -1,12 +1,12 @@
 # Bölüm sesini Remotion’a bağlamak
 
-Görsel proje, StyleProof ve outro değiştirilmedi. Mevcut `assets:voice` Yelda denemesi geçmiş görsel testin kaynağı olarak korundu. Yeni yerel adaylar henüz aktif anlatıcı yerine konulmadı. `tts/config/narrator.json` tek seçme noktasıdır; kullanıcının kararı gelmeden `activeModel` null kalır. Sonra yalnız bu dosyada model, profil ve göreli hız seçilir.
+Görsel proje, StyleProof ve outro değiştirilmedi. Mevcut `assets:voice` Yelda denemesi geçmiş görsel testin kaynağı olarak korundu. Kullanıcı yeni bölümler için **Supertonic 3 / M1** seçti. `tts/config/narrator.json` tek ayar kaynağıdır; model/profil belirtmeden CLI bu seçimi kullanır. Doğal hız1 korunur; her bölümün gerçek ses süresi ayrıca doğrulanır. Seçili anlatıcı, her üretilen dosyanın altyazı/ses incelemesinin tamamlandığı anlamına gelmez.
 
 Ortak CLI modellerin kendi venv’lerine subprocess ile gider. Animasyon kodu PyTorch/ONNX/TTS import etmez. `render.ts` ses üretmez, hazırlanmış WAV okur. Sahne süreleri gerçek ses süresinden hesaplanır; son 45 kare kanonik outroya ayrılır.
 
 ```sh
-# Karşılaştırma aşamasında model açıkça belirtilir; aktif anlatıcıyı seçmez.
-npm run tts:episode -- --id yeni-bolum --model antalia-mini --text-file anlatim.txt
+# Merkezi seçimden Supertonic 3 / M1 kullanılır.
+npm run tts:episode -- --id yeni-bolum --text-file anlatim.txt
 ```
 
 Bu komut native master ve metadata’yı `tts/outputs/episodes/yeni-bolum/` altında tutar, eşitlenmiş WAV’ı `public/episodes/yeni-bolum/narration.wav` olarak hazırlar. `narration-manifest.json` alanları mevcut türlendirilmiş `Episode` yapısının `narration`, `audio`, `subtitlePath`, `captions` alanlarıyla uyumludur. Önerilen kare sayısı gerçek WAV +45’tir; 40–45 saniyelik toplam bölüm kuralını denetler. Daha kısa/uzun taslakta `--allow-extended-duration` yalnız üretim/inceleme için açık istisnadır; `loadNarration` yine geçersiz bölüm süresini kabul etmez.

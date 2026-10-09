@@ -1,6 +1,6 @@
 # Dinleme protokolü
 
-Model seçimi ve öznel kalite puanları kullanıcıya aittir. Altyapı hiçbir adayı kazanan ilan etmez; aktif anlatıcı null kalır. Model/venv/ağırlık silme komutu eklenmedi.
+Model seçimi ve öznel kalite puanları kullanıcıya aittir. Altyapı hiçbir adayı kazanan ilan etmez; bu belge ilk karşılaştırmanın tarihsel protokolüdür. Kullanıcı daha sonra Supertonic 3 / M1 seçti; güncel durum [SELECTION.md](SELECTION.md) içinde.
 
 A, B ve C metinleri kullanıcının verdiği Unicode Türkçe metin ve noktalama ile aynen `test-texts/tests.json` içinde. D, 93 kelimelik özgün ışık yolculuğu anlatımıdır. Bilim dayanakları: [NASA, ışık yılı](https://science.nasa.gov/exoplanets/what-is-a-light-year/), [NASA, Ay ışığının 1,3 saniyelik yolculuğu](https://science.nasa.gov/mission/webb/science-overview/science-explainers/how-does-webb-see-back-in-time/), [NASA, geçmişi gözlemek](https://science.nasa.gov/mission/hubble/science/science-behind-the-discoveries/time-travel-observing-cosmic-history/). Erişim 2026-10-09. C’deki kâğıt cümlesi kullanıcı test metnidir; yayımlanacak bölümün fiziksel varsayımlarını doğrulanmış saymaz. Katlama idealizasyonu, başlangıç kalınlığı ve fiziksel uygulanabilirlik gerçek bölümde ayrıca ele alınmalı.
 

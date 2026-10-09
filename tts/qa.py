@@ -1,9 +1,10 @@
 """Real waveform checks. Run with a model venv; stdlib dispatcher otherwise."""
 import json, subprocess, sys
 from pathlib import Path
+from selection import narrator_config
 ROOT=Path(__file__).resolve().parent
 if sys.prefix==sys.base_prefix:
-    raise SystemExit(subprocess.call([str(ROOT/'environments/antalia-mini/bin/python'),__file__]))
+    raise SystemExit(subprocess.call([str(ROOT/'environments'/ (narrator_config()['activeModel'] or 'supertonic-3') /'bin/python'),__file__]))
 import numpy as np, soundfile as sf
 
 def main():

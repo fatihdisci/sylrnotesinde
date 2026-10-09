@@ -1,6 +1,7 @@
 """Fetch pinned public assets; no runtime networking. Existing files are verified."""
 from pathlib import Path
-import concurrent.futures, hashlib, json, urllib.request, shutil
+import argparse, concurrent.futures, hashlib, json, urllib.request, shutil
+from selection import add_selection_arguments, selected_models
 ROOT = Path(__file__).resolve().parent
 CHECKSUM_FILE=ROOT/'config/asset-checksums.json'
 EXPECTED=json.loads(CHECKSUM_FILE.read_text()) if CHECKSUM_FILE.exists() else {}
@@ -28,7 +29,8 @@ def fetch(item):
     return str(path.relative_to(ROOT)), digest(path)
 
 if __name__ == '__main__':
-    models = json.loads((ROOT/'config/models.json').read_text())
+    parser=argparse.ArgumentParser(description=__doc__); add_selection_arguments(parser)
+    args=parser.parse_args(); models=selected_models(args.model,args.all)
     records=[];errors=[]
     with concurrent.futures.ThreadPoolExecutor(max_workers=3) as pool:
         futures=[pool.submit(fetch,(k,m,f)) for k,m in models.items() for f in m['files']]

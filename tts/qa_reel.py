@@ -1,9 +1,10 @@
 """Validate the actual encoded mobile comparison and extract real MP4 review frames."""
 import array, json, subprocess, sys
 from pathlib import Path
+from selection import narrator_config
 ROOT=Path(__file__).resolve().parent
 if sys.prefix==sys.base_prefix:
-    raise SystemExit(subprocess.call([str(ROOT/'environments/antalia-mini/bin/python'),__file__]))
+    raise SystemExit(subprocess.call([str(ROOT/'environments'/ (narrator_config()['activeModel'] or 'supertonic-3') /'bin/python'),__file__]))
 import numpy as np
 import soundfile as sf
 
