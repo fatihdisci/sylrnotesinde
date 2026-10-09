@@ -40,7 +40,7 @@ export const SecondsFilm = ({episode,hideCaptions=false,debug=false}: {episode:E
       <g clipPath="url(#geometry-window)">
         {!field && <g>
           {/* Minute hand and second hand agree: one fast revolution = one schematic minute. */}
-          <g opacity={1-dayP} transform={`translate(504 940) scale(${lerp(1.35,1,progress(f,0,90))*lerp(1,.72,dayP)})`}>
+          <g opacity={1-dayP} transform={`translate(504 940) scale(${lerp(1.2,1,progress(f,0,90))*lerp(1,.72,dayP)})`}>
             <circle r="320" stroke={colors.guideLine} strokeWidth="3" fill="none"/>
             {Array.from({length:60},(_,i)=>{const a=i*Math.PI/30;return <path key={i} d={`M${Math.sin(a)*294} ${-Math.cos(a)*294}L${Math.sin(a)*(i%5===0?265:282)} ${-Math.cos(a)*(i%5===0?265:282)}`} stroke={i%5===0?colors.foreground:colors.guideLine} strokeWidth={i%5===0?4:2}/>;})}
             <path d="M0 45V-250" stroke={colors.accent} strokeWidth="7" transform={`rotate(${(f%90)*4})`}/>
