@@ -1,0 +1,161 @@
+{
+  "title": "Saniyelerin ölçeği · Zaman şeridi",
+  "hook": "On iki gün mü, otuz iki yıl mı?",
+  "narrationStartFrame": 0,
+  "resultHoldFrames": 45,
+  "phrases": [
+    {
+      "spoken": "Bir milyon saniye mi,",
+      "display": [
+        "1 milyon saniye mi,"
+      ]
+    },
+    {
+      "spoken": "bir milyar saniye mi?",
+      "display": [
+        "1 milyar saniye mi?"
+      ]
+    },
+    {
+      "spoken": "Arada sadece üç sıfır var.",
+      "display": [
+        "Arada sadece üç sıfır var."
+      ]
+    },
+    {
+      "spoken": "Ama geçen zamana bakın.",
+      "display": [
+        "Ama geçen zamana bakın."
+      ]
+    },
+    {
+      "spoken": "Saatin her tam turu bir dakika.",
+      "display": [
+        "Saatin her tam turu 1 dakika."
+      ]
+    },
+    {
+      "spoken": "Dakikalar saatlere, saatler günlere dönüşüyor.",
+      "display": [
+        "Dakikalar saatlere,",
+        "saatler günlere dönüşüyor."
+      ]
+    },
+    {
+      "spoken": "Bir milyon saniye,",
+      "display": [
+        "1 milyon saniye,"
+      ]
+    },
+    {
+      "spoken": "yaklaşık on bir virgül altı gün.",
+      "display": [
+        "yaklaşık 11,6 gün."
+      ]
+    },
+    {
+      "spoken": "Bu sürenin tamamını tek bir blok yapalım.",
+      "display": [
+        "Bu sürenin tamamını",
+        "tek bir blok yapalım."
+      ]
+    },
+    {
+      "spoken": "Şimdi bir milyar saniyeye geçiyoruz.",
+      "display": [
+        "Şimdi 1 milyar saniyeye geçiyoruz."
+      ]
+    },
+    {
+      "spoken": "Kamera uzaklaştıkça aynı bloktan yüzlercesi görünüyor.",
+      "display": [
+        "Kamera uzaklaştıkça aynı bloktan",
+        "yüzlercesi görünüyor."
+      ]
+    },
+    {
+      "spoken": "Her biri yine bir milyon saniye.",
+      "display": [
+        "Her biri yine 1 milyon saniye."
+      ]
+    },
+    {
+      "spoken": "Toplam bin eşit blok.",
+      "display": [
+        "Toplam 1.000 eşit blok."
+      ]
+    },
+    {
+      "spoken": "Bir milyar saniye,",
+      "display": [
+        "1 milyar saniye,"
+      ]
+    },
+    {
+      "spoken": "yaklaşık otuz bir virgül yedi yıl.",
+      "display": [
+        "yaklaşık 31,7 yıl."
+      ]
+    },
+    {
+      "spoken": "On bir virgül altı günden,",
+      "display": [
+        "11,6 günden,"
+      ]
+    },
+    {
+      "spoken": "neredeyse otuz iki yıla.",
+      "display": [
+        "neredeyse 32 yıla."
+      ]
+    },
+    {
+      "spoken": "Fark tam bin kat.",
+      "display": [
+        "Fark tam 1.000 kat."
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "title": "SI Brochure · BIPM",
+      "url": "https://www.bipm.org/en/publications/si-brochure",
+      "note": "1 gün=86.400 s. Yıl dönüşümü açıkça 365,25 gün/yıl varsayımıyla hesaplanır; takvim yılı iddiası yok.",
+      "accessed": "2026-10-09"
+    }
+  ],
+  "claims": [
+    {
+      "id": "ratio",
+      "quantity": "count",
+      "numerator": 1000000000,
+      "denominator": 1000000,
+      "ratio": 1000,
+      "assumptions": "Aynı boydaki 1.000 blok; her blok 1.000.000 saniye. Alan karşılaştırması değil, eşit blokların adedi.",
+      "scale": "schematic"
+    },
+    {
+      "id": "days",
+      "quantity": "time",
+      "numerator": 1000000,
+      "denominator": 86400,
+      "ratio": 11.574074074074074,
+      "assumptions": "Yaklaşık11,6 gün;24 saat/gün.",
+      "scale": "linear"
+    },
+    {
+      "id": "years",
+      "quantity": "time",
+      "numerator": 1000000000,
+      "denominator": 31557600,
+      "ratio": 31.68808781402895,
+      "assumptions": "365,25 gün/yıl; yaklaşık31,7 yıl.",
+      "scale": "linear"
+    }
+  ],
+  "format": "audio-first",
+  "audioSource": {
+    "provider": "user:minimax",
+    "voice": "Documentary_Narrator"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "osProbe": "network denied",
+  "identicalWordTimings": true,
+  "networkAttempts": [],
+  "metrics": {
+    "seconds": 5.021525250005652,
+    "peakRssMiB": 3143.078125,
+    "networkAttempts": []
+  },
+  "modelRevision": "708639f50559d7970f462e13ec64d3f059ca89f6"
+}

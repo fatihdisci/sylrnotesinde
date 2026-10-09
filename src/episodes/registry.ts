@@ -9,5 +9,7 @@ import study15 from '../../public/episodes/motion-study-15/narration-manifest.js
 import {MotionStudy15} from './motion-study-15/Scenes';
 import minimax from '../../public/episodes/seconds-film-minimax/narration-manifest.json';
 import {SecondsFilmMinimax} from './seconds-film-minimax/Scenes';
+import audioFirst from '../../public/episodes/seconds-audio-first/narration-manifest.json';
+import {SecondsAudioFirst} from './seconds-audio-first/Scenes';
 /** Add a new authored TSX scene here; render/QA scripts stay unchanged. */
-export const episodes = [{episode: prepared as Episode, component: ProductionCheck}, {episode: motion as Episode, component: MotionStudy}, {episode: film as Episode, component: SecondsFilm}, {episode: study15 as Episode, component: MotionStudy15}, {episode: minimax as Episode, component: SecondsFilmMinimax}];
+export const episodes = [{episode: prepared as Episode, component: ProductionCheck}, {episode: motion as Episode, component: MotionStudy}, {episode: film as Episode, component: SecondsFilm}, {episode: study15 as Episode, component: MotionStudy15}, {episode: minimax as Episode, component: SecondsFilmMinimax}, {episode:audioFirst as Episode,component:SecondsAudioFirst}];

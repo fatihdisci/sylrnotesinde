@@ -1,0 +1,248 @@
+{
+  "schemaVersion": 1,
+  "method": "original-seeded-procedural-foley-v2",
+  "seed": 42,
+  "sampleRate": 48000,
+  "directionHash": "cb38e4dad4b4c03af4d14a7f00d55f5960da68990c4b1015500f80c242b29050",
+  "audioHash": "9d9841bd2df4edace97199e24d919183431df55e9312201944e047c8f2c5895b",
+  "stemSha256": "72f803d7f3e1abe984a5380f7b81fa1c512589378a2b4190906a7cc3c4c81c08",
+  "events": [
+    {
+      "sound": "latch",
+      "durationFrames": 12,
+      "gain": 0.55,
+      "frame": 0,
+      "event": "hook",
+      "id": "hook-0"
+    },
+    {
+      "sound": "scale",
+      "durationFrames": 42,
+      "gain": 0.65,
+      "frame": 57,
+      "event": "shock",
+      "id": "shock-0"
+    },
+    {
+      "sound": "swish",
+      "durationFrames": 22,
+      "gain": 0.48,
+      "frame": 117,
+      "event": "zeros",
+      "id": "zeros-0"
+    },
+    {
+      "sound": "swish",
+      "durationFrames": 28,
+      "gain": 0.5,
+      "frame": 195,
+      "event": "dive",
+      "id": "dive-0"
+    },
+    {
+      "sound": "tick",
+      "durationFrames": 5,
+      "gain": 0.35,
+      "offsetFrames": 0,
+      "frame": 271,
+      "event": "clock",
+      "id": "clock-0"
+    },
+    {
+      "sound": "tick",
+      "durationFrames": 5,
+      "gain": 0.35,
+      "offsetFrames": 15,
+      "frame": 286,
+      "event": "clock",
+      "id": "clock-1"
+    },
+    {
+      "sound": "tick",
+      "durationFrames": 5,
+      "gain": 0.35,
+      "offsetFrames": 30,
+      "frame": 301,
+      "event": "clock",
+      "id": "clock-2"
+    },
+    {
+      "sound": "tick",
+      "durationFrames": 5,
+      "gain": 0.35,
+      "offsetFrames": 45,
+      "frame": 316,
+      "event": "clock",
+      "id": "clock-3"
+    },
+    {
+      "sound": "tick",
+      "durationFrames": 5,
+      "gain": 0.35,
+      "offsetFrames": 60,
+      "frame": 331,
+      "event": "clock",
+      "id": "clock-4"
+    },
+    {
+      "sound": "tick",
+      "durationFrames": 5,
+      "gain": 0.35,
+      "offsetFrames": 75,
+      "frame": 346,
+      "event": "clock",
+      "id": "clock-5"
+    },
+    {
+      "sound": "tick",
+      "durationFrames": 5,
+      "gain": 0.35,
+      "offsetFrames": 90,
+      "frame": 361,
+      "event": "clock",
+      "id": "clock-6"
+    },
+    {
+      "sound": "paper",
+      "durationFrames": 36,
+      "gain": 0.66,
+      "frame": 377,
+      "event": "unwind",
+      "id": "unwind-0"
+    },
+    {
+      "sound": "paper",
+      "durationFrames": 30,
+      "gain": 0.6,
+      "frame": 453,
+      "event": "calendar",
+      "id": "calendar-0"
+    },
+    {
+      "sound": "ratchet",
+      "durationFrames": 32,
+      "gain": 0.5,
+      "frame": 508,
+      "event": "million",
+      "id": "million-0"
+    },
+    {
+      "sound": "resolve",
+      "durationFrames": 24,
+      "gain": 0.5,
+      "frame": 555,
+      "event": "fraction",
+      "id": "fraction-0"
+    },
+    {
+      "sound": "fold",
+      "durationFrames": 36,
+      "gain": 0.7,
+      "frame": 649,
+      "event": "collect",
+      "id": "collect-0"
+    },
+    {
+      "sound": "latch",
+      "durationFrames": 18,
+      "gain": 0.7,
+      "frame": 697,
+      "event": "block",
+      "id": "block-0"
+    },
+    {
+      "sound": "scale",
+      "durationFrames": 66,
+      "gain": 0.85,
+      "frame": 768,
+      "event": "launch",
+      "id": "launch-0"
+    },
+    {
+      "sound": "riser",
+      "durationFrames": 62,
+      "gain": 0.74,
+      "frame": 838,
+      "event": "travel",
+      "id": "travel-0"
+    },
+    {
+      "sound": "resolve",
+      "durationFrames": 24,
+      "gain": 0.48,
+      "frame": 966,
+      "event": "sample",
+      "id": "sample-0"
+    },
+    {
+      "sound": "coil",
+      "durationFrames": 48,
+      "gain": 0.76,
+      "frame": 1063,
+      "event": "thousand",
+      "id": "thousand-0"
+    },
+    {
+      "sound": "resolve",
+      "durationFrames": 28,
+      "gain": 0.63,
+      "frame": 1123,
+      "event": "billion",
+      "id": "billion-0"
+    },
+    {
+      "sound": "ratchet",
+      "durationFrames": 38,
+      "gain": 0.58,
+      "frame": 1169,
+      "event": "years",
+      "id": "years-0"
+    },
+    {
+      "sound": "swish",
+      "durationFrames": 22,
+      "gain": 0.5,
+      "frame": 1249,
+      "event": "compare",
+      "id": "compare-0"
+    },
+    {
+      "sound": "riser",
+      "durationFrames": 36,
+      "gain": 0.66,
+      "frame": 1299,
+      "event": "extend",
+      "id": "extend-0"
+    },
+    {
+      "sound": "resolve",
+      "durationFrames": 22,
+      "gain": 0.65,
+      "frame": 1363,
+      "event": "result",
+      "id": "result-0"
+    },
+    {
+      "sound": "impact",
+      "durationFrames": 32,
+      "gain": 0.8,
+      "frame": 1387,
+      "event": "impact",
+      "id": "impact-0"
+    }
+  ],
+  "ducking": {
+    "source": "actual narration WAV, 10ms RMS",
+    "lookaheadMs": 30,
+    "releaseMs": 140,
+    "minimumGain": 0.031018756512285462,
+    "speechWindowsWithSfx": 1790,
+    "medianEffectToVoiceDb": -16.408183252330765,
+    "p95EffectToVoiceDb": -11.372724716820253
+  },
+  "stemPeak": 0.14444802724440303,
+  "predictedMixPeak": 0.5050893765409088,
+  "externalSamples": false,
+  "humanListeningPerformed": false,
+  "renderGain": 0.6
+}

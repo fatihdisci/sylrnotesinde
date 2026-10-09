@@ -1,0 +1,499 @@
+{
+  "schemaVersion": 1,
+  "idea": "Bir zaman kapsülünün içindeki saat takvim şeridine açılır; aynı sayfalar bir milyon saniyelik tek birime katlanır. Kamera bu birimin bin eşini zaman yolu boyunca izler. Yol yılları gösteren bobine sarılır; ilk mercan birim ve1000 birimlik toplam aynı ölçekte kalır. Tüm yol hareketleri şematiktir.",
+  "events": [
+    {
+      "id": "hook",
+      "at": "start",
+      "until": {
+        "word": 4,
+        "text": "bir"
+      },
+      "information": "Bir milyon saniye",
+      "visual": "Yakın planda mekanik zaman kapsülü; hareket ilk karede başlar.",
+      "camera": "Kadrana kontrollü yaklaşma",
+      "animation": "Kadran, ibre ve derinlik katmanları",
+      "effects": [
+        {
+          "sound": "latch",
+          "durationFrames": 12,
+          "gain": 0.55
+        }
+      ]
+    },
+    {
+      "id": "shock",
+      "at": {
+        "word": 4,
+        "text": "bir"
+      },
+      "until": {
+        "word": 8,
+        "text": "Arada"
+      },
+      "information": "Bir milyar saniye?",
+      "visual": "Kapsülün arkasından çok büyük zaman bobini açılır.",
+      "camera": "Çapraz geriye açılma",
+      "animation": "Aynı birimden oluşan bobine ilk bakış",
+      "effects": [
+        {
+          "sound": "scale",
+          "durationFrames": 42,
+          "gain": 0.65
+        }
+      ]
+    },
+    {
+      "id": "zeros",
+      "at": {
+        "word": 8,
+        "text": "Arada"
+      },
+      "until": {
+        "word": 13,
+        "text": "Ama"
+      },
+      "information": "Yalnızca üç sıfır",
+      "visual": "Bobin daralırken tek kapsül kadranı öne döner.",
+      "camera": "Kapsüle parallax dönüş",
+      "animation": "Nesne yönünü koruyan maske",
+      "effects": [
+        {
+          "sound": "swish",
+          "durationFrames": 22,
+          "gain": 0.48
+        }
+      ]
+    },
+    {
+      "id": "dive",
+      "at": {
+        "word": 13,
+        "text": "Ama"
+      },
+      "until": {
+        "word": 17,
+        "text": "Saatin"
+      },
+      "information": "Geçen zamana bakın",
+      "visual": "Yakın planda saniye ibresinin hareketi izlenir.",
+      "camera": "Kadranın içine yaklaşma",
+      "animation": "Büyük mekanik yüzey ve ölçülü eğim",
+      "effects": [
+        {
+          "sound": "swish",
+          "durationFrames": 28,
+          "gain": 0.5
+        }
+      ]
+    },
+    {
+      "id": "clock",
+      "at": {
+        "word": 17,
+        "text": "Saatin"
+      },
+      "until": {
+        "word": 23,
+        "text": "Dakikalar"
+      },
+      "information": "Her tam tur bir dakika",
+      "visual": "Saniye ve dakika ibreleri doğru1:60 açısal oranda döner.",
+      "camera": "Hafif yana kayma",
+      "animation": "Hızlandırılmış saat; bir tur bir dakika",
+      "effects": [
+        {
+          "sound": "tick",
+          "durationFrames": 5,
+          "gain": 0.35,
+          "offsetFrames": 0
+        },
+        {
+          "sound": "tick",
+          "durationFrames": 5,
+          "gain": 0.35,
+          "offsetFrames": 15
+        },
+        {
+          "sound": "tick",
+          "durationFrames": 5,
+          "gain": 0.35,
+          "offsetFrames": 30
+        },
+        {
+          "sound": "tick",
+          "durationFrames": 5,
+          "gain": 0.35,
+          "offsetFrames": 45
+        },
+        {
+          "sound": "tick",
+          "durationFrames": 5,
+          "gain": 0.35,
+          "offsetFrames": 60
+        },
+        {
+          "sound": "tick",
+          "durationFrames": 5,
+          "gain": 0.35,
+          "offsetFrames": 75
+        },
+        {
+          "sound": "tick",
+          "durationFrames": 5,
+          "gain": 0.35,
+          "offsetFrames": 90
+        }
+      ]
+    },
+    {
+      "id": "unwind",
+      "at": {
+        "word": 23,
+        "text": "Dakikalar"
+      },
+      "until": {
+        "word": 26,
+        "text": "günlere"
+      },
+      "information": "Dakikalar saatlere",
+      "visual": "Saatin12 işareti kâğıt sayfalara dönüşür.",
+      "camera": "Kadrandan dışarı açılma",
+      "animation": "Kadran çemberi kesintisiz takvim şeridine morph",
+      "effects": [
+        {
+          "sound": "paper",
+          "durationFrames": 36,
+          "gain": 0.66
+        }
+      ]
+    },
+    {
+      "id": "calendar",
+      "at": {
+        "word": 26,
+        "text": "günlere"
+      },
+      "until": {
+        "word": 28,
+        "text": "Bir"
+      },
+      "information": "Saatler günlere",
+      "visual": "Sayfalar kameranın önünden S biçimli takvim şeridine yayılır.",
+      "camera": "Takvim boyunca takip",
+      "animation": "Delikler, kat izleri ve12 gün yüzeyi",
+      "effects": [
+        {
+          "sound": "paper",
+          "durationFrames": 30,
+          "gain": 0.6
+        }
+      ]
+    },
+    {
+      "id": "million",
+      "at": {
+        "word": 28,
+        "text": "Bir"
+      },
+      "until": {
+        "word": 31,
+        "text": "yaklaşık"
+      },
+      "information": "Bir milyon saniye",
+      "visual": "Günler sırayla vurgulanır;11 tam gün görünür.",
+      "camera": "Şeridin bütününü açan kamera",
+      "animation": "Gün dolumu;12.gün kesri ayrı gösterilir",
+      "effects": [
+        {
+          "sound": "ratchet",
+          "durationFrames": 32,
+          "gain": 0.5
+        }
+      ]
+    },
+    {
+      "id": "fraction",
+      "at": {
+        "word": 31,
+        "text": "yaklaşık"
+      },
+      "until": {
+        "word": 37,
+        "text": "Bu"
+      },
+      "information": "Yaklaşık11,6 gün",
+      "visual": "Son günün%57,4’ü dolar ve oran görünür.",
+      "camera": "Son yaprağa yakınlaşma",
+      "animation": "Gerçek kesir maskesi; yuvarlama etiketi",
+      "effects": [
+        {
+          "sound": "resolve",
+          "durationFrames": 24,
+          "gain": 0.5
+        }
+      ]
+    },
+    {
+      "id": "collect",
+      "at": {
+        "word": 37,
+        "text": "Bu"
+      },
+      "until": {
+        "word": 40,
+        "text": "tek"
+      },
+      "information": "Sürenin tamamını birleştirme",
+      "visual": "Aynı takvim sayfaları üst üste katlanarak toplanır.",
+      "camera": "Yapraklarla birlikte merkezleme",
+      "animation": "12 sayfa tek kapsülde birleşir",
+      "effects": [
+        {
+          "sound": "fold",
+          "durationFrames": 36,
+          "gain": 0.7
+        }
+      ]
+    },
+    {
+      "id": "block",
+      "at": {
+        "word": 40,
+        "text": "tek"
+      },
+      "until": {
+        "word": 46,
+        "text": "milyar"
+      },
+      "information": "Tek bir blok",
+      "visual": "Kapsül kapanır; içinde11,6 gün olan tek birim kalır.",
+      "camera": "Nesne etrafında küçük perspektif dönüşü",
+      "animation": "Kapağın kapanması, tek zaman birimi",
+      "effects": [
+        {
+          "sound": "latch",
+          "durationFrames": 18,
+          "gain": 0.7
+        }
+      ]
+    },
+    {
+      "id": "launch",
+      "at": {
+        "word": 46,
+        "text": "milyar"
+      },
+      "until": {
+        "word": 49,
+        "text": "Kamera"
+      },
+      "information": "Bir milyar saniyeye geçiyoruz",
+      "visual": "İlk blok yerinde kalırken devamındaki eş birimler açılır.",
+      "camera": "Çok yakın plandan eğimli zaman yoluna çekilme",
+      "animation": "Aynı nesne1000 birimlik şeridin başlangıcı olur",
+      "effects": [
+        {
+          "sound": "scale",
+          "durationFrames": 66,
+          "gain": 0.85
+        }
+      ]
+    },
+    {
+      "id": "travel",
+      "at": {
+        "word": 49,
+        "text": "Kamera"
+      },
+      "until": {
+        "word": 55,
+        "text": "Her"
+      },
+      "information": "Kamera uzaklaştıkça yüzlerce blok",
+      "visual": "Kamera kıvrımlı zaman şeridinin üzerinden geçer.",
+      "camera": "Yönlü pan, uzaklaşma ve kontrollü eğim",
+      "animation": "Derinlikli birimler; tek bir yol sürekliliği",
+      "effects": [
+        {
+          "sound": "riser",
+          "durationFrames": 62,
+          "gain": 0.74
+        }
+      ]
+    },
+    {
+      "id": "sample",
+      "at": {
+        "word": 55,
+        "text": "Her"
+      },
+      "until": {
+        "word": 62,
+        "text": "bin"
+      },
+      "information": "Her blok bir milyon saniye",
+      "visual": "Şeritteki bir birim kısa süre işaretlenir; ölçek açıklanır.",
+      "camera": "Şeridin bütünü okunacak açıda durulma",
+      "animation": "Bir birim vurgusu;100’lük sınırlar",
+      "effects": [
+        {
+          "sound": "resolve",
+          "durationFrames": 24,
+          "gain": 0.48
+        }
+      ]
+    },
+    {
+      "id": "thousand",
+      "at": {
+        "word": 62,
+        "text": "bin"
+      },
+      "until": {
+        "word": 65,
+        "text": "Bir"
+      },
+      "information": "Bin eşit blok",
+      "visual": "1000 birimlik yol bir zaman bobinine sarılır.",
+      "camera": "Üstten görünüşe dönüş",
+      "animation": "Aynı1000 birim sürekli spiral yol üzerinde toplanır",
+      "effects": [
+        {
+          "sound": "coil",
+          "durationFrames": 48,
+          "gain": 0.76
+        }
+      ]
+    },
+    {
+      "id": "billion",
+      "at": {
+        "word": 65,
+        "text": "Bir"
+      },
+      "until": {
+        "word": 68,
+        "text": "yaklaşık"
+      },
+      "information": "Bir milyar saniye",
+      "visual": "Bobinin tamamı aynı kadrajda görünür.",
+      "camera": "Merkeze kontrollü yaklaşma",
+      "animation": "Bin birimin bütünü, mercan başlangıç korunur",
+      "effects": [
+        {
+          "sound": "resolve",
+          "durationFrames": 28,
+          "gain": 0.63
+        }
+      ]
+    },
+    {
+      "id": "years",
+      "at": {
+        "word": 68,
+        "text": "yaklaşık"
+      },
+      "until": {
+        "word": 74,
+        "text": "On"
+      },
+      "information": "Yaklaşık31,7 yıl",
+      "visual": "Zamanın yolu üzerinde yıl sınırları sırayla belirir.",
+      "camera": "Bobin çevresinde küçük yay hareketi",
+      "animation": "Yıl işaretleri eşit geçen süreyi gösterir",
+      "effects": [
+        {
+          "sound": "ratchet",
+          "durationFrames": 38,
+          "gain": 0.58
+        }
+      ]
+    },
+    {
+      "id": "compare",
+      "at": {
+        "word": 74,
+        "text": "On"
+      },
+      "until": {
+        "word": 79,
+        "text": "neredeyse"
+      },
+      "information": "11,6 günden",
+      "visual": "Bobin tam üstten okunur; ilk birim ve toplam ayrılır.",
+      "camera": "Perspektif sıfıra iner",
+      "animation": "Aynı ölçek;1 milyonluk ilk segment büyütülmez",
+      "effects": [
+        {
+          "sound": "swish",
+          "durationFrames": 22,
+          "gain": 0.5
+        }
+      ]
+    },
+    {
+      "id": "extend",
+      "at": {
+        "word": 79,
+        "text": "neredeyse"
+      },
+      "until": {
+        "word": 83,
+        "text": "Fark"
+      },
+      "information": "Neredeyse32 yıla",
+      "visual": "Işık yerine ince ölçüm izi tüm zaman yolunu takip eder.",
+      "camera": "Sabit karşılaştırma kamerası",
+      "animation": "Birden bine kadar aynı birimlerle iz sürme",
+      "effects": [
+        {
+          "sound": "riser",
+          "durationFrames": 36,
+          "gain": 0.66
+        }
+      ]
+    },
+    {
+      "id": "result",
+      "at": {
+        "word": 83,
+        "text": "Fark"
+      },
+      "until": {
+        "word": 85,
+        "text": "bin"
+      },
+      "information": "Fark tam bin kat",
+      "visual": "İlk mercan birim ve1000 birimlik toplam aynı ölçekte.",
+      "camera": "Ölçüm kamerası sabit",
+      "animation": "Bütün bobin ve eşit birim tanımı",
+      "effects": [
+        {
+          "sound": "resolve",
+          "durationFrames": 22,
+          "gain": 0.65
+        }
+      ]
+    },
+    {
+      "id": "impact",
+      "at": {
+        "word": 85,
+        "text": "bin"
+      },
+      "until": "outro",
+      "information": "Bin kat",
+      "visual": "1000:1 oranı görünür, sonuç okunacak kadar tutulur.",
+      "camera": "Sabit sonuç",
+      "animation": "Temiz vurgu, ardından mevcut45 karelik outro",
+      "effects": [
+        {
+          "sound": "impact",
+          "durationFrames": 32,
+          "gain": 0.8
+        }
+      ]
+    }
+  ]
+}

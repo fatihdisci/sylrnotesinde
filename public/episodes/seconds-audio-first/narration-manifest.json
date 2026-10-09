@@ -1,0 +1,1197 @@
+{
+  "id": "seconds-audio-first",
+  "title": "Saniyelerin ölçeği · Zaman şeridi",
+  "hook": "On iki gün mü, otuz iki yıl mı?",
+  "brandVersion": "0.1-candidate",
+  "kind": "audio-first",
+  "durationInFrames": 1497,
+  "narration": [
+    {
+      "id": "narration",
+      "text": "Bir milyon saniye mi, bir milyar saniye mi? Arada sadece üç sıfır var. Ama geçen zamana bakın. Saatin her tam turu bir dakika. Dakikalar saatlere, saatler günlere dönüşüyor. Bir milyon saniye, yaklaşık on bir virgül altı gün. Bu sürenin tamamını tek bir blok yapalım. Şimdi bir milyar saniyeye geçiyoruz. Kamera uzaklaştıkça aynı bloktan yüzlercesi görünüyor. Her biri yine bir milyon saniye. Toplam bin eşit blok. Bir milyar saniye, yaklaşık otuz bir virgül yedi yıl. On bir virgül altı günden, neredeyse otuz iki yıla. Fark tam bin kat.",
+      "from": 0,
+      "durationInFrames": 1414,
+      "path": "episodes/seconds-audio-first/narration.wav"
+    }
+  ],
+  "sources": [
+    {
+      "title": "SI Brochure · BIPM",
+      "url": "https://www.bipm.org/en/publications/si-brochure",
+      "note": "1 gün=86.400 s. Yıl dönüşümü açıkça 365,25 gün/yıl varsayımıyla hesaplanır; takvim yılı iddiası yok.",
+      "accessed": "2026-10-09"
+    }
+  ],
+  "claims": [
+    {
+      "id": "ratio",
+      "quantity": "count",
+      "numerator": 1000000000,
+      "denominator": 1000000,
+      "ratio": 1000,
+      "assumptions": "Aynı boydaki 1.000 blok; her blok 1.000.000 saniye. Alan karşılaştırması değil, eşit blokların adedi.",
+      "scale": "schematic"
+    },
+    {
+      "id": "days",
+      "quantity": "time",
+      "numerator": 1000000,
+      "denominator": 86400,
+      "ratio": 11.574074074074074,
+      "assumptions": "Yaklaşık11,6 gün;24 saat/gün.",
+      "scale": "linear"
+    },
+    {
+      "id": "years",
+      "quantity": "time",
+      "numerator": 1000000000,
+      "denominator": 31557600,
+      "ratio": 31.68808781402895,
+      "assumptions": "365,25 gün/yıl; yaklaşık31,7 yıl.",
+      "scale": "linear"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "continuous",
+      "from": 0,
+      "to": 1452,
+      "purpose": "Original continuous TSX visualization"
+    }
+  ],
+  "audio": {
+    "voiceProvider": "user:minimax",
+    "voiceStatus": "temporary",
+    "source": {
+      "provider": "user:minimax",
+      "voice": "Documentary_Narrator",
+      "sourceFilename": "MiniMax_2026-10-09_23_00_01_Documentary_Narrator.mp3",
+      "sourceSha256": "b9f51e542bb50178d312201343fa3f30904ecd964f38f2eca23eb40f57cef341",
+      "sourceDurationSeconds": 47.115442,
+      "processing": "two-pass loudnorm -20 LUFS / -2 dBTP; 48 kHz mono PCM24; original timing retained",
+      "synthesisPerformed": false,
+      "humanListeningPerformed": false,
+      "schemaVersion": 2,
+      "archivePath": "voice-sources/seconds-audio-first/original.mp3",
+      "scriptSha256": "253d43cec10d1e7a2f890c37d5741349fb7b0da07ab2b1ea605fbea74a2a6b31"
+    },
+    "sfxPath": "episodes/seconds-audio-first/sfx-stem.wav",
+    "soundDesignHash": "f72b2a2440a62105a65128e33102c5f86efece4c2e0a77db23d4dbebc66114ae"
+  },
+  "subtitlePath": "episodes/seconds-audio-first/captions.json",
+  "captions": [
+    {
+      "from": 4,
+      "to": 46,
+      "lines": [
+        "1 milyon saniye mi,"
+      ],
+      "wordIds": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "timingSource": "forced-alignment"
+    },
+    {
+      "from": 57,
+      "to": 97,
+      "lines": [
+        "1 milyar saniye mi?"
+      ],
+      "wordIds": [
+        4,
+        5,
+        6,
+        7
+      ],
+      "timingSource": "forced-alignment"
+    },
+    {
+      "from": 117,
+      "to": 178,
+      "lines": [
+        "Arada sadece üç sıfır var."
+      ],
+      "wordIds": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "timingSource": "forced-alignment"
+    },
+    {
+      "from": 195,
+      "to": 244,
+      "lines": [
+        "Ama geçen zamana bakın."
+      ],
+      "wordIds": [
+        13,
+        14,
+        15,
+        16
+      ],
+      "timingSource": "forced-alignment"
+    },
+    {
+      "from": 271,
+      "to": 353,
+      "lines": [
+        "Saatin her tam turu 1 dakika."
+      ],
+      "wordIds": [
+        17,
+        18,
+        19,
+        20,
+        21,
+        22
+      ],
+      "timingSource": "forced-alignment"
+    },
+    {
+      "from": 377,
+      "to": 486,
+      "lines": [
+        "Dakikalar saatlere,",
+        "saatler günlere dönüşüyor."
+      ],
+      "wordIds": [
+        23,
+        24,
+        25,
+        26,
+        27
+      ],
+      "timingSource": "forced-alignment"
+    },
+    {
+      "from": 508,
+      "to": 549,
+      "lines": [
+        "1 milyon saniye,"
+      ],
+      "wordIds": [
+        28,
+        29,
+        30
+      ],
+      "timingSource": "forced-alignment"
+    },
+    {
+      "from": 555,
+      "to": 623,
+      "lines": [
+        "yaklaşık 11,6 gün."
+      ],
+      "wordIds": [
+        31,
+        32,
+        33,
+        34,
+        35,
+        36
+      ],
+      "timingSource": "forced-alignment"
+    },
+    {
+      "from": 649,
+      "to": 732,
+      "lines": [
+        "Bu sürenin tamamını",
+        "tek bir blok yapalım."
+      ],
+      "wordIds": [
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43
+      ],
+      "timingSource": "forced-alignment"
+    },
+    {
+      "from": 746,
+      "to": 819,
+      "lines": [
+        "Şimdi 1 milyar saniyeye geçiyoruz."
+      ],
+      "wordIds": [
+        44,
+        45,
+        46,
+        47,
+        48
+      ],
+      "timingSource": "forced-alignment"
+    },
+    {
+      "from": 838,
+      "to": 954,
+      "lines": [
+        "Kamera uzaklaştıkça aynı bloktan",
+        "yüzlercesi görünüyor."
+      ],
+      "wordIds": [
+        49,
+        50,
+        51,
+        52,
+        53,
+        54
+      ],
+      "timingSource": "forced-alignment"
+    },
+    {
+      "from": 966,
+      "to": 1026,
+      "lines": [
+        "Her biri yine 1 milyon saniye."
+      ],
+      "wordIds": [
+        55,
+        56,
+        57,
+        58,
+        59,
+        60
+      ],
+      "timingSource": "forced-alignment"
+    },
+    {
+      "from": 1039,
+      "to": 1092,
+      "lines": [
+        "Toplam 1.000 eşit blok."
+      ],
+      "wordIds": [
+        61,
+        62,
+        63,
+        64
+      ],
+      "timingSource": "forced-alignment"
+    },
+    {
+      "from": 1123,
+      "to": 1165,
+      "lines": [
+        "1 milyar saniye,"
+      ],
+      "wordIds": [
+        65,
+        66,
+        67
+      ],
+      "timingSource": "forced-alignment"
+    },
+    {
+      "from": 1169,
+      "to": 1236,
+      "lines": [
+        "yaklaşık 31,7 yıl."
+      ],
+      "wordIds": [
+        68,
+        69,
+        70,
+        71,
+        72,
+        73
+      ],
+      "timingSource": "forced-alignment"
+    },
+    {
+      "from": 1249,
+      "to": 1296,
+      "lines": [
+        "11,6 günden,"
+      ],
+      "wordIds": [
+        74,
+        75,
+        76,
+        77,
+        78
+      ],
+      "timingSource": "forced-alignment"
+    },
+    {
+      "from": 1299,
+      "to": 1350,
+      "lines": [
+        "neredeyse 32 yıla."
+      ],
+      "wordIds": [
+        79,
+        80,
+        81,
+        82
+      ],
+      "timingSource": "forced-alignment"
+    },
+    {
+      "from": 1363,
+      "to": 1407,
+      "lines": [
+        "Fark tam 1.000 kat."
+      ],
+      "wordIds": [
+        83,
+        84,
+        85,
+        86
+      ],
+      "timingSource": "forced-alignment"
+    }
+  ],
+  "provenance": {
+    "specHash": "4af4e1a6d1ba92f5b9d8f68801ddc831a289e6b3e5fcf6a30e3b49276ec4193a",
+    "textHash": "28f53805bca85ee5a85f68a3c7b7b38eb27390ad5c5729a5f79422b22438a384",
+    "settingsHash": "d561b0330527635b44a0e2587f85553007ec2e607caa1ac5fd39ab8563c58e1c",
+    "voiceSourceHash": "eced553677f8bad036578645e100f5003f113ad5cfdcfd469f1491d24b77fc91",
+    "scriptHash": "253d43cec10d1e7a2f890c37d5741349fb7b0da07ab2b1ea605fbea74a2a6b31",
+    "audioHash": "9d9841bd2df4edace97199e24d919183431df55e9312201944e047c8f2c5895b",
+    "alignmentHash": "edd946fa260811c0275b573b83ba6cc7c16f741071c5c7816db14e2a7ab7d408",
+    "captionsHash": "fd17a2a54ce45432afc794c2663643ef7675f5e89b9183cde91904285ddf6632",
+    "reviewStatus": "needs_review",
+    "reviewer": null,
+    "wordTimingPath": "episodes/seconds-audio-first/word-timings.json"
+  },
+  "timeline": {
+    "audioFrames": 1414,
+    "narrationStartFrame": 0,
+    "resultFromFrame": 1407,
+    "resultHoldFrames": 45,
+    "outroFromFrame": 1452,
+    "durationInFrames": 1497
+  },
+  "fps": 30,
+  "captionReviewRequired": true,
+  "recommendedTotalFrames": 1497,
+  "direction": {
+    "schemaVersion": 1,
+    "idea": "Bir zaman kapsülünün içindeki saat takvim şeridine açılır; aynı sayfalar bir milyon saniyelik tek birime katlanır. Kamera bu birimin bin eşini zaman yolu boyunca izler. Yol yılları gösteren bobine sarılır; ilk mercan birim ve1000 birimlik toplam aynı ölçekte kalır. Tüm yol hareketleri şematiktir.",
+    "storyboardHash": "424d747113709b5527290ee36a41506c0a3f8016bd31b5382249e4d77f2c3d2d",
+    "events": [
+      {
+        "id": "hook",
+        "at": "start",
+        "until": {
+          "word": 4,
+          "text": "bir"
+        },
+        "information": "Bir milyon saniye",
+        "visual": "Yakın planda mekanik zaman kapsülü; hareket ilk karede başlar.",
+        "camera": "Kadrana kontrollü yaklaşma",
+        "animation": "Kadran, ibre ve derinlik katmanları",
+        "effects": [
+          {
+            "sound": "latch",
+            "durationFrames": 12,
+            "gain": 0.55,
+            "frame": 0
+          }
+        ],
+        "from": 0,
+        "to": 57,
+        "captions": [
+          [
+            "1 milyon saniye mi,"
+          ]
+        ]
+      },
+      {
+        "id": "shock",
+        "at": {
+          "word": 4,
+          "text": "bir"
+        },
+        "until": {
+          "word": 8,
+          "text": "Arada"
+        },
+        "information": "Bir milyar saniye?",
+        "visual": "Kapsülün arkasından çok büyük zaman bobini açılır.",
+        "camera": "Çapraz geriye açılma",
+        "animation": "Aynı birimden oluşan bobine ilk bakış",
+        "effects": [
+          {
+            "sound": "scale",
+            "durationFrames": 42,
+            "gain": 0.65,
+            "frame": 57
+          }
+        ],
+        "from": 57,
+        "to": 117,
+        "captions": [
+          [
+            "1 milyar saniye mi?"
+          ]
+        ]
+      },
+      {
+        "id": "zeros",
+        "at": {
+          "word": 8,
+          "text": "Arada"
+        },
+        "until": {
+          "word": 13,
+          "text": "Ama"
+        },
+        "information": "Yalnızca üç sıfır",
+        "visual": "Bobin daralırken tek kapsül kadranı öne döner.",
+        "camera": "Kapsüle parallax dönüş",
+        "animation": "Nesne yönünü koruyan maske",
+        "effects": [
+          {
+            "sound": "swish",
+            "durationFrames": 22,
+            "gain": 0.48,
+            "frame": 117
+          }
+        ],
+        "from": 117,
+        "to": 195,
+        "captions": [
+          [
+            "Arada sadece üç sıfır var."
+          ]
+        ]
+      },
+      {
+        "id": "dive",
+        "at": {
+          "word": 13,
+          "text": "Ama"
+        },
+        "until": {
+          "word": 17,
+          "text": "Saatin"
+        },
+        "information": "Geçen zamana bakın",
+        "visual": "Yakın planda saniye ibresinin hareketi izlenir.",
+        "camera": "Kadranın içine yaklaşma",
+        "animation": "Büyük mekanik yüzey ve ölçülü eğim",
+        "effects": [
+          {
+            "sound": "swish",
+            "durationFrames": 28,
+            "gain": 0.5,
+            "frame": 195
+          }
+        ],
+        "from": 195,
+        "to": 271,
+        "captions": [
+          [
+            "Ama geçen zamana bakın."
+          ]
+        ]
+      },
+      {
+        "id": "clock",
+        "at": {
+          "word": 17,
+          "text": "Saatin"
+        },
+        "until": {
+          "word": 23,
+          "text": "Dakikalar"
+        },
+        "information": "Her tam tur bir dakika",
+        "visual": "Saniye ve dakika ibreleri doğru1:60 açısal oranda döner.",
+        "camera": "Hafif yana kayma",
+        "animation": "Hızlandırılmış saat; bir tur bir dakika",
+        "effects": [
+          {
+            "sound": "tick",
+            "durationFrames": 5,
+            "gain": 0.35,
+            "offsetFrames": 0,
+            "frame": 271
+          },
+          {
+            "sound": "tick",
+            "durationFrames": 5,
+            "gain": 0.35,
+            "offsetFrames": 15,
+            "frame": 286
+          },
+          {
+            "sound": "tick",
+            "durationFrames": 5,
+            "gain": 0.35,
+            "offsetFrames": 30,
+            "frame": 301
+          },
+          {
+            "sound": "tick",
+            "durationFrames": 5,
+            "gain": 0.35,
+            "offsetFrames": 45,
+            "frame": 316
+          },
+          {
+            "sound": "tick",
+            "durationFrames": 5,
+            "gain": 0.35,
+            "offsetFrames": 60,
+            "frame": 331
+          },
+          {
+            "sound": "tick",
+            "durationFrames": 5,
+            "gain": 0.35,
+            "offsetFrames": 75,
+            "frame": 346
+          },
+          {
+            "sound": "tick",
+            "durationFrames": 5,
+            "gain": 0.35,
+            "offsetFrames": 90,
+            "frame": 361
+          }
+        ],
+        "from": 271,
+        "to": 377,
+        "captions": [
+          [
+            "Saatin her tam turu 1 dakika."
+          ]
+        ]
+      },
+      {
+        "id": "unwind",
+        "at": {
+          "word": 23,
+          "text": "Dakikalar"
+        },
+        "until": {
+          "word": 26,
+          "text": "günlere"
+        },
+        "information": "Dakikalar saatlere",
+        "visual": "Saatin12 işareti kâğıt sayfalara dönüşür.",
+        "camera": "Kadrandan dışarı açılma",
+        "animation": "Kadran çemberi kesintisiz takvim şeridine morph",
+        "effects": [
+          {
+            "sound": "paper",
+            "durationFrames": 36,
+            "gain": 0.66,
+            "frame": 377
+          }
+        ],
+        "from": 377,
+        "to": 453,
+        "captions": [
+          [
+            "Dakikalar saatlere,",
+            "saatler günlere dönüşüyor."
+          ]
+        ]
+      },
+      {
+        "id": "calendar",
+        "at": {
+          "word": 26,
+          "text": "günlere"
+        },
+        "until": {
+          "word": 28,
+          "text": "Bir"
+        },
+        "information": "Saatler günlere",
+        "visual": "Sayfalar kameranın önünden S biçimli takvim şeridine yayılır.",
+        "camera": "Takvim boyunca takip",
+        "animation": "Delikler, kat izleri ve12 gün yüzeyi",
+        "effects": [
+          {
+            "sound": "paper",
+            "durationFrames": 30,
+            "gain": 0.6,
+            "frame": 453
+          }
+        ],
+        "from": 453,
+        "to": 508,
+        "captions": [
+          [
+            "Dakikalar saatlere,",
+            "saatler günlere dönüşüyor."
+          ]
+        ]
+      },
+      {
+        "id": "million",
+        "at": {
+          "word": 28,
+          "text": "Bir"
+        },
+        "until": {
+          "word": 31,
+          "text": "yaklaşık"
+        },
+        "information": "Bir milyon saniye",
+        "visual": "Günler sırayla vurgulanır;11 tam gün görünür.",
+        "camera": "Şeridin bütününü açan kamera",
+        "animation": "Gün dolumu;12.gün kesri ayrı gösterilir",
+        "effects": [
+          {
+            "sound": "ratchet",
+            "durationFrames": 32,
+            "gain": 0.5,
+            "frame": 508
+          }
+        ],
+        "from": 508,
+        "to": 555,
+        "captions": [
+          [
+            "1 milyon saniye,"
+          ]
+        ]
+      },
+      {
+        "id": "fraction",
+        "at": {
+          "word": 31,
+          "text": "yaklaşık"
+        },
+        "until": {
+          "word": 37,
+          "text": "Bu"
+        },
+        "information": "Yaklaşık11,6 gün",
+        "visual": "Son günün%57,4’ü dolar ve oran görünür.",
+        "camera": "Son yaprağa yakınlaşma",
+        "animation": "Gerçek kesir maskesi; yuvarlama etiketi",
+        "effects": [
+          {
+            "sound": "resolve",
+            "durationFrames": 24,
+            "gain": 0.5,
+            "frame": 555
+          }
+        ],
+        "from": 555,
+        "to": 649,
+        "captions": [
+          [
+            "yaklaşık 11,6 gün."
+          ]
+        ]
+      },
+      {
+        "id": "collect",
+        "at": {
+          "word": 37,
+          "text": "Bu"
+        },
+        "until": {
+          "word": 40,
+          "text": "tek"
+        },
+        "information": "Sürenin tamamını birleştirme",
+        "visual": "Aynı takvim sayfaları üst üste katlanarak toplanır.",
+        "camera": "Yapraklarla birlikte merkezleme",
+        "animation": "12 sayfa tek kapsülde birleşir",
+        "effects": [
+          {
+            "sound": "fold",
+            "durationFrames": 36,
+            "gain": 0.7,
+            "frame": 649
+          }
+        ],
+        "from": 649,
+        "to": 697,
+        "captions": [
+          [
+            "Bu sürenin tamamını",
+            "tek bir blok yapalım."
+          ]
+        ]
+      },
+      {
+        "id": "block",
+        "at": {
+          "word": 40,
+          "text": "tek"
+        },
+        "until": {
+          "word": 46,
+          "text": "milyar"
+        },
+        "information": "Tek bir blok",
+        "visual": "Kapsül kapanır; içinde11,6 gün olan tek birim kalır.",
+        "camera": "Nesne etrafında küçük perspektif dönüşü",
+        "animation": "Kapağın kapanması, tek zaman birimi",
+        "effects": [
+          {
+            "sound": "latch",
+            "durationFrames": 18,
+            "gain": 0.7,
+            "frame": 697
+          }
+        ],
+        "from": 697,
+        "to": 768,
+        "captions": [
+          [
+            "Bu sürenin tamamını",
+            "tek bir blok yapalım."
+          ],
+          [
+            "Şimdi 1 milyar saniyeye geçiyoruz."
+          ]
+        ]
+      },
+      {
+        "id": "launch",
+        "at": {
+          "word": 46,
+          "text": "milyar"
+        },
+        "until": {
+          "word": 49,
+          "text": "Kamera"
+        },
+        "information": "Bir milyar saniyeye geçiyoruz",
+        "visual": "İlk blok yerinde kalırken devamındaki eş birimler açılır.",
+        "camera": "Çok yakın plandan eğimli zaman yoluna çekilme",
+        "animation": "Aynı nesne1000 birimlik şeridin başlangıcı olur",
+        "effects": [
+          {
+            "sound": "scale",
+            "durationFrames": 66,
+            "gain": 0.85,
+            "frame": 768
+          }
+        ],
+        "from": 768,
+        "to": 838,
+        "captions": [
+          [
+            "Şimdi 1 milyar saniyeye geçiyoruz."
+          ]
+        ]
+      },
+      {
+        "id": "travel",
+        "at": {
+          "word": 49,
+          "text": "Kamera"
+        },
+        "until": {
+          "word": 55,
+          "text": "Her"
+        },
+        "information": "Kamera uzaklaştıkça yüzlerce blok",
+        "visual": "Kamera kıvrımlı zaman şeridinin üzerinden geçer.",
+        "camera": "Yönlü pan, uzaklaşma ve kontrollü eğim",
+        "animation": "Derinlikli birimler; tek bir yol sürekliliği",
+        "effects": [
+          {
+            "sound": "riser",
+            "durationFrames": 62,
+            "gain": 0.74,
+            "frame": 838
+          }
+        ],
+        "from": 838,
+        "to": 966,
+        "captions": [
+          [
+            "Kamera uzaklaştıkça aynı bloktan",
+            "yüzlercesi görünüyor."
+          ]
+        ]
+      },
+      {
+        "id": "sample",
+        "at": {
+          "word": 55,
+          "text": "Her"
+        },
+        "until": {
+          "word": 62,
+          "text": "bin"
+        },
+        "information": "Her blok bir milyon saniye",
+        "visual": "Şeritteki bir birim kısa süre işaretlenir; ölçek açıklanır.",
+        "camera": "Şeridin bütünü okunacak açıda durulma",
+        "animation": "Bir birim vurgusu;100’lük sınırlar",
+        "effects": [
+          {
+            "sound": "resolve",
+            "durationFrames": 24,
+            "gain": 0.48,
+            "frame": 966
+          }
+        ],
+        "from": 966,
+        "to": 1063,
+        "captions": [
+          [
+            "Her biri yine 1 milyon saniye."
+          ],
+          [
+            "Toplam 1.000 eşit blok."
+          ]
+        ]
+      },
+      {
+        "id": "thousand",
+        "at": {
+          "word": 62,
+          "text": "bin"
+        },
+        "until": {
+          "word": 65,
+          "text": "Bir"
+        },
+        "information": "Bin eşit blok",
+        "visual": "1000 birimlik yol bir zaman bobinine sarılır.",
+        "camera": "Üstten görünüşe dönüş",
+        "animation": "Aynı1000 birim sürekli spiral yol üzerinde toplanır",
+        "effects": [
+          {
+            "sound": "coil",
+            "durationFrames": 48,
+            "gain": 0.76,
+            "frame": 1063
+          }
+        ],
+        "from": 1063,
+        "to": 1123,
+        "captions": [
+          [
+            "Toplam 1.000 eşit blok."
+          ]
+        ]
+      },
+      {
+        "id": "billion",
+        "at": {
+          "word": 65,
+          "text": "Bir"
+        },
+        "until": {
+          "word": 68,
+          "text": "yaklaşık"
+        },
+        "information": "Bir milyar saniye",
+        "visual": "Bobinin tamamı aynı kadrajda görünür.",
+        "camera": "Merkeze kontrollü yaklaşma",
+        "animation": "Bin birimin bütünü, mercan başlangıç korunur",
+        "effects": [
+          {
+            "sound": "resolve",
+            "durationFrames": 28,
+            "gain": 0.63,
+            "frame": 1123
+          }
+        ],
+        "from": 1123,
+        "to": 1169,
+        "captions": [
+          [
+            "1 milyar saniye,"
+          ]
+        ]
+      },
+      {
+        "id": "years",
+        "at": {
+          "word": 68,
+          "text": "yaklaşık"
+        },
+        "until": {
+          "word": 74,
+          "text": "On"
+        },
+        "information": "Yaklaşık31,7 yıl",
+        "visual": "Zamanın yolu üzerinde yıl sınırları sırayla belirir.",
+        "camera": "Bobin çevresinde küçük yay hareketi",
+        "animation": "Yıl işaretleri eşit geçen süreyi gösterir",
+        "effects": [
+          {
+            "sound": "ratchet",
+            "durationFrames": 38,
+            "gain": 0.58,
+            "frame": 1169
+          }
+        ],
+        "from": 1169,
+        "to": 1249,
+        "captions": [
+          [
+            "yaklaşık 31,7 yıl."
+          ]
+        ]
+      },
+      {
+        "id": "compare",
+        "at": {
+          "word": 74,
+          "text": "On"
+        },
+        "until": {
+          "word": 79,
+          "text": "neredeyse"
+        },
+        "information": "11,6 günden",
+        "visual": "Bobin tam üstten okunur; ilk birim ve toplam ayrılır.",
+        "camera": "Perspektif sıfıra iner",
+        "animation": "Aynı ölçek;1 milyonluk ilk segment büyütülmez",
+        "effects": [
+          {
+            "sound": "swish",
+            "durationFrames": 22,
+            "gain": 0.5,
+            "frame": 1249
+          }
+        ],
+        "from": 1249,
+        "to": 1299,
+        "captions": [
+          [
+            "11,6 günden,"
+          ]
+        ]
+      },
+      {
+        "id": "extend",
+        "at": {
+          "word": 79,
+          "text": "neredeyse"
+        },
+        "until": {
+          "word": 83,
+          "text": "Fark"
+        },
+        "information": "Neredeyse32 yıla",
+        "visual": "Işık yerine ince ölçüm izi tüm zaman yolunu takip eder.",
+        "camera": "Sabit karşılaştırma kamerası",
+        "animation": "Birden bine kadar aynı birimlerle iz sürme",
+        "effects": [
+          {
+            "sound": "riser",
+            "durationFrames": 36,
+            "gain": 0.66,
+            "frame": 1299
+          }
+        ],
+        "from": 1299,
+        "to": 1363,
+        "captions": [
+          [
+            "neredeyse 32 yıla."
+          ]
+        ]
+      },
+      {
+        "id": "result",
+        "at": {
+          "word": 83,
+          "text": "Fark"
+        },
+        "until": {
+          "word": 85,
+          "text": "bin"
+        },
+        "information": "Fark tam bin kat",
+        "visual": "İlk mercan birim ve1000 birimlik toplam aynı ölçekte.",
+        "camera": "Ölçüm kamerası sabit",
+        "animation": "Bütün bobin ve eşit birim tanımı",
+        "effects": [
+          {
+            "sound": "resolve",
+            "durationFrames": 22,
+            "gain": 0.65,
+            "frame": 1363
+          }
+        ],
+        "from": 1363,
+        "to": 1387,
+        "captions": [
+          [
+            "Fark tam 1.000 kat."
+          ]
+        ]
+      },
+      {
+        "id": "impact",
+        "at": {
+          "word": 85,
+          "text": "bin"
+        },
+        "until": "outro",
+        "information": "Bin kat",
+        "visual": "1000:1 oranı görünür, sonuç okunacak kadar tutulur.",
+        "camera": "Sabit sonuç",
+        "animation": "Temiz vurgu, ardından mevcut45 karelik outro",
+        "effects": [
+          {
+            "sound": "impact",
+            "durationFrames": 32,
+            "gain": 0.8,
+            "frame": 1387
+          }
+        ],
+        "from": 1387,
+        "to": 1452,
+        "captions": [
+          [
+            "Fark tam 1.000 kat."
+          ]
+        ]
+      }
+    ],
+    "speech": {
+      "onsetMs": 160.0,
+      "offsetMs": 46870.0,
+      "audioDurationMs": 47115.438,
+      "phrases": [
+        {
+          "id": 0,
+          "fromMs": 160.0,
+          "toMs": 1510.0,
+          "spoken": "Bir milyon saniye mi,",
+          "pauseAfterMs": 410.0
+        },
+        {
+          "id": 1,
+          "fromMs": 1920.0,
+          "toMs": 3230.0,
+          "spoken": "bir milyar saniye mi?",
+          "pauseAfterMs": 670.0
+        },
+        {
+          "id": 2,
+          "fromMs": 3900.0,
+          "toMs": 5910.0,
+          "spoken": "Arada sadece üç sıfır var.",
+          "pauseAfterMs": 600.0
+        },
+        {
+          "id": 3,
+          "fromMs": 6510.0,
+          "toMs": 8130.0,
+          "spoken": "Ama geçen zamana bakın.",
+          "pauseAfterMs": 920.0
+        },
+        {
+          "id": 4,
+          "fromMs": 9050.0,
+          "toMs": 11760.0,
+          "spoken": "Saatin her tam turu bir dakika.",
+          "pauseAfterMs": 820.0
+        },
+        {
+          "id": 5,
+          "fromMs": 12580.0,
+          "toMs": 16180.0,
+          "spoken": "Dakikalar saatlere, saatler günlere dönüşüyor.",
+          "pauseAfterMs": 760.0
+        },
+        {
+          "id": 6,
+          "fromMs": 16940.0,
+          "toMs": 18280.0,
+          "spoken": "Bir milyon saniye,",
+          "pauseAfterMs": 230.0
+        },
+        {
+          "id": 7,
+          "fromMs": 18510.0,
+          "toMs": 20760.0,
+          "spoken": "yaklaşık on bir virgül altı gün.",
+          "pauseAfterMs": 900.0
+        },
+        {
+          "id": 8,
+          "fromMs": 21660.0,
+          "toMs": 24380.0,
+          "spoken": "Bu sürenin tamamını tek bir blok yapalım.",
+          "pauseAfterMs": 500.0
+        },
+        {
+          "id": 9,
+          "fromMs": 24880.0,
+          "toMs": 27270.0,
+          "spoken": "Şimdi bir milyar saniyeye geçiyoruz.",
+          "pauseAfterMs": 670.0
+        },
+        {
+          "id": 10,
+          "fromMs": 27940.0,
+          "toMs": 31780.0,
+          "spoken": "Kamera uzaklaştıkça aynı bloktan yüzlercesi görünüyor.",
+          "pauseAfterMs": 440.0
+        },
+        {
+          "id": 11,
+          "fromMs": 32220.0,
+          "toMs": 34180.0,
+          "spoken": "Her biri yine bir milyon saniye.",
+          "pauseAfterMs": 460.0
+        },
+        {
+          "id": 12,
+          "fromMs": 34640.0,
+          "toMs": 36370.0,
+          "spoken": "Toplam bin eşit blok.",
+          "pauseAfterMs": 1070.0
+        },
+        {
+          "id": 13,
+          "fromMs": 37440.0,
+          "toMs": 38820.0,
+          "spoken": "Bir milyar saniye,",
+          "pauseAfterMs": 160.0
+        },
+        {
+          "id": 14,
+          "fromMs": 38980.0,
+          "toMs": 41190.0,
+          "spoken": "yaklaşık otuz bir virgül yedi yıl.",
+          "pauseAfterMs": 450.0
+        },
+        {
+          "id": 15,
+          "fromMs": 41640.0,
+          "toMs": 43190.0,
+          "spoken": "On bir virgül altı günden,",
+          "pauseAfterMs": 120.0
+        },
+        {
+          "id": 16,
+          "fromMs": 43310.0,
+          "toMs": 44970.0,
+          "spoken": "neredeyse otuz iki yıla.",
+          "pauseAfterMs": 490.0
+        },
+        {
+          "id": 17,
+          "fromMs": 45460.0,
+          "toMs": 46870.0,
+          "spoken": "Fark tam bin kat.",
+          "pauseAfterMs": 0
+        }
+      ],
+      "listeningVerified": false
+    }
+  }
+}

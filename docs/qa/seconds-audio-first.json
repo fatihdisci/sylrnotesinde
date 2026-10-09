@@ -1,0 +1,238 @@
+{
+  "id": "seconds-audio-first",
+  "technicalChecksPassed": true,
+  "publicationReady": false,
+  "publicationBlockers": [
+    "PUBLICATION BLOCKED: human audio/timing review is not approved"
+  ],
+  "reviewStatus": "needs_review",
+  "frames": 1497,
+  "fps": 30,
+  "seconds": 49.9,
+  "audioDurationSeconds": 47.115458333333336,
+  "resultHoldFrames": 45,
+  "outroFromFrame": 1452,
+  "encodedSyncSamples": [
+    {
+      "position": "start",
+      "sourceFromMs": 80.0,
+      "lagMs": 0.0,
+      "correlation": 0.9995400746497556
+    },
+    {
+      "position": "middle",
+      "sourceFromMs": 23920.0,
+      "lagMs": 0.0,
+      "correlation": 0.9999248436486652
+    },
+    {
+      "position": "end",
+      "sourceFromMs": 45820.0,
+      "lagMs": 0.0,
+      "correlation": 0.9888206379878601
+    }
+  ],
+  "driftMs": 0.0,
+  "encodedPeak": 0.5017437934875488,
+  "integratedLufs": -20.97,
+  "truePeakDbtp": -8.98,
+  "outroCorrelation": 0.9999923314792208,
+  "outroLagMs": 0.0,
+  "captionCoverageWords": 87,
+  "srtMatchesBurnIn": true,
+  "blackIntervals": [],
+  "emptyContentFrames": [],
+  "largeFrameChangeCandidates": [],
+  "suspiciousWords": [
+    10,
+    11,
+    27,
+    34,
+    55,
+    56
+  ],
+  "humanListeningPerformed": false,
+  "humanReviewListeningRecorded": false,
+  "manualChecksRequired": [
+    "Listen to Turkish pronunciation, numbers, units and last syllables.",
+    "Inspect word onsets/offsets in the local editor; CTC20ms resolution does not guarantee33ms accuracy.",
+    "Watch the actual MP4 for semantic scene timing, flicker and subjective readability."
+  ],
+  "audioSha256": "9d9841bd2df4edace97199e24d919183431df55e9312201944e047c8f2c5895b",
+  "wordTimingsSha256": "edd946fa260811c0275b573b83ba6cc7c16f741071c5c7816db14e2a7ab7d408",
+  "emptyGeometryFramesForReview": [],
+  "rhythm": {
+    "mode": "review-only",
+    "audioSilenceThresholdDbfs": -48,
+    "meanPixelDeltaThreshold": 0.0006,
+    "minimumSeconds": 2,
+    "silentIntervals": [],
+    "nearlyStaticIntervals": [
+      {
+        "fromFrame": 706,
+        "toFrame": 768,
+        "fromSeconds": 23.533,
+        "toSeconds": 25.6,
+        "durationSeconds": 2.067
+      },
+      {
+        "fromFrame": 1388,
+        "toFrame": 1452,
+        "fromSeconds": 46.267,
+        "toSeconds": 48.4,
+        "durationSeconds": 2.133
+      }
+    ],
+    "silentAndNearlyStaticIntervals": [],
+    "automaticFailure": false
+  },
+  "soundDesign": {
+    "events": 27,
+    "ducking": {
+      "source": "actual narration WAV, 10ms RMS",
+      "lookaheadMs": 30,
+      "releaseMs": 140,
+      "minimumGain": 0.031018756512285462,
+      "speechWindowsWithSfx": 1790,
+      "medianEffectToVoiceDb": -16.408183252330765,
+      "p95EffectToVoiceDb": -11.372724716820253
+    },
+    "renderedMixChecks": [
+      {
+        "event": "hook",
+        "frame": 0,
+        "lagMs": 0.0,
+        "correlation": 0.9994615363556164
+      },
+      {
+        "event": "shock",
+        "frame": 57,
+        "lagMs": 0.0,
+        "correlation": 0.9998901356063677
+      },
+      {
+        "event": "zeros",
+        "frame": 117,
+        "lagMs": 0.0,
+        "correlation": 0.999784981799408
+      },
+      {
+        "event": "dive",
+        "frame": 195,
+        "lagMs": 0.0,
+        "correlation": 0.9998112496478072
+      },
+      {
+        "event": "clock",
+        "frame": 271,
+        "lagMs": 0.0,
+        "correlation": 0.9998394793141008
+      },
+      {
+        "event": "unwind",
+        "frame": 377,
+        "lagMs": 0.0,
+        "correlation": 0.9998071973033336
+      },
+      {
+        "event": "calendar",
+        "frame": 453,
+        "lagMs": 0.0,
+        "correlation": 0.9998506736319305
+      },
+      {
+        "event": "million",
+        "frame": 508,
+        "lagMs": 0.0,
+        "correlation": 0.9997987122364643
+      },
+      {
+        "event": "fraction",
+        "frame": 555,
+        "lagMs": 0.0,
+        "correlation": 0.9998922809300766
+      },
+      {
+        "event": "collect",
+        "frame": 649,
+        "lagMs": 0.0,
+        "correlation": 0.999721165686203
+      },
+      {
+        "event": "block",
+        "frame": 697,
+        "lagMs": 0.0,
+        "correlation": 0.9995469848430132
+      },
+      {
+        "event": "launch",
+        "frame": 768,
+        "lagMs": 0.0,
+        "correlation": 0.999833488709273
+      },
+      {
+        "event": "travel",
+        "frame": 838,
+        "lagMs": 0.0,
+        "correlation": 0.9998698112819308
+      },
+      {
+        "event": "sample",
+        "frame": 966,
+        "lagMs": 0.0,
+        "correlation": 0.999959454019349
+      },
+      {
+        "event": "thousand",
+        "frame": 1063,
+        "lagMs": 0.0,
+        "correlation": 0.9998617550574345
+      },
+      {
+        "event": "billion",
+        "frame": 1123,
+        "lagMs": 0.0,
+        "correlation": 0.9999807474943374
+      },
+      {
+        "event": "years",
+        "frame": 1169,
+        "lagMs": 0.0,
+        "correlation": 0.9995658584128028
+      },
+      {
+        "event": "compare",
+        "frame": 1249,
+        "lagMs": 0.0,
+        "correlation": 0.9998237074313294
+      },
+      {
+        "event": "extend",
+        "frame": 1299,
+        "lagMs": 0.0,
+        "correlation": 0.9997291245706408
+      },
+      {
+        "event": "result",
+        "frame": 1363,
+        "lagMs": 0.0,
+        "correlation": 0.999892522055018
+      },
+      {
+        "event": "impact",
+        "frame": 1387,
+        "lagMs": 0.0,
+        "correlation": 0.9999525465350683
+      }
+    ],
+    "separateStemSha256": "72f803d7f3e1abe984a5380f7b81fa1c512589378a2b4190906a7cc3c4c81c08",
+    "humanAudibilityReviewPerformed": false
+  },
+  "storyboard": {
+    "hash": "424d747113709b5527290ee36a41506c0a3f8016bd31b5382249e4d77f2c3d2d",
+    "events": 21,
+    "timingSource": "measured words with explicit authored anchors",
+    "speechOnsetMs": 160.0,
+    "speechOffsetMs": 46870.0
+  }
+}
