@@ -26,3 +26,9 @@ alignment/outputs/
 public/episodes/production-check/*.wav
 public/episodes/*/narration.wav
 renders/episodes/*/review/
+
+# New local motion studies / masters; preserve historical tracked renders.
+renders/episodes/motion-study/
+renders/episodes/seconds-film/
+public/episodes/*/sfx.wav
+renders/episodes/motion-study-15/

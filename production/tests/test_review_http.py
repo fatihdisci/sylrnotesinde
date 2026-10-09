@@ -1,11 +1,12 @@
-import json,subprocess,sys,unittest,urllib.request,urllib.error
+import os,json,subprocess,sys,unittest,urllib.request,urllib.error
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
 class LiveReviewHttpTests(unittest.TestCase):
     def test_real_audio_range_and_invalid_save_leave_artifacts_unchanged(self):
-        if not (ROOT.parent/'public/episodes/production-check/narration.wav').exists():self.skipTest('Prepare integration fixture first')
-        project=ROOT.parent;word=project/'public/episodes/production-check/word-timings.json';before=word.read_bytes()
-        process=subprocess.Popen([sys.executable,str(ROOT/'review.py'),'--id','production-check','--port','3034'],cwd=project,stdout=subprocess.PIPE,stderr=subprocess.DEVNULL,text=True)
+        fixture_id=os.environ.get('EPISODE_TEST_ID','production-check')
+        if not (ROOT.parent/f'public/episodes/{fixture_id}/narration.wav').exists():self.skipTest('Prepare integration fixture first')
+        project=ROOT.parent;word=project/f'public/episodes/{fixture_id}/word-timings.json';before=word.read_bytes()
+        process=subprocess.Popen([sys.executable,str(ROOT/'review.py'),'--id',fixture_id,'--port','3034'],cwd=project,stdout=subprocess.PIPE,stderr=subprocess.DEVNULL,text=True)
         try:
             self.assertIn('3034',process.stdout.readline())
             base='http://127.0.0.1:3034'

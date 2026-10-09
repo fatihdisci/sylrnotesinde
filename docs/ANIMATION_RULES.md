@@ -13,3 +13,11 @@ Uzunluk/alan/hacim doğruluğunu ayrı kontrol et. Alan oranı için kenar oran�
 Outro tek sahipli: `src/brand/Outro.tsx`, prop almaz. 45 kare: ilk12 çizgiler, 12–24 mercan işaret, ilk20 içinde isim; kalan sürede tut. İlk karede çok kısa çizgi parçası vardır, boş zemin karesi yok. İki hafif tık f2/f10, yumuşak tok ses f22'de başlar. WAV 1,5 s; kuyruk1,16 s'den önce söner. Üretim scripti deterministiktir; render ses üretmez.
 
 `LayoutProbe` yalnız debug içindir; font hazır olunca DOM ölçer. Zaman tabanlı hareket oluşturmaz ve finalde çalışmaz.
+
+## Anlatım amaçlı optik ve derinlik
+
+Glow, motion blur ve perspektif mutlak yasak değildir. Kullanıcı talebi doğrultusunda yalnız belirli bir görsel ilişkiyi görünür kılıyorsa kısa ve kontrollü uygulanabilir: hızlı kamera hareketinin yönünü okunur kılan hafif blur, kritik ölçüm anında düşük şiddetli vurgu, gerçek katman ilişkisini açıklayan2.5D dönüşüm. Nesnelerin adet/uzunluk/alan oranını bozamaz, ölçü etiketlerini bulanıklaştıramaz, altyazıya uygulanamaz. Düz marka zemini ve palet korunur.
+
+Rastgele neon, dekoratif glow, gereksiz glitch/flaş, sürekli parçacık, zıplayan kelimeler, her sahnede aynı zoom ve anlamsız3D şekiller kullanılmaz. Kısa ışık vurgusu bile somut bir olayla aynı kareye bağlanmalıdır. Bu çalışmada SVG yeterli olduğundan Three.js, blur ve glow eklenmedi.
+
+Kamera, maske ve nesne dönüşümleri için önce [motion üretim rehberindeki](MOTION_PRODUCTION.md) araçları değerlendir. Her beceriyi her bölümde kullanmak gerekmez.

@@ -1,4 +1,4 @@
-import copy,json,sys,tempfile,unittest,shutil
+import os,copy,json,sys,tempfile,unittest,shutil
 from pathlib import Path
 from unittest.mock import patch
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]))
@@ -16,6 +16,14 @@ class ProductionTests(unittest.TestCase):
         self.assertEqual(core.timeline(42,hold=60,speech_end_seconds=40.8)['durationInFrames'],1329)
         for args in [(44,0,60),(37,-1,60),(37,0,1.5)]:
             with self.assertRaises(ValueError):core.timeline(*args)
+    def test_motion_study_duration_cannot_weaken_episode_contract(self):
+        data={'audioDurationMs':12510,'words':[{'endMs':12000}]}
+        self.assertEqual(core.spec_timeline(data,{'format':'motion-study','minimumDurationFrames':450,'resultHoldFrames':36})['durationInFrames'],450)
+        self.assertEqual(core.spec_timeline(data,{'minimumDurationFrames':450})['durationInFrames'],1200)
+        for value in [359,451,450.5,True]:
+            with self.assertRaises(ValueError):core.spec_timeline(data,{'format':'motion-study','minimumDurationFrames':value})
+        with self.assertRaises(ValueError):core.spec_timeline({'audioDurationMs':14500,'words':[{'endMs':14000}]},{'format':'motion-study'})
+
     def test_word_identity_missing_overlap_and_invalid_values(self):
         self.assertEqual(core.word_errors(self.sample()),[])
         for edit in [lambda d:d['words'].pop(),lambda d:d['words'][1].update(startMs=600),lambda d:d['words'][0].update(endMs=-1),lambda d:d['words'][1].update(endMs=float('nan')),lambda d:d['words'][0].update(startMs=True),lambda d:d['words'][1].update(word='başka'),lambda d:d['words'][1].update(id=7)]:
@@ -33,27 +41,28 @@ class ProductionTests(unittest.TestCase):
             with patch.object(core,'ROOT',root):
                 first=core.bindings(spec,audio);audio.write_bytes(b'changed');self.assertNotEqual(first['audioHash'],core.bindings(spec,audio)['audioHash']);config.write_text('{"speed":1}');self.assertNotEqual(first['settingsHash'],core.bindings(spec,audio)['settingsHash']);spec.write_text(json.dumps({'phrases':[{'spoken':'Yeni metin.'}]}));self.assertNotEqual(first['textHash'],core.bindings(spec,audio)['textHash'])
     def test_publication_hash_gate_on_real_isolated_assets(self):
-        source=core.ROOT/'public/episodes/production-check'
+        fixture_id=os.environ.get('EPISODE_TEST_ID','production-check')
+        source=core.ROOT/f'public/episodes/{fixture_id}'
         if not (source/'narration.wav').exists():self.skipTest('Prepare integration audio first')
         with tempfile.TemporaryDirectory() as directory:
             dest=Path(directory)
             for name in ['narration.wav','word-timings.json','captions.json','captions.srt','narration-manifest.json']:shutil.copy2(source/name,dest/name)
-            spec=core.ROOT/'src/episodes/production-check/production.json'
+            spec=core.ROOT/f'src/episodes/{fixture_id}/production.json'
             with patch.object(core,'paths',return_value=(spec,dest)):
-                self.assertEqual(core.verify_current('production-check')[0]['review']['status'],'needs_review')
-                with self.assertRaisesRegex(ValueError,'PUBLICATION BLOCKED'):core.verify_current('production-check',True)
+                self.assertEqual(core.verify_current(fixture_id)[0]['review']['status'],'needs_review')
+                with self.assertRaisesRegex(ValueError,'PUBLICATION BLOCKED'):core.verify_current(fixture_id,True)
                 # Simulate approval only in disposable TEST FIXTURE data; never user artifacts.
                 data=core.read(dest/'word-timings.json');data['review']={'status':'approved','reviewer':'TEST FIXTURE','listened':True}
                 for w in data['words']:w['reviewStatus']='approved'
-                core.write(dest/'word-timings.json',data);core.export('production-check')
-                self.assertEqual(core.verify_current('production-check',True)[0]['review']['reviewer'],'TEST FIXTURE')
+                core.write(dest/'word-timings.json',data);core.export(fixture_id)
+                self.assertEqual(core.verify_current(fixture_id,True)[0]['review']['reviewer'],'TEST FIXTURE')
                 (dest/'captions.json').write_text('[]')
-                with self.assertRaisesRegex(ValueError,'STALE captions'):core.verify_current('production-check',True)
+                with self.assertRaisesRegex(ValueError,'STALE captions'):core.verify_current(fixture_id,True)
                 shutil.copy2(source/'captions.json',dest/'captions.json')
                 (dest/'narration.wav').write_bytes(b'changed WAV')
-                with self.assertRaisesRegex(ValueError,'STALE'):core.verify_current('production-check')
+                with self.assertRaisesRegex(ValueError,'STALE'):core.verify_current(fixture_id)
                 (dest/'narration.wav').unlink()
-                with self.assertRaises(FileNotFoundError):core.verify_current('production-check')
+                with self.assertRaises(FileNotFoundError):core.verify_current(fixture_id)
 
     def test_review_requires_listening_and_rejects_stale_or_overlap(self):
         with tempfile.TemporaryDirectory() as directory:

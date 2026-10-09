@@ -13,7 +13,7 @@ Tek kaynak: `src/brand/tokens.ts`.
 | mutedText | #909B97 | Yardımcı ama okunabilir etiket |
 | guideLine | #35413E | Düşük kontrastlı geometrik yardımcı çizgi |
 
-Tanınırlık gerektiren gerçek nesnelerin doğal renkleri kullanılabilir; palet değiştirilmez. Neon, glow, cam kart, dekoratif gradyan, lens parlaması, parçacık yağmuru, emoji ve uyumsuz stok ikonlar kullanılmaz. Dashboard veya slayt kartı düzeni kurulmaz.
+Tanınırlık gerektiren gerçek nesnelerin doğal renkleri kullanılabilir; palet değiştirilmez. Dekoratif neon/glow, cam kart, dekoratif gradyan, lens parlaması, parçacık yağmuru, emoji ve uyumsuz stok ikonlar kullanılmaz. Anlatım amaçlı kontrollü optik vurgu istisnası ANIMATION_RULES.md içinde tanımlanır. Dashboard veya slayt kartı düzeni kurulmaz.
 
 IBM Plex Sans 400/500/600: başlık ve anlatım. IBM Plex Mono 400/500: sayı ve ölçü. Resmî IBM paketlerinin tam WOFF2 dosyaları yerelde; `loadFont` render'ı yükleme bitene kadar bekletir. Türkçe glyph kapsamı ayrıca kontrol edilir; sessiz font değiştirme yok.
 

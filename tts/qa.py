@@ -1,14 +1,19 @@
 """Real waveform checks. Run with a model venv; stdlib dispatcher otherwise."""
-import json, subprocess, sys
+import argparse, json, subprocess, sys
 from pathlib import Path
 from selection import narrator_config
 ROOT=Path(__file__).resolve().parent
 if sys.prefix==sys.base_prefix:
-    raise SystemExit(subprocess.call([str(ROOT/'environments'/ (narrator_config()['activeModel'] or 'supertonic-3') /'bin/python'),__file__]))
+    raise SystemExit(subprocess.call([str(ROOT/'environments'/ (narrator_config()['activeModel'] or 'supertonic-3') /'bin/python'),__file__,*sys.argv[1:]]))
 import numpy as np, soundfile as sf
 
 def main():
-    catalog=json.loads((ROOT/'config/catalog.json').read_text())
+    parser=argparse.ArgumentParser();parser.add_argument('--episodes',nargs='+');args=parser.parse_args()
+    if args.episodes:
+        import re
+        if any(not re.fullmatch('[a-z0-9]+(?:-[a-z0-9]+)*',id) for id in args.episodes):raise ValueError('Invalid episode ID')
+        catalog={'records':[{'model':'supertonic-3','voice':'M1','test':id,'variant':'episode','rawPath':f'outputs/episodes/{id}/narration.wav','listeningPath':f'../public/episodes/{id}/narration.wav','nativeSampleRate':44100} for id in args.episodes]}
+    else:catalog=json.loads((ROOT/'config/catalog.json').read_text())
     checks=[];failures=[]
     for r in catalog['records']:
         raw,rate=sf.read(ROOT/r['rawPath'],dtype='float32')
@@ -25,7 +30,7 @@ def main():
         checks.append(record)
         if not valid: failures.append(record)
     result=dict(checks=checks,failures=failures,subjectiveListeningPerformed=False,notes=['Waveform integrity, loudness, peak, rate and duration are measured.','Naturalness, pronunciation, sentence completion and breath quality need user listening.','Endpoint RMS is diagnostic; it cannot prove that the last word is intact.'])
-    (ROOT/'config/audio-qa.json').write_text(json.dumps(result,ensure_ascii=False,indent=2)+'\n')
+    (ROOT/('outputs/episodes/audio-qa.json' if args.episodes else 'config/audio-qa.json')).write_text(json.dumps(result,ensure_ascii=False,indent=2)+'\n')
     print(f'{len(checks)} delivered listening WAVs checked; {len(failures)} failures; LUFS {min(c["integratedLufs"] for c in checks):.2f}..{max(c["integratedLufs"] for c in checks):.2f}; max true peak {max(c["truePeakDbtp"] for c in checks):.2f} dBTP')
     if failures: raise SystemExit(1)
 if __name__=='__main__': main()

@@ -2,6 +2,7 @@
 import argparse,json,math,re,subprocess,sys
 from pathlib import Path
 import numpy as np,soundfile as sf
+from rhythm import inspect_rhythm
 from core import ROOT,paths,read,write,sha,verify_current
 
 def pcm(path):return np.frombuffer(subprocess.check_output(['ffmpeg','-v','error','-i',str(path),'-map','0:a:0','-ar','48000','-ac','1','-f','f32le','-']),dtype='<f4')
@@ -60,6 +61,7 @@ def main():
     except ValueError as error:
         publication_ready=False;publication_blockers=[str(error)]
     result={'id':a.id,'technicalChecksPassed':True,'publicationReady':publication_ready,'publicationBlockers':publication_blockers,'reviewStatus':data['review']['status'],'frames':manifest['durationInFrames'],'fps':30,'seconds':manifest['durationInFrames']/30,'audioDurationSeconds':len(source)/48000,'resultHoldFrames':manifest['timeline']['resultHoldFrames'],'outroFromFrame':outro,'encodedSyncSamples':samples,'driftMs':drift,'encodedPeak':float(np.max(np.abs(encoded))),'integratedLufs':float(loud['input_i']),'truePeakDbtp':float(loud['input_tp']),'outroCorrelation':corr,'outroLagMs':lag,'captionCoverageWords':len(coverage),'srtMatchesBurnIn':True,'blackIntervals':black_intervals,'emptyContentFrames':empty_frames,'largeFrameChangeCandidates':flicker_candidates,'suspiciousWords':[w['id'] for w in data['words'] if w['issues']],'humanListeningPerformed':False,'humanReviewListeningRecorded':bool(data['review'].get('listened')),'manualChecksRequired':['Listen to Turkish pronunciation, numbers, units and last syllables.','Inspect word onsets/offsets in the local editor; CTC20ms resolution does not guarantee33ms accuracy.','Watch the actual MP4 for semantic scene timing, flicker and subjective readability.'],'audioSha256':sha((dest/'narration.wav').read_bytes()),'wordTimingsSha256':sha((dest/'word-timings.json').read_bytes())}
+    result['rhythm']=inspect_rhythm(frames_rgb[:outro],encoded[:outro*1600],annotations=data['script'].get('intentionalPauses',[]))
     write(video.parent/'qa.json',result)
     print(json.dumps(result,ensure_ascii=False,indent=2))
 if __name__=='__main__':main()

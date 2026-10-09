@@ -24,6 +24,17 @@ def timeline(seconds,start=0,hold=60,minimum=1200,speech_end_seconds=None):
     content=max(minimum-45,start+audio_frames,start+speech_frames+hold)
     if content+45>1350:raise ValueError(f'{seconds:.3f}s narration plus result/outro exceeds45s. Simplify text first; M1 speed is unchanged.')
     return {'audioFrames':audio_frames,'narrationStartFrame':start,'resultFromFrame':start+speech_frames,'resultHoldFrames':content-start-speech_frames,'outroFromFrame':content,'durationInFrames':content+45}
+def spec_timeline(data, spec):
+    study = spec.get('format') == 'motion-study'
+    minimum=spec.get('minimumDurationFrames',360) if study else 1200
+    if study and (type(minimum)!=int or not 360<=minimum<=450):raise ValueError('MotionStudy minimum must be360–450 frames')
+    t = timeline(data['audioDurationMs']/1000, spec.get('narrationStartFrame',0),
+                 spec.get('resultHoldFrames',60), minimum=minimum,
+                 speech_end_seconds=data['words'][-1]['endMs']/1000)
+    if study and t['durationInFrames'] > 450:
+        raise ValueError('MotionStudy exceeds15s; simplify speech, never change narrator speed')
+    return t
+
 def word_errors(data):
     errors=[];words=data.get('words',[]);expected=spoken(data['script']).split()
     if not words or [w['word'] for w in words]!=expected:errors.append('Missing/changed spoken words')
@@ -53,7 +64,7 @@ def verify_current(id,release=False):
     if manifest['provenance']['alignmentHash']!=sha((dest/'word-timings.json').read_bytes()):raise ValueError('STALE caption export; export corrected timings')
     spec=read(specpath)
     if data['script']!=spec:raise ValueError('STALE embedded script')
-    schedule=timeline(data['audioDurationMs']/1000,spec.get('narrationStartFrame',0),spec.get('resultHoldFrames',60),speech_end_seconds=data['words'][-1]['endMs']/1000) if data.get('words') else None
+    schedule=spec_timeline(data,spec) if data.get('words') else None
     if manifest.get('timeline')!=schedule or manifest['durationInFrames']!=schedule['durationInFrames']:raise ValueError('Timeline does not match measured audio/hold')
     if abs(duration(dest/'narration.wav')*1000-data['audioDurationMs'])>1:raise ValueError('Audio duration mismatch')
     narration=manifest['narration']
@@ -76,7 +87,7 @@ def export(id):
     if data['bindings']!=bindings(specpath,dest/'narration.wav'):raise ValueError('STALE sources')
     errors=word_errors(data)
     if errors:raise ValueError('; '.join(errors))
-    t=timeline(data['audioDurationMs']/1000,spec.get('narrationStartFrame',0),spec.get('resultHoldFrames',60),speech_end_seconds=data['words'][-1]['endMs']/1000)
+    t=spec_timeline(data,spec)
     cues=[];offset=0
     for phrase in spec['phrases']:
         count=len(phrase['spoken'].split());ws=data['words'][offset:offset+count]
@@ -96,7 +107,7 @@ def export(id):
         ms=round(frame*1000/30);return f'{ms//3600000:02d}:{ms//60000%60:02d}:{ms//1000%60:02d},{ms%1000:03d}'
     (dest/'captions.srt').write_text('\n\n'.join(f"{i+1}\n{stamp(c['from'])} --> {stamp(c['to'])}\n"+'\n'.join(c['lines']) for i,c in enumerate(cues))+'\n')
     provenance={**data['bindings'],'alignmentHash':sha((dest/'word-timings.json').read_bytes()),'captionsHash':sha((dest/'captions.json').read_bytes()),'reviewStatus':data['review']['status'],'reviewer':data['review'].get('reviewer'),'wordTimingPath':f'episodes/{id}/word-timings.json'}
-    episode={'id':id,'title':spec['title'],'hook':spec['hook'],'brandVersion':'0.1-candidate','kind':'episode','durationInFrames':t['durationInFrames'],'narration':[{'id':'narration','text':spoken(spec),'from':t['narrationStartFrame'],'durationInFrames':t['audioFrames'],'path':f'episodes/{id}/narration.wav'}],'sources':spec['sources'],'claims':spec['claims'],'scenes':spec.get('scenes') or [{'id':'continuous','from':0,'to':t['outroFromFrame'],'purpose':'Original continuous TSX visualization'}],'audio':{'voiceProvider':'local:supertonic-3','voiceStatus':'final' if data['review']['status']=='approved' else 'temporary'},'subtitlePath':f'episodes/{id}/captions.json','captions':cues,'provenance':provenance,'timeline':t,'fps':30,'captionReviewRequired':data['review']['status']!='approved','recommendedTotalFrames':t['durationInFrames']}
+    episode={'id':id,'title':spec['title'],'hook':spec['hook'],'brandVersion':'0.1-candidate','kind':'motion-study' if spec.get('format')=='motion-study' else 'episode','durationInFrames':t['durationInFrames'],'narration':[{'id':'narration','text':spoken(spec),'from':t['narrationStartFrame'],'durationInFrames':t['audioFrames'],'path':f'episodes/{id}/narration.wav'}],'sources':spec['sources'],'claims':spec['claims'],'scenes':spec.get('scenes') or [{'id':'continuous','from':0,'to':t['outroFromFrame'],'purpose':'Original continuous TSX visualization'}],'audio':{'voiceProvider':'local:supertonic-3','voiceStatus':'final' if data['review']['status']=='approved' else 'temporary'},'subtitlePath':f'episodes/{id}/captions.json','captions':cues,'provenance':provenance,'timeline':t,'fps':30,'captionReviewRequired':data['review']['status']!='approved','recommendedTotalFrames':t['durationInFrames']}
     write(dest/'narration-manifest.json',episode)
     print(f'Exported {len(data["words"])} words / {len(cues)} cues; {t["durationInFrames"]}/30s; review={data["review"]["status"]}',flush=True)
     return episode

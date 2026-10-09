@@ -1,4 +1,4 @@
-import importlib.util, json, tempfile, unittest, threading, urllib.request, urllib.error
+import importlib.util, json, tempfile, unittest, threading, urllib.request, urllib.error, wave
 from pathlib import Path
 MODULE=Path(__file__).resolve().parents[1]/'comparison/server.py'
 spec=importlib.util.spec_from_file_location('comparison_server',MODULE)
@@ -34,8 +34,12 @@ class ComparisonTests(unittest.TestCase):
             self.assertEqual(len(exported['ratings']),12)
             self.assertIn('identities',exported)
     def test_http_privacy_origin_and_audio_range(self):
-        with tempfile.TemporaryDirectory() as temp:
+        with tempfile.TemporaryDirectory(dir=server.ROOT/'outputs') as temp:
             session=server.Session(temp)
+            clip=Path(temp)/'TEST-FIXTURE.wav'
+            with wave.open(str(clip),'wb') as out:
+                out.setparams((1,2,48000,0,'NONE','not compressed'));out.writeframes(bytes(9600))
+            first=next(iter(session.by_id.values()));first['listeningPath']=str(clip.relative_to(server.ROOT))
             http=server.ThreadingHTTPServer(('127.0.0.1',0),server.handler(session))
             thread=threading.Thread(target=http.serve_forever,daemon=True);thread.start()
             base=f'http://127.0.0.1:{http.server_port}'
@@ -59,7 +63,7 @@ class ComparisonTests(unittest.TestCase):
             finally:
                 http.shutdown();http.server_close();thread.join()
 
-    def test_texts_and_all_voices_exist(self):
+    def test_historical_catalog_covers_all_voices(self):
         with tempfile.TemporaryDirectory() as temp:
             session=server.Session(temp)
             self.assertEqual(len(session.records),72)
@@ -69,6 +73,7 @@ class ComparisonTests(unittest.TestCase):
                     for test in ['A','B','C','D']:
                         matches=[r for r in session.records if (r['model'],r['voice'],r['test'],r['variant'])==(model,voice,test,'original')]
                         self.assertEqual(len(matches),1)
-                        self.assertTrue((server.ROOT/matches[0]['listeningPath']).exists())
+                        self.assertTrue(matches[0]['listeningPath'].startswith('outputs/'))
+                        self.assertEqual(len(matches[0]['sha256']),64)
 
 if __name__=='__main__': unittest.main()
