@@ -1,0 +1,10 @@
+{
+  "provider": "user:minimax",
+  "voice": "Documentary_Narrator",
+  "sourceFilename": "MiniMax_2026-10-09_23_00_01_Documentary_Narrator.mp3",
+  "sourceSha256": "b9f51e542bb50178d312201343fa3f30904ecd964f38f2eca23eb40f57cef341",
+  "sourceDurationSeconds": 47.115442,
+  "processing": "two-pass loudnorm -20 LUFS / -2 dBTP; 48 kHz mono PCM24; original timing retained",
+  "synthesisPerformed": false,
+  "humanListeningPerformed": false
+}

@@ -28,6 +28,11 @@ class ProductionTests(unittest.TestCase):
         self.assertEqual(core.word_errors(self.sample()),[])
         for edit in [lambda d:d['words'].pop(),lambda d:d['words'][1].update(startMs=600),lambda d:d['words'][0].update(endMs=-1),lambda d:d['words'][1].update(endMs=float('nan')),lambda d:d['words'][0].update(startMs=True),lambda d:d['words'][1].update(word='başka'),lambda d:d['words'][1].update(id=7)]:
             d=self.sample();edit(d);self.assertTrue(core.word_errors(d))
+    def test_external_test_has_separate_duration_without_relaxing_episode(self):
+        data={'audioDurationMs':47100,'words':[{'endMs':46700}]}
+        self.assertEqual(core.spec_timeline(data,{'format':'voice-test','resultHoldFrames':45})['durationInFrames'],1491)
+        with self.assertRaises(ValueError):core.spec_timeline(data,{})
+        with self.assertRaises(ValueError):core.spec_timeline({'audioDurationMs':60000,'words':[{'endMs':59500}]},{'format':'voice-test'})
     def test_speech_energy_rejects_unexplained_holes(self):
         data=self.sample();data['words'][1]['startMs']=1100;data['energy20ms']=[.1]*90
         self.assertTrue(any('speech gap' in e for e in core.word_errors(data)))
@@ -40,6 +45,10 @@ class ProductionTests(unittest.TestCase):
             spec=root/'spec.json';spec.write_text(json.dumps(self.sample()['script']));audio=root/'a.wav';audio.write_bytes(b'fixture-audio')
             with patch.object(core,'ROOT',root):
                 first=core.bindings(spec,audio);audio.write_bytes(b'changed');self.assertNotEqual(first['audioHash'],core.bindings(spec,audio)['audioHash']);config.write_text('{"speed":1}');self.assertNotEqual(first['settingsHash'],core.bindings(spec,audio)['settingsHash']);spec.write_text(json.dumps({'phrases':[{'spoken':'Yeni metin.'}]}));self.assertNotEqual(first['textHash'],core.bindings(spec,audio)['textHash'])
+                spec.write_text(json.dumps({'phrases':[{'spoken':'Yeni metin.'}],'audioSource':{'provider':'user:minimax'}}))
+                metadata=root/'external-audio.json';metadata.write_text('{"sourceSha256":"original"}')
+                first=core.bindings(spec,audio);metadata.write_text('{"sourceSha256":"changed"}')
+                self.assertNotEqual(first['externalAudioHash'],core.bindings(spec,audio)['externalAudioHash'])
     def test_publication_hash_gate_on_real_isolated_assets(self):
         fixture_id=os.environ.get('EPISODE_TEST_ID','production-check')
         source=core.ROOT/f'public/episodes/{fixture_id}'

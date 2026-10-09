@@ -1,7 +1,7 @@
 import type {CaptionCue} from '../components/CaptionTrack';
 export type Episode = {
   id: string; title: string; hook: string; brandVersion: '0.1-candidate';
-  kind: 'episode' | 'style-proof' | 'motion-study'; durationInFrames: number;
+  kind: 'episode' | 'style-proof' | 'motion-study' | 'voice-test'; durationInFrames: number;
   narration: readonly {id: string; text: string; from: number; durationInFrames: number; path: string}[];
   sources: readonly {title: string; url?: string; note: string; accessed?: string}[];
   scenes: readonly {id: string; from: number; to: number; purpose: string}[];
@@ -16,6 +16,7 @@ export const validateEpisode = (episode: Episode, {publication = false}: {public
   const {durationInFrames: d} = episode; frame(d);
   if (episode.kind === 'episode' && (d < 1200 || d > 1350)) throw new Error('Episode must be40–45s including outro');
   if (episode.kind === 'motion-study' && (d < 360 || d > 450)) throw new Error('MotionStudy must be12–15s including outro');
+  if (episode.kind === 'voice-test' && (d < 1200 || d > 1800 || publication)) throw new Error('Voice test must be40–60s and draft-only');
   if (episode.brandVersion !== '0.1-candidate') throw new Error('Brand version mismatch');
   const content = d - 45;
   let narrationEnd = 0;

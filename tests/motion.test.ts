@@ -4,6 +4,7 @@ import {ribbonCell} from '../src/episodes/seconds-film/TimeRibbon';
 import {cameraBetween} from '../src/components/CameraRig';
 import {days, years, blockCount, filmEvents} from '../src/episodes/seconds-film/model';
 import study from '../public/episodes/motion-study/narration-manifest.json';
+import minimax from '../public/episodes/seconds-film-minimax/narration-manifest.json';
 import {validateEpisode, type Episode} from '../src/episodes/types';
 test('seconds count and unit conversions are exact before display rounding',()=>{
   assert.equal(blockCount,1000);assert.equal(Math.round(days*10)/10,11.6);assert.equal(Math.round(years*10)/10,31.7);
@@ -33,4 +34,17 @@ test('folded year ribbon preserves all time through row boundaries',()=>{
     assert.ok(c.row>=0 && c.row<4);if(c.second>0) wrapped++;
   }
   assert.ok(Math.abs(length-years*80)<1e-8);assert.equal(wrapped,3);
+});
+test('imported voice test retains publication limits and follows its own audio cues',()=>{
+  const episode=minimax as Episode;
+  assert.doesNotThrow(()=>validateEpisode(episode));
+  assert.throws(()=>validateEpisode(episode,{publication:true}),/draft-only/);
+  assert.throws(()=>validateEpisode({...episode,kind:'episode'}),/40–45s/);
+  assert.throws(()=>validateEpisode({...episode,durationInFrames:1801}),/40–60s/);
+  assert.equal(episode.audio.voiceProvider,'user:minimax');
+  const e=filmEvents(episode);
+  assert.equal(e.zoom,episode.captions[9].from);
+  assert.equal(e.years,episode.captions[13].from);
+  assert.equal(e.ribbon,episode.captions[14].from);
+  assert.equal(e.result,episode.captions[17].from);
 });

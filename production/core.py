@@ -13,16 +13,19 @@ def paths(id):
 def spoken(spec):return ' '.join(p['spoken'].strip() for p in spec['phrases'])
 def bindings(specpath,audio):
     spec=read(specpath)
-    return {'specHash':sha(Path(specpath).read_bytes()),'textHash':sha(spoken(spec).encode()),'settingsHash':sha((ROOT/'tts/config/narrator.json').read_bytes()),'ttsModelHash':sha((ROOT/'tts/config/models.json').read_bytes()),'audioHash':sha(Path(audio).read_bytes())}
+    result={'specHash':sha(Path(specpath).read_bytes()),'textHash':sha(spoken(spec).encode()),'settingsHash':sha((ROOT/'tts/config/narrator.json').read_bytes()),'ttsModelHash':sha((ROOT/'tts/config/models.json').read_bytes()),'audioHash':sha(Path(audio).read_bytes())}
+    if spec.get('audioSource'):
+        result['externalAudioHash']=sha(Path(audio).with_name('external-audio.json').read_bytes())
+    return result
 def duration(path):return float(subprocess.check_output(['ffprobe','-v','error','-show_entries','format=duration','-of','default=nw=1:nk=1',str(path)]))
-def timeline(seconds,start=0,hold=60,minimum=1200,speech_end_seconds=None):
+def timeline(seconds,start=0,hold=60,minimum=1200,speech_end_seconds=None,maximum=1350):
     for n in [start,hold,minimum]:
         if type(n)!=int or n<0:raise ValueError('Timeline frames must be nonnegative integers')
     audio_frames=math.ceil(seconds*30)
     speech_frames=audio_frames if speech_end_seconds is None else math.ceil(speech_end_seconds*30)
     if not 0<speech_frames<=audio_frames:raise ValueError('Invalid measured speech end')
     content=max(minimum-45,start+audio_frames,start+speech_frames+hold)
-    if content+45>1350:raise ValueError(f'{seconds:.3f}s narration plus result/outro exceeds45s. Simplify text first; M1 speed is unchanged.')
+    if content+45>maximum:raise ValueError(f'{seconds:.3f}s narration plus result/outro exceeds{maximum/30:g}s. Simplify text first; narrator speed is unchanged.')
     return {'audioFrames':audio_frames,'narrationStartFrame':start,'resultFromFrame':start+speech_frames,'resultHoldFrames':content-start-speech_frames,'outroFromFrame':content,'durationInFrames':content+45}
 def spec_timeline(data, spec):
     study = spec.get('format') == 'motion-study'
@@ -30,7 +33,8 @@ def spec_timeline(data, spec):
     if study and (type(minimum)!=int or not 360<=minimum<=450):raise ValueError('MotionStudy minimum must be360–450 frames')
     t = timeline(data['audioDurationMs']/1000, spec.get('narrationStartFrame',0),
                  spec.get('resultHoldFrames',60), minimum=minimum,
-                 speech_end_seconds=data['words'][-1]['endMs']/1000)
+                 speech_end_seconds=data['words'][-1]['endMs']/1000,
+                 maximum=1800 if spec.get('format')=='voice-test' else 1350)
     if study and t['durationInFrames'] > 450:
         raise ValueError('MotionStudy exceeds15s; simplify speech, never change narrator speed')
     return t
@@ -57,12 +61,14 @@ def word_errors(data):
     return errors
 def verify_current(id,release=False):
     specpath,dest=paths(id);data=read(dest/'word-timings.json');manifest=read(dest/'narration-manifest.json')
+    if release and read(specpath).get('format')=='voice-test':raise ValueError('PUBLICATION BLOCKED: voice-test is a draft-only comparison')
     if data['bindings']!=bindings(specpath,dest/'narration.wav'):raise ValueError('STALE: text/audio/model settings changed; regenerate audio/alignment')
     if data['alignerHash']!=sha((ROOT/'alignment/model.json').read_bytes()):raise ValueError('STALE alignment model')
     if any(manifest['provenance'].get(k)!=v for k,v in data['bindings'].items()):raise ValueError('STALE manifest bindings')
     if manifest['provenance']['captionsHash']!=sha((dest/'captions.json').read_bytes()) or manifest['captions']!=read(dest/'captions.json'):raise ValueError('STALE captions')
     if manifest['provenance']['alignmentHash']!=sha((dest/'word-timings.json').read_bytes()):raise ValueError('STALE caption export; export corrected timings')
     spec=read(specpath)
+    if spec.get('audioSource') and (manifest['audio']['voiceProvider']!=spec['audioSource']['provider'] or manifest['audio'].get('source')!=read(dest/'external-audio.json')):raise ValueError('STALE external audio provenance')
     if data['script']!=spec:raise ValueError('STALE embedded script')
     schedule=spec_timeline(data,spec) if data.get('words') else None
     if manifest.get('timeline')!=schedule or manifest['durationInFrames']!=schedule['durationInFrames']:raise ValueError('Timeline does not match measured audio/hold')
@@ -108,6 +114,10 @@ def export(id):
     (dest/'captions.srt').write_text('\n\n'.join(f"{i+1}\n{stamp(c['from'])} --> {stamp(c['to'])}\n"+'\n'.join(c['lines']) for i,c in enumerate(cues))+'\n')
     provenance={**data['bindings'],'alignmentHash':sha((dest/'word-timings.json').read_bytes()),'captionsHash':sha((dest/'captions.json').read_bytes()),'reviewStatus':data['review']['status'],'reviewer':data['review'].get('reviewer'),'wordTimingPath':f'episodes/{id}/word-timings.json'}
     episode={'id':id,'title':spec['title'],'hook':spec['hook'],'brandVersion':'0.1-candidate','kind':'motion-study' if spec.get('format')=='motion-study' else 'episode','durationInFrames':t['durationInFrames'],'narration':[{'id':'narration','text':spoken(spec),'from':t['narrationStartFrame'],'durationInFrames':t['audioFrames'],'path':f'episodes/{id}/narration.wav'}],'sources':spec['sources'],'claims':spec['claims'],'scenes':spec.get('scenes') or [{'id':'continuous','from':0,'to':t['outroFromFrame'],'purpose':'Original continuous TSX visualization'}],'audio':{'voiceProvider':'local:supertonic-3','voiceStatus':'final' if data['review']['status']=='approved' else 'temporary'},'subtitlePath':f'episodes/{id}/captions.json','captions':cues,'provenance':provenance,'timeline':t,'fps':30,'captionReviewRequired':data['review']['status']!='approved','recommendedTotalFrames':t['durationInFrames']}
+    if spec.get('format')=='voice-test':episode['kind']='voice-test'
+    if spec.get('audioSource'):
+        episode['audio']['voiceProvider']=spec['audioSource']['provider']
+        episode['audio']['source']=read(dest/'external-audio.json')
     write(dest/'narration-manifest.json',episode)
     print(f'Exported {len(data["words"])} words / {len(cues)} cues; {t["durationInFrames"]}/30s; review={data["review"]["status"]}',flush=True)
     return episode

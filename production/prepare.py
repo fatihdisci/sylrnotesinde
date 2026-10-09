@@ -7,12 +7,18 @@ from cli import run_jobs
 from benchmark import normalize
 
 def main():
-    p=argparse.ArgumentParser();p.add_argument('--id',required=True);p.add_argument('--realign',action='store_true');a=p.parse_args()
+    p=argparse.ArgumentParser();p.add_argument('--id',required=True);group=p.add_mutually_exclusive_group();group.add_argument('--realign',action='store_true');group.add_argument('--audio',type=Path);a=p.parse_args()
     specpath,dest=paths(a.id);spec=read(specpath);config=read(ROOT/'tts/config/narrator.json')
     if config['activeModel']!='supertonic-3' or config['settings']['supertonic-3']!={'voice':'M1','speed':1.0}:raise ValueError('Expected user-selected M1 natural speed')
     if (dest/'narration.wav').exists() and not a.realign:raise ValueError('Assets exist. Use a new revision ID or --realign for unchanged audio.')
     dest.mkdir(parents=True,exist_ok=True)
-    if not a.realign:
+    if a.audio:
+        if spec.get('format')!='voice-test' or not spec.get('audioSource',{}).get('provider'):raise ValueError('Imported audio requires an explicit draft-only voice-test and audioSource provider')
+        from import_audio import import_audio
+        import_audio(a.audio,dest,spec['audioSource'])
+        write(dest/'audio-bindings.json',bindings(specpath,dest/'narration.wav'))
+    elif not a.realign:
+        if spec.get('audioSource'):raise ValueError('External audio test requires --audio; M1 synthesis is not a substitute')
         native=ROOT/f'tts/outputs/episodes/{a.id}/narration.wav'
         (ROOT/'tts/outputs').mkdir(exist_ok=True)
         run_jobs([{'model':'supertonic-3','voice':'M1','text':spoken(spec),'speed':1.0,'seed':config['seed'],'output':str(native)}],device='cpu',os_offline=True)
