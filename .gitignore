@@ -18,3 +18,11 @@ __pycache__/
 public/episodes/tts-integration-check/
 public/tts-voice-reel/
 renders/voice-comparison-review/
+
+alignment/environments/
+alignment/models/
+alignment/.cache/
+alignment/outputs/
+public/episodes/production-check/*.wav
+public/episodes/*/narration.wav
+renders/episodes/*/review/

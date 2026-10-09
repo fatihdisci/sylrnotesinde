@@ -1,0 +1,15 @@
+# Yerel Türkçe hizalama · 2026-10-09
+
+[WhisperX](https://github.com/m-bain/whisperX) stable PyPI3.8.6 / main3.8.7rc1 incelendi: Python>=3.10,<3.14, BSD-2-Clause; Türkçe varsayılanı `mpoyraz/wav2vec2-xls-r-300m-cv7-turkish`, resmî CPU/Mac yolu mevcut. Tam paket ayrıca faster-whisper, pyannote, torchaudio/torchvision/torchcodec, nltk getirir.
+
+WhisperX paketi bu projeye kurulmadı. Aynı Türkçe modelle bağımsız **CTC Viterbi forced alignment** gerçek M1 sesinde test edildikten sonra kullanıldı. Bilinen kesin metin gerçek ses logits’lerine hizalanır. Konuşma hızından süre hesaplama veya eksik kelimeye interpolasyon yoktur. Aynı logits’ten greedy metin yalnız tanı amaçlıdır; ikinci transkripsiyon modeli veya zaman kaynağı değildir.
+
+Model: [mpoyraz/wav2vec2-xls-r-300m-cv7-turkish](https://huggingface.co/mpoyraz/wav2vec2-xls-r-300m-cv7-turkish), revision `708639f50559d7970f462e13ec64d3f059ca89f6`. Kart CC-BY-4.0 belirtir. Atıf: mpoyraz, “wav2vec2-xls-r-300m-cv7-turkish”, Hugging Face; XLS-R300m’nin Türkçe Common Voice7/MediaSpeech ince ayarı. [CC-BY4](https://creativecommons.org/licenses/by/4.0/) ticari kullanıma izin verir; atıf, lisans bağlantısı ve değişiklik bildirimi korunmalıdır. Ağırlık değiştirilmedi. Tam resmî lisans metni: https://creativecommons.org/licenses/by/4.0/legalcode.en. Metni otomatik indirme403 döndü; bağlantı ve atıf kaydedildi. WhisperX inceleme lisansı `whisperx-LICENSE` olarak saklandı. Hizalayıcı lisansı TTS sesinin OpenRAIL-M şartlarını değiştirmez.
+
+Doğrulanan kilit: CPython3.11.15, PyTorch2.8.0, Transformers4.57.6, NumPy2.2.6; Apple M4 arm64 CPU/2 thread. En yeni PyPI sürümlerini körlemesine yükseltmek yerine WhisperX’in2.8 serisiyle uyumlu ve gerçek modelde çalışan sürümler sabitlendi. Ayrı `alignment/environments/ctc`, tam kilit `locks/macos-arm64.txt`; Supertonic ONNX ortamı değişmedi. Ağırlıklar SHA256 ile doğrulanır. Çalışma `local_files_only=True`, HF offline bayrakları, OS `deny network*` ve socket audit hook’u kullanır.
+
+WAV yerel FFmpeg ile16kHz mono analiz kopyasına çevrilir.20ms CTC harf spike’ları, komşu kelime sınırlarını aşmadan yakın10ms gerçek RMS pencereleriyle akustik kenara genişletilir; bu düzeltme ayrıca kaydedilir. Confidence kalibre doğruluk olasılığı değildir. Düşük skor, kısa/uzun kelime ve greedy uyuşmazlığı `needs_review` üretir. Gerçek20ms enerji profili manuel düzenlemeden sonraki konuşmalı boşlukları da denetler.
+
+Türkçe NFC, İ→i/I→ı ve â/î/û normalizasyonu açıktır. Noktalama kelime/ekran kaydında korunur. Sayılar spoken alanında yazıyla; display alanına açık öbek→word-ID eşlemesiyle girilir. Desteklenmeyen karakter veya sayısal spoken token hata verir; kelime atlanmaz.
+
+[PyTorch forced alignment](https://docs.pytorch.org/tutorials/intermediate/forced_alignment_with_torchaudio_tutorial.html) CTC dinamik programlama/backtracking temelini açıklar. Burada repeated-label blank kuralı ayrıca test edildi. Donanımlar arasında bit eşitliği garanti edilmez. Bu Mac’te OS ağ yasağıyla tekrar67 kelime zamanını birebir üretti; kayıt `production-check-offline-qa.json`. MacBook’ta bu oturumda çalıştırılmadı.

@@ -1,39 +1,26 @@
 # Bölüm sesini Remotion’a bağlamak
 
-Görsel proje, StyleProof ve outro değiştirilmedi. Mevcut `assets:voice` Yelda denemesi geçmiş görsel testin kaynağı olarak korundu. Kullanıcı yeni bölümler için **Supertonic 3 / M1** seçti. `tts/config/narrator.json` tek ayar kaynağıdır; model/profil belirtmeden CLI bu seçimi kullanır. Doğal hız1 korunur; her bölümün gerçek ses süresi ayrıca doğrulanır. Seçili anlatıcı, her üretilen dosyanın altyazı/ses incelemesinin tamamlandığı anlamına gelmez.
+Kalıcı anlatıcı **Supertonic 3 / M1 erkek**, seçili doğal hızdır. `tts/config/narrator.json` tek ayar kaynağıdır. StyleProof/Yelda sesleri ve eski karşılaştırma çıktıları tarihsel varlık olarak korunur; Antalia/EMA yeniden kurulmaz.
 
-Ortak CLI modellerin kendi venv’lerine subprocess ile gider. Animasyon kodu PyTorch/ONNX/TTS import etmez. `render.ts` ses üretmez, hazırlanmış WAV okur. Sahne süreleri gerçek ses süresinden hesaplanır; son 45 kare kanonik outroya ayrılır.
+Yeni bölümlerin güncel akışı [üretim rehberinde](../../docs/PRODUCTION_GUIDE.md):
 
 ```sh
-# Merkezi seçimden Supertonic 3 / M1 kullanılır.
-npm run tts:episode -- --id yeni-bolum --text-file anlatim.txt
+npm run episode:prepare -- --id <id>
+npm run episode:review -- --id <id>
+npm run episode:render -- --id <id>
+npm run episode:qa -- --id <id>
 ```
 
-Bu komut native master ve metadata’yı `tts/outputs/episodes/yeni-bolum/` altında tutar, eşitlenmiş WAV’ı `public/episodes/yeni-bolum/narration.wav` olarak hazırlar. `narration-manifest.json` alanları mevcut türlendirilmiş `Episode` yapısının `narration`, `audio`, `subtitlePath`, `captions` alanlarıyla uyumludur. Önerilen kare sayısı gerçek WAV +45’tir; 40–45 saniyelik toplam bölüm kuralını denetler. Daha kısa/uzun taslakta `--allow-extended-duration` yalnız üretim/inceleme için açık istisnadır; `loadNarration` yine geçersiz bölüm süresini kabul etmez.
+`src/episodes/<id>/production.json` içindeki kesin konuşma metniyle M1 sesi önce üretilir. Native master `tts/outputs/episodes/<id>/`, normalize WAV ve kelime/altyazı varlıkları `public/episodes/<id>/` altındadır. Ayrı yerel hizalama ortamı gerçek WAV'ı analiz eder. TTS ve hizalama render sırasında çalışmaz. Her ikisi de ilk model indirmesinden sonra OS ağ yasağı altında çevrimdışı çalışır.
 
-Mevcut bölüm varlık klasörünü ezmez. Düzeltme gerektiğinde yeni revision ID kullan. Bir giriş metnini değiştirmek eski WAV’ın kendiliğinden güncellendiği anlamına gelmez; yeniden üretim ve süre kontrolü yapılır.
+Yerel incelemede zamanları ms veya ±1 kare düzelt. Sesi dinleyip kontrol ettikten sonra açık insan onayı ver. Kaydetmek onay değildir. SRT ve gömülü altyazı aynı kelime export'undan gelir. İnceleme öncesi render/QA için `--draft` kullan; yayın komutları metin/ses/ayar/model/hash ve insan inceleme kapısını zorunlu tutar.
 
-Altyazı ilk adımda boş ve `captionReviewRequired=true` olur. EMA model zamanları metadata içinde tutulur, kusursuz hizalanmış sayılmaz. Diğer adaylar zaman etiketi sağlamaz. Uydurma sözcük zamanları üretilmez. Dinleyerek kısa anlam öbekleri için şu JSON hazırlanır:
+Toplam video **40–45 saniye**, son **45 kare** ortak outro. Konuşma için 38,5 saniyelik alt sınır yoktur. Son kelimeden sonraki WAV sessizliği sonuç tutuşuna sayılır; sessizlik iki kere eklenmez. M1 otomatik hızlanmaz. Uzunsa anlatımı sadeleştir.
 
-```json
-[
-  {"from": 0, "to": 76, "lines": ["İlk anlamlı anlatım öbeği."]},
-  {"from": 79, "to": 154, "lines": ["İkinci öbek en fazla", "iki satırdır."]}
-]
-```
+`loadNarration` yalnız build-time Node kodunda kullanılır; tarayıcıdaki TSX içine import edilmez. Varsayılanı yayındır; `loadNarration(id,{publication:false})` taslak yükler. Özgün TSX sahneleri `EpisodeComposition` kullanır ve registry'ye kaydedilir. Yayın yolunda elle hazırlanmış captions JSON tek başına onay sayılmaz.
 
-Örnekteki kareler yalnız dosya biçimini gösterir; gerçek sese ait doğrulanmış zamanlar değildir. `--captions kontrol-edilmis.json` ile **yeni revision ID’ye** export edilir. Komut aralıkları, çakışmayı, iki satır sınırını ve ses süresini denetler; bu yapısal kontrol insanın ses/görsel incelemesinin yerine geçmez.
+## Tarihsel ham ses aracı
 
-Yeni bölümün build-time kodunda:
+`npm run tts:episode -- --id <yeni-id> --text-file <metin.txt>` eski ham ses hazırlama komutudur. Mevcut klasörü ezmez, elle cue ithalini destekler; yeni forced-alignment yayın manifesti üretmez. Eski `--allow-extended-duration` bayrağı yalnız komut uyumluluğu için kabul edilir ve artık süre kuralını kaldırmaz. Yeni üretimde üstteki `episode:prepare` akışını kullan.
 
-```ts
-import {loadNarration} from '../../../scripts/load-narration';
-// Build-time Node scriptinde çalıştır, sonucu bölüm veri dosyasına yaz.
-const prepared = loadNarration('yeni-bolum');
-// Episode verisine narration/audio/subtitlePath/captions alanlarını aktar.
-// Özgün TSX sahnelerini gerçek ses işaretlerine göre tasarla.
-```
-
-`loadNarration` Node dosya okuması kullandığı için tarayıcıdaki TSX bileşenine import edilmez; bölüm hazırlama/build scriptinde çalışır. Gözden geçirilmemiş altyazıyı, eksik WAV’ı, geçersiz marka/FPS’yi veya outroya taşan sesi reddeder. Son Episode için mevcut `validateEpisode` ve görsel/render QA da uygulanır. Ses sağlayıcısı/voice ID/speed/seed ve kaynak model revision’ları metadata’da kalır; API anahtarı yok.
-
-Gerçek entegrasyon denemesi bu Mac’te `public/episodes/tts-integration-check/` altında 43,315 saniyelik Antalia sesi ve 1345 kare (44,833 sn, outro dahil) manifest üretti. Taslak altyazı kontrolü bekliyor; yayımlanacak bölüm veya yeni görsel composition kaydedilmedi. Bu deneme Git dışıdır. Üretim aracı test edildi; tam anlatımlı yeni bir Remotion bölüm render’ı bu görevde görselleri değiştirmemek için yapılmadı.
+Geçmişte Git dışı `tts-integration-check` altında 43,315 saniyelik Antalia ham ses denemesi yapıldı. Bu tarihsel test yeni M1 entegrasyon testi değildir ve bu görevde yeniden üretilmedi. Güncel 40 saniyelik gerçek M1 MP4: `renders/episodes/production-check/draft.mp4`; [ölçüm ve inceleme kaydı](../../docs/PRODUCTION_QA.md).

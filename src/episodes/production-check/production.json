@@ -1,0 +1,29 @@
+{
+  "title": "Saniyelerin ölçeği",
+  "hook": "Bin kat fark.",
+  "narrationStartFrame": 0,
+  "resultHoldFrames": 60,
+  "phrases": [
+    {"spoken": "Bir milyonla bir milyar arasında", "display": ["1.000.000 ile 1.000.000.000 arasında"]},
+    {"spoken": "tam bin kat fark var.", "display": ["Tam 1.000 kat fark var."]},
+    {"spoken": "Saniyeleri günlere çevirelim.", "display": ["Saniyeleri günlere çevirelim."]},
+    {"spoken": "Bir milyon saniye, yaklaşık", "display": ["1.000.000 saniye, yaklaşık"]},
+    {"spoken": "on bir virgül altı gün sürer.", "display": ["11,6 gün sürer."]},
+    {"spoken": "Bir milyar saniye ise", "display": ["1.000.000.000 saniye ise"]},
+    {"spoken": "yaklaşık otuz bir virgül yedi yıl eder.", "display": ["Yaklaşık 31,7 yıl eder."]},
+    {"spoken": "Şimdi çizgilerin uzunluğuna bakın.", "display": ["Şimdi çizgilerin uzunluğuna bakın."]},
+    {"spoken": "Her parça eşit süreyi gösteriyor.", "display": ["Her parça eşit süreyi gösteriyor."]},
+    {"spoken": "Kısa çizgiyi bin defa yan yana koyarsak", "display": ["Kısa çizgiyi 1.000 defa", "yan yana koyarsak"]},
+    {"spoken": "uzun çizgiye ulaşırız.", "display": ["Uzun çizgiye ulaşırız."]},
+    {"spoken": "Burada alanı değil, uzunluğu karşılaştırıyoruz.", "display": ["Alanı değil, uzunluğu", "karşılaştırıyoruz."]},
+    {"spoken": "Bir kilometre bin metredir.", "display": ["1 kilometre = 1.000 metre."]},
+    {"spoken": "Birim değişir, ölçülen mesafe değişmez.", "display": ["Birim değişir.", "Ölçülen mesafe değişmez."]}
+  ],
+  "sources": [{"title": "SI Brochure · BIPM", "url": "https://www.bipm.org/en/publications/si-brochure", "note": "1 gün=86.400 s; kilo=10³. Yıl dönüşümü bu testte365,25 gün/yıl varsayımıyla hesaplanır.", "accessed": "2026-10-09"}],
+  "claims": [
+    {"id": "ratio", "quantity": "length", "numerator": 1000000000, "denominator": 1000000, "ratio": 1000, "assumptions": "Çizgi uzunluğu süreye doğrusal; kalınlık veri kodlamaz.", "scale": "linear"},
+    {"id": "days", "quantity": "time", "numerator": 1000000, "denominator": 86400, "ratio": 11.574074074074074, "assumptions": "Yaklaşık11,6 gün;24 saat/gün.", "scale": "linear"},
+    {"id": "years", "quantity": "time", "numerator": 1000000000, "denominator": 31557600, "ratio": 31.68808781402895, "assumptions": "365,25 gün/yıl; yaklaşık31,7 yıl.", "scale": "linear"},
+    {"id": "metres", "quantity": "length", "numerator": 1000, "denominator": 1, "ratio": 1000, "assumptions": "1 km=1.000 m; eşit mesafe farklı birimle yazılır.", "scale": "linear"}
+  ]
+}

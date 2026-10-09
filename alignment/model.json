@@ -1,0 +1,45 @@
+{
+  "repo": "mpoyraz/wav2vec2-xls-r-300m-cv7-turkish",
+  "revision": "708639f50559d7970f462e13ec64d3f059ca89f6",
+  "license": "CC-BY-4.0",
+  "engine": "ctc-viterbi-v1",
+  "sampleRate": 16000,
+  "frameStrideMs": 20,
+  "files": [
+    {
+      "path": "config.json",
+      "sha256": "8c8c02e416aaca6f258fd270eec4d646e8ad60a7a2bc6516f37cef9f21589df5",
+      "bytes": 2035
+    },
+    {
+      "path": "preprocessor_config.json",
+      "sha256": "94c00f2bccbdbf4891a1ed8be371e59debaedd03d64f5e8313cedfa4c60da22b",
+      "bytes": 260
+    },
+    {
+      "path": "special_tokens_map.json",
+      "sha256": "50eb73d51191696209d30d42d6ede50e57e7a542ca1db12df714b2c0aa3da8e2",
+      "bytes": 85
+    },
+    {
+      "path": "tokenizer_config.json",
+      "sha256": "573f3d46704a5482552885e2ca828fdcb2df1fbe90059a4d18ac2ee15820ca31",
+      "bytes": 181
+    },
+    {
+      "path": "vocab.json",
+      "sha256": "6641ad4761f75bbba7ca2591b1eaef57d1ab444762bf6a51f2ddbd70bfe3ee2f",
+      "bytes": 351
+    },
+    {
+      "path": "pytorch_model.bin",
+      "sha256": "008d69c82bf45c82ec5485e550abc86ddabefe75080f22e1ebfdc1699889d82e",
+      "bytes": 1262079473
+    },
+    {
+      "path": "README.md",
+      "sha256": "813b4863faa849181d6c614f8f5c563a7bf0a108290b7e320aaa7337fd97ee01",
+      "bytes": 3554
+    }
+  ]
+}

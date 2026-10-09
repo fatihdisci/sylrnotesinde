@@ -45,7 +45,7 @@ npm run qa:media
 
 ## Yeni bölüm
 
-Önce AGENTS.md ve orada listelenen dört belgeyi oku. `src/episodes/<id>/episode.ts` içinde `Episode` türüne uygun senaryo, kaynaklar, süreler ve ses yollarını tanımla; `Scenes.tsx` içinde konuya özel animasyonları yaz. Yerel varlıkları `public/episodes/<id>/` altına koy. Sahneyi `EpisodeComposition` ile sar ve `src/compositions/Root.tsx` içine 1080×1920, 30 FPS, outro dahil 1200–1350 karelik `Composition` ekle. Render: `npx remotion render src/index.ts <CompositionId> renders/<id>.mp4`.
+Önce AGENTS.md ve [üretim rehberini](docs/PRODUCTION_GUIDE.md) oku. `src/episodes/<id>/production.json` içinde konuşma/ekran metni, kaynaklar ve hesaplamaları tanımla; `Scenes.tsx` içinde konuya özel animasyonları yaz. `episode:prepare` gerçek sesi üretir, ölçer ve kelimeleri hizalar. İnsan incelemesinden sonra `src/episodes/registry.ts` kaydıyla genel `episode:render` / `episode:qa` komutlarını kullan. Sahneyi `EpisodeComposition` sarar; toplam süre outro dahil 1200–1350 karedir. Doğrudan Remotion CLI, yayın bütünlüğü/onay kapısının yerine geçmez.
 
 Ortak bileşenler `src/components/`, marka `src/brand/`, üretim araçları `scripts/` altında. Her sahne aynı şablonu doldurmak zorunda değil. Three.js, veritabanı, bulut servis veya yönetim paneli kullanılmıyor.
 
@@ -78,3 +78,22 @@ MacBook Apple Silicon için `git clone https://github.com/fatihdisci/sylrnotesin
 Supertonic kodu MIT, ağırlıkları **OpenRAIL-M**: ticari kullanıma genel yasak yok, kullanım kısıtları ve yapay zekâ üretimi açıklama şartı var. Diğer iki aday Apache 2.0. Tam lisans kopyaları ve kaynak revision’ları `tts/docs/licenses/` ve `tts/config/models.json` içinde.
 
 12 profilin aynı tek cümleyi söylediği mobil MP4: [tts-12-profiles.mp4](renders/tts-12-profiles.mp4). Yaklaşık70 saniye /2,7 MB. Yeniden üretim: `npm run tts:reel`; gerçek MP4 QA: `python3 tts/qa_reel.py`. [Üretim ve inceleme kaydı](tts/docs/MOBILE_REEL.md).
+
+## Gerçek üretim / kelime senkronu
+
+[Güncel üretim rehberi](docs/PRODUCTION_GUIDE.md). Ayrı yerel Türkçe CTC hizalayıcı, konuşma/ekran metni eşlemesi,±1 kare düzeltme ve insan onay kapısı eklendi. Marka ve tarihsel StyleProof/Yelda korundu.
+
+```sh
+npm run alignment:setup
+npm run episode:prepare -- --id production-check
+npm run episode:review -- --id production-check
+npm run episode:render -- --id production-check --draft
+npm run episode:qa -- --id production-check --draft
+npm run episode:test
+npm run alignment:test
+npm run alignment:offline -- --id production-check
+```
+
+Bu Mac’te ses hazırdır; yeniden hizalama için `episode:prepare -- --id production-check --realign`. Yeni metin için yeni revision ID. İnceleme: http://127.0.0.1:3033. Bayraksız render/QA insan onayı gerektirir. Eski `tts:episode` ham ses hazırlama yoludur; yayın kapısını atlamaz.
+
+Örnek `renders/episodes/production-check/draft.mp4`; kelime JSON/SRT `public/episodes/production-check/`; QA ve kontrol kareleri `renders/episodes/production-check/`. Örnek yayın bölümü değildir; insan dinlemesi bekleniyor. [Yöntem/lisans](alignment/docs/METHOD.md), [gerçek test raporu](docs/PRODUCTION_QA.md).

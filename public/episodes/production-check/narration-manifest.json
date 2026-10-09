@@ -1,0 +1,311 @@
+{
+  "id": "production-check",
+  "title": "Saniyelerin ölçeği",
+  "hook": "Bin kat fark.",
+  "brandVersion": "0.1-candidate",
+  "kind": "episode",
+  "durationInFrames": 1200,
+  "narration": [
+    {
+      "id": "narration",
+      "text": "Bir milyonla bir milyar arasında tam bin kat fark var. Saniyeleri günlere çevirelim. Bir milyon saniye, yaklaşık on bir virgül altı gün sürer. Bir milyar saniye ise yaklaşık otuz bir virgül yedi yıl eder. Şimdi çizgilerin uzunluğuna bakın. Her parça eşit süreyi gösteriyor. Kısa çizgiyi bin defa yan yana koyarsak uzun çizgiye ulaşırız. Burada alanı değil, uzunluğu karşılaştırıyoruz. Bir kilometre bin metredir. Birim değişir, ölçülen mesafe değişmez.",
+      "from": 0,
+      "durationInFrames": 994,
+      "path": "episodes/production-check/narration.wav"
+    }
+  ],
+  "sources": [
+    {
+      "title": "SI Brochure · BIPM",
+      "url": "https://www.bipm.org/en/publications/si-brochure",
+      "note": "1 gün=86.400 s; kilo=10³. Yıl dönüşümü bu testte365,25 gün/yıl varsayımıyla hesaplanır.",
+      "accessed": "2026-10-09"
+    }
+  ],
+  "claims": [
+    {
+      "id": "ratio",
+      "quantity": "length",
+      "numerator": 1000000000,
+      "denominator": 1000000,
+      "ratio": 1000,
+      "assumptions": "Çizgi uzunluğu süreye doğrusal; kalınlık veri kodlamaz.",
+      "scale": "linear"
+    },
+    {
+      "id": "days",
+      "quantity": "time",
+      "numerator": 1000000,
+      "denominator": 86400,
+      "ratio": 11.574074074074074,
+      "assumptions": "Yaklaşık11,6 gün;24 saat/gün.",
+      "scale": "linear"
+    },
+    {
+      "id": "years",
+      "quantity": "time",
+      "numerator": 1000000000,
+      "denominator": 31557600,
+      "ratio": 31.68808781402895,
+      "assumptions": "365,25 gün/yıl; yaklaşık31,7 yıl.",
+      "scale": "linear"
+    },
+    {
+      "id": "metres",
+      "quantity": "length",
+      "numerator": 1000,
+      "denominator": 1,
+      "ratio": 1000,
+      "assumptions": "1 km=1.000 m; eşit mesafe farklı birimle yazılır.",
+      "scale": "linear"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "continuous",
+      "from": 0,
+      "to": 1155,
+      "purpose": "Original continuous TSX visualization"
+    }
+  ],
+  "audio": {
+    "voiceProvider": "local:supertonic-3",
+    "voiceStatus": "temporary"
+  },
+  "subtitlePath": "episodes/production-check/captions.json",
+  "captions": [
+    {
+      "from": 17,
+      "to": 74,
+      "lines": [
+        "1.000.000 ile 1.000.000.000 arasında"
+      ],
+      "wordIds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "timingSource": "forced-alignment"
+    },
+    {
+      "from": 77,
+      "to": 120,
+      "lines": [
+        "Tam 1.000 kat fark var."
+      ],
+      "wordIds": [
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "timingSource": "forced-alignment"
+    },
+    {
+      "from": 127,
+      "to": 173,
+      "lines": [
+        "Saniyeleri günlere çevirelim."
+      ],
+      "wordIds": [
+        10,
+        11,
+        12
+      ],
+      "timingSource": "forced-alignment"
+    },
+    {
+      "from": 186,
+      "to": 246,
+      "lines": [
+        "1.000.000 saniye, yaklaşık"
+      ],
+      "wordIds": [
+        13,
+        14,
+        15,
+        16
+      ],
+      "timingSource": "forced-alignment"
+    },
+    {
+      "from": 246,
+      "to": 306,
+      "lines": [
+        "11,6 gün sürer."
+      ],
+      "wordIds": [
+        17,
+        18,
+        19,
+        20,
+        21,
+        22
+      ],
+      "timingSource": "forced-alignment"
+    },
+    {
+      "from": 316,
+      "to": 357,
+      "lines": [
+        "1.000.000.000 saniye ise"
+      ],
+      "wordIds": [
+        23,
+        24,
+        25,
+        26
+      ],
+      "timingSource": "forced-alignment"
+    },
+    {
+      "from": 358,
+      "to": 429,
+      "lines": [
+        "Yaklaşık 31,7 yıl eder."
+      ],
+      "wordIds": [
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33
+      ],
+      "timingSource": "forced-alignment"
+    },
+    {
+      "from": 444,
+      "to": 500,
+      "lines": [
+        "Şimdi çizgilerin uzunluğuna bakın."
+      ],
+      "wordIds": [
+        34,
+        35,
+        36,
+        37
+      ],
+      "timingSource": "forced-alignment"
+    },
+    {
+      "from": 514,
+      "to": 582,
+      "lines": [
+        "Her parça eşit süreyi gösteriyor."
+      ],
+      "wordIds": [
+        38,
+        39,
+        40,
+        41,
+        42
+      ],
+      "timingSource": "forced-alignment"
+    },
+    {
+      "from": 608,
+      "to": 686,
+      "lines": [
+        "Kısa çizgiyi 1.000 defa",
+        "yan yana koyarsak"
+      ],
+      "wordIds": [
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49
+      ],
+      "timingSource": "forced-alignment"
+    },
+    {
+      "from": 692,
+      "to": 735,
+      "lines": [
+        "Uzun çizgiye ulaşırız."
+      ],
+      "wordIds": [
+        50,
+        51,
+        52
+      ],
+      "timingSource": "forced-alignment"
+    },
+    {
+      "from": 747,
+      "to": 829,
+      "lines": [
+        "Alanı değil, uzunluğu",
+        "karşılaştırıyoruz."
+      ],
+      "wordIds": [
+        53,
+        54,
+        55,
+        56,
+        57
+      ],
+      "timingSource": "forced-alignment"
+    },
+    {
+      "from": 839,
+      "to": 885,
+      "lines": [
+        "1 kilometre = 1.000 metre."
+      ],
+      "wordIds": [
+        58,
+        59,
+        60,
+        61
+      ],
+      "timingSource": "forced-alignment"
+    },
+    {
+      "from": 896,
+      "to": 974,
+      "lines": [
+        "Birim değişir.",
+        "Ölçülen mesafe değişmez."
+      ],
+      "wordIds": [
+        62,
+        63,
+        64,
+        65,
+        66
+      ],
+      "timingSource": "forced-alignment"
+    }
+  ],
+  "provenance": {
+    "specHash": "2eecb33011e3ca5f61a6874ecae815a8f936d6d36d2a5aa9c8ccd41fafe8a2cf",
+    "textHash": "f6839e3b28a7a291016a11a416004f284bb7d2499c500128a7b60e2faf555926",
+    "settingsHash": "74d418accde194c650a4922f94ea2560f0e7ab86980d9aae6e274dffd88240b1",
+    "ttsModelHash": "7c9f9df57674bded168ddcf3acae637c8b91e77ea31f9c02af541a35bb00289a",
+    "audioHash": "f0ee25cd6c9c2bd06685768e51933665a5f4b333e9182198b17aa3df35a375a4",
+    "alignmentHash": "0b8043491cf5678d774a7aea795eee288c852aaf8a7f1287d515332fbb9d608d",
+    "captionsHash": "480de6a4c057552d53e5b6f453052fe1da6d5b517ca889ebd532c6f3dd31cefa",
+    "reviewStatus": "needs_review",
+    "reviewer": null,
+    "wordTimingPath": "episodes/production-check/word-timings.json"
+  },
+  "timeline": {
+    "audioFrames": 994,
+    "narrationStartFrame": 0,
+    "resultFromFrame": 974,
+    "resultHoldFrames": 181,
+    "outroFromFrame": 1155,
+    "durationInFrames": 1200
+  },
+  "fps": 30,
+  "captionReviewRequired": true,
+  "recommendedTotalFrames": 1200
+}

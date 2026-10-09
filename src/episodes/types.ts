@@ -7,17 +7,43 @@ export type Episode = {
   scenes: readonly {id: string; from: number; to: number; purpose: string}[];
   audio: {voiceProvider: string; voiceStatus: 'temporary' | 'final' | 'absent'; sfxPath?: string; musicPath?: string};
   subtitlePath: string; captions: readonly CaptionCue[];
+  claims?: readonly {id: string; quantity: 'length' | 'area' | 'volume' | 'count' | 'time'; numerator: number; denominator: number; ratio: number; assumptions: string; scale: 'linear' | 'schematic' | 'logarithmic'}[];
+  provenance?: {specHash: string; textHash: string; settingsHash: string; ttsModelHash: string; audioHash: string; alignmentHash: string; captionsHash: string; reviewStatus: string; reviewer?: string | null; wordTimingPath: string};
+  timeline?: {narrationStartFrame: number; audioFrames: number; resultFromFrame: number; resultHoldFrames: number; outroFromFrame: number; durationInFrames: number};
 };
-export const validateEpisode = (episode: Episode) => {
-  const {durationInFrames: d} = episode;
-  if (episode.kind === 'episode' && (d < 1200 || d > 1350)) throw new Error('Episode must be 40–45 s including outro');
+export const validateEpisode = (episode: Episode, {publication = false}: {publication?: boolean} = {}) => {
+  const frame = (n: number) => {if (!Number.isSafeInteger(n) || n < 0) throw new Error('Invalid frame');};
+  const {durationInFrames: d} = episode; frame(d);
+  if (episode.kind === 'episode' && (d < 1200 || d > 1350)) throw new Error('Episode must be40–45s including outro');
   if (episode.brandVersion !== '0.1-candidate') throw new Error('Brand version mismatch');
-  for (const n of episode.narration) if (n.from + n.durationInFrames > d - 45) throw new Error('Narration overlaps outro');
-  for (const c of episode.captions) if (c.lines.length > 2 || c.to > d - 45 || c.to <= c.from) throw new Error('Invalid caption');
+  const content = d - 45;
+  let narrationEnd = 0;
+  for (const n of episode.narration) {
+    frame(n.from); frame(n.durationInFrames);
+    if (!n.durationInFrames || n.from < narrationEnd || !n.path.trim() || !n.text.trim()) throw new Error('Invalid or overlapping narration');
+    narrationEnd = n.from + n.durationInFrames;
+    if (narrationEnd > content) throw new Error('Narration overlaps outro');
+  }
+  let captionEnd = 0;
+  for (const c of episode.captions) {
+    frame(c.from); frame(c.to);
+    if (c.from < captionEnd || c.to > content || c.to <= c.from || !c.lines.length || c.lines.length > 2 || c.lines.some(l => !l.trim())) throw new Error('Invalid/overlapping caption');
+    captionEnd = c.to;
+  }
   let end = 0;
   for (const s of episode.scenes) {
+    frame(s.from); frame(s.to);
     if (s.from !== end || s.to <= s.from) throw new Error('Scene gap or overlap');
     end = s.to;
   }
-  if (end !== d - 45) throw new Error('Scenes must end before the canonical outro');
+  if (end !== content) throw new Error('Scenes must end before the canonical outro');
+  for (const c of episode.claims ?? []) {
+    if (!c.id?.trim() || !['length','area','volume','count','time'].includes(c.quantity) || !['linear','schematic','logarithmic'].includes(c.scale) || ![c.numerator, c.denominator, c.ratio].every(Number.isFinite) || c.denominator <= 0 || c.numerator < 0 || Math.abs(c.ratio - c.numerator / c.denominator) > Math.max(1, c.ratio) * 1e-9 || !c.assumptions.trim()) throw new Error('Unverifiable numeric claim');
+  }
+  if (publication && episode.kind === 'episode') {
+    const p = episode.provenance;
+    if (!episode.narration.length || !episode.captions.length || !episode.sources.length || episode.sources.some(s => !s.title.trim() || !s.note.trim() || !s.accessed?.trim()) || !episode.claims?.length) throw new Error('Publication requires narration, captions, sources and claims');
+    if (!p || p.reviewStatus !== 'approved' || !p.reviewer || ![p.specHash, p.textHash, p.settingsHash, p.ttsModelHash, p.audioHash, p.alignmentHash, p.captionsHash].every(h => /^[a-f0-9]{64}$/.test(h))) throw new Error('Publication requires reviewed, versioned audio/captions');
+    if (episode.captions.some(c => c.timingSource !== 'forced-alignment' || !c.wordIds?.length)) throw new Error('Missing aligned caption words');
+  }
 };

@@ -13,3 +13,8 @@ Yeni bölüm görevine başlamadan önce sırasıyla `docs/DESIGN_SYSTEM.md`, `d
 - TTS işi öncesi `tts/docs/INSTALLATION.md`, `tts/docs/PROTOCOL.md`, `tts/docs/REMOTION.md` oku. Kilit/revision/model kimliği değiştirilirse raporla; Mini ve Antalia 1’i karıştırma.
 - Anlatıcı seçimi `tts/config/narrator.json` üzerinden yalnız kullanıcı kararından sonra. Mevcut StyleProof/Yelda sesleri tarihsel test varlıklarıdır; onları ve görsel/outro bileşenlerini değiştirme. Yeni bölümlerde seçili Supertonic 3 / M1 kullan. Her iki cihazda venv’yi yerelde yeniden kur.
 - Ses değişikliğinde `npm run tts:test`, `npm run tts:qa` ve gerektiğinde `npm run tts:offline`. Öznel kaliteyi veya sözcük senkronunu ölçmeden doğrulanmış sayma. Kullanıcı puanları ile TEST FIXTURE kayıtlarını ayır.
+
+- Gerçek bölüm üretimi öncesi `docs/PRODUCTION_GUIDE.md` ve `alignment/docs/METHOD.md` oku. `episode:prepare` → yerel kelime incelemesi → `episode:render` → `episode:qa`. Eski `tts:episode` yalnız ham/tarihsel ses hazırlığıdır.
+- `--draft` taslağa izin verir; bayraksız yayın komutları insan dinleme/onay kaydı ve güncel metin/ses/ayar/hizalama hash’lerini zorunlu tutar. CTC güveni insan onayı değildir; `approved` durumunu kullanıcı adına yazma.
+- SRT ve gömülü altyazı aynı word-timing export’undan gelir.30 FPS başlangıcı floor, bitişi ceil; eski Yelda cue fade’i korunur. Ağırlık, venv ve büyük WAV Git dışıdır.
+- Yeni özgün Scenes.tsx + production.json ve registry kaydı yeterlidir. Genel scriptlere bölüm süresi/kare listesi gömme. `episode:test`, `alignment:test`, gerçek MP4 QA ve marka referanslarını çalıştır.

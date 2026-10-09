@@ -29,7 +29,15 @@
     "tts:qa": "python3 tts/qa.py",
     "tts:episode": "python3 tts/prepare_episode.py",
     "tts:offline": "python3 tts/verify_offline.py",
-    "tts:reel": "python3 tts/prepare_reel.py && tsx scripts/render-voice-reel.ts"
+    "tts:reel": "python3 tts/prepare_reel.py && tsx scripts/render-voice-reel.ts",
+    "alignment:setup": "python3 alignment/setup.py",
+    "episode:prepare": "python3 production/prepare.py",
+    "episode:review": "python3 production/review.py",
+    "episode:render": "tsx scripts/episode.ts render",
+    "episode:qa": "tsx scripts/episode.ts qa",
+    "episode:test": "python3 -m unittest discover -s production/tests -v",
+    "alignment:test": "alignment/environments/ctc/bin/python -m unittest discover -s alignment/tests -v",
+    "alignment:offline": "python3 alignment/verify_offline.py"
   },
   "keywords": [],
   "license": "UNLICENSED",
