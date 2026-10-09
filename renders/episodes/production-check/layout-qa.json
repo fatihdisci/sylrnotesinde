@@ -1,0 +1,4298 @@
+[
+  {
+    "frame": 0,
+    "rects": [
+      {
+        "name": "brand-signature",
+        "x": 72,
+        "y": 184,
+        "width": 408.0625,
+        "height": 34,
+        "right": 480.0625,
+        "bottom": 218,
+        "overflow": false
+      },
+      {
+        "name": "heading",
+        "x": 72,
+        "y": 300,
+        "width": 451,
+        "height": 197.09375,
+        "right": 523,
+        "bottom": 497.09375,
+        "overflow": false
+      },
+      {
+        "name": "number",
+        "x": 72,
+        "y": 535,
+        "width": 596.40625,
+        "height": 185,
+        "right": 668.40625,
+        "bottom": 720,
+        "overflow": false
+      },
+      {
+        "name": "unit",
+        "x": 76,
+        "y": 724,
+        "width": 268.671875,
+        "height": 49,
+        "right": 344.671875,
+        "bottom": 773,
+        "overflow": false
+      },
+      {
+        "name": "encoding",
+        "x": 72,
+        "y": 1300,
+        "width": 864,
+        "height": 47,
+        "right": 936,
+        "bottom": 1347,
+        "overflow": false
+      }
+    ],
+    "violations": [],
+    "collisions": [],
+    "fonts": [
+      {
+        "family": "IBM Plex Sans",
+        "weight": "400",
+        "file": "IBMPlexSans-Regular.woff2",
+        "loaded": true
+      },
+      {
+        "family": "IBM Plex Sans",
+        "weight": "500",
+        "file": "IBMPlexSans-Medium.woff2",
+        "loaded": true
+      },
+      {
+        "family": "IBM Plex Sans",
+        "weight": "600",
+        "file": "IBMPlexSans-SemiBold.woff2",
+        "loaded": true
+      },
+      {
+        "family": "IBM Plex Mono",
+        "weight": "400",
+        "file": "IBMPlexMono-Regular.woff2",
+        "loaded": true
+      },
+      {
+        "family": "IBM Plex Mono",
+        "weight": "500",
+        "file": "IBMPlexMono-Medium.woff2",
+        "loaded": true
+      }
+    ]
+  },
+  {
+    "frame": 17,
+    "rects": [
+      {
+        "name": "brand-signature",
+        "x": 72,
+        "y": 184,
+        "width": 408.0625,
+        "height": 34,
+        "right": 480.0625,
+        "bottom": 218,
+        "overflow": false
+      },
+      {
+        "name": "heading",
+        "x": 72,
+        "y": 300,
+        "width": 451,
+        "height": 197.09375,
+        "right": 523,
+        "bottom": 497.09375,
+        "overflow": false
+      },
+      {
+        "name": "number",
+        "x": 72,
+        "y": 535,
+        "width": 596.40625,
+        "height": 185,
+        "right": 668.40625,
+        "bottom": 720,
+        "overflow": false
+      },
+      {
+        "name": "unit",
+        "x": 76,
+        "y": 724,
+        "width": 268.671875,
+        "height": 49,
+        "right": 344.671875,
+        "bottom": 773,
+        "overflow": false
+      },
+      {
+        "name": "encoding",
+        "x": 72,
+        "y": 1300,
+        "width": 864,
+        "height": 47,
+        "right": 936,
+        "bottom": 1347,
+        "overflow": false
+      },
+      {
+        "name": "caption",
+        "x": 72,
+        "y": 1482,
+        "width": 864,
+        "height": 60.71875,
+        "right": 936,
+        "bottom": 1542.71875,
+        "overflow": false
+      }
+    ],
+    "violations": [],
+    "collisions": [],
+    "fonts": [
+      {
+        "family": "IBM Plex Sans",
+        "weight": "400",
+        "file": "IBMPlexSans-Regular.woff2",
+        "loaded": true
+      },
+      {
+        "family": "IBM Plex Sans",
+        "weight": "500",
+        "file": "IBMPlexSans-Medium.woff2",
+        "loaded": true
+      },
+      {
+        "family": "IBM Plex Sans",
+        "weight": "600",
+        "file": "IBMPlexSans-SemiBold.woff2",
+        "loaded": true
+      },
+      {
+        "family": "IBM Plex Mono",
+        "weight": "400",
+        "file": "IBMPlexMono-Regular.woff2",
+        "loaded": true
+      },
+      {
+        "family": "IBM Plex Mono",
+        "weight": "500",
+        "file": "IBMPlexMono-Medium.woff2",
+        "loaded": true
+      }
+    ]
+  },
+  {
+    "frame": 45,
+    "rects": [
+      {
+        "name": "brand-signature",
+        "x": 72,
+        "y": 184,
+        "width": 408.0625,
+        "height": 34,
+        "right": 480.0625,
+        "bottom": 218,
+        "overflow": false
+      },
+      {
+        "name": "heading",
+        "x": 72,
+        "y": 300,
+        "width": 451,
+        "height": 197.09375,
+        "right": 523,
+        "bottom": 497.09375,
+        "overflow": false
+      },
+      {
+        "name": "number",
+        "x": 72,
+        "y": 535,
+        "width": 596.40625,
+        "height": 185,
+        "right": 668.40625,
+        "bottom": 720,
+        "overflow": false
+      },
+      {
+        "name": "unit",
+        "x": 76,
+        "y": 724,
+        "width": 268.671875,
+        "height": 49,
+        "right": 344.671875,
+        "bottom": 773,
+        "overflow": false
+      },
+      {
+        "name": "encoding",
+        "x": 72,
+        "y": 1300,
+        "width": 864,
+        "height": 47,
+        "right": 936,
+        "bottom": 1347,
+        "overflow": false
+      },
+      {
+        "name": "caption",
+        "x": 72,
+        "y": 1482,
+        "width": 864,
+        "height": 60.71875,
+        "right": 936,
+        "bottom": 1542.71875,
+        "overflow": false
+      }
+    ],
+    "violations": [],
+    "collisions": [],
+    "fonts": [
+      {
+        "family": "IBM Plex Sans",
+        "weight": "400",
+        "file": "IBMPlexSans-Regular.woff2",
+        "loaded": true
+      },
+      {
+        "family": "IBM Plex Sans",
+        "weight": "500",
+        "file": "IBMPlexSans-Medium.woff2",
+        "loaded": true
+      },
+      {
+        "family": "IBM Plex Sans",
+        "weight": "600",
+        "file": "IBMPlexSans-SemiBold.woff2",
+        "loaded": true
+      },
+      {
+        "family": "IBM Plex Mono",
+        "weight": "400",
+        "file": "IBMPlexMono-Regular.woff2",
+        "loaded": true
+      },
+      {
+        "family": "IBM Plex Mono",
+        "weight": "500",
+        "file": "IBMPlexMono-Medium.woff2",
+        "loaded": true
+      }
+    ]
+  },
+  {
+    "frame": 73,
+    "rects": [
+      {
+        "name": "brand-signature",
+        "x": 72,
+        "y": 184,
+        "width": 408.0625,
+        "height": 34,
+        "right": 480.0625,
+        "bottom": 218,
+        "overflow": false
+      },
+      {
+        "name": "heading",
+        "x": 72,
+        "y": 300,
+        "width": 451,
+        "height": 197.09375,
+        "right": 523,
+        "bottom": 497.09375,
+        "overflow": false
+      },
+      {
+        "name": "number",
+        "x": 72,
+        "y": 535,
+        "width": 596.40625,
+        "height": 185,
+        "right": 668.40625,
+        "bottom": 720,
+        "overflow": false
+      },
+      {
+        "name": "unit",
+        "x": 76,
+        "y": 724,
+        "width": 268.671875,
+        "height": 49,
+        "right": 344.671875,
+        "bottom": 773,
+        "overflow": false
+      },
+      {
+        "name": "encoding",
+        "x": 72,
+        "y": 1300,
+        "width": 864,
+        "height": 47,
+        "right": 936,
+        "bottom": 1347,
+        "overflow": false
+      },
+      {
+        "name": "caption",
+        "x": 72,
+        "y": 1482,
+        "width": 864,
+        "height": 60.71875,
+        "right": 936,
+        "bottom": 1542.71875,
+        "overflow": false
+      }
+    ],
+    "violations": [],
+    "collisions": [],
+    "fonts": [
+      {
+        "family": "IBM Plex Sans",
+        "weight": "400",
+        "file": "IBMPlexSans-Regular.woff2",
+        "loaded": true
+      },
+      {
+        "family": "IBM Plex Sans",
+        "weight": "500",
+        "file": "IBMPlexSans-Medium.woff2",
+        "loaded": true
+      },
+      {
+        "family": "IBM Plex Sans",
+        "weight": "600",
+        "file": "IBMPlexSans-SemiBold.woff2",
+        "loaded": true
+      },
+      {
+        "family": "IBM Plex Mono",
+        "weight": "400",
+        "file": "IBMPlexMono-Regular.woff2",
+        "loaded": true
+      },
+      {
+        "family": "IBM Plex Mono",
+        "weight": "500",
+        "file": "IBMPlexMono-Medium.woff2",
+        "loaded": true
+      }
+    ]
+  },
+  {
+    "frame": 77,
+    "rects": [
+      {
+        "name": "brand-signature",
+        "x": 72,
+        "y": 184,
+        "width": 408.0625,
+        "height": 34,
+        "right": 480.0625,
+        "bottom": 218,
+        "overflow": false
+      },
+      {
+        "name": "heading",
+        "x": 72,
+        "y": 300,
+        "width": 451,
+        "height": 197.09375,
+        "right": 523,
+        "bottom": 497.09375,
+        "overflow": false
+      },
+      {
+        "name": "number",
+        "x": 72,
+        "y": 535,
+        "width": 596.40625,
+        "height": 185,
+        "right": 668.40625,
+        "bottom": 720,
+        "overflow": false
+      },
+      {
+        "name": "unit",
+        "x": 76,
+        "y": 724,
+        "width": 268.671875,
+        "height": 49,
+        "right": 344.671875,
+        "bottom": 773,
+        "overflow": false
+      },
+      {
+        "name": "encoding",
+        "x": 72,
+        "y": 1300,
+        "width": 864,
+        "height": 47,
+        "right": 936,
+        "bottom": 1347,
+        "overflow": false
+      },
+      {
+        "name": "caption",
+        "x": 72,
+        "y": 1482,
+        "width": 864,
+        "height": 60.71875,
+        "right": 936,
+        "bottom": 1542.71875,
+        "overflow": false
+      }
+    ],
+    "violations": [],
+    "collisions": [],
+    "fonts": [
+      {
+        "family": "IBM Plex Sans",
+        "weight": "400",
+        "file": "IBMPlexSans-Regular.woff2",
+        "loaded": true
+      },
+      {
+        "family": "IBM Plex Sans",
+        "weight": "500",
+        "file": "IBMPlexSans-Medium.woff2",
+        "loaded": true
+      },
+      {
+        "family": "IBM Plex Sans",
+        "weight": "600",
+        "file": "IBMPlexSans-SemiBold.woff2",
+        "loaded": true
+      },
+      {
+        "family": "IBM Plex Mono",
+        "weight": "400",
+        "file": "IBMPlexMono-Regular.woff2",
+        "loaded": true
+      },
+      {
+        "family": "IBM Plex Mono",
+        "weight": "500",
+        "file": "IBMPlexMono-Medium.woff2",
+        "loaded": true
+      }
+    ]
+  },
+  {
+    "frame": 98,
+    "rects": [
+      {
+        "name": "brand-signature",
+        "x": 72,
+        "y": 184,
+        "width": 408.0625,
+        "height": 34,
+        "right": 480.0625,
+        "bottom": 218,
+        "overflow": false
+      },
+      {
+        "name": "heading",
+        "x": 72,
+        "y": 300,
+        "width": 451,
+        "height": 197.09375,
+        "right": 523,
+        "bottom": 497.09375,
+        "overflow": false
+      },
+      {
+        "name": "number",
+        "x": 72,
+        "y": 535,
+        "width": 596.40625,
+        "height": 185,
+        "right": 668.40625,
+        "bottom": 720,
+        "overflow": false
+      },
+      {
+        "name": "unit",
+        "x": 76,
+        "y": 724,
+        "width": 268.671875,
+        "height": 49,
+        "right": 344.671875,
+        "bottom": 773,
+        "overflow": false
+      },
+      {
+        "name": "encoding",
+        "x": 72,
+        "y": 1300,
+        "width": 864,
+        "height": 47,
+        "right": 936,
+        "bottom": 1347,
+        "overflow": false
+      },
+      {
+        "name": "caption",
+        "x": 72,
+        "y": 1482,
+        "width": 864,
+        "height": 60.71875,
+        "right": 936,
+        "bottom": 1542.71875,
+        "overflow": false
+      }
+    ],
+    "violations": [],
+    "collisions": [],
+    "fonts": [
+      {
+        "family": "IBM Plex Sans",
+        "weight": "400",
+        "file": "IBMPlexSans-Regular.woff2",
+        "loaded": true
+      },
+      {
+        "family": "IBM Plex Sans",
+        "weight": "500",
+        "file": "IBMPlexSans-Medium.woff2",
+        "loaded": true
+      },
+      {
+        "family": "IBM Plex Sans",
+        "weight": "600",
+        "file": "IBMPlexSans-SemiBold.woff2",
+        "loaded": true
+      },
+      {
+        "family": "IBM Plex Mono",
+        "weight": "400",
+        "file": "IBMPlexMono-Regular.woff2",
+        "loaded": true
+      },
+      {
+        "family": "IBM Plex Mono",
+        "weight": "500",
+        "file": "IBMPlexMono-Medium.woff2",
+        "loaded": true
+      }
+    ]
+  },
+  {
+    "frame": 119,
+    "rects": [
+      {
+        "name": "brand-signature",
+        "x": 72,
+        "y": 184,
+        "width": 408.0625,
+        "height": 34,
+        "right": 480.0625,
+        "bottom": 218,
+        "overflow": false
+      },
+      {
+        "name": "heading",
+        "x": 72,
+        "y": 300,
+        "width": 451,
+        "height": 197.09375,
+        "right": 523,
+        "bottom": 497.09375,
+        "overflow": false
+      },
+      {
+        "name": "number",
+        "x": 72,
+        "y": 535,
+        "width": 596.40625,
+        "height": 185,
+        "right": 668.40625,
+        "bottom": 720,
+        "overflow": false
+      },
+      {
+        "name": "unit",
+        "x": 76,
+        "y": 724,
+        "width": 268.671875,
+        "height": 49,
+        "right": 344.671875,
+        "bottom": 773,
+        "overflow": false
+      },
+      {
+        "name": "encoding",
+        "x": 72,
+        "y": 1300,
+        "width": 864,
+        "height": 47,
+        "right": 936,
+        "bottom": 1347,
+        "overflow": false
+      },
+      {
+        "name": "caption",
+        "x": 72,
+        "y": 1482,
+        "width": 864,
+        "height": 60.71875,
+        "right": 936,
+        "bottom": 1542.71875,
+        "overflow": false
+      }
+    ],
+    "violations": [],
+    "collisions": [],
+    "fonts": [
+      {
+        "family": "IBM Plex Sans",
+        "weight": "400",
+        "file": "IBMPlexSans-Regular.woff2",
+        "loaded": true
+      },
+      {
+        "family": "IBM Plex Sans",
+        "weight": "500",
+        "file": "IBMPlexSans-Medium.woff2",
+        "loaded": true
+      },
+      {
+        "family": "IBM Plex Sans",
+        "weight": "600",
+        "file": "IBMPlexSans-SemiBold.woff2",
+        "loaded": true
+      },
+      {
+        "family": "IBM Plex Mono",
+        "weight": "400",
+        "file": "IBMPlexMono-Regular.woff2",
+        "loaded": true
+      },
+      {
+        "family": "IBM Plex Mono",
+        "weight": "500",
+        "file": "IBMPlexMono-Medium.woff2",
+        "loaded": true
+      }
+    ]
+  },
+  {
+    "frame": 127,
+    "rects": [
+      {
+        "name": "brand-signature",
+        "x": 72,
+        "y": 184,
+        "width": 408.0625,
+        "height": 34,
+        "right": 480.0625,
+        "bottom": 218,
+        "overflow": false
+      },
+      {
+        "name": "heading",
+        "x": 72,
+        "y": 300,
+        "width": 451,
+        "height": 197.09375,
+        "right": 523,
+        "bottom": 497.09375,
+        "overflow": false
+      },
+      {
+        "name": "number",
+        "x": 72,
+        "y": 535,
+        "width": 596.40625,
+        "height": 185,
+        "right": 668.40625,
+        "bottom": 720,
+        "overflow": false
+      },
+      {
+        "name": "unit",
+        "x": 76,
+        "y": 724,
+        "width": 268.671875,
+        "height": 49,
+        "right": 344.671875,
+        "bottom": 773,
+        "overflow": false
+      },
+      {
+        "name": "encoding",
+        "x": 72,
+        "y": 1300,
+        "width": 864,
+        "height": 47,
+        "right": 936,
+        "bottom": 1347,
+        "overflow": false
+      },
+      {
+        "name": "caption",
+        "x": 72,
+        "y": 1482,
+        "width": 864,
+        "height": 60.71875,
+        "right": 936,
+        "bottom": 1542.71875,
+        "overflow": false
+      }
+    ],
+    "violations": [],
+    "collisions": [],
+    "fonts": [
+      {
+        "family": "IBM Plex Sans",
+        "weight": "400",
+        "file": "IBMPlexSans-Regular.woff2",
+        "loaded": true
+      },
+      {
+        "family": "IBM Plex Sans",
+        "weight": "500",
+        "file": "IBMPlexSans-Medium.woff2",
+        "loaded": true
+      },
+      {
+        "family": "IBM Plex Sans",
+        "weight": "600",
+        "file": "IBMPlexSans-SemiBold.woff2",
+        "loaded": true
+      },
+      {
+        "family": "IBM Plex Mono",
+        "weight": "400",
+        "file": "IBMPlexMono-Regular.woff2",
+        "loaded": true
+      },
+      {
+        "family": "IBM Plex Mono",
+        "weight": "500",
+        "file": "IBMPlexMono-Medium.woff2",
+        "loaded": true
+      }
+    ]
+  },
+  {
+    "frame": 150,
+    "rects": [
+      {
+        "name": "brand-signature",
+        "x": 72,
+        "y": 184,
+        "width": 408.0625,
+        "height": 34,
+        "right": 480.0625,
+        "bottom": 218,
+        "overflow": false
+      },
+      {
+        "name": "heading",
+        "x": 72,
+        "y": 300,
+        "width": 451,
+        "height": 197.09375,
+        "right": 523,
+        "bottom": 497.09375,
+        "overflow": false
+      },
+      {
+        "name": "number",
+        "x": 72,
+        "y": 535,
+        "width": 596.40625,
+        "height": 185,
+        "right": 668.40625,
+        "bottom": 720,
+        "overflow": false
+      },
+      {
+        "name": "unit",
+        "x": 76,
+        "y": 724,
+        "width": 268.671875,
+        "height": 49,
+        "right": 344.671875,
+        "bottom": 773,
+        "overflow": false
+      },
+      {
+        "name": "encoding",
+        "x": 72,
+        "y": 1300,
+        "width": 864,
+        "height": 47,
+        "right": 936,
+        "bottom": 1347,
+        "overflow": false
+      },
+      {
+        "name": "caption",
+        "x": 72,
+        "y": 1482,
+        "width": 864,
+        "height": 60.71875,
+        "right": 936,
+        "bottom": 1542.71875,
+        "overflow": false
+      }
+    ],
+    "violations": [],
+    "collisions": [],
+    "fonts": [
+      {
+        "family": "IBM Plex Sans",
+        "weight": "400",
+        "file": "IBMPlexSans-Regular.woff2",
+        "loaded": true
+      },
+      {
+        "family": "IBM Plex Sans",
+        "weight": "500",
+        "file": "IBMPlexSans-Medium.woff2",
+        "loaded": true
+      },
+      {
+        "family": "IBM Plex Sans",
+        "weight": "600",
+        "file": "IBMPlexSans-SemiBold.woff2",
+        "loaded": true
+      },
+      {
+        "family": "IBM Plex Mono",
+        "weight": "400",
+        "file": "IBMPlexMono-Regular.woff2",
+        "loaded": true
+      },
+      {
+        "family": "IBM Plex Mono",
+        "weight": "500",
+        "file": "IBMPlexMono-Medium.woff2",
+        "loaded": true
+      }
+    ]
+  },
+  {
+    "frame": 172,
+    "rects": [
+      {
+        "name": "brand-signature",
+        "x": 72,
+        "y": 184,
+        "width": 408.0625,
+        "height": 34,
+        "right": 480.0625,
+        "bottom": 218,
+        "overflow": false
+      },
+      {
+        "name": "heading",
+        "x": 72,
+        "y": 300,
+        "width": 451,
+        "height": 197.09375,
+        "right": 523,
+        "bottom": 497.09375,
+        "overflow": false
+      },
+      {
+        "name": "number",
+        "x": 72,
+        "y": 535,
+        "width": 596.40625,
+        "height": 185,
+        "right": 668.40625,
+        "bottom": 720,
+        "overflow": false
+      },
+      {
+        "name": "unit",
+        "x": 76,
+        "y": 724,
+        "width": 268.671875,
+        "height": 49,
+        "right": 344.671875,
+        "bottom": 773,
+        "overflow": false
+      },
+      {
+        "name": "encoding",
+        "x": 72,
+        "y": 1300,
+        "width": 864,
+        "height": 47,
+        "right": 936,
+        "bottom": 1347,
+        "overflow": false
+      },
+      {
+        "name": "caption",
+        "x": 72,
+        "y": 1482,
+        "width": 864,
+        "height": 60.71875,
+        "right": 936,
+        "bottom": 1542.71875,
+        "overflow": false
+      }
+    ],
+    "violations": [],
+    "collisions": [],
+    "fonts": [
+      {
+        "family": "IBM Plex Sans",
+        "weight": "400",
+        "file": "IBMPlexSans-Regular.woff2",
+        "loaded": true
+      },
+      {
+        "family": "IBM Plex Sans",
+        "weight": "500",
+        "file": "IBMPlexSans-Medium.woff2",
+        "loaded": true
+      },
+      {
+        "family": "IBM Plex Sans",
+        "weight": "600",
+        "file": "IBMPlexSans-SemiBold.woff2",
+        "loaded": true
+      },
+      {
+        "family": "IBM Plex Mono",
+        "weight": "400",
+        "file": "IBMPlexMono-Regular.woff2",
+        "loaded": true
+      },
+      {
+        "family": "IBM Plex Mono",
+        "weight": "500",
+        "file": "IBMPlexMono-Medium.woff2",
+        "loaded": true
+      }
+    ]
+  },
+  {
+    "frame": 186,
+    "rects": [
+      {
+        "name": "brand-signature",
+        "x": 72,
+        "y": 184,
+        "width": 408.0625,
+        "height": 34,
+        "right": 480.0625,
+        "bottom": 218,
+        "overflow": false
+      },
+      {
+        "name": "heading",
+        "x": 72,
+        "y": 300,
+        "width": 451,
+        "height": 197.09375,
+        "right": 523,
+        "bottom": 497.09375,
+        "overflow": false
+      },
+      {
+        "name": "number",
+        "x": 72,
+        "y": 535,
+        "width": 340.8125,
+        "height": 185,
+        "right": 412.8125,
+        "bottom": 720,
+        "overflow": false
+      },
+      {
+        "name": "unit",
+        "x": 76,
+        "y": 724,
+        "width": 63.09375,
+        "height": 49,
+        "right": 139.09375,
+        "bottom": 773,
+        "overflow": false
+      },
+      {
+        "name": "encoding",
+        "x": 72,
+        "y": 1300,
+        "width": 864,
+        "height": 47,
+        "right": 936,
+        "bottom": 1347,
+        "overflow": false
+      },
+      {
+        "name": "caption",
+        "x": 72,
+        "y": 1482,
+        "width": 864,
+        "height": 60.71875,
+        "right": 936,
+        "bottom": 1542.71875,
+        "overflow": false
+      }
+    ],
+    "violations": [],
+    "collisions": [],
+    "fonts": [
+      {
+        "family": "IBM Plex Sans",
+        "weight": "400",
+        "file": "IBMPlexSans-Regular.woff2",
+        "loaded": true
+      },
+      {
+        "family": "IBM Plex Sans",
+        "weight": "500",
+        "file": "IBMPlexSans-Medium.woff2",
+        "loaded": true
+      },
+      {
+        "family": "IBM Plex Sans",
+        "weight": "600",
+        "file": "IBMPlexSans-SemiBold.woff2",
+        "loaded": true
+      },
+      {
+        "family": "IBM Plex Mono",
+        "weight": "400",
+        "file": "IBMPlexMono-Regular.woff2",
+        "loaded": true
+      },
+      {
+        "family": "IBM Plex Mono",
+        "weight": "500",
+        "file": "IBMPlexMono-Medium.woff2",
+        "loaded": true
+      }
+    ]
+  },
+  {
+    "frame": 216,
+    "rects": [
+      {
+        "name": "brand-signature",
+        "x": 72,
+        "y": 184,
+        "width": 408.0625,
+        "height": 34,
+        "right": 480.0625,
+        "bottom": 218,
+        "overflow": false
+      },
+      {
+        "name": "heading",
+        "x": 72,
+        "y": 300,
+        "width": 451,
+        "height": 197.09375,
+        "right": 523,
+        "bottom": 497.09375,
+        "overflow": false
+      },
+      {
+        "name": "number",
+        "x": 72,
+        "y": 535,
+        "width": 340.8125,
+        "height": 185,
+        "right": 412.8125,
+        "bottom": 720,
+        "overflow": false
+      },
+      {
+        "name": "unit",
+        "x": 76,
+        "y": 724,
+        "width": 63.09375,
+        "height": 49,
+        "right": 139.09375,
+        "bottom": 773,
+        "overflow": false
+      },
+      {
+        "name": "encoding",
+        "x": 72,
+        "y": 1300,
+        "width": 864,
+        "height": 47,
+        "right": 936,
+        "bottom": 1347,
+        "overflow": false
+      },
+      {
+        "name": "caption",
+        "x": 72,
+        "y": 1482,
+        "width": 864,
+        "height": 60.71875,
+        "right": 936,
+        "bottom": 1542.71875,
+        "overflow": false
+      }
+    ],
+    "violations": [],
+    "collisions": [],
+    "fonts": [
+      {
+        "family": "IBM Plex Sans",
+        "weight": "400",
+        "file": "IBMPlexSans-Regular.woff2",
+        "loaded": true
+      },
+      {
+        "family": "IBM Plex Sans",
+        "weight": "500",
+        "file": "IBMPlexSans-Medium.woff2",
+        "loaded": true
+      },
+      {
+        "family": "IBM Plex Sans",
+        "weight": "600",
+        "file": "IBMPlexSans-SemiBold.woff2",
+        "loaded": true
+      },
+      {
+        "family": "IBM Plex Mono",
+        "weight": "400",
+        "file": "IBMPlexMono-Regular.woff2",
+        "loaded": true
+      },
+      {
+        "family": "IBM Plex Mono",
+        "weight": "500",
+        "file": "IBMPlexMono-Medium.woff2",
+        "loaded": true
+      }
+    ]
+  },
+  {
+    "frame": 245,
+    "rects": [
+      {
+        "name": "brand-signature",
+        "x": 72,
+        "y": 184,
+        "width": 408.0625,
+        "height": 34,
+        "right": 480.0625,
+        "bottom": 218,
+        "overflow": false
+      },
+      {
+        "name": "heading",
+        "x": 72,
+        "y": 300,
+        "width": 451,
+        "height": 197.09375,
+        "right": 523,
+        "bottom": 497.09375,
+        "overflow": false
+      },
+      {
+        "name": "number",
+        "x": 72,
+        "y": 535,
+        "width": 340.8125,
+        "height": 185,
+        "right": 412.8125,
+        "bottom": 720,
+        "overflow": false
+      },
+      {
+        "name": "unit",
+        "x": 76,
+        "y": 724,
+        "width": 63.09375,
+        "height": 49,
+        "right": 139.09375,
+        "bottom": 773,
+        "overflow": false
+      },
+      {
+        "name": "encoding",
+        "x": 72,
+        "y": 1300,
+        "width": 864,
+        "height": 47,
+        "right": 936,
+        "bottom": 1347,
+        "overflow": false
+      },
+      {
+        "name": "caption",
+        "x": 72,
+        "y": 1482,
+        "width": 864,
+        "height": 60.71875,
+        "right": 936,
+        "bottom": 1542.71875,
+        "overflow": false
+      }
+    ],
+    "violations": [],
+    "collisions": [],
+    "fonts": [
+      {
+        "family": "IBM Plex Sans",
+        "weight": "400",
+        "file": "IBMPlexSans-Regular.woff2",
+        "loaded": true
+      },
+      {
+        "family": "IBM Plex Sans",
+        "weight": "500",
+        "file": "IBMPlexSans-Medium.woff2",
+        "loaded": true
+      },
+      {
+        "family": "IBM Plex Sans",
+        "weight": "600",
+        "file": "IBMPlexSans-SemiBold.woff2",
+        "loaded": true
+      },
+      {
+        "family": "IBM Plex Mono",
+        "weight": "400",
+        "file": "IBMPlexMono-Regular.woff2",
+        "loaded": true
+      },
+      {
+        "family": "IBM Plex Mono",
+        "weight": "500",
+        "file": "IBMPlexMono-Medium.woff2",
+        "loaded": true
+      }
+    ]
+  },
+  {
+    "frame": 246,
+    "rects": [
+      {
+        "name": "brand-signature",
+        "x": 72,
+        "y": 184,
+        "width": 408.0625,
+        "height": 34,
+        "right": 480.0625,
+        "bottom": 218,
+        "overflow": false
+      },
+      {
+        "name": "heading",
+        "x": 72,
+        "y": 300,
+        "width": 451,
+        "height": 197.09375,
+        "right": 523,
+        "bottom": 497.09375,
+        "overflow": false
+      },
+      {
+        "name": "number",
+        "x": 72,
+        "y": 535,
+        "width": 340.8125,
+        "height": 185,
+        "right": 412.8125,
+        "bottom": 720,
+        "overflow": false
+      },
+      {
+        "name": "unit",
+        "x": 76,
+        "y": 724,
+        "width": 63.09375,
+        "height": 49,
+        "right": 139.09375,
+        "bottom": 773,
+        "overflow": false
+      },
+      {
+        "name": "encoding",
+        "x": 72,
+        "y": 1300,
+        "width": 864,
+        "height": 47,
+        "right": 936,
+        "bottom": 1347,
+        "overflow": false
+      },
+      {
+        "name": "caption",
+        "x": 72,
+        "y": 1482,
+        "width": 864,
+        "height": 60.71875,
+        "right": 936,
+        "bottom": 1542.71875,
+        "overflow": false
+      }
+    ],
+    "violations": [],
+    "collisions": [],
+    "fonts": [
+      {
+        "family": "IBM Plex Sans",
+        "weight": "400",
+        "file": "IBMPlexSans-Regular.woff2",
+        "loaded": true
+      },
+      {
+        "family": "IBM Plex Sans",
+        "weight": "500",
+        "file": "IBMPlexSans-Medium.woff2",
+        "loaded": true
+      },
+      {
+        "family": "IBM Plex Sans",
+        "weight": "600",
+        "file": "IBMPlexSans-SemiBold.woff2",
+        "loaded": true
+      },
+      {
+        "family": "IBM Plex Mono",
+        "weight": "400",
+        "file": "IBMPlexMono-Regular.woff2",
+        "loaded": true
+      },
+      {
+        "family": "IBM Plex Mono",
+        "weight": "500",
+        "file": "IBMPlexMono-Medium.woff2",
+        "loaded": true
+      }
+    ]
+  },
+  {
+    "frame": 276,
+    "rects": [
+      {
+        "name": "brand-signature",
+        "x": 72,
+        "y": 184,
+        "width": 408.0625,
+        "height": 34,
+        "right": 480.0625,
+        "bottom": 218,
+        "overflow": false
+      },
+      {
+        "name": "heading",
+        "x": 72,
+        "y": 300,
+        "width": 451,
+        "height": 197.09375,
+        "right": 523,
+        "bottom": 497.09375,
+        "overflow": false
+      },
+      {
+        "name": "number",
+        "x": 72,
+        "y": 535,
+        "width": 340.8125,
+        "height": 185,
+        "right": 412.8125,
+        "bottom": 720,
+        "overflow": false
+      },
+      {
+        "name": "unit",
+        "x": 76,
+        "y": 724,
+        "width": 63.09375,
+        "height": 49,
+        "right": 139.09375,
+        "bottom": 773,
+        "overflow": false
+      },
+      {
+        "name": "encoding",
+        "x": 72,
+        "y": 1300,
+        "width": 864,
+        "height": 47,
+        "right": 936,
+        "bottom": 1347,
+        "overflow": false
+      },
+      {
+        "name": "caption",
+        "x": 72,
+        "y": 1482,
+        "width": 864,
+        "height": 60.71875,
+        "right": 936,
+        "bottom": 1542.71875,
+        "overflow": false
+      }
+    ],
+    "violations": [],
+    "collisions": [],
+    "fonts": [
+      {
+        "family": "IBM Plex Sans",
+        "weight": "400",
+        "file": "IBMPlexSans-Regular.woff2",
+        "loaded": true
+      },
+      {
+        "family": "IBM Plex Sans",
+        "weight": "500",
+        "file": "IBMPlexSans-Medium.woff2",
+        "loaded": true
+      },
+      {
+        "family": "IBM Plex Sans",
+        "weight": "600",
+        "file": "IBMPlexSans-SemiBold.woff2",
+        "loaded": true
+      },
+      {
+        "family": "IBM Plex Mono",
+        "weight": "400",
+        "file": "IBMPlexMono-Regular.woff2",
+        "loaded": true
+      },
+      {
+        "family": "IBM Plex Mono",
+        "weight": "500",
+        "file": "IBMPlexMono-Medium.woff2",
+        "loaded": true
+      }
+    ]
+  },
+  {
+    "frame": 305,
+    "rects": [
+      {
+        "name": "brand-signature",
+        "x": 72,
+        "y": 184,
+        "width": 408.0625,
+        "height": 34,
+        "right": 480.0625,
+        "bottom": 218,
+        "overflow": false
+      },
+      {
+        "name": "heading",
+        "x": 72,
+        "y": 300,
+        "width": 451,
+        "height": 197.09375,
+        "right": 523,
+        "bottom": 497.09375,
+        "overflow": false
+      },
+      {
+        "name": "number",
+        "x": 72,
+        "y": 535,
+        "width": 340.8125,
+        "height": 185,
+        "right": 412.8125,
+        "bottom": 720,
+        "overflow": false
+      },
+      {
+        "name": "unit",
+        "x": 76,
+        "y": 724,
+        "width": 63.09375,
+        "height": 49,
+        "right": 139.09375,
+        "bottom": 773,
+        "overflow": false
+      },
+      {
+        "name": "encoding",
+        "x": 72,
+        "y": 1300,
+        "width": 864,
+        "height": 47,
+        "right": 936,
+        "bottom": 1347,
+        "overflow": false
+      },
+      {
+        "name": "caption",
+        "x": 72,
+        "y": 1482,
+        "width": 864,
+        "height": 60.71875,
+        "right": 936,
+        "bottom": 1542.71875,
+        "overflow": false
+      }
+    ],
+    "violations": [],
+    "collisions": [],
+    "fonts": [
+      {
+        "family": "IBM Plex Sans",
+        "weight": "400",
+        "file": "IBMPlexSans-Regular.woff2",
+        "loaded": true
+      },
+      {
+        "family": "IBM Plex Sans",
+        "weight": "500",
+        "file": "IBMPlexSans-Medium.woff2",
+        "loaded": true
+      },
+      {
+        "family": "IBM Plex Sans",
+        "weight": "600",
+        "file": "IBMPlexSans-SemiBold.woff2",
+        "loaded": true
+      },
+      {
+        "family": "IBM Plex Mono",
+        "weight": "400",
+        "file": "IBMPlexMono-Regular.woff2",
+        "loaded": true
+      },
+      {
+        "family": "IBM Plex Mono",
+        "weight": "500",
+        "file": "IBMPlexMono-Medium.woff2",
+        "loaded": true
+      }
+    ]
+  },
+  {
+    "frame": 316,
+    "rects": [
+      {
+        "name": "brand-signature",
+        "x": 72,
+        "y": 184,
+        "width": 408.0625,
+        "height": 34,
+        "right": 480.0625,
+        "bottom": 218,
+        "overflow": false
+      },
+      {
+        "name": "heading",
+        "x": 72,
+        "y": 300,
+        "width": 451,
+        "height": 197.09375,
+        "right": 523,
+        "bottom": 497.09375,
+        "overflow": false
+      },
+      {
+        "name": "number",
+        "x": 72,
+        "y": 535,
+        "width": 340.8125,
+        "height": 185,
+        "right": 412.8125,
+        "bottom": 720,
+        "overflow": false
+      },
+      {
+        "name": "unit",
+        "x": 76,
+        "y": 724,
+        "width": 38.8125,
+        "height": 49,
+        "right": 114.8125,
+        "bottom": 773,
+        "overflow": false
+      },
+      {
+        "name": "encoding",
+        "x": 72,
+        "y": 1300,
+        "width": 864,
+        "height": 47,
+        "right": 936,
+        "bottom": 1347,
+        "overflow": false
+      },
+      {
+        "name": "caption",
+        "x": 72,
+        "y": 1482,
+        "width": 864,
+        "height": 60.71875,
+        "right": 936,
+        "bottom": 1542.71875,
+        "overflow": false
+      }
+    ],
+    "violations": [],
+    "collisions": [],
+    "fonts": [
+      {
+        "family": "IBM Plex Sans",
+        "weight": "400",
+        "file": "IBMPlexSans-Regular.woff2",
+        "loaded": true
+      },
+      {
+        "family": "IBM Plex Sans",
+        "weight": "500",
+        "file": "IBMPlexSans-Medium.woff2",
+        "loaded": true
+      },
+      {
+        "family": "IBM Plex Sans",
+        "weight": "600",
+        "file": "IBMPlexSans-SemiBold.woff2",
+        "loaded": true
+      },
+      {
+        "family": "IBM Plex Mono",
+        "weight": "400",
+        "file": "IBMPlexMono-Regular.woff2",
+        "loaded": true
+      },
+      {
+        "family": "IBM Plex Mono",
+        "weight": "500",
+        "file": "IBMPlexMono-Medium.woff2",
+        "loaded": true
+      }
+    ]
+  },
+  {
+    "frame": 336,
+    "rects": [
+      {
+        "name": "brand-signature",
+        "x": 72,
+        "y": 184,
+        "width": 408.0625,
+        "height": 34,
+        "right": 480.0625,
+        "bottom": 218,
+        "overflow": false
+      },
+      {
+        "name": "heading",
+        "x": 72,
+        "y": 300,
+        "width": 451,
+        "height": 197.09375,
+        "right": 523,
+        "bottom": 497.09375,
+        "overflow": false
+      },
+      {
+        "name": "number",
+        "x": 72,
+        "y": 535,
+        "width": 340.8125,
+        "height": 185,
+        "right": 412.8125,
+        "bottom": 720,
+        "overflow": false
+      },
+      {
+        "name": "unit",
+        "x": 76,
+        "y": 724,
+        "width": 38.8125,
+        "height": 49,
+        "right": 114.8125,
+        "bottom": 773,
+        "overflow": false
+      },
+      {
+        "name": "encoding",
+        "x": 72,
+        "y": 1300,
+        "width": 864,
+        "height": 47,
+        "right": 936,
+        "bottom": 1347,
+        "overflow": false
+      },
+      {
+        "name": "caption",
+        "x": 72,
+        "y": 1482,
+        "width": 864,
+        "height": 60.71875,
+        "right": 936,
+        "bottom": 1542.71875,
+        "overflow": false
+      }
+    ],
+    "violations": [],
+    "collisions": [],
+    "fonts": [
+      {
+        "family": "IBM Plex Sans",
+        "weight": "400",
+        "file": "IBMPlexSans-Regular.woff2",
+        "loaded": true
+      },
+      {
+        "family": "IBM Plex Sans",
+        "weight": "500",
+        "file": "IBMPlexSans-Medium.woff2",
+        "loaded": true
+      },
+      {
+        "family": "IBM Plex Sans",
+        "weight": "600",
+        "file": "IBMPlexSans-SemiBold.woff2",
+        "loaded": true
+      },
+      {
+        "family": "IBM Plex Mono",
+        "weight": "400",
+        "file": "IBMPlexMono-Regular.woff2",
+        "loaded": true
+      },
+      {
+        "family": "IBM Plex Mono",
+        "weight": "500",
+        "file": "IBMPlexMono-Medium.woff2",
+        "loaded": true
+      }
+    ]
+  },
+  {
+    "frame": 356,
+    "rects": [
+      {
+        "name": "brand-signature",
+        "x": 72,
+        "y": 184,
+        "width": 408.0625,
+        "height": 34,
+        "right": 480.0625,
+        "bottom": 218,
+        "overflow": false
+      },
+      {
+        "name": "heading",
+        "x": 72,
+        "y": 300,
+        "width": 451,
+        "height": 197.09375,
+        "right": 523,
+        "bottom": 497.09375,
+        "overflow": false
+      },
+      {
+        "name": "number",
+        "x": 72,
+        "y": 535,
+        "width": 340.8125,
+        "height": 185,
+        "right": 412.8125,
+        "bottom": 720,
+        "overflow": false
+      },
+      {
+        "name": "unit",
+        "x": 76,
+        "y": 724,
+        "width": 38.8125,
+        "height": 49,
+        "right": 114.8125,
+        "bottom": 773,
+        "overflow": false
+      },
+      {
+        "name": "encoding",
+        "x": 72,
+        "y": 1300,
+        "width": 864,
+        "height": 47,
+        "right": 936,
+        "bottom": 1347,
+        "overflow": false
+      },
+      {
+        "name": "caption",
+        "x": 72,
+        "y": 1482,
+        "width": 864,
+        "height": 60.71875,
+        "right": 936,
+        "bottom": 1542.71875,
+        "overflow": false
+      }
+    ],
+    "violations": [],
+    "collisions": [],
+    "fonts": [
+      {
+        "family": "IBM Plex Sans",
+        "weight": "400",
+        "file": "IBMPlexSans-Regular.woff2",
+        "loaded": true
+      },
+      {
+        "family": "IBM Plex Sans",
+        "weight": "500",
+        "file": "IBMPlexSans-Medium.woff2",
+        "loaded": true
+      },
+      {
+        "family": "IBM Plex Sans",
+        "weight": "600",
+        "file": "IBMPlexSans-SemiBold.woff2",
+        "loaded": true
+      },
+      {
+        "family": "IBM Plex Mono",
+        "weight": "400",
+        "file": "IBMPlexMono-Regular.woff2",
+        "loaded": true
+      },
+      {
+        "family": "IBM Plex Mono",
+        "weight": "500",
+        "file": "IBMPlexMono-Medium.woff2",
+        "loaded": true
+      }
+    ]
+  },
+  {
+    "frame": 358,
+    "rects": [
+      {
+        "name": "brand-signature",
+        "x": 72,
+        "y": 184,
+        "width": 408.0625,
+        "height": 34,
+        "right": 480.0625,
+        "bottom": 218,
+        "overflow": false
+      },
+      {
+        "name": "heading",
+        "x": 72,
+        "y": 300,
+        "width": 451,
+        "height": 197.09375,
+        "right": 523,
+        "bottom": 497.09375,
+        "overflow": false
+      },
+      {
+        "name": "number",
+        "x": 72,
+        "y": 535,
+        "width": 340.8125,
+        "height": 185,
+        "right": 412.8125,
+        "bottom": 720,
+        "overflow": false
+      },
+      {
+        "name": "unit",
+        "x": 76,
+        "y": 724,
+        "width": 38.8125,
+        "height": 49,
+        "right": 114.8125,
+        "bottom": 773,
+        "overflow": false
+      },
+      {
+        "name": "encoding",
+        "x": 72,
+        "y": 1300,
+        "width": 864,
+        "height": 47,
+        "right": 936,
+        "bottom": 1347,
+        "overflow": false
+      },
+      {
+        "name": "caption",
+        "x": 72,
+        "y": 1482,
+        "width": 864,
+        "height": 60.71875,
+        "right": 936,
+        "bottom": 1542.71875,
+        "overflow": false
+      }
+    ],
+    "violations": [],
+    "collisions": [],
+    "fonts": [
+      {
+        "family": "IBM Plex Sans",
+        "weight": "400",
+        "file": "IBMPlexSans-Regular.woff2",
+        "loaded": true
+      },
+      {
+        "family": "IBM Plex Sans",
+        "weight": "500",
+        "file": "IBMPlexSans-Medium.woff2",
+        "loaded": true
+      },
+      {
+        "family": "IBM Plex Sans",
+        "weight": "600",
+        "file": "IBMPlexSans-SemiBold.woff2",
+        "loaded": true
+      },
+      {
+        "family": "IBM Plex Mono",
+        "weight": "400",
+        "file": "IBMPlexMono-Regular.woff2",
+        "loaded": true
+      },
+      {
+        "family": "IBM Plex Mono",
+        "weight": "500",
+        "file": "IBMPlexMono-Medium.woff2",
+        "loaded": true
+      }
+    ]
+  },
+  {
+    "frame": 393,
+    "rects": [
+      {
+        "name": "brand-signature",
+        "x": 72,
+        "y": 184,
+        "width": 408.0625,
+        "height": 34,
+        "right": 480.0625,
+        "bottom": 218,
+        "overflow": false
+      },
+      {
+        "name": "heading",
+        "x": 72,
+        "y": 300,
+        "width": 451,
+        "height": 197.09375,
+        "right": 523,
+        "bottom": 497.09375,
+        "overflow": false
+      },
+      {
+        "name": "number",
+        "x": 72,
+        "y": 535,
+        "width": 340.8125,
+        "height": 185,
+        "right": 412.8125,
+        "bottom": 720,
+        "overflow": false
+      },
+      {
+        "name": "unit",
+        "x": 76,
+        "y": 724,
+        "width": 38.8125,
+        "height": 49,
+        "right": 114.8125,
+        "bottom": 773,
+        "overflow": false
+      },
+      {
+        "name": "encoding",
+        "x": 72,
+        "y": 1300,
+        "width": 864,
+        "height": 47,
+        "right": 936,
+        "bottom": 1347,
+        "overflow": false
+      },
+      {
+        "name": "caption",
+        "x": 72,
+        "y": 1482,
+        "width": 864,
+        "height": 60.71875,
+        "right": 936,
+        "bottom": 1542.71875,
+        "overflow": false
+      }
+    ],
+    "violations": [],
+    "collisions": [],
+    "fonts": [
+      {
+        "family": "IBM Plex Sans",
+        "weight": "400",
+        "file": "IBMPlexSans-Regular.woff2",
+        "loaded": true
+      },
+      {
+        "family": "IBM Plex Sans",
+        "weight": "500",
+        "file": "IBMPlexSans-Medium.woff2",
+        "loaded": true
+      },
+      {
+        "family": "IBM Plex Sans",
+        "weight": "600",
+        "file": "IBMPlexSans-SemiBold.woff2",
+        "loaded": true
+      },
+      {
+        "family": "IBM Plex Mono",
+        "weight": "400",
+        "file": "IBMPlexMono-Regular.woff2",
+        "loaded": true
+      },
+      {
+        "family": "IBM Plex Mono",
+        "weight": "500",
+        "file": "IBMPlexMono-Medium.woff2",
+        "loaded": true
+      }
+    ]
+  },
+  {
+    "frame": 428,
+    "rects": [
+      {
+        "name": "brand-signature",
+        "x": 72,
+        "y": 184,
+        "width": 408.0625,
+        "height": 34,
+        "right": 480.0625,
+        "bottom": 218,
+        "overflow": false
+      },
+      {
+        "name": "heading",
+        "x": 72,
+        "y": 300,
+        "width": 451,
+        "height": 197.09375,
+        "right": 523,
+        "bottom": 497.09375,
+        "overflow": false
+      },
+      {
+        "name": "number",
+        "x": 72,
+        "y": 535,
+        "width": 340.8125,
+        "height": 185,
+        "right": 412.8125,
+        "bottom": 720,
+        "overflow": false
+      },
+      {
+        "name": "unit",
+        "x": 76,
+        "y": 724,
+        "width": 38.8125,
+        "height": 49,
+        "right": 114.8125,
+        "bottom": 773,
+        "overflow": false
+      },
+      {
+        "name": "encoding",
+        "x": 72,
+        "y": 1300,
+        "width": 864,
+        "height": 47,
+        "right": 936,
+        "bottom": 1347,
+        "overflow": false
+      },
+      {
+        "name": "caption",
+        "x": 72,
+        "y": 1482,
+        "width": 864,
+        "height": 60.71875,
+        "right": 936,
+        "bottom": 1542.71875,
+        "overflow": false
+      }
+    ],
+    "violations": [],
+    "collisions": [],
+    "fonts": [
+      {
+        "family": "IBM Plex Sans",
+        "weight": "400",
+        "file": "IBMPlexSans-Regular.woff2",
+        "loaded": true
+      },
+      {
+        "family": "IBM Plex Sans",
+        "weight": "500",
+        "file": "IBMPlexSans-Medium.woff2",
+        "loaded": true
+      },
+      {
+        "family": "IBM Plex Sans",
+        "weight": "600",
+        "file": "IBMPlexSans-SemiBold.woff2",
+        "loaded": true
+      },
+      {
+        "family": "IBM Plex Mono",
+        "weight": "400",
+        "file": "IBMPlexMono-Regular.woff2",
+        "loaded": true
+      },
+      {
+        "family": "IBM Plex Mono",
+        "weight": "500",
+        "file": "IBMPlexMono-Medium.woff2",
+        "loaded": true
+      }
+    ]
+  },
+  {
+    "frame": 444,
+    "rects": [
+      {
+        "name": "brand-signature",
+        "x": 72,
+        "y": 184,
+        "width": 408.0625,
+        "height": 34,
+        "right": 480.0625,
+        "bottom": 218,
+        "overflow": false
+      },
+      {
+        "name": "heading",
+        "x": 72,
+        "y": 300,
+        "width": 451,
+        "height": 197.09375,
+        "right": 523,
+        "bottom": 497.09375,
+        "overflow": false
+      },
+      {
+        "name": "number",
+        "x": 72,
+        "y": 535,
+        "width": 766.8125,
+        "height": 185,
+        "right": 838.8125,
+        "bottom": 720,
+        "overflow": false
+      },
+      {
+        "name": "unit",
+        "x": 76,
+        "y": 724,
+        "width": 386.890625,
+        "height": 49,
+        "right": 462.890625,
+        "bottom": 773,
+        "overflow": false
+      },
+      {
+        "name": "encoding",
+        "x": 72,
+        "y": 1300,
+        "width": 864,
+        "height": 47,
+        "right": 936,
+        "bottom": 1347,
+        "overflow": false
+      },
+      {
+        "name": "caption",
+        "x": 72,
+        "y": 1482,
+        "width": 864,
+        "height": 60.71875,
+        "right": 936,
+        "bottom": 1542.71875,
+        "overflow": false
+      }
+    ],
+    "violations": [],
+    "collisions": [],
+    "fonts": [
+      {
+        "family": "IBM Plex Sans",
+        "weight": "400",
+        "file": "IBMPlexSans-Regular.woff2",
+        "loaded": true
+      },
+      {
+        "family": "IBM Plex Sans",
+        "weight": "500",
+        "file": "IBMPlexSans-Medium.woff2",
+        "loaded": true
+      },
+      {
+        "family": "IBM Plex Sans",
+        "weight": "600",
+        "file": "IBMPlexSans-SemiBold.woff2",
+        "loaded": true
+      },
+      {
+        "family": "IBM Plex Mono",
+        "weight": "400",
+        "file": "IBMPlexMono-Regular.woff2",
+        "loaded": true
+      },
+      {
+        "family": "IBM Plex Mono",
+        "weight": "500",
+        "file": "IBMPlexMono-Medium.woff2",
+        "loaded": true
+      }
+    ]
+  },
+  {
+    "frame": 472,
+    "rects": [
+      {
+        "name": "brand-signature",
+        "x": 72,
+        "y": 184,
+        "width": 408.0625,
+        "height": 34,
+        "right": 480.0625,
+        "bottom": 218,
+        "overflow": false
+      },
+      {
+        "name": "heading",
+        "x": 72,
+        "y": 300,
+        "width": 451,
+        "height": 197.09375,
+        "right": 523,
+        "bottom": 497.09375,
+        "overflow": false
+      },
+      {
+        "name": "number",
+        "x": 72,
+        "y": 535,
+        "width": 766.8125,
+        "height": 185,
+        "right": 838.8125,
+        "bottom": 720,
+        "overflow": false
+      },
+      {
+        "name": "unit",
+        "x": 76,
+        "y": 724,
+        "width": 386.890625,
+        "height": 49,
+        "right": 462.890625,
+        "bottom": 773,
+        "overflow": false
+      },
+      {
+        "name": "encoding",
+        "x": 72,
+        "y": 1300,
+        "width": 864,
+        "height": 47,
+        "right": 936,
+        "bottom": 1347,
+        "overflow": false
+      },
+      {
+        "name": "caption",
+        "x": 72,
+        "y": 1482,
+        "width": 864,
+        "height": 60.71875,
+        "right": 936,
+        "bottom": 1542.71875,
+        "overflow": false
+      }
+    ],
+    "violations": [],
+    "collisions": [],
+    "fonts": [
+      {
+        "family": "IBM Plex Sans",
+        "weight": "400",
+        "file": "IBMPlexSans-Regular.woff2",
+        "loaded": true
+      },
+      {
+        "family": "IBM Plex Sans",
+        "weight": "500",
+        "file": "IBMPlexSans-Medium.woff2",
+        "loaded": true
+      },
+      {
+        "family": "IBM Plex Sans",
+        "weight": "600",
+        "file": "IBMPlexSans-SemiBold.woff2",
+        "loaded": true
+      },
+      {
+        "family": "IBM Plex Mono",
+        "weight": "400",
+        "file": "IBMPlexMono-Regular.woff2",
+        "loaded": true
+      },
+      {
+        "family": "IBM Plex Mono",
+        "weight": "500",
+        "file": "IBMPlexMono-Medium.woff2",
+        "loaded": true
+      }
+    ]
+  },
+  {
+    "frame": 499,
+    "rects": [
+      {
+        "name": "brand-signature",
+        "x": 72,
+        "y": 184,
+        "width": 408.0625,
+        "height": 34,
+        "right": 480.0625,
+        "bottom": 218,
+        "overflow": false
+      },
+      {
+        "name": "heading",
+        "x": 72,
+        "y": 300,
+        "width": 451,
+        "height": 197.09375,
+        "right": 523,
+        "bottom": 497.09375,
+        "overflow": false
+      },
+      {
+        "name": "number",
+        "x": 72,
+        "y": 535,
+        "width": 766.8125,
+        "height": 185,
+        "right": 838.8125,
+        "bottom": 720,
+        "overflow": false
+      },
+      {
+        "name": "unit",
+        "x": 76,
+        "y": 724,
+        "width": 386.890625,
+        "height": 49,
+        "right": 462.890625,
+        "bottom": 773,
+        "overflow": false
+      },
+      {
+        "name": "encoding",
+        "x": 72,
+        "y": 1300,
+        "width": 864,
+        "height": 47,
+        "right": 936,
+        "bottom": 1347,
+        "overflow": false
+      },
+      {
+        "name": "caption",
+        "x": 72,
+        "y": 1482,
+        "width": 864,
+        "height": 60.71875,
+        "right": 936,
+        "bottom": 1542.71875,
+        "overflow": false
+      }
+    ],
+    "violations": [],
+    "collisions": [],
+    "fonts": [
+      {
+        "family": "IBM Plex Sans",
+        "weight": "400",
+        "file": "IBMPlexSans-Regular.woff2",
+        "loaded": true
+      },
+      {
+        "family": "IBM Plex Sans",
+        "weight": "500",
+        "file": "IBMPlexSans-Medium.woff2",
+        "loaded": true
+      },
+      {
+        "family": "IBM Plex Sans",
+        "weight": "600",
+        "file": "IBMPlexSans-SemiBold.woff2",
+        "loaded": true
+      },
+      {
+        "family": "IBM Plex Mono",
+        "weight": "400",
+        "file": "IBMPlexMono-Regular.woff2",
+        "loaded": true
+      },
+      {
+        "family": "IBM Plex Mono",
+        "weight": "500",
+        "file": "IBMPlexMono-Medium.woff2",
+        "loaded": true
+      }
+    ]
+  },
+  {
+    "frame": 514,
+    "rects": [
+      {
+        "name": "brand-signature",
+        "x": 72,
+        "y": 184,
+        "width": 408.0625,
+        "height": 34,
+        "right": 480.0625,
+        "bottom": 218,
+        "overflow": false
+      },
+      {
+        "name": "heading",
+        "x": 72,
+        "y": 300,
+        "width": 451,
+        "height": 197.09375,
+        "right": 523,
+        "bottom": 497.09375,
+        "overflow": false
+      },
+      {
+        "name": "number",
+        "x": 72,
+        "y": 535,
+        "width": 766.8125,
+        "height": 185,
+        "right": 838.8125,
+        "bottom": 720,
+        "overflow": false
+      },
+      {
+        "name": "unit",
+        "x": 76,
+        "y": 724,
+        "width": 386.890625,
+        "height": 49,
+        "right": 462.890625,
+        "bottom": 773,
+        "overflow": false
+      },
+      {
+        "name": "encoding",
+        "x": 72,
+        "y": 1300,
+        "width": 864,
+        "height": 47,
+        "right": 936,
+        "bottom": 1347,
+        "overflow": false
+      },
+      {
+        "name": "caption",
+        "x": 72,
+        "y": 1482,
+        "width": 864,
+        "height": 60.71875,
+        "right": 936,
+        "bottom": 1542.71875,
+        "overflow": false
+      }
+    ],
+    "violations": [],
+    "collisions": [],
+    "fonts": [
+      {
+        "family": "IBM Plex Sans",
+        "weight": "400",
+        "file": "IBMPlexSans-Regular.woff2",
+        "loaded": true
+      },
+      {
+        "family": "IBM Plex Sans",
+        "weight": "500",
+        "file": "IBMPlexSans-Medium.woff2",
+        "loaded": true
+      },
+      {
+        "family": "IBM Plex Sans",
+        "weight": "600",
+        "file": "IBMPlexSans-SemiBold.woff2",
+        "loaded": true
+      },
+      {
+        "family": "IBM Plex Mono",
+        "weight": "400",
+        "file": "IBMPlexMono-Regular.woff2",
+        "loaded": true
+      },
+      {
+        "family": "IBM Plex Mono",
+        "weight": "500",
+        "file": "IBMPlexMono-Medium.woff2",
+        "loaded": true
+      }
+    ]
+  },
+  {
+    "frame": 548,
+    "rects": [
+      {
+        "name": "brand-signature",
+        "x": 72,
+        "y": 184,
+        "width": 408.0625,
+        "height": 34,
+        "right": 480.0625,
+        "bottom": 218,
+        "overflow": false
+      },
+      {
+        "name": "heading",
+        "x": 72,
+        "y": 300,
+        "width": 451,
+        "height": 197.09375,
+        "right": 523,
+        "bottom": 497.09375,
+        "overflow": false
+      },
+      {
+        "name": "number",
+        "x": 72,
+        "y": 535,
+        "width": 766.8125,
+        "height": 185,
+        "right": 838.8125,
+        "bottom": 720,
+        "overflow": false
+      },
+      {
+        "name": "unit",
+        "x": 76,
+        "y": 724,
+        "width": 386.890625,
+        "height": 49,
+        "right": 462.890625,
+        "bottom": 773,
+        "overflow": false
+      },
+      {
+        "name": "encoding",
+        "x": 72,
+        "y": 1300,
+        "width": 864,
+        "height": 47,
+        "right": 936,
+        "bottom": 1347,
+        "overflow": false
+      },
+      {
+        "name": "caption",
+        "x": 72,
+        "y": 1482,
+        "width": 864,
+        "height": 60.71875,
+        "right": 936,
+        "bottom": 1542.71875,
+        "overflow": false
+      }
+    ],
+    "violations": [],
+    "collisions": [],
+    "fonts": [
+      {
+        "family": "IBM Plex Sans",
+        "weight": "400",
+        "file": "IBMPlexSans-Regular.woff2",
+        "loaded": true
+      },
+      {
+        "family": "IBM Plex Sans",
+        "weight": "500",
+        "file": "IBMPlexSans-Medium.woff2",
+        "loaded": true
+      },
+      {
+        "family": "IBM Plex Sans",
+        "weight": "600",
+        "file": "IBMPlexSans-SemiBold.woff2",
+        "loaded": true
+      },
+      {
+        "family": "IBM Plex Mono",
+        "weight": "400",
+        "file": "IBMPlexMono-Regular.woff2",
+        "loaded": true
+      },
+      {
+        "family": "IBM Plex Mono",
+        "weight": "500",
+        "file": "IBMPlexMono-Medium.woff2",
+        "loaded": true
+      }
+    ]
+  },
+  {
+    "frame": 581,
+    "rects": [
+      {
+        "name": "brand-signature",
+        "x": 72,
+        "y": 184,
+        "width": 408.0625,
+        "height": 34,
+        "right": 480.0625,
+        "bottom": 218,
+        "overflow": false
+      },
+      {
+        "name": "heading",
+        "x": 72,
+        "y": 300,
+        "width": 451,
+        "height": 197.09375,
+        "right": 523,
+        "bottom": 497.09375,
+        "overflow": false
+      },
+      {
+        "name": "number",
+        "x": 72,
+        "y": 535,
+        "width": 766.8125,
+        "height": 185,
+        "right": 838.8125,
+        "bottom": 720,
+        "overflow": false
+      },
+      {
+        "name": "unit",
+        "x": 76,
+        "y": 724,
+        "width": 386.890625,
+        "height": 49,
+        "right": 462.890625,
+        "bottom": 773,
+        "overflow": false
+      },
+      {
+        "name": "encoding",
+        "x": 72,
+        "y": 1300,
+        "width": 864,
+        "height": 47,
+        "right": 936,
+        "bottom": 1347,
+        "overflow": false
+      },
+      {
+        "name": "caption",
+        "x": 72,
+        "y": 1482,
+        "width": 864,
+        "height": 60.71875,
+        "right": 936,
+        "bottom": 1542.71875,
+        "overflow": false
+      }
+    ],
+    "violations": [],
+    "collisions": [],
+    "fonts": [
+      {
+        "family": "IBM Plex Sans",
+        "weight": "400",
+        "file": "IBMPlexSans-Regular.woff2",
+        "loaded": true
+      },
+      {
+        "family": "IBM Plex Sans",
+        "weight": "500",
+        "file": "IBMPlexSans-Medium.woff2",
+        "loaded": true
+      },
+      {
+        "family": "IBM Plex Sans",
+        "weight": "600",
+        "file": "IBMPlexSans-SemiBold.woff2",
+        "loaded": true
+      },
+      {
+        "family": "IBM Plex Mono",
+        "weight": "400",
+        "file": "IBMPlexMono-Regular.woff2",
+        "loaded": true
+      },
+      {
+        "family": "IBM Plex Mono",
+        "weight": "500",
+        "file": "IBMPlexMono-Medium.woff2",
+        "loaded": true
+      }
+    ]
+  },
+  {
+    "frame": 608,
+    "rects": [
+      {
+        "name": "brand-signature",
+        "x": 72,
+        "y": 184,
+        "width": 408.0625,
+        "height": 34,
+        "right": 480.0625,
+        "bottom": 218,
+        "overflow": false
+      },
+      {
+        "name": "heading",
+        "x": 72,
+        "y": 300,
+        "width": 451,
+        "height": 197.09375,
+        "right": 523,
+        "bottom": 497.09375,
+        "overflow": false
+      },
+      {
+        "name": "number",
+        "x": 72,
+        "y": 535,
+        "width": 766.8125,
+        "height": 185,
+        "right": 838.8125,
+        "bottom": 720,
+        "overflow": false
+      },
+      {
+        "name": "unit",
+        "x": 76,
+        "y": 724,
+        "width": 386.890625,
+        "height": 49,
+        "right": 462.890625,
+        "bottom": 773,
+        "overflow": false
+      },
+      {
+        "name": "encoding",
+        "x": 72,
+        "y": 1300,
+        "width": 864,
+        "height": 47,
+        "right": 936,
+        "bottom": 1347,
+        "overflow": false
+      },
+      {
+        "name": "caption",
+        "x": 72,
+        "y": 1482,
+        "width": 864,
+        "height": 121.4375,
+        "right": 936,
+        "bottom": 1603.4375,
+        "overflow": false
+      }
+    ],
+    "violations": [],
+    "collisions": [],
+    "fonts": [
+      {
+        "family": "IBM Plex Sans",
+        "weight": "400",
+        "file": "IBMPlexSans-Regular.woff2",
+        "loaded": true
+      },
+      {
+        "family": "IBM Plex Sans",
+        "weight": "500",
+        "file": "IBMPlexSans-Medium.woff2",
+        "loaded": true
+      },
+      {
+        "family": "IBM Plex Sans",
+        "weight": "600",
+        "file": "IBMPlexSans-SemiBold.woff2",
+        "loaded": true
+      },
+      {
+        "family": "IBM Plex Mono",
+        "weight": "400",
+        "file": "IBMPlexMono-Regular.woff2",
+        "loaded": true
+      },
+      {
+        "family": "IBM Plex Mono",
+        "weight": "500",
+        "file": "IBMPlexMono-Medium.woff2",
+        "loaded": true
+      }
+    ]
+  },
+  {
+    "frame": 647,
+    "rects": [
+      {
+        "name": "brand-signature",
+        "x": 72,
+        "y": 184,
+        "width": 408.0625,
+        "height": 34,
+        "right": 480.0625,
+        "bottom": 218,
+        "overflow": false
+      },
+      {
+        "name": "heading",
+        "x": 72,
+        "y": 300,
+        "width": 451,
+        "height": 197.09375,
+        "right": 523,
+        "bottom": 497.09375,
+        "overflow": false
+      },
+      {
+        "name": "number",
+        "x": 72,
+        "y": 535,
+        "width": 766.8125,
+        "height": 185,
+        "right": 838.8125,
+        "bottom": 720,
+        "overflow": false
+      },
+      {
+        "name": "unit",
+        "x": 76,
+        "y": 724,
+        "width": 386.890625,
+        "height": 49,
+        "right": 462.890625,
+        "bottom": 773,
+        "overflow": false
+      },
+      {
+        "name": "encoding",
+        "x": 72,
+        "y": 1300,
+        "width": 864,
+        "height": 47,
+        "right": 936,
+        "bottom": 1347,
+        "overflow": false
+      },
+      {
+        "name": "caption",
+        "x": 72,
+        "y": 1482,
+        "width": 864,
+        "height": 121.4375,
+        "right": 936,
+        "bottom": 1603.4375,
+        "overflow": false
+      }
+    ],
+    "violations": [],
+    "collisions": [],
+    "fonts": [
+      {
+        "family": "IBM Plex Sans",
+        "weight": "400",
+        "file": "IBMPlexSans-Regular.woff2",
+        "loaded": true
+      },
+      {
+        "family": "IBM Plex Sans",
+        "weight": "500",
+        "file": "IBMPlexSans-Medium.woff2",
+        "loaded": true
+      },
+      {
+        "family": "IBM Plex Sans",
+        "weight": "600",
+        "file": "IBMPlexSans-SemiBold.woff2",
+        "loaded": true
+      },
+      {
+        "family": "IBM Plex Mono",
+        "weight": "400",
+        "file": "IBMPlexMono-Regular.woff2",
+        "loaded": true
+      },
+      {
+        "family": "IBM Plex Mono",
+        "weight": "500",
+        "file": "IBMPlexMono-Medium.woff2",
+        "loaded": true
+      }
+    ]
+  },
+  {
+    "frame": 685,
+    "rects": [
+      {
+        "name": "brand-signature",
+        "x": 72,
+        "y": 184,
+        "width": 408.0625,
+        "height": 34,
+        "right": 480.0625,
+        "bottom": 218,
+        "overflow": false
+      },
+      {
+        "name": "heading",
+        "x": 72,
+        "y": 300,
+        "width": 451,
+        "height": 197.09375,
+        "right": 523,
+        "bottom": 497.09375,
+        "overflow": false
+      },
+      {
+        "name": "number",
+        "x": 72,
+        "y": 535,
+        "width": 766.8125,
+        "height": 185,
+        "right": 838.8125,
+        "bottom": 720,
+        "overflow": false
+      },
+      {
+        "name": "unit",
+        "x": 76,
+        "y": 724,
+        "width": 386.890625,
+        "height": 49,
+        "right": 462.890625,
+        "bottom": 773,
+        "overflow": false
+      },
+      {
+        "name": "encoding",
+        "x": 72,
+        "y": 1300,
+        "width": 864,
+        "height": 47,
+        "right": 936,
+        "bottom": 1347,
+        "overflow": false
+      },
+      {
+        "name": "caption",
+        "x": 72,
+        "y": 1482,
+        "width": 864,
+        "height": 121.4375,
+        "right": 936,
+        "bottom": 1603.4375,
+        "overflow": false
+      }
+    ],
+    "violations": [],
+    "collisions": [],
+    "fonts": [
+      {
+        "family": "IBM Plex Sans",
+        "weight": "400",
+        "file": "IBMPlexSans-Regular.woff2",
+        "loaded": true
+      },
+      {
+        "family": "IBM Plex Sans",
+        "weight": "500",
+        "file": "IBMPlexSans-Medium.woff2",
+        "loaded": true
+      },
+      {
+        "family": "IBM Plex Sans",
+        "weight": "600",
+        "file": "IBMPlexSans-SemiBold.woff2",
+        "loaded": true
+      },
+      {
+        "family": "IBM Plex Mono",
+        "weight": "400",
+        "file": "IBMPlexMono-Regular.woff2",
+        "loaded": true
+      },
+      {
+        "family": "IBM Plex Mono",
+        "weight": "500",
+        "file": "IBMPlexMono-Medium.woff2",
+        "loaded": true
+      }
+    ]
+  },
+  {
+    "frame": 692,
+    "rects": [
+      {
+        "name": "brand-signature",
+        "x": 72,
+        "y": 184,
+        "width": 408.0625,
+        "height": 34,
+        "right": 480.0625,
+        "bottom": 218,
+        "overflow": false
+      },
+      {
+        "name": "heading",
+        "x": 72,
+        "y": 300,
+        "width": 451,
+        "height": 197.09375,
+        "right": 523,
+        "bottom": 497.09375,
+        "overflow": false
+      },
+      {
+        "name": "number",
+        "x": 72,
+        "y": 535,
+        "width": 766.8125,
+        "height": 185,
+        "right": 838.8125,
+        "bottom": 720,
+        "overflow": false
+      },
+      {
+        "name": "unit",
+        "x": 76,
+        "y": 724,
+        "width": 386.890625,
+        "height": 49,
+        "right": 462.890625,
+        "bottom": 773,
+        "overflow": false
+      },
+      {
+        "name": "encoding",
+        "x": 72,
+        "y": 1300,
+        "width": 864,
+        "height": 47,
+        "right": 936,
+        "bottom": 1347,
+        "overflow": false
+      },
+      {
+        "name": "caption",
+        "x": 72,
+        "y": 1482,
+        "width": 864,
+        "height": 60.71875,
+        "right": 936,
+        "bottom": 1542.71875,
+        "overflow": false
+      }
+    ],
+    "violations": [],
+    "collisions": [],
+    "fonts": [
+      {
+        "family": "IBM Plex Sans",
+        "weight": "400",
+        "file": "IBMPlexSans-Regular.woff2",
+        "loaded": true
+      },
+      {
+        "family": "IBM Plex Sans",
+        "weight": "500",
+        "file": "IBMPlexSans-Medium.woff2",
+        "loaded": true
+      },
+      {
+        "family": "IBM Plex Sans",
+        "weight": "600",
+        "file": "IBMPlexSans-SemiBold.woff2",
+        "loaded": true
+      },
+      {
+        "family": "IBM Plex Mono",
+        "weight": "400",
+        "file": "IBMPlexMono-Regular.woff2",
+        "loaded": true
+      },
+      {
+        "family": "IBM Plex Mono",
+        "weight": "500",
+        "file": "IBMPlexMono-Medium.woff2",
+        "loaded": true
+      }
+    ]
+  },
+  {
+    "frame": 713,
+    "rects": [
+      {
+        "name": "brand-signature",
+        "x": 72,
+        "y": 184,
+        "width": 408.0625,
+        "height": 34,
+        "right": 480.0625,
+        "bottom": 218,
+        "overflow": false
+      },
+      {
+        "name": "heading",
+        "x": 72,
+        "y": 300,
+        "width": 451,
+        "height": 197.09375,
+        "right": 523,
+        "bottom": 497.09375,
+        "overflow": false
+      },
+      {
+        "name": "number",
+        "x": 72,
+        "y": 535,
+        "width": 766.8125,
+        "height": 185,
+        "right": 838.8125,
+        "bottom": 720,
+        "overflow": false
+      },
+      {
+        "name": "unit",
+        "x": 76,
+        "y": 724,
+        "width": 386.890625,
+        "height": 49,
+        "right": 462.890625,
+        "bottom": 773,
+        "overflow": false
+      },
+      {
+        "name": "encoding",
+        "x": 72,
+        "y": 1300,
+        "width": 864,
+        "height": 47,
+        "right": 936,
+        "bottom": 1347,
+        "overflow": false
+      },
+      {
+        "name": "caption",
+        "x": 72,
+        "y": 1482,
+        "width": 864,
+        "height": 60.71875,
+        "right": 936,
+        "bottom": 1542.71875,
+        "overflow": false
+      }
+    ],
+    "violations": [],
+    "collisions": [],
+    "fonts": [
+      {
+        "family": "IBM Plex Sans",
+        "weight": "400",
+        "file": "IBMPlexSans-Regular.woff2",
+        "loaded": true
+      },
+      {
+        "family": "IBM Plex Sans",
+        "weight": "500",
+        "file": "IBMPlexSans-Medium.woff2",
+        "loaded": true
+      },
+      {
+        "family": "IBM Plex Sans",
+        "weight": "600",
+        "file": "IBMPlexSans-SemiBold.woff2",
+        "loaded": true
+      },
+      {
+        "family": "IBM Plex Mono",
+        "weight": "400",
+        "file": "IBMPlexMono-Regular.woff2",
+        "loaded": true
+      },
+      {
+        "family": "IBM Plex Mono",
+        "weight": "500",
+        "file": "IBMPlexMono-Medium.woff2",
+        "loaded": true
+      }
+    ]
+  },
+  {
+    "frame": 734,
+    "rects": [
+      {
+        "name": "brand-signature",
+        "x": 72,
+        "y": 184,
+        "width": 408.0625,
+        "height": 34,
+        "right": 480.0625,
+        "bottom": 218,
+        "overflow": false
+      },
+      {
+        "name": "heading",
+        "x": 72,
+        "y": 300,
+        "width": 451,
+        "height": 197.09375,
+        "right": 523,
+        "bottom": 497.09375,
+        "overflow": false
+      },
+      {
+        "name": "number",
+        "x": 72,
+        "y": 535,
+        "width": 766.8125,
+        "height": 185,
+        "right": 838.8125,
+        "bottom": 720,
+        "overflow": false
+      },
+      {
+        "name": "unit",
+        "x": 76,
+        "y": 724,
+        "width": 386.890625,
+        "height": 49,
+        "right": 462.890625,
+        "bottom": 773,
+        "overflow": false
+      },
+      {
+        "name": "encoding",
+        "x": 72,
+        "y": 1300,
+        "width": 864,
+        "height": 47,
+        "right": 936,
+        "bottom": 1347,
+        "overflow": false
+      },
+      {
+        "name": "caption",
+        "x": 72,
+        "y": 1482,
+        "width": 864,
+        "height": 60.71875,
+        "right": 936,
+        "bottom": 1542.71875,
+        "overflow": false
+      }
+    ],
+    "violations": [],
+    "collisions": [],
+    "fonts": [
+      {
+        "family": "IBM Plex Sans",
+        "weight": "400",
+        "file": "IBMPlexSans-Regular.woff2",
+        "loaded": true
+      },
+      {
+        "family": "IBM Plex Sans",
+        "weight": "500",
+        "file": "IBMPlexSans-Medium.woff2",
+        "loaded": true
+      },
+      {
+        "family": "IBM Plex Sans",
+        "weight": "600",
+        "file": "IBMPlexSans-SemiBold.woff2",
+        "loaded": true
+      },
+      {
+        "family": "IBM Plex Mono",
+        "weight": "400",
+        "file": "IBMPlexMono-Regular.woff2",
+        "loaded": true
+      },
+      {
+        "family": "IBM Plex Mono",
+        "weight": "500",
+        "file": "IBMPlexMono-Medium.woff2",
+        "loaded": true
+      }
+    ]
+  },
+  {
+    "frame": 747,
+    "rects": [
+      {
+        "name": "brand-signature",
+        "x": 72,
+        "y": 184,
+        "width": 408.0625,
+        "height": 34,
+        "right": 480.0625,
+        "bottom": 218,
+        "overflow": false
+      },
+      {
+        "name": "heading",
+        "x": 72,
+        "y": 300,
+        "width": 451,
+        "height": 197.09375,
+        "right": 523,
+        "bottom": 497.09375,
+        "overflow": false
+      },
+      {
+        "name": "number",
+        "x": 72,
+        "y": 535,
+        "width": 766.8125,
+        "height": 185,
+        "right": 838.8125,
+        "bottom": 720,
+        "overflow": false
+      },
+      {
+        "name": "unit",
+        "x": 76,
+        "y": 724,
+        "width": 386.890625,
+        "height": 49,
+        "right": 462.890625,
+        "bottom": 773,
+        "overflow": false
+      },
+      {
+        "name": "encoding",
+        "x": 72,
+        "y": 1300,
+        "width": 864,
+        "height": 47,
+        "right": 936,
+        "bottom": 1347,
+        "overflow": false
+      },
+      {
+        "name": "caption",
+        "x": 72,
+        "y": 1482,
+        "width": 864,
+        "height": 121.4375,
+        "right": 936,
+        "bottom": 1603.4375,
+        "overflow": false
+      }
+    ],
+    "violations": [],
+    "collisions": [],
+    "fonts": [
+      {
+        "family": "IBM Plex Sans",
+        "weight": "400",
+        "file": "IBMPlexSans-Regular.woff2",
+        "loaded": true
+      },
+      {
+        "family": "IBM Plex Sans",
+        "weight": "500",
+        "file": "IBMPlexSans-Medium.woff2",
+        "loaded": true
+      },
+      {
+        "family": "IBM Plex Sans",
+        "weight": "600",
+        "file": "IBMPlexSans-SemiBold.woff2",
+        "loaded": true
+      },
+      {
+        "family": "IBM Plex Mono",
+        "weight": "400",
+        "file": "IBMPlexMono-Regular.woff2",
+        "loaded": true
+      },
+      {
+        "family": "IBM Plex Mono",
+        "weight": "500",
+        "file": "IBMPlexMono-Medium.woff2",
+        "loaded": true
+      }
+    ]
+  },
+  {
+    "frame": 788,
+    "rects": [
+      {
+        "name": "brand-signature",
+        "x": 72,
+        "y": 184,
+        "width": 408.0625,
+        "height": 34,
+        "right": 480.0625,
+        "bottom": 218,
+        "overflow": false
+      },
+      {
+        "name": "heading",
+        "x": 72,
+        "y": 300,
+        "width": 451,
+        "height": 197.09375,
+        "right": 523,
+        "bottom": 497.09375,
+        "overflow": false
+      },
+      {
+        "name": "number",
+        "x": 72,
+        "y": 535,
+        "width": 766.8125,
+        "height": 185,
+        "right": 838.8125,
+        "bottom": 720,
+        "overflow": false
+      },
+      {
+        "name": "unit",
+        "x": 76,
+        "y": 724,
+        "width": 386.890625,
+        "height": 49,
+        "right": 462.890625,
+        "bottom": 773,
+        "overflow": false
+      },
+      {
+        "name": "encoding",
+        "x": 72,
+        "y": 1300,
+        "width": 864,
+        "height": 47,
+        "right": 936,
+        "bottom": 1347,
+        "overflow": false
+      },
+      {
+        "name": "caption",
+        "x": 72,
+        "y": 1482,
+        "width": 864,
+        "height": 121.4375,
+        "right": 936,
+        "bottom": 1603.4375,
+        "overflow": false
+      }
+    ],
+    "violations": [],
+    "collisions": [],
+    "fonts": [
+      {
+        "family": "IBM Plex Sans",
+        "weight": "400",
+        "file": "IBMPlexSans-Regular.woff2",
+        "loaded": true
+      },
+      {
+        "family": "IBM Plex Sans",
+        "weight": "500",
+        "file": "IBMPlexSans-Medium.woff2",
+        "loaded": true
+      },
+      {
+        "family": "IBM Plex Sans",
+        "weight": "600",
+        "file": "IBMPlexSans-SemiBold.woff2",
+        "loaded": true
+      },
+      {
+        "family": "IBM Plex Mono",
+        "weight": "400",
+        "file": "IBMPlexMono-Regular.woff2",
+        "loaded": true
+      },
+      {
+        "family": "IBM Plex Mono",
+        "weight": "500",
+        "file": "IBMPlexMono-Medium.woff2",
+        "loaded": true
+      }
+    ]
+  },
+  {
+    "frame": 828,
+    "rects": [
+      {
+        "name": "brand-signature",
+        "x": 72,
+        "y": 184,
+        "width": 408.0625,
+        "height": 34,
+        "right": 480.0625,
+        "bottom": 218,
+        "overflow": false
+      },
+      {
+        "name": "heading",
+        "x": 72,
+        "y": 300,
+        "width": 451,
+        "height": 197.09375,
+        "right": 523,
+        "bottom": 497.09375,
+        "overflow": false
+      },
+      {
+        "name": "number",
+        "x": 72,
+        "y": 535,
+        "width": 766.8125,
+        "height": 185,
+        "right": 838.8125,
+        "bottom": 720,
+        "overflow": false
+      },
+      {
+        "name": "unit",
+        "x": 76,
+        "y": 724,
+        "width": 386.890625,
+        "height": 49,
+        "right": 462.890625,
+        "bottom": 773,
+        "overflow": false
+      },
+      {
+        "name": "encoding",
+        "x": 72,
+        "y": 1300,
+        "width": 864,
+        "height": 47,
+        "right": 936,
+        "bottom": 1347,
+        "overflow": false
+      },
+      {
+        "name": "caption",
+        "x": 72,
+        "y": 1482,
+        "width": 864,
+        "height": 121.4375,
+        "right": 936,
+        "bottom": 1603.4375,
+        "overflow": false
+      }
+    ],
+    "violations": [],
+    "collisions": [],
+    "fonts": [
+      {
+        "family": "IBM Plex Sans",
+        "weight": "400",
+        "file": "IBMPlexSans-Regular.woff2",
+        "loaded": true
+      },
+      {
+        "family": "IBM Plex Sans",
+        "weight": "500",
+        "file": "IBMPlexSans-Medium.woff2",
+        "loaded": true
+      },
+      {
+        "family": "IBM Plex Sans",
+        "weight": "600",
+        "file": "IBMPlexSans-SemiBold.woff2",
+        "loaded": true
+      },
+      {
+        "family": "IBM Plex Mono",
+        "weight": "400",
+        "file": "IBMPlexMono-Regular.woff2",
+        "loaded": true
+      },
+      {
+        "family": "IBM Plex Mono",
+        "weight": "500",
+        "file": "IBMPlexMono-Medium.woff2",
+        "loaded": true
+      }
+    ]
+  },
+  {
+    "frame": 839,
+    "rects": [
+      {
+        "name": "brand-signature",
+        "x": 72,
+        "y": 184,
+        "width": 408.0625,
+        "height": 34,
+        "right": 480.0625,
+        "bottom": 218,
+        "overflow": false
+      },
+      {
+        "name": "heading",
+        "x": 72,
+        "y": 300,
+        "width": 451,
+        "height": 197.09375,
+        "right": 523,
+        "bottom": 497.09375,
+        "overflow": false
+      },
+      {
+        "name": "number",
+        "x": 72,
+        "y": 535,
+        "width": 340.8125,
+        "height": 185,
+        "right": 412.8125,
+        "bottom": 720,
+        "overflow": false
+      },
+      {
+        "name": "unit",
+        "x": 76,
+        "y": 724,
+        "width": 175.453125,
+        "height": 49,
+        "right": 251.453125,
+        "bottom": 773,
+        "overflow": false
+      },
+      {
+        "name": "encoding",
+        "x": 72,
+        "y": 1300,
+        "width": 864,
+        "height": 47,
+        "right": 936,
+        "bottom": 1347,
+        "overflow": false
+      },
+      {
+        "name": "caption",
+        "x": 72,
+        "y": 1482,
+        "width": 864,
+        "height": 60.71875,
+        "right": 936,
+        "bottom": 1542.71875,
+        "overflow": false
+      }
+    ],
+    "violations": [],
+    "collisions": [],
+    "fonts": [
+      {
+        "family": "IBM Plex Sans",
+        "weight": "400",
+        "file": "IBMPlexSans-Regular.woff2",
+        "loaded": true
+      },
+      {
+        "family": "IBM Plex Sans",
+        "weight": "500",
+        "file": "IBMPlexSans-Medium.woff2",
+        "loaded": true
+      },
+      {
+        "family": "IBM Plex Sans",
+        "weight": "600",
+        "file": "IBMPlexSans-SemiBold.woff2",
+        "loaded": true
+      },
+      {
+        "family": "IBM Plex Mono",
+        "weight": "400",
+        "file": "IBMPlexMono-Regular.woff2",
+        "loaded": true
+      },
+      {
+        "family": "IBM Plex Mono",
+        "weight": "500",
+        "file": "IBMPlexMono-Medium.woff2",
+        "loaded": true
+      }
+    ]
+  },
+  {
+    "frame": 862,
+    "rects": [
+      {
+        "name": "brand-signature",
+        "x": 72,
+        "y": 184,
+        "width": 408.0625,
+        "height": 34,
+        "right": 480.0625,
+        "bottom": 218,
+        "overflow": false
+      },
+      {
+        "name": "heading",
+        "x": 72,
+        "y": 300,
+        "width": 451,
+        "height": 197.09375,
+        "right": 523,
+        "bottom": 497.09375,
+        "overflow": false
+      },
+      {
+        "name": "number",
+        "x": 72,
+        "y": 535,
+        "width": 340.8125,
+        "height": 185,
+        "right": 412.8125,
+        "bottom": 720,
+        "overflow": false
+      },
+      {
+        "name": "unit",
+        "x": 76,
+        "y": 724,
+        "width": 175.453125,
+        "height": 49,
+        "right": 251.453125,
+        "bottom": 773,
+        "overflow": false
+      },
+      {
+        "name": "encoding",
+        "x": 72,
+        "y": 1300,
+        "width": 864,
+        "height": 47,
+        "right": 936,
+        "bottom": 1347,
+        "overflow": false
+      },
+      {
+        "name": "caption",
+        "x": 72,
+        "y": 1482,
+        "width": 864,
+        "height": 60.71875,
+        "right": 936,
+        "bottom": 1542.71875,
+        "overflow": false
+      }
+    ],
+    "violations": [],
+    "collisions": [],
+    "fonts": [
+      {
+        "family": "IBM Plex Sans",
+        "weight": "400",
+        "file": "IBMPlexSans-Regular.woff2",
+        "loaded": true
+      },
+      {
+        "family": "IBM Plex Sans",
+        "weight": "500",
+        "file": "IBMPlexSans-Medium.woff2",
+        "loaded": true
+      },
+      {
+        "family": "IBM Plex Sans",
+        "weight": "600",
+        "file": "IBMPlexSans-SemiBold.woff2",
+        "loaded": true
+      },
+      {
+        "family": "IBM Plex Mono",
+        "weight": "400",
+        "file": "IBMPlexMono-Regular.woff2",
+        "loaded": true
+      },
+      {
+        "family": "IBM Plex Mono",
+        "weight": "500",
+        "file": "IBMPlexMono-Medium.woff2",
+        "loaded": true
+      }
+    ]
+  },
+  {
+    "frame": 884,
+    "rects": [
+      {
+        "name": "brand-signature",
+        "x": 72,
+        "y": 184,
+        "width": 408.0625,
+        "height": 34,
+        "right": 480.0625,
+        "bottom": 218,
+        "overflow": false
+      },
+      {
+        "name": "heading",
+        "x": 72,
+        "y": 300,
+        "width": 451,
+        "height": 197.09375,
+        "right": 523,
+        "bottom": 497.09375,
+        "overflow": false
+      },
+      {
+        "name": "number",
+        "x": 72,
+        "y": 535,
+        "width": 340.8125,
+        "height": 185,
+        "right": 412.8125,
+        "bottom": 720,
+        "overflow": false
+      },
+      {
+        "name": "unit",
+        "x": 76,
+        "y": 724,
+        "width": 175.453125,
+        "height": 49,
+        "right": 251.453125,
+        "bottom": 773,
+        "overflow": false
+      },
+      {
+        "name": "encoding",
+        "x": 72,
+        "y": 1300,
+        "width": 864,
+        "height": 47,
+        "right": 936,
+        "bottom": 1347,
+        "overflow": false
+      },
+      {
+        "name": "caption",
+        "x": 72,
+        "y": 1482,
+        "width": 864,
+        "height": 60.71875,
+        "right": 936,
+        "bottom": 1542.71875,
+        "overflow": false
+      }
+    ],
+    "violations": [],
+    "collisions": [],
+    "fonts": [
+      {
+        "family": "IBM Plex Sans",
+        "weight": "400",
+        "file": "IBMPlexSans-Regular.woff2",
+        "loaded": true
+      },
+      {
+        "family": "IBM Plex Sans",
+        "weight": "500",
+        "file": "IBMPlexSans-Medium.woff2",
+        "loaded": true
+      },
+      {
+        "family": "IBM Plex Sans",
+        "weight": "600",
+        "file": "IBMPlexSans-SemiBold.woff2",
+        "loaded": true
+      },
+      {
+        "family": "IBM Plex Mono",
+        "weight": "400",
+        "file": "IBMPlexMono-Regular.woff2",
+        "loaded": true
+      },
+      {
+        "family": "IBM Plex Mono",
+        "weight": "500",
+        "file": "IBMPlexMono-Medium.woff2",
+        "loaded": true
+      }
+    ]
+  },
+  {
+    "frame": 896,
+    "rects": [
+      {
+        "name": "brand-signature",
+        "x": 72,
+        "y": 184,
+        "width": 408.0625,
+        "height": 34,
+        "right": 480.0625,
+        "bottom": 218,
+        "overflow": false
+      },
+      {
+        "name": "heading",
+        "x": 72,
+        "y": 300,
+        "width": 451,
+        "height": 197.09375,
+        "right": 523,
+        "bottom": 497.09375,
+        "overflow": false
+      },
+      {
+        "name": "number",
+        "x": 72,
+        "y": 535,
+        "width": 340.8125,
+        "height": 185,
+        "right": 412.8125,
+        "bottom": 720,
+        "overflow": false
+      },
+      {
+        "name": "unit",
+        "x": 76,
+        "y": 724,
+        "width": 175.453125,
+        "height": 49,
+        "right": 251.453125,
+        "bottom": 773,
+        "overflow": false
+      },
+      {
+        "name": "encoding",
+        "x": 72,
+        "y": 1300,
+        "width": 864,
+        "height": 47,
+        "right": 936,
+        "bottom": 1347,
+        "overflow": false
+      },
+      {
+        "name": "caption",
+        "x": 72,
+        "y": 1482,
+        "width": 864,
+        "height": 121.4375,
+        "right": 936,
+        "bottom": 1603.4375,
+        "overflow": false
+      }
+    ],
+    "violations": [],
+    "collisions": [],
+    "fonts": [
+      {
+        "family": "IBM Plex Sans",
+        "weight": "400",
+        "file": "IBMPlexSans-Regular.woff2",
+        "loaded": true
+      },
+      {
+        "family": "IBM Plex Sans",
+        "weight": "500",
+        "file": "IBMPlexSans-Medium.woff2",
+        "loaded": true
+      },
+      {
+        "family": "IBM Plex Sans",
+        "weight": "600",
+        "file": "IBMPlexSans-SemiBold.woff2",
+        "loaded": true
+      },
+      {
+        "family": "IBM Plex Mono",
+        "weight": "400",
+        "file": "IBMPlexMono-Regular.woff2",
+        "loaded": true
+      },
+      {
+        "family": "IBM Plex Mono",
+        "weight": "500",
+        "file": "IBMPlexMono-Medium.woff2",
+        "loaded": true
+      }
+    ]
+  },
+  {
+    "frame": 935,
+    "rects": [
+      {
+        "name": "brand-signature",
+        "x": 72,
+        "y": 184,
+        "width": 408.0625,
+        "height": 34,
+        "right": 480.0625,
+        "bottom": 218,
+        "overflow": false
+      },
+      {
+        "name": "heading",
+        "x": 72,
+        "y": 300,
+        "width": 451,
+        "height": 197.09375,
+        "right": 523,
+        "bottom": 497.09375,
+        "overflow": false
+      },
+      {
+        "name": "number",
+        "x": 72,
+        "y": 535,
+        "width": 340.8125,
+        "height": 185,
+        "right": 412.8125,
+        "bottom": 720,
+        "overflow": false
+      },
+      {
+        "name": "unit",
+        "x": 76,
+        "y": 724,
+        "width": 175.453125,
+        "height": 49,
+        "right": 251.453125,
+        "bottom": 773,
+        "overflow": false
+      },
+      {
+        "name": "encoding",
+        "x": 72,
+        "y": 1300,
+        "width": 864,
+        "height": 47,
+        "right": 936,
+        "bottom": 1347,
+        "overflow": false
+      },
+      {
+        "name": "caption",
+        "x": 72,
+        "y": 1482,
+        "width": 864,
+        "height": 121.4375,
+        "right": 936,
+        "bottom": 1603.4375,
+        "overflow": false
+      }
+    ],
+    "violations": [],
+    "collisions": [],
+    "fonts": [
+      {
+        "family": "IBM Plex Sans",
+        "weight": "400",
+        "file": "IBMPlexSans-Regular.woff2",
+        "loaded": true
+      },
+      {
+        "family": "IBM Plex Sans",
+        "weight": "500",
+        "file": "IBMPlexSans-Medium.woff2",
+        "loaded": true
+      },
+      {
+        "family": "IBM Plex Sans",
+        "weight": "600",
+        "file": "IBMPlexSans-SemiBold.woff2",
+        "loaded": true
+      },
+      {
+        "family": "IBM Plex Mono",
+        "weight": "400",
+        "file": "IBMPlexMono-Regular.woff2",
+        "loaded": true
+      },
+      {
+        "family": "IBM Plex Mono",
+        "weight": "500",
+        "file": "IBMPlexMono-Medium.woff2",
+        "loaded": true
+      }
+    ]
+  },
+  {
+    "frame": 973,
+    "rects": [
+      {
+        "name": "brand-signature",
+        "x": 72,
+        "y": 184,
+        "width": 408.0625,
+        "height": 34,
+        "right": 480.0625,
+        "bottom": 218,
+        "overflow": false
+      },
+      {
+        "name": "heading",
+        "x": 72,
+        "y": 300,
+        "width": 451,
+        "height": 197.09375,
+        "right": 523,
+        "bottom": 497.09375,
+        "overflow": false
+      },
+      {
+        "name": "number",
+        "x": 72,
+        "y": 535,
+        "width": 340.8125,
+        "height": 185,
+        "right": 412.8125,
+        "bottom": 720,
+        "overflow": false
+      },
+      {
+        "name": "unit",
+        "x": 76,
+        "y": 724,
+        "width": 175.453125,
+        "height": 49,
+        "right": 251.453125,
+        "bottom": 773,
+        "overflow": false
+      },
+      {
+        "name": "encoding",
+        "x": 72,
+        "y": 1300,
+        "width": 864,
+        "height": 47,
+        "right": 936,
+        "bottom": 1347,
+        "overflow": false
+      },
+      {
+        "name": "caption",
+        "x": 72,
+        "y": 1482,
+        "width": 864,
+        "height": 121.4375,
+        "right": 936,
+        "bottom": 1603.4375,
+        "overflow": false
+      }
+    ],
+    "violations": [],
+    "collisions": [],
+    "fonts": [
+      {
+        "family": "IBM Plex Sans",
+        "weight": "400",
+        "file": "IBMPlexSans-Regular.woff2",
+        "loaded": true
+      },
+      {
+        "family": "IBM Plex Sans",
+        "weight": "500",
+        "file": "IBMPlexSans-Medium.woff2",
+        "loaded": true
+      },
+      {
+        "family": "IBM Plex Sans",
+        "weight": "600",
+        "file": "IBMPlexSans-SemiBold.woff2",
+        "loaded": true
+      },
+      {
+        "family": "IBM Plex Mono",
+        "weight": "400",
+        "file": "IBMPlexMono-Regular.woff2",
+        "loaded": true
+      },
+      {
+        "family": "IBM Plex Mono",
+        "weight": "500",
+        "file": "IBMPlexMono-Medium.woff2",
+        "loaded": true
+      }
+    ]
+  },
+  {
+    "frame": 1199,
+    "rects": [
+      {
+        "name": "outro-name",
+        "x": 72,
+        "y": 946,
+        "width": 864,
+        "height": 67,
+        "right": 936,
+        "bottom": 1013,
+        "overflow": false
+      }
+    ],
+    "violations": [],
+    "collisions": [],
+    "fonts": [
+      {
+        "family": "IBM Plex Sans",
+        "weight": "400",
+        "file": "IBMPlexSans-Regular.woff2",
+        "loaded": true
+      },
+      {
+        "family": "IBM Plex Sans",
+        "weight": "500",
+        "file": "IBMPlexSans-Medium.woff2",
+        "loaded": true
+      },
+      {
+        "family": "IBM Plex Sans",
+        "weight": "600",
+        "file": "IBMPlexSans-SemiBold.woff2",
+        "loaded": true
+      },
+      {
+        "family": "IBM Plex Mono",
+        "weight": "400",
+        "file": "IBMPlexMono-Regular.woff2",
+        "loaded": true
+      },
+      {
+        "family": "IBM Plex Mono",
+        "weight": "500",
+        "file": "IBMPlexMono-Medium.woff2",
+        "loaded": true
+      }
+    ]
+  }
+]

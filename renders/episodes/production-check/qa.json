@@ -1,0 +1,62 @@
+{
+  "id": "production-check",
+  "technicalChecksPassed": true,
+  "publicationReady": false,
+  "publicationBlockers": [
+    "PUBLICATION BLOCKED: human audio/timing review is not approved"
+  ],
+  "reviewStatus": "needs_review",
+  "frames": 1200,
+  "fps": 30,
+  "seconds": 40.0,
+  "audioDurationSeconds": 33.126354166666665,
+  "resultHoldFrames": 181,
+  "outroFromFrame": 1155,
+  "encodedSyncSamples": [
+    {
+      "position": "start",
+      "sourceFromMs": 510.0,
+      "lagMs": 0.0,
+      "correlation": 0.9999624862134107
+    },
+    {
+      "position": "middle",
+      "sourceFromMs": 13820.0,
+      "lagMs": 0.0,
+      "correlation": 0.9999193295238118
+    },
+    {
+      "position": "end",
+      "sourceFromMs": 30810.0,
+      "lagMs": 0.0,
+      "correlation": 0.9998773286609222
+    }
+  ],
+  "driftMs": 0.0,
+  "encodedPeak": 0.7156392335891724,
+  "integratedLufs": -21.17,
+  "truePeakDbtp": -5.91,
+  "outroCorrelation": 0.9999931246718357,
+  "outroLagMs": 0.0,
+  "captionCoverageWords": 67,
+  "srtMatchesBurnIn": true,
+  "blackIntervals": [],
+  "emptyContentFrames": [],
+  "largeFrameChangeCandidates": [],
+  "suspiciousWords": [
+    10,
+    42,
+    43,
+    58,
+    59
+  ],
+  "humanListeningPerformed": false,
+  "humanReviewListeningRecorded": false,
+  "manualChecksRequired": [
+    "Listen to Turkish pronunciation, numbers, units and last syllables.",
+    "Inspect word onsets/offsets in the local editor; CTC20ms resolution does not guarantee33ms accuracy.",
+    "Watch the actual MP4 for semantic scene timing, flicker and subjective readability."
+  ],
+  "audioSha256": "f0ee25cd6c9c2bd06685768e51933665a5f4b333e9182198b17aa3df35a375a4",
+  "wordTimingsSha256": "0b8043491cf5678d774a7aea795eee288c852aaf8a7f1287d515332fbb9d608d"
+}
