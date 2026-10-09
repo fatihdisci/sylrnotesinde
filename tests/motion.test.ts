@@ -13,7 +13,11 @@ test('camera endpoints and monotone scale preserve geometry',()=>{
   assert.deepEqual(cameraBetween(-1,0,72,a,b),a);
   assert.ok(Math.abs(cameraBetween(72,0,72,a,b).scale-b.scale)<1e-12);
   let previous=24;
-  for(let f=0;f<=72;f++){const c=cameraBetween(f,0,72,a,b);assert.ok(c.scale<=previous+1e-12 && c.scale>=.76-1e-12);previous=c.scale;}
+  for(let f=0;f<=72;f++){const c=cameraBetween(f,0,72,a,b);assert.ok(c.scale<=previous+1e-12 && c.scale>=.76-1e-12);previous=c.scale;
+    const screenX=504+(10-c.x)*c.scale,screenY=930+(10-c.y)*c.scale;
+    assert.ok(screenX>=283.6-1e-9 && screenX<=504+1e-9);
+    assert.ok(screenY>=572.8-1e-9 && screenY<=930+1e-9);
+  }
 });
 test('short-study keeps its own contract and publication review gate',()=>{
   const episode=study as Episode;assert.doesNotThrow(()=>validateEpisode(episode));

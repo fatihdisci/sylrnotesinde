@@ -29,7 +29,7 @@ export const TimeRibbon = ({camera,amount,group}: {camera:CameraPose;amount:numb
     </g>)}
     <path d="M184 640V740 M184 690H112" stroke={colors.accent} strokeWidth="3"/>
     <text data-safe="ribbon-first-unit" x="84" y="667" fill={colors.accent}>1</text>
-    <text data-safe="ribbon-end" x="824" y="1260" textAnchor="end" fill={colors.secondaryAccent}>≈ 31,7 yıl</text>
+    <text data-safe="ribbon-end" x="824" y="1295" textAnchor="end" fill={colors.secondaryAccent}>≈ 31,7 yıl</text>
   </g>}
   </g>;
 };
