@@ -34,7 +34,7 @@ def synth(name,frames,rate=48000):
     x*=env
     return x/max(.01,float(np.max(np.abs(x))))*.72
 
-def build(id):
+def build(id, speech_ratio=.27, master_gain=.3):
     _,dest=paths(id);m=read(dest/'narration-manifest.json');d=read(dest/'word-timings.json')
     if not m.get('direction'):raise ValueError('Author a word-anchored storyboard first')
     voice,rate=sf.read(dest/'narration.wav');assert rate==48000
@@ -42,7 +42,7 @@ def build(id):
     stem=np.zeros(n);events=[]
     for event in m['direction']['events']:
         for i,e in enumerate(event['effects']):
-            wave=synth(e['sound'],e['durationFrames'])*e['gain']*.3
+            wave=synth(e['sound'],e['durationFrames'])*e['gain']*master_gain
             start=e['frame']*1600;stop=start+len(wave)
             if stop>n:raise ValueError('Effect overlaps outro')
             stem[start:stop]+=wave
@@ -57,7 +57,7 @@ def build(id):
     target=np.ones(windows)
     for i in range(windows):
         level=vrms[i]
-        if level>.008:target[i]=min(1,level*.27/max(srms[i],1e-6))
+        if level>.008:target[i]=min(1,level*speech_ratio/max(srms[i],1e-6))
     target=np.array([min(target[max(0,i-1):min(windows,i+4)]) for i in range(windows)])
     gain=np.ones(windows)
     for i in range(1,windows):gain[i]=min(target[i],gain[i-1]+1/14)
@@ -70,7 +70,7 @@ def build(id):
     srms_after=np.array([np.sqrt(np.mean(stem[i*480:(i+1)*480]**2)) for i in range(windows)])
     voiced=speech & (srms_after>.0003)
     ratios=20*np.log10(np.maximum(srms_after[voiced],1e-9)/vrms[voiced])
-    report={'schemaVersion':1,'method':'original-seeded-procedural-foley-v2','seed':42,'sampleRate':48000,'directionHash':sha(json.dumps(m['direction'],sort_keys=True).encode()),'audioHash':d['bindings']['audioHash'],'stemSha256':sha((dest/'sfx-stem.wav').read_bytes()),'events':events,'ducking':{'source':'actual narration WAV, 10ms RMS','lookaheadMs':30,'releaseMs':140,'minimumGain':float(gain.min()),'speechWindowsWithSfx':int(voiced.sum()),'medianEffectToVoiceDb':float(np.median(ratios)) if len(ratios) else None,'p95EffectToVoiceDb':float(np.percentile(ratios,95)) if len(ratios) else None},'stemPeak':float(np.max(np.abs(stem))),'predictedMixPeak':float(np.max(np.abs(stem+v))),'externalSamples':False,'humanListeningPerformed':False}
+    report={'schemaVersion':1,'method':'original-seeded-procedural-foley-v2','seed':42,'sampleRate':48000,'directionHash':sha(json.dumps(m['direction'],sort_keys=True).encode()),'audioHash':d['bindings']['audioHash'],'stemSha256':sha((dest/'sfx-stem.wav').read_bytes()),'events':events,'ducking':{'source':'actual narration WAV, 10ms RMS','speechRatioLimit':speech_ratio,'masterGain':master_gain,'lookaheadMs':30,'releaseMs':140,'minimumGain':float(gain.min()),'speechWindowsWithSfx':int(voiced.sum()),'medianEffectToVoiceDb':float(np.median(ratios)) if len(ratios) else None,'p95EffectToVoiceDb':float(np.percentile(ratios,95)) if len(ratios) else None},'stemPeak':float(np.max(np.abs(stem))),'predictedMixPeak':float(np.max(np.abs(stem+v))),'externalSamples':False,'humanListeningPerformed':False}
     report['renderGain']=.6
     write(dest/'sound-design.json',report)
     export(id)

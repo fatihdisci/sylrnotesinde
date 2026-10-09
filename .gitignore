@@ -36,3 +36,6 @@ renders/episodes/seconds-film-minimax/
 voice-sources/
 renders/episodes/seconds-audio-first/
 public/episodes/*/sfx-stem.wav
+
+# Isolated creative candidate masters / controls
+renders/episodes/seconds-sculpture/
