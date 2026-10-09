@@ -1,0 +1,74 @@
+1
+00:00:00,400 --> 00:00:01,633
+1 milyon saniye mi,
+
+2
+00:00:01,633 --> 00:00:02,867
+1 milyar saniye mi?
+
+3
+00:00:03,233 --> 00:00:04,867
+Arada sadece üç sıfır var.
+
+4
+00:00:05,233 --> 00:00:06,633
+Ama geçen zamana bakın.
+
+5
+00:00:07,000 --> 00:00:08,900
+Saatin her tam turu 1 dakika.
+
+6
+00:00:09,300 --> 00:00:12,167
+Dakikalar saatlere,
+saatler günlere dönüşüyor.
+
+7
+00:00:12,433 --> 00:00:13,533
+1 milyon saniye,
+
+8
+00:00:13,600 --> 00:00:15,700
+yaklaşık 11,6 gün.
+
+9
+00:00:16,033 --> 00:00:18,400
+Bu sürenin tamamını
+tek bir blok yapalım.
+
+10
+00:00:19,767 --> 00:00:21,700
+Şimdi 1 milyar saniyeye geçiyoruz.
+
+11
+00:00:22,067 --> 00:00:25,367
+Kamera uzaklaştıkça aynı bloktan
+yüzlercesi görünüyor.
+
+12
+00:00:25,733 --> 00:00:27,233
+Her biri yine 1 milyon saniye.
+
+13
+00:00:27,600 --> 00:00:29,067
+Toplam 1.000 eşit blok.
+
+14
+00:00:29,533 --> 00:00:30,800
+1 milyar saniye,
+
+15
+00:00:30,967 --> 00:00:32,833
+yaklaşık 31,7 yıl.
+
+16
+00:00:33,167 --> 00:00:34,700
+11,6 günden,
+
+17
+00:00:34,833 --> 00:00:36,400
+neredeyse 32 yıla.
+
+18
+00:00:37,100 --> 00:00:37,967
+Fark tam 1.000 kat.

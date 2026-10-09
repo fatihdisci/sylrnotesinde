@@ -1,0 +1,182 @@
+{
+  "id": "motion-study-15",
+  "title": "MotionStudy · Saniyeler",
+  "hook": "On iki gün mü, otuz iki yıl mı?",
+  "brandVersion": "0.1-candidate",
+  "kind": "motion-study",
+  "durationInFrames": 450,
+  "narration": [
+    {
+      "id": "narration",
+      "text": "Üç sıfır, geçen zamanı ne kadar değiştirir? Bir milyon saniye, yaklaşık on bir virgül altı gün. Bir milyar saniye? Otuz bir virgül yedi yıl. Aynı süreden tam bin tane.",
+      "from": 0,
+      "durationInFrames": 376,
+      "path": "episodes/motion-study-15/narration.wav"
+    }
+  ],
+  "sources": [
+    {
+      "title": "SI Brochure · BIPM",
+      "url": "https://www.bipm.org/en/publications/si-brochure",
+      "note": "1 gün=86.400 s. Yıl dönüşümü açıkça 365,25 gün/yıl varsayımıyla hesaplanır; takvim yılı iddiası yok.",
+      "accessed": "2026-10-09"
+    }
+  ],
+  "claims": [
+    {
+      "id": "ratio",
+      "quantity": "count",
+      "numerator": 1000000000,
+      "denominator": 1000000,
+      "ratio": 1000,
+      "assumptions": "Aynı boydaki 1.000 blok; her blok 1.000.000 saniye. Alan karşılaştırması değil, eşit blokların adedi.",
+      "scale": "schematic"
+    },
+    {
+      "id": "days",
+      "quantity": "time",
+      "numerator": 1000000,
+      "denominator": 86400,
+      "ratio": 11.574074074074074,
+      "assumptions": "Yaklaşık11,6 gün;24 saat/gün.",
+      "scale": "linear"
+    },
+    {
+      "id": "years",
+      "quantity": "time",
+      "numerator": 1000000000,
+      "denominator": 31557600,
+      "ratio": 31.68808781402895,
+      "assumptions": "365,25 gün/yıl; yaklaşık31,7 yıl.",
+      "scale": "linear"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "continuous",
+      "from": 0,
+      "to": 405,
+      "purpose": "Original continuous TSX visualization"
+    }
+  ],
+  "audio": {
+    "voiceProvider": "local:supertonic-3",
+    "voiceStatus": "temporary"
+  },
+  "subtitlePath": "episodes/motion-study-15/captions.json",
+  "captions": [
+    {
+      "from": 16,
+      "to": 97,
+      "lines": [
+        "Üç sıfır, geçen zamanı",
+        "ne kadar değiştirir?"
+      ],
+      "wordIds": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "timingSource": "forced-alignment"
+    },
+    {
+      "from": 105,
+      "to": 141,
+      "lines": [
+        "1 milyon saniye,"
+      ],
+      "wordIds": [
+        7,
+        8,
+        9
+      ],
+      "timingSource": "forced-alignment"
+    },
+    {
+      "from": 146,
+      "to": 203,
+      "lines": [
+        "yaklaşık 11,6 gün."
+      ],
+      "wordIds": [
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "timingSource": "forced-alignment"
+    },
+    {
+      "from": 213,
+      "to": 248,
+      "lines": [
+        "1 milyar saniye?"
+      ],
+      "wordIds": [
+        16,
+        17,
+        18
+      ],
+      "timingSource": "forced-alignment"
+    },
+    {
+      "from": 258,
+      "to": 300,
+      "lines": [
+        "31,7 yıl."
+      ],
+      "wordIds": [
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "timingSource": "forced-alignment"
+    },
+    {
+      "from": 313,
+      "to": 365,
+      "lines": [
+        "Aynı süreden tam 1.000 tane."
+      ],
+      "wordIds": [
+        24,
+        25,
+        26,
+        27,
+        28
+      ],
+      "timingSource": "forced-alignment"
+    }
+  ],
+  "provenance": {
+    "specHash": "547ec631ac9ffd46b8a1b44fcab43629593a5efb60fdcd136c2ce43e7b8695db",
+    "textHash": "ac7697826eaa6c999292a7b0e28ec4445dc6afc20ec0ba966931985b7c9a5dc7",
+    "settingsHash": "74d418accde194c650a4922f94ea2560f0e7ab86980d9aae6e274dffd88240b1",
+    "ttsModelHash": "7c9f9df57674bded168ddcf3acae637c8b91e77ea31f9c02af541a35bb00289a",
+    "audioHash": "336fdf5817fdc0579175361f85b7e12bfa698e075b052a5671ef5eada1abf5df",
+    "alignmentHash": "ae806e16691ab695a26fb7e503c17e984ffce9fa53f7d05b006cc806f3bcd1be",
+    "captionsHash": "4e51338475f44a0bbea820626c7598bca1d472727e819a9ad67cafa48e45cd59",
+    "reviewStatus": "needs_review",
+    "reviewer": null,
+    "wordTimingPath": "episodes/motion-study-15/word-timings.json"
+  },
+  "timeline": {
+    "audioFrames": 376,
+    "narrationStartFrame": 0,
+    "resultFromFrame": 365,
+    "resultHoldFrames": 40,
+    "outroFromFrame": 405,
+    "durationInFrames": 450
+  },
+  "fps": 30,
+  "captionReviewRequired": true,
+  "recommendedTotalFrames": 450
+}

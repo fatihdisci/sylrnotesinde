@@ -1,0 +1,272 @@
+[
+  {
+    "from": 12,
+    "to": 49,
+    "lines": [
+      "1 milyon saniye mi,"
+    ],
+    "wordIds": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "timingSource": "forced-alignment"
+  },
+  {
+    "from": 49,
+    "to": 86,
+    "lines": [
+      "1 milyar saniye mi?"
+    ],
+    "wordIds": [
+      4,
+      5,
+      6,
+      7
+    ],
+    "timingSource": "forced-alignment"
+  },
+  {
+    "from": 97,
+    "to": 146,
+    "lines": [
+      "Arada sadece üç sıfır var."
+    ],
+    "wordIds": [
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "timingSource": "forced-alignment"
+  },
+  {
+    "from": 157,
+    "to": 199,
+    "lines": [
+      "Ama geçen zamana bakın."
+    ],
+    "wordIds": [
+      13,
+      14,
+      15,
+      16
+    ],
+    "timingSource": "forced-alignment"
+  },
+  {
+    "from": 210,
+    "to": 267,
+    "lines": [
+      "Saatin her tam turu 1 dakika."
+    ],
+    "wordIds": [
+      17,
+      18,
+      19,
+      20,
+      21,
+      22
+    ],
+    "timingSource": "forced-alignment"
+  },
+  {
+    "from": 279,
+    "to": 365,
+    "lines": [
+      "Dakikalar saatlere,",
+      "saatler günlere dönüşüyor."
+    ],
+    "wordIds": [
+      23,
+      24,
+      25,
+      26,
+      27
+    ],
+    "timingSource": "forced-alignment"
+  },
+  {
+    "from": 373,
+    "to": 406,
+    "lines": [
+      "1 milyon saniye,"
+    ],
+    "wordIds": [
+      28,
+      29,
+      30
+    ],
+    "timingSource": "forced-alignment"
+  },
+  {
+    "from": 408,
+    "to": 471,
+    "lines": [
+      "yaklaşık 11,6 gün."
+    ],
+    "wordIds": [
+      31,
+      32,
+      33,
+      34,
+      35,
+      36
+    ],
+    "timingSource": "forced-alignment"
+  },
+  {
+    "from": 481,
+    "to": 552,
+    "lines": [
+      "Bu sürenin tamamını",
+      "tek bir blok yapalım."
+    ],
+    "wordIds": [
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43
+    ],
+    "timingSource": "forced-alignment"
+  },
+  {
+    "from": 593,
+    "to": 651,
+    "lines": [
+      "Şimdi 1 milyar saniyeye geçiyoruz."
+    ],
+    "wordIds": [
+      44,
+      45,
+      46,
+      47,
+      48
+    ],
+    "timingSource": "forced-alignment"
+  },
+  {
+    "from": 662,
+    "to": 761,
+    "lines": [
+      "Kamera uzaklaştıkça aynı bloktan",
+      "yüzlercesi görünüyor."
+    ],
+    "wordIds": [
+      49,
+      50,
+      51,
+      52,
+      53,
+      54
+    ],
+    "timingSource": "forced-alignment"
+  },
+  {
+    "from": 772,
+    "to": 817,
+    "lines": [
+      "Her biri yine 1 milyon saniye."
+    ],
+    "wordIds": [
+      55,
+      56,
+      57,
+      58,
+      59,
+      60
+    ],
+    "timingSource": "forced-alignment"
+  },
+  {
+    "from": 828,
+    "to": 872,
+    "lines": [
+      "Toplam 1.000 eşit blok."
+    ],
+    "wordIds": [
+      61,
+      62,
+      63,
+      64
+    ],
+    "timingSource": "forced-alignment"
+  },
+  {
+    "from": 886,
+    "to": 924,
+    "lines": [
+      "1 milyar saniye,"
+    ],
+    "wordIds": [
+      65,
+      66,
+      67
+    ],
+    "timingSource": "forced-alignment"
+  },
+  {
+    "from": 929,
+    "to": 985,
+    "lines": [
+      "yaklaşık 31,7 yıl."
+    ],
+    "wordIds": [
+      68,
+      69,
+      70,
+      71,
+      72,
+      73
+    ],
+    "timingSource": "forced-alignment"
+  },
+  {
+    "from": 995,
+    "to": 1041,
+    "lines": [
+      "11,6 günden,"
+    ],
+    "wordIds": [
+      74,
+      75,
+      76,
+      77,
+      78
+    ],
+    "timingSource": "forced-alignment"
+  },
+  {
+    "from": 1045,
+    "to": 1092,
+    "lines": [
+      "neredeyse 32 yıla."
+    ],
+    "wordIds": [
+      79,
+      80,
+      81,
+      82
+    ],
+    "timingSource": "forced-alignment"
+  },
+  {
+    "from": 1113,
+    "to": 1139,
+    "lines": [
+      "Fark tam 1.000 kat."
+    ],
+    "wordIds": [
+      83,
+      84,
+      85,
+      86
+    ],
+    "timingSource": "forced-alignment"
+  }
+]

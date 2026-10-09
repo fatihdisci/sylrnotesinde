@@ -1,0 +1,164 @@
+{
+  "id": "motion-study",
+  "title": "MotionStudy · Saniyeler",
+  "hook": "On iki gün mü, otuz iki yıl mı?",
+  "brandVersion": "0.1-candidate",
+  "kind": "motion-study",
+  "durationInFrames": 360,
+  "narration": [
+    {
+      "id": "narration",
+      "text": "Bir milyon saniye, yaklaşık on bir virgül altı gün. Bir milyar saniye? Otuz bir virgül yedi yıl. Aynı süreden tam bin tane.",
+      "from": 0,
+      "durationInFrames": 278,
+      "path": "episodes/motion-study/narration.wav"
+    }
+  ],
+  "sources": [
+    {
+      "title": "SI Brochure · BIPM",
+      "url": "https://www.bipm.org/en/publications/si-brochure",
+      "note": "1 gün=86.400 s. Yıl dönüşümü açıkça 365,25 gün/yıl varsayımıyla hesaplanır; takvim yılı iddiası yok.",
+      "accessed": "2026-10-09"
+    }
+  ],
+  "claims": [
+    {
+      "id": "ratio",
+      "quantity": "count",
+      "numerator": 1000000000,
+      "denominator": 1000000,
+      "ratio": 1000,
+      "assumptions": "Aynı boydaki 1.000 blok; her blok 1.000.000 saniye. Alan karşılaştırması değil, eşit blokların adedi.",
+      "scale": "schematic"
+    },
+    {
+      "id": "days",
+      "quantity": "time",
+      "numerator": 1000000,
+      "denominator": 86400,
+      "ratio": 11.574074074074074,
+      "assumptions": "Yaklaşık11,6 gün;24 saat/gün.",
+      "scale": "linear"
+    },
+    {
+      "id": "years",
+      "quantity": "time",
+      "numerator": 1000000000,
+      "denominator": 31557600,
+      "ratio": 31.68808781402895,
+      "assumptions": "365,25 gün/yıl; yaklaşık31,7 yıl.",
+      "scale": "linear"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "continuous",
+      "from": 0,
+      "to": 315,
+      "purpose": "Original continuous TSX visualization"
+    }
+  ],
+  "audio": {
+    "voiceProvider": "local:supertonic-3",
+    "voiceStatus": "temporary"
+  },
+  "subtitlePath": "episodes/motion-study/captions.json",
+  "captions": [
+    {
+      "from": 12,
+      "to": 49,
+      "lines": [
+        "1 milyon saniye,"
+      ],
+      "wordIds": [
+        0,
+        1,
+        2
+      ],
+      "timingSource": "forced-alignment"
+    },
+    {
+      "from": 53,
+      "to": 107,
+      "lines": [
+        "yaklaşık 11,6 gün."
+      ],
+      "wordIds": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "timingSource": "forced-alignment"
+    },
+    {
+      "from": 119,
+      "to": 150,
+      "lines": [
+        "1 milyar saniye?"
+      ],
+      "wordIds": [
+        9,
+        10,
+        11
+      ],
+      "timingSource": "forced-alignment"
+    },
+    {
+      "from": 159,
+      "to": 202,
+      "lines": [
+        "31,7 yıl."
+      ],
+      "wordIds": [
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "timingSource": "forced-alignment"
+    },
+    {
+      "from": 211,
+      "to": 260,
+      "lines": [
+        "Aynı süreden tam 1.000 tane."
+      ],
+      "wordIds": [
+        17,
+        18,
+        19,
+        20,
+        21
+      ],
+      "timingSource": "forced-alignment"
+    }
+  ],
+  "provenance": {
+    "specHash": "09d8d411385eded25da76318b30fdf5dcd23212757afb8e790e57369452af2f5",
+    "textHash": "70393948f291f36479eea5f686f347feefbac335f1fa0e8610921409cca6f404",
+    "settingsHash": "74d418accde194c650a4922f94ea2560f0e7ab86980d9aae6e274dffd88240b1",
+    "ttsModelHash": "7c9f9df57674bded168ddcf3acae637c8b91e77ea31f9c02af541a35bb00289a",
+    "audioHash": "24924c4a4f8a66d5f27c895645e25dcc52b1f8fe632e281fe423dc5bbc70d767",
+    "alignmentHash": "7396a21bdc0356abb8285cd6c4ac9133fa5bc82c9292f96d9753e53f0527dcf3",
+    "captionsHash": "b8982393c452d0e27af1b4311816f8178915ff808f8d7ea68b3adb3719655cff",
+    "reviewStatus": "needs_review",
+    "reviewer": null,
+    "wordTimingPath": "episodes/motion-study/word-timings.json"
+  },
+  "timeline": {
+    "audioFrames": 278,
+    "narrationStartFrame": 0,
+    "resultFromFrame": 260,
+    "resultHoldFrames": 55,
+    "outroFromFrame": 315,
+    "durationInFrames": 360
+  },
+  "fps": 30,
+  "captionReviewRequired": true,
+  "recommendedTotalFrames": 360
+}

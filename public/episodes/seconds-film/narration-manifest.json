@@ -1,0 +1,362 @@
+{
+  "id": "seconds-film",
+  "title": "Saniyelerin ölçeği",
+  "hook": "On iki gün mü, otuz iki yıl mı?",
+  "brandVersion": "0.1-candidate",
+  "kind": "episode",
+  "durationInFrames": 1229,
+  "narration": [
+    {
+      "id": "narration",
+      "text": "Bir milyon saniye mi, bir milyar saniye mi? Arada sadece üç sıfır var. Ama geçen zamana bakın. Saatin her tam turu bir dakika. Dakikalar saatlere, saatler günlere dönüşüyor. Bir milyon saniye, yaklaşık on bir virgül altı gün. Bu sürenin tamamını tek bir blok yapalım. Şimdi bir milyar saniyeye geçiyoruz. Kamera uzaklaştıkça aynı bloktan yüzlercesi görünüyor. Her biri yine bir milyon saniye. Toplam bin eşit blok. Bir milyar saniye, yaklaşık otuz bir virgül yedi yıl. On bir virgül altı günden, neredeyse otuz iki yıla. Fark tam bin kat.",
+      "from": 0,
+      "durationInFrames": 1153,
+      "path": "episodes/seconds-film/narration.wav"
+    }
+  ],
+  "sources": [
+    {
+      "title": "SI Brochure · BIPM",
+      "url": "https://www.bipm.org/en/publications/si-brochure",
+      "note": "1 gün=86.400 s. Yıl dönüşümü açıkça 365,25 gün/yıl varsayımıyla hesaplanır; takvim yılı iddiası yok.",
+      "accessed": "2026-10-09"
+    }
+  ],
+  "claims": [
+    {
+      "id": "ratio",
+      "quantity": "count",
+      "numerator": 1000000000,
+      "denominator": 1000000,
+      "ratio": 1000,
+      "assumptions": "Aynı boydaki 1.000 blok; her blok 1.000.000 saniye. Alan karşılaştırması değil, eşit blokların adedi.",
+      "scale": "schematic"
+    },
+    {
+      "id": "days",
+      "quantity": "time",
+      "numerator": 1000000,
+      "denominator": 86400,
+      "ratio": 11.574074074074074,
+      "assumptions": "Yaklaşık11,6 gün;24 saat/gün.",
+      "scale": "linear"
+    },
+    {
+      "id": "years",
+      "quantity": "time",
+      "numerator": 1000000000,
+      "denominator": 31557600,
+      "ratio": 31.68808781402895,
+      "assumptions": "365,25 gün/yıl; yaklaşık31,7 yıl.",
+      "scale": "linear"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "continuous",
+      "from": 0,
+      "to": 1184,
+      "purpose": "Original continuous TSX visualization"
+    }
+  ],
+  "audio": {
+    "voiceProvider": "local:supertonic-3",
+    "voiceStatus": "temporary"
+  },
+  "subtitlePath": "episodes/seconds-film/captions.json",
+  "captions": [
+    {
+      "from": 12,
+      "to": 49,
+      "lines": [
+        "1 milyon saniye mi,"
+      ],
+      "wordIds": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "timingSource": "forced-alignment"
+    },
+    {
+      "from": 49,
+      "to": 86,
+      "lines": [
+        "1 milyar saniye mi?"
+      ],
+      "wordIds": [
+        4,
+        5,
+        6,
+        7
+      ],
+      "timingSource": "forced-alignment"
+    },
+    {
+      "from": 97,
+      "to": 146,
+      "lines": [
+        "Arada sadece üç sıfır var."
+      ],
+      "wordIds": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "timingSource": "forced-alignment"
+    },
+    {
+      "from": 157,
+      "to": 199,
+      "lines": [
+        "Ama geçen zamana bakın."
+      ],
+      "wordIds": [
+        13,
+        14,
+        15,
+        16
+      ],
+      "timingSource": "forced-alignment"
+    },
+    {
+      "from": 210,
+      "to": 267,
+      "lines": [
+        "Saatin her tam turu 1 dakika."
+      ],
+      "wordIds": [
+        17,
+        18,
+        19,
+        20,
+        21,
+        22
+      ],
+      "timingSource": "forced-alignment"
+    },
+    {
+      "from": 279,
+      "to": 365,
+      "lines": [
+        "Dakikalar saatlere,",
+        "saatler günlere dönüşüyor."
+      ],
+      "wordIds": [
+        23,
+        24,
+        25,
+        26,
+        27
+      ],
+      "timingSource": "forced-alignment"
+    },
+    {
+      "from": 373,
+      "to": 406,
+      "lines": [
+        "1 milyon saniye,"
+      ],
+      "wordIds": [
+        28,
+        29,
+        30
+      ],
+      "timingSource": "forced-alignment"
+    },
+    {
+      "from": 408,
+      "to": 471,
+      "lines": [
+        "yaklaşık 11,6 gün."
+      ],
+      "wordIds": [
+        31,
+        32,
+        33,
+        34,
+        35,
+        36
+      ],
+      "timingSource": "forced-alignment"
+    },
+    {
+      "from": 481,
+      "to": 552,
+      "lines": [
+        "Bu sürenin tamamını",
+        "tek bir blok yapalım."
+      ],
+      "wordIds": [
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43
+      ],
+      "timingSource": "forced-alignment"
+    },
+    {
+      "from": 593,
+      "to": 651,
+      "lines": [
+        "Şimdi 1 milyar saniyeye geçiyoruz."
+      ],
+      "wordIds": [
+        44,
+        45,
+        46,
+        47,
+        48
+      ],
+      "timingSource": "forced-alignment"
+    },
+    {
+      "from": 662,
+      "to": 761,
+      "lines": [
+        "Kamera uzaklaştıkça aynı bloktan",
+        "yüzlercesi görünüyor."
+      ],
+      "wordIds": [
+        49,
+        50,
+        51,
+        52,
+        53,
+        54
+      ],
+      "timingSource": "forced-alignment"
+    },
+    {
+      "from": 772,
+      "to": 817,
+      "lines": [
+        "Her biri yine 1 milyon saniye."
+      ],
+      "wordIds": [
+        55,
+        56,
+        57,
+        58,
+        59,
+        60
+      ],
+      "timingSource": "forced-alignment"
+    },
+    {
+      "from": 828,
+      "to": 872,
+      "lines": [
+        "Toplam 1.000 eşit blok."
+      ],
+      "wordIds": [
+        61,
+        62,
+        63,
+        64
+      ],
+      "timingSource": "forced-alignment"
+    },
+    {
+      "from": 886,
+      "to": 924,
+      "lines": [
+        "1 milyar saniye,"
+      ],
+      "wordIds": [
+        65,
+        66,
+        67
+      ],
+      "timingSource": "forced-alignment"
+    },
+    {
+      "from": 929,
+      "to": 985,
+      "lines": [
+        "yaklaşık 31,7 yıl."
+      ],
+      "wordIds": [
+        68,
+        69,
+        70,
+        71,
+        72,
+        73
+      ],
+      "timingSource": "forced-alignment"
+    },
+    {
+      "from": 995,
+      "to": 1041,
+      "lines": [
+        "11,6 günden,"
+      ],
+      "wordIds": [
+        74,
+        75,
+        76,
+        77,
+        78
+      ],
+      "timingSource": "forced-alignment"
+    },
+    {
+      "from": 1045,
+      "to": 1092,
+      "lines": [
+        "neredeyse 32 yıla."
+      ],
+      "wordIds": [
+        79,
+        80,
+        81,
+        82
+      ],
+      "timingSource": "forced-alignment"
+    },
+    {
+      "from": 1113,
+      "to": 1139,
+      "lines": [
+        "Fark tam 1.000 kat."
+      ],
+      "wordIds": [
+        83,
+        84,
+        85,
+        86
+      ],
+      "timingSource": "forced-alignment"
+    }
+  ],
+  "provenance": {
+    "specHash": "0f89d4388785e2be4349f8081194956669e8908347f3a16e65544754794206a3",
+    "textHash": "28f53805bca85ee5a85f68a3c7b7b38eb27390ad5c5729a5f79422b22438a384",
+    "settingsHash": "74d418accde194c650a4922f94ea2560f0e7ab86980d9aae6e274dffd88240b1",
+    "ttsModelHash": "7c9f9df57674bded168ddcf3acae637c8b91e77ea31f9c02af541a35bb00289a",
+    "audioHash": "ed558beb9304b0b488fed16586a960bd808814e982aee11018ea06c58f491cef",
+    "alignmentHash": "238e0ce9cc524715ace2bd24d97a8f17796aad887fd074e9765244f1918f69d4",
+    "captionsHash": "5591de1e1611c53c5aa49644c6560aad947b2c2d5d32402b780d8292ab1ac763",
+    "reviewStatus": "needs_review",
+    "reviewer": null,
+    "wordTimingPath": "episodes/seconds-film/word-timings.json"
+  },
+  "timeline": {
+    "audioFrames": 1153,
+    "narrationStartFrame": 0,
+    "resultFromFrame": 1139,
+    "resultHoldFrames": 45,
+    "outroFromFrame": 1184,
+    "durationInFrames": 1229
+  },
+  "fps": 30,
+  "captionReviewRequired": true,
+  "recommendedTotalFrames": 1229
+}

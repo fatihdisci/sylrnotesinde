@@ -1,0 +1,76 @@
+{
+  "title": "MotionStudy · Saniyeler",
+  "hook": "On iki gün mü, otuz iki yıl mı?",
+  "narrationStartFrame": 0,
+  "resultHoldFrames": 36,
+  "phrases": [
+    {
+      "spoken": "Bir milyon saniye,",
+      "display": [
+        "1 milyon saniye,"
+      ]
+    },
+    {
+      "spoken": "yaklaşık on bir virgül altı gün.",
+      "display": [
+        "yaklaşık 11,6 gün."
+      ]
+    },
+    {
+      "spoken": "Bir milyar saniye?",
+      "display": [
+        "1 milyar saniye?"
+      ]
+    },
+    {
+      "spoken": "Otuz bir virgül yedi yıl.",
+      "display": [
+        "31,7 yıl."
+      ]
+    },
+    {
+      "spoken": "Aynı süreden tam bin tane.",
+      "display": [
+        "Aynı süreden tam 1.000 tane."
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "title": "SI Brochure · BIPM",
+      "url": "https://www.bipm.org/en/publications/si-brochure",
+      "note": "1 gün=86.400 s. Yıl dönüşümü açıkça 365,25 gün/yıl varsayımıyla hesaplanır; takvim yılı iddiası yok.",
+      "accessed": "2026-10-09"
+    }
+  ],
+  "claims": [
+    {
+      "id": "ratio",
+      "quantity": "count",
+      "numerator": 1000000000,
+      "denominator": 1000000,
+      "ratio": 1000,
+      "assumptions": "Aynı boydaki 1.000 blok; her blok 1.000.000 saniye. Alan karşılaştırması değil, eşit blokların adedi.",
+      "scale": "schematic"
+    },
+    {
+      "id": "days",
+      "quantity": "time",
+      "numerator": 1000000,
+      "denominator": 86400,
+      "ratio": 11.574074074074074,
+      "assumptions": "Yaklaşık11,6 gün;24 saat/gün.",
+      "scale": "linear"
+    },
+    {
+      "id": "years",
+      "quantity": "time",
+      "numerator": 1000000000,
+      "denominator": 31557600,
+      "ratio": 31.68808781402895,
+      "assumptions": "365,25 gün/yıl; yaklaşık31,7 yıl.",
+      "scale": "linear"
+    }
+  ],
+  "format": "motion-study"
+}

@@ -1,0 +1,92 @@
+[
+  {
+    "from": 16,
+    "to": 97,
+    "lines": [
+      "Üç sıfır, geçen zamanı",
+      "ne kadar değiştirir?"
+    ],
+    "wordIds": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "timingSource": "forced-alignment"
+  },
+  {
+    "from": 105,
+    "to": 141,
+    "lines": [
+      "1 milyon saniye,"
+    ],
+    "wordIds": [
+      7,
+      8,
+      9
+    ],
+    "timingSource": "forced-alignment"
+  },
+  {
+    "from": 146,
+    "to": 203,
+    "lines": [
+      "yaklaşık 11,6 gün."
+    ],
+    "wordIds": [
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "timingSource": "forced-alignment"
+  },
+  {
+    "from": 213,
+    "to": 248,
+    "lines": [
+      "1 milyar saniye?"
+    ],
+    "wordIds": [
+      16,
+      17,
+      18
+    ],
+    "timingSource": "forced-alignment"
+  },
+  {
+    "from": 258,
+    "to": 300,
+    "lines": [
+      "31,7 yıl."
+    ],
+    "wordIds": [
+      19,
+      20,
+      21,
+      22,
+      23
+    ],
+    "timingSource": "forced-alignment"
+  },
+  {
+    "from": 313,
+    "to": 365,
+    "lines": [
+      "Aynı süreden tam 1.000 tane."
+    ],
+    "wordIds": [
+      24,
+      25,
+      26,
+      27,
+      28
+    ],
+    "timingSource": "forced-alignment"
+  }
+]
