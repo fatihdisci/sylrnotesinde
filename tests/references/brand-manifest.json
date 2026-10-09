@@ -1,0 +1,24 @@
+{
+  "version": "0.1-candidate",
+  "created": "2026-10-09",
+  "status": "candidate-not-user-approved",
+  "files": {
+    "public/audio/brand/closing.wav": "1c996d028d6e8bfb6ec0c329aed4ec67701235b555689012ed9403e01720a7ac",
+    "public/fonts/IBMPlexMono-Medium.woff2": "33faf307fa6031fb4062276d7320a6d632de890cbb347576fd80cfa01077bc25",
+    "public/fonts/IBMPlexMono-Regular.woff2": "ba204497f16b6d334cee9d1e963a831b73e3a56e1d6300a8489d18df7214b350",
+    "public/fonts/IBMPlexSans-Medium.woff2": "5660f8a658f8bb50dbc005232f885eadffd2bc1c235c4f6fbb63469d1f9cde6d",
+    "public/fonts/IBMPlexSans-Regular.woff2": "ba711a3085ff9f27440b6b9c4550cfc47c97bf36591d5da958b975bb3add8c1a",
+    "public/fonts/IBMPlexSans-SemiBold.woff2": "f78048030eab62e860efa39a0df79e2e5581bf122eb95b9bc42c0b8a4988d205",
+    "public/fonts/LICENSE-IBMPlexMono.txt": "91c25c350d3cac39da2736d74f7ba37ef648f5237a4e330a240615bc8d8c4360",
+    "public/fonts/LICENSE-IBMPlexSans.txt": "91c25c350d3cac39da2736d74f7ba37ef648f5237a4e330a240615bc8d8c4360",
+    "public/fonts/SOURCE.md": "205d24bccaf6973661bc69ef6b12470488152df16fd316504002e1e3411aad75",
+    "scripts/generate-sound.py": "fc894195658c61de6aace6e93da53011cdafd7d30c309193b7a7e7a8a0e63d96",
+    "src/brand/BrandMark.tsx": "70e6ddd82b1d8e3095231d23164a5a65be29d3c7fdce044a62a11fb932f07408",
+    "src/brand/BrandSignature.tsx": "7d3a048e753c4354c3bfe5a43eb141e787ea78899e39b63b4dba87e5b464b576",
+    "src/brand/Outro.tsx": "1502a6aded5c273d5b6904c232052b3d2b0a3545744e50bcb84e63f5e4ad6594",
+    "src/brand/fonts.ts": "32afd9307eced5ba36fe1f17a4a6b88e9c521536c72a6063855262d7eefb2005",
+    "src/brand/motion.ts": "3ce0eaa0692383af0fb7ca37b967e424adec0b0cdf0ef1ffe8a104f6b286511a",
+    "src/brand/tokens.ts": "96792293fa8ac6f1ee3fdacada4046596187d833a03d98687e9be0ec8632d91a",
+    "src/components/EpisodeComposition.tsx": "5e97eb7124a1b8caff14f0c4ebba508112c41adf026aacdc87e1d3124dce6144"
+  }
+}

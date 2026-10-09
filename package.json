@@ -1,0 +1,56 @@
+{
+  "name": "sayilarin-otesinde",
+  "version": "0.1.0-candidate",
+  "description": "Sayıların Ötesinde — yerel Remotion motion graphics projesi",
+  "scripts": {
+    "preview": "remotion studio src/index.ts --port=3020",
+    "assets:fonts": "node scripts/prepare-fonts.mjs",
+    "assets:sound": "python3 scripts/generate-sound.py",
+    "assets:voice": "tsx scripts/prepare-voice.ts",
+    "browser:prepare": "remotion browser ensure",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint .",
+    "test": "tsx --test tests/*.test.ts",
+    "check": "npm run typecheck && npm run lint && npm test && npm run brand:check",
+    "render": "tsx scripts/render.ts",
+    "render:proof": "tsx scripts/render.ts proof",
+    "render:outro": "tsx scripts/render.ts outro",
+    "render:board": "tsx scripts/render.ts board",
+    "brand:check": "tsx scripts/check-brand.ts",
+    "references:check": "tsx scripts/check-references.ts",
+    "qa:media": ".venv/bin/python scripts/qa-media.py",
+    "qa:layout": "tsx scripts/audit-layout.ts",
+    "qa:fonts": ".venv/bin/python scripts/verify-fonts.py"
+  },
+  "keywords": [],
+  "license": "UNLICENSED",
+  "dependencies": {
+    "@remotion/bundler": "4.0.534",
+    "@remotion/cli": "4.0.534",
+    "@remotion/fonts": "4.0.534",
+    "@remotion/renderer": "4.0.534",
+    "react": "19.3.0",
+    "react-dom": "19.3.0",
+    "remotion": "4.0.534"
+  },
+  "devDependencies": {
+    "@eslint/js": "10.0.1",
+    "@ibm/plex-mono": "2.5.0",
+    "@ibm/plex-sans": "1.1.0",
+    "@types/node": "22.20.5",
+    "@types/pngjs": "6.0.5",
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
+    "eslint": "10.12.0",
+    "pngjs": "7.0.0",
+    "tsx": "4.23.15",
+    "typescript": "5.9.3",
+    "typescript-eslint": "8.71.1"
+  },
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": "^22.22.3"
+  },
+  "packageManager": "npm@10.9.8"
+}

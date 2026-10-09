@@ -1,0 +1,34 @@
+[
+  {
+    "id": "hook",
+    "text": "Bir sıfır, ölçeği değiştirir.",
+    "from": 4,
+    "path": "episodes/style-proof/hook.wav",
+    "seconds": 2.466625,
+    "durationInFrames": 74
+  },
+  {
+    "id": "hundred",
+    "text": "On sıra, yüz birim.",
+    "from": 105,
+    "path": "episodes/style-proof/hundred.wav",
+    "seconds": 1.599417,
+    "durationInFrames": 48
+  },
+  {
+    "id": "thousand",
+    "text": "On blok, bin birim.",
+    "from": 225,
+    "path": "episodes/style-proof/thousand.wav",
+    "seconds": 1.541375,
+    "durationInFrames": 47
+  },
+  {
+    "id": "result",
+    "text": "Her adımda, on katı.",
+    "from": 334,
+    "path": "episodes/style-proof/result.wav",
+    "seconds": 1.795375,
+    "durationInFrames": 54
+  }
+]

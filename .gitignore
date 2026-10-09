@@ -1,0 +1,17 @@
+node_modules/
+.cache/
+dist/
+.venv/
+.DS_Store
+*.aiff
+.env*
+!.env.example
+tts/environments/**
+tts/models/**
+tts/vendor/**
+tts/outputs/**
+tts/comparison/results/**
+tts/comparison/private-session.json
+tts/.cache/**
+__pycache__/
+*.pyc

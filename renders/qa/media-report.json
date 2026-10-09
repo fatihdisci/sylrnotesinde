@@ -1,0 +1,162 @@
+{
+  "video": {
+    "style-proof": {
+      "width": 1080,
+      "height": 1920,
+      "r_frame_rate": "30/1",
+      "duration": "15.000000",
+      "nb_read_frames": "450",
+      "codec_name": "h264",
+      "pix_fmt": "yuv420p"
+    },
+    "outro": {
+      "width": 1080,
+      "height": 1920,
+      "r_frame_rate": "30/1",
+      "duration": "1.500000",
+      "nb_read_frames": "45",
+      "codec_name": "h264",
+      "pix_fmt": "yuv420p"
+    }
+  },
+  "audio": {
+    "style-proof": {
+      "decodedPeakDBFS": -5.9,
+      "last120msRMS": 0.0,
+      "encodedSamples": 720896,
+      "note": "AAC encoder padding may extend audio stream; video has exact frame count."
+    },
+    "outro": {
+      "decodedPeakDBFS": -9.15,
+      "last120msRMS": 0.0,
+      "encodedSamples": 72704,
+      "note": "AAC encoder padding may extend audio stream; video has exact frame count."
+    },
+    "outroIdentity": {
+      "decodedCorrelation": 0.9999802089900353
+    },
+    "closingEvents": [
+      {
+        "expected": 0.06666666666666667,
+        "decodedActiveStart": 0.06675
+      },
+      {
+        "expected": 0.3333333333333333,
+        "decodedActiveStart": 0.33341666666666664
+      },
+      {
+        "expected": 0.7333333333333333,
+        "decodedActiveStart": 0.7336666666666667
+      }
+    ],
+    "hook": {
+      "fileDuration": 2.466625,
+      "timelineStart": 0.13333333333333333,
+      "activeStart": 0.13616666666666666,
+      "activeEnd": 2.3950625,
+      "wordAlignmentVerified": false
+    },
+    "hundred": {
+      "fileDuration": 1.599417,
+      "timelineStart": 3.5,
+      "activeStart": 3.5024166666666665,
+      "activeEnd": 4.8923958333333335,
+      "wordAlignmentVerified": false
+    },
+    "thousand": {
+      "fileDuration": 1.541375,
+      "timelineStart": 7.5,
+      "activeStart": 7.503104166666667,
+      "activeEnd": 8.842895833333333,
+      "wordAlignmentVerified": false
+    },
+    "result": {
+      "fileDuration": 1.795375,
+      "timelineStart": 11.133333333333333,
+      "activeStart": 11.1394375,
+      "activeEnd": 12.7295,
+      "wordAlignmentVerified": false
+    }
+  },
+  "temporal": {
+    "style-proof": {
+      "decodedFrames": 450,
+      "minimumNonBackgroundPixelsAtQuarterSize": 105,
+      "maximumMeanFrameDifference": 17.130473251028807,
+      "largestChanges": [
+        [
+          405,
+          17.130473251028807
+        ],
+        [
+          216,
+          10.980625000000002
+        ],
+        [
+          217,
+          10.259364711934156
+        ],
+        [
+          211,
+          9.816219135802468
+        ],
+        [
+          251,
+          9.042037037037037
+        ],
+        [
+          218,
+          8.936057098765433
+        ],
+        [
+          212,
+          8.789591049382716
+        ],
+        [
+          97,
+          8.642114197530864
+        ]
+      ],
+      "finalHoldMaximumMeanDifference": 0.043317901234567906
+    },
+    "outro": {
+      "decodedFrames": 45,
+      "minimumNonBackgroundPixelsAtQuarterSize": 105,
+      "maximumMeanFrameDifference": 0.27432355967078187,
+      "largestChanges": [
+        [
+          4,
+          0.27432355967078187
+        ],
+        [
+          5,
+          0.21776234567901234
+        ],
+        [
+          6,
+          0.17728137860082305
+        ],
+        [
+          7,
+          0.1286111111111111
+        ],
+        [
+          1,
+          0.09910236625514403
+        ],
+        [
+          8,
+          0.07584104938271606
+        ],
+        [
+          9,
+          0.06852880658436214
+        ],
+        [
+          2,
+          0.06516203703703703
+        ]
+      ]
+    }
+  }
+}

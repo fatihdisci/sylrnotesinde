@@ -1,0 +1,27 @@
+[
+  {
+    "file": "IBMPlexSans-SemiBold.woff2",
+    "missing": [],
+    "passed": true
+  },
+  {
+    "file": "IBMPlexMono-Medium.woff2",
+    "missing": [],
+    "passed": true
+  },
+  {
+    "file": "IBMPlexSans-Medium.woff2",
+    "missing": [],
+    "passed": true
+  },
+  {
+    "file": "IBMPlexSans-Regular.woff2",
+    "missing": [],
+    "passed": true
+  },
+  {
+    "file": "IBMPlexMono-Regular.woff2",
+    "missing": [],
+    "passed": true
+  }
+]

@@ -1,0 +1,36 @@
+{
+  "MAX_MEAN_ERROR": 0.35,
+  "MAX_CHANGED_PIXEL_RATIO": 0.002,
+  "reports": [
+    {
+      "name": "opening",
+      "meanError": 0,
+      "changedRatio": 0,
+      "pass": true
+    },
+    {
+      "name": "hundred",
+      "meanError": 0,
+      "changedRatio": 0,
+      "pass": true
+    },
+    {
+      "name": "result",
+      "meanError": 0,
+      "changedRatio": 0,
+      "pass": true
+    },
+    {
+      "name": "outro",
+      "meanError": 0,
+      "changedRatio": 0,
+      "pass": true
+    },
+    {
+      "name": "board",
+      "meanError": 0,
+      "changedRatio": 0,
+      "pass": true
+    }
+  ]
+}
