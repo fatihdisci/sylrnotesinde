@@ -97,3 +97,21 @@ npm run alignment:offline -- --id production-check
 Bu Mac’te ses hazırdır; yeniden hizalama için `episode:prepare -- --id production-check --realign`. Yeni metin için yeni revision ID. İnceleme: http://127.0.0.1:3033. Bayraksız render/QA insan onayı gerektirir. Eski `tts:episode` ham ses hazırlama yoludur; yayın kapısını atlamaz.
 
 Örnek `renders/episodes/production-check/draft.mp4`; kelime JSON/SRT `public/episodes/production-check/`; QA ve kontrol kareleri `renders/episodes/production-check/`. Örnek yayın bölümü değildir; insan dinlemesi bekleniyor. [Yöntem/lisans](alignment/docs/METHOD.md), [gerçek test raporu](docs/PRODUCTION_QA.md).
+
+## Güneş Bir Basketbol Topu Olsaydı?
+
+[Tam MP4](deliveries/solar-basketball/gunes-basketbol.mp4) · [QA raporu](docs/episodes/solar-basketball/QA.md)
+
+`solar-basketball`: yerel Antalia-2 Mini erkek sesiyle, tek fiziksel ölçekte özgün Three.js film. Gerçek anlatım 63,403 s; outro dahil 65,967 s. Supertonic 3/M1 ve geçmiş videolar korunur. [Üretim komutları](docs/episodes/solar-basketball/REPRODUCE.md), [storyboard/sanat yönetimi](docs/episodes/solar-basketball/ART_DIRECTION.md), [NASA hesabı ve varlık hakları](docs/episodes/solar-basketball/SOURCES_AND_LICENSES.md).
+
+```sh
+npm run tts:setup -- --model antalia-mini
+# Yeni cihazda ses yokken (mevcut WAV’ı ezmez):
+npm run episode:prepare -- --id solar-basketball --synthesize-model antalia-mini
+npm run episode:storyboard -- --id solar-basketball
+alignment/environments/ctc/bin/python production/solar_sound.py
+npm run episode:render -- --id solar-basketball --draft --gl angle
+npm run episode:qa -- --id solar-basketball --draft --gl angle
+```
+
+Büyük WAV/model/venv/master dosyaları yereldir. Bu bölümün normal hız seçimi bölüm dosyasında kayıtlıdır; global M1 seçimi değişmez. `draft` tam kalite inceleme masterıdır; yapılmamış insan dinlemesi/onayı başarılı sayılmaz.

@@ -3,7 +3,7 @@
 Yeni bölüm görevine başlamadan önce sırasıyla `docs/DESIGN_SYSTEM.md`, `docs/ANIMATION_RULES.md`, `docs/VIDEO_STRUCTURE.md`, `docs/EPISODE_GUIDE.md` oku.
 
 - Marka sürümü `0.1-candidate`; kullanıcı incelemesi olmadan onaylanmış v1.0 sayma.
-- Yeni bölüm: `src/episodes/<id>/` altında veri + özgün TSX sahneler. İlk gerçek bölüm henüz istenmedi.
+- Yeni bölüm: `src/episodes/<id>/` altında veri + özgün TSX sahneler. İlk gerçek konu `solar-basketball`; ses belirler, süreyi eski 45 saniye hedefine sıkıştırma.
 - Palet, font, logo, outro ve kapanış sesi değişiklikleri açık kullanıcı talebi gerektirir. Bölüm koduna marka kopyası koyma; `EpisodeComposition` kullan.
 - `npm run check` ve ilgili render/QA kontrollerini çalıştır. Gerçek MP4 karelerini incele; yapılmayan ses/görsel kontrolünü geçmiş gösterme.
 - `tests/references/` ve eşikleri kontrol geçirmek için yenileme. Marka farklarını raporla.
@@ -21,3 +21,6 @@ Yeni bölüm görevine başlamadan önce sırasıyla `docs/DESIGN_SYSTEM.md`, `d
 
 - Güncel kullanıcı kararı: yeni `audio-first` videoların süresini gerçek ses belirler; 40–45 s zorunlu değildir. Ses hızlandırılmaz, sonu kesilmez; son45 kare kanonik outro. Orijinal ses `voice-sources/` içinde hash ile arşivlenir. MiniMax API/hesap entegrasyonu yok.
 - Yeni üretim rehberi: `docs/AUDIO_FIRST.md`. Storyboard gerçek sözcük ID/metin çapalarından çözülür; TSX, efekt miksajı ve inceleme çıktısı aynı olay verisini kullanır. Otomatik hizalama insan dinlemesi veya yayın onayı değildir.
+
+- 10 Ekim 2026 açık kullanıcı isteği: `solar-basketball` için Antalia-2 Mini (`antalia-mini==1.0.0`, Python 3.12, CPU) yeniden kuruldu. Yalnız `--model antalia-mini` kur; EMA’yı geri kurma, M1 ortam/ağırlık/ayarlarını değiştirme. Merkezi anlatıcı hâlâ Supertonic 3/M1. Antalia bu bölüm için `production.json.narrationSettings` + açık `episode:prepare --synthesize-model antalia-mini` ile seçilir; otomatik temizlik yapma.
+- Bu bölümde kullanıcı özgün Three.js sanat yönetimi istedi: `SolarBasketball` izole wrapper’ı korunmuş font/imza/Outro bileşenlerini kullanır. `src/brand` ve `EpisodeComposition` üstüne yazma. Kaynak/haklar ve tek fiziksel ölçek için `docs/episodes/solar-basketball/` oku.

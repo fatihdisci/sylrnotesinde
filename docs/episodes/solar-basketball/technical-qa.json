@@ -1,0 +1,375 @@
+{
+  "id": "solar-basketball",
+  "technicalChecksPassed": true,
+  "publicationReady": false,
+  "publicationBlockers": [
+    "PUBLICATION BLOCKED: human audio/timing review is not approved"
+  ],
+  "reviewStatus": "needs_review",
+  "frames": 1979,
+  "fps": 30,
+  "seconds": 65.96666666666667,
+  "audioDurationSeconds": 63.40266666666667,
+  "resultHoldFrames": 36,
+  "outroFromFrame": 1934,
+  "encodedSyncSamples": [
+    {
+      "position": "start",
+      "sourceFromMs": 20.0,
+      "lagMs": 0.0,
+      "correlation": 0.9999521857156868
+    },
+    {
+      "position": "middle",
+      "sourceFromMs": 32120.0,
+      "lagMs": 0.0,
+      "correlation": 0.9999664178541752
+    },
+    {
+      "position": "end",
+      "sourceFromMs": 62480.0,
+      "lagMs": 0.0,
+      "correlation": 0.9999337593623072
+    }
+  ],
+  "driftMs": 0.0,
+  "encodedPeak": 0.7392953634262085,
+  "integratedLufs": -20.85,
+  "truePeakDbtp": -5.62,
+  "outroCorrelation": 0.9999928828061775,
+  "outroLagMs": 0.3125,
+  "captionCoverageWords": 144,
+  "srtMatchesBurnIn": true,
+  "blackIntervals": [],
+  "emptyContentFrames": [],
+  "largeFrameChangeCandidates": [
+    322,
+    1106,
+    1257,
+    1377
+  ],
+  "suspiciousWords": [
+    5,
+    18,
+    23,
+    26,
+    29,
+    30,
+    32,
+    34,
+    51,
+    52,
+    53,
+    57,
+    66,
+    72,
+    73,
+    76,
+    81,
+    89,
+    95,
+    103,
+    111,
+    123,
+    126,
+    135
+  ],
+  "humanListeningPerformed": false,
+  "humanReviewListeningRecorded": false,
+  "manualChecksRequired": [
+    "Listen to Turkish pronunciation, numbers, units and last syllables.",
+    "Inspect word onsets/offsets in the local editor; CTC20ms resolution does not guarantee33ms accuracy.",
+    "Watch the actual MP4 for semantic scene timing, flicker and subjective readability."
+  ],
+  "audioSha256": "0644d1ad27451ea748d914ea77ef0f2883c2606cf879a284e3e42ec9f96010b2",
+  "wordTimingsSha256": "aabeac99cc25faa82678711aaa2be1d55c27c0221d80cf4617de59377f3e7460",
+  "emptyGeometryFramesForReview": [
+    555,
+    556,
+    557,
+    558,
+    559,
+    560,
+    561,
+    562,
+    563,
+    564,
+    565,
+    566,
+    567,
+    568,
+    569,
+    570,
+    571,
+    572,
+    573,
+    574,
+    575,
+    576,
+    577,
+    853,
+    854,
+    855,
+    856,
+    857,
+    858,
+    859,
+    860,
+    861,
+    935,
+    936,
+    937,
+    938,
+    939,
+    940,
+    941,
+    942,
+    943,
+    944,
+    945,
+    946,
+    947,
+    948,
+    949,
+    950,
+    951,
+    952,
+    953,
+    954,
+    955,
+    956,
+    957,
+    958,
+    959,
+    960,
+    961,
+    962,
+    963,
+    964,
+    965,
+    966,
+    967,
+    1018,
+    1019,
+    1020,
+    1021,
+    1022,
+    1023,
+    1024,
+    1025,
+    1026,
+    1027,
+    1028,
+    1029,
+    1030,
+    1031,
+    1032,
+    1033,
+    1034,
+    1087,
+    1088,
+    1089,
+    1090,
+    1091,
+    1092,
+    1093,
+    1094,
+    1095,
+    1096,
+    1097,
+    1098,
+    1099,
+    1100,
+    1101,
+    1102,
+    1103,
+    1104,
+    1105,
+    1696,
+    1699,
+    1700,
+    1701,
+    1702,
+    1703,
+    1704,
+    1705,
+    1706,
+    1707,
+    1708,
+    1709,
+    1710,
+    1711,
+    1712,
+    1713,
+    1714,
+    1715,
+    1716,
+    1717,
+    1718
+  ],
+  "rhythm": {
+    "mode": "review-only",
+    "audioSilenceThresholdDbfs": -48,
+    "meanPixelDeltaThreshold": 0.0006,
+    "minimumSeconds": 2,
+    "silentIntervals": [],
+    "nearlyStaticIntervals": [],
+    "silentAndNearlyStaticIntervals": [],
+    "automaticFailure": false
+  },
+  "soundDesign": {
+    "events": 21,
+    "ducking": {
+      "lookaheadMs": 30,
+      "releaseMs": 180,
+      "speechRatioLimit": 0.42,
+      "minimumGain": 0.041799287276328034,
+      "medianEffectToVoiceDb": -16.606918180049096,
+      "p95EffectToVoiceDb": -7.535014192041992,
+      "source": "actual narration WAV 10ms RMS"
+    },
+    "renderedMixChecks": [
+      {
+        "event": "sun",
+        "frame": 0,
+        "lagMs": 0.0,
+        "correlation": 0.999965431403373
+      },
+      {
+        "event": "ball-size",
+        "frame": 179,
+        "lagMs": 0.0,
+        "correlation": 0.9999016240233252
+      },
+      {
+        "event": "earth-size",
+        "frame": 322,
+        "lagMs": 0.0,
+        "correlation": 0.9999036787747678
+      },
+      {
+        "event": "pin",
+        "frame": 462,
+        "lagMs": 0.0,
+        "correlation": 0.9999658055503069
+      },
+      {
+        "event": "distance-shock",
+        "frame": 518,
+        "lagMs": 0.0,
+        "correlation": 0.9999529146825314
+      },
+      {
+        "event": "street",
+        "frame": 617,
+        "lagMs": 0.0,
+        "correlation": 0.999974799271216
+      },
+      {
+        "event": "earth-distance",
+        "frame": 690,
+        "lagMs": 0.0,
+        "correlation": 0.9998915970084219
+      },
+      {
+        "event": "arrival",
+        "frame": 814,
+        "lagMs": 0.0,
+        "correlation": 0.9999191246199916
+      },
+      {
+        "event": "moon",
+        "frame": 897,
+        "lagMs": 0.0,
+        "correlation": 0.9999516534624746
+      },
+      {
+        "event": "moon-range",
+        "frame": 943,
+        "lagMs": 0.0,
+        "correlation": 0.9999201664557418
+      },
+      {
+        "event": "moon-size",
+        "frame": 1018,
+        "lagMs": 0.0,
+        "correlation": 0.9999004652085732
+      },
+      {
+        "event": "jupiter",
+        "frame": 1106,
+        "lagMs": 0.0,
+        "correlation": 0.9999626215331838
+      },
+      {
+        "event": "jup-size",
+        "frame": 1157,
+        "lagMs": 0.0,
+        "correlation": 0.9999310296696247
+      },
+      {
+        "event": "jup-road",
+        "frame": 1257,
+        "lagMs": 0.0,
+        "correlation": 0.9999205225919112
+      },
+      {
+        "event": "jup-stop",
+        "frame": 1306,
+        "lagMs": 0.0,
+        "correlation": 0.9999392697894991
+      },
+      {
+        "event": "neptune",
+        "frame": 1377,
+        "lagMs": 0.0,
+        "correlation": 0.999952657829643
+      },
+      {
+        "event": "far-flight",
+        "frame": 1467,
+        "lagMs": 0.0,
+        "correlation": 0.9999263807287855
+      },
+      {
+        "event": "neptune-range",
+        "frame": 1516,
+        "lagMs": 0.0,
+        "correlation": 0.999905317080171
+      },
+      {
+        "event": "neighborhood",
+        "frame": 1590,
+        "lagMs": 0.0,
+        "correlation": 0.9999667854202771
+      },
+      {
+        "event": "whole",
+        "frame": 1720,
+        "lagMs": 0.0,
+        "correlation": 0.9999233842573784
+      },
+      {
+        "event": "quiet",
+        "frame": 1788,
+        "lagMs": 0.0,
+        "correlation": 0.9999832100574936
+      },
+      {
+        "event": "final",
+        "frame": 1847,
+        "lagMs": 0.0,
+        "correlation": 0.9999468779045853
+      }
+    ],
+    "separateStemSha256": "a5ceec9e6ab2283cbc972064666eb53e324de54a8bab845ffb3d33a9ca1afcbc",
+    "humanAudibilityReviewPerformed": false
+  },
+  "storyboard": {
+    "hash": "78e81fb80cc56261017d7757f17cd8108ad7b0e8c13405ed32d76fa8db8c6338",
+    "events": 22,
+    "timingSource": "measured words with explicit authored anchors",
+    "speechOnsetMs": 100.0,
+    "speechOffsetMs": 63260.0
+  }
+}

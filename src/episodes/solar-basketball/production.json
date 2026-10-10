@@ -1,0 +1,301 @@
+{
+  "title": "Güneş Bir Basketbol Topu Olsaydı?",
+  "hook": "Güneş’i bir basketbol topu kadar küçültseydik…",
+  "format": "audio-first",
+  "narrationStartFrame": 0,
+  "resultHoldFrames": 36,
+  "audioSource": {
+    "provider": "local:antalia-mini",
+    "voice": "default"
+  },
+  "narrationSettings": {
+    "model": "antalia-mini",
+    "voice": "default",
+    "speed": 1.0,
+    "seed": 42
+  },
+  "phrases": [
+    {
+      "spoken": "Güneş’i bir basketbol topu kadar",
+      "display": [
+        "Güneş’i bir basketbol topu kadar"
+      ]
+    },
+    {
+      "spoken": "küçültseydik, Dünya düşündüğünüzden",
+      "display": [
+        "küçültseydik, Dünya düşündüğünüzden"
+      ]
+    },
+    {
+      "spoken": "çok daha küçük görünürdü.",
+      "display": [
+        "çok daha küçük görünürdü."
+      ]
+    },
+    {
+      "spoken": "Yaklaşık yirmi dört santimetrelik",
+      "display": [
+        "Yaklaşık 24 santimetrelik"
+      ]
+    },
+    {
+      "spoken": "bir basketbol topunu Güneş kabul edersek,",
+      "display": [
+        "bir basketbol topunu Güneş kabul",
+        "edersek,"
+      ]
+    },
+    {
+      "spoken": "Dünya’nın çapı sadece",
+      "display": [
+        "Dünya’nın çapı sadece"
+      ]
+    },
+    {
+      "spoken": "iki milimetreyi biraz geçerdi.",
+      "display": [
+        "2 milimetreyi biraz geçerdi."
+      ]
+    },
+    {
+      "spoken": "Yani neredeyse küçük bir",
+      "display": [
+        "Yani neredeyse küçük bir"
+      ]
+    },
+    {
+      "spoken": "toplu iğne başı kadar.",
+      "display": [
+        "toplu iğne başı kadar."
+      ]
+    },
+    {
+      "spoken": "Ama asıl şaşırtıcı olan",
+      "display": [
+        "Ama asıl şaşırtıcı olan"
+      ]
+    },
+    {
+      "spoken": "boyutu değil, uzaklığı.",
+      "display": [
+        "boyutu değil, uzaklığı."
+      ]
+    },
+    {
+      "spoken": "Bu ölçekte Dünya, basketbol topundan",
+      "display": [
+        "Bu ölçekte Dünya, basketbol",
+        "topundan"
+      ]
+    },
+    {
+      "spoken": "yaklaşık yirmi altı metre uzakta olurdu.",
+      "display": [
+        "yaklaşık 26 metre uzakta olurdu."
+      ]
+    },
+    {
+      "spoken": "Yani aynı odada değil,",
+      "display": [
+        "Yani aynı odada değil,"
+      ]
+    },
+    {
+      "spoken": "sokağın karşı tarafına yakın bir mesafede.",
+      "display": [
+        "sokağın karşı tarafına yakın bir",
+        "mesafede."
+      ]
+    },
+    {
+      "spoken": "Ay ise Dünya’dan yalnızca",
+      "display": [
+        "Ay ise Dünya’dan yalnızca"
+      ]
+    },
+    {
+      "spoken": "altı ila yedi santimetre uzakta duran,",
+      "display": [
+        "6-7 santimetre uzakta duran,"
+      ]
+    },
+    {
+      "spoken": "yarım milimetre civarında",
+      "display": [
+        "yarım milimetre civarında"
+      ]
+    },
+    {
+      "spoken": "küçücük bir nokta olurdu.",
+      "display": [
+        "küçücük bir nokta olurdu."
+      ]
+    },
+    {
+      "spoken": "Jüpiter bu modelde yaklaşık",
+      "display": [
+        "Jüpiter bu modelde yaklaşık"
+      ]
+    },
+    {
+      "spoken": "iki virgül beş santimetrelik bir bilye gibi görünürdü.",
+      "display": [
+        "2,5 santimetrelik bir bilye gibi",
+        "görünürdü."
+      ]
+    },
+    {
+      "spoken": "Ama o bile Güneş’ten yaklaşık",
+      "display": [
+        "Ama o bile Güneş’ten yaklaşık"
+      ]
+    },
+    {
+      "spoken": "yüz otuz beş metre uzakta olurdu.",
+      "display": [
+        "135 metre uzakta olurdu."
+      ]
+    },
+    {
+      "spoken": "Neptün’e geldiğimizde işler",
+      "display": [
+        "Neptün’e geldiğimizde işler"
+      ]
+    },
+    {
+      "spoken": "daha da çılgınlaşıyor.",
+      "display": [
+        "daha da çılgınlaşıyor."
+      ]
+    },
+    {
+      "spoken": "O, bu ölçekte yaklaşık",
+      "display": [
+        "O, bu ölçekte yaklaşık"
+      ]
+    },
+    {
+      "spoken": "yedi yüz seksen metre uzağa yerleşirdi.",
+      "display": [
+        "780 metre uzağa yerleşirdi."
+      ]
+    },
+    {
+      "spoken": "Yani Güneş’i elinize alabilecek kadar",
+      "display": [
+        "Yani Güneş’i elinize alabilecek",
+        "kadar"
+      ]
+    },
+    {
+      "spoken": "küçültseniz bile, Güneş Sistemi",
+      "display": [
+        "küçültseniz bile, Güneş Sistemi"
+      ]
+    },
+    {
+      "spoken": "hâlâ koca bir mahalleye yayılırdı.",
+      "display": [
+        "hâlâ koca bir mahalleye yayılırdı."
+      ]
+    },
+    {
+      "spoken": "Uzay gerçekten büyük değil.",
+      "display": [
+        "Uzay gerçekten büyük değil."
+      ]
+    },
+    {
+      "spoken": "Aklın alıştığından çok daha büyük.",
+      "display": [
+        "Aklın alıştığından çok daha büyük."
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "title": "NASA NSSDCA Sun Fact Sheet",
+      "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/sunfact.html",
+      "note": "Volumetric mean radius695.700 km → diameter1.391.400 km.",
+      "accessed": "2026-10-10"
+    },
+    {
+      "title": "NASA Planetary Fact Sheet",
+      "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/",
+      "note": "Mean heliocentric distances; Earth/Jupiter equatorial diameters.",
+      "accessed": "2026-10-10"
+    },
+    {
+      "title": "NASA Moon Fact Sheet",
+      "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/moonfact.html",
+      "note": "Mean diameter3.474,8 km, Earth-Moon semimajor axis384.400 km. Distances are centre-to-centre mean values.",
+      "accessed": "2026-10-10"
+    }
+  ],
+  "claims": [
+    {
+      "id": "earth-diameter",
+      "quantity": "length",
+      "numerator": 3061.44,
+      "denominator": 1391400,
+      "ratio": 0.0022002587322121603,
+      "assumptions": "Metres in the model; Sun diameter0.24m. Same linear factor for all radii and centre distances. Mean orbital distance, not current position.",
+      "scale": "linear"
+    },
+    {
+      "id": "earth-distance",
+      "quantity": "length",
+      "numerator": 35904000.0,
+      "denominator": 1391400,
+      "ratio": 25.80422595946529,
+      "assumptions": "Metres in the model; Sun diameter0.24m. Same linear factor for all radii and centre distances. Mean orbital distance, not current position.",
+      "scale": "linear"
+    },
+    {
+      "id": "moon-diameter",
+      "quantity": "length",
+      "numerator": 833.952,
+      "denominator": 1391400,
+      "ratio": 0.000599361793876671,
+      "assumptions": "Metres in the model; Sun diameter0.24m. Same linear factor for all radii and centre distances. Mean orbital distance, not current position.",
+      "scale": "linear"
+    },
+    {
+      "id": "moon-distance",
+      "quantity": "length",
+      "numerator": 92256.0,
+      "denominator": 1391400,
+      "ratio": 0.06630444156964209,
+      "assumptions": "Metres in the model; Sun diameter0.24m. Same linear factor for all radii and centre distances. Mean orbital distance, not current position.",
+      "scale": "linear"
+    },
+    {
+      "id": "jupiter-diameter",
+      "quantity": "length",
+      "numerator": 34316.159999999996,
+      "denominator": 1391400,
+      "ratio": 0.024663044415696417,
+      "assumptions": "Metres in the model; Sun diameter0.24m. Same linear factor for all radii and centre distances. Mean orbital distance, not current position.",
+      "scale": "linear"
+    },
+    {
+      "id": "jupiter-distance",
+      "quantity": "length",
+      "numerator": 186840000.0,
+      "denominator": 1391400,
+      "ratio": 134.28201811125484,
+      "assumptions": "Metres in the model; Sun diameter0.24m. Same linear factor for all radii and centre distances. Mean orbital distance, not current position.",
+      "scale": "linear"
+    },
+    {
+      "id": "neptune-distance",
+      "quantity": "length",
+      "numerator": 1083600000.0,
+      "denominator": 1391400,
+      "ratio": 778.783958602846,
+      "assumptions": "Metres in the model; Sun diameter0.24m. Same linear factor for all radii and centre distances. Mean orbital distance, not current position.",
+      "scale": "linear"
+    }
+  ]
+}

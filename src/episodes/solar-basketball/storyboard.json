@@ -1,0 +1,477 @@
+{
+  "idea": "Avuç içinden bir mahalleye: tek 24 cm ölçek, dokudan gezegene, milimetreden 780 metrelik gece mahallesine. Yakın planlarda nesne ölçeği değil kamera değişir. Doğrusal yerleşim yörüngeleri temsil etmez.",
+  "events": [
+    {
+      "id": "sun",
+      "at": "start",
+      "until": {
+        "word": 12,
+        "text": "Yaklaşık"
+      },
+      "information": "Güneş = basketbol topu",
+      "visual": "Derinin makro dokusundan tam küreye; aynı yüzey Güneş dokusuna dönüşür.",
+      "camera": "Yüzeye yakın başlayıp çapı değiştirmeden geri dolly.",
+      "animation": "24 cm küre sabit; yalnız malzeme karışır.",
+      "effects": [
+        {
+          "sound": "bloom",
+          "durationFrames": 58,
+          "gain": 0.75
+        }
+      ]
+    },
+    {
+      "id": "ball-size",
+      "at": {
+        "word": 12,
+        "text": "Yaklaşık"
+      },
+      "until": {
+        "word": 22,
+        "text": "Dünya’nın"
+      },
+      "information": "24 santimetre temel ölçek",
+      "visual": "Dikişli basketbol topu, aynı fiziksel çapta Güneş modeline eşlenir.",
+      "camera": "Yavaş yörünge, sabit merkez.",
+      "animation": "Dikişler ışıktan ayrılıp yüzeye geri döner.",
+      "effects": [
+        {
+          "sound": "leather",
+          "durationFrames": 27,
+          "gain": 0.55
+        }
+      ]
+    },
+    {
+      "id": "earth-size",
+      "at": {
+        "word": 22,
+        "text": "Dünya’nın"
+      },
+      "until": {
+        "word": 33,
+        "text": "toplu"
+      },
+      "information": "Dünya yalnızca 2,2 mm",
+      "visual": "Gerçek konumundaki Dünya yüzeyine ayrıntı kesmesi.",
+      "camera": "Mikroskobik yörünge; cisim büyütülmez.",
+      "animation": "Aynı 24 cm ölçeğinin fiziksel küçük Dünya modeli.",
+      "effects": [
+        {
+          "sound": "detail",
+          "durationFrames": 38,
+          "gain": 0.55
+        }
+      ]
+    },
+    {
+      "id": "pin",
+      "at": {
+        "word": 33,
+        "text": "toplu"
+      },
+      "until": {
+        "word": 37,
+        "text": "Ama"
+      },
+      "information": "Toplu iğne başı kadar",
+      "visual": "Dünya altındaki ince metal iğneye doğru yaklaşma.",
+      "camera": "2 mm ölçeğinde yan açı.",
+      "animation": "Yavaş yüzey dönüşü.",
+      "effects": [
+        {
+          "sound": "click",
+          "durationFrames": 12,
+          "gain": 0.45
+        }
+      ]
+    },
+    {
+      "id": "distance-shock",
+      "at": {
+        "word": 37,
+        "text": "Ama"
+      },
+      "until": {
+        "word": 44,
+        "text": "Bu"
+      },
+      "information": "Boyuttan uzaklığa",
+      "visual": "Milimetrelik Dünya çekiminden bütün sokağı açığa çıkaran logaritmik geri çekilme.",
+      "camera": "2 saniyede makrodan sokak ölçeğine.",
+      "animation": "Çevre tek mekânda belirir.",
+      "effects": [
+        {
+          "sound": "launch",
+          "durationFrames": 75,
+          "gain": 1.0
+        }
+      ]
+    },
+    {
+      "id": "street",
+      "at": {
+        "word": 44,
+        "text": "Bu"
+      },
+      "until": {
+        "word": 49,
+        "text": "yaklaşık"
+      },
+      "information": "Dünya sokakta",
+      "visual": "Güneş başlangıcından Dünya yönüne sokak boyunca ilerleme.",
+      "camera": "Yere yakın ileri dolly; cephelerde derin paralaks.",
+      "animation": "Merkezden merkeze gerçek doğrusal mesafe.",
+      "effects": [
+        {
+          "sound": "travel",
+          "durationFrames": 66,
+          "gain": 0.75
+        }
+      ]
+    },
+    {
+      "id": "earth-distance",
+      "at": {
+        "word": 49,
+        "text": "yaklaşık"
+      },
+      "until": {
+        "word": 59,
+        "text": "sokağın"
+      },
+      "information": "25,8 metre ≈ 26 metre",
+      "visual": "Sokağın öbür yanında küçük model durağı.",
+      "camera": "Hızını azaltan ileri hareket.",
+      "animation": "Ölçü gerçek dünya birimlerinden hesaplanır.",
+      "effects": [
+        {
+          "sound": "arrival",
+          "durationFrames": 40,
+          "gain": 0.85
+        }
+      ]
+    },
+    {
+      "id": "arrival",
+      "at": {
+        "word": 59,
+        "text": "sokağın"
+      },
+      "until": {
+        "word": 65,
+        "text": "Ay"
+      },
+      "information": "Aynı oda yetmiyor",
+      "visual": "Sokak üstündeki Dünya durağına yaklaşma.",
+      "camera": "Yakın plana fiziksel kamera geçişi.",
+      "animation": "Dünya yerinden oynamaz.",
+      "effects": [
+        {
+          "sound": "detail",
+          "durationFrames": 48,
+          "gain": 0.55
+        }
+      ]
+    },
+    {
+      "id": "moon",
+      "at": {
+        "word": 65,
+        "text": "Ay"
+      },
+      "until": {
+        "word": 69,
+        "text": "altı"
+      },
+      "information": "Ay ve Dünya",
+      "visual": "Gerçek çaplı Dünya ve Ay aynı fiziksel sahnede.",
+      "camera": "Dünya makrosundan çiftin ortasına çekilme.",
+      "animation": "Çaplar ve aralık aynı metre koordinatları.",
+      "effects": [
+        {
+          "sound": "orbit",
+          "durationFrames": 60,
+          "gain": 0.6
+        }
+      ]
+    },
+    {
+      "id": "moon-range",
+      "at": {
+        "word": 69,
+        "text": "altı"
+      },
+      "until": {
+        "word": 75,
+        "text": "yarım"
+      },
+      "information": "6,6 santimetre",
+      "visual": "İki küçük cisim tek kadrajda; aradaki boşluğa yer açılır.",
+      "camera": "Çift etrafında hafif yay çizme.",
+      "animation": "6,6 cm merkez aralığı korunur.",
+      "effects": [
+        {
+          "sound": "click",
+          "durationFrames": 18,
+          "gain": 0.4
+        }
+      ]
+    },
+    {
+      "id": "moon-size",
+      "at": {
+        "word": 75,
+        "text": "yarım"
+      },
+      "until": {
+        "word": 82,
+        "text": "Jüpiter"
+      },
+      "information": "Ay çapı 0,6 mm",
+      "visual": "Ayın yüzeyine ayrıntı kesmesi, ardından çiftin ölçeğine dönüş.",
+      "camera": "Fiziksel makro; görünüm açıkça yakın plan.",
+      "animation": "Cisim çapı değiştirilmez.",
+      "effects": [
+        {
+          "sound": "detail",
+          "durationFrames": 36,
+          "gain": 0.5
+        }
+      ]
+    },
+    {
+      "id": "jupiter",
+      "at": {
+        "word": 82,
+        "text": "Jüpiter"
+      },
+      "until": {
+        "word": 86,
+        "text": "iki"
+      },
+      "information": "Jüpiter bir bilye",
+      "visual": "Bulut bantlarıyla Jüpiterin gerçek 2,5 cm modeli.",
+      "camera": "Dairesel eşleşen kesme, sakin yörünge.",
+      "animation": "Mat gezegen dokusu ve kontrollü kenar ışığı.",
+      "effects": [
+        {
+          "sound": "impact",
+          "durationFrames": 55,
+          "gain": 0.85
+        }
+      ]
+    },
+    {
+      "id": "jup-size",
+      "at": {
+        "word": 86,
+        "text": "iki"
+      },
+      "until": {
+        "word": 94,
+        "text": "Ama"
+      },
+      "information": "Yaklaşık 2,5 cm",
+      "visual": "Jüpiterin Büyük Kırmızı Lekesi kadrajdan geçer.",
+      "camera": "Yakından biraz geri çekilme.",
+      "animation": "Yüzey rotasyonu, tipografi ekran katmanında.",
+      "effects": [
+        {
+          "sound": "orbit",
+          "durationFrames": 38,
+          "gain": 0.45
+        }
+      ]
+    },
+    {
+      "id": "jup-road",
+      "at": {
+        "word": 94,
+        "text": "Ama"
+      },
+      "until": {
+        "word": 99,
+        "text": "yüz"
+      },
+      "information": "135 metre uzaklık",
+      "visual": "Dünya durağından Jüpitere sokağın içinden uçuş.",
+      "camera": "Öne hızlanan dolly, çevrede güçlü paralaks.",
+      "animation": "Tek matematiksel ölçek.",
+      "effects": [
+        {
+          "sound": "launch",
+          "durationFrames": 64,
+          "gain": 1.0
+        }
+      ]
+    },
+    {
+      "id": "jup-stop",
+      "at": {
+        "word": 99,
+        "text": "yüz"
+      },
+      "until": {
+        "word": 105,
+        "text": "Neptün’e"
+      },
+      "information": "134–135 metre",
+      "visual": "Kamera Jüpiter durağının çevresine çıkar.",
+      "camera": "Dollyden yukarı süzülme.",
+      "animation": "Ortalama heliosentrik mesafe etiketi.",
+      "effects": [
+        {
+          "sound": "arrival",
+          "durationFrames": 45,
+          "gain": 0.9
+        }
+      ]
+    },
+    {
+      "id": "neptune",
+      "at": {
+        "word": 105,
+        "text": "Neptün’e"
+      },
+      "until": {
+        "word": 111,
+        "text": "O,"
+      },
+      "information": "Neptün",
+      "visual": "Mavi gezegene eşleşen yakın plan.",
+      "camera": "Fiziksel makro; doğru konum sabit.",
+      "animation": "Doğal mavi bulut dokusu.",
+      "effects": [
+        {
+          "sound": "impact",
+          "durationFrames": 52,
+          "gain": 0.8
+        }
+      ]
+    },
+    {
+      "id": "far-flight",
+      "at": {
+        "word": 111,
+        "text": "O,"
+      },
+      "until": {
+        "word": 115,
+        "text": "yedi"
+      },
+      "information": "Mahalle ölçeği",
+      "visual": "Yüzlerce metre uzunluğundaki cadde tek sürekli kamera hareketiyle geçilir.",
+      "camera": "Düşük sokak yüksekliğinden yükselerek ileri uçuş.",
+      "animation": "Güneş ve duraklar geride gerçek mesafede kalır.",
+      "effects": [
+        {
+          "sound": "launch",
+          "durationFrames": 80,
+          "gain": 1.05
+        }
+      ]
+    },
+    {
+      "id": "neptune-range",
+      "at": {
+        "word": 115,
+        "text": "yedi"
+      },
+      "until": {
+        "word": 121,
+        "text": "Yani"
+      },
+      "information": "775–780 metre",
+      "visual": "Neptün durağının üstünde kamera yavaşlar.",
+      "camera": "Yükselme; yolun derinliği açık kalır.",
+      "animation": "Görsel durak işareti gezegen boyutu değildir.",
+      "effects": [
+        {
+          "sound": "arrival",
+          "durationFrames": 50,
+          "gain": 0.9
+        }
+      ]
+    },
+    {
+      "id": "neighborhood",
+      "at": {
+        "word": 121,
+        "text": "Yani"
+      },
+      "until": {
+        "word": 130,
+        "text": "hâlâ"
+      },
+      "information": "Bir top, koca mahalle",
+      "visual": "Gece maketinin üstüne çıkış; bütün model bir arada.",
+      "camera": "Yaklaşık 800 m rotayı kapsayan yüksek yay.",
+      "animation": "Konum işaretleri ayrı açıklama katmanıdır.",
+      "effects": [
+        {
+          "sound": "reveal",
+          "durationFrames": 105,
+          "gain": 0.85
+        }
+      ]
+    },
+    {
+      "id": "whole",
+      "at": {
+        "word": 130,
+        "text": "hâlâ"
+      },
+      "until": {
+        "word": 135,
+        "text": "Uzay"
+      },
+      "information": "Bir mahallenin tamamı",
+      "visual": "Güneş, Dünya, Jüpiter ve Neptün konumlarının bütünü.",
+      "camera": "Yavaşlayan kuş bakışı hareket.",
+      "animation": "Ortalama uzaklıklar doğrusal yerleşim; yörünge dizilişi değil.",
+      "effects": [
+        {
+          "sound": "bloom",
+          "durationFrames": 62,
+          "gain": 0.65
+        }
+      ]
+    },
+    {
+      "id": "quiet",
+      "at": {
+        "word": 135,
+        "text": "Uzay"
+      },
+      "until": {
+        "word": 139,
+        "text": "Aklın"
+      },
+      "information": "Uzay gerçekten büyük değil",
+      "visual": "Mahalle kadrajı kalır, ses tasarımı nefes alır.",
+      "camera": "Sakin yüksek kamera.",
+      "animation": "Yeni cisim ve metin yağmuru yok.",
+      "effects": []
+    },
+    {
+      "id": "final",
+      "at": {
+        "word": 139,
+        "text": "Aklın"
+      },
+      "until": "outro",
+      "information": "Aklın alıştığından çok daha büyük",
+      "visual": "Son cümle mahalle görüntüsü üzerinde; kanonik outrodan önce tamamlanır.",
+      "camera": "Hafif son yükseliş.",
+      "animation": "Sonuç gerçek konuşma sonundan sonra okunur.",
+      "effects": [
+        {
+          "sound": "final",
+          "durationFrames": 65,
+          "gain": 0.75
+        }
+      ]
+    }
+  ]
+}

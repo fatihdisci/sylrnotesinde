@@ -1,0 +1,10 @@
+{
+  "checkedWavs": 72,
+  "failures": 0,
+  "subjectiveListeningPerformed": false,
+  "integratedLufsRange": [
+    -20.32,
+    -19.92
+  ],
+  "method": "npm run tts:qa; measured archive, original historical report restored byte-for-byte"
+}

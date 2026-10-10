@@ -1,0 +1,16 @@
+{
+  "model": "antalia-mini",
+  "package": "antalia-mini==1.0.0",
+  "modelRevision": "1e8166a7436f3e11f7f03b339258ec30f366db60",
+  "osNetworkProbe": "OS network denied",
+  "method": "macOS sandbox-exec deny network* plus Python socket audit; existing internet interfaces remain enabled",
+  "text": "Full 144-word episode script",
+  "identicalDecodedSamples": true,
+  "pcmSha256": "b61d7eafef0f4941232a4c92479b79e7f90c46d0972074636c4dcad421e26a2b",
+  "sampleRate": 48000,
+  "durationSeconds": 63.40266666666667,
+  "networkAttempts": [],
+  "generationSeconds": 1.3551973330322653,
+  "peakRssMiB": 483.171875,
+  "humanListeningPerformed": false
+}

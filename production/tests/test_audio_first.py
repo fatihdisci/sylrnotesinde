@@ -53,4 +53,19 @@ class AudioFirstTests(unittest.TestCase):
                 board.write_bytes(original);(dest/'sfx-stem.wav').write_bytes(b'changed')
                 with self.assertRaisesRegex(ValueError,'STALE sound stem'):core.verify_current('seconds-audio-first')
 
+    def test_solar_music_is_versioned_independently_and_human_gate_remains(self):
+        source_spec,source_assets=core.paths('solar-basketball')
+        if not (source_assets/'ambient-stem.wav').exists():self.skipTest('Generate the local solar score first')
+        with tempfile.TemporaryDirectory() as folder:
+            dest=Path(folder)/'assets';dest.mkdir()
+            for name in ['narration.wav','external-audio.json','script.txt','word-timings.json','narration-manifest.json','captions.json','captions.srt','sound-design.json','sfx-stem.wav','ambient-stem.wav']:
+                shutil.copy2(source_assets/name,dest/name)
+            spec=Path(folder)/'production.json';shutil.copy2(source_spec,spec)
+            shutil.copy2(source_spec.parent/'storyboard.json',spec.parent/'storyboard.json')
+            with patch.object(core,'paths',return_value=(spec,dest)):
+                core.verify_current('solar-basketball')
+                with self.assertRaisesRegex(ValueError,'PUBLICATION BLOCKED'):core.verify_current('solar-basketball',True)
+                (dest/'ambient-stem.wav').write_bytes(b'changed score')
+                with self.assertRaisesRegex(ValueError,'STALE music stem'):core.verify_current('solar-basketball')
+
 if __name__=='__main__':unittest.main()

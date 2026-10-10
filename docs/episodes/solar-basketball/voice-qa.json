@@ -1,0 +1,27 @@
+{
+  "checks": [
+    {
+      "model": "antalia-mini",
+      "voice": "default",
+      "test": "solar-basketball",
+      "variant": "episode",
+      "valid": true,
+      "nativeRate": 48000,
+      "listeningRate": 48000,
+      "seconds": 63.40266666666667,
+      "integratedLufs": -20.05,
+      "truePeakDbtp": -1.99,
+      "samplePeak": 0.7943416833877563,
+      "rms": 0.10358788818120956,
+      "last20msRms": 0.0008526108576916158,
+      "wordTimingsVerified": false
+    }
+  ],
+  "failures": [],
+  "subjectiveListeningPerformed": false,
+  "notes": [
+    "Waveform integrity, loudness, peak, rate and duration are measured.",
+    "Naturalness, pronunciation, sentence completion and breath quality need user listening.",
+    "Endpoint RMS is diagnostic; it cannot prove that the last word is intact."
+  ]
+}

@@ -1,3 +1,5 @@
+> **10 Ekim 2026 güncellemesi:** Kullanıcının açık isteğiyle Antalia-2 Mini yalnız `solar-basketball` için yeniden kuruldu; Python 3.12.12, sabit 1.0.0/revision, CPU, 48 kHz. Supertonic 3/M1 seçimi ve 47 denetlenen dosyanın hash’i korunur. EMA kurulu değildir. Aşağıdaki kaldırma bilgileri önceki seçimin tarihsel kaydıdır. Güncel bölüm komutları: [REPRODUCE.md](../../docs/episodes/solar-basketball/REPRODUCE.md).
+
 # Yerel TTS kurulumu · 2026-10-09
 
 Bu altyapı Apple Silicon macOS üzerinde doğrulandı. Sistem Python’u ve başka projelerin ortamları değiştirilmez. Kullanıcı **Supertonic 3 / M1** seçti (`config/narrator.json`). Antalia/EMA ortamları, ağırlıkları ve kaynak klonları bu projeden kaldırıldı. Aşağıdaki üç aday tablosu ilk karşılaştırmanın teknik kaydıdır; güncel kullanım ve temizlik kaydı: [SELECTION.md](SELECTION.md). Ücretli API, bulut sentezi veya uzaktan sunucu yok.

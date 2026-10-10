@@ -1,0 +1,306 @@
+{
+  "video": "deliveries/solar-basketball/gunes-basketbol.mp4",
+  "videoSha256": "ed70392ff5473516f3d768be3ea833ece596d6cb91908633046cd585ef3fe525",
+  "actualMp4FramesVisuallyInspected": [
+    13,
+    89,
+    300,
+    386,
+    539,
+    590,
+    752,
+    980,
+    1050,
+    1207,
+    1422,
+    1545,
+    1655,
+    1820,
+    1890,
+    1959
+  ],
+  "layoutProbeFrames": 135,
+  "layoutViolations": 0,
+  "layoutCollisions": 0,
+  "fontChecksAllLoaded": true,
+  "brandReferences": [
+    {
+      "name": "opening",
+      "meanError": 0,
+      "changedRatio": 0,
+      "pass": true
+    },
+    {
+      "name": "hundred",
+      "meanError": 0,
+      "changedRatio": 0,
+      "pass": true
+    },
+    {
+      "name": "result",
+      "meanError": 0,
+      "changedRatio": 0,
+      "pass": true
+    },
+    {
+      "name": "outro",
+      "meanError": 0,
+      "changedRatio": 0,
+      "pass": true
+    },
+    {
+      "name": "board",
+      "meanError": 0,
+      "changedRatio": 0,
+      "pass": true
+    }
+  ],
+  "technicalQa": "docs/episodes/solar-basketball/technical-qa.json",
+  "alignmentReview": "needs_review",
+  "suspiciousWords": [
+    {
+      "id": 5,
+      "word": "küçültseydik,",
+      "startMs": 1860.0,
+      "endMs": 2570.0,
+      "issues": [
+        "diagnostic_text_mismatch"
+      ]
+    },
+    {
+      "id": 18,
+      "word": "topunu",
+      "startMs": 8640.0,
+      "endMs": 9070.0,
+      "issues": [
+        "diagnostic_text_mismatch"
+      ]
+    },
+    {
+      "id": 23,
+      "word": "çapı",
+      "startMs": 11220.0,
+      "endMs": 11540.0,
+      "issues": [
+        "diagnostic_text_mismatch"
+      ]
+    },
+    {
+      "id": 26,
+      "word": "milimetreyi",
+      "startMs": 12280.0,
+      "endMs": 12800.0,
+      "issues": [
+        "diagnostic_text_mismatch"
+      ]
+    },
+    {
+      "id": 29,
+      "word": "Yani",
+      "startMs": 14130.0,
+      "endMs": 14400.0,
+      "issues": [
+        "diagnostic_text_mismatch"
+      ]
+    },
+    {
+      "id": 30,
+      "word": "neredeyse",
+      "startMs": 14400.0,
+      "endMs": 14920.0,
+      "issues": [
+        "diagnostic_text_mismatch"
+      ]
+    },
+    {
+      "id": 32,
+      "word": "bir",
+      "startMs": 15260.0,
+      "endMs": 15370.0,
+      "issues": [
+        "diagnostic_text_mismatch"
+      ]
+    },
+    {
+      "id": 34,
+      "word": "iğne",
+      "startMs": 15780.0,
+      "endMs": 16020.0,
+      "issues": [
+        "diagnostic_text_mismatch"
+      ]
+    },
+    {
+      "id": 51,
+      "word": "altı",
+      "startMs": 23820.0,
+      "endMs": 24060.0,
+      "issues": [
+        "diagnostic_text_mismatch"
+      ]
+    },
+    {
+      "id": 52,
+      "word": "metre",
+      "startMs": 24060.0,
+      "endMs": 24400.0,
+      "issues": [
+        "diagnostic_text_mismatch"
+      ]
+    },
+    {
+      "id": 53,
+      "word": "uzakta",
+      "startMs": 24400.0,
+      "endMs": 24800.0,
+      "issues": [
+        "diagnostic_text_mismatch"
+      ]
+    },
+    {
+      "id": 57,
+      "word": "odada",
+      "startMs": 26280.0,
+      "endMs": 26620.0,
+      "issues": [
+        "diagnostic_text_mismatch"
+      ]
+    },
+    {
+      "id": 66,
+      "word": "ise",
+      "startMs": 30100.0,
+      "endMs": 30380.0,
+      "issues": [
+        "diagnostic_text_mismatch"
+      ]
+    },
+    {
+      "id": 72,
+      "word": "santimetre",
+      "startMs": 32200.0,
+      "endMs": 32820.0,
+      "issues": [
+        "diagnostic_text_mismatch"
+      ]
+    },
+    {
+      "id": 73,
+      "word": "uzakta",
+      "startMs": 32820.0,
+      "endMs": 33200.0,
+      "issues": [
+        "diagnostic_text_mismatch"
+      ]
+    },
+    {
+      "id": 76,
+      "word": "milimetre",
+      "startMs": 34220.0,
+      "endMs": 34700.0,
+      "issues": [
+        "diagnostic_text_mismatch"
+      ]
+    },
+    {
+      "id": 81,
+      "word": "olurdu.",
+      "startMs": 36100.0,
+      "endMs": 36460.0,
+      "issues": [
+        "diagnostic_text_mismatch"
+      ]
+    },
+    {
+      "id": 89,
+      "word": "santimetrelik",
+      "startMs": 39380.0,
+      "endMs": 40120.0,
+      "issues": [
+        "diagnostic_text_mismatch"
+      ]
+    },
+    {
+      "id": 95,
+      "word": "o",
+      "startMs": 42180.0,
+      "endMs": 42260.0,
+      "issues": [
+        "short_word"
+      ]
+    },
+    {
+      "id": 103,
+      "word": "uzakta",
+      "startMs": 44600.0,
+      "endMs": 45000.0,
+      "issues": [
+        "diagnostic_text_mismatch"
+      ]
+    },
+    {
+      "id": 111,
+      "word": "O,",
+      "startMs": 48920.0,
+      "endMs": 49110.0,
+      "issues": [
+        "short_word"
+      ]
+    },
+    {
+      "id": 123,
+      "word": "elinize",
+      "startMs": 53780.0,
+      "endMs": 54180.0,
+      "issues": [
+        "diagnostic_text_mismatch"
+      ]
+    },
+    {
+      "id": 126,
+      "word": "küçültseniz",
+      "startMs": 55100.0,
+      "endMs": 55780.0,
+      "issues": [
+        "diagnostic_text_mismatch"
+      ]
+    },
+    {
+      "id": 135,
+      "word": "Uzay",
+      "startMs": 59600.0,
+      "endMs": 59880.0,
+      "issues": [
+        "diagnostic_text_mismatch"
+      ]
+    }
+  ],
+  "humanListeningPerformed": false,
+  "continuousPlaybackListeningPerformed": false,
+  "reviewTool": "http://127.0.0.1:3035",
+  "publicationReady": false,
+  "actualMp4AdditionalCandidatesInspected": [
+    321,
+    322,
+    323,
+    566,
+    857,
+    951,
+    1026,
+    1096,
+    1105,
+    1106,
+    1107,
+    1256,
+    1257,
+    1258,
+    1376,
+    1377,
+    1378,
+    1696,
+    1709,
+    1933,
+    1934
+  ],
+  "candidateReviewMethod": "Representative frames per dark/small-geometry interval plus before/at/after all four detected large cuts; static visual review, no human audio listening"
+}

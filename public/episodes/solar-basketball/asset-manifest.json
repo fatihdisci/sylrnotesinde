@@ -1,0 +1,56 @@
+[
+  {
+    "file": "episodes/solar-basketball/textures/earth.jpg",
+    "url": "https://www.solarsystemscope.com/textures/download/2k_earth_daymap.jpg",
+    "sha256": "767ee1dc6eb3802699bfccf6f264880f8acd0b80de3191cd24984fe279b07b7c",
+    "license": "CC-BY-4.0",
+    "attribution": "Solar System Scope / INOVE; maps based on NASA imagery; https://www.solarsystemscope.com/textures/"
+  },
+  {
+    "file": "episodes/solar-basketball/textures/clouds.jpg",
+    "url": "https://www.solarsystemscope.com/textures/download/2k_earth_clouds.jpg",
+    "sha256": "fffd7f68d41b37274822150e54a6ef605af1d3ec35624d9f628c3b896bfa42ed",
+    "license": "CC-BY-4.0",
+    "attribution": "Solar System Scope / INOVE; maps based on NASA imagery; https://www.solarsystemscope.com/textures/"
+  },
+  {
+    "file": "episodes/solar-basketball/textures/jupiter.jpg",
+    "url": "https://www.solarsystemscope.com/textures/download/2k_jupiter.jpg",
+    "sha256": "b0f04d005350252636b0e3396fc592548cbd9e9126b269d32d5c6abd4b0e4f2b",
+    "license": "CC-BY-4.0",
+    "attribution": "Solar System Scope / INOVE; maps based on NASA imagery; https://www.solarsystemscope.com/textures/"
+  },
+  {
+    "file": "episodes/solar-basketball/textures/neptune.jpg",
+    "url": "https://www.solarsystemscope.com/textures/download/2k_neptune.jpg",
+    "sha256": "cb42ea82709741d28b0af44d8b283cbc6dbd0c521a7f0e1e1e010ade00977df6",
+    "license": "CC-BY-4.0",
+    "attribution": "Solar System Scope / INOVE; maps based on NASA imagery; https://www.solarsystemscope.com/textures/"
+  },
+  {
+    "file": "episodes/solar-basketball/textures/sun.jpg",
+    "url": "https://www.solarsystemscope.com/textures/download/2k_sun.jpg",
+    "sha256": "ff0f076ba65e03b5ab518451bc96699325be38e3ccbdd5869ee1c00f3a0c8816",
+    "license": "CC-BY-4.0",
+    "attribution": "Solar System Scope / INOVE; maps based on NASA imagery; https://www.solarsystemscope.com/textures/"
+  },
+  {
+    "file": "episodes/solar-basketball/textures/moon.jpg",
+    "url": "https://www.solarsystemscope.com/textures/download/2k_moon.jpg",
+    "sha256": "2764ba6535ea0481a062846ee033cc7a909dae05b31a8fd13f3e98f3a7fd92bd",
+    "license": "CC-BY-4.0",
+    "attribution": "Solar System Scope / INOVE; maps based on NASA imagery; https://www.solarsystemscope.com/textures/"
+  },
+  {
+    "file": "episodes/solar-basketball/textures/basketball.png",
+    "sha256": "2b9c995ee98b27cec1fe86d7e9a591d84dfbc473ef9cfb78abdde229e69ba170",
+    "license": "original project procedural texture",
+    "seed": 42
+  },
+  {
+    "file": "episodes/solar-basketball/textures/basketball-bump.png",
+    "sha256": "75fcb9316b34166a405cc1728a8216b7b0c6b4e45b0134157e82ce8cdd066238",
+    "license": "original project procedural texture",
+    "seed": 42
+  }
+]
