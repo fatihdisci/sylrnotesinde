@@ -5,38 +5,36 @@ import soundfile as sf
 from core import ROOT,paths,read,write,sha,export
 RATE=48000
 
-def band_noise(n,seed,low,high):
- rng=np.random.default_rng(seed);x=rng.standard_normal(n)
- frequencies=np.fft.rfftfreq(n,1/RATE)
- response=np.minimum(1,(frequencies/max(1,low))**2)*np.minimum(1,(high/np.maximum(1,frequencies))**3)
- response[0]=0
- x=np.fft.irfft(np.fft.rfft(x)*response,n)
- return x/max(1e-9,np.std(x))
-
 def effect(name,frames,seed):
- n=frames*1600;t=np.arange(n)/RATE;p=np.arange(n)/max(1,n-1);duration=n/RATE
- air=band_noise(n,seed,170,3300);low=band_noise(n,seed+1,25,180)
- def sweep(a,b):return np.sin(2*np.pi*(a*t+(b-a)*t*t/(2*duration)))
- if name in ['launch','travel','reveal']:
-  env=np.sin(np.pi*p)**1.7
-  x=(air*(.18+.32*p)+low*.11+sweep(55,170)*.16+sweep(110,340)*.07)*env
-  pan=np.linspace(-.65,.65,n)
- elif name in ['impact','arrival','final','bloom']:
-  attack=np.minimum(1,t/.012);env=attack*np.exp(-p*4.4)*np.minimum(1,(1-p)*10)
-  x=(sweep(91,37)*.42+sweep(182,74)*.16+sweep(470,240)*.12+air*.08+low*.07)*env
-  if name=='bloom':x+=sweep(155,290)*np.sin(np.pi*p)**2*.08
-  if name=='final':x+=np.sin(2*np.pi*146.83*t)*np.sin(np.pi*p)**2*.12
-  pan=np.sin(p*np.pi)*.12
- elif name=='click':
-  x=(sweep(1700,700)*.22+air*.18+sweep(320,140)*.14)*np.exp(-t*24)*np.minimum(1,t/.003)*np.minimum(1,(1-p)*8)
-  pan=np.zeros(n)
- else:
-  env=np.sin(np.pi*p)**1.4
-  x=(air*.16+low*.05+sweep(180,100)*.08)*env
-  if name=='leather':x+=sweep(430,170)*np.exp(-((p-.28)/.05)**2)*.2
-  pan=np.sin(p*np.pi*2)*.25
- x=x/max(1e-9,np.max(np.abs(x)))*.43
- return np.stack([x*np.sqrt((1-pan)/2),x*np.sqrt((1+pan)/2)],axis=1)
+ """Rounded tonal cues: no noise, whoosh, distortion or abrupt sample edges."""
+ n=frames*1600;t=np.arange(n)/RATE;duration=n/RATE
+ stereo=np.zeros((n,2))
+ def bell(hz,at=0,length=.42,level=.10,pan=0):
+  local=t-at;active=(local>=0)&(local<length)
+  q=np.maximum(0,local)
+  envelope=(1-np.exp(-q/.012))*np.exp(-q/(length*.25))
+  envelope*=np.clip((length-q)/.04,0,1)*active
+  # Nearly pure fundamental with quiet, consonant upper partials.
+  tone=(np.sin(2*np.pi*hz*q)+.12*np.sin(2*np.pi*hz*2*q)+.025*np.sin(2*np.pi*hz*3*q))*envelope*level
+  stereo[:,0]+=tone*np.sqrt((1-pan)/2)
+  stereo[:,1]+=tone*np.sqrt((1+pan)/2)
+ if name=='click':bell(659.255,length=.18,level=.11)
+ elif name in ['detail','leather']:
+  bell(587.33 if name=='detail' else 440,length=.32,level=.09)
+ elif name in ['launch','travel','reveal']:
+  notes=[293.665,369.994,440,587.33] if name=='reveal' else [293.665,369.994,440]
+  spacing=.15 if name=='travel' else .105
+  for i,hz in enumerate(notes):bell(hz,i*spacing,.42,.075,-.25+i*.16)
+ elif name=='orbit':
+  bell(440,length=.38,level=.075,pan=-.18);bell(587.33,.22,.42,.065,.18)
+ elif name in ['impact','arrival']:
+  bell(293.665,length=.5,level=.11);bell(440,.07,.42,.055)
+ elif name in ['bloom','final']:
+  for i,hz in enumerate([293.665,369.994,440,587.33]):bell(hz,i*.09,.85,.055 if name=='bloom' else .075)
+ else:raise ValueError(f'Unknown tonal cue: {name}')
+ # The authored interval remains exact; the cue settles naturally before its end.
+ stereo*=np.minimum(1,np.maximum(0,duration-t)/.025)[:,None]
+ return stereo
 
 def sidechain(voice,stem,ratio):
  n=len(voice);windows=math.ceil(n/480)
@@ -62,16 +60,14 @@ def build(id='solar-basketball'):
    wave=effect(e['sound'],e['durationFrames'],42+e['frame'])*e['gain'];start=e['frame']*1600
    if start+len(wave)>n:raise ValueError('Effect crosses outro')
    sfx[start:start+len(wave)]+=wave;events.append({**e,'event':event['id'],'id':f'{event["id"]}-{i}'})
- sfx,duck=sidechain(v,sfx,.42)
+ sfx,duck=sidechain(v,sfx,.25)
  t=np.arange(n)/RATE;music=np.zeros((n,2))
- # Four original sustained tones, no borrowed melody. Slow deterministic harmonic opening.
- for i,hz in enumerate([55,82.4069,110,146.8324]):
-  phase=2*np.pi*(hz*t+.04*np.sin(t*.11+i))
-  amplitude=(.7+.3*np.sin(t*.18+i))*.005
+ # Quiet consonant sine pad. No noise bed or broadband texture.
+ for i,hz in enumerate([146.8324,220,293.6648,369.9944]):
+  phase=2*np.pi*hz*t
+  amplitude=(.8+.2*np.sin(t*.13+i))*.0025
   music[:,0]+=np.sin(phase)*amplitude
-  music[:,1]+=np.sin(phase+.06*np.sin(t*.07+i))*amplitude
- air=band_noise(n,84,240,1800)*.0017
- music[:,0]+=air;music[:,1]+=np.roll(air,230)
+  music[:,1]+=np.sin(phase+.025)*amplitude
  swell=.5+.5*np.sin(np.minimum(1,t/(n/RATE))*np.pi)
  music*=swell[:,None]
  music,music_duck=sidechain(v,music,.11)
@@ -89,7 +85,7 @@ def build(id='solar-basketball'):
  if closing.ndim==1:closing=np.column_stack([closing,closing])
  final=np.concatenate([mix,closing],axis=0)
  sf.write(dest/'mix.wav',final,RATE,subtype='PCM_24')
- report={'schemaVersion':2,'method':'original-solar-score-v1','seed':42,'sampleRate':RATE,'channels':2,'directionHash':sha(json.dumps(m['direction'],sort_keys=True).encode()),'audioHash':d['bindings']['audioHash'],'stemSha256':sha((dest/'sfx-stem.wav').read_bytes()),'musicStemSha256':sha((dest/'ambient-stem.wav').read_bytes()),'mixSha256':sha((dest/'mix.wav').read_bytes()),'musicFile':'ambient-stem.wav','renderGain':.6,'musicRenderGain':.12,'events':events,'ducking':duck,'musicDucking':music_duck,'predictedMixPeak':float(np.max(np.abs(final))),'externalSamples':False,'humanListeningPerformed':False,'license':'Original project synthesis; no third-party samples. Cinematic effects do not represent sound propagation in space.'}
+ report={'schemaVersion':2,'method':'original-solar-tonal-score-v2','timbre':'rounded sine bells and quiet consonant pad; zero noise generators','seed':42,'sampleRate':RATE,'channels':2,'directionHash':sha(json.dumps(m['direction'],sort_keys=True).encode()),'audioHash':d['bindings']['audioHash'],'stemSha256':sha((dest/'sfx-stem.wav').read_bytes()),'musicStemSha256':sha((dest/'ambient-stem.wav').read_bytes()),'mixSha256':sha((dest/'mix.wav').read_bytes()),'musicFile':'ambient-stem.wav','renderGain':.6,'musicRenderGain':.12,'events':events,'ducking':duck,'musicDucking':music_duck,'predictedMixPeak':float(np.max(np.abs(final))),'externalSamples':False,'humanListeningPerformed':False,'license':'Original project synthesis; no third-party samples. Cinematic effects do not represent sound propagation in space.'}
  write(dest/'sound-design.json',report);export(id)
  print(json.dumps({k:report[k] for k in ['ducking','musicDucking','predictedMixPeak']},indent=2))
 if __name__=='__main__':build()

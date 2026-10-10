@@ -19,6 +19,8 @@ IBM Plex Sans 400/500/600: başlık ve anlatım. IBM Plex Mono 400/500: sayı ve
 
 Başlangıç ölçeği: sayı 200 px (160–240), başlık 88 px (80–104), altyazı 46 px (44–52), ölçü 36 px (34–40). Küçük marka imzası 26 px ve style-board teknik açıklamaları özel kullanım istisnalarıdır. Başlık en fazla iki satır. Uzun metinde ifadeyi kısalt veya yerleşimi değiştir. Sayı biçimi `tr-TR`: 1.000.000 / 11,6.
 
+Kalıcı kullanıcı tercihi: altyazıların hemen üstünde küçük açıklama, teknik not veya ölçek dipnotu katmanı bulunmaz. Bu bölgeyi ek yazıyla doldurma. Ölçek, varsayım ve kaynak ayrıntılarını üretim belgelerinde kaydet; anlatım için gerekli ana ölçü ve nesne etiketlerini sahnenin parçası olarak tasarla.
+
 1080×1920 güvenli başlangıç payları: sol72 / sağ144 / üst180 / alt300. Bunlar platform standardı değildir. Önemli metin alanı x72–936 / y180–1620. `StyleProofDebug` görünümü üretim MP4'üne dahil olmaz. Kamera geometriden sorumlu; metin ekran koordinatlarında kalır.
 
 İşaret: 24/40/64 uzunluk, 10 aralık, 3 kalınlık, 6×6 mercan nokta. SVG `BrandMark` geometri tokenlarından orantılı üretilir. Küçük imza konumu x72/y184, genişliği64. Dünya/atom/galaksi/ampul/sonsuzluk simgesi yok.

@@ -1,6 +1,6 @@
 {
   "video": "deliveries/solar-basketball/gunes-basketbol.mp4",
-  "videoSha256": "ed70392ff5473516f3d768be3ea833ece596d6cb91908633046cd585ef3fe525",
+  "videoSha256": "7949bd1eef8db550a03ae0171bc26526c96a5aca3ccd6f56ad8d0dfc613d727c",
   "actualMp4FramesVisuallyInspected": [
     13,
     89,
@@ -280,27 +280,64 @@
   "reviewTool": "http://127.0.0.1:3035",
   "publicationReady": false,
   "actualMp4AdditionalCandidatesInspected": [
-    321,
-    322,
-    323,
     566,
     857,
     951,
     1026,
     1096,
-    1105,
-    1106,
-    1107,
-    1256,
-    1257,
-    1258,
-    1376,
-    1377,
-    1378,
-    1696,
-    1709,
-    1933,
-    1934
+    1707
   ],
-  "candidateReviewMethod": "Representative frames per dark/small-geometry interval plus before/at/after all four detected large cuts; static visual review, no human audio listening"
+  "candidateReviewMethod": "Six dark/small-geometry representatives inspected from the current MP4. Main 16 frames inspected in the no-notes render; current encoded picture stream is byte-identical. No auditory listening performed.",
+  "previousRevision": {
+    "videoSha256": "ed70392ff5473516f3d768be3ea833ece596d6cb91908633046cd585ef3fe525",
+    "actualMp4FramesVisuallyInspected": [
+      13,
+      89,
+      300,
+      386,
+      539,
+      590,
+      752,
+      980,
+      1050,
+      1207,
+      1422,
+      1545,
+      1655,
+      1820,
+      1890,
+      1959
+    ],
+    "actualMp4AdditionalCandidatesInspected": [
+      321,
+      322,
+      323,
+      566,
+      857,
+      951,
+      1026,
+      1096,
+      1105,
+      1106,
+      1107,
+      1256,
+      1257,
+      1258,
+      1376,
+      1377,
+      1378,
+      1696,
+      1709,
+      1933,
+      1934
+    ],
+    "candidateReviewMethod": "Representative frames per dark/small-geometry interval plus before/at/after all four detected large cuts; static visual review, no human audio listening"
+  },
+  "pictureStreamComparison": {
+    "previousVideoStream": "SHA256=0c79ec286dd41ea2c4db319da9c9db3ad65e361872753632a8b5f0db9d945cdd",
+    "currentVideoStream": "SHA256=0c79ec286dd41ea2c4db319da9c9db3ad65e361872753632a8b5f0db9d945cdd",
+    "identical": true
+  },
+  "subtitleAdjacentNotesRemovedAtProbes": 135,
+  "soundRevision": "original-solar-tonal-score-v2"
 }

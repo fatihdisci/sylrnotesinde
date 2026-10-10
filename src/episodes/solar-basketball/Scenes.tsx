@@ -7,7 +7,7 @@ import {LayoutProbe} from '../../components/LayoutProbe';
 import type {Episode} from '../types';
 import {SolarWorld} from './World';
 import {anchor,cameraPose,phase} from './camera';
-import {positions,SCALE_NOTE,PLACEMENT_NOTE} from './model';
+import {positions} from './model';
 const ink=colors.foreground;
 const WideMarkers=({f,episode}:{f:number;episode:Episode})=>{
  const pose=cameraPose(f,episode);const camera=new THREE.PerspectiveCamera(pose.fov,1080/1920,.00001,2800);camera.position.set(...pose.eye);camera.lookAt(...pose.target);camera.updateMatrixWorld();
@@ -43,21 +43,21 @@ const ModelMarkers=({f,episode}:{f:number;episode:Episode})=>{
 };
 export const SolarFrame=({f,episode,hideCaptions=false,debug=false}:{f:number;episode:Episode;hideCaptions?:boolean;debug?:boolean})=>{
  const a=(id:string)=>anchor(episode,id),cue=episode.captions.find(c=>f>=c.from&&f<c.to);
- let title='',measure='',eyebrow='',note=SCALE_NOTE;
+ let title='',measure='',eyebrow='';
  if(f<a('ball-size')){title='Güneş, bir\nbasketbol topu.';eyebrow='ÖLÇEĞİ DEĞİŞTİR';}
  else if(f<a('earth-size')){measure='24 cm';eyebrow='GÜNEŞİN MODEL ÇAPI';}
- else if(f<a('distance-shock')){measure='2,2 mm';eyebrow='DÜNYANIN MODEL ÇAPI';note='Yakın plan • cisim ölçeği değişmedi';}
+ else if(f<a('distance-shock')){measure='2,2 mm';eyebrow='DÜNYANIN MODEL ÇAPI';}
  else if(f<a('street')){title='Asıl fark,\naradaki boşluk.';eyebrow='BOYUTTAN UZAKLIĞA';}
- else if(f<a('arrival')){measure='25,8 m';eyebrow='GÜNEŞ → DÜNYA';note='Ortalama merkez uzaklığı • ≈ 26 m';}
+ else if(f<a('arrival')){measure='25,8 m';eyebrow='GÜNEŞ → DÜNYA';}
  else if(f<a('moon')){title='Sokağın\nkarşısında.';eyebrow='AYNI ODAYA SIĞMIYOR';}
- else if(f<a('moon-size')){measure='6,6 cm';eyebrow='DÜNYA → AY';note='Yakın plan • aynı doğrusal ölçek';}
- else if(f<a('jupiter')){measure='0,6 mm';eyebrow='AYIN MODEL ÇAPI';note='Yakın plan • aynı doğrusal ölçek';}
- else if(f<a('jup-road')){measure='2,5 cm';eyebrow='JÜPİTERİN MODEL ÇAPI';note='Yakın plan • aynı doğrusal ölçek';}
- else if(f<a('neptune')){measure='134,3 m';eyebrow='GÜNEŞ → JÜPİTER';note='Ortalama merkez uzaklığı • ≈ 135 m';}
- else if(f<a('far-flight')){title='Sırada\nNeptün var.';eyebrow='EN UZAK GEZEGEN';note='Yakın plan • aynı doğrusal ölçek';}
- else if(f<a('neighborhood')){measure='778,8 m';eyebrow='GÜNEŞ → NEPTÜN';note='Ortalama merkez uzaklığı • ≈ 780 m';}
- else if(f<a('quiet')){title='Bir top.\nKoca bir mahalle.';eyebrow='AYNI MATEMATİKSEL ÖLÇEK';note=PLACEMENT_NOTE;}
- else {title=f<a('final')?'Uzay gerçekten\nbüyük değil.':'Aklın alıştığından\nçok daha büyük.';note=PLACEMENT_NOTE;}
+ else if(f<a('moon-size')){measure='6,6 cm';eyebrow='DÜNYA → AY';}
+ else if(f<a('jupiter')){measure='0,6 mm';eyebrow='AYIN MODEL ÇAPI';}
+ else if(f<a('jup-road')){measure='2,5 cm';eyebrow='JÜPİTERİN MODEL ÇAPI';}
+ else if(f<a('neptune')){measure='134,3 m';eyebrow='GÜNEŞ → JÜPİTER';}
+ else if(f<a('far-flight')){title='Sırada\nNeptün var.';eyebrow='EN UZAK GEZEGEN';}
+ else if(f<a('neighborhood')){measure='778,8 m';eyebrow='GÜNEŞ → NEPTÜN';}
+ else if(f<a('quiet')){title='Bir top.\nKoca bir mahalle.';eyebrow='AYNI MATEMATİKSEL ÖLÇEK';}
+ else {title=f<a('final')?'Uzay gerçekten\nbüyük değil.':'Aklın alıştığından\nçok daha büyük.';}
  const latest=episode.direction!.events.filter(e=>e.from<=f).at(-1)!;
  const enter=phase(f,latest.from,latest.from+10);
  return <AbsoluteFill style={{fontFamily:typography.sans,color:ink,background:'#0c151c',overflow:'hidden'}}>
@@ -71,7 +71,6 @@ export const SolarFrame=({f,episode,hideCaptions=false,debug=false}:{f:number;ep
   </div>
   <ModelMarkers f={f} episode={episode}/>
   {f>=a('whole')-20&&<WideMarkers f={f} episode={episode}/>}
-  <div data-safe="scale-note" style={{position:'absolute',left:80,right:148,top:1368,fontFamily:typography.mono,fontSize:26,lineHeight:1.3,color:'#b3c0c3'}}>{note}{f>=a('whole')&&<div style={{fontSize:23,marginTop:8}}>İşaretler konumları gösterir; gezegen boyutu değildir.</div>}</div>
   {!hideCaptions&&cue&&<div data-safe="caption" style={{position:'absolute',left:80,right:148,top:1478,fontSize:44,lineHeight:1.28,fontWeight:400,textShadow:'0 2px 6px #0c151c'}}>{cue.lines.map(line=><div key={line}>{line}</div>)}</div>}
   {debug&&<LayoutProbe/>}
  </AbsoluteFill>;

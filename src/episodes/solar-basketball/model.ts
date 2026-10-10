@@ -16,5 +16,3 @@ export const positions = {
  moon: [scaleModel.moon.distance,1.3,-scaleModel.earth.distance] as V3,
  jupiter: centre(scaleModel.jupiter.distance), neptune: centre(scaleModel.neptune.distance),
 };
-export const SCALE_NOTE = '24 cm Güneş • tek doğrusal ölçek';
-export const PLACEMENT_NOTE = 'Ortalama uzaklıklar • doğrusal yerleşim';

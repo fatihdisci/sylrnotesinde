@@ -4,6 +4,14 @@
 
 Teslim: `deliveries/solar-basketball/gunes-basketbol.mp4`. Yerel render masterıyla byte-for-byte aynıdır. H.264/AAC, 1080×1920, 30 FPS, **1.979 kare / 65,967 s**. Anlatım 63,403 s; son sözcük 63,260 s; outro 64,467 s’de başlar. Sonuç tutuşu 36 kare, outro 45 kare. Konuşma kesilmedi veya zaman esnetmesiyle hızlandırılmadı. Doğal göreli hız 1 korundu; süre sınırı olmadığı için 1,05 testi gerekmedi.
 
+## Kullanıcı düzeltmesi — temiz tonal sesler ve sade altyazı alanı
+
+Altyazının hemen üstündeki küçük açıklama katmanı bütünüyle kaldırıldı; 135 yerleşim probunda bu düğüm bulunmuyor. Tercih AGENTS.md ve tasarım rehberine kaydedildi.
+
+Hışırtı üreten bütün noise/whoosh katmanları, hem efektlerden hem ambientten kaldırıldı. Görsel olaylarla aynı başlangıç karelerinde yumuşak blink/bip, kısa uyumlu nota dizileri ve düşük seviyeli sinüs pad kullanılıyor. Atak/sönümler yumuşak; konuşma sırasında efekt oranının yüzde 95 değeri −12,04 dB. Anlatıcı WAV hash’i değişmedi; kanonik outro korunuyor. [Tonal ses kontrolü](tonal-audio-check.json).
+
+Bu düzeltmede TypeScript/lint, 21 TS testi, marka kontrolü, üretim testleri (16 geçti / 1 tarihsel fixture atlandı), gerçek MP4 render ve genel bölüm QA yeniden çalıştırıldı. Güncel MP4 ölçümleri aşağıdaki tabloda. İşitsel insan incelemesi yapılmış sayılmadı.
+
 ## Gerçek ses ve çevrimdışı çalışma
 
 Antalia-2 Mini 1.0.0, tek erkek/default, Python 3.12.12, Apple Silicon CPU, 2 thread, seed42. Sabit model revision ve bağımlılık kilitleri değişmedi. Yalnız `npm run tts:setup -- --model antalia-mini` çalıştırıldı; Supertonic kurulumu yeniden çalıştırılmadı, EMA kurulmadı.
@@ -32,9 +40,9 @@ Ham WAV: `tts/outputs/episodes/solar-basketball/narration.wav`. Normalize edilmi
 | Gerçek render / genel bölüm QA komutları | Çalıştırıldı ve teknik kontroller geçti |
 | Gerçek MP4 çözünürlük/FPS/kare | 1080×1920 / 30 / 1.979 |
 | Font / güvenli alan / çakışma | 135 kare probu; beş IBM Plex dosyası yüklü, 0 taşma, 0 etiket çakışması; altyazı en fazla iki satır |
-| Gerçek MP4 ses ölçümü | −20,85 LUFS, −5,62 dBTP; clipping yok |
+| Gerçek MP4 ses ölçümü | −21,04 LUFS, −5,78 dBTP; clipping yok |
 | MP4 konuşma kayması | Başlangıç/orta/sonda 0 ms; pencerelerde korelasyon ≥0,99993; drift 0 ms |
-| Efekt + müzik + anlatım | Aynı kaynak katmanlarla 22 olayda MP4 miks karşılaştırması; en düşük korelasyon 0,99989; değişmeyen >0,98 eşiği geçti |
+| Efekt + müzik + anlatım | Aynı kaynak katmanlarla 22 olayda MP4 miks karşılaştırması; en düşük korelasyon 0,99992; değişmeyen >0,98 eşiği geçti |
 | Outro | Başlangıç kare 1.934; ses farkı 0,313 ms, korelasyon 0,999993; konuşma ve altyazı outroyla çakışmıyor |
 | SRT / gömülü altyazı | Aynı 144 kelimeden 32 öbek; aynı floor/ceil 30 FPS sınırları |
 | Tüm kare taraması | 0 siyah interval, 0 boş içerik karesi; ≥2 s sessiz/durağan interval bulunmadı |
@@ -44,11 +52,11 @@ Miks kontrolünde bilinen ses tasarımı katmanları çıkarılarak anlatıcı k
 
 ## Görsel inceleme ve düzeltilen sorunlar
 
-Gerçek MP4’ten 16 ana kare ve ek geçiş/diagnostic kareler çıkarılıp görüntü olarak incelendi. Altyazısız kontrol kareleri aynı sahne/kareyle ayrıca render edildi. [İnceleme kaydı](review-record.json), [temas sayfası](../../../deliveries/solar-basketball/review-contact.jpg); bütün tam çözünürlüklü kareler `renders/episodes/solar-basketball/review/` içinde.
+Güncel açıklamasız görüntüden 16 ana kare ve altı diagnostic kare çıkarılıp görüntü olarak incelendi. Son ses revizyonunun kodlanmış görüntü akışı bu incelenen açıklamasız renderla byte-for-byte aynıdır. Altyazısız kontrol kareleri aynı sahne/kareyle ayrıca render edildi. [İnceleme kaydı](review-record.json), [temas sayfası](../../../deliveries/solar-basketball/review-contact.jpg); bütün tam çözünürlüklü kareler `renders/episodes/solar-basketball/review/` içinde.
 
 İlk taslakta asenkron doku yüklenmesi beklenmiyordu; render geciktirme ve GL commit bariyeri eklendi. Dünya makrosu yazıyla çakışacak kadar büyüktü; fiziksel kamera geri alındı. Geniş planda uçlar kırpılıyor ve Güneş/Dünya etiketleri çakışıyordu; tam rotayı kapsayan kamera ve ayrı lider çizgileriyle düzeltildi. Dünya’dan geri çekilirken hedef erken kayıp nesneyi kadraj dışına çıkarıyordu; hedef uzaklaşma tamamlanana kadar Dünya’da tutuldu, gerçek çıktı yeniden incelendi. Son kamera süzülmesi güçlendirildi; durağan interval uyarısı son çıktıda kalmadı. Son render bunların hepsini içerir.
 
-Dört büyük kare farkı (322, 1.106, 1.257, 1.377) kasıtlı yakın plan / sokak kesmeleridir; öncesi, kesme karesi ve sonrası gerçek MP4’ten incelendi. Geometri algılayıcısı ayrıca **122 kareyi** çok küçük/karanlık geometri diye işaretledi: milimetrelik cisimlerin geri çekilmesi, Dünya–Ay ortak ölçeği ve kuş bakışına geçiş. Eşikler değiştirilmedi. Yedi aralığın temsilci kareleri incelendi; bunlar literal boş/siyah kare değildir. Özellikle küçücük cisimlerin telefonda algılanabilirliği tam ekran oynatma sırasında ayrıca değerlendirilmeli.
+Dört büyük kare farkı (322, 1.106, 1.257, 1.377) kasıtlı yakın plan / sokak kesmeleridir; ilk sürümde öncesi, kesme karesi ve sonrası gerçek MP4’ten incelendi. Geometri algılayıcısı ayrıca **124 kareyi** çok küçük/karanlık geometri diye işaretledi: milimetrelik cisimlerin geri çekilmesi, Dünya–Ay ortak ölçeği ve kuş bakışına geçiş. Eşikler değiştirilmedi. Altı aralığın temsilci kareleri incelendi; bunlar literal boş/siyah kare değildir. Özellikle küçücük cisimlerin telefonda algılanabilirliği tam ekran oynatma sırasında ayrıca değerlendirilmeli.
 
 ## Açık kalan insan incelemesi
 

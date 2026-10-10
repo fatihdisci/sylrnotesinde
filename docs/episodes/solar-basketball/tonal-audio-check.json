@@ -1,0 +1,11 @@
+{
+  "method": "original-solar-tonal-score-v2",
+  "noiseGenerators": 0,
+  "narrationSha256Unchanged": true,
+  "narrationSha256": "0644d1ad27451ea748d914ea77ef0f2883c2606cf879a284e3e42ec9f96010b2",
+  "events": 21,
+  "sfxEnergyAbove4kHzRatio": 6.250948542801028e-10,
+  "predictedMixPeak": 0.723565166616242,
+  "speechEffectRatioP95Db": -12.041199826559248,
+  "humanListeningPerformed": false
+}
