@@ -97,3 +97,14 @@ Genel QA'nın −25…−17 LUFS koşulu bu kullanıcı isteğiyle daha sessiz m
 ### Son kullanıcı ayarı: anlatıcı 0,40
 
 Anlatıcı 0,50 → 0,40 (−1,94 dB). Efekt/müzik değişmedi; kalıcı tercih güncellendi. Nihai MP4 -27.6 LUFS, -11.01 dBTP; drift 0.0 ms. Görüntü akışı önceki incelenmiş video ile byte düzeyinde aynı. TypeScript/lint/marka/TTS kontrolleri geçti. Genel −25…−17 LUFS hedefi geçmedi; eşik korunarak technicalChecksPassed=false kaydedildi. Diğer gerçek MP4 kontrolleri tanısal çalıştırmada tamamlandı. İnsan dinlemesi ve altyazı onayı yapılmadı.
+
+
+### Müzik v5: melodi ve ritim yeniden bestelendi
+
+88 BPM, Re majör; sekiz ölçülük soru-cevap melodisi, sıcak tuşlu çalgı tınısı, açık akorlar, senkoplu bas ve hafif tonal ritim. İlk tema, daha alçak cevap, gelişme ve son konuşmada seyrekleşen çözülme. Sabit outro öncesinde fade. Özgün yerel sentez; üçüncü taraf örnek veya servis yok. Eski müzik yerel renders/.../music-v4-archive içinde korundu.
+
+Konuşma WAV SHA-256, 0,40 konuşma gain'i, efekt stem hash'i ve tüm kodlanmış görüntü akışı önceki teslimle aynı. Konuşma perdesi, hız, tını veya dinamikleri değiştirilmedi. Yeni müzik stem RMS'i önceki müziğe göre −0,44 dB; bu bir seviye artırımı değil, beste/düzenleme değişikliği.
+
+TypeScript, lint, 21 temel test, 17 marka dosyası, 7 TTS testi ve bölüm kaynak ses QA geçti. Yeni 1080×1920/30 FPS MP4: -27.56 LUFS, -10.84 dBTP; drift 0.0 ms. 144 kelime/SRT aynı; 22 gerçek kodlanmış miks örneğinde ses kayması/korelasyon kontrolleri geçti.
+
+Mevcut −25…−17 LUFS hedefi kullanıcı tarafından seçilmiş düşük anlatıcı seviyesi nedeniyle yine geçmedi; eşik değiştirilmedi ve technicalChecksPassed=false korundu. Diğer MP4 kontrolleri tanısal çalıştırmada tamamlandı. İnsan dinlemesi, müziğin öznel beğenisi ve altyazı onayı yapılmış sayılmadı.

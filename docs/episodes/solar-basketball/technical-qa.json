@@ -2,7 +2,7 @@
   "id": "solar-basketball",
   "technicalChecksPassed": false,
   "loudnessPolicyPassed": false,
-  "loudnessPolicyNote": "User-requested quieter narration. Unchanged -25 to -17 LUFS policy is not met; all remaining checks run diagnostically.",
+  "loudnessPolicyNote": "Narration remains at user-selected 0.40. Unchanged -25 to -17 LUFS policy is not met; other checks run diagnostically.",
   "publicationReady": false,
   "publicationBlockers": [
     "PUBLICATION BLOCKED: human audio/timing review is not approved"
@@ -19,26 +19,26 @@
       "position": "start",
       "sourceFromMs": 20.0,
       "lagMs": 0.0,
-      "correlation": 0.9999703351453934
+      "correlation": 0.9999603116012845
     },
     {
       "position": "middle",
       "sourceFromMs": 32120.0,
       "lagMs": 0.0,
-      "correlation": 0.9999486993460689
+      "correlation": 0.9999544592666761
     },
     {
       "position": "end",
       "sourceFromMs": 62480.0,
       "lagMs": 0.0,
-      "correlation": 0.9999307093935473
+      "correlation": 0.9999412284271271
     }
   ],
   "driftMs": 0.0,
-  "encodedPeak": 0.3939850330352783,
-  "integratedLufs": -27.6,
-  "truePeakDbtp": -11.01,
-  "outroCorrelation": 0.9999928828053355,
+  "encodedPeak": 0.4027749300003052,
+  "integratedLufs": -27.56,
+  "truePeakDbtp": -10.84,
+  "outroCorrelation": 0.9999928828060236,
   "outroLagMs": 0.3125,
   "captionCoverageWords": 144,
   "srtMatchesBurnIn": true,
@@ -237,133 +237,133 @@
         "event": "sun",
         "frame": 0,
         "lagMs": 0.0,
-        "correlation": 0.9999832912652247
+        "correlation": 0.999976706254773
       },
       {
         "event": "ball-size",
         "frame": 179,
         "lagMs": 0.0,
-        "correlation": 0.9999533366239945
+        "correlation": 0.9999509788060701
       },
       {
         "event": "earth-size",
         "frame": 322,
         "lagMs": 0.0,
-        "correlation": 0.9999715534109379
+        "correlation": 0.9999564828555725
       },
       {
         "event": "pin",
         "frame": 462,
         "lagMs": 0.0,
-        "correlation": 0.9999644941874694
+        "correlation": 0.9999717855733901
       },
       {
         "event": "distance-shock",
         "frame": 518,
         "lagMs": 0.0,
-        "correlation": 0.9999648030311651
+        "correlation": 0.9999644286426168
       },
       {
         "event": "street",
         "frame": 617,
         "lagMs": 0.0,
-        "correlation": 0.9999842767168491
+        "correlation": 0.9999719007384877
       },
       {
         "event": "earth-distance",
         "frame": 690,
         "lagMs": 0.0,
-        "correlation": 0.9999423835808171
+        "correlation": 0.9999049006080223
       },
       {
         "event": "arrival",
         "frame": 814,
         "lagMs": 0.0,
-        "correlation": 0.9999515237909066
+        "correlation": 0.9999365827203591
       },
       {
         "event": "moon",
         "frame": 897,
         "lagMs": 0.0,
-        "correlation": 0.9999644816459682
+        "correlation": 0.9999595166734203
       },
       {
         "event": "moon-range",
         "frame": 943,
         "lagMs": 0.0,
-        "correlation": 0.9999557026963805
+        "correlation": 0.9999523755197205
       },
       {
         "event": "moon-size",
         "frame": 1018,
         "lagMs": 0.0,
-        "correlation": 0.999965957111828
+        "correlation": 0.9999776581512062
       },
       {
         "event": "jupiter",
         "frame": 1106,
         "lagMs": 0.0,
-        "correlation": 0.9999508953402709
+        "correlation": 0.9999589927443444
       },
       {
         "event": "jup-size",
         "frame": 1157,
         "lagMs": 0.0,
-        "correlation": 0.9999741478707981
+        "correlation": 0.9999725430046575
       },
       {
         "event": "jup-road",
         "frame": 1257,
         "lagMs": 0.0,
-        "correlation": 0.999963846213178
+        "correlation": 0.9999619219483977
       },
       {
         "event": "jup-stop",
         "frame": 1306,
         "lagMs": 0.0,
-        "correlation": 0.9999710777532245
+        "correlation": 0.9999779118683483
       },
       {
         "event": "neptune",
         "frame": 1377,
         "lagMs": 0.0,
-        "correlation": 0.9999606804024063
+        "correlation": 0.9999569696319305
       },
       {
         "event": "far-flight",
         "frame": 1467,
         "lagMs": 0.0,
-        "correlation": 0.9999672274857466
+        "correlation": 0.9999569916375637
       },
       {
         "event": "neptune-range",
         "frame": 1516,
         "lagMs": 0.0,
-        "correlation": 0.9999746101292638
+        "correlation": 0.9999811919896056
       },
       {
         "event": "neighborhood",
         "frame": 1590,
         "lagMs": 0.0,
-        "correlation": 0.999964443186144
+        "correlation": 0.9999610685718919
       },
       {
         "event": "whole",
         "frame": 1720,
         "lagMs": 0.0,
-        "correlation": 0.9999652616801795
+        "correlation": 0.999959928739449
       },
       {
         "event": "quiet",
         "frame": 1788,
         "lagMs": 0.0,
-        "correlation": 0.9999574274413686
+        "correlation": 0.9999630696152213
       },
       {
         "event": "final",
         "frame": 1847,
         "lagMs": 0.0,
-        "correlation": 0.9999659000946468
+        "correlation": 0.9999478967471433
       }
     ],
     "separateStemSha256": "e3a58c701dc803592a1eb12450367b2608c0477963ccd3be491cd381679390ea",

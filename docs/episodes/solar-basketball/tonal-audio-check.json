@@ -1,11 +1,11 @@
 {
-  "method": "original-solar-rhythmic-score-v4",
+  "method": "original-solar-melodic-score-v5",
   "noiseGenerators": 0,
   "narrationSha256Unchanged": true,
   "narrationSha256": "0644d1ad27451ea748d914ea77ef0f2883c2606cf879a284e3e42ec9f96010b2",
   "events": 21,
   "sfxEnergyAbove4kHzRatio": 5.841046165685429e-10,
-  "predictedMixPeak": 0.37202170519653643,
+  "predictedMixPeak": 0.3766382886554606,
   "speechEffectRatioP95Db": 1.583624920952496,
   "humanListeningPerformed": false,
   "mixLevels": {
@@ -15,15 +15,30 @@
   },
   "duckingStatisticsStage": "Sound-design ducking statistics refer to the pre-fader .9-narration reference. This final ratio includes the new post-fader mix gains.",
   "rhythm": {
-    "bpm": 84,
+    "bpm": 88,
     "meter": "4/4",
-    "originalComposition": true
+    "originalComposition": true,
+    "key": "D major",
+    "form": "eight-bar theme; introduction,answer,development,spacious resolution",
+    "harmony": [
+      "Dmaj9",
+      "Bm9",
+      "Gmaj9",
+      "Asus4-A"
+    ],
+    "noiseGenerators": 0
   },
   "effectActiveMedianIncreaseDb": 4.175246093643368,
-  "musicMedianToVoiceDb": -16.910302885761343,
+  "musicMedianToVoiceDb": -15.834957174510881,
   "lastMixAdjustmentDb": {
-    "narration": -1.938200260161128,
+    "narration": 0,
     "effects": 0,
     "music": 0
+  },
+  "revisionChanges": {
+    "narrationSourceUnchanged": true,
+    "narrationGainUnchanged": true,
+    "sfxStemUnchanged": true,
+    "musicRecomposed": true
   }
 }

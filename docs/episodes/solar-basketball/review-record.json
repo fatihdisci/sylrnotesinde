@@ -1,6 +1,6 @@
 {
   "video": "deliveries/solar-basketball/gunes-basketbol.mp4",
-  "videoSha256": "44797bd52e228e811b4bedfef3f497842a09d2a6297a02e2cdfebd9f31a1c380",
+  "videoSha256": "8bf86de8cb30dd1bebb569662d2d9343212639bc57367fa73133f19ed7a3e41b",
   "actualMp4FramesVisuallyInspected": [
     13,
     89,
@@ -338,18 +338,30 @@
     "previousVideoStream": "SHA256=0c79ec286dd41ea2c4db319da9c9db3ad65e361872753632a8b5f0db9d945cdd",
     "currentVideoStream": "SHA256=0c79ec286dd41ea2c4db319da9c9db3ad65e361872753632a8b5f0db9d945cdd",
     "layoutProbesReused": 135,
-    "basis": "Audio-only revision; encoded picture stream identical to inspected delivery."
+    "basis": "Music-only revision. Encoded pictures, narration source, narration gain and SFX stem unchanged.",
+    "narrationSha256Unchanged": true,
+    "effectStemUnchanged": true,
+    "musicStemChanged": true
   },
   "subtitleAdjacentNotesRemovedAtProbes": 135,
-  "soundRevision": "original-solar-rhythmic-score-v4",
+  "soundRevision": "original-solar-melodic-score-v5",
   "mixLevels": {
     "narration": 0.4,
     "effects": 1.0,
     "music": 0.17
   },
   "rhythm": {
-    "bpm": 84,
+    "bpm": 88,
     "meter": "4/4",
-    "originalComposition": true
+    "originalComposition": true,
+    "key": "D major",
+    "form": "eight-bar theme; introduction,answer,development,spacious resolution",
+    "harmony": [
+      "Dmaj9",
+      "Bm9",
+      "Gmaj9",
+      "Asus4-A"
+    ],
+    "noiseGenerators": 0
   }
 }

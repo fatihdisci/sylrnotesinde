@@ -1,7 +1,7 @@
 {
   "id": "solar-basketball",
   "draft": true,
-  "sceneSourceSha256": "e78006ea745ae6573ef56fd15be5b35c6bb39e64b6beeeb5e4a09eaebb773ef8",
-  "manifestSha256": "60743bb07bda5d395edac8153fbe8aae9cbd323ec26817eb794f489733441546",
-  "videoSha256": "44797bd52e228e811b4bedfef3f497842a09d2a6297a02e2cdfebd9f31a1c380"
+  "sceneSourceSha256": "0f3c1a321bc8b4d81e2306d4dbf43f383b71773fef6482fb34308579b743dbd9",
+  "manifestSha256": "d66df9d6a58966adae7f5692e7ffc7b4da6230e0afa56a328a55bbc049cfd276",
+  "videoSha256": "8bf86de8cb30dd1bebb569662d2d9343212639bc57367fa73133f19ed7a3e41b"
 }

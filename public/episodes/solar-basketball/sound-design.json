@@ -1,11 +1,20 @@
 {
   "schemaVersion": 2,
-  "method": "original-solar-rhythmic-score-v4",
-  "timbre": "forward rounded bells,84 BPM plucks,bass and tonal percussion; zero noise generators",
+  "method": "original-solar-melodic-score-v5",
+  "timbre": "rounded bells;88 BPM warm keys,eight-bar melody,open chords,syncopated bass and soft tonal groove; zero noise generators",
   "rhythm": {
-    "bpm": 84,
+    "bpm": 88,
     "meter": "4/4",
-    "originalComposition": true
+    "originalComposition": true,
+    "key": "D major",
+    "form": "eight-bar theme; introduction,answer,development,spacious resolution",
+    "harmony": [
+      "Dmaj9",
+      "Bm9",
+      "Gmaj9",
+      "Asus4-A"
+    ],
+    "noiseGenerators": 0
   },
   "seed": 42,
   "sampleRate": 48000,
@@ -13,8 +22,8 @@
   "directionHash": "92fd17b688084281a022009f162adc3931b00795397ce5784875b38e364c6f0d",
   "audioHash": "0644d1ad27451ea748d914ea77ef0f2883c2606cf879a284e3e42ec9f96010b2",
   "stemSha256": "e3a58c701dc803592a1eb12450367b2608c0477963ccd3be491cd381679390ea",
-  "musicStemSha256": "e02f5b010ead5f835b3747da73c3609f800923c3306f2db7916008c24402a68f",
-  "mixSha256": "481f55c428b1b738678c363c681501b8dd6f39c95bb85093c87bf3fb9fbc3f45",
+  "musicStemSha256": "b051b7ec2cdd788797eb12109226b345c5923ff0403bd0624d970568d3939ea3",
+  "mixSha256": "759b9d5aef6ad5cb04de6ab4304808ce25935dbf90911e1921bf71200f36186f",
   "musicFile": "ambient-stem.wav",
   "narrationRenderGain": 0.4,
   "renderGain": 1.0,
@@ -207,12 +216,12 @@
     "lookaheadMs": 30,
     "releaseMs": 180,
     "speechRatioLimit": 0.18,
-    "minimumGain": 0.06215903998793493,
-    "medianEffectToVoiceDb": -26.979306754601573,
+    "minimumGain": 0.10155679248246942,
+    "medianEffectToVoiceDb": -25.903961043351114,
     "p95EffectToVoiceDb": -14.89454989793388,
     "source": "actual narration WAV 10ms RMS"
   },
-  "predictedMixPeak": 0.37202170519653643,
+  "predictedMixPeak": 0.3766382886554606,
   "externalSamples": false,
   "humanListeningPerformed": false,
   "license": "Original project synthesis; no third-party samples. Cinematic effects do not represent sound propagation in space."

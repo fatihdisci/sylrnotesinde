@@ -37,31 +37,79 @@ def effect(name,frames,seed):
  return stereo
 
 def rhythmic_bed(n):
- """Original 84 BPM mellow instrumental: rounded plucks, bass and tonal percussion."""
- out=np.zeros((n,2));beat=60/84
- chords=[(146.8324,184.9972,220,293.6648),(123.4708,146.8324,184.9972,246.9416),(97.9989,123.4708,146.8324,195.9977),(110,146.8324,164.8138,220)]
- def note(at,hz,length,level,pan=0,kind='pluck'):
+ """Original 88 BPM score: an eight-bar melody, warm keys and a restrained groove.
+
+ Dmaj9 / Bm9 / Gmaj9 / Asus4-A. Three arranged sections replace the
+ perpetual eighth-note arpeggio. Deterministic additive synthesis, no samples.
+ """
+ out=np.zeros((n,2));beat=60/88;bar=4*beat;duration=n/RATE
+ def hz(midi):return 440*2**((midi-69)/12)
+ def note(at,midi,length,level,pan=0,kind='keys'):
   start=round(at*RATE);count=min(round(length*RATE),n-start)
-  if count<=0:return
-  t=np.arange(count)/RATE
-  attack=.014 if kind!='kick' else .008
-  env=(1-np.exp(-t/attack))*np.exp(-t/(length*.3))*np.clip((length-t)/.045,0,1)
-  if kind=='kick':
-   phase=2*np.pi*(48*t+28*.028*(1-np.exp(-t/.028)))
-   wave=np.sin(phase)+.3*np.sin(phase*2)
-  else:wave=np.sin(2*np.pi*hz*t)+.2*np.sin(2*np.pi*hz*2*t)+.04*np.sin(2*np.pi*hz*3*t)
+  if count<=0 or start<0:return
+  t=np.arange(count)/RATE;frequency=hz(midi)
+  release=np.minimum(1,np.maximum(0,length-t)/.12)
+  if kind=='pad':
+   env=(1-np.exp(-t/.42))*np.exp(-t/9)*release
+   wave=(np.sin(2*np.pi*frequency*t)+.18*np.sin(2*np.pi*frequency*2*t))
+  elif kind=='kick':
+   env=(1-np.exp(-t/.006))*np.exp(-t/.075)*release
+   phase=2*np.pi*(49*t+34*.023*(1-np.exp(-t/.023)))
+   wave=np.sin(phase)
+  elif kind=='rim':
+   env=(1-np.exp(-t/.003))*np.exp(-t/.024)*release
+   wave=.65*np.sin(2*np.pi*620*t)+.22*np.sin(2*np.pi*930*t)+.13*np.sin(2*np.pi*1240*t)
+  elif kind=='tick':
+   env=(1-np.exp(-t/.003))*np.exp(-t/.014)*release
+   wave=.7*np.sin(2*np.pi*1760*t)+.3*np.sin(2*np.pi*2640*t)
+  elif kind=='bass':
+   env=(1-np.exp(-t/.026))*np.exp(-t/.65)*release
+   wave=np.sin(2*np.pi*frequency*t)+.12*np.sin(2*np.pi*frequency*2*t)
+  else:
+   # Felt-key-like fundamental with independently decaying soft overtones.
+   env=(1-np.exp(-t/.012))*release
+   wave=sum(amp*np.sin(2*np.pi*frequency*partial*t)*np.exp(-t/decay)
+            for partial,amp,decay in [(1,1,1.05),(2,.22,.56),(3,.055,.24),(4,.018,.16)])
   wave*=env*level
   out[start:start+count,0]+=wave*np.sqrt((1-pan)/2)
   out[start:start+count,1]+=wave*np.sqrt((1+pan)/2)
- for step in range(math.ceil(n/RATE/beat*2)):
-  at=step*beat/2;chord=chords[(step//8)%4];position=step%8
-  # A sparse, repeating musical pulse with gentle stereo movement.
-  hz=chord[[0,2,1,3,2,1,3,2][position]]*2
-  note(at,hz,.52,.027 if position%2==0 else .019,[-.22,.12,.22,-.12][position%4])
-  if position in [0,4]:
-   note(at,48,.35,.045,kind='kick');note(at,chord[0]/2,.72,.025,kind='bass')
-  if position in [2,6]:note(at,440,.115,.018,kind='percussion')
- # Resolve and fade before the fixed outro; no noise-based percussion.
+ # Two bars per harmony; open voicings leave the narrator's midrange room.
+ chords=[([50,57,61,64],38),([47,54,57,61],35),([43,50,54,57],31),([45,52,57,62],33)]
+ # A question-and-answer melody with actual rests, longer endings and variation.
+ phrases=[[(.5,74,1),(2,78,.75),(3.5,76,1.5),(6,69,1.5)],
+          [(0,71,1.5),(2.5,74,1),(4,73,1),(5.5,69,2)],
+          [(.5,71,1),(2,74,1.5),(4.5,78,1),(6,76,1.5)],
+          [(0,74,1.5),(2,73,.75),(3.5,69,1.5),(6,73,1.5)]]
+ bars=math.ceil(duration/bar)
+ for index in range(bars):
+  at=index*bar;cycle=index//8;within=index%8;chord,root=chords[within//2]
+  opening=index<2;ending=at>duration-8
+  # Short introduction, fuller middle, spacious final sentence.
+  activity=.55 if opening else (.48 if ending else (1 if cycle else .82))
+  if index%2==0:
+   for j,midi in enumerate(chord):note(at+j*.028,midi,bar*2+.35,.0038,-.48+j*.32,'pad')
+  # Sparse offbeat chord stabs alternate with the lead instead of playing every step.
+  for beat_at in ([1.5] if opening or ending else [1.5,3.25]):
+   for j,midi in enumerate(chord[1:]):note(at+beat_at*beat+j*.018,midi,1.2,.0042*activity,-.3+j*.3)
+  if not ending:
+   for pulse,level in [(0,.041),(1.75,.019),(2.5,.032)]:
+    note(at+pulse*beat,0,.3,level*activity,0,'kick')
+   for pulse in [1,3]:note(at+pulse*beat,0,.14,.0075*activity,.16,'rim')
+   for pulse in [.5,1.5,2.5,3.5]:note(at+pulse*beat,0,.09,.0016*activity,-.3 if pulse<2 else .3,'tick')
+  for pulse,midi in [(0,root),(2.5,root+12)]:note(at+pulse*beat,midi,.95,.018*activity,0,'bass')
+  if index%2==0:
+   for position,midi,hold in phrases[within//2]:
+    # Second statement answers one octave down; final phrase settles on D.
+    if cycle==1 and position<2:midi-=12
+    if ending:midi=74 if position==6 else midi
+    length=min(hold*beat+1,2.6);gain=.014 if opening else .017
+    note(at+position*beat,midi,length,gain,-.12 if position<4 else .12)
+    # Two quiet, musical echoes; all tails are clipped at the fixed outro boundary.
+    note(at+(position+.75)*beat,midi,length,gain*.17,.48)
+    note(at+(position+1.5)*beat,midi,length,gain*.07,-.48)
+ # Conclude on an open Dmaj9; do not leave the final phrase on the dominant.
+ resolve=max(0,duration-4.7)
+ for j,midi in enumerate([50,57,61,64,74]):note(resolve+j*.065,midi,4.4,.0045,-.4+j*.2,'pad')
  return out
 
 def sidechain(voice,stem,ratio):
@@ -92,12 +140,6 @@ def build(id='solar-basketball'):
    sfx[start:start+len(wave)]+=wave;events.append({**e,'event':event['id'],'id':f'{event["id"]}-{i}'})
  sfx,duck=sidechain(v,sfx,.32)
  t=np.arange(n)/RATE;music=rhythmic_bed(n)
- # Quiet consonant sine pad. No noise bed or broadband texture.
- for i,hz in enumerate([146.8324,220,293.6648,369.9944]):
-  phase=2*np.pi*hz*t
-  amplitude=(.8+.2*np.sin(t*.13+i))*.0025
-  music[:,0]+=np.sin(phase)*amplitude
-  music[:,1]+=np.sin(phase+.025)*amplitude
  swell=.5+.5*np.sin(np.minimum(1,t/(n/RATE))*np.pi)
  music*=swell[:,None]
  music,music_duck=sidechain(v,music,.18)
@@ -117,7 +159,7 @@ def build(id='solar-basketball'):
  if closing.ndim==1:closing=np.column_stack([closing,closing])
  final=np.concatenate([mix,closing],axis=0)
  sf.write(dest/'mix.wav',final,RATE,subtype='PCM_24')
- report={'schemaVersion':2,'method':'original-solar-rhythmic-score-v4','timbre':'forward rounded bells,84 BPM plucks,bass and tonal percussion; zero noise generators','rhythm':{'bpm':84,'meter':'4/4','originalComposition':True},'seed':42,'sampleRate':RATE,'channels':2,'directionHash':sha(json.dumps(m['direction'],sort_keys=True).encode()),'audioHash':d['bindings']['audioHash'],'stemSha256':sha((dest/'sfx-stem.wav').read_bytes()),'musicStemSha256':sha((dest/'ambient-stem.wav').read_bytes()),'mixSha256':sha((dest/'mix.wav').read_bytes()),'musicFile':'ambient-stem.wav','narrationRenderGain':levels['narration'],'renderGain':levels['effects'],'musicRenderGain':levels['music'],'mixLevels':levels,'events':events,'ducking':duck,'musicDucking':music_duck,'predictedMixPeak':float(np.max(np.abs(final))),'externalSamples':False,'humanListeningPerformed':False,'license':'Original project synthesis; no third-party samples. Cinematic effects do not represent sound propagation in space.'}
+ report={'schemaVersion':2,'method':'original-solar-melodic-score-v5','timbre':'rounded bells;88 BPM warm keys,eight-bar melody,open chords,syncopated bass and soft tonal groove; zero noise generators','rhythm':{'bpm':88,'meter':'4/4','originalComposition':True,'key':'D major','form':'eight-bar theme; introduction,answer,development,spacious resolution','harmony':['Dmaj9','Bm9','Gmaj9','Asus4-A'],'noiseGenerators':0},'seed':42,'sampleRate':RATE,'channels':2,'directionHash':sha(json.dumps(m['direction'],sort_keys=True).encode()),'audioHash':d['bindings']['audioHash'],'stemSha256':sha((dest/'sfx-stem.wav').read_bytes()),'musicStemSha256':sha((dest/'ambient-stem.wav').read_bytes()),'mixSha256':sha((dest/'mix.wav').read_bytes()),'musicFile':'ambient-stem.wav','narrationRenderGain':levels['narration'],'renderGain':levels['effects'],'musicRenderGain':levels['music'],'mixLevels':levels,'events':events,'ducking':duck,'musicDucking':music_duck,'predictedMixPeak':float(np.max(np.abs(final))),'externalSamples':False,'humanListeningPerformed':False,'license':'Original project synthesis; no third-party samples. Cinematic effects do not represent sound propagation in space.'}
  write(dest/'sound-design.json',report);export(id)
  print(json.dumps({k:report[k] for k in ['ducking','musicDucking','predictedMixPeak']},indent=2))
 if __name__=='__main__':build()
