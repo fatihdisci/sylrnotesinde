@@ -36,6 +36,34 @@ def effect(name,frames,seed):
  stereo*=np.minimum(1,np.maximum(0,duration-t)/.025)[:,None]
  return stereo
 
+def rhythmic_bed(n):
+ """Original 84 BPM mellow instrumental: rounded plucks, bass and tonal percussion."""
+ out=np.zeros((n,2));beat=60/84
+ chords=[(146.8324,184.9972,220,293.6648),(123.4708,146.8324,184.9972,246.9416),(97.9989,123.4708,146.8324,195.9977),(110,146.8324,164.8138,220)]
+ def note(at,hz,length,level,pan=0,kind='pluck'):
+  start=round(at*RATE);count=min(round(length*RATE),n-start)
+  if count<=0:return
+  t=np.arange(count)/RATE
+  attack=.014 if kind!='kick' else .008
+  env=(1-np.exp(-t/attack))*np.exp(-t/(length*.3))*np.clip((length-t)/.045,0,1)
+  if kind=='kick':
+   phase=2*np.pi*(48*t+28*.028*(1-np.exp(-t/.028)))
+   wave=np.sin(phase)+.3*np.sin(phase*2)
+  else:wave=np.sin(2*np.pi*hz*t)+.2*np.sin(2*np.pi*hz*2*t)+.04*np.sin(2*np.pi*hz*3*t)
+  wave*=env*level
+  out[start:start+count,0]+=wave*np.sqrt((1-pan)/2)
+  out[start:start+count,1]+=wave*np.sqrt((1+pan)/2)
+ for step in range(math.ceil(n/RATE/beat*2)):
+  at=step*beat/2;chord=chords[(step//8)%4];position=step%8
+  # A sparse, repeating musical pulse with gentle stereo movement.
+  hz=chord[[0,2,1,3,2,1,3,2][position]]*2
+  note(at,hz,.52,.027 if position%2==0 else .019,[-.22,.12,.22,-.12][position%4])
+  if position in [0,4]:
+   note(at,48,.35,.045,kind='kick');note(at,chord[0]/2,.72,.025,kind='bass')
+  if position in [2,6]:note(at,440,.115,.018,kind='percussion')
+ # Resolve and fade before the fixed outro; no noise-based percussion.
+ return out
+
 def sidechain(voice,stem,ratio):
  n=len(voice);windows=math.ceil(n/480)
  vrms=np.array([np.sqrt(np.mean(voice[i*480:(i+1)*480]**2)) for i in range(windows)])
@@ -59,11 +87,11 @@ def build(id='solar-basketball'):
  sfx=np.zeros((n,2));events=[]
  for event in m['direction']['events']:
   for i,e in enumerate(event['effects']):
-   wave=effect(e['sound'],e['durationFrames'],42+e['frame'])*e['gain'];start=e['frame']*1600
+   wave=effect(e['sound'],e['durationFrames'],42+e['frame'])*e['gain']*1.2;start=e['frame']*1600
    if start+len(wave)>n:raise ValueError('Effect crosses outro')
    sfx[start:start+len(wave)]+=wave;events.append({**e,'event':event['id'],'id':f'{event["id"]}-{i}'})
- sfx,duck=sidechain(v,sfx,.25)
- t=np.arange(n)/RATE;music=np.zeros((n,2))
+ sfx,duck=sidechain(v,sfx,.32)
+ t=np.arange(n)/RATE;music=rhythmic_bed(n)
  # Quiet consonant sine pad. No noise bed or broadband texture.
  for i,hz in enumerate([146.8324,220,293.6648,369.9944]):
   phase=2*np.pi*hz*t
@@ -72,7 +100,7 @@ def build(id='solar-basketball'):
   music[:,1]+=np.sin(phase+.025)*amplitude
  swell=.5+.5*np.sin(np.minimum(1,t/(n/RATE))*np.pi)
  music*=swell[:,None]
- music,music_duck=sidechain(v,music,.11)
+ music,music_duck=sidechain(v,music,.18)
  fade_in=np.minimum(1,t/1.8);fade_out=np.minimum(1,(n/RATE-t)/1.15)
  music*=(fade_in*fade_out)[:,None]
  sfx*=np.minimum(1,(n/RATE-t)/.15)[:,None]
@@ -89,7 +117,7 @@ def build(id='solar-basketball'):
  if closing.ndim==1:closing=np.column_stack([closing,closing])
  final=np.concatenate([mix,closing],axis=0)
  sf.write(dest/'mix.wav',final,RATE,subtype='PCM_24')
- report={'schemaVersion':2,'method':'original-solar-tonal-score-v3-balanced','timbre':'rounded sine bells and quiet consonant pad; zero noise generators','seed':42,'sampleRate':RATE,'channels':2,'directionHash':sha(json.dumps(m['direction'],sort_keys=True).encode()),'audioHash':d['bindings']['audioHash'],'stemSha256':sha((dest/'sfx-stem.wav').read_bytes()),'musicStemSha256':sha((dest/'ambient-stem.wav').read_bytes()),'mixSha256':sha((dest/'mix.wav').read_bytes()),'musicFile':'ambient-stem.wav','narrationRenderGain':levels['narration'],'renderGain':levels['effects'],'musicRenderGain':levels['music'],'mixLevels':levels,'events':events,'ducking':duck,'musicDucking':music_duck,'predictedMixPeak':float(np.max(np.abs(final))),'externalSamples':False,'humanListeningPerformed':False,'license':'Original project synthesis; no third-party samples. Cinematic effects do not represent sound propagation in space.'}
+ report={'schemaVersion':2,'method':'original-solar-rhythmic-score-v4','timbre':'forward rounded bells,84 BPM plucks,bass and tonal percussion; zero noise generators','rhythm':{'bpm':84,'meter':'4/4','originalComposition':True},'seed':42,'sampleRate':RATE,'channels':2,'directionHash':sha(json.dumps(m['direction'],sort_keys=True).encode()),'audioHash':d['bindings']['audioHash'],'stemSha256':sha((dest/'sfx-stem.wav').read_bytes()),'musicStemSha256':sha((dest/'ambient-stem.wav').read_bytes()),'mixSha256':sha((dest/'mix.wav').read_bytes()),'musicFile':'ambient-stem.wav','narrationRenderGain':levels['narration'],'renderGain':levels['effects'],'musicRenderGain':levels['music'],'mixLevels':levels,'events':events,'ducking':duck,'musicDucking':music_duck,'predictedMixPeak':float(np.max(np.abs(final))),'externalSamples':False,'humanListeningPerformed':False,'license':'Original project synthesis; no third-party samples. Cinematic effects do not represent sound propagation in space.'}
  write(dest/'sound-design.json',report);export(id)
  print(json.dumps({k:report[k] for k in ['ducking','musicDucking','predictedMixPeak']},indent=2))
 if __name__=='__main__':build()

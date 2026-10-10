@@ -1,22 +1,27 @@
 {
   "schemaVersion": 2,
-  "method": "original-solar-tonal-score-v3-balanced",
-  "timbre": "rounded sine bells and quiet consonant pad; zero noise generators",
+  "method": "original-solar-rhythmic-score-v4",
+  "timbre": "forward rounded bells,84 BPM plucks,bass and tonal percussion; zero noise generators",
+  "rhythm": {
+    "bpm": 84,
+    "meter": "4/4",
+    "originalComposition": true
+  },
   "seed": 42,
   "sampleRate": 48000,
   "channels": 2,
   "directionHash": "92fd17b688084281a022009f162adc3931b00795397ce5784875b38e364c6f0d",
   "audioHash": "0644d1ad27451ea748d914ea77ef0f2883c2606cf879a284e3e42ec9f96010b2",
-  "stemSha256": "7ce780734561a4791b3ae82ec0f5c96574b2fc02d3ca685ae0e2a92fcdd4a782",
-  "musicStemSha256": "84f6d19a486cf40e7d2104938c1f5abf4141876a5b901ee5b3064201bf8dc8db",
-  "mixSha256": "f3fbd865d0237175c17a7a56b0c5b9e6dd5ec388dc16691b2e954998de6701d1",
+  "stemSha256": "e3a58c701dc803592a1eb12450367b2608c0477963ccd3be491cd381679390ea",
+  "musicStemSha256": "e02f5b010ead5f835b3747da73c3609f800923c3306f2db7916008c24402a68f",
+  "mixSha256": "1bf967e7887c9c33c9ac5c119e93b43cc36ef9a1e69e1d98a0d52171e9e896ba",
   "musicFile": "ambient-stem.wav",
   "narrationRenderGain": 0.72,
-  "renderGain": 0.75,
+  "renderGain": 1.0,
   "musicRenderGain": 0.17,
   "mixLevels": {
     "narration": 0.72,
-    "effects": 0.75,
+    "effects": 1.0,
     "music": 0.17
   },
   "events": [
@@ -192,22 +197,22 @@
   "ducking": {
     "lookaheadMs": 30,
     "releaseMs": 180,
-    "speechRatioLimit": 0.25,
-    "minimumGain": 0.0984670325963022,
-    "medianEffectToVoiceDb": -25.71325328214223,
-    "p95EffectToVoiceDb": -12.041199826559248,
+    "speechRatioLimit": 0.32,
+    "minimumGain": 0.1050315014360557,
+    "medianEffectToVoiceDb": -24.03678192066486,
+    "p95EffectToVoiceDb": -9.897000433601882,
     "source": "actual narration WAV 10ms RMS"
   },
   "musicDucking": {
     "lookaheadMs": 30,
     "releaseMs": 180,
-    "speechRatioLimit": 0.11,
-    "minimumGain": 0.2848053740966228,
-    "medianEffectToVoiceDb": -32.774431154815254,
-    "p95EffectToVoiceDb": -19.1721462968355,
+    "speechRatioLimit": 0.18,
+    "minimumGain": 0.06215903998793493,
+    "medianEffectToVoiceDb": -26.979306754601573,
+    "p95EffectToVoiceDb": -14.89454989793388,
     "source": "actual narration WAV 10ms RMS"
   },
-  "predictedMixPeak": 0.5873562595905555,
+  "predictedMixPeak": 0.6143776765017219,
   "externalSamples": false,
   "humanListeningPerformed": false,
   "license": "Original project synthesis; no third-party samples. Cinematic effects do not represent sound propagation in space."

@@ -8,15 +8,21 @@ Teslim: `deliveries/solar-basketball/gunes-basketbol.mp4`. Yerel render masterı
 
 Altyazının hemen üstündeki küçük açıklama katmanı bütünüyle kaldırıldı; 135 yerleşim probunda bu düğüm bulunmuyor. Tercih AGENTS.md ve tasarım rehberine kaydedildi.
 
-Hışırtı üreten bütün noise/whoosh katmanları, hem efektlerden hem ambientten kaldırıldı. Görsel olaylarla aynı başlangıç karelerinde yumuşak blink/bip, kısa uyumlu nota dizileri ve düşük seviyeli sinüs pad kullanılıyor. Atak/sönümler yumuşak; konuşma sırasında efekt oranının yüzde 95 değeri −8,16 dB (son miks gain’leriyle). Anlatıcı WAV hash’i değişmedi; kanonik outro korunuyor. [Tonal ses kontrolü](tonal-audio-check.json).
+Hışırtı üreten bütün noise/whoosh katmanları, hem efektlerden hem ambientten kaldırıldı. Görsel olaylarla aynı başlangıç karelerinde yumuşak blink/bip, kısa uyumlu nota dizileri ve düşük seviyeli sinüs pad kullanılıyor. Atak/sönümler yumuşak; konuşma sırasında efekt oranının yüzde 95 değeri −3,52 dB (güncel son miks gain’leriyle). Anlatıcı WAV hash’i değişmedi; kanonik outro korunuyor. [Tonal ses kontrolü](tonal-audio-check.json).
 
 Bu düzeltmede TypeScript/lint, 21 TS testi, marka kontrolü, üretim testleri (16 geçti / 1 tarihsel fixture atlandı), gerçek MP4 render ve genel bölüm QA yeniden çalıştırıldı. Güncel MP4 ölçümleri aşağıdaki tabloda. İşitsel insan incelemesi yapılmış sayılmadı.
 
-## Ses dengesi düzeltmesi
+## Önceki ses dengesi düzeltmesi
 
 Kullanıcı isteğiyle konuşma −1,94 dB, efektler +1,94 dB ve müzik +3,03 dB değiştirildi. Tek ayar dosyası `src/episodes/solar-basketball/audio-mix.json`: 0,72 / 0,75 / 0,17. Anlatıcı kaynak WAV’ı, ses hızı, kelime zamanları, görüntüler ve kanonik outro değişmedi. `sound-design.json` ducking istatistikleri fader öncesi 0,9 anlatıcı referansıyla hesaplanır; son miks oranı tonal ses kontrolünde ayrıca kaydedilir.
 
 Bu revizyonda `npm run check`, `episode:test`, gerçek render ve `production/qa.py` ile nihai MP4 analizi çalıştırıldı. Konuşma başlangıç/orta/son kayması 0 ms; 22 miks olayının korelasyonu >0,99992; clipping yok. Görüntü akışı önceki incelenmiş teslimle byte-for-byte aynı olduğundan 135 yerleşim probu ve görsel inceleme geçerlidir; yerleşim renderları gereksiz yere tekrarlanmadı. İşitsel insan onayı verilmedi.
+
+## Güncel revizyon — duyulur efektler ve ritmik arka plan
+
+Blink/bip efektleri önceki sürüme göre aktif pencerelerin medyanında **4,17 dB** yükseltildi. Arka plana **84 BPM, 4/4** özgün bir beste eklendi: kısa melodik notalar, yumuşak bas ve tonal vurmalılar. Noise/hışırtı üreten enstrüman yok. Müzik konuşma altında kısılır ve kanonik outrodan önce söner. Güncel fader’lar: anlatıcı 0,72 / efekt 1,00 / müzik 0,17; efekt sentezine ek 1,2 çarpanı uygulanır.
+
+TypeScript/lint ve 21 TS testi, 16 üretim testi (1 tarihsel fixture atlandı), 7 TTS testi ve kaynak WAV QA geçti. Yeni tam MP4 renderı ve gerçek MP4 ses analizi çalıştırıldı: 22 miks olayı doğrulandı, drift 0 ms, clipping yok. Kodlanmış görüntü akışı önceki incelenmiş teslimle aynı; 135 yerleşim probu geçerliliğini koruyor. Müzikal beğeni ve işitsel dinleme insan adına onaylanmadı.
 
 ## Gerçek ses ve çevrimdışı çalışma
 
@@ -46,9 +52,9 @@ Ham WAV: `tts/outputs/episodes/solar-basketball/narration.wav`. Normalize edilmi
 | Gerçek render / genel bölüm QA komutları | Çalıştırıldı ve teknik kontroller geçti |
 | Gerçek MP4 çözünürlük/FPS/kare | 1080×1920 / 30 / 1.979 |
 | Font / güvenli alan / çakışma | 135 kare probu; beş IBM Plex dosyası yüklü, 0 taşma, 0 etiket çakışması; altyazı en fazla iki satır |
-| Gerçek MP4 ses ölçümü | −22,94 LUFS, −7,45 dBTP; clipping yok |
+| Gerçek MP4 ses ölçümü | −22,88 LUFS, −6,87 dBTP; clipping yok |
 | MP4 konuşma kayması | Başlangıç/orta/sonda 0 ms; pencerelerde korelasyon ≥0,99993; drift 0 ms |
-| Efekt + müzik + anlatım | Aynı kaynak katmanlarla 22 olayda MP4 miks karşılaştırması; en düşük korelasyon 0,99992; değişmeyen >0,98 eşiği geçti |
+| Efekt + müzik + anlatım | Aynı kaynak katmanlarla 22 olayda MP4 miks karşılaştırması; en düşük korelasyon 0,99995; değişmeyen >0,98 eşiği geçti |
 | Outro | Başlangıç kare 1.934; ses farkı 0,313 ms, korelasyon 0,999993; konuşma ve altyazı outroyla çakışmıyor |
 | SRT / gömülü altyazı | Aynı 144 kelimeden 32 öbek; aynı floor/ceil 30 FPS sınırları |
 | Tüm kare taraması | 0 siyah interval, 0 boş içerik karesi; ≥2 s sessiz/durağan interval bulunmadı |

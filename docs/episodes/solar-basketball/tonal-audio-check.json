@@ -1,22 +1,24 @@
 {
-  "method": "original-solar-tonal-score-v3-balanced",
+  "method": "original-solar-rhythmic-score-v4",
   "noiseGenerators": 0,
   "narrationSha256Unchanged": true,
   "narrationSha256": "0644d1ad27451ea748d914ea77ef0f2883c2606cf879a284e3e42ec9f96010b2",
   "events": 21,
-  "sfxEnergyAbove4kHzRatio": 6.250948542801028e-10,
-  "predictedMixPeak": 0.5873562595905555,
-  "speechEffectRatioP95Db": -8.164799306236992,
+  "sfxEnergyAbove4kHzRatio": 5.841046165685429e-10,
+  "predictedMixPeak": 0.6143776765017219,
+  "speechEffectRatioP95Db": -3.521825181113625,
   "humanListeningPerformed": false,
   "mixLevels": {
     "narration": 0.72,
-    "effects": 0.75,
+    "effects": 1.0,
     "music": 0.17
   },
-  "mixChangeDb": {
-    "narration": -1.938200260161129,
-    "effects": 1.9382002601611283,
-    "music": 3.0253535066129826
+  "duckingStatisticsStage": "Sound-design ducking statistics refer to the pre-fader .9-narration reference. This final ratio includes the new post-fader mix gains.",
+  "rhythm": {
+    "bpm": 84,
+    "meter": "4/4",
+    "originalComposition": true
   },
-  "duckingStatisticsStage": "Sound-design ducking statistics refer to the pre-fader .9-narration reference. This final ratio includes the new post-fader mix gains."
+  "effectActiveMedianIncreaseDb": 4.175246093643368,
+  "musicMedianToVoiceDb": -22.01575298782746
 }
