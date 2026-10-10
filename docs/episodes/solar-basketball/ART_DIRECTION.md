@@ -19,6 +19,6 @@ Kesin kareler `src/episodes/solar-basketball/storyboard.json` sözcük çapalar�
 
 Ses: tek erkek Antalia-2 Mini, doğal göreli hız 1, seed 42, Apple Silicon CPU. Eski M1 seçimi merkezî konfigürasyonda korunur. Bu bölüm açık kullanıcı isteğiyle Antalia kullanır. Kullanıcı düzeltmesiyle hışırtılı whoosh ve noise katmanları kaldırıldı. Yerlerinde yumuşak sinüs temelli blink/bip, kısa uyumlu nota dizileri ve 84 BPM özgün ritmik bir arka plan (yumuşak bas, kısa melodik notalar ve tonal vurmalılar) bulunur. Olayların başlangıç kareleri aynı storyboard çapalarındadır; yumuşak atak ve sönümler keskin tıklamaları önler. Sesler uzayda fiziksel ses yayılması iddiası taşımaz. Gerçek anlatım RMS’i miksin yan zincirini kontrol eder. İnsan dinleme onayı verilmiş sayılmaz.
 
-Güncel ses dengesi kullanıcı isteğiyle `src/episodes/solar-basketball/audio-mix.json` içinde tutulur: anlatıcı 0,50, efekt 1,00, ambient 0,17. Ses hazırlama scripti, render bileşeni ve MP4 QA aynı kaydedilmiş gain’leri kullanır.
+Güncel ses dengesi kullanıcı isteğiyle `src/episodes/solar-basketball/audio-mix.json` içinde tutulur: anlatıcı 0,40, efekt 1,00, ambient 0,17. Ses hazırlama scripti, render bileşeni ve MP4 QA aynı kaydedilmiş gain’leri kullanır.
 
 Bu ses karakteri ve denge, kullanıcı isteğiyle [kalıcı üretim talimatlarına](../../AUDIO_STYLE.md) kaydedildi.

@@ -92,3 +92,8 @@ Kaynak, lisans ve matematik: [SOURCES_AND_LICENSES.md](SOURCES_AND_LICENSES.md).
 Anlatıcı 0,60 → 0,50 (−1,58 dB); efekt 1,00 ve müzik 0,17 aynı kaldı. Kalıcı tercih AUDIO_STYLE.md içinde güncellendi. Yeni MP4: -25.86 LUFS, -9.48 dBTP; ölçülen drift 0.0 ms. Görüntü akışı önceki incelenmiş video ile byte düzeyinde aynı. TypeScript, lint, marka kontrolleri ve TTS testleri geçti.
 
 Genel QA'nın −25…−17 LUFS koşulu bu kullanıcı isteğiyle daha sessiz miks için geçmedi; eşik değiştirilmedi. Diğer MP4 kontrolleri ayrı tanısal çalıştırmada tamamlandı; technicalChecksPassed=false kaydı korundu. İnsan dinlemesi ve altyazı onayı yapılmış sayılmadı.
+
+
+### Son kullanıcı ayarı: anlatıcı 0,40
+
+Anlatıcı 0,50 → 0,40 (−1,94 dB). Efekt/müzik değişmedi; kalıcı tercih güncellendi. Nihai MP4 -27.6 LUFS, -11.01 dBTP; drift 0.0 ms. Görüntü akışı önceki incelenmiş video ile byte düzeyinde aynı. TypeScript/lint/marka/TTS kontrolleri geçti. Genel −25…−17 LUFS hedefi geçmedi; eşik korunarak technicalChecksPassed=false kaydedildi. Diğer gerçek MP4 kontrolleri tanısal çalıştırmada tamamlandı. İnsan dinlemesi ve altyazı onayı yapılmadı.

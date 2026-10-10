@@ -150,7 +150,7 @@
       "scriptSha256": "29dce29da14fd1a3d924da182a05fe11b6cf62a1319502f0da5e6047836ab1c9"
     },
     "sfxPath": "episodes/solar-basketball/sfx-stem.wav",
-    "soundDesignHash": "e3710d1f5661be03321d9187d1b7ef3a3e07627d3f02be0b342a7139295a364f",
+    "soundDesignHash": "b2e2771db7d51b68881ac15681113cbef107414624178c02dc92291abcfb16c3",
     "musicPath": "episodes/solar-basketball/ambient-stem.wav"
   },
   "subtitlePath": "episodes/solar-basketball/captions.json",
