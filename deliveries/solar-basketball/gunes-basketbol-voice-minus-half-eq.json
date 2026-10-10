@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "kind": "isolated-listening-experiment",
+  "sourceVideo": "deliveries/solar-basketball/gunes-basketbol.mp4",
+  "sourceVideoSha256": "8bf86de8cb30dd1bebb569662d2d9343212639bc57367fa73133f19ed7a3e41b",
+  "video": "deliveries/solar-basketball/gunes-basketbol-voice-minus-half-eq.mp4",
+  "videoSha256": "3578fd63bddf7fd9727e6dde6eac2ec2fb05c08d675a9fe279fa1b27558034fe",
+  "sourceNarrationSha256": "0644d1ad27451ea748d914ea77ef0f2883c2606cf879a284e3e42ec9f96010b2",
+  "processedNarrationSha256": "6a53581ad45760269d017c5f8fc24e4dc61a0323019a4a34ca2f0aa497841f0a",
+  "voiceProcessing": {
+    "requestedSemitones": -0.5,
+    "actualSemitones": -0.4998266958154563,
+    "method": "FFmpeg resampling plus WSOLA atempo compensation",
+    "formantPreservation": false,
+    "filters": "asetrate=46634,aresample=48000,atempo=1.029291932924,equalizer=f=2800:t=q:w=1:g=-1.5,highpass=f=65,apad,atrim=end_sample=3043328",
+    "eq": {
+      "frequencyHz": 2800,
+      "gainDb": -1.5,
+      "q": 1
+    },
+    "highpassHz": 65,
+    "sourceSamples": 3043328,
+    "outputSamples": 3043328
+  },
+  "mixLevels": {
+    "narration": 0.4,
+    "effects": 1.0,
+    "music": 0.17
+  },
+  "monoToStereoGain": 0.7071067811865475,
+  "musicStemSha256": "b051b7ec2cdd788797eb12109226b345c5923ff0403bd0624d970568d3939ea3",
+  "sfxStemSha256": "e3a58c701dc803592a1eb12450367b2608c0477963ccd3be491cd381679390ea",
+  "outroFromFrame": 1934,
+  "canonicalOutroUnmodified": true,
+  "humanListeningPerformed": false,
+  "publicationReady": false,
+  "notes": [
+    "Listening candidate only; not the default narrator.",
+    "Resampling also lowers formants slightly; judge naturalness by listening.",
+    "Exact file length does not prove local word timing; see measured QA."
+  ]
+}

@@ -44,3 +44,6 @@ renders/episodes/seconds-sculpture/
 renders/episodes/solar-basketball/
 public/episodes/solar-basketball/ambient-stem.wav
 public/episodes/solar-basketball/mix.wav
+
+# Local voice-treatment experiments (WAV intermediates).
+renders/experiments/

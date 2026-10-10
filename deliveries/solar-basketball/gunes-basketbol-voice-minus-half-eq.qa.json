@@ -1,0 +1,175 @@
+{
+  "variantChecksPassed": true,
+  "videoSha256": "3578fd63bddf7fd9727e6dde6eac2ec2fb05c08d675a9fe279fa1b27558034fe",
+  "pictureStreamIdentical": true,
+  "sourceDeliveryUnchanged": true,
+  "expectedNarrationMonoDecodeGain": 0.4,
+  "sourceMeasuredNarrationMonoDecodeGain": 0.3993416428565979,
+  "variantMeasuredNarrationMonoDecodeGain": 0.39915090799331665,
+  "frames": 1979,
+  "fps": 30,
+  "width": 1080,
+  "height": 1920,
+  "voiceEncodedSync": [
+    {
+      "position": "start",
+      "lagMs": 0.0,
+      "correlation": 0.9998115004357482
+    },
+    {
+      "position": "middle",
+      "lagMs": 0.0,
+      "correlation": 0.9998874270468623
+    },
+    {
+      "position": "end",
+      "lagMs": 0.0,
+      "correlation": 0.9998988255516156
+    }
+  ],
+  "fullMixEncodedSync": [
+    {
+      "event": "sun",
+      "lagMs": 0.0,
+      "correlation": 0.9996849038041448
+    },
+    {
+      "event": "ball-size",
+      "lagMs": 0.0,
+      "correlation": 0.9999752006607708
+    },
+    {
+      "event": "earth-size",
+      "lagMs": 0.0,
+      "correlation": 0.999942846088159
+    },
+    {
+      "event": "pin",
+      "lagMs": 0.0,
+      "correlation": 0.9998780960394743
+    },
+    {
+      "event": "distance-shock",
+      "lagMs": 0.0,
+      "correlation": 0.9999418244550156
+    },
+    {
+      "event": "street",
+      "lagMs": 0.0,
+      "correlation": 0.9999923092689122
+    },
+    {
+      "event": "earth-distance",
+      "lagMs": 0.0,
+      "correlation": 0.9998585910841646
+    },
+    {
+      "event": "arrival",
+      "lagMs": 0.0,
+      "correlation": 0.9999238403879103
+    },
+    {
+      "event": "moon",
+      "lagMs": 0.0,
+      "correlation": 0.999738597875293
+    },
+    {
+      "event": "moon-range",
+      "lagMs": 0.0,
+      "correlation": 0.999897406492549
+    },
+    {
+      "event": "moon-size",
+      "lagMs": 0.0,
+      "correlation": 0.9999924011344241
+    },
+    {
+      "event": "jupiter",
+      "lagMs": 0.0,
+      "correlation": 0.9999065073159957
+    },
+    {
+      "event": "jup-size",
+      "lagMs": 0.0,
+      "correlation": 0.9999868949261633
+    },
+    {
+      "event": "jup-road",
+      "lagMs": 0.0,
+      "correlation": 0.9999661361439298
+    },
+    {
+      "event": "jup-stop",
+      "lagMs": 0.0,
+      "correlation": 0.9999890691504429
+    },
+    {
+      "event": "neptune",
+      "lagMs": 0.0,
+      "correlation": 0.9999555515817402
+    },
+    {
+      "event": "far-flight",
+      "lagMs": 0.0,
+      "correlation": 0.9999951241314368
+    },
+    {
+      "event": "neptune-range",
+      "lagMs": 0.0,
+      "correlation": 0.9999688750827137
+    },
+    {
+      "event": "neighborhood",
+      "lagMs": 0.0,
+      "correlation": 0.9999526798721735
+    },
+    {
+      "event": "whole",
+      "lagMs": 0.0,
+      "correlation": 0.9999874848957832
+    },
+    {
+      "event": "quiet",
+      "lagMs": 0.0,
+      "correlation": 0.9999849866400076
+    },
+    {
+      "event": "final",
+      "lagMs": 0.0,
+      "correlation": 0.9999140211210078
+    }
+  ],
+  "processingEnvelopeSync": [
+    {
+      "position": "start",
+      "lagMs": 0,
+      "correlation": 0.9931357012617649
+    },
+    {
+      "position": "middle",
+      "lagMs": 0,
+      "correlation": 0.9904128104804043
+    },
+    {
+      "position": "end",
+      "lagMs": 0,
+      "correlation": 0.994493012751912
+    }
+  ],
+  "processingEnvelopeResolutionMs": 5,
+  "processingEnvelopeSmoothingMs": 40,
+  "outroLagMs": 0.0,
+  "outroCorrelation": 0.9999963767496504,
+  "integratedLufs": -27.59,
+  "truePeakDbtp": -11.47,
+  "generalLoudnessPolicyPassed": false,
+  "humanListeningPerformed": false,
+  "wordTimingManuallyApproved": false,
+  "publicationReady": false,
+  "limitations": [
+    "Envelope alignment is a phrase-level diagnostic, not one-frame word accuracy.",
+    "Listen for pitch/EQ artifacts and Turkish consonant clarity.",
+    "Existing caption human review remains pending.",
+    "Quiet user-selected mix is measured without changing the general loudness policy."
+  ]
+}
