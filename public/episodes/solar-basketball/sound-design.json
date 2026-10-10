@@ -14,13 +14,13 @@
   "audioHash": "0644d1ad27451ea748d914ea77ef0f2883c2606cf879a284e3e42ec9f96010b2",
   "stemSha256": "e3a58c701dc803592a1eb12450367b2608c0477963ccd3be491cd381679390ea",
   "musicStemSha256": "e02f5b010ead5f835b3747da73c3609f800923c3306f2db7916008c24402a68f",
-  "mixSha256": "49d0df5400d8efa47aaec6095f95a7119b0b2039cd56628f06b93de96cebd025",
+  "mixSha256": "93262c6772caa3e8494407fc36e6c78b7e6a374a6f3d547785699a35ae8adda1",
   "musicFile": "ambient-stem.wav",
-  "narrationRenderGain": 0.6,
+  "narrationRenderGain": 0.5,
   "renderGain": 1.0,
   "musicRenderGain": 0.17,
   "mixLevels": {
-    "narration": 0.6,
+    "narration": 0.5,
     "effects": 1.0,
     "music": 0.17
   },
@@ -212,7 +212,7 @@
     "p95EffectToVoiceDb": -14.89454989793388,
     "source": "actual narration WAV 10ms RMS"
   },
-  "predictedMixPeak": 0.5233517422823616,
+  "predictedMixPeak": 0.4474967970995613,
   "externalSamples": false,
   "humanListeningPerformed": false,
   "license": "Original project synthesis; no third-party samples. Cinematic effects do not represent sound propagation in space."

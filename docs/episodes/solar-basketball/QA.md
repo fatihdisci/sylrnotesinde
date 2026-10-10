@@ -85,3 +85,10 @@ Dört büyük kare farkı (322, 1.106, 1.257, 1.377) kasıtlı yakın plan / sok
 Mevcut yerel editör: `http://127.0.0.1:3035`. WAV’ı dinleme, konuşma/ekran metni eşlemesi, kelimeye gitme, ±1 kare ve kaydetme çalışır. Otomatik hizalama 20 ms stride kullanır; her kelimede 33,3 ms doğruluk garanti edilmez. Yayın kontrolü bu nedenle `needs_review` durumunda kalır. Tam kalite film teslim edilmiştir; yayına hazır/onaylanmış diye işaretlenmemiştir.
 
 Kaynak, lisans ve matematik: [SOURCES_AND_LICENSES.md](SOURCES_AND_LICENSES.md). Yeniden üretim: [REPRODUCE.md](REPRODUCE.md). Hiçbir video sosyal platformda yayımlanmadı.
+
+
+### Son kullanıcı ayarı: konuşma bir kademe daha düşük
+
+Anlatıcı 0,60 → 0,50 (−1,58 dB); efekt 1,00 ve müzik 0,17 aynı kaldı. Kalıcı tercih AUDIO_STYLE.md içinde güncellendi. Yeni MP4: -25.86 LUFS, -9.48 dBTP; ölçülen drift 0.0 ms. Görüntü akışı önceki incelenmiş video ile byte düzeyinde aynı. TypeScript, lint, marka kontrolleri ve TTS testleri geçti.
+
+Genel QA'nın −25…−17 LUFS koşulu bu kullanıcı isteğiyle daha sessiz miks için geçmedi; eşik değiştirilmedi. Diğer MP4 kontrolleri ayrı tanısal çalıştırmada tamamlandı; technicalChecksPassed=false kaydı korundu. İnsan dinlemesi ve altyazı onayı yapılmış sayılmadı.
