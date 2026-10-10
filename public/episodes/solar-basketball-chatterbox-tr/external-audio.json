@@ -1,0 +1,13 @@
+{
+  "provider": "local:chatterbox-multilingual-v3",
+  "voice": "project-turkish-M1-reference",
+  "sourceFilename": "narration.wav",
+  "sourceSha256": "9884cff1c351d625284ba1355002242e0c73fdf54a19bba1174e0e342c08be20",
+  "sourceDurationSeconds": 72.16,
+  "processing": "two-pass loudnorm -20 LUFS / -2 dBTP; 48 kHz mono PCM24; original timing retained",
+  "synthesisPerformed": false,
+  "humanListeningPerformed": false,
+  "schemaVersion": 2,
+  "archivePath": "voice-sources/solar-basketball-chatterbox-tr/original.wav",
+  "scriptSha256": "29dce29da14fd1a3d924da182a05fe11b6cf62a1319502f0da5e6047836ab1c9"
+}

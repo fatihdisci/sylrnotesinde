@@ -1,0 +1,11 @@
+{
+  "source": "tts/outputs/supertonic-3/M1/A-original-listen.wav",
+  "sourceSha256": "0117e78223dbf1e09b7bd2b8c3b141e4ae16e67abb23e27118b615afec48e379",
+  "referenceSha256": "c690e9da6794cec6581336b3ca13e65deb9b613c5826000653bdc4e152fc7afa",
+  "origin": "Project-generated Supertonic 3/M1 TEST A, natural speed",
+  "humanVoiceRecording": false,
+  "processing": "Lossless FLAC encoding only; no pitch or time change",
+  "sourceLicense": "BigScience Open RAIL-M; see tts/docs/licenses/supertonic-3/LICENSE",
+  "purpose": "Local Chatterbox Turkish speaker conditioning; no weight fine-tuning",
+  "text": "Her gün gördüğümüz sayılar bazen düşündüğümüzden çok daha büyük anlamlar taşıyor. Küçük bir fark gibi görünen şey, ölçek değiştiğinde bambaşka bir dünyaya dönüşebilir."
+}

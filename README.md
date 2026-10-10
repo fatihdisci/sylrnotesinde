@@ -117,3 +117,7 @@ npm run episode:qa -- --id solar-basketball --draft --gl angle
 Büyük WAV/model/venv/master dosyaları yereldir. Bu bölümün normal hız seçimi bölüm dosyasında kayıtlıdır; global M1 seçimi değişmez. `draft` tam kalite inceleme masterıdır; yapılmamış insan dinlemesi/onayı başarılı sayılmaz.
 
 Kalıcı ses tercihleri: [AUDIO_STYLE.md](docs/AUDIO_STYLE.md). Yeni bölümlerde daha sakin anlatıcı, belirgin tonal blink/bip efektleri ve hafif ritmik müzik dengesi varsayılandır.
+
+Chatterbox Multilingual V3 için isteğe bağlı, ayrı yerel kurulum: [kurulum/çevrimdışı kullanım ve ses seçimi](tts/docs/CHATTERBOX.md). `npm run tts:chatterbox:setup` mevcut M1/Antalia ortamlarını değiştirmez. Güneş filminin Chatterbox sürümü `solar-basketball-chatterbox-tr` kimliğiyle ayrı tutulur; eski teslimler korunur.
+
+Chatterbox Türkçe referanslı yeni film: [MP4](deliveries/solar-basketball-chatterbox-tr/gunes-basketbol-chatterbox-v3.mp4). [Gerçek QA ve dinleme bekleyen noktalar](docs/episodes/solar-basketball-chatterbox-tr/QA.md).

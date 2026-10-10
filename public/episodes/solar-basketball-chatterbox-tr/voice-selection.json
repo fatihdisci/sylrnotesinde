@@ -1,0 +1,150 @@
+{
+  "expectedText": "Güneş’i bir basketbol topu kadar küçültseydik, Dünya düşündüğünüzden çok daha küçük görünürdü.",
+  "candidates": [
+    {
+      "candidate": "short-calm",
+      "diagnosticText": "güneşi bir basketbe o topu kadar kuçul seydik dünya düşündüğünüzden çok daha küçük görünürdü",
+      "characterSimilarity": 0.9559748427672956,
+      "generation": {
+        "model": "chatterbox-multilingual-v3",
+        "codeRevision": "5de7a54aa4e5e2baadb0182dde554908b48b85c2",
+        "modelRevision": "5bb1f6ee58e50c3b8d408bc82a6d3740c2db6e18",
+        "voice": "official builtin conditionals",
+        "language": "tr",
+        "settings": {
+          "exaggeration": 0.35,
+          "cfg_weight": 0.3,
+          "temperature": 0.7,
+          "repetition_penalty": 1.2,
+          "min_p": 0.05,
+          "top_p": 1.0
+        },
+        "seed": 42,
+        "device": "cpu",
+        "threads": 4,
+        "sampleRate": 24000,
+        "seconds": 5.76,
+        "generationSeconds": 24.212478125002235,
+        "cpuSeconds": 78.01499,
+        "peakResidentBytes": 5846843392,
+        "audioSha256": "25750f2cea01c34c88850a4f315c38deff7406590599205a163832ecd529ad44",
+        "textSha256": "231b1662a7e1eef8a4914c41673317e10d5c0fa2eaeaf68087a7de34982eacc4",
+        "chunks": [
+          {
+            "index": 0,
+            "text": "Güneş’i bir basketbol topu kadar küçültseydik, Dünya düşündüğünüzden çok daha küçük görünürdü.",
+            "file": "tts/outputs/chatterbox/short-calm-chunks/00.wav",
+            "sha256": "25750f2cea01c34c88850a4f315c38deff7406590599205a163832ecd529ad44",
+            "durationSeconds": 5.76,
+            "generationSeconds": 17.120327084092423,
+            "fromSample": 0
+          }
+        ],
+        "networkAttempts": [],
+        "offlineGeneration": true,
+        "humanListeningPerformed": false,
+        "postPitchOrSpeedProcessing": false,
+        "compatibility": "Turkish-only adapter bypasses unused eager Chinese Cangjie/pkuseg initialization"
+      }
+    },
+    {
+      "candidate": "short-neutral",
+      "diagnosticText": "düneşi bir basketbol topu kadar küçü seydik dünya düşündüğünüzden çok daha küçük görünürdü",
+      "characterSimilarity": 0.9746835443037974,
+      "generation": {
+        "model": "chatterbox-multilingual-v3",
+        "codeRevision": "5de7a54aa4e5e2baadb0182dde554908b48b85c2",
+        "modelRevision": "5bb1f6ee58e50c3b8d408bc82a6d3740c2db6e18",
+        "voice": "official builtin conditionals",
+        "language": "tr",
+        "settings": {
+          "exaggeration": 0.35,
+          "cfg_weight": 0.0,
+          "temperature": 0.7,
+          "repetition_penalty": 1.2,
+          "min_p": 0.05,
+          "top_p": 1.0
+        },
+        "seed": 42,
+        "device": "cpu",
+        "threads": 4,
+        "sampleRate": 24000,
+        "seconds": 6.44,
+        "generationSeconds": 29.234490750124678,
+        "cpuSeconds": 88.20532399999999,
+        "peakResidentBytes": 4443291648,
+        "audioSha256": "d529da791d7056903f820667bf3d7d235b1f192c73b4759c29f1688e18e5c76b",
+        "textSha256": "231b1662a7e1eef8a4914c41673317e10d5c0fa2eaeaf68087a7de34982eacc4",
+        "chunks": [
+          {
+            "index": 0,
+            "text": "Güneş’i bir basketbol topu kadar küçültseydik, Dünya düşündüğünüzden çok daha küçük görünürdü.",
+            "file": "tts/outputs/chatterbox/short-neutral-chunks/00.wav",
+            "sha256": "d529da791d7056903f820667bf3d7d235b1f192c73b4759c29f1688e18e5c76b",
+            "durationSeconds": 6.44,
+            "generationSeconds": 21.027056791819632,
+            "fromSample": 0
+          }
+        ],
+        "networkAttempts": [],
+        "offlineGeneration": true,
+        "humanListeningPerformed": false,
+        "postPitchOrSpeedProcessing": false,
+        "compatibility": "Turkish-only adapter bypasses unused eager Chinese Cangjie/pkuseg initialization"
+      }
+    },
+    {
+      "candidate": "short-turkish-reference",
+      "diagnosticText": "güneşi bir basketbol topu kadar küçül seydik dünya düşündüğünüzden çok daha küçük görünürdü",
+      "characterSimilarity": 0.9937106918238994,
+      "generation": {
+        "model": "chatterbox-multilingual-v3",
+        "codeRevision": "5de7a54aa4e5e2baadb0182dde554908b48b85c2",
+        "modelRevision": "5bb1f6ee58e50c3b8d408bc82a6d3740c2db6e18",
+        "voice": "project-local Turkish reference",
+        "referencePath": "tts/outputs/supertonic-3/M1/A-original-listen.wav",
+        "referenceSha256": "0117e78223dbf1e09b7bd2b8c3b141e4ae16e67abb23e27118b615afec48e379",
+        "language": "tr",
+        "settings": {
+          "exaggeration": 0.35,
+          "cfg_weight": 0.3,
+          "temperature": 0.7,
+          "repetition_penalty": 1.2,
+          "min_p": 0.05,
+          "top_p": 1.0
+        },
+        "seed": 42,
+        "device": "cpu",
+        "threads": 4,
+        "sampleRate": 24000,
+        "seconds": 6.68,
+        "generationSeconds": 37.49595920811407,
+        "cpuSeconds": 99.159872,
+        "peakResidentBytes": 5749440512,
+        "audioSha256": "c01e172d55b4dcc267425dcb0c81b92d6b57674ffaf1f352290693498a171d1a",
+        "textSha256": "231b1662a7e1eef8a4914c41673317e10d5c0fa2eaeaf68087a7de34982eacc4",
+        "chunks": [
+          {
+            "index": 0,
+            "text": "Güneş’i bir basketbol topu kadar küçültseydik, Dünya düşündüğünüzden çok daha küçük görünürdü.",
+            "file": "tts/outputs/chatterbox/short-turkish-reference-chunks/00.wav",
+            "sha256": "c01e172d55b4dcc267425dcb0c81b92d6b57674ffaf1f352290693498a171d1a",
+            "durationSeconds": 6.68,
+            "generationSeconds": 20.50699649984017,
+            "fromSample": 0
+          }
+        ],
+        "networkAttempts": [],
+        "offlineGeneration": true,
+        "humanListeningPerformed": false,
+        "postPitchOrSpeedProcessing": false,
+        "compatibility": "Turkish-only adapter bypasses unused eager Chinese Cangjie/pkuseg initialization"
+      }
+    }
+  ],
+  "humanListeningPerformed": false,
+  "selectionBasis": "Short Turkish recognition diagnostic and restrained documentary settings; not a naturalness rating.",
+  "selectedCandidate": "short-turkish-reference",
+  "selectedCfgWeight": 0.3,
+  "referenceProvenance": "Existing project-generated Supertonic 3/M1 Turkish TEST A. Used as conditioning only, not new M1 synthesis or a human voice claim."
+}

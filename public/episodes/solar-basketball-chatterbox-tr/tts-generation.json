@@ -1,0 +1,160 @@
+{
+  "model": "chatterbox-multilingual-v3",
+  "codeRevision": "5de7a54aa4e5e2baadb0182dde554908b48b85c2",
+  "modelRevision": "5bb1f6ee58e50c3b8d408bc82a6d3740c2db6e18",
+  "voice": "project-local Turkish reference",
+  "referencePath": "tts/voices/chatterbox/m1-turkish-reference.flac",
+  "referenceSha256": "c690e9da6794cec6581336b3ca13e65deb9b613c5826000653bdc4e152fc7afa",
+  "language": "tr",
+  "settings": {
+    "exaggeration": 0.35,
+    "cfg_weight": 0.3,
+    "temperature": 0.7,
+    "repetition_penalty": 1.2,
+    "min_p": 0.05,
+    "top_p": 1.0
+  },
+  "seed": 42,
+  "device": "cpu",
+  "threads": 4,
+  "sampleRate": 24000,
+  "seconds": 72.16,
+  "generationSeconds": 239.69552683411166,
+  "cpuSeconds": 931.976083,
+  "peakResidentBytes": 5701271552,
+  "audioSha256": "9884cff1c351d625284ba1355002242e0c73fdf54a19bba1174e0e342c08be20",
+  "textSha256": "cd2250a67b69ae6390302c0ba14fa1dacb9a2d325923447a5f936c6cdf165e1c",
+  "chunks": [
+    {
+      "index": 0,
+      "text": "Güneş’i bir basketbol topu kadar küçültseydik, Dünya düşündüğünüzden çok daha küçük görünürdü.",
+      "file": "tts/outputs/episodes/solar-basketball-chatterbox-tr/narration-chunks/00.wav",
+      "sha256": "a6a90fe1310b36a1555e0b161d88924e96c78dd179cfd395976340285469822c",
+      "durationSeconds": 6.68,
+      "generationSeconds": 20.39513216703199,
+      "fromSample": 0
+    },
+    {
+      "index": 1,
+      "text": "Yaklaşık yirmi dört santimetrelik bir basketbol topunu Güneş kabul edersek, Dünya’nın çapı sadece iki milimetreyi biraz geçerdi.",
+      "file": "tts/outputs/episodes/solar-basketball-chatterbox-tr/narration-chunks/01.wav",
+      "sha256": "1069145dc82fb1be06cc506cb88341085f6cf1a0c536b555826a81ecf727c4b9",
+      "durationSeconds": 9.04,
+      "generationSeconds": 26.812689875019714,
+      "fromSample": 160320
+    },
+    {
+      "index": 2,
+      "text": "Yani neredeyse küçük bir toplu iğne başı kadar.",
+      "file": "tts/outputs/episodes/solar-basketball-chatterbox-tr/narration-chunks/02.wav",
+      "sha256": "0a373293c4011d8a89442eed3780163efbc0c6c7fa4a3dc97e2c2491ad8f43eb",
+      "durationSeconds": 3.72,
+      "generationSeconds": 12.868617166997865,
+      "fromSample": 377280
+    },
+    {
+      "index": 3,
+      "text": "Ama asıl şaşırtıcı olan boyutu değil, uzaklığı.",
+      "file": "tts/outputs/episodes/solar-basketball-chatterbox-tr/narration-chunks/03.wav",
+      "sha256": "e62872491e247cb37ead797d4538ed86a031878c7a0263bf720a56ffb9abe8d2",
+      "durationSeconds": 3.52,
+      "generationSeconds": 12.320992749882862,
+      "fromSample": 466560
+    },
+    {
+      "index": 4,
+      "text": "Bu ölçekte Dünya, basketbol topundan yaklaşık yirmi altı metre uzakta olurdu.",
+      "file": "tts/outputs/episodes/solar-basketball-chatterbox-tr/narration-chunks/04.wav",
+      "sha256": "b9561d8706887cb0b0dfe2d5c8d10d5cdbbeb0b0e8a5a225efe689c096e75e08",
+      "durationSeconds": 5.36,
+      "generationSeconds": 16.81564574991353,
+      "fromSample": 551040
+    },
+    {
+      "index": 5,
+      "text": "Yani aynı odada değil, sokağın karşı tarafına yakın bir mesafede.",
+      "file": "tts/outputs/episodes/solar-basketball-chatterbox-tr/narration-chunks/05.wav",
+      "sha256": "ff847eaa4ff54e5e2a80983d38b84c62aad4863596c7185da3a81cddb456da0d",
+      "durationSeconds": 4.72,
+      "generationSeconds": 15.38008449994959,
+      "fromSample": 679680
+    },
+    {
+      "index": 6,
+      "text": "Ay ise Dünya’dan yalnızca altı ila yedi santimetre uzakta duran, yarım milimetre civarında küçücük bir nokta olurdu.",
+      "file": "tts/outputs/episodes/solar-basketball-chatterbox-tr/narration-chunks/06.wav",
+      "sha256": "a50d52a82468421938d30beef9406a3e063d7c3a9316d5c358498d073f3a7e86",
+      "durationSeconds": 7.76,
+      "generationSeconds": 23.09966916590929,
+      "fromSample": 792960
+    },
+    {
+      "index": 7,
+      "text": "Jüpiter bu modelde yaklaşık iki virgül beş santimetrelik bir bilye gibi görünürdü.",
+      "file": "tts/outputs/episodes/solar-basketball-chatterbox-tr/narration-chunks/07.wav",
+      "sha256": "64eb24197eb0c318173b19ba74cb4734d8b4cc8caf76a71b7d9739c570c74bd3",
+      "durationSeconds": 6.08,
+      "generationSeconds": 18.509345083031803,
+      "fromSample": 979200
+    },
+    {
+      "index": 8,
+      "text": "Ama o bile Güneş’ten yaklaşık yüz otuz beş metre uzakta olurdu.",
+      "file": "tts/outputs/episodes/solar-basketball-chatterbox-tr/narration-chunks/08.wav",
+      "sha256": "bf0f16bae40aded5083e529ba0f98ca6b4018c9b718f7e5888241dad8f1dd1db",
+      "durationSeconds": 5.28,
+      "generationSeconds": 16.56861829198897,
+      "fromSample": 1125120
+    },
+    {
+      "index": 9,
+      "text": "Neptün’e geldiğimizde işler daha da çılgınlaşıyor.",
+      "file": "tts/outputs/episodes/solar-basketball-chatterbox-tr/narration-chunks/09.wav",
+      "sha256": "5131e8a4b901c78c07cb83ff22a864d9b3e28b6bcdf1369b6097b152e84682f4",
+      "durationSeconds": 3.64,
+      "generationSeconds": 13.193049582885578,
+      "fromSample": 1251840
+    },
+    {
+      "index": 10,
+      "text": "O, bu ölçekte yaklaşık yedi yüz seksen metre uzağa yerleşirdi.",
+      "file": "tts/outputs/episodes/solar-basketball-chatterbox-tr/narration-chunks/10.wav",
+      "sha256": "0a117c49487b5e05dd4c6814ee1268548b1f2f6bfe4acc3704655280b7c7619e",
+      "durationSeconds": 4.92,
+      "generationSeconds": 15.69671604107134,
+      "fromSample": 1339200
+    },
+    {
+      "index": 11,
+      "text": "Yani Güneş’i elinize alabilecek kadar küçültseniz bile, Güneş Sistemi hâlâ koca bir mahalleye yayılırdı.",
+      "file": "tts/outputs/episodes/solar-basketball-chatterbox-tr/narration-chunks/11.wav",
+      "sha256": "2a61f2983b640da5440ab9eef71cccbcf097735e10c57e8aea43d3f245f3aeaf",
+      "durationSeconds": 6.68,
+      "generationSeconds": 20.054735792102292,
+      "fromSample": 1457280
+    },
+    {
+      "index": 12,
+      "text": "Uzay gerçekten büyük değil.",
+      "file": "tts/outputs/episodes/solar-basketball-chatterbox-tr/narration-chunks/12.wav",
+      "sha256": "26fe8a56296fa7eb1bbc2c4b426603e8fce70b5d143ad97e13c84cf7dec3967a",
+      "durationSeconds": 2.24,
+      "generationSeconds": 9.068619459168985,
+      "fromSample": 1617600
+    },
+    {
+      "index": 13,
+      "text": "Aklın alıştığından çok daha büyük.",
+      "file": "tts/outputs/episodes/solar-basketball-chatterbox-tr/narration-chunks/13.wav",
+      "sha256": "f480ebc1d1bffe260341ced60a4f93d01f80853233e5dae4e340022b2bc53894",
+      "durationSeconds": 2.52,
+      "generationSeconds": 9.913081584032625,
+      "fromSample": 1671360
+    }
+  ],
+  "networkAttempts": [],
+  "offlineGeneration": true,
+  "humanListeningPerformed": false,
+  "postPitchOrSpeedProcessing": false,
+  "compatibility": "Turkish-only adapter bypasses unused eager Chinese Cangjie/pkuseg initialization"
+}

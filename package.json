@@ -40,7 +40,10 @@
     "alignment:offline": "python3 alignment/verify_offline.py",
     "episode:import-voice": "python3 production/prepare.py",
     "episode:sound": "alignment/environments/ctc/bin/python production/sound.py",
-    "episode:storyboard": "python3 production/storyboard.py"
+    "episode:storyboard": "python3 production/storyboard.py",
+    "tts:chatterbox:setup": "python3 tts/setup_chatterbox.py",
+    "tts:chatterbox": "tts/environments/chatterbox/bin/python tts/adapters/chatterbox_v3.py",
+    "episode:sound:solar": "alignment/environments/ctc/bin/python production/solar_sound.py"
   },
   "keywords": [],
   "license": "UNLICENSED",

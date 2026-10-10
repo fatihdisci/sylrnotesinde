@@ -1,0 +1,471 @@
+[
+  {
+    "from": 2,
+    "to": 62,
+    "lines": [
+      "Güneş’i bir basketbol topu kadar"
+    ],
+    "wordIds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "timingSource": "forced-alignment"
+  },
+  {
+    "from": 62,
+    "to": 140,
+    "lines": [
+      "küçültseydik, Dünya düşündüğünüzden"
+    ],
+    "wordIds": [
+      5,
+      6,
+      7
+    ],
+    "timingSource": "forced-alignment"
+  },
+  {
+    "from": 140,
+    "to": 185,
+    "lines": [
+      "çok daha küçük görünürdü."
+    ],
+    "wordIds": [
+      8,
+      9,
+      10,
+      11
+    ],
+    "timingSource": "forced-alignment"
+  },
+  {
+    "from": 210,
+    "to": 273,
+    "lines": [
+      "Yaklaşık 24 santimetrelik"
+    ],
+    "wordIds": [
+      12,
+      13,
+      14,
+      15
+    ],
+    "timingSource": "forced-alignment"
+  },
+  {
+    "from": 273,
+    "to": 347,
+    "lines": [
+      "bir basketbol topunu Güneş kabul",
+      "edersek,"
+    ],
+    "wordIds": [
+      16,
+      17,
+      18,
+      19,
+      20,
+      21
+    ],
+    "timingSource": "forced-alignment"
+  },
+  {
+    "from": 357,
+    "to": 401,
+    "lines": [
+      "Dünya’nın çapı sadece"
+    ],
+    "wordIds": [
+      22,
+      23,
+      24
+    ],
+    "timingSource": "forced-alignment"
+  },
+  {
+    "from": 401,
+    "to": 456,
+    "lines": [
+      "2 milimetreyi biraz geçerdi."
+    ],
+    "wordIds": [
+      25,
+      26,
+      27,
+      28
+    ],
+    "timingSource": "forced-alignment"
+  },
+  {
+    "from": 475,
+    "to": 528,
+    "lines": [
+      "Yani neredeyse küçük bir"
+    ],
+    "wordIds": [
+      29,
+      30,
+      31,
+      32
+    ],
+    "timingSource": "forced-alignment"
+  },
+  {
+    "from": 528,
+    "to": 567,
+    "lines": [
+      "toplu iğne başı kadar."
+    ],
+    "wordIds": [
+      33,
+      34,
+      35,
+      36
+    ],
+    "timingSource": "forced-alignment"
+  },
+  {
+    "from": 586,
+    "to": 630,
+    "lines": [
+      "Ama asıl şaşırtıcı olan"
+    ],
+    "wordIds": [
+      37,
+      38,
+      39,
+      40
+    ],
+    "timingSource": "forced-alignment"
+  },
+  {
+    "from": 630,
+    "to": 673,
+    "lines": [
+      "boyutu değil, uzaklığı."
+    ],
+    "wordIds": [
+      41,
+      42,
+      43
+    ],
+    "timingSource": "forced-alignment"
+  },
+  {
+    "from": 691,
+    "to": 769,
+    "lines": [
+      "Bu ölçekte Dünya, basketbol",
+      "topundan"
+    ],
+    "wordIds": [
+      44,
+      45,
+      46,
+      47,
+      48
+    ],
+    "timingSource": "forced-alignment"
+  },
+  {
+    "from": 769,
+    "to": 834,
+    "lines": [
+      "yaklaşık 26 metre uzakta olurdu."
+    ],
+    "wordIds": [
+      49,
+      50,
+      51,
+      52,
+      53,
+      54
+    ],
+    "timingSource": "forced-alignment"
+  },
+  {
+    "from": 852,
+    "to": 892,
+    "lines": [
+      "Yani aynı odada değil,"
+    ],
+    "wordIds": [
+      55,
+      56,
+      57,
+      58
+    ],
+    "timingSource": "forced-alignment"
+  },
+  {
+    "from": 903,
+    "to": 976,
+    "lines": [
+      "sokağın karşı tarafına yakın bir",
+      "mesafede."
+    ],
+    "wordIds": [
+      59,
+      60,
+      61,
+      62,
+      63,
+      64
+    ],
+    "timingSource": "forced-alignment"
+  },
+  {
+    "from": 994,
+    "to": 1048,
+    "lines": [
+      "Ay ise Dünya’dan yalnızca"
+    ],
+    "wordIds": [
+      65,
+      66,
+      67,
+      68
+    ],
+    "timingSource": "forced-alignment"
+  },
+  {
+    "from": 1048,
+    "to": 1113,
+    "lines": [
+      "6-7 santimetre uzakta duran,"
+    ],
+    "wordIds": [
+      69,
+      70,
+      71,
+      72,
+      73,
+      74
+    ],
+    "timingSource": "forced-alignment"
+  },
+  {
+    "from": 1122,
+    "to": 1167,
+    "lines": [
+      "yarım milimetre civarında"
+    ],
+    "wordIds": [
+      75,
+      76,
+      77
+    ],
+    "timingSource": "forced-alignment"
+  },
+  {
+    "from": 1167,
+    "to": 1208,
+    "lines": [
+      "küçücük bir nokta olurdu."
+    ],
+    "wordIds": [
+      78,
+      79,
+      80,
+      81
+    ],
+    "timingSource": "forced-alignment"
+  },
+  {
+    "from": 1227,
+    "to": 1280,
+    "lines": [
+      "Jüpiter bu modelde yaklaşık"
+    ],
+    "wordIds": [
+      82,
+      83,
+      84,
+      85
+    ],
+    "timingSource": "forced-alignment"
+  },
+  {
+    "from": 1284,
+    "to": 1391,
+    "lines": [
+      "2,5 santimetrelik bir bilye gibi",
+      "görünürdü."
+    ],
+    "wordIds": [
+      86,
+      87,
+      88,
+      89,
+      90,
+      91,
+      92,
+      93
+    ],
+    "timingSource": "forced-alignment"
+  },
+  {
+    "from": 1409,
+    "to": 1481,
+    "lines": [
+      "Ama o bile Güneş’ten yaklaşık"
+    ],
+    "wordIds": [
+      94,
+      95,
+      96,
+      97,
+      98
+    ],
+    "timingSource": "forced-alignment"
+  },
+  {
+    "from": 1482,
+    "to": 1550,
+    "lines": [
+      "135 metre uzakta olurdu."
+    ],
+    "wordIds": [
+      99,
+      100,
+      101,
+      102,
+      103,
+      104
+    ],
+    "timingSource": "forced-alignment"
+  },
+  {
+    "from": 1567,
+    "to": 1617,
+    "lines": [
+      "Neptün’e geldiğimizde işler"
+    ],
+    "wordIds": [
+      105,
+      106,
+      107
+    ],
+    "timingSource": "forced-alignment"
+  },
+  {
+    "from": 1622,
+    "to": 1659,
+    "lines": [
+      "daha da çılgınlaşıyor."
+    ],
+    "wordIds": [
+      108,
+      109,
+      110
+    ],
+    "timingSource": "forced-alignment"
+  },
+  {
+    "from": 1677,
+    "to": 1726,
+    "lines": [
+      "O, bu ölçekte yaklaşık"
+    ],
+    "wordIds": [
+      111,
+      112,
+      113,
+      114
+    ],
+    "timingSource": "forced-alignment"
+  },
+  {
+    "from": 1727,
+    "to": 1807,
+    "lines": [
+      "780 metre uzağa yerleşirdi."
+    ],
+    "wordIds": [
+      115,
+      116,
+      117,
+      118,
+      119,
+      120
+    ],
+    "timingSource": "forced-alignment"
+  },
+  {
+    "from": 1824,
+    "to": 1882,
+    "lines": [
+      "Yani Güneş’i elinize alabilecek",
+      "kadar"
+    ],
+    "wordIds": [
+      121,
+      122,
+      123,
+      124,
+      125
+    ],
+    "timingSource": "forced-alignment"
+  },
+  {
+    "from": 1882,
+    "to": 1944,
+    "lines": [
+      "küçültseniz bile, Güneş Sistemi"
+    ],
+    "wordIds": [
+      126,
+      127,
+      128,
+      129
+    ],
+    "timingSource": "forced-alignment"
+  },
+  {
+    "from": 1948,
+    "to": 2007,
+    "lines": [
+      "hâlâ koca bir mahalleye yayılırdı."
+    ],
+    "wordIds": [
+      130,
+      131,
+      132,
+      133,
+      134
+    ],
+    "timingSource": "forced-alignment"
+  },
+  {
+    "from": 2025,
+    "to": 2073,
+    "lines": [
+      "Uzay gerçekten büyük değil."
+    ],
+    "wordIds": [
+      135,
+      136,
+      137,
+      138
+    ],
+    "timingSource": "forced-alignment"
+  },
+  {
+    "from": 2092,
+    "to": 2146,
+    "lines": [
+      "Aklın alıştığından çok daha büyük."
+    ],
+    "wordIds": [
+      139,
+      140,
+      141,
+      142,
+      143
+    ],
+    "timingSource": "forced-alignment"
+  }
+]

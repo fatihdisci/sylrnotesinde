@@ -1,0 +1,1554 @@
+{
+  "id": "solar-basketball-chatterbox-tr",
+  "title": "Güneş Bir Basketbol Topu Olsaydı?",
+  "hook": "Güneş’i bir basketbol topu kadar küçültseydik…",
+  "brandVersion": "0.1-candidate",
+  "kind": "audio-first",
+  "durationInFrames": 2227,
+  "narration": [
+    {
+      "id": "narration",
+      "text": "Güneş’i bir basketbol topu kadar küçültseydik, Dünya düşündüğünüzden çok daha küçük görünürdü. Yaklaşık yirmi dört santimetrelik bir basketbol topunu Güneş kabul edersek, Dünya’nın çapı sadece iki milimetreyi biraz geçerdi. Yani neredeyse küçük bir toplu iğne başı kadar. Ama asıl şaşırtıcı olan boyutu değil, uzaklığı. Bu ölçekte Dünya, basketbol topundan yaklaşık yirmi altı metre uzakta olurdu. Yani aynı odada değil, sokağın karşı tarafına yakın bir mesafede. Ay ise Dünya’dan yalnızca altı ila yedi santimetre uzakta duran, yarım milimetre civarında küçücük bir nokta olurdu. Jüpiter bu modelde yaklaşık iki virgül beş santimetrelik bir bilye gibi görünürdü. Ama o bile Güneş’ten yaklaşık yüz otuz beş metre uzakta olurdu. Neptün’e geldiğimizde işler daha da çılgınlaşıyor. O, bu ölçekte yaklaşık yedi yüz seksen metre uzağa yerleşirdi. Yani Güneş’i elinize alabilecek kadar küçültseniz bile, Güneş Sistemi hâlâ koca bir mahalleye yayılırdı. Uzay gerçekten büyük değil. Aklın alıştığından çok daha büyük.",
+      "from": 0,
+      "durationInFrames": 2165,
+      "path": "episodes/solar-basketball-chatterbox-tr/narration.wav"
+    }
+  ],
+  "sources": [
+    {
+      "title": "NASA NSSDCA Sun Fact Sheet",
+      "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/sunfact.html",
+      "note": "Volumetric mean radius695.700 km → diameter1.391.400 km.",
+      "accessed": "2026-10-10"
+    },
+    {
+      "title": "NASA Planetary Fact Sheet",
+      "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/",
+      "note": "Mean heliocentric distances; Earth/Jupiter equatorial diameters.",
+      "accessed": "2026-10-10"
+    },
+    {
+      "title": "NASA Moon Fact Sheet",
+      "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/moonfact.html",
+      "note": "Mean diameter3.474,8 km, Earth-Moon semimajor axis384.400 km. Distances are centre-to-centre mean values.",
+      "accessed": "2026-10-10"
+    }
+  ],
+  "claims": [
+    {
+      "id": "earth-diameter",
+      "quantity": "length",
+      "numerator": 3061.44,
+      "denominator": 1391400,
+      "ratio": 0.0022002587322121603,
+      "assumptions": "Metres in the model; Sun diameter0.24m. Same linear factor for all radii and centre distances. Mean orbital distance, not current position.",
+      "scale": "linear"
+    },
+    {
+      "id": "earth-distance",
+      "quantity": "length",
+      "numerator": 35904000.0,
+      "denominator": 1391400,
+      "ratio": 25.80422595946529,
+      "assumptions": "Metres in the model; Sun diameter0.24m. Same linear factor for all radii and centre distances. Mean orbital distance, not current position.",
+      "scale": "linear"
+    },
+    {
+      "id": "moon-diameter",
+      "quantity": "length",
+      "numerator": 833.952,
+      "denominator": 1391400,
+      "ratio": 0.000599361793876671,
+      "assumptions": "Metres in the model; Sun diameter0.24m. Same linear factor for all radii and centre distances. Mean orbital distance, not current position.",
+      "scale": "linear"
+    },
+    {
+      "id": "moon-distance",
+      "quantity": "length",
+      "numerator": 92256.0,
+      "denominator": 1391400,
+      "ratio": 0.06630444156964209,
+      "assumptions": "Metres in the model; Sun diameter0.24m. Same linear factor for all radii and centre distances. Mean orbital distance, not current position.",
+      "scale": "linear"
+    },
+    {
+      "id": "jupiter-diameter",
+      "quantity": "length",
+      "numerator": 34316.159999999996,
+      "denominator": 1391400,
+      "ratio": 0.024663044415696417,
+      "assumptions": "Metres in the model; Sun diameter0.24m. Same linear factor for all radii and centre distances. Mean orbital distance, not current position.",
+      "scale": "linear"
+    },
+    {
+      "id": "jupiter-distance",
+      "quantity": "length",
+      "numerator": 186840000.0,
+      "denominator": 1391400,
+      "ratio": 134.28201811125484,
+      "assumptions": "Metres in the model; Sun diameter0.24m. Same linear factor for all radii and centre distances. Mean orbital distance, not current position.",
+      "scale": "linear"
+    },
+    {
+      "id": "neptune-distance",
+      "quantity": "length",
+      "numerator": 1083600000.0,
+      "denominator": 1391400,
+      "ratio": 778.783958602846,
+      "assumptions": "Metres in the model; Sun diameter0.24m. Same linear factor for all radii and centre distances. Mean orbital distance, not current position.",
+      "scale": "linear"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "continuous",
+      "from": 0,
+      "to": 2182,
+      "purpose": "Original continuous TSX visualization"
+    }
+  ],
+  "audio": {
+    "voiceProvider": "local:chatterbox-multilingual-v3",
+    "voiceStatus": "temporary",
+    "source": {
+      "provider": "local:chatterbox-multilingual-v3",
+      "voice": "project-turkish-M1-reference",
+      "sourceFilename": "narration.wav",
+      "sourceSha256": "9884cff1c351d625284ba1355002242e0c73fdf54a19bba1174e0e342c08be20",
+      "sourceDurationSeconds": 72.16,
+      "processing": "two-pass loudnorm -20 LUFS / -2 dBTP; 48 kHz mono PCM24; original timing retained",
+      "synthesisPerformed": false,
+      "humanListeningPerformed": false,
+      "schemaVersion": 2,
+      "archivePath": "voice-sources/solar-basketball-chatterbox-tr/original.wav",
+      "scriptSha256": "29dce29da14fd1a3d924da182a05fe11b6cf62a1319502f0da5e6047836ab1c9"
+    },
+    "sfxPath": "episodes/solar-basketball-chatterbox-tr/sfx-stem.wav",
+    "soundDesignHash": "a253b4c30de769fd8300f824d589cd60d7daf98e4816343bd98f9015055c7e7d",
+    "musicPath": "episodes/solar-basketball-chatterbox-tr/ambient-stem.wav"
+  },
+  "subtitlePath": "episodes/solar-basketball-chatterbox-tr/captions.json",
+  "captions": [
+    {
+      "from": 2,
+      "to": 62,
+      "lines": [
+        "Güneş’i bir basketbol topu kadar"
+      ],
+      "wordIds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "timingSource": "forced-alignment"
+    },
+    {
+      "from": 62,
+      "to": 140,
+      "lines": [
+        "küçültseydik, Dünya düşündüğünüzden"
+      ],
+      "wordIds": [
+        5,
+        6,
+        7
+      ],
+      "timingSource": "forced-alignment"
+    },
+    {
+      "from": 140,
+      "to": 185,
+      "lines": [
+        "çok daha küçük görünürdü."
+      ],
+      "wordIds": [
+        8,
+        9,
+        10,
+        11
+      ],
+      "timingSource": "forced-alignment"
+    },
+    {
+      "from": 210,
+      "to": 273,
+      "lines": [
+        "Yaklaşık 24 santimetrelik"
+      ],
+      "wordIds": [
+        12,
+        13,
+        14,
+        15
+      ],
+      "timingSource": "forced-alignment"
+    },
+    {
+      "from": 273,
+      "to": 347,
+      "lines": [
+        "bir basketbol topunu Güneş kabul",
+        "edersek,"
+      ],
+      "wordIds": [
+        16,
+        17,
+        18,
+        19,
+        20,
+        21
+      ],
+      "timingSource": "forced-alignment"
+    },
+    {
+      "from": 357,
+      "to": 401,
+      "lines": [
+        "Dünya’nın çapı sadece"
+      ],
+      "wordIds": [
+        22,
+        23,
+        24
+      ],
+      "timingSource": "forced-alignment"
+    },
+    {
+      "from": 401,
+      "to": 456,
+      "lines": [
+        "2 milimetreyi biraz geçerdi."
+      ],
+      "wordIds": [
+        25,
+        26,
+        27,
+        28
+      ],
+      "timingSource": "forced-alignment"
+    },
+    {
+      "from": 475,
+      "to": 528,
+      "lines": [
+        "Yani neredeyse küçük bir"
+      ],
+      "wordIds": [
+        29,
+        30,
+        31,
+        32
+      ],
+      "timingSource": "forced-alignment"
+    },
+    {
+      "from": 528,
+      "to": 567,
+      "lines": [
+        "toplu iğne başı kadar."
+      ],
+      "wordIds": [
+        33,
+        34,
+        35,
+        36
+      ],
+      "timingSource": "forced-alignment"
+    },
+    {
+      "from": 586,
+      "to": 630,
+      "lines": [
+        "Ama asıl şaşırtıcı olan"
+      ],
+      "wordIds": [
+        37,
+        38,
+        39,
+        40
+      ],
+      "timingSource": "forced-alignment"
+    },
+    {
+      "from": 630,
+      "to": 673,
+      "lines": [
+        "boyutu değil, uzaklığı."
+      ],
+      "wordIds": [
+        41,
+        42,
+        43
+      ],
+      "timingSource": "forced-alignment"
+    },
+    {
+      "from": 691,
+      "to": 769,
+      "lines": [
+        "Bu ölçekte Dünya, basketbol",
+        "topundan"
+      ],
+      "wordIds": [
+        44,
+        45,
+        46,
+        47,
+        48
+      ],
+      "timingSource": "forced-alignment"
+    },
+    {
+      "from": 769,
+      "to": 834,
+      "lines": [
+        "yaklaşık 26 metre uzakta olurdu."
+      ],
+      "wordIds": [
+        49,
+        50,
+        51,
+        52,
+        53,
+        54
+      ],
+      "timingSource": "forced-alignment"
+    },
+    {
+      "from": 852,
+      "to": 892,
+      "lines": [
+        "Yani aynı odada değil,"
+      ],
+      "wordIds": [
+        55,
+        56,
+        57,
+        58
+      ],
+      "timingSource": "forced-alignment"
+    },
+    {
+      "from": 903,
+      "to": 976,
+      "lines": [
+        "sokağın karşı tarafına yakın bir",
+        "mesafede."
+      ],
+      "wordIds": [
+        59,
+        60,
+        61,
+        62,
+        63,
+        64
+      ],
+      "timingSource": "forced-alignment"
+    },
+    {
+      "from": 994,
+      "to": 1048,
+      "lines": [
+        "Ay ise Dünya’dan yalnızca"
+      ],
+      "wordIds": [
+        65,
+        66,
+        67,
+        68
+      ],
+      "timingSource": "forced-alignment"
+    },
+    {
+      "from": 1048,
+      "to": 1113,
+      "lines": [
+        "6-7 santimetre uzakta duran,"
+      ],
+      "wordIds": [
+        69,
+        70,
+        71,
+        72,
+        73,
+        74
+      ],
+      "timingSource": "forced-alignment"
+    },
+    {
+      "from": 1122,
+      "to": 1167,
+      "lines": [
+        "yarım milimetre civarında"
+      ],
+      "wordIds": [
+        75,
+        76,
+        77
+      ],
+      "timingSource": "forced-alignment"
+    },
+    {
+      "from": 1167,
+      "to": 1208,
+      "lines": [
+        "küçücük bir nokta olurdu."
+      ],
+      "wordIds": [
+        78,
+        79,
+        80,
+        81
+      ],
+      "timingSource": "forced-alignment"
+    },
+    {
+      "from": 1227,
+      "to": 1280,
+      "lines": [
+        "Jüpiter bu modelde yaklaşık"
+      ],
+      "wordIds": [
+        82,
+        83,
+        84,
+        85
+      ],
+      "timingSource": "forced-alignment"
+    },
+    {
+      "from": 1284,
+      "to": 1391,
+      "lines": [
+        "2,5 santimetrelik bir bilye gibi",
+        "görünürdü."
+      ],
+      "wordIds": [
+        86,
+        87,
+        88,
+        89,
+        90,
+        91,
+        92,
+        93
+      ],
+      "timingSource": "forced-alignment"
+    },
+    {
+      "from": 1409,
+      "to": 1481,
+      "lines": [
+        "Ama o bile Güneş’ten yaklaşık"
+      ],
+      "wordIds": [
+        94,
+        95,
+        96,
+        97,
+        98
+      ],
+      "timingSource": "forced-alignment"
+    },
+    {
+      "from": 1482,
+      "to": 1550,
+      "lines": [
+        "135 metre uzakta olurdu."
+      ],
+      "wordIds": [
+        99,
+        100,
+        101,
+        102,
+        103,
+        104
+      ],
+      "timingSource": "forced-alignment"
+    },
+    {
+      "from": 1567,
+      "to": 1617,
+      "lines": [
+        "Neptün’e geldiğimizde işler"
+      ],
+      "wordIds": [
+        105,
+        106,
+        107
+      ],
+      "timingSource": "forced-alignment"
+    },
+    {
+      "from": 1622,
+      "to": 1659,
+      "lines": [
+        "daha da çılgınlaşıyor."
+      ],
+      "wordIds": [
+        108,
+        109,
+        110
+      ],
+      "timingSource": "forced-alignment"
+    },
+    {
+      "from": 1677,
+      "to": 1726,
+      "lines": [
+        "O, bu ölçekte yaklaşık"
+      ],
+      "wordIds": [
+        111,
+        112,
+        113,
+        114
+      ],
+      "timingSource": "forced-alignment"
+    },
+    {
+      "from": 1727,
+      "to": 1807,
+      "lines": [
+        "780 metre uzağa yerleşirdi."
+      ],
+      "wordIds": [
+        115,
+        116,
+        117,
+        118,
+        119,
+        120
+      ],
+      "timingSource": "forced-alignment"
+    },
+    {
+      "from": 1824,
+      "to": 1882,
+      "lines": [
+        "Yani Güneş’i elinize alabilecek",
+        "kadar"
+      ],
+      "wordIds": [
+        121,
+        122,
+        123,
+        124,
+        125
+      ],
+      "timingSource": "forced-alignment"
+    },
+    {
+      "from": 1882,
+      "to": 1944,
+      "lines": [
+        "küçültseniz bile, Güneş Sistemi"
+      ],
+      "wordIds": [
+        126,
+        127,
+        128,
+        129
+      ],
+      "timingSource": "forced-alignment"
+    },
+    {
+      "from": 1948,
+      "to": 2007,
+      "lines": [
+        "hâlâ koca bir mahalleye yayılırdı."
+      ],
+      "wordIds": [
+        130,
+        131,
+        132,
+        133,
+        134
+      ],
+      "timingSource": "forced-alignment"
+    },
+    {
+      "from": 2025,
+      "to": 2073,
+      "lines": [
+        "Uzay gerçekten büyük değil."
+      ],
+      "wordIds": [
+        135,
+        136,
+        137,
+        138
+      ],
+      "timingSource": "forced-alignment"
+    },
+    {
+      "from": 2092,
+      "to": 2146,
+      "lines": [
+        "Aklın alıştığından çok daha büyük."
+      ],
+      "wordIds": [
+        139,
+        140,
+        141,
+        142,
+        143
+      ],
+      "timingSource": "forced-alignment"
+    }
+  ],
+  "provenance": {
+    "specHash": "1c242f2e62baa42ebb09464d117ec26d1227cf7a18f846a4f290a3ad1d5b7975",
+    "textHash": "cd2250a67b69ae6390302c0ba14fa1dacb9a2d325923447a5f936c6cdf165e1c",
+    "settingsHash": "d561b0330527635b44a0e2587f85553007ec2e607caa1ac5fd39ab8563c58e1c",
+    "voiceSourceHash": "9ab816af608e657e3d30d2213faf36dac104def72f445e51a189bb855ea1871b",
+    "scriptHash": "29dce29da14fd1a3d924da182a05fe11b6cf62a1319502f0da5e6047836ab1c9",
+    "audioHash": "028233247b7d560b1d551ddeeeb40c31dfbadf31135debff0046c259a407ec59",
+    "alignmentHash": "0591ca7efed187db07a58ac69897f79490b1a85144f0bbfb606751f53aea742d",
+    "captionsHash": "aa1594e599f85d85e39a198b84182cc5ecb178f108bd9fd44af820600cb83bc8",
+    "reviewStatus": "needs_review",
+    "reviewer": null,
+    "wordTimingPath": "episodes/solar-basketball-chatterbox-tr/word-timings.json"
+  },
+  "timeline": {
+    "audioFrames": 2165,
+    "narrationStartFrame": 0,
+    "resultFromFrame": 2146,
+    "resultHoldFrames": 36,
+    "outroFromFrame": 2182,
+    "durationInFrames": 2227
+  },
+  "fps": 30,
+  "captionReviewRequired": true,
+  "recommendedTotalFrames": 2227,
+  "direction": {
+    "schemaVersion": 1,
+    "idea": "Avuç içinden bir mahalleye: tek 24 cm ölçek, dokudan gezegene, milimetreden 780 metrelik gece mahallesine. Yakın planlarda nesne ölçeği değil kamera değişir. Doğrusal yerleşim yörüngeleri temsil etmez.",
+    "storyboardHash": "78e81fb80cc56261017d7757f17cd8108ad7b0e8c13405ed32d76fa8db8c6338",
+    "events": [
+      {
+        "id": "sun",
+        "at": "start",
+        "until": {
+          "word": 12,
+          "text": "Yaklaşık"
+        },
+        "information": "Güneş = basketbol topu",
+        "visual": "Derinin makro dokusundan tam küreye; aynı yüzey Güneş dokusuna dönüşür.",
+        "camera": "Yüzeye yakın başlayıp çapı değiştirmeden geri dolly.",
+        "animation": "24 cm küre sabit; yalnız malzeme karışır.",
+        "effects": [
+          {
+            "sound": "bloom",
+            "durationFrames": 58,
+            "gain": 0.75,
+            "frame": 0
+          }
+        ],
+        "from": 0,
+        "to": 210,
+        "captions": [
+          [
+            "Güneş’i bir basketbol topu kadar"
+          ],
+          [
+            "küçültseydik, Dünya düşündüğünüzden"
+          ],
+          [
+            "çok daha küçük görünürdü."
+          ]
+        ]
+      },
+      {
+        "id": "ball-size",
+        "at": {
+          "word": 12,
+          "text": "Yaklaşık"
+        },
+        "until": {
+          "word": 22,
+          "text": "Dünya’nın"
+        },
+        "information": "24 santimetre temel ölçek",
+        "visual": "Dikişli basketbol topu, aynı fiziksel çapta Güneş modeline eşlenir.",
+        "camera": "Yavaş yörünge, sabit merkez.",
+        "animation": "Dikişler ışıktan ayrılıp yüzeye geri döner.",
+        "effects": [
+          {
+            "sound": "leather",
+            "durationFrames": 27,
+            "gain": 0.55,
+            "frame": 210
+          }
+        ],
+        "from": 210,
+        "to": 357,
+        "captions": [
+          [
+            "Yaklaşık 24 santimetrelik"
+          ],
+          [
+            "bir basketbol topunu Güneş kabul",
+            "edersek,"
+          ]
+        ]
+      },
+      {
+        "id": "earth-size",
+        "at": {
+          "word": 22,
+          "text": "Dünya’nın"
+        },
+        "until": {
+          "word": 33,
+          "text": "toplu"
+        },
+        "information": "Dünya yalnızca 2,2 mm",
+        "visual": "Gerçek konumundaki Dünya yüzeyine ayrıntı kesmesi.",
+        "camera": "Mikroskobik yörünge; cisim büyütülmez.",
+        "animation": "Aynı 24 cm ölçeğinin fiziksel küçük Dünya modeli.",
+        "effects": [
+          {
+            "sound": "detail",
+            "durationFrames": 38,
+            "gain": 0.55,
+            "frame": 357
+          }
+        ],
+        "from": 357,
+        "to": 528,
+        "captions": [
+          [
+            "Dünya’nın çapı sadece"
+          ],
+          [
+            "2 milimetreyi biraz geçerdi."
+          ],
+          [
+            "Yani neredeyse küçük bir"
+          ]
+        ]
+      },
+      {
+        "id": "pin",
+        "at": {
+          "word": 33,
+          "text": "toplu"
+        },
+        "until": {
+          "word": 37,
+          "text": "Ama"
+        },
+        "information": "Toplu iğne başı kadar",
+        "visual": "Dünya altındaki ince metal iğneye doğru yaklaşma.",
+        "camera": "2 mm ölçeğinde yan açı.",
+        "animation": "Yavaş yüzey dönüşü.",
+        "effects": [
+          {
+            "sound": "click",
+            "durationFrames": 12,
+            "gain": 0.45,
+            "frame": 528
+          }
+        ],
+        "from": 528,
+        "to": 586,
+        "captions": [
+          [
+            "toplu iğne başı kadar."
+          ]
+        ]
+      },
+      {
+        "id": "distance-shock",
+        "at": {
+          "word": 37,
+          "text": "Ama"
+        },
+        "until": {
+          "word": 44,
+          "text": "Bu"
+        },
+        "information": "Boyuttan uzaklığa",
+        "visual": "Milimetrelik Dünya çekiminden bütün sokağı açığa çıkaran logaritmik geri çekilme.",
+        "camera": "2 saniyede makrodan sokak ölçeğine.",
+        "animation": "Çevre tek mekânda belirir.",
+        "effects": [
+          {
+            "sound": "launch",
+            "durationFrames": 75,
+            "gain": 1.0,
+            "frame": 586
+          }
+        ],
+        "from": 586,
+        "to": 691,
+        "captions": [
+          [
+            "Ama asıl şaşırtıcı olan"
+          ],
+          [
+            "boyutu değil, uzaklığı."
+          ]
+        ]
+      },
+      {
+        "id": "street",
+        "at": {
+          "word": 44,
+          "text": "Bu"
+        },
+        "until": {
+          "word": 49,
+          "text": "yaklaşık"
+        },
+        "information": "Dünya sokakta",
+        "visual": "Güneş başlangıcından Dünya yönüne sokak boyunca ilerleme.",
+        "camera": "Yere yakın ileri dolly; cephelerde derin paralaks.",
+        "animation": "Merkezden merkeze gerçek doğrusal mesafe.",
+        "effects": [
+          {
+            "sound": "travel",
+            "durationFrames": 66,
+            "gain": 0.75,
+            "frame": 691
+          }
+        ],
+        "from": 691,
+        "to": 768,
+        "captions": [
+          [
+            "Bu ölçekte Dünya, basketbol",
+            "topundan"
+          ]
+        ]
+      },
+      {
+        "id": "earth-distance",
+        "at": {
+          "word": 49,
+          "text": "yaklaşık"
+        },
+        "until": {
+          "word": 59,
+          "text": "sokağın"
+        },
+        "information": "25,8 metre ≈ 26 metre",
+        "visual": "Sokağın öbür yanında küçük model durağı.",
+        "camera": "Hızını azaltan ileri hareket.",
+        "animation": "Ölçü gerçek dünya birimlerinden hesaplanır.",
+        "effects": [
+          {
+            "sound": "arrival",
+            "durationFrames": 40,
+            "gain": 0.85,
+            "frame": 768
+          }
+        ],
+        "from": 768,
+        "to": 903,
+        "captions": [
+          [
+            "Bu ölçekte Dünya, basketbol",
+            "topundan"
+          ],
+          [
+            "yaklaşık 26 metre uzakta olurdu."
+          ],
+          [
+            "Yani aynı odada değil,"
+          ]
+        ]
+      },
+      {
+        "id": "arrival",
+        "at": {
+          "word": 59,
+          "text": "sokağın"
+        },
+        "until": {
+          "word": 65,
+          "text": "Ay"
+        },
+        "information": "Aynı oda yetmiyor",
+        "visual": "Sokak üstündeki Dünya durağına yaklaşma.",
+        "camera": "Yakın plana fiziksel kamera geçişi.",
+        "animation": "Dünya yerinden oynamaz.",
+        "effects": [
+          {
+            "sound": "detail",
+            "durationFrames": 48,
+            "gain": 0.55,
+            "frame": 903
+          }
+        ],
+        "from": 903,
+        "to": 994,
+        "captions": [
+          [
+            "sokağın karşı tarafına yakın bir",
+            "mesafede."
+          ]
+        ]
+      },
+      {
+        "id": "moon",
+        "at": {
+          "word": 65,
+          "text": "Ay"
+        },
+        "until": {
+          "word": 69,
+          "text": "altı"
+        },
+        "information": "Ay ve Dünya",
+        "visual": "Gerçek çaplı Dünya ve Ay aynı fiziksel sahnede.",
+        "camera": "Dünya makrosundan çiftin ortasına çekilme.",
+        "animation": "Çaplar ve aralık aynı metre koordinatları.",
+        "effects": [
+          {
+            "sound": "orbit",
+            "durationFrames": 60,
+            "gain": 0.6,
+            "frame": 994
+          }
+        ],
+        "from": 994,
+        "to": 1047,
+        "captions": [
+          [
+            "Ay ise Dünya’dan yalnızca"
+          ]
+        ]
+      },
+      {
+        "id": "moon-range",
+        "at": {
+          "word": 69,
+          "text": "altı"
+        },
+        "until": {
+          "word": 75,
+          "text": "yarım"
+        },
+        "information": "6,6 santimetre",
+        "visual": "İki küçük cisim tek kadrajda; aradaki boşluğa yer açılır.",
+        "camera": "Çift etrafında hafif yay çizme.",
+        "animation": "6,6 cm merkez aralığı korunur.",
+        "effects": [
+          {
+            "sound": "click",
+            "durationFrames": 18,
+            "gain": 0.4,
+            "frame": 1047
+          }
+        ],
+        "from": 1047,
+        "to": 1122,
+        "captions": [
+          [
+            "Ay ise Dünya’dan yalnızca"
+          ],
+          [
+            "6-7 santimetre uzakta duran,"
+          ]
+        ]
+      },
+      {
+        "id": "moon-size",
+        "at": {
+          "word": 75,
+          "text": "yarım"
+        },
+        "until": {
+          "word": 82,
+          "text": "Jüpiter"
+        },
+        "information": "Ay çapı 0,6 mm",
+        "visual": "Ayın yüzeyine ayrıntı kesmesi, ardından çiftin ölçeğine dönüş.",
+        "camera": "Fiziksel makro; görünüm açıkça yakın plan.",
+        "animation": "Cisim çapı değiştirilmez.",
+        "effects": [
+          {
+            "sound": "detail",
+            "durationFrames": 36,
+            "gain": 0.5,
+            "frame": 1122
+          }
+        ],
+        "from": 1122,
+        "to": 1227,
+        "captions": [
+          [
+            "yarım milimetre civarında"
+          ],
+          [
+            "küçücük bir nokta olurdu."
+          ]
+        ]
+      },
+      {
+        "id": "jupiter",
+        "at": {
+          "word": 82,
+          "text": "Jüpiter"
+        },
+        "until": {
+          "word": 86,
+          "text": "iki"
+        },
+        "information": "Jüpiter bir bilye",
+        "visual": "Bulut bantlarıyla Jüpiterin gerçek 2,5 cm modeli.",
+        "camera": "Dairesel eşleşen kesme, sakin yörünge.",
+        "animation": "Mat gezegen dokusu ve kontrollü kenar ışığı.",
+        "effects": [
+          {
+            "sound": "impact",
+            "durationFrames": 55,
+            "gain": 0.85,
+            "frame": 1227
+          }
+        ],
+        "from": 1227,
+        "to": 1284,
+        "captions": [
+          [
+            "Jüpiter bu modelde yaklaşık"
+          ]
+        ]
+      },
+      {
+        "id": "jup-size",
+        "at": {
+          "word": 86,
+          "text": "iki"
+        },
+        "until": {
+          "word": 94,
+          "text": "Ama"
+        },
+        "information": "Yaklaşık 2,5 cm",
+        "visual": "Jüpiterin Büyük Kırmızı Lekesi kadrajdan geçer.",
+        "camera": "Yakından biraz geri çekilme.",
+        "animation": "Yüzey rotasyonu, tipografi ekran katmanında.",
+        "effects": [
+          {
+            "sound": "orbit",
+            "durationFrames": 38,
+            "gain": 0.45,
+            "frame": 1284
+          }
+        ],
+        "from": 1284,
+        "to": 1409,
+        "captions": [
+          [
+            "2,5 santimetrelik bir bilye gibi",
+            "görünürdü."
+          ]
+        ]
+      },
+      {
+        "id": "jup-road",
+        "at": {
+          "word": 94,
+          "text": "Ama"
+        },
+        "until": {
+          "word": 99,
+          "text": "yüz"
+        },
+        "information": "135 metre uzaklık",
+        "visual": "Dünya durağından Jüpitere sokağın içinden uçuş.",
+        "camera": "Öne hızlanan dolly, çevrede güçlü paralaks.",
+        "animation": "Tek matematiksel ölçek.",
+        "effects": [
+          {
+            "sound": "launch",
+            "durationFrames": 64,
+            "gain": 1.0,
+            "frame": 1409
+          }
+        ],
+        "from": 1409,
+        "to": 1482,
+        "captions": [
+          [
+            "Ama o bile Güneş’ten yaklaşık"
+          ]
+        ]
+      },
+      {
+        "id": "jup-stop",
+        "at": {
+          "word": 99,
+          "text": "yüz"
+        },
+        "until": {
+          "word": 105,
+          "text": "Neptün’e"
+        },
+        "information": "134–135 metre",
+        "visual": "Kamera Jüpiter durağının çevresine çıkar.",
+        "camera": "Dollyden yukarı süzülme.",
+        "animation": "Ortalama heliosentrik mesafe etiketi.",
+        "effects": [
+          {
+            "sound": "arrival",
+            "durationFrames": 45,
+            "gain": 0.9,
+            "frame": 1482
+          }
+        ],
+        "from": 1482,
+        "to": 1567,
+        "captions": [
+          [
+            "135 metre uzakta olurdu."
+          ]
+        ]
+      },
+      {
+        "id": "neptune",
+        "at": {
+          "word": 105,
+          "text": "Neptün’e"
+        },
+        "until": {
+          "word": 111,
+          "text": "O,"
+        },
+        "information": "Neptün",
+        "visual": "Mavi gezegene eşleşen yakın plan.",
+        "camera": "Fiziksel makro; doğru konum sabit.",
+        "animation": "Doğal mavi bulut dokusu.",
+        "effects": [
+          {
+            "sound": "impact",
+            "durationFrames": 52,
+            "gain": 0.8,
+            "frame": 1567
+          }
+        ],
+        "from": 1567,
+        "to": 1677,
+        "captions": [
+          [
+            "Neptün’e geldiğimizde işler"
+          ],
+          [
+            "daha da çılgınlaşıyor."
+          ]
+        ]
+      },
+      {
+        "id": "far-flight",
+        "at": {
+          "word": 111,
+          "text": "O,"
+        },
+        "until": {
+          "word": 115,
+          "text": "yedi"
+        },
+        "information": "Mahalle ölçeği",
+        "visual": "Yüzlerce metre uzunluğundaki cadde tek sürekli kamera hareketiyle geçilir.",
+        "camera": "Düşük sokak yüksekliğinden yükselerek ileri uçuş.",
+        "animation": "Güneş ve duraklar geride gerçek mesafede kalır.",
+        "effects": [
+          {
+            "sound": "launch",
+            "durationFrames": 80,
+            "gain": 1.05,
+            "frame": 1677
+          }
+        ],
+        "from": 1677,
+        "to": 1727,
+        "captions": [
+          [
+            "O, bu ölçekte yaklaşık"
+          ]
+        ]
+      },
+      {
+        "id": "neptune-range",
+        "at": {
+          "word": 115,
+          "text": "yedi"
+        },
+        "until": {
+          "word": 121,
+          "text": "Yani"
+        },
+        "information": "775–780 metre",
+        "visual": "Neptün durağının üstünde kamera yavaşlar.",
+        "camera": "Yükselme; yolun derinliği açık kalır.",
+        "animation": "Görsel durak işareti gezegen boyutu değildir.",
+        "effects": [
+          {
+            "sound": "arrival",
+            "durationFrames": 50,
+            "gain": 0.9,
+            "frame": 1727
+          }
+        ],
+        "from": 1727,
+        "to": 1824,
+        "captions": [
+          [
+            "780 metre uzağa yerleşirdi."
+          ]
+        ]
+      },
+      {
+        "id": "neighborhood",
+        "at": {
+          "word": 121,
+          "text": "Yani"
+        },
+        "until": {
+          "word": 130,
+          "text": "hâlâ"
+        },
+        "information": "Bir top, koca mahalle",
+        "visual": "Gece maketinin üstüne çıkış; bütün model bir arada.",
+        "camera": "Yaklaşık 800 m rotayı kapsayan yüksek yay.",
+        "animation": "Konum işaretleri ayrı açıklama katmanıdır.",
+        "effects": [
+          {
+            "sound": "reveal",
+            "durationFrames": 105,
+            "gain": 0.85,
+            "frame": 1824
+          }
+        ],
+        "from": 1824,
+        "to": 1948,
+        "captions": [
+          [
+            "Yani Güneş’i elinize alabilecek",
+            "kadar"
+          ],
+          [
+            "küçültseniz bile, Güneş Sistemi"
+          ]
+        ]
+      },
+      {
+        "id": "whole",
+        "at": {
+          "word": 130,
+          "text": "hâlâ"
+        },
+        "until": {
+          "word": 135,
+          "text": "Uzay"
+        },
+        "information": "Bir mahallenin tamamı",
+        "visual": "Güneş, Dünya, Jüpiter ve Neptün konumlarının bütünü.",
+        "camera": "Yavaşlayan kuş bakışı hareket.",
+        "animation": "Ortalama uzaklıklar doğrusal yerleşim; yörünge dizilişi değil.",
+        "effects": [
+          {
+            "sound": "bloom",
+            "durationFrames": 62,
+            "gain": 0.65,
+            "frame": 1948
+          }
+        ],
+        "from": 1948,
+        "to": 2025,
+        "captions": [
+          [
+            "hâlâ koca bir mahalleye yayılırdı."
+          ]
+        ]
+      },
+      {
+        "id": "quiet",
+        "at": {
+          "word": 135,
+          "text": "Uzay"
+        },
+        "until": {
+          "word": 139,
+          "text": "Aklın"
+        },
+        "information": "Uzay gerçekten büyük değil",
+        "visual": "Mahalle kadrajı kalır, ses tasarımı nefes alır.",
+        "camera": "Sakin yüksek kamera.",
+        "animation": "Yeni cisim ve metin yağmuru yok.",
+        "effects": [],
+        "from": 2025,
+        "to": 2092,
+        "captions": [
+          [
+            "Uzay gerçekten büyük değil."
+          ]
+        ]
+      },
+      {
+        "id": "final",
+        "at": {
+          "word": 139,
+          "text": "Aklın"
+        },
+        "until": "outro",
+        "information": "Aklın alıştığından çok daha büyük",
+        "visual": "Son cümle mahalle görüntüsü üzerinde; kanonik outrodan önce tamamlanır.",
+        "camera": "Hafif son yükseliş.",
+        "animation": "Sonuç gerçek konuşma sonundan sonra okunur.",
+        "effects": [
+          {
+            "sound": "final",
+            "durationFrames": 65,
+            "gain": 0.75,
+            "frame": 2092
+          }
+        ],
+        "from": 2092,
+        "to": 2182,
+        "captions": [
+          [
+            "Aklın alıştığından çok daha büyük."
+          ]
+        ]
+      }
+    ],
+    "speech": {
+      "onsetMs": 90.0,
+      "offsetMs": 71520.0,
+      "audioDurationMs": 72160.0,
+      "phrases": [
+        {
+          "id": 0,
+          "fromMs": 90.0,
+          "toMs": 2040.0,
+          "spoken": "Güneş’i bir basketbol topu kadar",
+          "pauseAfterMs": 20.0
+        },
+        {
+          "id": 1,
+          "fromMs": 2060.0,
+          "toMs": 4640.0,
+          "spoken": "küçültseydik, Dünya düşündüğünüzden",
+          "pauseAfterMs": 20.0
+        },
+        {
+          "id": 2,
+          "fromMs": 4660.0,
+          "toMs": 6150.0,
+          "spoken": "çok daha küçük görünürdü.",
+          "pauseAfterMs": 850.0
+        },
+        {
+          "id": 3,
+          "fromMs": 7000.0,
+          "toMs": 9080.0,
+          "spoken": "Yaklaşık yirmi dört santimetrelik",
+          "pauseAfterMs": 50.0
+        },
+        {
+          "id": 4,
+          "fromMs": 9130.0,
+          "toMs": 11560.0,
+          "spoken": "bir basketbol topunu Güneş kabul edersek,",
+          "pauseAfterMs": 370.0
+        },
+        {
+          "id": 5,
+          "fromMs": 11930.0,
+          "toMs": 13340.0,
+          "spoken": "Dünya’nın çapı sadece",
+          "pauseAfterMs": 20.0
+        },
+        {
+          "id": 6,
+          "fromMs": 13360.0,
+          "toMs": 15170.0,
+          "spoken": "iki milimetreyi biraz geçerdi.",
+          "pauseAfterMs": 680.0
+        },
+        {
+          "id": 7,
+          "fromMs": 15850.0,
+          "toMs": 17590.0,
+          "spoken": "Yani neredeyse küçük bir",
+          "pauseAfterMs": 10.0
+        },
+        {
+          "id": 8,
+          "fromMs": 17600.0,
+          "toMs": 18900.0,
+          "spoken": "toplu iğne başı kadar.",
+          "pauseAfterMs": 640.0
+        },
+        {
+          "id": 9,
+          "fromMs": 19540.0,
+          "toMs": 20980.0,
+          "spoken": "Ama asıl şaşırtıcı olan",
+          "pauseAfterMs": 0
+        },
+        {
+          "id": 10,
+          "fromMs": 20980.0,
+          "toMs": 22430.0,
+          "spoken": "boyutu değil, uzaklığı.",
+          "pauseAfterMs": 620.0
+        },
+        {
+          "id": 11,
+          "fromMs": 23050.0,
+          "toMs": 25620.0,
+          "spoken": "Bu ölçekte Dünya, basketbol topundan",
+          "pauseAfterMs": 0
+        },
+        {
+          "id": 12,
+          "fromMs": 25620.0,
+          "toMs": 27790.0,
+          "spoken": "yaklaşık yirmi altı metre uzakta olurdu.",
+          "pauseAfterMs": 630.0
+        },
+        {
+          "id": 13,
+          "fromMs": 28420.0,
+          "toMs": 29730.0,
+          "spoken": "Yani aynı odada değil,",
+          "pauseAfterMs": 370.0
+        },
+        {
+          "id": 14,
+          "fromMs": 30100.0,
+          "toMs": 32530.0,
+          "spoken": "sokağın karşı tarafına yakın bir mesafede.",
+          "pauseAfterMs": 610.0
+        },
+        {
+          "id": 15,
+          "fromMs": 33140.0,
+          "toMs": 34910.0,
+          "spoken": "Ay ise Dünya’dan yalnızca",
+          "pauseAfterMs": 10.0
+        },
+        {
+          "id": 16,
+          "fromMs": 34920.0,
+          "toMs": 37100.0,
+          "spoken": "altı ila yedi santimetre uzakta duran,",
+          "pauseAfterMs": 320.0
+        },
+        {
+          "id": 17,
+          "fromMs": 37420.0,
+          "toMs": 38870.0,
+          "spoken": "yarım milimetre civarında",
+          "pauseAfterMs": 30.0
+        },
+        {
+          "id": 18,
+          "fromMs": 38900.0,
+          "toMs": 40260.0,
+          "spoken": "küçücük bir nokta olurdu.",
+          "pauseAfterMs": 640.0
+        },
+        {
+          "id": 19,
+          "fromMs": 40900.0,
+          "toMs": 42660.0,
+          "spoken": "Jüpiter bu modelde yaklaşık",
+          "pauseAfterMs": 150.0
+        },
+        {
+          "id": 20,
+          "fromMs": 42810.0,
+          "toMs": 46350.0,
+          "spoken": "iki virgül beş santimetrelik bir bilye gibi görünürdü.",
+          "pauseAfterMs": 640.0
+        },
+        {
+          "id": 21,
+          "fromMs": 46990.0,
+          "toMs": 49360.0,
+          "spoken": "Ama o bile Güneş’ten yaklaşık",
+          "pauseAfterMs": 70.0
+        },
+        {
+          "id": 22,
+          "fromMs": 49430.0,
+          "toMs": 51660.0,
+          "spoken": "yüz otuz beş metre uzakta olurdu.",
+          "pauseAfterMs": 580.0
+        },
+        {
+          "id": 23,
+          "fromMs": 52240.0,
+          "toMs": 53900.0,
+          "spoken": "Neptün’e geldiğimizde işler",
+          "pauseAfterMs": 170.0
+        },
+        {
+          "id": 24,
+          "fromMs": 54070.0,
+          "toMs": 55300.0,
+          "spoken": "daha da çılgınlaşıyor.",
+          "pauseAfterMs": 610.0
+        },
+        {
+          "id": 25,
+          "fromMs": 55910.0,
+          "toMs": 57520.0,
+          "spoken": "O, bu ölçekte yaklaşık",
+          "pauseAfterMs": 70.0
+        },
+        {
+          "id": 26,
+          "fromMs": 57590.0,
+          "toMs": 60210.0,
+          "spoken": "yedi yüz seksen metre uzağa yerleşirdi.",
+          "pauseAfterMs": 590.0
+        },
+        {
+          "id": 27,
+          "fromMs": 60800.0,
+          "toMs": 62730.0,
+          "spoken": "Yani Güneş’i elinize alabilecek kadar",
+          "pauseAfterMs": 30.0
+        },
+        {
+          "id": 28,
+          "fromMs": 62760.0,
+          "toMs": 64800.0,
+          "spoken": "küçültseniz bile, Güneş Sistemi",
+          "pauseAfterMs": 150.0
+        },
+        {
+          "id": 29,
+          "fromMs": 64950.0,
+          "toMs": 66880.0,
+          "spoken": "hâlâ koca bir mahalleye yayılırdı.",
+          "pauseAfterMs": 640.0
+        },
+        {
+          "id": 30,
+          "fromMs": 67520.0,
+          "toMs": 69090.0,
+          "spoken": "Uzay gerçekten büyük değil.",
+          "pauseAfterMs": 660.0
+        },
+        {
+          "id": 31,
+          "fromMs": 69750.0,
+          "toMs": 71520.0,
+          "spoken": "Aklın alıştığından çok daha büyük.",
+          "pauseAfterMs": 0
+        }
+      ],
+      "listeningVerified": false
+    }
+  }
+}

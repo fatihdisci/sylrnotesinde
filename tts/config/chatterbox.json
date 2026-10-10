@@ -1,0 +1,35 @@
+{
+  "model": "chatterbox-multilingual-v3",
+  "repository": "https://github.com/resemble-ai/chatterbox",
+  "codeRevision": "5de7a54aa4e5e2baadb0182dde554908b48b85c2",
+  "modelRepository": "ResembleAI/chatterbox",
+  "modelRevision": "5bb1f6ee58e50c3b8d408bc82a6d3740c2db6e18",
+  "checkpoint": "v3",
+  "python": "3.11.15",
+  "device": "cpu",
+  "threads": 4,
+  "language": "tr",
+  "voice": "project-turkish-M1-reference",
+  "seed": 42,
+  "settings": {
+    "exaggeration": 0.35,
+    "cfg_weight": 0.3,
+    "temperature": 0.7,
+    "repetition_penalty": 1.2,
+    "min_p": 0.05,
+    "top_p": 1.0
+  },
+  "files": [
+    "ve.pt",
+    "t3_mtl23ls_v3.safetensors",
+    "s3gen.pt",
+    "grapheme_mtl_merged_expanded_v1.json",
+    "conds.pt",
+    "Cangjie5_TC.json",
+    "README.md"
+  ],
+  "license": "MIT",
+  "activeNarratorChanged": false,
+  "reference": "tts/voices/chatterbox/m1-turkish-reference.flac",
+  "referenceSha256": "c690e9da6794cec6581336b3ca13e65deb9b613c5826000653bdc4e152fc7afa"
+}

@@ -162,4 +162,7 @@ def build(id='solar-basketball'):
  report={'schemaVersion':2,'method':'original-solar-melodic-score-v5','timbre':'rounded bells;88 BPM warm keys,eight-bar melody,open chords,syncopated bass and soft tonal groove; zero noise generators','rhythm':{'bpm':88,'meter':'4/4','originalComposition':True,'key':'D major','form':'eight-bar theme; introduction,answer,development,spacious resolution','harmony':['Dmaj9','Bm9','Gmaj9','Asus4-A'],'noiseGenerators':0},'seed':42,'sampleRate':RATE,'channels':2,'directionHash':sha(json.dumps(m['direction'],sort_keys=True).encode()),'audioHash':d['bindings']['audioHash'],'stemSha256':sha((dest/'sfx-stem.wav').read_bytes()),'musicStemSha256':sha((dest/'ambient-stem.wav').read_bytes()),'mixSha256':sha((dest/'mix.wav').read_bytes()),'musicFile':'ambient-stem.wav','narrationRenderGain':levels['narration'],'renderGain':levels['effects'],'musicRenderGain':levels['music'],'mixLevels':levels,'events':events,'ducking':duck,'musicDucking':music_duck,'predictedMixPeak':float(np.max(np.abs(final))),'externalSamples':False,'humanListeningPerformed':False,'license':'Original project synthesis; no third-party samples. Cinematic effects do not represent sound propagation in space.'}
  write(dest/'sound-design.json',report);export(id)
  print(json.dumps({k:report[k] for k in ['ducking','musicDucking','predictedMixPeak']},indent=2))
-if __name__=='__main__':build()
+if __name__=='__main__':
+ import argparse
+ parser=argparse.ArgumentParser(description=__doc__);parser.add_argument('--id',default='solar-basketball')
+ build(parser.parse_args().id)

@@ -28,3 +28,5 @@ Yeni bölüm görevine başlamadan önce sırasıyla `docs/DESIGN_SYSTEM.md`, `d
 - Ses tercihi: görsel olaylarla senkron, yumuşak tonal blink/bip sesleri kullan. Hışırtılı noise katmanlarını ve gürültülü whoosh efektlerini varsayılan ses tasarımı yapma; anlatımı koru.
 
 - Kalıcı ses tercihi: anlatıcı miksin önüne aşırı çıkmaz; belirgin yumuşak blink/bip efektleri ve hoş, hafif ritmik müzik duyulur. Yeni bölümlerde `docs/AUDIO_STYLE.md` oku ve bu dengeyle başla; kullanıcıya her bölümde yeniden söyletme.
+
+- Güncel açık kullanıcı isteği: Chatterbox Multilingual V3 ayrı `tts/environments/chatterbox` / `tts/models/chatterbox` içinde kuruldu. İsteğe bağlı `npm run tts:chatterbox:setup` ve `npm run tts:chatterbox` kullan; varsayılan M1 seçimini değiştirme. `solar-basketball-chatterbox-tr` yeni sesle yeniden hizalanmış ayrı adaydır; eski güneş videosu/testlerini ezme. Kurulum ve Türkçe-only çevrimdışı uyumluluk notları `tts/docs/CHATTERBOX.md` içinde.

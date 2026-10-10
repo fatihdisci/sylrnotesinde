@@ -47,3 +47,12 @@ public/episodes/solar-basketball/mix.wav
 
 # Local voice-treatment experiments (WAV intermediates).
 renders/experiments/
+
+# Chatterbox alternative episode intermediates (deliveries remain tracked).
+renders/episodes/solar-basketball-chatterbox/
+public/episodes/solar-basketball-chatterbox/ambient-stem.wav
+public/episodes/solar-basketball-chatterbox/mix.wav
+
+renders/episodes/solar-basketball-chatterbox-tr/
+public/episodes/solar-basketball-chatterbox-tr/ambient-stem.wav
+public/episodes/solar-basketball-chatterbox-tr/mix.wav
