@@ -8,6 +8,7 @@ import type {Episode} from '../types';
 import {SolarWorld} from './World';
 import {anchor,cameraPose,phase} from './camera';
 import {positions} from './model';
+import mixLevels from './audio-mix.json';
 const ink=colors.foreground;
 const WideMarkers=({f,episode}:{f:number;episode:Episode})=>{
  const pose=cameraPose(f,episode);const camera=new THREE.PerspectiveCamera(pose.fov,1080/1920,.00001,2800);camera.position.set(...pose.eye);camera.lookAt(...pose.target);camera.updateMatrixWorld();
@@ -81,9 +82,9 @@ export const SolarBasketball=({episode,hideCaptions=false,debug=false}:{episode:
  return <AbsoluteFill>
   <Sequence durationInFrames={outro}>
    <SolarFrame f={f} episode={episode} hideCaptions={hideCaptions} debug={debug}/>
-   <Html5Audio src={staticFile(episode.narration[0].path)} volume={.9}/>
-   {episode.audio.sfxPath&&<Html5Audio src={staticFile(episode.audio.sfxPath)} volume={.6}/>}
-   {episode.audio.musicPath&&<Html5Audio src={staticFile(episode.audio.musicPath)} volume={.12}/>}
+   <Html5Audio src={staticFile(episode.narration[0].path)} volume={mixLevels.narration}/>
+   {episode.audio.sfxPath&&<Html5Audio src={staticFile(episode.audio.sfxPath)} volume={mixLevels.effects}/>}
+   {episode.audio.musicPath&&<Html5Audio src={staticFile(episode.audio.musicPath)} volume={mixLevels.music}/>}
   </Sequence>
   <Sequence from={outro} durationInFrames={45}><Outro/>{debug&&<LayoutProbe/>}</Sequence>
  </AbsoluteFill>;

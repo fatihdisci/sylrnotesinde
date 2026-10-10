@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "method": "original-solar-tonal-score-v2",
+  "method": "original-solar-tonal-score-v3-balanced",
   "timbre": "rounded sine bells and quiet consonant pad; zero noise generators",
   "seed": 42,
   "sampleRate": 48000,
@@ -9,10 +9,16 @@
   "audioHash": "0644d1ad27451ea748d914ea77ef0f2883c2606cf879a284e3e42ec9f96010b2",
   "stemSha256": "7ce780734561a4791b3ae82ec0f5c96574b2fc02d3ca685ae0e2a92fcdd4a782",
   "musicStemSha256": "84f6d19a486cf40e7d2104938c1f5abf4141876a5b901ee5b3064201bf8dc8db",
-  "mixSha256": "c65cf0289ed0790baacc7e1ab59049095d4aef20923eb98819ab1ddcc0ceba7e",
+  "mixSha256": "f3fbd865d0237175c17a7a56b0c5b9e6dd5ec388dc16691b2e954998de6701d1",
   "musicFile": "ambient-stem.wav",
-  "renderGain": 0.6,
-  "musicRenderGain": 0.12,
+  "narrationRenderGain": 0.72,
+  "renderGain": 0.75,
+  "musicRenderGain": 0.17,
+  "mixLevels": {
+    "narration": 0.72,
+    "effects": 0.75,
+    "music": 0.17
+  },
   "events": [
     {
       "sound": "bloom",
@@ -201,7 +207,7 @@
     "p95EffectToVoiceDb": -19.1721462968355,
     "source": "actual narration WAV 10ms RMS"
   },
-  "predictedMixPeak": 0.723565166616242,
+  "predictedMixPeak": 0.5873562595905555,
   "externalSamples": false,
   "humanListeningPerformed": false,
   "license": "Original project synthesis; no third-party samples. Cinematic effects do not represent sound propagation in space."

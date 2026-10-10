@@ -53,6 +53,8 @@ def sidechain(voice,stem,ratio):
 def build(id='solar-basketball'):
  _,dest=paths(id);m=read(dest/'narration-manifest.json');d=read(dest/'word-timings.json')
  voice,rate=sf.read(dest/'narration.wav');assert rate==RATE and voice.ndim==1
+ levels=read(ROOT/f'src/episodes/{id}/audio-mix.json')
+ if any(not 0<float(levels[k])<=1 for k in ['narration','effects','music']):raise ValueError('Invalid mix levels')
  n=m['timeline']['outroFromFrame']*1600;v=np.pad(voice*.9,(0,n-len(voice)))
  sfx=np.zeros((n,2));events=[]
  for event in m['direction']['events']:
@@ -74,18 +76,20 @@ def build(id='solar-basketball'):
  fade_in=np.minimum(1,t/1.8);fade_out=np.minimum(1,(n/RATE-t)/1.15)
  music*=(fade_in*fade_out)[:,None]
  sfx*=np.minimum(1,(n/RATE-t)/.15)[:,None]
+ # Preserve the existing tonal shapes and ducking; apply the reviewed balance.
+ sfx*=levels['effects']/.6;music*=levels['music']/.12;v*=levels['narration']/.9
  mix=v[:,None]+sfx+music
  peak=np.max(np.abs(mix))
  if peak>.89:
   factor=(.89-np.max(np.abs(v)))/max(1e-9,np.max(np.abs(sfx+music)))
   factor=max(.01,min(1,factor));sfx*=factor;music*=factor;mix=v[:,None]+sfx+music
- sf.write(dest/'sfx-stem.wav',sfx/.6,RATE,subtype='PCM_24')
- sf.write(dest/'ambient-stem.wav',music/.12,RATE,subtype='PCM_24')
+ sf.write(dest/'sfx-stem.wav',sfx/levels['effects'],RATE,subtype='PCM_24')
+ sf.write(dest/'ambient-stem.wav',music/levels['music'],RATE,subtype='PCM_24')
  closing,_=sf.read(ROOT/'public/audio/brand/closing.wav')
  if closing.ndim==1:closing=np.column_stack([closing,closing])
  final=np.concatenate([mix,closing],axis=0)
  sf.write(dest/'mix.wav',final,RATE,subtype='PCM_24')
- report={'schemaVersion':2,'method':'original-solar-tonal-score-v2','timbre':'rounded sine bells and quiet consonant pad; zero noise generators','seed':42,'sampleRate':RATE,'channels':2,'directionHash':sha(json.dumps(m['direction'],sort_keys=True).encode()),'audioHash':d['bindings']['audioHash'],'stemSha256':sha((dest/'sfx-stem.wav').read_bytes()),'musicStemSha256':sha((dest/'ambient-stem.wav').read_bytes()),'mixSha256':sha((dest/'mix.wav').read_bytes()),'musicFile':'ambient-stem.wav','renderGain':.6,'musicRenderGain':.12,'events':events,'ducking':duck,'musicDucking':music_duck,'predictedMixPeak':float(np.max(np.abs(final))),'externalSamples':False,'humanListeningPerformed':False,'license':'Original project synthesis; no third-party samples. Cinematic effects do not represent sound propagation in space.'}
+ report={'schemaVersion':2,'method':'original-solar-tonal-score-v3-balanced','timbre':'rounded sine bells and quiet consonant pad; zero noise generators','seed':42,'sampleRate':RATE,'channels':2,'directionHash':sha(json.dumps(m['direction'],sort_keys=True).encode()),'audioHash':d['bindings']['audioHash'],'stemSha256':sha((dest/'sfx-stem.wav').read_bytes()),'musicStemSha256':sha((dest/'ambient-stem.wav').read_bytes()),'mixSha256':sha((dest/'mix.wav').read_bytes()),'musicFile':'ambient-stem.wav','narrationRenderGain':levels['narration'],'renderGain':levels['effects'],'musicRenderGain':levels['music'],'mixLevels':levels,'events':events,'ducking':duck,'musicDucking':music_duck,'predictedMixPeak':float(np.max(np.abs(final))),'externalSamples':False,'humanListeningPerformed':False,'license':'Original project synthesis; no third-party samples. Cinematic effects do not represent sound propagation in space.'}
  write(dest/'sound-design.json',report);export(id)
  print(json.dumps({k:report[k] for k in ['ducking','musicDucking','predictedMixPeak']},indent=2))
 if __name__=='__main__':build()

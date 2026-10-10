@@ -1,6 +1,6 @@
 {
   "video": "deliveries/solar-basketball/gunes-basketbol.mp4",
-  "videoSha256": "7949bd1eef8db550a03ae0171bc26526c96a5aca3ccd6f56ad8d0dfc613d727c",
+  "videoSha256": "6ff1fdb32a0677ad520dc03a7443b9bec569ca937e0db74cd5b3f77089b5f00e",
   "actualMp4FramesVisuallyInspected": [
     13,
     89,
@@ -334,10 +334,22 @@
     "candidateReviewMethod": "Representative frames per dark/small-geometry interval plus before/at/after all four detected large cuts; static visual review, no human audio listening"
   },
   "pictureStreamComparison": {
+    "identical": true,
     "previousVideoStream": "SHA256=0c79ec286dd41ea2c4db319da9c9db3ad65e361872753632a8b5f0db9d945cdd",
     "currentVideoStream": "SHA256=0c79ec286dd41ea2c4db319da9c9db3ad65e361872753632a8b5f0db9d945cdd",
-    "identical": true
+    "layoutProbesReused": 135,
+    "basis": "The entire encoded picture stream is byte-identical to the visually inspected previous delivery."
   },
   "subtitleAdjacentNotesRemovedAtProbes": 135,
-  "soundRevision": "original-solar-tonal-score-v2"
+  "soundRevision": "original-solar-tonal-score-v3-balanced",
+  "mixLevels": {
+    "narration": 0.72,
+    "effects": 0.75,
+    "music": 0.17
+  },
+  "mixChangeDb": {
+    "narration": -1.938200260161129,
+    "effects": 1.9382002601611283,
+    "music": 3.0253535066129826
+  }
 }

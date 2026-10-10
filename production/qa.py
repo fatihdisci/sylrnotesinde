@@ -25,9 +25,9 @@ def main():
     offset=manifest['narration'][0]['from']*1600
     # Remove the known, synchronised score for the voice-only diagnostic, while
     # independently correlating the full rendered mix below. Keep the same thresholds.
-    accompaniment=np.zeros(len(encoded))
+    accompaniment=np.zeros(len(encoded));narration_gain=.9
     if manifest.get('direction'):
-        score=read(dest/'sound-design.json')
+        score=read(dest/'sound-design.json');narration_gain=score.get('narrationRenderGain',.9)
         for file,gain in [('sfx-stem.wav',score['renderGain'])]+([(score['musicFile'],score['musicRenderGain'])] if score.get('musicStemSha256') else []):
             stem=pcm(dest/file)*gain
             accompaniment[:len(stem)]+=stem
@@ -35,7 +35,7 @@ def main():
     samples=[]
     for label,index in [('start',0),('middle',len(data['words'])//2),('end',len(data['words'])-3)]:
         start=max(0,round(data['words'][index]['startMs']*48)-3840);stop=min(len(source),start+48000)
-        lag,corr=correlate(source[start:stop]*.9,isolated,offset+start)
+        lag,corr=correlate(source[start:stop]*narration_gain,isolated,offset+start)
         assert abs(lag)<=1000/30 and corr>.95,(label,lag,corr)
         samples.append({'position':label,'sourceFromMs':start/48,'lagMs':lag,'correlation':corr})
     drift=max(s['lagMs'] for s in samples)-min(s['lagMs'] for s in samples);assert drift<=1000/30
@@ -78,7 +78,7 @@ def main():
     result['rhythm']=inspect_rhythm(frames_rgb[:outro],encoded[:outro*1600],annotations=data['script'].get('intentionalPauses',[]))
     if manifest.get('direction'):
         score=read(dest/'sound-design.json');stem=pcm(dest/'sfx-stem.wav')*score['renderGain']
-        mix=np.zeros(outro*1600);mix[offset:offset+len(source)]+=source*.9;mix[:len(stem)]+=stem
+        mix=np.zeros(outro*1600);mix[offset:offset+len(source)]+=source*narration_gain;mix[:len(stem)]+=stem
         if score.get('musicStemSha256'):
             music=pcm(dest/score['musicFile'])*score['musicRenderGain'];mix[:len(music)]+=music
         mix_samples=[]
