@@ -96,6 +96,9 @@ def verify_current(id,release=False):
         if not manifest['audio'].get('sfxPath'):raise ValueError('Build the sound stem with episode:sound before rendering')
         score=read(dest/'sound-design.json')
         if manifest['audio'].get('soundDesignHash')!=sha((dest/'sound-design.json').read_bytes()) or score['stemSha256']!=sha((dest/'sfx-stem.wav').read_bytes()):raise ValueError('STALE sound stem')
+        if score.get('musicStemSha256'):
+            music=dest/score['musicFile']
+            if not music.is_file() or sha(music.read_bytes())!=score['musicStemSha256'] or manifest['audio'].get('musicPath')!=f'episodes/{id}/{music.name}':raise ValueError('STALE music stem')
     errors=word_errors(data)
     if errors:raise ValueError('; '.join(errors))
     if release and any(not gap.get('reviewed') for gap in data.get('unexplainedSpeechGaps',[])):raise ValueError('PUBLICATION BLOCKED: unexplained speech gaps')
@@ -141,6 +144,8 @@ def export(id):
             score=read(sound)
             if score['directionHash']==sha(json.dumps(episode['direction'],sort_keys=True).encode()) and score['audioHash']==data['bindings']['audioHash']:
                 episode['audio'].update(sfxPath=f'episodes/{id}/sfx-stem.wav',soundDesignHash=sha(sound.read_bytes()))
+                if score.get('musicStemSha256'):
+                    episode['audio']['musicPath']=f'episodes/{id}/{score["musicFile"]}'
     write(dest/'narration-manifest.json',episode)
     print(f'Exported {len(data["words"])} words / {len(cues)} cues; {t["durationInFrames"]}/30s; review={data["review"]["status"]}',flush=True)
     return episode

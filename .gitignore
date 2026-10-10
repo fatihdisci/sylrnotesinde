@@ -39,3 +39,8 @@ public/episodes/*/sfx-stem.wav
 
 # Isolated creative candidate masters / controls
 renders/episodes/seconds-sculpture/
+
+# Solar film local masters and procedural score (reproducible).
+renders/episodes/solar-basketball/
+public/episodes/solar-basketball/ambient-stem.wav
+public/episodes/solar-basketball/mix.wav

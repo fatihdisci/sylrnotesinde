@@ -12,7 +12,12 @@ def main():
     if args.episodes:
         import re
         if any(not re.fullmatch('[a-z0-9]+(?:-[a-z0-9]+)*',id) for id in args.episodes):raise ValueError('Invalid episode ID')
-        catalog={'records':[{'model':'supertonic-3','voice':'M1','test':id,'variant':'episode','rawPath':f'outputs/episodes/{id}/narration.wav','listeningPath':f'../public/episodes/{id}/narration.wav','nativeSampleRate':44100} for id in args.episodes]}
+        records=[]
+        for id in args.episodes:
+            metadata=ROOT/f'outputs/episodes/{id}/narration.json'
+            generated=json.loads(metadata.read_text()) if metadata.exists() else {'model':'supertonic-3','voice':'M1','nativeSampleRate':44100}
+            records.append({**{k:generated[k] for k in ['model','voice','nativeSampleRate']},'test':id,'variant':'episode','rawPath':f'outputs/episodes/{id}/narration.wav','listeningPath':f'../public/episodes/{id}/narration.wav'})
+        catalog={'records':records}
     else:catalog=json.loads((ROOT/'config/catalog.json').read_text())
     checks=[];failures=[]
     for r in catalog['records']:

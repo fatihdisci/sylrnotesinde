@@ -23,7 +23,7 @@ execFileSync(process.execPath, ['--import', 'tsx', 'scripts/check-brand.ts'], {s
 const dir = `renders/episodes/${id}`;
 mkdirSync(dir, {recursive: true});
 const sourceFiles = (dir: string): string[] => readdirSync(dir).sort().flatMap(n => {const p = `${dir}/${n}`; return statSync(p).isDirectory() ? sourceFiles(p) : [p];});
-const sourceHash = createHash('sha256'); for (const file of [...sourceFiles('src'),...sourceFiles('public/audio')]) sourceHash.update(file).update(readFileSync(file));
+const sourceHash = createHash('sha256'); for (const file of [...sourceFiles('src'),...sourceFiles('public/audio'),...sourceFiles(`public/episodes/${id}`)]) sourceHash.update(file).update(readFileSync(file));
 const sceneSourceSha256 = sourceHash.digest('hex');
 const videoPath = `${dir}/${draft ? 'draft' : 'final'}.mp4`;
 const serveUrl = await bundle({entryPoint: resolve('src/index.ts')});

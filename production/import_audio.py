@@ -3,7 +3,7 @@ import json,subprocess,shutil
 from pathlib import Path
 from core import ROOT,sha,write
 
-def import_audio(source,dest,description,script=None):
+def import_audio(source,dest,description,script=None,generation=None):
     source=Path(source)
     if not source.is_file():raise ValueError('Audio input does not exist')
     probe=json.loads(subprocess.check_output(['ffprobe','-v','error','-show_streams','-show_format','-of','json',str(source)]))
@@ -18,6 +18,9 @@ def import_audio(source,dest,description,script=None):
     dest.mkdir(parents=True,exist_ok=True)
     subprocess.run(['ffmpeg','-y','-v','error','-nostdin','-i',str(source),'-map','0:a:0','-af',af,'-ar','48000','-ac','1','-c:a','pcm_s24le',str(dest/'narration.wav')],check=True)
     metadata={'provider':description['provider'],'voice':description.get('voice','user-supplied'),'sourceFilename':source.name,'sourceSha256':sha(source.read_bytes()),'sourceDurationSeconds':float(probe['format']['duration']),'processing':'two-pass loudnorm -20 LUFS / -2 dBTP; 48 kHz mono PCM24; original timing retained','synthesisPerformed':False,'humanListeningPerformed':False}
+    if generation is not None:
+        metadata.update(synthesisPerformed=True,localGeneration=generation)
+        write(dest/'tts-generation.json',generation)
     if script:
         shutil.copy2(script,dest/'script.txt')
         metadata.update(schemaVersion=2,archivePath=str(archive.relative_to(ROOT)),scriptSha256=sha((dest/'script.txt').read_bytes()))

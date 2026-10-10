@@ -23,10 +23,19 @@ def main():
     assert (stream['width'],stream['height'],stream['r_frame_rate'],int(stream['nb_read_frames']))==(1080,1920,'30/1',manifest['durationInFrames'])
     source=pcm(dest/'narration.wav');encoded=pcm(video);assert np.isfinite(encoded).all() and np.max(np.abs(encoded))<.99
     offset=manifest['narration'][0]['from']*1600
+    # Remove the known, synchronised score for the voice-only diagnostic, while
+    # independently correlating the full rendered mix below. Keep the same thresholds.
+    accompaniment=np.zeros(len(encoded))
+    if manifest.get('direction'):
+        score=read(dest/'sound-design.json')
+        for file,gain in [('sfx-stem.wav',score['renderGain'])]+([(score['musicFile'],score['musicRenderGain'])] if score.get('musicStemSha256') else []):
+            stem=pcm(dest/file)*gain
+            accompaniment[:len(stem)]+=stem
+    isolated=encoded-accompaniment
     samples=[]
     for label,index in [('start',0),('middle',len(data['words'])//2),('end',len(data['words'])-3)]:
         start=max(0,round(data['words'][index]['startMs']*48)-3840);stop=min(len(source),start+48000)
-        lag,corr=correlate(source[start:stop],encoded,offset+start)
+        lag,corr=correlate(source[start:stop]*.9,isolated,offset+start)
         assert abs(lag)<=1000/30 and corr>.95,(label,lag,corr)
         samples.append({'position':label,'sourceFromMs':start/48,'lagMs':lag,'correlation':corr})
     drift=max(s['lagMs'] for s in samples)-min(s['lagMs'] for s in samples);assert drift<=1000/30
@@ -70,6 +79,8 @@ def main():
     if manifest.get('direction'):
         score=read(dest/'sound-design.json');stem=pcm(dest/'sfx-stem.wav')*score['renderGain']
         mix=np.zeros(outro*1600);mix[offset:offset+len(source)]+=source*.9;mix[:len(stem)]+=stem
+        if score.get('musicStemSha256'):
+            music=pcm(dest/score['musicFile'])*score['musicRenderGain'];mix[:len(music)]+=music
         mix_samples=[]
         for event in manifest['direction']['events']:
             start=event['from']*1600;stop=min(len(mix),start+24000)
