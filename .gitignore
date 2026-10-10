@@ -56,3 +56,8 @@ public/episodes/solar-basketball-chatterbox/mix.wav
 renders/episodes/solar-basketball-chatterbox-tr/
 public/episodes/solar-basketball-chatterbox-tr/ambient-stem.wav
 public/episodes/solar-basketball-chatterbox-tr/mix.wav
+
+# User-supplied MiniMax solar film: local masters/stems, tracked MP4 delivery.
+renders/episodes/solar-basketball-minimax/
+public/episodes/solar-basketball-minimax/ambient-stem.wav
+public/episodes/solar-basketball-minimax/mix.wav

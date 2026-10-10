@@ -121,3 +121,5 @@ Kalıcı ses tercihleri: [AUDIO_STYLE.md](docs/AUDIO_STYLE.md). Yeni bölümlerd
 Chatterbox Multilingual V3 için isteğe bağlı, ayrı yerel kurulum: [kurulum/çevrimdışı kullanım ve ses seçimi](tts/docs/CHATTERBOX.md). `npm run tts:chatterbox:setup` mevcut M1/Antalia ortamlarını değiştirmez. Güneş filminin Chatterbox sürümü `solar-basketball-chatterbox-tr` kimliğiyle ayrı tutulur; eski teslimler korunur.
 
 Chatterbox Türkçe referanslı yeni film: [MP4](deliveries/solar-basketball-chatterbox-tr/gunes-basketbol-chatterbox-v3.mp4). [Gerçek QA ve dinleme bekleyen noktalar](docs/episodes/solar-basketball-chatterbox-tr/QA.md).
+
+Kullanıcının MiniMax Documentary Narrator kaydıyla yeniden zamanlanan Güneş filmi: [MP4](deliveries/solar-basketball-minimax/gunes-basketbol-minimax.mp4), [üretim notları](docs/episodes/solar-basketball-minimax/PRODUCTION.md).

@@ -1,0 +1,228 @@
+{
+  "schemaVersion": 2,
+  "method": "original-solar-melodic-score-v5",
+  "timbre": "rounded bells;88 BPM warm keys,eight-bar melody,open chords,syncopated bass and soft tonal groove; zero noise generators",
+  "rhythm": {
+    "bpm": 88,
+    "meter": "4/4",
+    "originalComposition": true,
+    "key": "D major",
+    "form": "eight-bar theme; introduction,answer,development,spacious resolution",
+    "harmony": [
+      "Dmaj9",
+      "Bm9",
+      "Gmaj9",
+      "Asus4-A"
+    ],
+    "noiseGenerators": 0
+  },
+  "seed": 42,
+  "sampleRate": 48000,
+  "channels": 2,
+  "directionHash": "3db5a46c6c293222211307342457caf01553bd2d00e4e6f3c2632c8b998a1cfb",
+  "audioHash": "88460f2aa68bea6e916f9c18edd51a8ba76d1f9417f31e72cbc3411c810ecc61",
+  "stemSha256": "0563287c5c34e18a35d882e833b5535ccc3988e2eedbc17bd641d0e51bec65ac",
+  "musicStemSha256": "7711f3716d62a142092f0f737d48faff5cf5d39bcba98753c8872fbb45f9eed0",
+  "mixSha256": "ac5e01a2b6319558a4d2433df77f9b6b19397bf15e3f9c86aa4cfd78cea8a23b",
+  "musicFile": "ambient-stem.wav",
+  "narrationRenderGain": 0.4,
+  "renderGain": 1.0,
+  "musicRenderGain": 0.17,
+  "mixLevels": {
+    "narration": 0.4,
+    "effects": 1.0,
+    "music": 0.17
+  },
+  "events": [
+    {
+      "sound": "bloom",
+      "durationFrames": 58,
+      "gain": 0.75,
+      "frame": 0,
+      "event": "sun",
+      "id": "sun-0"
+    },
+    {
+      "sound": "leather",
+      "durationFrames": 27,
+      "gain": 0.55,
+      "frame": 201,
+      "event": "ball-size",
+      "id": "ball-size-0"
+    },
+    {
+      "sound": "detail",
+      "durationFrames": 38,
+      "gain": 0.55,
+      "frame": 370,
+      "event": "earth-size",
+      "id": "earth-size-0"
+    },
+    {
+      "sound": "click",
+      "durationFrames": 12,
+      "gain": 0.45,
+      "frame": 545,
+      "event": "pin",
+      "id": "pin-0"
+    },
+    {
+      "sound": "launch",
+      "durationFrames": 75,
+      "gain": 1.0,
+      "frame": 603,
+      "event": "distance-shock",
+      "id": "distance-shock-0"
+    },
+    {
+      "sound": "travel",
+      "durationFrames": 66,
+      "gain": 0.75,
+      "frame": 718,
+      "event": "street",
+      "id": "street-0"
+    },
+    {
+      "sound": "arrival",
+      "durationFrames": 40,
+      "gain": 0.85,
+      "frame": 810,
+      "event": "earth-distance",
+      "id": "earth-distance-0"
+    },
+    {
+      "sound": "detail",
+      "durationFrames": 48,
+      "gain": 0.55,
+      "frame": 955,
+      "event": "arrival",
+      "id": "arrival-0"
+    },
+    {
+      "sound": "orbit",
+      "durationFrames": 60,
+      "gain": 0.6,
+      "frame": 1047,
+      "event": "moon",
+      "id": "moon-0"
+    },
+    {
+      "sound": "click",
+      "durationFrames": 18,
+      "gain": 0.4,
+      "frame": 1110,
+      "event": "moon-range",
+      "id": "moon-range-0"
+    },
+    {
+      "sound": "detail",
+      "durationFrames": 36,
+      "gain": 0.5,
+      "frame": 1201,
+      "event": "moon-size",
+      "id": "moon-size-0"
+    },
+    {
+      "sound": "impact",
+      "durationFrames": 55,
+      "gain": 0.85,
+      "frame": 1314,
+      "event": "jupiter",
+      "id": "jupiter-0"
+    },
+    {
+      "sound": "orbit",
+      "durationFrames": 38,
+      "gain": 0.45,
+      "frame": 1381,
+      "event": "jup-size",
+      "id": "jup-size-0"
+    },
+    {
+      "sound": "launch",
+      "durationFrames": 64,
+      "gain": 1.0,
+      "frame": 1487,
+      "event": "jup-road",
+      "id": "jup-road-0"
+    },
+    {
+      "sound": "arrival",
+      "durationFrames": 45,
+      "gain": 0.9,
+      "frame": 1552,
+      "event": "jup-stop",
+      "id": "jup-stop-0"
+    },
+    {
+      "sound": "impact",
+      "durationFrames": 52,
+      "gain": 0.8,
+      "frame": 1632,
+      "event": "neptune",
+      "id": "neptune-0"
+    },
+    {
+      "sound": "launch",
+      "durationFrames": 80,
+      "gain": 1.05,
+      "frame": 1751,
+      "event": "far-flight",
+      "id": "far-flight-0"
+    },
+    {
+      "sound": "arrival",
+      "durationFrames": 50,
+      "gain": 0.9,
+      "frame": 1812,
+      "event": "neptune-range",
+      "id": "neptune-range-0"
+    },
+    {
+      "sound": "reveal",
+      "durationFrames": 105,
+      "gain": 0.85,
+      "frame": 1903,
+      "event": "neighborhood",
+      "id": "neighborhood-0"
+    },
+    {
+      "sound": "bloom",
+      "durationFrames": 62,
+      "gain": 0.65,
+      "frame": 2058,
+      "event": "whole",
+      "id": "whole-0"
+    },
+    {
+      "sound": "final",
+      "durationFrames": 65,
+      "gain": 0.75,
+      "frame": 2207,
+      "event": "final",
+      "id": "final-0"
+    }
+  ],
+  "ducking": {
+    "lookaheadMs": 30,
+    "releaseMs": 180,
+    "speechRatioLimit": 0.32,
+    "minimumGain": 0.0890774042895582,
+    "medianEffectToVoiceDb": -24.94079934989243,
+    "p95EffectToVoiceDb": -11.140066574263944,
+    "source": "actual narration WAV 10ms RMS"
+  },
+  "musicDucking": {
+    "lookaheadMs": 30,
+    "releaseMs": 180,
+    "speechRatioLimit": 0.18,
+    "minimumGain": 0.09972829951698312,
+    "medianEffectToVoiceDb": -26.23545992498176,
+    "p95EffectToVoiceDb": -16.548913276747907,
+    "source": "actual narration WAV 10ms RMS"
+  },
+  "predictedMixPeak": 0.26396767830323703,
+  "externalSamples": false,
+  "humanListeningPerformed": false,
+  "license": "Original project synthesis; no third-party samples. Cinematic effects do not represent sound propagation in space."
+}

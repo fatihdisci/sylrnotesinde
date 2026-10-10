@@ -1,0 +1,13 @@
+{
+  "provider": "user:minimax",
+  "voice": "Documentary_Narrator",
+  "sourceFilename": "1-MiniMax_2026-10-10_20_01_03_Documentary_Narrator.mp3",
+  "sourceSha256": "9cbf7448aea585b2c08728ebe2d5148cb05e87df3ceb6e12bb5aea047f4e6bba",
+  "sourceDurationSeconds": 76.132676,
+  "processing": "two-pass loudnorm -20 LUFS / -2 dBTP; 48 kHz mono PCM24; original timing retained",
+  "synthesisPerformed": false,
+  "humanListeningPerformed": false,
+  "schemaVersion": 2,
+  "archivePath": "voice-sources/solar-basketball-minimax/original.mp3",
+  "scriptSha256": "27ca6c849724dfd788f65fce8961e52481284b3554b7eef7f53d9737ff534e87"
+}

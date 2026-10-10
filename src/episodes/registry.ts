@@ -1,3 +1,5 @@
+import solarMinimax from '../../public/episodes/solar-basketball-minimax/narration-manifest.json';
+import {SolarBasketballMinimax} from './solar-basketball-minimax/Scenes';
 import solarChatterbox from '../../public/episodes/solar-basketball-chatterbox-tr/narration-manifest.json';
 import {SolarBasketballChatterbox} from './solar-basketball-chatterbox-tr/Scenes';
 import solar from '../../public/episodes/solar-basketball/narration-manifest.json';
@@ -18,4 +20,4 @@ import {SecondsFilmMinimax} from './seconds-film-minimax/Scenes';
 import audioFirst from '../../public/episodes/seconds-audio-first/narration-manifest.json';
 import {SecondsAudioFirst} from './seconds-audio-first/Scenes';
 /** Add a new authored TSX scene here; render/QA scripts stay unchanged. */
-export const episodes = [{episode:solarChatterbox as Episode,component:SolarBasketballChatterbox},{episode:solar as Episode,component:SolarBasketball},{episode:sculpture as Episode,component:SecondsSculpture},{episode: prepared as Episode, component: ProductionCheck}, {episode: motion as Episode, component: MotionStudy}, {episode: film as Episode, component: SecondsFilm}, {episode: study15 as Episode, component: MotionStudy15}, {episode: minimax as Episode, component: SecondsFilmMinimax}, {episode:audioFirst as Episode,component:SecondsAudioFirst}];
+export const episodes = [{episode:solarMinimax as Episode,component:SolarBasketballMinimax},{episode:solarChatterbox as Episode,component:SolarBasketballChatterbox},{episode:solar as Episode,component:SolarBasketball},{episode:sculpture as Episode,component:SecondsSculpture},{episode: prepared as Episode, component: ProductionCheck}, {episode: motion as Episode, component: MotionStudy}, {episode: film as Episode, component: SecondsFilm}, {episode: study15 as Episode, component: MotionStudy15}, {episode: minimax as Episode, component: SecondsFilmMinimax}, {episode:audioFirst as Episode,component:SecondsAudioFirst}];
