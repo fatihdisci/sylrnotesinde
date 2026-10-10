@@ -115,3 +115,5 @@ npm run episode:qa -- --id solar-basketball --draft --gl angle
 ```
 
 Büyük WAV/model/venv/master dosyaları yereldir. Bu bölümün normal hız seçimi bölüm dosyasında kayıtlıdır; global M1 seçimi değişmez. `draft` tam kalite inceleme masterıdır; yapılmamış insan dinlemesi/onayı başarılı sayılmaz.
+
+Kalıcı ses tercihleri: [AUDIO_STYLE.md](docs/AUDIO_STYLE.md). Yeni bölümlerde daha sakin anlatıcı, belirgin tonal blink/bip efektleri ve hafif ritmik müzik dengesi varsayılandır.

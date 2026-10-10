@@ -5,11 +5,11 @@
   "narrationSha256": "0644d1ad27451ea748d914ea77ef0f2883c2606cf879a284e3e42ec9f96010b2",
   "events": 21,
   "sfxEnergyAbove4kHzRatio": 5.841046165685429e-10,
-  "predictedMixPeak": 0.6143776765017219,
-  "speechEffectRatioP95Db": -3.521825181113625,
+  "predictedMixPeak": 0.5233517422823616,
+  "speechEffectRatioP95Db": -1.9382002601611283,
   "humanListeningPerformed": false,
   "mixLevels": {
-    "narration": 0.72,
+    "narration": 0.6,
     "effects": 1.0,
     "music": 0.17
   },
@@ -20,5 +20,10 @@
     "originalComposition": true
   },
   "effectActiveMedianIncreaseDb": 4.175246093643368,
-  "musicMedianToVoiceDb": -22.01575298782746
+  "musicMedianToVoiceDb": -20.432128066874967,
+  "lastMixAdjustmentDb": {
+    "narration": -1.583624920952496,
+    "effects": 0,
+    "music": 0
+  }
 }

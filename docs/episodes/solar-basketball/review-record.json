@@ -1,6 +1,6 @@
 {
   "video": "deliveries/solar-basketball/gunes-basketbol.mp4",
-  "videoSha256": "5635c409316f6fb8f7af38ec8037229cbcb0b4af4fbae789c4b31a159d37c237",
+  "videoSha256": "0a615de604595fa76940496748085debcc1b7297125dbd750b862994cbfd756e",
   "actualMp4FramesVisuallyInspected": [
     13,
     89,
@@ -338,12 +338,12 @@
     "previousVideoStream": "SHA256=0c79ec286dd41ea2c4db319da9c9db3ad65e361872753632a8b5f0db9d945cdd",
     "currentVideoStream": "SHA256=0c79ec286dd41ea2c4db319da9c9db3ad65e361872753632a8b5f0db9d945cdd",
     "layoutProbesReused": 135,
-    "basis": "Encoded picture stream is byte-identical to the inspected previous delivery; audio-only revision."
+    "basis": "Audio-only revision; entire encoded picture stream matches the inspected delivery."
   },
   "subtitleAdjacentNotesRemovedAtProbes": 135,
   "soundRevision": "original-solar-rhythmic-score-v4",
   "mixLevels": {
-    "narration": 0.72,
+    "narration": 0.6,
     "effects": 1.0,
     "music": 0.17
   },

@@ -17,25 +17,25 @@
       "position": "start",
       "sourceFromMs": 20.0,
       "lagMs": 0.0,
-      "correlation": 0.9999770364354585
+      "correlation": 0.999974317979214
     },
     {
       "position": "middle",
       "sourceFromMs": 32120.0,
       "lagMs": 0.0,
-      "correlation": 0.9999474798605268
+      "correlation": 0.9999528783723165
     },
     {
       "position": "end",
       "sourceFromMs": 62480.0,
       "lagMs": 0.0,
-      "correlation": 0.999962562092869
+      "correlation": 0.9999421985599977
     }
   ],
   "driftMs": 0.0,
-  "encodedPeak": 0.635686993598938,
-  "integratedLufs": -22.88,
-  "truePeakDbtp": -6.87,
+  "encodedPeak": 0.5430534482002258,
+  "integratedLufs": -24.39,
+  "truePeakDbtp": -8.23,
   "outroCorrelation": 0.9999928828053355,
   "outroLagMs": 0.3125,
   "captionCoverageWords": 144,
@@ -235,133 +235,133 @@
         "event": "sun",
         "frame": 0,
         "lagMs": 0.0,
-        "correlation": 0.9999824650793063
+        "correlation": 0.9999847966029097
       },
       {
         "event": "ball-size",
         "frame": 179,
         "lagMs": 0.0,
-        "correlation": 0.9999667906074742
+        "correlation": 0.9999586906667821
       },
       {
         "event": "earth-size",
         "frame": 322,
         "lagMs": 0.0,
-        "correlation": 0.9999727626889834
+        "correlation": 0.9999764605083329
       },
       {
         "event": "pin",
         "frame": 462,
         "lagMs": 0.0,
-        "correlation": 0.9999521380917453
+        "correlation": 0.9999562714833305
       },
       {
         "event": "distance-shock",
         "frame": 518,
         "lagMs": 0.0,
-        "correlation": 0.9999724927666843
+        "correlation": 0.9999623666902852
       },
       {
         "event": "street",
         "frame": 617,
         "lagMs": 0.0,
-        "correlation": 0.9999841006960881
+        "correlation": 0.9999812722609421
       },
       {
         "event": "earth-distance",
         "frame": 690,
         "lagMs": 0.0,
-        "correlation": 0.9999587328892701
+        "correlation": 0.9999378281057106
       },
       {
         "event": "arrival",
         "frame": 814,
         "lagMs": 0.0,
-        "correlation": 0.9999567018733232
+        "correlation": 0.999961639590661
       },
       {
         "event": "moon",
         "frame": 897,
         "lagMs": 0.0,
-        "correlation": 0.9999629736731414
+        "correlation": 0.9999680488767552
       },
       {
         "event": "moon-range",
         "frame": 943,
         "lagMs": 0.0,
-        "correlation": 0.9999635922109334
+        "correlation": 0.9999620982760966
       },
       {
         "event": "moon-size",
         "frame": 1018,
         "lagMs": 0.0,
-        "correlation": 0.9999825703175452
+        "correlation": 0.9999797044108532
       },
       {
         "event": "jupiter",
         "frame": 1106,
         "lagMs": 0.0,
-        "correlation": 0.9999608800919434
+        "correlation": 0.9999641828506727
       },
       {
         "event": "jup-size",
         "frame": 1157,
         "lagMs": 0.0,
-        "correlation": 0.9999699063925563
+        "correlation": 0.9999745703520573
       },
       {
         "event": "jup-road",
         "frame": 1257,
         "lagMs": 0.0,
-        "correlation": 0.9999812270543883
+        "correlation": 0.9999732950140444
       },
       {
         "event": "jup-stop",
         "frame": 1306,
         "lagMs": 0.0,
-        "correlation": 0.999976757786506
+        "correlation": 0.9999806431110143
       },
       {
         "event": "neptune",
         "frame": 1377,
         "lagMs": 0.0,
-        "correlation": 0.9999846648204552
+        "correlation": 0.9999789693788338
       },
       {
         "event": "far-flight",
         "frame": 1467,
         "lagMs": 0.0,
-        "correlation": 0.9999692319960614
+        "correlation": 0.9999713116908285
       },
       {
         "event": "neptune-range",
         "frame": 1516,
         "lagMs": 0.0,
-        "correlation": 0.9999820966433287
+        "correlation": 0.9999842231804793
       },
       {
         "event": "neighborhood",
         "frame": 1590,
         "lagMs": 0.0,
-        "correlation": 0.9999631548933564
+        "correlation": 0.9999665002066295
       },
       {
         "event": "whole",
         "frame": 1720,
         "lagMs": 0.0,
-        "correlation": 0.999966397211746
+        "correlation": 0.9999676705853779
       },
       {
         "event": "quiet",
         "frame": 1788,
         "lagMs": 0.0,
-        "correlation": 0.9999766581448462
+        "correlation": 0.9999707452975761
       },
       {
         "event": "final",
         "frame": 1847,
         "lagMs": 0.0,
-        "correlation": 0.9999705604449113
+        "correlation": 0.9999628230743808
       }
     ],
     "separateStemSha256": "e3a58c701dc803592a1eb12450367b2608c0477963ccd3be491cd381679390ea",

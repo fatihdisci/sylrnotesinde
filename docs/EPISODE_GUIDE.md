@@ -14,3 +14,5 @@
 Marka koruması: `brand:check` kaynak/font/ses SHA-256 farklarını listeler. `references:check` beş kaydedilmiş PNG'ye karşı sabit toleransla yeniden render karşılaştırır ve başarısızlıkta diff üretir. Bunlar ilk adayın regresyon referanslarıdır, kullanıcı tasarım onayı değildir. Kontrol geçsin diye hash/reference/tolerans değiştirme. Yeni bölüm mevcut referansları değiştirmez.
 
 Gerçek üretimde `PRODUCTION_GUIDE.md` ek olarak zorunludur. StyleProof’a özel QA scriptlerine bölüm kareleri eklemek yerine genel kelime hizalama / `episode:render/qa` akışını kullan.
+
+Ses tasarımına başlamadan [kalıcı ses tercihlerini](AUDIO_STYLE.md) oku. Konuşma, belirgin tonal efektler ve hafif ritmik müzik dengesini varsayılan olarak uygula.

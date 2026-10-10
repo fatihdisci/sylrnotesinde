@@ -26,3 +26,5 @@ Yeni bölüm görevine başlamadan önce sırasıyla `docs/DESIGN_SYSTEM.md`, `d
 - Bu bölümde kullanıcı özgün Three.js sanat yönetimi istedi: `SolarBasketball` izole wrapper’ı korunmuş font/imza/Outro bileşenlerini kullanır. `src/brand` ve `EpisodeComposition` üstüne yazma. Kaynak/haklar ve tek fiziksel ölçek için `docs/episodes/solar-basketball/` oku.
 - Kalıcı kullanıcı tercihi: altyazıların hemen üstüne küçük açıklama, teknik not veya ölçek dipnotu ekleme. `solar-basketball` videosundaki bu açıklama katmanı kaldırıldı; gelecek videolarda yeniden oluşturma. Ölçek/varsayım kayıtlarını üretim belgelerinde tut.
 - Ses tercihi: görsel olaylarla senkron, yumuşak tonal blink/bip sesleri kullan. Hışırtılı noise katmanlarını ve gürültülü whoosh efektlerini varsayılan ses tasarımı yapma; anlatımı koru.
+
+- Kalıcı ses tercihi: anlatıcı miksin önüne aşırı çıkmaz; belirgin yumuşak blink/bip efektleri ve hoş, hafif ritmik müzik duyulur. Yeni bölümlerde `docs/AUDIO_STYLE.md` oku ve bu dengeyle başla; kullanıcıya her bölümde yeniden söyletme.
